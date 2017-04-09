@@ -146,6 +146,8 @@ var JSceneKitExample =
 
 	        // configure the view
 	        _this.gameView.backgroundColor = _jscenekit.SKColor.black;
+
+	        _this.gameView.play();
 	      });
 	    }
 	  }]);
@@ -1391,8 +1393,6 @@ var JSceneKitExample =
 		var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-		//import _Buffer from '../util/_Buffer'
-
 
 		var _CGPoint = __webpack_require__(7);
 
@@ -5799,7 +5799,6 @@ var JSceneKitExample =
 		                if (typeof classObj === 'undefined') {
 		                  throw new Error('unknown class name: ' + type);
 		                }
-		                //if(coder._refObj[key] instanceof _Buffer){
 		                if (coder._refObj[key] instanceof Buffer) {
 		                  value = coder.decodeObjectOfTypeForKey(classObj, key);
 		                  if (!(value instanceof classObj)) {
@@ -11699,8 +11698,6 @@ var JSceneKitExample =
 		});
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-		//import _Buffer from '../util/_Buffer'
-
 
 		var _NSCoder2 = __webpack_require__(22);
 
@@ -12342,7 +12339,6 @@ var JSceneKitExample =
 		      }
 		      var parsedObj = this.decodeObjectForKey(key);
 		      console.log(key + ': ' + parsedObj.constructor.name);
-		      //if(!(parsedObj instanceof _Buffer)){
 		      if (!(parsedObj instanceof Buffer)) {
 		        throw new Error('propertylist of key ' + key + ' is not Buffer data');
 		      }
@@ -12360,7 +12356,6 @@ var JSceneKitExample =
 		        throw new Error('can\'t decode \'' + key + '\' after finishDecoding() is called');
 		      }
 		      var parsedObj = this._refObj[key];
-		      //if(!(parsedObj instanceof _Buffer)){
 		      if (!(parsedObj instanceof Buffer)) {
 		        throw new Error('value is not Buffer data for key: ' + key);
 		      }
@@ -12509,12 +12504,11 @@ var JSceneKitExample =
 
 		'use strict';
 
+		/*global File*/
+
 		Object.defineProperty(exports, "__esModule", {
 		  value: true
 		});
-		console.warn('File.web.js');
-
-		/*global File*/
 		exports.default = File;
 
 	/***/ },
@@ -23063,7 +23057,9 @@ var JSceneKitExample =
 		      // set camera node
 		      var cameraNode = this.pointOfView || this._defaultCameraNode;
 		      if (cameraNode !== this.pointOfView) {
-		        console.error('pointOfView is null');
+		        // TODO: search a camera node from the scene tree.
+		        //       if there's no camera in the tree, use the default camera.
+		        console.warn('pointOfView is null');
 		      }
 		      var camera = cameraNode.camera;
 		      camera._updateProjectionTransform(this._viewRect);
@@ -23640,12 +23636,10 @@ var JSceneKitExample =
 		  }, {
 		    key: '_createDummyTexture',
 		    value: function _createDummyTexture() {
-		      var _this4 = this;
-
 		      var gl = this.context;
-		      var image = new Image();
-		      image.width = 1;
-		      image.height = 1;
+		      //const image = new Image()
+		      //image.width = 1
+		      //image.height = 1
 
 		      var canvas = document.createElement('canvas');
 		      canvas.width = 1;
@@ -23656,15 +23650,12 @@ var JSceneKitExample =
 
 		      this.__dummyTexture = gl.createTexture();
 
-		      image.onload = function () {
-		        gl.bindTexture(gl.TEXTURE_2D, _this4.__dummyTexture);
-		        // texImage2D(target, level, internalformat, width, height, border, format, type, source)
-		        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, image);
-		        gl.bindTexture(gl.TEXTURE_2D, null);
-		        _this4._setDummyTextureAsDefault();
-		      };
-		      //console.log('canvas.toDataURL: ' + canvas.toDataURL())
-		      image.src = canvas.toDataURL();
+		      gl.bindTexture(gl.TEXTURE_2D, this.__dummyTexture);
+		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
+		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
+		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      gl.bindTexture(gl.TEXTURE_2D, null);
+		      this._setDummyTextureAsDefault();
 		    }
 		  }, {
 		    key: '_setDummyTextureAsDefault',
@@ -23695,10 +23686,16 @@ var JSceneKitExample =
 		      var gl = this.context;
 		      var texture = gl.createTexture();
 
-		      //console.log(`_createTexture: size: ${image.width}, ${image.height}`)
+		      var canvas = document.createElement('canvas');
+		      canvas.width = image.naturalWidth;
+		      canvas.height = image.naturalHeight;
+		      console.warn('image size: ' + image.naturalWidth + ' ' + image.naturalHeight);
+		      canvas.getContext('2d').drawImage(image, 0, 0);
 
 		      gl.bindTexture(gl.TEXTURE_2D, texture);
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, image);
+		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
+		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
+		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
 		      gl.bindTexture(gl.TEXTURE_2D, null);
 		      return texture;
 		    }
@@ -29979,7 +29976,6 @@ var JSceneKitExample =
 
 		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-		//import _Buffer from '../util/_Buffer'
 		/*global Buffer*/
 
 		var _Semantic = {
@@ -30056,7 +30052,6 @@ var JSceneKitExample =
 		    _this._dataOffset = offset;
 		    _this._dataStride = stride;
 
-		    //if(data instanceof _Buffer){
 		    if (data instanceof Buffer) {
 		      var loadFunc = null;
 		      if (floatComponents) {
@@ -30734,7 +30729,6 @@ var JSceneKitExample =
 
 		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-		//import _Buffer from '../util/_Buffer'
 		/*global Buffer*/
 
 		/**
@@ -30785,7 +30779,6 @@ var JSceneKitExample =
 		    var _this = _possibleConstructorReturn(this, (SCNGeometryElement.__proto__ || Object.getPrototypeOf(SCNGeometryElement)).call(this));
 
 		    _this._data = indices;
-		    //if(indices instanceof _Buffer){
 		    if (indices instanceof Buffer) {
 		      var _data = [];
 		      var count = indices.length / bytesPerIndex;
