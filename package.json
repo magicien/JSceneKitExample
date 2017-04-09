@@ -1,0 +1,51 @@
+{
+  "name": "jscenekitexample",
+  "version": "0.0.1",
+  "description": "An online example of JSceneKit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicien/JSceneKitExample.git"
+  },
+  "author": "magicien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicien/JSceneKitExample/issues"
+  },
+  "homepage": "https://github.com/magicien/JSceneKitExample#readme",
+  "browser": {
+    "fs": false
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "file-loader": "^0.11.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exec": "^2.1.3",
+    "gulp-if": "^2.0.2",
+    "gulp-mocha": "^4.3.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "jscenekit": "^0.2.0",
+    "mocha": "^3.2.0",
+    "mocha-sinon": "^2.0.0",
+    "nyc": "^10.2.0",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.1",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0",
+    "uglifyjs-webpack-plugin": "^0.4.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-stream": "^3.2.0"
+  }
+}
