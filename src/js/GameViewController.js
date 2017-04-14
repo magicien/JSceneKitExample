@@ -34,7 +34,7 @@ export default class GameViewController {
       // create and add a light to the scene
       const lightNode = new SCNNode()
       lightNode.light = new SCNLight()
-      lightNode.light.type = SCNLight.LightType.ombi
+      lightNode.light.type = SCNLight.LightType.omni
       lightNode.position = new SCNVector3(0, 10, 10)
       scene.rootNode.addChildNode(lightNode)
 

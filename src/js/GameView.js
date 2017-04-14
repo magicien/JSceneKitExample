@@ -8,11 +8,12 @@ import {
 
 export default class GameView extends SCNView {
   mouseDownWith(theEvent) {
+    console.log('mouseDown')
     /* Called when a mouse click occurs */
 
     // check what nodes are clicked
     const p = this.convertFrom(theEvent.locationInWindow, null)
-    const hitResults = this.hitTestOptions(p, {})
+    const hitResults = this.hitTest(p, {})
     // check that we clicked on at least one object
     if(hitResults.length > 0){
       // retrieved the first clicked object
