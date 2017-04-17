@@ -16,7 +16,7 @@ module.exports = {
 
   eslint: {
     src: [
-      src + '/**',
+      src + '/**/*.js',
       './test/**/*.js',
     ],
     opts: {
