@@ -5,12 +5,24 @@ var webpack = require('webpack-stream');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('../config');
 
+gulp.task('webpack', ['webpack_ex1', 'webpack_ex2'])
 
-gulp.task('webpack', function(cb) {
-  config.webpack.resolve.extensions.push('') // *sigh
-  const srcPath = config.webpack.context + config.webpack.entry.javascript
+gulp.task('webpack_ex1', function(cb) {
+  const conf = config.ex1.webpack
+  conf.resolve.extensions.push('') // *sigh
+  const srcPath = conf.context + conf.entry
   gulp.src(srcPath)
-      .pipe(webpack(config.webpack))
+      .pipe(webpack(conf))
+      .pipe(gulpif(config.js.uglify, uglify()))
+      .pipe(gulp.dest(config.js.dest));
+});
+
+gulp.task('webpack_ex2', function(cb) {
+  const conf = config.ex2.webpack
+  conf.resolve.extensions.push('') // *sigh
+  const srcPath = conf.context + conf.entry
+  gulp.src(srcPath)
+      .pipe(webpack(conf))
       .pipe(gulpif(config.js.uglify, uglify()))
       .pipe(gulp.dest(config.js.dest));
 });

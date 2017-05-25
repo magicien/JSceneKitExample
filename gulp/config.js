@@ -24,54 +24,110 @@ module.exports = {
     }
   },
 
-  copy: {
-    src: [
-      src + '/index.html',
-      src + '/art.scnassets/**'
-    ],
-    dest: dest,
-    opts: {
-      base: src
-    }
+  ex1: {
+    copy: {
+      src: [
+        src + '/ex1/index.html',
+        src + '/ex1/art.scnassets/**'
+      ],
+      dest: dest,
+      opts: {
+        base: src
+      }
+    },
+
+    webpack: {
+      context: src,
+      entry: './ex1/js/main.js',
+      output: {
+        path: dest,
+        filename: 'ex1/index.js',
+        library: 'JSceneKitExample',
+        libraryTarget: 'var'
+      },
+      devServer: {
+        contentBase: dest,
+        port: 8080
+      },
+      resolve: {
+        extensions: ['.js']
+      },
+      plugins: [
+        //new UglifyJSPlugin()
+      ],
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
+          }
+        ]
+      },
+      node: {
+        Buffer: false
+      },
+      externals: {
+        //fs: 'fs'
+      }
+    },
   },
 
-  webpack: {
-    context: src,
-    entry: './js/main.js',
-    output: {
-      path: dest,
-      filename: 'index.js',
-      library: 'JSceneKitExample',
-      libraryTarget: 'var'
+  ex2: {
+    copy: {
+      src: [
+        src + '/ex2/index.html',
+        src + '/ex2/game.scnassets/**',
+        src + '/ex2/Overlays/**',
+        src + '/ex2/ParticleSystems/**',
+      ],
+      dest: dest,
+      opts: {
+        base: src
+      }
     },
-    devServer: {
-      contentBase: dest,
-      port: 8080
-    },
-    resolve: {
-      extensions: ['.js']
-    },
-    plugins: [
-      //new UglifyJSPlugin()
-    ],
-    module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-          query: {
-            presets: ['es2015']
+
+    webpack: {
+      context: src,
+      entry: './ex2/js/main.js',
+      output: {
+        path: dest,
+        filename: 'ex2/index.js',
+        library: 'JSceneKitExample',
+        libraryTarget: 'var'
+      },
+      devServer: {
+        contentBase: dest,
+        port: 8080
+      },
+      resolve: {
+        extensions: ['.js']
+      },
+      plugins: [
+        //new UglifyJSPlugin()
+      ],
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
           }
-        }
-      ]
+        ]
+      },
+      node: {
+        Buffer: false
+      },
+      externals: {
+        //fs: 'fs'
+      }
     },
-    node: {
-      Buffer: false
-    },
-    externals: {
-      //fs: 'fs'
-    }
   },
 
   mocha: {
