@@ -66,6 +66,8 @@ var JSceneKitExample =
 	  controller.view.appendTo(root);
 	  controller.viewDidLoad();
 	  controller.view.viewDidMoveToWindow();
+
+	  controller.view._canvas.focus();
 	}, false);
 
 /***/ },
@@ -13246,6 +13248,7 @@ var JSceneKitExample =
 		     * Decodes and returns the object graph previously encoded by NSKeyedArchiver and stored in a given NSData object.
 		     * @access public
 		     * @param {Buffer} data - An object graph previously encoded by NSKeyedArchiver.
+		     * @param {?string} path - 
 		     * @returns {?Object} - 
 		     * @desc This method raises an invalidArchiveOperationException if data is not a valid archive.
 		     * @see https://developer.apple.com/reference/foundation/nskeyedunarchiver/1413894-unarchiveobject
@@ -13829,6 +13832,7 @@ var JSceneKitExample =
 		     * 
 		     * @access public
 		     * @param {NSData} data - 
+		     * @param {string} path -
 		     * @returns {void}
 		     * @throws {Error}
 		     * @see https://developer.apple.com/reference/foundation/nskeyedunarchiver/1413622-unarchivetoplevelobjectwithdata
@@ -14889,7 +14893,7 @@ var JSceneKitExample =
 		    /**
 		     * @access public
 		     * @param {NSCoder} coder -
-		     * @returns {} -
+		     * @returns {Object} -
 		     */
 		    value: function initWithCoder(coder) {
 		      var special = coder._refObj['NS.special'];
@@ -21633,7 +21637,7 @@ var JSceneKitExample =
 		      if (this._particleSystems === null) {
 		        this._particleSystems = [];
 		      }
-		      //system._startTime = Date.now() * 0.001
+		      system.reset();
 		      this._particleSystems.push(system);
 		    }
 
@@ -23197,6 +23201,7 @@ var JSceneKitExample =
 		      if (this.light === null) {
 		        return null;
 		      }
+		      this.light._updateProjectionTransform();
 		      var proj = this.light._projectionTransform;
 		      var view = this.viewTransform;
 		      return view.mult(proj);
@@ -33273,6 +33278,7 @@ var JSceneKitExample =
 		        this._particleSystemsTransform = [];
 		      }
 		      //system._startTime = Date.now() * 0.001
+		      system.reset();
 		      this._particleSystems.push(system);
 		      this._particleSystemsTransform.push(transform);
 
@@ -37350,7 +37356,16 @@ var JSceneKitExample =
 		     * @desc Calling this method removes all currently live particles from the scene.
 		     * @see https://developer.apple.com/reference/scenekit/scnparticlesystem/1522968-reset
 		     */
-		    value: function reset() {}
+		    value: function reset() {
+		      this._finished = false;
+		      this._startTime = null;
+		      this._prevTime = 0;
+		      this._nextBirthTime = 0;
+		      this._emissionEndTime = 0;
+		      this._idleEndTime = 0;
+
+		      this._particles = [];
+		    }
 
 		    // Modifying Particles in Response to Particle System Events
 

@@ -8,5 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   controller.view.appendTo(root)
   controller.viewDidLoad()
   controller.view.viewDidMoveToWindow()
+
+  controller.view._canvas.focus()
 }, false)
 
