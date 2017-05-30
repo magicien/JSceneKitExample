@@ -38,10 +38,10 @@ module.exports = {
 
     webpack: {
       context: src,
-      entry: './ex1/js/main.js',
+      entry: './ex2/js/main.js',
       output: {
         path: dest,
-        filename: 'ex1/index.js',
+        filename: 'ex2/index.js',
         library: 'JSceneKitExample',
         libraryTarget: 'var'
       },

@@ -24627,7 +24627,14 @@ var JSceneKitExample =
 		      var material = this.materials[index % materialCount];
 		      var diffuse = material.diffuse.float32Array();
 		      diffuse[3] *= opacity;
-		      var materialData = new Float32Array([].concat(_toConsumableArray(material.ambient.float32Array()), _toConsumableArray(diffuse), _toConsumableArray(material.specular.float32Array()), _toConsumableArray(material.emission.float32Array()), [material.shininess * 100.0, 0, 0, 0 // needs padding for 16-byte alignment
+		      var ambient = null;
+		      if (material.locksAmbientWithDiffuse) {
+		        ambient = diffuse;
+		      } else {
+		        ambient = material.ambient.float32Array();
+		        ambient[3] *= opacity;
+		      }
+		      var materialData = new Float32Array([].concat(_toConsumableArray(ambient), _toConsumableArray(diffuse), _toConsumableArray(material.specular.float32Array()), _toConsumableArray(material.emission.float32Array()), [material.shininess * 100.0, 0, 0, 0 // needs padding for 16-byte alignment
 		      ]));
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, this._materialBuffer);
 		      gl.bufferData(gl.UNIFORM_BUFFER, materialData, gl.DYNAMIC_DRAW);
@@ -28619,7 +28626,7 @@ var JSceneKitExample =
 
 		    _this._context = null;
 		    _this._shadowFrameBuffer = null;
-		    //this._shadowDepthBuffer = null
+		    _this._shadowDepthBuffer = null;
 		    _this._shadowDepthTexture = null;
 		    _this._projectionTransform = null;
 		    return _this;
@@ -28694,16 +28701,16 @@ var JSceneKitExample =
 		      var width = this._shadowMapWidth;
 		      var height = this._shadowMapHeight;
 		      this._shadowFrameBuffer = gl.createFramebuffer();
-		      //this._shadowDepthBuffer = gl.createRenderbuffer()
+		      this._shadowDepthBuffer = gl.createRenderbuffer();
 		      gl.bindFramebuffer(gl.FRAMEBUFFER, this._shadowFrameBuffer);
-		      //gl.bindRenderbuffer(gl.RENDERBUFFER, this._shadowDepthBuffer)
-		      //gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT16, width, height)
+
+		      gl.bindRenderbuffer(gl.RENDERBUFFER, this._shadowDepthBuffer);
+		      gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT16, width, height);
+		      gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, this._shadowDepthBuffer);
 
 		      this._shadowDepthTexture = gl.createTexture();
 		      gl.bindTexture(gl.TEXTURE_2D, this._shadowDepthTexture);
 		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
-		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.DEPTH_COMPONENT32F, width, height, 0, gl.DEPTH_COMPONENT, gl.FLOAT, null)
-		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.R32F, width, height, 0, gl.R32F, gl.FLOAT, null)
 		      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
 		      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
 		      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
@@ -28711,11 +28718,9 @@ var JSceneKitExample =
 		      gl.generateMipmap(gl.TEXTURE_2D);
 
 		      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, this._shadowDepthTexture, 0);
-		      //gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.TEXTURE_2D, this._shadowDepthTexture, 0)
 		      gl.drawBuffers([gl.COLOR_ATTACHMENT0]);
-		      //gl.drawBuffers([gl.NONE])
 
-		      //gl.bindRenderbuffer(gl.RENDERBUFFER, null)
+		      gl.bindRenderbuffer(gl.RENDERBUFFER, null);
 		      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 
 		      return this._shadowFrameBuffer;
@@ -29265,7 +29270,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultHitTestFragmentShader = '#version 300 es\n  precision mediump float;\n\n  uniform int objectID;\n  uniform int geometryID;\n\n  in vec3 v_normal;\n  in vec3 v_position;\n\n  layout(location = 0) out vec4 out_objectID;\n  layout(location = 1) out vec4 out_faceID;\n  layout(location = 2) out vec3 out_position;\n  layout(location = 3) out vec3 out_normal;\n\n  void main() {\n    out_objectID = vec4(\n      float(objectID >> 8) / 255.0,\n      float(objectID & 0xFF) / 255.0,\n      float(geometryID >> 8) / 255.0,\n      float(geometryID & 0xFF) / 255.0\n    );\n    //out_faceID = vec4(\n    //  (gl_PrimitiveID >> 24) / 255.0,\n    //  ((gl_PrimitiveID >> 16) & 0xFF) / 255.0,\n    //  ((gl_PrimitiveID >> 8) & 0xFF) / 255.0,\n    //  (gl_PrimitiveID & 0xFF) / 255.0\n    //);\n    out_faceID = vec4(0, 0, 0, 0); // TODO: implement\n    vec3 n = normalize(v_normal);\n    out_normal = vec3((n.x + 1.0) * 0.5, (n.y + 1.0) * 0.5, (n.z + 1.0) * 0.5);\n    out_position = vec3((v_position.x + 1.0) * 0.5, (v_position.y + 1.0) * 0.5, (v_position.z + 1.0) * 0.5);\n  }\n';
+		var _defaultHitTestFragmentShader = '#version 300 es\n  precision mediump float;\n\n  uniform int objectID;\n  uniform int geometryID;\n\n  in vec3 v_normal;\n  in vec3 v_position;\n\n  layout(location = 0) out vec4 out_objectID;\n  layout(location = 1) out vec4 out_faceID;\n  layout(location = 2) out vec4 out_position;\n  layout(location = 3) out vec4 out_normal;\n\n  void main() {\n    out_objectID = vec4(\n      float(objectID >> 8) / 255.0,\n      float(objectID & 0xFF) / 255.0,\n      float(geometryID >> 8) / 255.0,\n      float(geometryID & 0xFF) / 255.0\n    );\n    //out_faceID = vec4(\n    //  (gl_PrimitiveID >> 24) / 255.0,\n    //  ((gl_PrimitiveID >> 16) & 0xFF) / 255.0,\n    //  ((gl_PrimitiveID >> 8) & 0xFF) / 255.0,\n    //  (gl_PrimitiveID & 0xFF) / 255.0\n    //);\n    out_faceID = vec4(0, 0, 0, 0); // TODO: implement\n    vec3 n = normalize(v_normal);\n    out_normal = vec4((n.x + 1.0) * 0.5, (n.y + 1.0) * 0.5, (n.z + 1.0) * 0.5, 0);\n    out_position = vec4((v_position.x + 1.0) * 0.5, (v_position.y + 1.0) * 0.5, (v_position.z + 1.0) * 0.5, 0);\n  }\n';
 
 		/**
 		 * @access private
@@ -29782,12 +29787,18 @@ var JSceneKitExample =
 		      // Shadow
 		      //////////////////////////
 		      gl.useProgram(this._defaultShadowProgram._glProgram);
+		      gl.enable(gl.DEPTH_TEST);
 		      gl.depthMask(true);
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.clearDepth(1.0);
 		      gl.clearColor(1.0, 1.0, 1.0, 1.0);
 		      gl.disable(gl.BLEND);
 		      var shadowRenderingArray = this._createShadowNodeArray();
+		      //const mountain = shadowRenderingArray[4]
+		      //const lastIndex = shadowRenderingArray.length - 1
+		      //shadowRenderingArray[4] = shadowRenderingArray[lastIndex]
+		      //shadowRenderingArray[lastIndex] = mountain
+
 		      var _iteratorNormalCompletion = true;
 		      var _didIteratorError = false;
 		      var _iteratorError = undefined;
@@ -30757,11 +30768,13 @@ var JSceneKitExample =
 
 		      this._hitPositionTexture = gl.createTexture();
 		      gl.bindTexture(gl.TEXTURE_2D, this._hitPositionTexture);
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null);
+		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null)
+		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
 		      this._hitNormalTexture = gl.createTexture();
 		      gl.bindTexture(gl.TEXTURE_2D, this._hitNormalTexture);
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null);
+		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null)
+		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
 		      //gl.framebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer)
 		      gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, this._hitDepthBuffer);
@@ -30926,15 +30939,15 @@ var JSceneKitExample =
 		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, faceIDBuf, 0);
 		      var faceIndex = faceIDBuf[0] * 16777216 + faceIDBuf[1] * 65536 + faceIDBuf[2] * 256 + faceIDBuf[3];
 
-		      var positionBuf = new Uint8Array(3);
+		      var positionBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT2);
-		      gl.readPixels(x, y, 1, 1, gl.RGB, gl.UNSIGNED_BYTE, positionBuf, 0);
-		      var screenPos = new _SCNVector2.default(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 255.0);
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0);
+		      var screenPos = new _SCNVector2.default(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0);
 		      var position = screenPos.transform(viewProjectionTransform.invert());
 
-		      var normalBuf = new Uint8Array(3);
+		      var normalBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT3);
-		      gl.readPixels(x, y, 1, 1, gl.RGB, gl.UNSIGNED_BYTE, normalBuf, 0);
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, normalBuf, 0);
 		      var normal = new _SCNVector2.default(normalBuf[0] / 127.5 - 1.0, normalBuf[1] / 127.5 - 1.0, normalBuf[2] / 127.5 - 1.0);
 
 		      //console.log('***** Hit Result *****')
@@ -31057,15 +31070,15 @@ var JSceneKitExample =
 		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, faceIDBuf, 0);
 		      var faceIndex = faceIDBuf[0] * 16777216 + faceIDBuf[1] * 65536 + faceIDBuf[2] * 256 + faceIDBuf[3];
 
-		      var positionBuf = new Uint8Array(3);
+		      var positionBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT2);
-		      gl.readPixels(x, y, 1, 1, gl.RGB, gl.UNSIGNED_BYTE, positionBuf, 0);
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0);
 		      var screenPos = new _SCNVector2.default(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0);
 		      var position = screenPos.transform(viewProjectionTransform.invert());
 
-		      var normalBuf = new Uint8Array(3);
+		      var normalBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT3);
-		      gl.readPixels(x, y, 1, 1, gl.RGB, gl.UNSIGNED_BYTE, normalBuf, 0);
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, normalBuf, 0);
 		      var normal = new _SCNVector2.default(normalBuf[0] / 127.5 - 1.0, normalBuf[1] / 127.5 - 1.0, normalBuf[2] / 127.5 - 1.0);
 
 		      //console.log('***** Hit Result *****')
