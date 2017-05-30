@@ -56973,8 +56973,6 @@ var JSceneKitExample =
 	        return true;
 	      }
 
-	      this.showEndScreen();
-
 	      return false;
 	    }
 	  }, {
