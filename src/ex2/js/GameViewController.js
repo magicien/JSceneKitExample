@@ -718,8 +718,6 @@ export default class GameViewController {
       return true
     }
 
-      this.showEndScreen()
-
     return false
   }
 
