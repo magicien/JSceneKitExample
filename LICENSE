@@ -21,7 +21,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ===============================
-The files in src/ex2/Overlays,ParticleSystems,game.scnassets and pubilc/ex2/Overlays,ParticleSystems,game.scnassets are copied from Apple's sample code (https://developer.apple.com/library/content/samplecode/Fox/). These files are distributed under the license and copyrights below.
+The files in src/ex2/Overlays,ParticleSystems,game.scnassets and 
+pubilc/ex2/Overlays,ParticleSystems,game.scnassets are copied from 
+Apple's sample code (https://developer.apple.com/library/content/samplecode/Fox/). 
+These files are distributed under the license and copyrights below.
 
 
 Sample code project: Fox: Building a SceneKit Game with the Xcode Scene Editor
