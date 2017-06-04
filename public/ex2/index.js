@@ -23821,6 +23821,10 @@ var JSceneKitExample =
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
+		var _SKColor = __webpack_require__(11);
+
+		var _SKColor2 = _interopRequireDefault(_SKColor);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -23920,7 +23924,7 @@ var JSceneKitExample =
 
 		        entityID: ['string', '_entityID'],
 		        subdivisionSettings: ['bytes', null],
-		        shadableHelper: ['SCNShadableHelper', null]
+		        shadableHelper: ['SCNShadableHelper', '_shadableHelper']
 		      };
 		    }
 
@@ -24076,6 +24080,12 @@ var JSceneKitExample =
 		     * @type {?string}
 		     */
 		    _this._entityID = null;
+
+		    /**
+		     * @access private
+		     * @type {?SCNShadableHelper}
+		     */
+		    _this._shadableHelper = null;
 
 		    _this._btVertices = null;
 		    _this._btMesh = null;
@@ -24449,14 +24459,18 @@ var JSceneKitExample =
 		      var arr = [];
 		      var vertexSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var normalSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
-		      var texcoordSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+		      var tangentSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.tangent)[0];
+		      var texcoordSource0 = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+		      var texcoordSource1 = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[1];
 		      var indexSource = baseSkinner ? baseSkinner._boneIndices : null;
 		      var weightSource = baseSkinner ? baseSkinner._boneWeights : null;
 		      var vectorCount = vertexSource.vectorCount;
 
 		      var pVertexSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var pNormalSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
-		      var pTexcoordSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+		      var pTangentSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.tangent)[0];
+		      var pTexcoordSource0 = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+		      var pTexcoordSource1 = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[1];
 		      //const pIndexSource = this.getGeometrySourcesForSemantic(SCNGeometrySource.Semantic.boneIndices)[0]
 		      var pIndexSource = skinner ? skinner._boneIndices : null;
 		      //const pWeightSource = this.getGeometrySourcesForSemantic(SCNGeometrySource.Semantic.boneWeights)[0]
@@ -24468,16 +24482,34 @@ var JSceneKitExample =
 		      if (typeof normalSource !== 'undefined' && normalSource.vectorCount !== vectorCount) {
 		        throw new Error('normalSource.vectorCount !== vertexSource.vectorCount');
 		      }
-		      if (typeof texcoordSource !== 'undefined' && texcoordSource.vectorCount !== vectorCount) {
-		        throw new Error('texcoordSource.vectorCount !== vertexSource.vectorCount');
+		      if (typeof tangentSource !== 'undefined' && tangentSource.vectorCount !== vectorCount) {
+		        throw new Error('tangentSource.vectorCount !== vertexSource.vectorCount');
+		      }
+		      if (typeof texcoordSource0 !== 'undefined' && texcoordSource0.vectorCount !== vectorCount) {
+		        throw new Error('texcoordSource0.vectorCount !== vertexSource.vectorCount');
+		      }
+		      if (typeof texcoordSource1 !== 'undefined' && texcoordSource1.vectorCount !== vectorCount) {
+		        throw new Error('texcoordSource1.vectorCount !== vertexSource.vectorCount');
+		      }
+		      if (typeof tangentSource === 'undefined' && this.materials.find(function (m) {
+		        return !(m._normal._contents instanceof _SKColor2.default);
+		      })) {
+		        tangentSource = this._createTangentSource();
+		        pTangentSource = tangentSource;
+		        this._geometrySources.push(tangentSource);
+		        if (baseGeometry !== this) {
+		          baseGeometry._geometrySources.push(tangentSource);
+		        }
 		      }
 
-		      var vertexArray = vertexSource ? vertexSource.data : null;
+		      //const vertexArray = vertexSource ? vertexSource.data : null
 		      var vertexComponents = vertexSource ? vertexSource.componentsPerVector : 0;
-		      var normalArray = normalSource ? normalSource.data : null;
+		      //const normalArray = normalSource ? normalSource.data : null
 		      var normalComponents = normalSource ? normalSource.componentsPerVector : 0;
-		      var texcoordArray = texcoordSource ? texcoordSource.data : null;
-		      var texcoordComponents = texcoordSource ? texcoordSource.componentsPerVector : 0;
+		      var tangentComponents = tangentSource ? tangentSource.componentsPerVector : 0;
+		      //const texcoordArray = texcoordSource ? texcoordSource.data : null
+		      var texcoordComponents0 = texcoordSource0 ? texcoordSource0.componentsPerVector : 0;
+		      var texcoordComponents1 = texcoordSource1 ? texcoordSource1.componentsPerVector : 0;
 
 		      for (var i = 0; i < vectorCount; i++) {
 		        if (vertexSource) {
@@ -24486,9 +24518,14 @@ var JSceneKitExample =
 		        if (normalSource) {
 		          arr.push.apply(arr, _toConsumableArray(normalSource._vectorAt(i)));
 		        }
-		        if (texcoordSource) {
-		          //console.log(`tex ${i} ${texcoordSource._vectorAt(i)}`)
-		          arr.push.apply(arr, _toConsumableArray(texcoordSource._vectorAt(i)));
+		        if (tangentSource) {
+		          arr.push.apply(arr, _toConsumableArray(tangentSource._vectorAt(i)));
+		        }
+		        if (texcoordSource0) {
+		          arr.push.apply(arr, _toConsumableArray(texcoordSource0._vectorAt(i)));
+		        }
+		        if (texcoordSource1) {
+		          arr.push.apply(arr, _toConsumableArray(texcoordSource1._vectorAt(i)));
 		        }
 		      }
 
@@ -24500,7 +24537,7 @@ var JSceneKitExample =
 		      // FIXME: Don't change geometry sources. Use other variables
 		      var bytesPerComponent = 4;
 		      var offset = 0;
-		      var stride = (vertexComponents + normalComponents + texcoordComponents) * bytesPerComponent;
+		      var stride = (vertexComponents + normalComponents + tangentComponents + texcoordComponents0 + texcoordComponents1) * bytesPerComponent;
 		      pVertexSource._bytesPerComponent = bytesPerComponent;
 		      pVertexSource._dataOffset = offset;
 		      pVertexSource._dataStride = stride;
@@ -24512,11 +24549,23 @@ var JSceneKitExample =
 		        pNormalSource._dataStride = stride;
 		        offset += normalComponents * bytesPerComponent;
 		      }
-		      if (pTexcoordSource) {
-		        pTexcoordSource._bytesPerComponent = bytesPerComponent;
-		        pTexcoordSource._dataOffset = offset;
-		        pTexcoordSource._dataStride = stride;
-		        offset += texcoordComponents * bytesPerComponent;
+		      if (pTangentSource) {
+		        pTangentSource._bytesPerComponent = bytesPerComponent;
+		        pTangentSource._dataOffset = offset;
+		        pTangentSource._dataStride = stride;
+		        offset += tangentComponents * bytesPerComponent;
+		      }
+		      if (pTexcoordSource0) {
+		        pTexcoordSource0._bytesPerComponent = bytesPerComponent;
+		        pTexcoordSource0._dataOffset = offset;
+		        pTexcoordSource0._dataStride = stride;
+		        offset += texcoordComponents0 * bytesPerComponent;
+		      }
+		      if (pTexcoordSource1) {
+		        pTexcoordSource1._bytesPerComponent = bytesPerComponent;
+		        pTexcoordSource1._dataOffset = offset;
+		        pTexcoordSource1._dataStride = stride;
+		        offset += texcoordComponents1 * bytesPerComponent;
 		      }
 
 		      //console.log(`offset: ${offset}, vectorCount: ${vectorCount}`)
@@ -24559,8 +24608,14 @@ var JSceneKitExample =
 		      if (pNormalSource) {
 		        pNormalSource._data = arr;
 		      }
-		      if (pTexcoordSource) {
-		        pTexcoordSource._data = arr;
+		      if (pTangentSource) {
+		        pTangentSource._data = arr;
+		      }
+		      if (pTexcoordSource0) {
+		        pTexcoordSource0._data = arr;
+		      }
+		      if (pTexcoordSource1) {
+		        pTexcoordSource1._data = arr;
 		      }
 		      if (pIndexSource) {
 		        pIndexSource._data = arr;
@@ -24620,8 +24675,6 @@ var JSceneKitExample =
 		  }, {
 		    key: '_bufferMaterialData',
 		    value: function _bufferMaterialData(gl, program, index, opacity) {
-		      var _this2 = this;
-
 		      // TODO: move this function to SCNProgram
 		      var materialCount = this.materials.length;
 		      var material = this.materials[index % materialCount];
@@ -24634,31 +24687,61 @@ var JSceneKitExample =
 		        ambient = material.ambient.float32Array();
 		        ambient[3] *= opacity;
 		      }
-		      var materialData = new Float32Array([].concat(_toConsumableArray(ambient), _toConsumableArray(diffuse), _toConsumableArray(material.specular.float32Array()), _toConsumableArray(material.emission.float32Array()), [material.shininess * 100.0, 0, 0, 0 // needs padding for 16-byte alignment
+		      var materialData = new Float32Array([].concat(_toConsumableArray(ambient), _toConsumableArray(diffuse), _toConsumableArray(material.specular.float32Array()), _toConsumableArray(material.emission.float32Array()), [material.shininess * 100.0, material.fresnelExponent, 0, 0 // needs padding for 16-byte alignment
 		      ]));
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, this._materialBuffer);
 		      gl.bufferData(gl.UNIFORM_BUFFER, materialData, gl.DYNAMIC_DRAW);
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, null);
 
 		      var textureFlags = [];
-		      var textures = [{ name: 'emission', symbol: 'TEXTURE0' }, { name: 'ambient', symbol: 'TEXTURE1' }, { name: 'diffuse', symbol: 'TEXTURE2' }, { name: 'specular', symbol: 'TEXTURE3' }, { name: 'reflective', symbol: 'TEXTURE4' }, { name: 'transparent', symbol: 'TEXTURE5' }, { name: 'multiply', symbol: 'TEXTURE6' }, { name: 'normal', symbol: 'TEXTURE7' }];
-		      textures.forEach(function (texture) {
-		        var m = material[texture.name];
-		        if (m._contents instanceof Image) {
-		          m._contents = _this2._createTexture(gl, m._contents);
-		        }
-		        if (m._contents instanceof WebGLTexture) {
-		          textureFlags.push(1);
-		          gl.activeTexture(gl[texture.symbol]); // FIXME: use m._contents.mappingChannel
-		          gl.bindTexture(gl.TEXTURE_2D, m._contents);
-		          gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, m._magnificationFilterFor(gl));
-		          gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, m._minificationFilterFor(gl));
-		          gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, m._wrapSFor(gl));
-		          gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, m._wrapTFor(gl));
-		        } else {
-		          textureFlags.push(0);
-		        }
-		      });
+		      //const textures = [
+		      //  { name: 'emission', symbol: 'TEXTURE0' },
+		      //  { name: 'ambient', symbol: 'TEXTURE1' },
+		      //  { name: 'diffuse', symbol: 'TEXTURE2' },
+		      //  { name: 'specular', symbol: 'TEXTURE3' },
+		      //  { name: 'reflective', symbol: 'TEXTURE4' },
+		      //  { name: 'transparent', symbol: 'TEXTURE5' },
+		      //  { name: 'multiply', symbol: 'TEXTURE6' },
+		      //  { name: 'normal', symbol: 'TEXTURE7' }
+		      //]
+
+		      // emission
+		      var selfIllumination = 0;
+		      if (material._selfIllumination._contents instanceof Image || material._selfIllumination._contents instanceof WebGLTexture) {
+		        this._setTextureToName(gl, material._selfIllumination, 'TEXTURE0', textureFlags);
+		        selfIllumination = 1;
+		      } else if (material._emission._contents instanceof Image || material._emission._contents instanceof WebGLTexture) {
+		        this._setTextureToName(gl, material._emission, 'TEXTURE0', textureFlags);
+		      } else {
+		        textureFlags.push(0);
+		      }
+		      gl.uniform1i(gl.getUniformLocation(program, 'selfIllumination'), selfIllumination);
+
+		      // ambient
+		      this._setTextureToName(gl, material._ambient, 'TEXTURE1', textureFlags);
+
+		      // diffuse
+		      this._setTextureToName(gl, material._diffuse, 'TEXTURE2', textureFlags);
+
+		      // specular
+		      this._setTextureToName(gl, material._specular, 'TEXTURE3', textureFlags);
+
+		      // reflective
+		      this._setCubeTextureToName(gl, material._reflective, 'TEXTURE4', textureFlags);
+
+		      // transparent
+		      this._setTextureToName(gl, material._transparent, 'TEXTURE5', textureFlags);
+
+		      // multiply
+		      this._setTextureToName(gl, material._multiply, 'TEXTURE6', textureFlags);
+
+		      // normal
+		      this._setTextureToName(gl, material._normal, 'TEXTURE7', textureFlags);
+
+		      //for(const texture of textures){
+		      //  this._setTextureToName(gl, material[texture.name], texture.symbol, textureFlags)
+		      //}
+
 		      // TODO: cache uniform location
 		      gl.uniform1iv(gl.getUniformLocation(program, 'textureFlags'), new Int32Array(textureFlags));
 
@@ -24672,6 +24755,133 @@ var JSceneKitExample =
 		          gl.cullFace(gl.FRONT);
 		        }
 		      }
+		    }
+
+		    /**
+		     * @access private
+		     * @param {WebGLRenderingContext} gl -
+		     * @param {SCNMaterialProperty} m -
+		     * @param {string} name -
+		     * @param {boolean[]} textureFlags -
+		     * @returns {void}
+		     */
+
+		  }, {
+		    key: '_setCubeTextureToName',
+		    value: function _setCubeTextureToName(gl, m, name, textureFlags) {
+		      if (m._contents instanceof Image) {
+		        m._contents = this._createCubeTexture(gl, m._contents);
+		      }
+		      if (m._contents instanceof WebGLTexture) {
+		        textureFlags.push(1);
+		        gl.activeTexture(gl[name]);
+		        gl.bindTexture(gl.TEXTURE_CUBE_MAP, m._contents);
+		        gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_MAG_FILTER, m._magnificationFilterFor(gl));
+		        gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_MIN_FILTER, m._minificationFilterFor(gl));
+		        gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_WRAP_S, m._wrapSFor(gl));
+		        gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_WRAP_T, m._wrapTFor(gl));
+		      } else {
+		        textureFlags.push(0);
+		      }
+		    }
+
+		    /**
+		     * @access private
+		     * @param {WebGLRenderingContext} gl -
+		     * @param {SCNMaterialProperty} m -
+		     * @param {string} name -
+		     * @param {boolean[]} textureFlags -
+		     * @returns {void}
+		     */
+
+		  }, {
+		    key: '_setTextureToName',
+		    value: function _setTextureToName(gl, m, name, textureFlags) {
+		      if (m._contents instanceof Image) {
+		        m._contents = this._createTexture(gl, m._contents);
+		      }
+		      if (m._contents instanceof WebGLTexture) {
+		        textureFlags.push(1);
+		        gl.activeTexture(gl[name]);
+		        gl.bindTexture(gl.TEXTURE_2D, m._contents);
+		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, m._magnificationFilterFor(gl));
+		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, m._minificationFilterFor(gl));
+		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, m._wrapSFor(gl));
+		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, m._wrapTFor(gl));
+		      } else {
+		        textureFlags.push(0);
+		      }
+		    }
+		  }, {
+		    key: '_createTangentSource',
+		    value: function _createTangentSource() {
+		      var elements = this._geometryElements;
+		      var vertex = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		      var texcoord = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+
+		      var data = [];
+		      var semantic = _SCNGeometrySource2.default.Semantic.tangent;
+		      var vectorCount = vertex.vectorCount;
+		      var floatComponents = true;
+		      var componentsPerVector = 3;
+		      var bytesPerComponent = 4;
+		      var dataOffset = 0;
+		      var dataStride = 12;
+
+		      var tangent = [];
+		      for (var i = 0; i < vectorCount; i++) {
+		        tangent.push(new _SCNVector2.default(0, 0, 0));
+		      }
+
+		      var _iteratorNormalCompletion2 = true;
+		      var _didIteratorError2 = false;
+		      var _iteratorError2 = undefined;
+
+		      try {
+		        for (var _iterator2 = elements[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		          var element = _step2.value;
+
+		          var len = element.primitiveCount;
+		          for (var _i3 = 0; _i3 < len; _i3++) {
+		            var index = element._indexAt(_i3);
+		            var pos0 = vertex._scnVectorAt(index[0]);
+		            var pos1 = vertex._scnVectorAt(index[1]);
+		            var pos2 = vertex._scnVectorAt(index[2]);
+		            var tex0 = texcoord._scnVectorAt(index[0]);
+		            var tex1 = texcoord._scnVectorAt(index[1]);
+		            var tex2 = texcoord._scnVectorAt(index[2]);
+
+		            var p1 = pos1.sub(pos0);
+		            var p2 = pos2.sub(pos0);
+		            var t1 = tex1.sub(tex0);
+		            var t2 = tex2.sub(tex0);
+
+		            var t = p1.mul(t2.y).sub(p2.mul(t1.y));
+		            tangent[index[0]] = tangent[index[0]].add(t);
+		            tangent[index[1]] = tangent[index[1]].add(t);
+		            tangent[index[2]] = tangent[index[2]].add(t);
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError2 = true;
+		        _iteratorError2 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		            _iterator2.return();
+		          }
+		        } finally {
+		          if (_didIteratorError2) {
+		            throw _iteratorError2;
+		          }
+		        }
+		      }
+
+		      for (var _i2 = 0; _i2 < vectorCount; _i2++) {
+		        data.push.apply(data, _toConsumableArray(tangent[_i2].normalize().floatArray()));
+		      }
+
+		      return new _SCNGeometrySource2.default(data, semantic, vectorCount, floatComponents, componentsPerVector, bytesPerComponent, dataOffset, dataStride);
 		    }
 		  }, {
 		    key: 'copy',
@@ -24697,6 +24907,51 @@ var JSceneKitExample =
 
 		      return geometry;
 		    }
+
+		    /**
+		     * @access private
+		     * @param {WebGLRenderingContext} gl -
+		     * @param {Image} image -
+		     * @returns {WebGLTexture} -
+		     */
+
+		  }, {
+		    key: '_createCubeTexture',
+		    value: function _createCubeTexture(gl, image) {
+		      var texture = gl.createTexture();
+
+		      gl.bindTexture(gl.TEXTURE_CUBE_MAP, texture);
+		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
+		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
+		      var targets = [gl.TEXTURE_CUBE_MAP_POSITIVE_Z, gl.TEXTURE_CUBE_MAP_POSITIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, gl.TEXTURE_CUBE_MAP_POSITIVE_Y];
+		      //const tx = [0, 1.0/6.0, 2.0/6.0, 3.0/6.0, 4.0/6.0, 5.0/6.0, 1]
+		      //const itx = [4, 1, 5, 0, 2, 3]
+		      var margin = 0.001;
+		      var sx = [4.0 / 6.0 + margin, 1.0 / 6.0 + margin, 5.0 / 6.0 + margin, 0 + margin, 2.0 / 6.0 + margin, 3.0 / 6.0 + margin];
+		      var imageWidth = image.naturalWidth;
+		      var imageHeight = image.naturalHeight;
+		      var srcWidth = imageHeight - margin * 2;
+
+		      for (var i = 0; i < 6; i++) {
+		        var canvas = document.createElement('canvas');
+		        canvas.width = imageHeight;
+		        canvas.height = imageHeight;
+		        canvas.getContext('2d').drawImage(image, sx[i], 0, srcWidth, imageHeight, 0, 0, imageHeight, imageHeight);
+
+		        gl.texImage2D(targets[i], 0, gl.RGBA, imageHeight, imageHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      }
+
+		      gl.generateMipmap(gl.TEXTURE_CUBE_MAP);
+		      return texture;
+		    }
+
+		    /**
+		     * @access private
+		     * @param {WebGLRenderingContext} gl -
+		     * @param {Image} image -
+		     * @returns {WebGLTexture} -
+		     */
+
 		  }, {
 		    key: '_createTexture',
 		    value: function _createTexture(gl, image) {
@@ -24831,27 +25086,27 @@ var JSceneKitExample =
 		    key: 'animationKeys',
 		    get: function get() {
 		      var keys = [];
-		      var _iteratorNormalCompletion2 = true;
-		      var _didIteratorError2 = false;
-		      var _iteratorError2 = undefined;
+		      var _iteratorNormalCompletion3 = true;
+		      var _didIteratorError3 = false;
+		      var _iteratorError3 = undefined;
 
 		      try {
-		        for (var _iterator2 = this._animations.keys()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-		          var key = _step2.value;
+		        for (var _iterator3 = this._animations.keys()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+		          var key = _step3.value;
 
 		          keys.push(key);
 		        }
 		      } catch (err) {
-		        _didIteratorError2 = true;
-		        _iteratorError2 = err;
+		        _didIteratorError3 = true;
+		        _iteratorError3 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
-		            _iterator2.return();
+		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+		            _iterator3.return();
 		          }
 		        } finally {
-		          if (_didIteratorError2) {
-		            throw _iteratorError2;
+		          if (_didIteratorError3) {
+		            throw _iteratorError3;
 		          }
 		        }
 		      }
@@ -25263,7 +25518,9 @@ var JSceneKitExample =
 		    key: '_scnVectorAt',
 		    value: function _scnVectorAt(index) {
 		      var vec = this._vectorAt(index);
-		      if (vec.length === 3) {
+		      if (vec.length === 2) {
+		        return new _CGPoint2.default(vec[0], vec[1]);
+		      } else if (vec.length === 3) {
 		        return new _SCNVector2.default(vec[0], vec[1], vec[2]);
 		      } else if (vec.length === 4) {
 		        return new _SCNVector4.default(vec[0], vec[1], vec[2], vec[3]);
@@ -28833,7 +29090,7 @@ var JSceneKitExample =
 		        return this.shadowMapSize.width;
 		      }
 		      // FIXME: adjust shadowMapSize
-		      return 1024;
+		      return 2048;
 		    }
 		  }, {
 		    key: '_shadowMapHeight',
@@ -28842,7 +29099,7 @@ var JSceneKitExample =
 		        return this.shadowMapSize.height;
 		      }
 		      // FIXME: adjust shadowMapSize
-		      return 1024;
+		      return 2048;
 		    }
 		  }], [{
 		    key: 'LightType',
@@ -29207,7 +29464,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultVertexShader = '#version 300 es\n  precision mediump float;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform cameraUniform {\n    vec4 position;\n    mat4 viewTransform;\n    mat4 viewProjectionTransform;\n  } camera;\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct IESLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __VS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  //uniform mat3x4[255] skinningJoints;\n  uniform vec4[765] skinningJoints;\n  uniform int numSkinningJoints;\n\n  in vec3 position;\n  in vec3 normal;\n  //in vec3 tangent;\n  in vec2 texcoord;\n  in vec4 boneIndices;\n  in vec4 boneWeights;\n\n  out vec3 v_position;\n  out vec3 v_normal;\n  //out vec3 v_tangent;\n  //out vec3 v_bitangent;\n  out vec2 v_texcoord;\n  out vec4 v_color;\n  out vec3 v_eye;\n  out float v_fogFactor;\n\n  void main() {\n    vec3 pos = vec3(0, 0, 0);\n    vec3 nom = vec3(0, 0, 0);\n    vec3 tangent = vec3(1, 0, 0); // DEBUG\n    vec3 tng = vec3(0, 0, 0);\n\n    if(numSkinningJoints > 0){\n      for(int i=0; i<numSkinningJoints; i++){\n        float weight = boneWeights[i];\n        if(int(boneIndices[i]) < 0){\n          continue;\n        }\n        int idx = int(boneIndices[i]) * 3;\n        mat4 jointMatrix = transpose(mat4(skinningJoints[idx],\n                                          skinningJoints[idx+1],\n                                          skinningJoints[idx+2],\n                                          vec4(0, 0, 0, 1)));\n        pos += (jointMatrix * vec4(position, 1.0)).xyz * weight;\n        nom += (mat3(jointMatrix) * normal) * weight;\n        tng += (mat3(jointMatrix) * tangent) * weight;\n      }\n    }else{\n      mat4 jointMatrix = transpose(mat4(skinningJoints[0],\n                                        skinningJoints[1],\n                                        skinningJoints[2],\n                                        vec4(0, 0, 0, 1)));\n      pos = (jointMatrix * vec4(position, 1.0)).xyz;\n      nom = mat3(jointMatrix) * normal;\n      tng += mat3(jointMatrix) * tangent;\n    }\n    v_position = pos;\n    v_normal = nom;\n    vec3 btng = cross(nom, tng);\n\n    vec3 viewVec = camera.position.xyz - pos;\n    //v_eye.x = dot(viewVec, tng);\n    //v_eye.y = dot(viewVec, btng);\n    //v_eye.z = dot(viewVec, nom);\n    v_eye = viewVec;\n\n    v_color = material.emission;\n    int numLights = 0;\n\n    __VS_LIGHTING__\n\n    float distance = length(viewVec);\n    v_fogFactor = clamp((distance - fog.startDistance) / (fog.endDistance - fog.startDistance), 0.0, 1.0);\n\n    v_texcoord = texcoord;\n    gl_Position = camera.viewProjectionTransform * vec4(pos, 1.0);\n  }\n';
+		var _defaultVertexShader = '#version 300 es\n  precision mediump float;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform cameraUniform {\n    vec4 position;\n    mat4 viewTransform;\n    mat4 viewProjectionTransform;\n  } camera;\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct IESLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __VS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  //uniform mat3x4[255] skinningJoints;\n  uniform vec4[765] skinningJoints;\n  uniform int numSkinningJoints;\n\n  in vec3 position;\n  in vec3 normal;\n  in vec3 tangent;\n  in vec2 texcoord0;\n  in vec2 texcoord1;\n  in vec4 boneIndices;\n  in vec4 boneWeights;\n\n  out vec3 v_position;\n  out vec3 v_normal;\n  out vec3 v_tangent;\n  out vec3 v_bitangent;\n  out vec2 v_texcoord0;\n  out vec2 v_texcoord1;\n  out vec4 v_color;\n  out vec3 v_eye;\n  out float v_fogFactor;\n\n  void main() {\n    vec3 pos = vec3(0, 0, 0);\n    vec3 nom = vec3(0, 0, 0);\n    vec3 tng = vec3(0, 0, 0);\n\n    if(numSkinningJoints > 0){\n      for(int i=0; i<numSkinningJoints; i++){\n        float weight = boneWeights[i];\n        if(int(boneIndices[i]) < 0){\n          continue;\n        }\n        int idx = int(boneIndices[i]) * 3;\n        mat4 jointMatrix = transpose(mat4(skinningJoints[idx],\n                                          skinningJoints[idx+1],\n                                          skinningJoints[idx+2],\n                                          vec4(0, 0, 0, 1)));\n        pos += (jointMatrix * vec4(position, 1.0)).xyz * weight;\n        nom += (mat3(jointMatrix) * normal) * weight;\n        tng += (mat3(jointMatrix) * tangent) * weight;\n      }\n    }else{\n      mat4 jointMatrix = transpose(mat4(skinningJoints[0],\n                                        skinningJoints[1],\n                                        skinningJoints[2],\n                                        vec4(0, 0, 0, 1)));\n      pos = (jointMatrix * vec4(position, 1.0)).xyz;\n      nom = mat3(jointMatrix) * normal;\n      tng = mat3(jointMatrix) * tangent;\n    }\n    v_position = pos;\n    v_normal = normalize(nom);\n    v_tangent = normalize(tng);\n    v_bitangent = cross(v_tangent, v_normal);\n\n    vec3 viewVec = camera.position.xyz - pos;\n    v_eye = viewVec;\n\n    v_color = material.emission;\n    int numLights = 0;\n\n    __VS_LIGHTING__\n\n    float distance = length(viewVec);\n    v_fogFactor = clamp((distance - fog.startDistance) / (fog.endDistance - fog.startDistance), 0.0, 1.0);\n\n    v_texcoord0 = texcoord0;\n    v_texcoord1 = texcoord1;\n    gl_Position = camera.viewProjectionTransform * vec4(pos, 1.0);\n  }\n';
 
 		var _vsAmbient = '\n  for(int i=0; i<NUM_AMBIENT_LIGHTS; i++){\n    v_color += light.ambient[i].color * material.ambient;\n  }\n';
 
@@ -29231,13 +29488,13 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform sampler2D u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord;\n  in vec4 v_color;\n  in vec3 v_eye;\n  //in vec3 v_tangent;\n  //in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  void main() {\n    outColor = v_color;\n\n    vec3 viewVec = normalize(v_eye);\n    vec3 nom = normalize(v_normal);\n\n    // normal texture\n    //if(textureFlags[TEXTURE_NORMAL_INDEX]){\n    //}\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      vec4 color = texture(u_emissionTexture, v_texcoord);\n      outColor = color * outColor;\n    }\n\n    int numLights = 0;\n      \n    outColor.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord);\n      outColor = color * outColor;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    outColor = mix(outColor, fog.color, fogFactor);\n  }\n';
+		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  void main() {\n    outColor = v_color;\n\n    vec3 viewVec = normalize(v_eye);\n    vec3 nom = normalize(v_normal);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      nom = normalize(tsInv * color);\n    }\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        outColor += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        outColor = color * outColor;\n      }\n    }\n\n    int numLights = 0;\n      \n    outColor.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      outColor = color * outColor;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(viewVec, nom);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      outColor += texture(u_reflectiveTexture, r) * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    outColor = mix(outColor, fog.color, fogFactor);\n\n    // DEBUG\n    //if(textureFlags[TEXTURE_NORMAL_INDEX]){\n    //  mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n    //  vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n    //  outColor.rgb = (normalize(tsInv * color) + 1.0) * 0.5;\n    //}\n\n  }\n';
 
 		var _fsAmbient = '\n';
 
-		var _fsDirectional = '\n  for(int i=0; i<NUM_DIRECTIONAL_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directional[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n    }\n  }\n  numLights += NUM_DIRECTIONAL_LIGHTS;\n';
+		var _fsDirectional = '\n  for(int i=0; i<NUM_DIRECTIONAL_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directional[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular;\n    }\n  }\n  numLights += NUM_DIRECTIONAL_LIGHTS;\n';
 
-		var _fsDirectionalShadow = '\n  float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n    outColor.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  }else{\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n    }\n  }\n\n  numLights += 1;\n';
+		var _fsDirectionalShadow = '\n  float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n    outColor.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  }else{\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular;\n    }\n  }\n\n  numLights += 1;\n';
 
 		var _fsOmni = '\n  for(int i=0; i<NUM_OMNI_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.omni[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n    }\n  }\n  numLights += NUM_OMNI_LIGHTS;\n';
 
@@ -29252,7 +29509,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n\n  in vec3 position;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    float sinAngle = sin(rotation.w);\n    float cosAngle = cos(rotation.w);\n    float tcos = 1.0 - cosAngle;\n    vec3 d = vec3(\n        corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n      + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n        corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n      + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n        corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n      + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size * 0.5;\n\n    pos.xyz += d;\n\n    v_color = color;\n    v_texcoord = corner * vec2(0.5, -0.5) + 0.5;\n    gl_Position = projectionTransform * pos;\n  }\n';
+		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n  uniform float stretchFactor;\n\n  in vec3 position;\n  in vec3 velocity;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    vec3 d;\n\n    if(stretchFactor > 0.0){\n      vec4 v = viewTransform * vec4(velocity, 1.0) * stretchFactor;\n      if(corner.y > 0.0){\n        pos.xyz += v.xyz;\n      }\n      vec2 cy = normalize(v.xy);\n      vec2 cx = vec2(-cy.y, cy.x);\n      d = vec3(cx * corner.x + cy * corner.y, 0) * size * 0.5;\n    }else{\n      float sinAngle = sin(rotation.w);\n      float cosAngle = cos(rotation.w);\n      float tcos = 1.0 - cosAngle;\n      d = vec3(\n          corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n        + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n          corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n        + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n          corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n        + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size * 0.5;\n    }\n    pos.xyz += d;\n\n    v_color = color;\n    if(stretchFactor > 0.0){\n      v_color = vec4(1.0, 1.0, 1.0, 1.0); // DEBUG\n    }\n    v_texcoord = corner * vec2(0.5, -0.5) + 0.5;\n    gl_Position = projectionTransform * pos;\n  }\n';
 
 		/**
 		 * @access private
@@ -30253,10 +30510,7 @@ var JSceneKitExample =
 		      }
 		      var gl = this.context;
 		      var geometry = node.presentation.geometry;
-		      var program = this._defaultProgram._glProgram;
-		      if (geometry.program !== null) {
-		        program = geometry.program._glProgram;
-		      }
+		      var program = this._getProgramForGeometry(geometry);
 		      gl.useProgram(program);
 
 		      if (geometry._vertexArrayObjects === null) {
@@ -31201,6 +31455,29 @@ var JSceneKitExample =
 		     */
 
 		  }, {
+		    key: '_getProgramForGeometry',
+		    value: function _getProgramForGeometry(geometry) {
+		      if (geometry.program !== null) {
+		        return geometry.program._glProgram;
+		      }
+		      if (geometry._shadableHelper === null) {
+		        return this._defaultProgram._glProgram;
+		      }
+		      return this._defaultProgram._glProgram;
+		      // TODO: implement
+		      //const gl = this.context
+		      //const program = new SCNProgram()
+		      //program._glProgram = gl.createProgram()
+
+		      //geometry.program = program
+		    }
+
+		    /**
+		     * @access private
+		     * @type {SCNProgram}
+		     */
+
+		  }, {
 		    key: '_replaceTexts',
 
 
@@ -31315,7 +31592,9 @@ var JSceneKitExample =
 		      // TODO: retain attribute locations
 		      var positionLoc = gl.getAttribLocation(program, 'position');
 		      var normalLoc = gl.getAttribLocation(program, 'normal');
-		      var texcoordLoc = gl.getAttribLocation(program, 'texcoord');
+		      var tangentLoc = gl.getAttribLocation(program, 'tangent');
+		      var texcoord0Loc = gl.getAttribLocation(program, 'texcoord0');
+		      var texcoord1Loc = gl.getAttribLocation(program, 'texcoord1');
 		      var boneIndicesLoc = gl.getAttribLocation(program, 'boneIndices');
 		      var boneWeightsLoc = gl.getAttribLocation(program, 'boneWeights');
 
@@ -31332,7 +31611,9 @@ var JSceneKitExample =
 
 		        gl.bindAttribLocation(program, positionLoc, 'position');
 		        gl.bindAttribLocation(program, normalLoc, 'normal');
-		        gl.bindAttribLocation(program, texcoordLoc, 'texcoord');
+		        gl.bindAttribLocation(program, tangentLoc, 'tangent');
+		        gl.bindAttribLocation(program, texcoord0Loc, 'texcoord0');
+		        gl.bindAttribLocation(program, texcoord1Loc, 'texcoord1');
 		        gl.bindAttribLocation(program, boneIndicesLoc, 'boneIndices');
 		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights');
 
@@ -31341,7 +31622,6 @@ var JSceneKitExample =
 		        // position
 		        var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		        if (posSrc) {
-		          //console.log(`posSrc: ${positionLoc}, ${posSrc.componentsPerVector}, ${posSrc.dataStride}, ${posSrc.dataOffset}`)
 		          gl.enableVertexAttribArray(positionLoc);
 		          gl.vertexAttribPointer(positionLoc, posSrc.componentsPerVector, gl.FLOAT, false, posSrc.dataStride, posSrc.dataOffset);
 		        } else {
@@ -31351,21 +31631,38 @@ var JSceneKitExample =
 		        // normal
 		        var nrmSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
 		        if (nrmSrc) {
-		          //console.log(`nrmSrc: ${normalLoc}, ${nrmSrc.componentsPerVector}, ${nrmSrc.dataStride}, ${nrmSrc.dataOffset}`)
 		          gl.enableVertexAttribArray(normalLoc);
 		          gl.vertexAttribPointer(normalLoc, nrmSrc.componentsPerVector, gl.FLOAT, false, nrmSrc.dataStride, nrmSrc.dataOffset);
 		        } else {
 		          gl.disableVertexAttribArray(normalLoc);
 		        }
 
-		        // texcoord
-		        var texSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
-		        if (texSrc) {
-		          //console.log(`texSrc: ${texcoordLoc}, ${texSrc.componentsPerVector}, ${texSrc.dataStride}, ${texSrc.dataOffset}`)
-		          gl.enableVertexAttribArray(texcoordLoc);
-		          gl.vertexAttribPointer(texcoordLoc, texSrc.componentsPerVector, gl.FLOAT, false, texSrc.dataStride, texSrc.dataOffset);
+		        // tangent
+		        var tanSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.tangent)[0];
+		        if (tanSrc) {
+		          gl.enableVertexAttribArray(tangentLoc);
+		          gl.vertexAttribPointer(tangentLoc, tanSrc.componentsPerVector, gl.FLOAT, false, tanSrc.dataStride, tanSrc.dataOffset);
 		        } else {
-		          gl.disableVertexAttribArray(texcoordLoc);
+		          gl.disableVertexAttribArray(tangentLoc);
+		        }
+
+		        // texcoord0
+		        var tex0Src = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
+		        if (tex0Src) {
+		          //console.log(`texSrc: ${texcoordLoc}, ${texSrc.componentsPerVector}, ${texSrc.dataStride}, ${texSrc.dataOffset}`)
+		          gl.enableVertexAttribArray(texcoord0Loc);
+		          gl.vertexAttribPointer(texcoord0Loc, tex0Src.componentsPerVector, gl.FLOAT, false, tex0Src.dataStride, tex0Src.dataOffset);
+		        } else {
+		          gl.disableVertexAttribArray(texcoord0Loc);
+		        }
+
+		        // texcoord1
+		        var tex1Src = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[1];
+		        if (tex1Src) {
+		          gl.enableVertexAttribArray(texcoord1Loc);
+		          gl.vertexAttribPointer(texcoord1Loc, tex1Src.componentsPerVector, gl.FLOAT, false, tex1Src.dataStride, tex1Src.dataOffset);
+		        } else {
+		          gl.disableVertexAttribArray(texcoord1Loc);
 		        }
 
 		        // boneIndices
@@ -32131,12 +32428,6 @@ var JSceneKitExample =
 		    get: function get() {
 		      return this._audioEngine;
 		    }
-
-		    /**
-		     * @access private
-		     * @type {SCNProgram}
-		     */
-
 		  }, {
 		    key: '_defaultProgram',
 		    get: function get() {
@@ -36725,7 +37016,7 @@ var JSceneKitExample =
 		  _createClass(_Particle, [{
 		    key: 'floatArray',
 		    value: function floatArray() {
-		      var baseArray = [].concat(_toConsumableArray(this.position.floatArray()), _toConsumableArray(this.axis.floatArray()), [this.angle], _toConsumableArray(this.color.floatArray()), [this.size]);
+		      var baseArray = [].concat(_toConsumableArray(this.position.floatArray()), _toConsumableArray(this.velocity.floatArray()), _toConsumableArray(this.axis.floatArray()), [this.angle], _toConsumableArray(this.color.floatArray()), [this.size]);
 		      return [].concat(_toConsumableArray(baseArray), [this.texLeft, this.texTop], _toConsumableArray(baseArray), [this.texRight, this.texTop], _toConsumableArray(baseArray), [this.texLeft, this.texBottom], _toConsumableArray(baseArray), [this.texRight, this.texBottom]);
 		    }
 
@@ -37547,6 +37838,7 @@ var JSceneKitExample =
 		      // prepare vertex array data
 		      // TODO: retain attribute locations
 		      var positionLoc = gl.getAttribLocation(program, 'position');
+		      var velocityLoc = gl.getAttribLocation(program, 'velocity');
 		      var rotationLoc = gl.getAttribLocation(program, 'rotation');
 		      var colorLoc = gl.getAttribLocation(program, 'color');
 		      var sizeLoc = gl.getAttribLocation(program, 'size');
@@ -37555,17 +37847,17 @@ var JSceneKitExample =
 
 		      // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
 		      gl.enableVertexAttribArray(positionLoc);
-		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 56, 0);
+		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 68, 0);
+		      gl.enableVertexAttribArray(velocityLoc);
+		      gl.vertexAttribPointer(velocityLoc, 3, gl.FLOAT, false, 68, 12);
 		      gl.enableVertexAttribArray(rotationLoc);
-		      gl.vertexAttribPointer(rotationLoc, 4, gl.FLOAT, false, 56, 12);
+		      gl.vertexAttribPointer(rotationLoc, 4, gl.FLOAT, false, 68, 24);
 		      gl.enableVertexAttribArray(colorLoc);
-		      gl.vertexAttribPointer(colorLoc, 4, gl.FLOAT, false, 56, 28);
+		      gl.vertexAttribPointer(colorLoc, 4, gl.FLOAT, false, 68, 40);
 		      gl.enableVertexAttribArray(sizeLoc);
-		      gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 56, 44);
-		      //gl.enableVertexAttribArray(lifeLoc)
-		      //gl.vertexAttribPointer(lifeLoc, 1, gl.FLOAT, false, 48, 36)
+		      gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 68, 56);
 		      gl.enableVertexAttribArray(cornerLoc);
-		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, 56, 48);
+		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, 68, 60);
 
 		      /*
 		      const arr = []
@@ -37946,6 +38238,8 @@ var JSceneKitExample =
 		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
 		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 		      }
+
+		      gl.uniform1f(gl.getUniformLocation(program, 'stretchFactor'), this.stretchFactor);
 
 		      // buffer particle data
 		      gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer);
