@@ -217,31 +217,39 @@ var JSceneKitExample =
 
 		var _NSColorSpaceModel2 = _interopRequireDefault(_NSColorSpaceModel);
 
-		var _CGBlendMode = __webpack_require__(13);
+		var _AVAudioMixerNode = __webpack_require__(13);
+
+		var _AVAudioMixerNode2 = _interopRequireDefault(_AVAudioMixerNode);
+
+		var _AVAudioNode = __webpack_require__(14);
+
+		var _AVAudioNode2 = _interopRequireDefault(_AVAudioNode);
+
+		var _CGBlendMode = __webpack_require__(15);
 
 		var _CGBlendMode2 = _interopRequireDefault(_CGBlendMode);
 
-		var _CGLineCap = __webpack_require__(14);
+		var _CGLineCap = __webpack_require__(16);
 
 		var _CGLineCap2 = _interopRequireDefault(_CGLineCap);
 
-		var _CGLineJoin = __webpack_require__(15);
+		var _CGLineJoin = __webpack_require__(17);
 
 		var _CGLineJoin2 = _interopRequireDefault(_CGLineJoin);
 
-		var _CGMutablePath = __webpack_require__(16);
+		var _CGMutablePath = __webpack_require__(18);
 
 		var _CGMutablePath2 = _interopRequireDefault(_CGMutablePath);
 
-		var _CGPath = __webpack_require__(17);
+		var _CGPath = __webpack_require__(19);
 
 		var _CGPath2 = _interopRequireDefault(_CGPath);
 
-		var _CGPathApplierFunction = __webpack_require__(19);
+		var _CGPathApplierFunction = __webpack_require__(21);
 
 		var _CGPathApplierFunction2 = _interopRequireDefault(_CGPathApplierFunction);
 
-		var _CGPathFillRule = __webpack_require__(18);
+		var _CGPathFillRule = __webpack_require__(20);
 
 		var _CGPathFillRule2 = _interopRequireDefault(_CGPathFillRule);
 
@@ -257,71 +265,79 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _CGVector = __webpack_require__(20);
+		var _CGVector = __webpack_require__(22);
 
 		var _CGVector2 = _interopRequireDefault(_CGVector);
 
-		var _DispatchObject = __webpack_require__(21);
+		var _DispatchObject = __webpack_require__(23);
 
 		var _DispatchObject2 = _interopRequireDefault(_DispatchObject);
 
-		var _DispatchQueue = __webpack_require__(22);
+		var _DispatchQueue = __webpack_require__(24);
 
 		var _DispatchQueue2 = _interopRequireDefault(_DispatchQueue);
 
-		var _DispatchTime = __webpack_require__(23);
+		var _DispatchTime = __webpack_require__(25);
 
 		var _DispatchTime2 = _interopRequireDefault(_DispatchTime);
 
-		var _DispatchTimeInterval = __webpack_require__(24);
+		var _DispatchTimeInterval = __webpack_require__(26);
 
 		var _DispatchTimeInterval2 = _interopRequireDefault(_DispatchTimeInterval);
 
-		var _NSArray = __webpack_require__(25);
+		var _NotificationCenter = __webpack_require__(27);
+
+		var _NotificationCenter2 = _interopRequireDefault(_NotificationCenter);
+
+		var _NSArray = __webpack_require__(29);
 
 		var _NSArray2 = _interopRequireDefault(_NSArray);
 
-		var _NSCoder = __webpack_require__(26);
+		var _NSCoder = __webpack_require__(30);
 
 		var _NSCoder2 = _interopRequireDefault(_NSCoder);
 
-		var _NSColorSpace = __webpack_require__(27);
+		var _NSColorSpace = __webpack_require__(31);
 
 		var _NSColorSpace2 = _interopRequireDefault(_NSColorSpace);
 
-		var _NSData = __webpack_require__(28);
+		var _NSData = __webpack_require__(32);
 
 		var _NSData2 = _interopRequireDefault(_NSData);
 
-		var _NSDictionary = __webpack_require__(29);
+		var _NSDictionary = __webpack_require__(33);
 
 		var _NSDictionary2 = _interopRequireDefault(_NSDictionary);
 
-		var _NSKeyedArchiver = __webpack_require__(30);
+		var _NSKeyedArchiver = __webpack_require__(34);
 
 		var _NSKeyedArchiver2 = _interopRequireDefault(_NSKeyedArchiver);
 
-		var _NSKeyedUnarchiver = __webpack_require__(31);
+		var _NSKeyedUnarchiver = __webpack_require__(35);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
-		var _NSMutableArray = __webpack_require__(36);
+		var _NSMutableArray = __webpack_require__(40);
 
 		var _NSMutableArray2 = _interopRequireDefault(_NSMutableArray);
 
-		var _NSMutableData = __webpack_require__(37);
+		var _NSMutableData = __webpack_require__(41);
 
 		var _NSMutableData2 = _interopRequireDefault(_NSMutableData);
 
-		var _NSMutableDictionary = __webpack_require__(38);
+		var _NSMutableDictionary = __webpack_require__(42);
 
 		var _NSMutableDictionary2 = _interopRequireDefault(_NSMutableDictionary);
 
-		var _NSURL = __webpack_require__(39);
+		var _NSNotification = __webpack_require__(28);
+
+		var _NSNotification2 = _interopRequireDefault(_NSNotification);
+
+		var _NSURL = __webpack_require__(43);
 
 		var _NSURL2 = _interopRequireDefault(_NSURL);
 
-		var _NSValue = __webpack_require__(40);
+		var _NSValue = __webpack_require__(44);
 
 		var _NSValue2 = _interopRequireDefault(_NSValue);
 
@@ -329,691 +345,691 @@ var JSceneKitExample =
 
 		var _NSObject2 = _interopRequireDefault(_NSObject);
 
-		var _CAAction = __webpack_require__(45);
+		var _CAAction = __webpack_require__(49);
 
 		var _CAAction2 = _interopRequireDefault(_CAAction);
 
-		var _CAAnimation = __webpack_require__(46);
+		var _CAAnimation = __webpack_require__(50);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
-		var _CAAnimationDelegate = __webpack_require__(50);
+		var _CAAnimationDelegate = __webpack_require__(54);
 
 		var _CAAnimationDelegate2 = _interopRequireDefault(_CAAnimationDelegate);
 
-		var _CAAnimationGroup = __webpack_require__(52);
+		var _CAAnimationGroup = __webpack_require__(56);
 
 		var _CAAnimationGroup2 = _interopRequireDefault(_CAAnimationGroup);
 
-		var _CABasicAnimation = __webpack_require__(53);
+		var _CABasicAnimation = __webpack_require__(57);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _CACurrentMediaTime = __webpack_require__(56);
+		var _CACurrentMediaTime = __webpack_require__(60);
 
 		var _CACurrentMediaTime2 = _interopRequireDefault(_CACurrentMediaTime);
 
-		var _CAKeyframeAnimation = __webpack_require__(57);
+		var _CAKeyframeAnimation = __webpack_require__(61);
 
 		var _CAKeyframeAnimation2 = _interopRequireDefault(_CAKeyframeAnimation);
 
-		var _CAMediaTiming = __webpack_require__(48);
+		var _CAMediaTiming = __webpack_require__(52);
 
 		var _CAMediaTiming2 = _interopRequireDefault(_CAMediaTiming);
 
-		var _CAMediaTimingFunction = __webpack_require__(49);
+		var _CAMediaTimingFunction = __webpack_require__(53);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAPropertyAnimation = __webpack_require__(54);
+		var _CAPropertyAnimation = __webpack_require__(58);
 
 		var _CAPropertyAnimation2 = _interopRequireDefault(_CAPropertyAnimation);
 
-		var _CATransform3D = __webpack_require__(41);
+		var _CATransform3D = __webpack_require__(45);
 
 		var _CATransform3D2 = _interopRequireDefault(_CATransform3D);
 
-		var _SCNAction = __webpack_require__(58);
+		var _SCNAction = __webpack_require__(62);
 
 		var _SCNAction2 = _interopRequireDefault(_SCNAction);
 
-		var _SCNActionable = __webpack_require__(60);
+		var _SCNActionable = __webpack_require__(64);
 
 		var _SCNActionable2 = _interopRequireDefault(_SCNActionable);
 
-		var _SCNActionCustom = __webpack_require__(61);
+		var _SCNActionCustom = __webpack_require__(65);
 
 		var _SCNActionCustom2 = _interopRequireDefault(_SCNActionCustom);
 
-		var _SCNActionFade = __webpack_require__(62);
+		var _SCNActionFade = __webpack_require__(66);
 
 		var _SCNActionFade2 = _interopRequireDefault(_SCNActionFade);
 
-		var _SCNActionGroup = __webpack_require__(147);
+		var _SCNActionGroup = __webpack_require__(151);
 
 		var _SCNActionGroup2 = _interopRequireDefault(_SCNActionGroup);
 
-		var _SCNActionHide = __webpack_require__(148);
+		var _SCNActionHide = __webpack_require__(152);
 
 		var _SCNActionHide2 = _interopRequireDefault(_SCNActionHide);
 
-		var _SCNActionJavaScript = __webpack_require__(149);
+		var _SCNActionJavaScript = __webpack_require__(153);
 
 		var _SCNActionJavaScript2 = _interopRequireDefault(_SCNActionJavaScript);
 
-		var _SCNActionMove = __webpack_require__(150);
+		var _SCNActionMove = __webpack_require__(154);
 
 		var _SCNActionMove2 = _interopRequireDefault(_SCNActionMove);
 
-		var _SCNActionPerformSelector = __webpack_require__(151);
+		var _SCNActionPerformSelector = __webpack_require__(155);
 
 		var _SCNActionPerformSelector2 = _interopRequireDefault(_SCNActionPerformSelector);
 
-		var _SCNActionPlaySound = __webpack_require__(152);
+		var _SCNActionPlaySound = __webpack_require__(156);
 
 		var _SCNActionPlaySound2 = _interopRequireDefault(_SCNActionPlaySound);
 
-		var _SCNActionReference = __webpack_require__(153);
+		var _SCNActionReference = __webpack_require__(157);
 
 		var _SCNActionReference2 = _interopRequireDefault(_SCNActionReference);
 
-		var _SCNActionRemove = __webpack_require__(154);
+		var _SCNActionRemove = __webpack_require__(158);
 
 		var _SCNActionRemove2 = _interopRequireDefault(_SCNActionRemove);
 
-		var _SCNActionRepeat = __webpack_require__(155);
+		var _SCNActionRepeat = __webpack_require__(159);
 
 		var _SCNActionRepeat2 = _interopRequireDefault(_SCNActionRepeat);
 
-		var _SCNActionRotate = __webpack_require__(156);
+		var _SCNActionRotate = __webpack_require__(160);
 
 		var _SCNActionRotate2 = _interopRequireDefault(_SCNActionRotate);
 
-		var _SCNActionRunAction = __webpack_require__(157);
+		var _SCNActionRunAction = __webpack_require__(161);
 
 		var _SCNActionRunAction2 = _interopRequireDefault(_SCNActionRunAction);
 
-		var _SCNActionRunBlock = __webpack_require__(158);
+		var _SCNActionRunBlock = __webpack_require__(162);
 
 		var _SCNActionRunBlock2 = _interopRequireDefault(_SCNActionRunBlock);
 
-		var _SCNActionScale = __webpack_require__(159);
+		var _SCNActionScale = __webpack_require__(163);
 
 		var _SCNActionScale2 = _interopRequireDefault(_SCNActionScale);
 
-		var _SCNActionSequence = __webpack_require__(160);
+		var _SCNActionSequence = __webpack_require__(164);
 
 		var _SCNActionSequence2 = _interopRequireDefault(_SCNActionSequence);
 
-		var _SCNActionTimingFunction = __webpack_require__(161);
+		var _SCNActionTimingFunction = __webpack_require__(165);
 
 		var _SCNActionTimingFunction2 = _interopRequireDefault(_SCNActionTimingFunction);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNActionWait = __webpack_require__(162);
+		var _SCNActionWait = __webpack_require__(166);
 
 		var _SCNActionWait2 = _interopRequireDefault(_SCNActionWait);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNAnimationEvent = __webpack_require__(51);
+		var _SCNAnimationEvent = __webpack_require__(55);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
-		var _SCNAnimationEventBlock = __webpack_require__(163);
+		var _SCNAnimationEventBlock = __webpack_require__(167);
 
 		var _SCNAnimationEventBlock2 = _interopRequireDefault(_SCNAnimationEventBlock);
 
-		var _SCNAntialiasingMode = __webpack_require__(122);
+		var _SCNAntialiasingMode = __webpack_require__(126);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNAudioPlayer = __webpack_require__(145);
+		var _SCNAudioPlayer = __webpack_require__(149);
 
 		var _SCNAudioPlayer2 = _interopRequireDefault(_SCNAudioPlayer);
 
-		var _SCNAudioSource = __webpack_require__(146);
+		var _SCNAudioSource = __webpack_require__(150);
 
 		var _SCNAudioSource2 = _interopRequireDefault(_SCNAudioSource);
 
-		var _SCNBillboardAxis = __webpack_require__(164);
+		var _SCNBillboardAxis = __webpack_require__(168);
 
 		var _SCNBillboardAxis2 = _interopRequireDefault(_SCNBillboardAxis);
 
-		var _SCNBillboardConstraint = __webpack_require__(165);
+		var _SCNBillboardConstraint = __webpack_require__(169);
 
 		var _SCNBillboardConstraint2 = _interopRequireDefault(_SCNBillboardConstraint);
 
-		var _SCNBindingBlock = __webpack_require__(85);
+		var _SCNBindingBlock = __webpack_require__(89);
 
 		var _SCNBindingBlock2 = _interopRequireDefault(_SCNBindingBlock);
 
-		var _SCNBlendMode = __webpack_require__(81);
+		var _SCNBlendMode = __webpack_require__(85);
 
 		var _SCNBlendMode2 = _interopRequireDefault(_SCNBlendMode);
 
-		var _SCNBoundingVolume = __webpack_require__(65);
+		var _SCNBoundingVolume = __webpack_require__(69);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNBox = __webpack_require__(89);
+		var _SCNBox = __webpack_require__(93);
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNBufferBindingBlock = __webpack_require__(126);
+		var _SCNBufferBindingBlock = __webpack_require__(130);
 
 		var _SCNBufferBindingBlock2 = _interopRequireDefault(_SCNBufferBindingBlock);
 
-		var _SCNBufferFrequency = __webpack_require__(125);
+		var _SCNBufferFrequency = __webpack_require__(129);
 
 		var _SCNBufferFrequency2 = _interopRequireDefault(_SCNBufferFrequency);
 
-		var _SCNBufferStream = __webpack_require__(127);
+		var _SCNBufferStream = __webpack_require__(131);
 
 		var _SCNBufferStream2 = _interopRequireDefault(_SCNBufferStream);
 
-		var _SCNCamera = __webpack_require__(128);
+		var _SCNCamera = __webpack_require__(132);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNCapsule = __webpack_require__(166);
+		var _SCNCapsule = __webpack_require__(170);
 
 		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
 
-		var _SCNChamferMode = __webpack_require__(167);
+		var _SCNChamferMode = __webpack_require__(171);
 
 		var _SCNChamferMode2 = _interopRequireDefault(_SCNChamferMode);
 
-		var _SCNCone = __webpack_require__(168);
+		var _SCNCone = __webpack_require__(172);
 
 		var _SCNCone2 = _interopRequireDefault(_SCNCone);
 
-		var _SCNConstraint = __webpack_require__(139);
+		var _SCNConstraint = __webpack_require__(143);
 
 		var _SCNConstraint2 = _interopRequireDefault(_SCNConstraint);
 
-		var _SCNCullMode = __webpack_require__(67);
+		var _SCNCullMode = __webpack_require__(71);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNCylinder = __webpack_require__(169);
+		var _SCNCylinder = __webpack_require__(173);
 
 		var _SCNCylinder2 = _interopRequireDefault(_SCNCylinder);
 
-		var _SCNDebugOptions = __webpack_require__(118);
+		var _SCNDebugOptions = __webpack_require__(122);
 
 		var _SCNDebugOptions2 = _interopRequireDefault(_SCNDebugOptions);
 
-		var _SCNFieldForceEvaluator = __webpack_require__(143);
+		var _SCNFieldForceEvaluator = __webpack_require__(147);
 
 		var _SCNFieldForceEvaluator2 = _interopRequireDefault(_SCNFieldForceEvaluator);
 
-		var _SCNFilterMode = __webpack_require__(75);
+		var _SCNFilterMode = __webpack_require__(79);
 
 		var _SCNFilterMode2 = _interopRequireDefault(_SCNFilterMode);
 
-		var _SCNFloor = __webpack_require__(170);
+		var _SCNFloor = __webpack_require__(174);
 
 		var _SCNFloor2 = _interopRequireDefault(_SCNFloor);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNGeometryElement = __webpack_require__(70);
+		var _SCNGeometryElement = __webpack_require__(74);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(71);
+		var _SCNGeometryPrimitiveType = __webpack_require__(75);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNHitTestOption = __webpack_require__(120);
+		var _SCNHitTestOption = __webpack_require__(124);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(104);
+		var _SCNHitTestResult = __webpack_require__(108);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
-		var _SCNIKConstraint = __webpack_require__(171);
+		var _SCNIKConstraint = __webpack_require__(175);
 
 		var _SCNIKConstraint2 = _interopRequireDefault(_SCNIKConstraint);
 
-		var _SCNLayer = __webpack_require__(172);
+		var _SCNLayer = __webpack_require__(176);
 
 		var _SCNLayer2 = _interopRequireDefault(_SCNLayer);
 
-		var _SCNLevelOfDetail = __webpack_require__(72);
+		var _SCNLevelOfDetail = __webpack_require__(76);
 
 		var _SCNLevelOfDetail2 = _interopRequireDefault(_SCNLevelOfDetail);
 
-		var _SCNLight = __webpack_require__(82);
+		var _SCNLight = __webpack_require__(86);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNLookAtConstraint = __webpack_require__(173);
+		var _SCNLookAtConstraint = __webpack_require__(177);
 
 		var _SCNLookAtConstraint2 = _interopRequireDefault(_SCNLookAtConstraint);
 
-		var _SCNMaterial = __webpack_require__(73);
+		var _SCNMaterial = __webpack_require__(77);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNMaterialProperty = __webpack_require__(74);
+		var _SCNMaterialProperty = __webpack_require__(78);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4EqualToMatrix = __webpack_require__(174);
+		var _SCNMatrix4EqualToMatrix = __webpack_require__(178);
 
 		var _SCNMatrix4EqualToMatrix2 = _interopRequireDefault(_SCNMatrix4EqualToMatrix);
 
-		var _SCNMatrix4FromGLKMatrix = __webpack_require__(175);
+		var _SCNMatrix4FromGLKMatrix = __webpack_require__(179);
 
 		var _SCNMatrix4FromGLKMatrix2 = _interopRequireDefault(_SCNMatrix4FromGLKMatrix);
 
-		var _SCNMatrix4FromMat = __webpack_require__(176);
+		var _SCNMatrix4FromMat = __webpack_require__(180);
 
 		var _SCNMatrix4FromMat2 = _interopRequireDefault(_SCNMatrix4FromMat);
 
-		var _SCNMatrix4Invert = __webpack_require__(177);
+		var _SCNMatrix4Invert = __webpack_require__(181);
 
 		var _SCNMatrix4Invert2 = _interopRequireDefault(_SCNMatrix4Invert);
 
-		var _SCNMatrix4IsIdentity = __webpack_require__(178);
+		var _SCNMatrix4IsIdentity = __webpack_require__(182);
 
 		var _SCNMatrix4IsIdentity2 = _interopRequireDefault(_SCNMatrix4IsIdentity);
 
-		var _SCNMatrix4MakeRotation = __webpack_require__(179);
+		var _SCNMatrix4MakeRotation = __webpack_require__(183);
 
 		var _SCNMatrix4MakeRotation2 = _interopRequireDefault(_SCNMatrix4MakeRotation);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(138);
+		var _SCNMatrix4MakeScale = __webpack_require__(142);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNMatrix4Mult = __webpack_require__(180);
+		var _SCNMatrix4Mult = __webpack_require__(184);
 
 		var _SCNMatrix4Mult2 = _interopRequireDefault(_SCNMatrix4Mult);
 
-		var _SCNMatrix4Rotate = __webpack_require__(181);
+		var _SCNMatrix4Rotate = __webpack_require__(185);
 
 		var _SCNMatrix4Rotate2 = _interopRequireDefault(_SCNMatrix4Rotate);
 
-		var _SCNMatrix4Scale = __webpack_require__(182);
+		var _SCNMatrix4Scale = __webpack_require__(186);
 
 		var _SCNMatrix4Scale2 = _interopRequireDefault(_SCNMatrix4Scale);
 
-		var _SCNMatrix4ToGLKMatrix = __webpack_require__(183);
+		var _SCNMatrix4ToGLKMatrix = __webpack_require__(187);
 
 		var _SCNMatrix4ToGLKMatrix2 = _interopRequireDefault(_SCNMatrix4ToGLKMatrix);
 
-		var _SCNMatrix4ToMat = __webpack_require__(184);
+		var _SCNMatrix4ToMat = __webpack_require__(188);
 
 		var _SCNMatrix4ToMat2 = _interopRequireDefault(_SCNMatrix4ToMat);
 
-		var _SCNMatrix4Translate = __webpack_require__(185);
+		var _SCNMatrix4Translate = __webpack_require__(189);
 
 		var _SCNMatrix4Translate2 = _interopRequireDefault(_SCNMatrix4Translate);
 
-		var _SCNMorpher = __webpack_require__(135);
+		var _SCNMorpher = __webpack_require__(139);
 
 		var _SCNMorpher2 = _interopRequireDefault(_SCNMorpher);
 
-		var _SCNMorpherCalculationMode = __webpack_require__(136);
+		var _SCNMorpherCalculationMode = __webpack_require__(140);
 
 		var _SCNMorpherCalculationMode2 = _interopRequireDefault(_SCNMorpherCalculationMode);
 
-		var _SCNMovabilityHint = __webpack_require__(140);
+		var _SCNMovabilityHint = __webpack_require__(144);
 
 		var _SCNMovabilityHint2 = _interopRequireDefault(_SCNMovabilityHint);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNNodeRendererDelegate = __webpack_require__(141);
+		var _SCNNodeRendererDelegate = __webpack_require__(145);
 
 		var _SCNNodeRendererDelegate2 = _interopRequireDefault(_SCNNodeRendererDelegate);
 
-		var _SCNOrderedDictionary = __webpack_require__(77);
+		var _SCNOrderedDictionary = __webpack_require__(81);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNParticleBirthDirection = __webpack_require__(107);
+		var _SCNParticleBirthDirection = __webpack_require__(111);
 
 		var _SCNParticleBirthDirection2 = _interopRequireDefault(_SCNParticleBirthDirection);
 
-		var _SCNParticleBirthLocation = __webpack_require__(106);
+		var _SCNParticleBirthLocation = __webpack_require__(110);
 
 		var _SCNParticleBirthLocation2 = _interopRequireDefault(_SCNParticleBirthLocation);
 
-		var _SCNParticleBlendMode = __webpack_require__(109);
+		var _SCNParticleBlendMode = __webpack_require__(113);
 
 		var _SCNParticleBlendMode2 = _interopRequireDefault(_SCNParticleBlendMode);
 
-		var _SCNParticleEvent = __webpack_require__(112);
+		var _SCNParticleEvent = __webpack_require__(116);
 
 		var _SCNParticleEvent2 = _interopRequireDefault(_SCNParticleEvent);
 
-		var _SCNParticleEventBlock = __webpack_require__(113);
+		var _SCNParticleEventBlock = __webpack_require__(117);
 
 		var _SCNParticleEventBlock2 = _interopRequireDefault(_SCNParticleEventBlock);
 
-		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(108);
+		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(112);
 
 		var _SCNParticleImageSequenceAnimationMode2 = _interopRequireDefault(_SCNParticleImageSequenceAnimationMode);
 
-		var _SCNParticleInputMode = __webpack_require__(115);
+		var _SCNParticleInputMode = __webpack_require__(119);
 
 		var _SCNParticleInputMode2 = _interopRequireDefault(_SCNParticleInputMode);
 
-		var _SCNParticleModifierBlock = __webpack_require__(117);
+		var _SCNParticleModifierBlock = __webpack_require__(121);
 
 		var _SCNParticleModifierBlock2 = _interopRequireDefault(_SCNParticleModifierBlock);
 
-		var _SCNParticleModifierStage = __webpack_require__(116);
+		var _SCNParticleModifierStage = __webpack_require__(120);
 
 		var _SCNParticleModifierStage2 = _interopRequireDefault(_SCNParticleModifierStage);
 
-		var _SCNParticleOrientationMode = __webpack_require__(110);
+		var _SCNParticleOrientationMode = __webpack_require__(114);
 
 		var _SCNParticleOrientationMode2 = _interopRequireDefault(_SCNParticleOrientationMode);
 
-		var _SCNParticlePropertyController = __webpack_require__(114);
+		var _SCNParticlePropertyController = __webpack_require__(118);
 
 		var _SCNParticlePropertyController2 = _interopRequireDefault(_SCNParticlePropertyController);
 
-		var _SCNParticleSortingMode = __webpack_require__(111);
+		var _SCNParticleSortingMode = __webpack_require__(115);
 
 		var _SCNParticleSortingMode2 = _interopRequireDefault(_SCNParticleSortingMode);
 
-		var _SCNParticleSystem = __webpack_require__(105);
+		var _SCNParticleSystem = __webpack_require__(109);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNPhysicsBallSocketJoint = __webpack_require__(186);
+		var _SCNPhysicsBallSocketJoint = __webpack_require__(190);
 
 		var _SCNPhysicsBallSocketJoint2 = _interopRequireDefault(_SCNPhysicsBallSocketJoint);
 
-		var _SCNPhysicsBehavior = __webpack_require__(98);
+		var _SCNPhysicsBehavior = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsBodyType = __webpack_require__(102);
+		var _SCNPhysicsBodyType = __webpack_require__(106);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
-		var _SCNPhysicsCollisionCategory = __webpack_require__(187);
+		var _SCNPhysicsCollisionCategory = __webpack_require__(191);
 
 		var _SCNPhysicsCollisionCategory2 = _interopRequireDefault(_SCNPhysicsCollisionCategory);
 
-		var _SCNPhysicsContact = __webpack_require__(100);
+		var _SCNPhysicsContact = __webpack_require__(104);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
-		var _SCNPhysicsContactDelegate = __webpack_require__(99);
+		var _SCNPhysicsContactDelegate = __webpack_require__(103);
 
 		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
 
-		var _SCNPhysicsField = __webpack_require__(142);
+		var _SCNPhysicsField = __webpack_require__(146);
 
 		var _SCNPhysicsField2 = _interopRequireDefault(_SCNPhysicsField);
 
-		var _SCNPhysicsFieldScope = __webpack_require__(144);
+		var _SCNPhysicsFieldScope = __webpack_require__(148);
 
 		var _SCNPhysicsFieldScope2 = _interopRequireDefault(_SCNPhysicsFieldScope);
 
-		var _SCNPhysicsHingeJoint = __webpack_require__(188);
+		var _SCNPhysicsHingeJoint = __webpack_require__(192);
 
 		var _SCNPhysicsHingeJoint2 = _interopRequireDefault(_SCNPhysicsHingeJoint);
 
-		var _SCNPhysicsShape = __webpack_require__(103);
+		var _SCNPhysicsShape = __webpack_require__(107);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNPhysicsSliderJoint = __webpack_require__(189);
+		var _SCNPhysicsSliderJoint = __webpack_require__(193);
 
 		var _SCNPhysicsSliderJoint2 = _interopRequireDefault(_SCNPhysicsSliderJoint);
 
-		var _SCNPhysicsVehicle = __webpack_require__(190);
+		var _SCNPhysicsVehicle = __webpack_require__(194);
 
 		var _SCNPhysicsVehicle2 = _interopRequireDefault(_SCNPhysicsVehicle);
 
-		var _SCNPhysicsVehicleWheel = __webpack_require__(191);
+		var _SCNPhysicsVehicleWheel = __webpack_require__(195);
 
 		var _SCNPhysicsVehicleWheel2 = _interopRequireDefault(_SCNPhysicsVehicleWheel);
 
-		var _SCNPhysicsWorld = __webpack_require__(97);
+		var _SCNPhysicsWorld = __webpack_require__(101);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNPlane = __webpack_require__(192);
+		var _SCNPlane = __webpack_require__(196);
 
 		var _SCNPlane2 = _interopRequireDefault(_SCNPlane);
 
-		var _SCNProgram = __webpack_require__(123);
+		var _SCNProgram = __webpack_require__(127);
 
 		var _SCNProgram2 = _interopRequireDefault(_SCNProgram);
 
-		var _SCNProgramDelegate = __webpack_require__(124);
+		var _SCNProgramDelegate = __webpack_require__(128);
 
 		var _SCNProgramDelegate2 = _interopRequireDefault(_SCNProgramDelegate);
 
-		var _SCNPyramid = __webpack_require__(193);
+		var _SCNPyramid = __webpack_require__(197);
 
 		var _SCNPyramid2 = _interopRequireDefault(_SCNPyramid);
 
-		var _SCNQuaternion = __webpack_require__(55);
+		var _SCNQuaternion = __webpack_require__(59);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNReferenceLoadingPolicy = __webpack_require__(194);
+		var _SCNReferenceLoadingPolicy = __webpack_require__(198);
 
 		var _SCNReferenceLoadingPolicy2 = _interopRequireDefault(_SCNReferenceLoadingPolicy);
 
-		var _SCNReferenceNode = __webpack_require__(195);
+		var _SCNReferenceNode = __webpack_require__(199);
 
 		var _SCNReferenceNode2 = _interopRequireDefault(_SCNReferenceNode);
 
-		var _SCNRenderer = __webpack_require__(86);
+		var _SCNRenderer = __webpack_require__(90);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
-		var _SCNRenderingAPI = __webpack_require__(119);
+		var _SCNRenderingAPI = __webpack_require__(123);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNSceneExportDelegate = __webpack_require__(90);
+		var _SCNSceneExportDelegate = __webpack_require__(94);
 
 		var _SCNSceneExportDelegate2 = _interopRequireDefault(_SCNSceneExportDelegate);
 
-		var _SCNSceneExportProgressHandler = __webpack_require__(91);
+		var _SCNSceneExportProgressHandler = __webpack_require__(95);
 
 		var _SCNSceneExportProgressHandler2 = _interopRequireDefault(_SCNSceneExportProgressHandler);
 
-		var _SCNSceneRenderer = __webpack_require__(87);
+		var _SCNSceneRenderer = __webpack_require__(91);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNSceneRendererDelegate = __webpack_require__(121);
+		var _SCNSceneRendererDelegate = __webpack_require__(125);
 
 		var _SCNSceneRendererDelegate2 = _interopRequireDefault(_SCNSceneRendererDelegate);
 
-		var _SCNSceneSource = __webpack_require__(92);
+		var _SCNSceneSource = __webpack_require__(96);
 
 		var _SCNSceneSource2 = _interopRequireDefault(_SCNSceneSource);
 
-		var _SCNSceneSourceStatus = __webpack_require__(94);
+		var _SCNSceneSourceStatus = __webpack_require__(98);
 
 		var _SCNSceneSourceStatus2 = _interopRequireDefault(_SCNSceneSourceStatus);
 
-		var _SCNSceneSourceStatusHandler = __webpack_require__(93);
+		var _SCNSceneSourceStatusHandler = __webpack_require__(97);
 
 		var _SCNSceneSourceStatusHandler2 = _interopRequireDefault(_SCNSceneSourceStatusHandler);
 
-		var _SCNShadable = __webpack_require__(68);
+		var _SCNShadable = __webpack_require__(72);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNShadableHelper = __webpack_require__(196);
+		var _SCNShadableHelper = __webpack_require__(200);
 
 		var _SCNShadableHelper2 = _interopRequireDefault(_SCNShadableHelper);
 
-		var _SCNShaderModifierEntryPoint = __webpack_require__(197);
+		var _SCNShaderModifierEntryPoint = __webpack_require__(201);
 
 		var _SCNShaderModifierEntryPoint2 = _interopRequireDefault(_SCNShaderModifierEntryPoint);
 
-		var _SCNShadowMode = __webpack_require__(134);
+		var _SCNShadowMode = __webpack_require__(138);
 
 		var _SCNShadowMode2 = _interopRequireDefault(_SCNShadowMode);
 
-		var _SCNShape = __webpack_require__(198);
+		var _SCNShape = __webpack_require__(202);
 
 		var _SCNShape2 = _interopRequireDefault(_SCNShape);
 
-		var _SCNSkinner = __webpack_require__(137);
+		var _SCNSkinner = __webpack_require__(141);
 
 		var _SCNSkinner2 = _interopRequireDefault(_SCNSkinner);
 
-		var _SCNSphere = __webpack_require__(199);
+		var _SCNSphere = __webpack_require__(203);
 
 		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
 
-		var _SCNTechnique = __webpack_require__(84);
+		var _SCNTechnique = __webpack_require__(88);
 
 		var _SCNTechnique2 = _interopRequireDefault(_SCNTechnique);
 
-		var _SCNTechniqueSupport = __webpack_require__(83);
+		var _SCNTechniqueSupport = __webpack_require__(87);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNText = __webpack_require__(200);
+		var _SCNText = __webpack_require__(204);
 
 		var _SCNText2 = _interopRequireDefault(_SCNText);
 
-		var _SCNTorus = __webpack_require__(201);
+		var _SCNTorus = __webpack_require__(205);
 
 		var _SCNTorus2 = _interopRequireDefault(_SCNTorus);
 
-		var _SCNTransaction = __webpack_require__(78);
+		var _SCNTransaction = __webpack_require__(82);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNTransformConstraint = __webpack_require__(202);
+		var _SCNTransformConstraint = __webpack_require__(206);
 
 		var _SCNTransformConstraint2 = _interopRequireDefault(_SCNTransformConstraint);
 
-		var _SCNTransparencyMode = __webpack_require__(80);
+		var _SCNTransparencyMode = __webpack_require__(84);
 
 		var _SCNTransparencyMode2 = _interopRequireDefault(_SCNTransparencyMode);
 
-		var _SCNTube = __webpack_require__(203);
+		var _SCNTube = __webpack_require__(207);
 
 		var _SCNTube2 = _interopRequireDefault(_SCNTube);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3EqualToVector = __webpack_require__(204);
+		var _SCNVector3EqualToVector = __webpack_require__(208);
 
 		var _SCNVector3EqualToVector2 = _interopRequireDefault(_SCNVector3EqualToVector);
 
-		var _SCNVector3FromFloat = __webpack_require__(205);
+		var _SCNVector3FromFloat = __webpack_require__(209);
 
 		var _SCNVector3FromFloat2 = _interopRequireDefault(_SCNVector3FromFloat);
 
-		var _SCNVector3FromGLKVector = __webpack_require__(206);
+		var _SCNVector3FromGLKVector = __webpack_require__(210);
 
 		var _SCNVector3FromGLKVector2 = _interopRequireDefault(_SCNVector3FromGLKVector);
 
-		var _SCNVector3Make = __webpack_require__(207);
+		var _SCNVector3Make = __webpack_require__(211);
 
 		var _SCNVector3Make2 = _interopRequireDefault(_SCNVector3Make);
 
-		var _SCNVector3ToFloat = __webpack_require__(208);
+		var _SCNVector3ToFloat = __webpack_require__(212);
 
 		var _SCNVector3ToFloat2 = _interopRequireDefault(_SCNVector3ToFloat);
 
-		var _SCNVector3ToGLKVector = __webpack_require__(209);
+		var _SCNVector3ToGLKVector = __webpack_require__(213);
 
 		var _SCNVector3ToGLKVector2 = _interopRequireDefault(_SCNVector3ToGLKVector);
 
-		var _SCNVector3Zero = __webpack_require__(210);
+		var _SCNVector3Zero = __webpack_require__(214);
 
 		var _SCNVector3Zero2 = _interopRequireDefault(_SCNVector3Zero);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNVector4EqualToVector = __webpack_require__(211);
+		var _SCNVector4EqualToVector = __webpack_require__(215);
 
 		var _SCNVector4EqualToVector2 = _interopRequireDefault(_SCNVector4EqualToVector);
 
-		var _SCNVector4FromFloat = __webpack_require__(212);
+		var _SCNVector4FromFloat = __webpack_require__(216);
 
 		var _SCNVector4FromFloat2 = _interopRequireDefault(_SCNVector4FromFloat);
 
-		var _SCNVector4FromGLKVector = __webpack_require__(213);
+		var _SCNVector4FromGLKVector = __webpack_require__(217);
 
 		var _SCNVector4FromGLKVector2 = _interopRequireDefault(_SCNVector4FromGLKVector);
 
-		var _SCNVector4Make = __webpack_require__(214);
+		var _SCNVector4Make = __webpack_require__(218);
 
 		var _SCNVector4Make2 = _interopRequireDefault(_SCNVector4Make);
 
-		var _SCNVector4ToFloat = __webpack_require__(215);
+		var _SCNVector4ToFloat = __webpack_require__(219);
 
 		var _SCNVector4ToFloat2 = _interopRequireDefault(_SCNVector4ToFloat);
 
-		var _SCNVector4ToGLKVector = __webpack_require__(216);
+		var _SCNVector4ToGLKVector = __webpack_require__(220);
 
 		var _SCNVector4ToGLKVector2 = _interopRequireDefault(_SCNVector4ToGLKVector);
 
-		var _SCNView = __webpack_require__(217);
+		var _SCNView = __webpack_require__(221);
 
 		var _SCNView2 = _interopRequireDefault(_SCNView);
 
-		var _SCNWrapMode = __webpack_require__(79);
+		var _SCNWrapMode = __webpack_require__(83);
 
 		var _SCNWrapMode2 = _interopRequireDefault(_SCNWrapMode);
 
-		var _SKAction = __webpack_require__(218);
+		var _SKAction = __webpack_require__(222);
 
 		var _SKAction2 = _interopRequireDefault(_SKAction);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKBlendMode = __webpack_require__(130);
+		var _SKBlendMode = __webpack_require__(134);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -1021,83 +1037,83 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKEffectNode = __webpack_require__(220);
+		var _SKEffectNode = __webpack_require__(224);
 
 		var _SKEffectNode2 = _interopRequireDefault(_SKEffectNode);
 
-		var _SKFade = __webpack_require__(221);
+		var _SKFade = __webpack_require__(225);
 
 		var _SKFade2 = _interopRequireDefault(_SKFade);
 
-		var _SKGroup = __webpack_require__(222);
+		var _SKGroup = __webpack_require__(226);
 
 		var _SKGroup2 = _interopRequireDefault(_SKGroup);
 
-		var _SKLabelHorizontalAlignmentMode = __webpack_require__(223);
+		var _SKLabelHorizontalAlignmentMode = __webpack_require__(227);
 
 		var _SKLabelHorizontalAlignmentMode2 = _interopRequireDefault(_SKLabelHorizontalAlignmentMode);
 
-		var _SKLabelNode = __webpack_require__(224);
+		var _SKLabelNode = __webpack_require__(228);
 
 		var _SKLabelNode2 = _interopRequireDefault(_SKLabelNode);
 
-		var _SKLabelVerticalAlignmentMode = __webpack_require__(225);
+		var _SKLabelVerticalAlignmentMode = __webpack_require__(229);
 
 		var _SKLabelVerticalAlignmentMode2 = _interopRequireDefault(_SKLabelVerticalAlignmentMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
-		var _SKScale = __webpack_require__(226);
+		var _SKScale = __webpack_require__(230);
 
 		var _SKScale2 = _interopRequireDefault(_SKScale);
 
-		var _SKScene = __webpack_require__(227);
+		var _SKScene = __webpack_require__(231);
 
 		var _SKScene2 = _interopRequireDefault(_SKScene);
 
-		var _SKSceneScaleMode = __webpack_require__(228);
+		var _SKSceneScaleMode = __webpack_require__(232);
 
 		var _SKSceneScaleMode2 = _interopRequireDefault(_SKSceneScaleMode);
 
-		var _SKSequence = __webpack_require__(229);
+		var _SKSequence = __webpack_require__(233);
 
 		var _SKSequence2 = _interopRequireDefault(_SKSequence);
 
-		var _SKShapeNode = __webpack_require__(230);
+		var _SKShapeNode = __webpack_require__(234);
 
 		var _SKShapeNode2 = _interopRequireDefault(_SKShapeNode);
 
-		var _SKSpriteNode = __webpack_require__(129);
+		var _SKSpriteNode = __webpack_require__(133);
 
 		var _SKSpriteNode2 = _interopRequireDefault(_SKSpriteNode);
 
-		var _SKTexture = __webpack_require__(132);
+		var _SKTexture = __webpack_require__(136);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
-		var _SKTextureFilteringMode = __webpack_require__(133);
+		var _SKTextureFilteringMode = __webpack_require__(137);
 
 		var _SKTextureFilteringMode2 = _interopRequireDefault(_SKTextureFilteringMode);
 
-		var _SKWait = __webpack_require__(231);
+		var _SKWait = __webpack_require__(235);
 
 		var _SKWait2 = _interopRequireDefault(_SKWait);
 
-		var _AjaxRequest2 = __webpack_require__(96);
+		var _AjaxRequest2 = __webpack_require__(100);
 
 		var _AjaxRequest3 = _interopRequireDefault(_AjaxRequest2);
 
-		var _BinaryReader2 = __webpack_require__(34);
+		var _BinaryReader2 = __webpack_require__(38);
 
 		var _BinaryReader3 = _interopRequireDefault(_BinaryReader2);
 
-		var _BinaryRequest2 = __webpack_require__(95);
+		var _BinaryRequest2 = __webpack_require__(99);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _Buffer2 = __webpack_require__(232);
+		var _Buffer2 = __webpack_require__(236);
 
 		var _Buffer3 = _interopRequireDefault(_Buffer2);
 
@@ -1105,15 +1121,15 @@ var JSceneKitExample =
 
 		var _ClassList3 = _interopRequireDefault(_ClassList2);
 
-		var _File2 = __webpack_require__(32);
+		var _File2 = __webpack_require__(36);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(33);
+		var _FileReader2 = __webpack_require__(37);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
-		var _HTMLCanvasElement2 = __webpack_require__(234);
+		var _HTMLCanvasElement2 = __webpack_require__(238);
 
 		var _HTMLCanvasElement3 = _interopRequireDefault(_HTMLCanvasElement2);
 
@@ -1121,6 +1137,8 @@ var JSceneKitExample =
 
 		_ClassList3.default.registerClass(_NSColor2.default);
 		_ClassList3.default.registerClass(_NSColorSpaceModel2.default);
+		_ClassList3.default.registerClass(_AVAudioMixerNode2.default);
+		_ClassList3.default.registerClass(_AVAudioNode2.default);
 		_ClassList3.default.registerClass(_CGBlendMode2.default);
 		_ClassList3.default.registerClass(_CGLineCap2.default);
 		_ClassList3.default.registerClass(_CGLineJoin2.default);
@@ -1136,6 +1154,7 @@ var JSceneKitExample =
 		_ClassList3.default.registerClass(_DispatchQueue2.default);
 		_ClassList3.default.registerClass(_DispatchTime2.default);
 		_ClassList3.default.registerClass(_DispatchTimeInterval2.default);
+		_ClassList3.default.registerClass(_NotificationCenter2.default);
 		_ClassList3.default.registerClass(_NSArray2.default);
 		_ClassList3.default.registerClass(_NSCoder2.default);
 		_ClassList3.default.registerClass(_NSColorSpace2.default);
@@ -1146,6 +1165,7 @@ var JSceneKitExample =
 		_ClassList3.default.registerClass(_NSMutableArray2.default);
 		_ClassList3.default.registerClass(_NSMutableData2.default);
 		_ClassList3.default.registerClass(_NSMutableDictionary2.default);
+		_ClassList3.default.registerClass(_NSNotification2.default);
 		_ClassList3.default.registerClass(_NSURL2.default);
 		_ClassList3.default.registerClass(_NSValue2.default);
 		_ClassList3.default.registerClass(_NSObject2.default);
@@ -1337,11 +1357,13 @@ var JSceneKitExample =
 		_ClassList3.default.registerClass(_SKSpriteNode2.default);
 		_ClassList3.default.registerClass(_SKTexture2.default);
 		_ClassList3.default.registerClass(_SKTextureFilteringMode2.default);
-		_ClassList3.default.registerClass(_SKWait2.default);
+		_ClassList3.default.registerClass(_SKWait2.default
 
 		/*global exports*/
-		exports.NSColor = _NSColor2.default;
+		);exports.NSColor = _NSColor2.default;
 		exports.NSColorSpaceModel = _NSColorSpaceModel2.default;
+		exports.AVAudioMixerNode = _AVAudioMixerNode2.default;
+		exports.AVAudioNode = _AVAudioNode2.default;
 		exports.CGBlendMode = _CGBlendMode2.default;
 		exports.CGLineCap = _CGLineCap2.default;
 		exports.CGLineJoin = _CGLineJoin2.default;
@@ -1357,6 +1379,7 @@ var JSceneKitExample =
 		exports.DispatchQueue = _DispatchQueue2.default;
 		exports.DispatchTime = _DispatchTime2.default;
 		exports.DispatchTimeInterval = _DispatchTimeInterval2.default;
+		exports.NotificationCenter = _NotificationCenter2.default;
 		exports.NSArray = _NSArray2.default;
 		exports.NSCoder = _NSCoder2.default;
 		exports.NSColorSpace = _NSColorSpace2.default;
@@ -1367,6 +1390,7 @@ var JSceneKitExample =
 		exports.NSMutableArray = _NSMutableArray2.default;
 		exports.NSMutableData = _NSMutableData2.default;
 		exports.NSMutableDictionary = _NSMutableDictionary2.default;
+		exports.NSNotification = _NSNotification2.default;
 		exports.NSURL = _NSURL2.default;
 		exports.NSValue = _NSValue2.default;
 		exports.NSObject = _NSObject2.default;
@@ -5990,8 +6014,9 @@ var JSceneKitExample =
 		          if (typeof this._propTypes[key] === 'undefined') {
 		            //console.warn(`unknown key ${key}`)
 		            if (this._propTypes.$unknownKey && this._propTypes.$unknownKey(key) !== null) {
-		              propTypes[key] = this._propTypes.$unknownKey(key);
+		              propTypes[key] = this._propTypes.$unknownKey(key
 		              //console.warn(`unknown key: ${key} => ${propTypes[key]}`)
+		              );
 		            } else {
 		              console.error(this.className + ': property ' + key + ' not registered');
 		              throw new Error(this.className + ': property ' + key + ' not registered');
@@ -10108,6 +10133,93 @@ var JSceneKitExample =
 
 	/***/ },
 	/* 13 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _AVAudioNode2 = __webpack_require__(14);
+
+		var _AVAudioNode3 = _interopRequireDefault(_AVAudioNode2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		var AVAudioMixerNode = function (_AVAudioNode) {
+		  _inherits(AVAudioMixerNode, _AVAudioNode);
+
+		  function AVAudioMixerNode() {
+		    _classCallCheck(this, AVAudioMixerNode);
+
+		    var _this = _possibleConstructorReturn(this, (AVAudioMixerNode.__proto__ || Object.getPrototypeOf(AVAudioMixerNode)).call(this));
+
+		    _this._gainNode = null;
+		    return _this;
+		  }
+
+		  _createClass(AVAudioMixerNode, [{
+		    key: 'volume',
+		    get: function get() {
+		      return this._gainNode.gain.value;
+		    },
+		    set: function set(newValue) {
+		      this._gainNode.gain.value = newValue;
+		    }
+		  }]);
+
+		  return AVAudioMixerNode;
+		}(_AVAudioNode3.default);
+
+		exports.default = AVAudioMixerNode;
+
+	/***/ },
+	/* 14 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		var AVAudioNode = function (_NSObject) {
+		  _inherits(AVAudioNode, _NSObject);
+
+		  function AVAudioNode() {
+		    _classCallCheck(this, AVAudioNode);
+
+		    return _possibleConstructorReturn(this, (AVAudioNode.__proto__ || Object.getPrototypeOf(AVAudioNode)).call(this));
+		  }
+
+		  return AVAudioNode;
+		}(_NSObject3.default);
+
+		exports.default = AVAudioNode;
+
+	/***/ },
+	/* 15 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -10183,7 +10295,7 @@ var JSceneKitExample =
 		exports.default = CGBlendMode;
 
 	/***/ },
-	/* 14 */
+	/* 16 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -10209,7 +10321,7 @@ var JSceneKitExample =
 		exports.default = CGLineCap;
 
 	/***/ },
-	/* 15 */
+	/* 17 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -10235,7 +10347,7 @@ var JSceneKitExample =
 		exports.default = CGLineJoin;
 
 	/***/ },
-	/* 16 */
+	/* 18 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -10254,7 +10366,7 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _CGPath = __webpack_require__(17);
+		var _CGPath = __webpack_require__(19);
 
 		var _CGPath2 = _interopRequireDefault(_CGPath);
 
@@ -10517,7 +10629,7 @@ var JSceneKitExample =
 		exports.default = CGMutablePath;
 
 	/***/ },
-	/* 17 */
+	/* 19 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -10532,15 +10644,15 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _CGLineCap = __webpack_require__(14);
+		var _CGLineCap = __webpack_require__(16);
 
 		var _CGLineCap2 = _interopRequireDefault(_CGLineCap);
 
-		var _CGLineJoin = __webpack_require__(15);
+		var _CGLineJoin = __webpack_require__(17);
 
 		var _CGLineJoin2 = _interopRequireDefault(_CGLineJoin);
 
-		var _CGMutablePath = __webpack_require__(16);
+		var _CGMutablePath = __webpack_require__(18);
 
 		var _CGMutablePath2 = _interopRequireDefault(_CGMutablePath);
 
@@ -10548,11 +10660,11 @@ var JSceneKitExample =
 
 		var _CGPoint2 = _interopRequireDefault(_CGPoint);
 
-		var _CGPathFillRule = __webpack_require__(18);
+		var _CGPathFillRule = __webpack_require__(20);
 
 		var _CGPathFillRule2 = _interopRequireDefault(_CGPathFillRule);
 
-		var _CGPathApplierFunction = __webpack_require__(19);
+		var _CGPathApplierFunction = __webpack_require__(21);
 
 		var _CGPathApplierFunction2 = _interopRequireDefault(_CGPathApplierFunction);
 
@@ -10908,7 +11020,7 @@ var JSceneKitExample =
 		exports.default = CGPath;
 
 	/***/ },
-	/* 18 */
+	/* 20 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -10932,7 +11044,7 @@ var JSceneKitExample =
 		exports.default = CGPathFillRule;
 
 	/***/ },
-	/* 19 */
+	/* 21 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -10952,7 +11064,7 @@ var JSceneKitExample =
 		exports.default = CGPathApplierFunction;
 
 	/***/ },
-	/* 20 */
+	/* 22 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -11026,7 +11138,7 @@ var JSceneKitExample =
 		exports.default = CGVector;
 
 	/***/ },
-	/* 21 */
+	/* 23 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -11117,7 +11229,7 @@ var JSceneKitExample =
 		exports.default = DispatchObject;
 
 	/***/ },
-	/* 22 */
+	/* 24 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -11128,7 +11240,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _DispatchObject2 = __webpack_require__(21);
+		var _DispatchObject2 = __webpack_require__(23);
 
 		var _DispatchObject3 = _interopRequireDefault(_DispatchObject2);
 
@@ -11153,12 +11265,11 @@ var JSceneKitExample =
 		  inherit: 0,
 		  never: 2,
 		  workItem: 1
-		};
 
-		/**
-		 * @deprecated
-		 */
-		var _GlobalQueuePriority = {
+		  /**
+		   * @deprecated
+		   */
+		};var _GlobalQueuePriority = {
 		  background: 3,
 		  default: 1,
 		  high: 0,
@@ -11442,7 +11553,7 @@ var JSceneKitExample =
 		_main = new DispatchQueue("com.apple.main-thread", null);
 
 	/***/ },
-	/* 23 */
+	/* 25 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -11532,7 +11643,7 @@ var JSceneKitExample =
 		exports.default = DispatchTime;
 
 	/***/ },
-	/* 24 */
+	/* 26 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -11568,7 +11679,1287 @@ var JSceneKitExample =
 		exports.default = DispatchTimeInterval;
 
 	/***/ },
-	/* 25 */
+	/* 27 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		var _NSNotification = __webpack_require__(28);
+
+		var _NSNotification2 = _interopRequireDefault(_NSNotification);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		var _default = null;
+
+		/**
+		 * A notification dispatch mechanism that enables the broadcast of information to registered observers.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/foundation/notificationcenter
+		 */
+
+		var NotificationCenter = function (_NSObject) {
+		  _inherits(NotificationCenter, _NSObject);
+
+		  /**
+		   * constructor
+		   * @access public
+		   * @returns {void}
+		   */
+		  function NotificationCenter() {
+		    _classCallCheck(this, NotificationCenter);
+
+		    return _possibleConstructorReturn(this, (NotificationCenter.__proto__ || Object.getPrototypeOf(NotificationCenter)).call(this));
+		  }
+
+		  // Getting the Notification Center
+
+		  /**
+		   * Returns the process’s default notification center.
+		   * @type {NotificationCenter}
+		   * @desc 
+		   * @see https://developer.apple.com/documentation/foundation/notificationcenter/1414169-default
+		   */
+
+
+		  _createClass(NotificationCenter, [{
+		    key: 'addObserverForNameObjectUsing',
+
+
+		    // Managing Notification Observers
+
+		    /**
+		     * Adds an entry to the receiver’s dispatch table with a notification queue and a block to add to the queue, and optional criteria: notification name and sender.
+		     * @access public
+		     * @param {?NSNotification.Name} name - The name of the notification for which to register the observer; that is, only notifications with this name are used to add the block to the operation queue.If you pass nil, the notification center doesn’t use a notification’s name to decide whether to add the block to the operation queue.
+		     * @param {?Object} obj - The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer.If you pass nil, the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
+		     * @param {?OperationQueue} queue - The operation queue to which block should be added.If you pass nil, the block is run synchronously on the posting thread.
+		     * @param {function(arg1: Notification): void} block - The block to be executed when the notification is received.The block is copied by the notification center and (the copy) held until the observer registration is removed. The block takes one argument:notificationThe notification.
+		     * @returns {NSObjectProtocol} - 
+		     * @desc If a given notification triggers more than one observer block, the blocks may all be executed concurrently with respect to one another (but on their given queue or on the current thread).The following example shows how you can register to receive locale change notifications.let center = NSNotificationCenter.defaultCenter()
+		    let mainQueue = NSOperationQueue.mainQueue()
+		    self.localeChangeObserver = center.addObserverForName(NSCurrentLocaleDidChangeNotification, object: nil, queue: mainQueue) { (note) in
+		      print("The user's locale changed to: \(NSLocale.currentLocale().localeIdentifier)")
+		    }
+		    To unregister observations, you pass the object returned by this method to removeObserver(_:). You must invoke removeObserver(_:) or removeObserver(_:name:object:) before any object specified by addObserverForName:object:queue:usingBlock: is deallocated.let center = NSNotificationCenter.defaultCenter()
+		    center.removeObserver(self.localeChangeObserver)
+		    Another common pattern is to create a one-time notification by removing the observer from within the observation block, as in the following example.let center = NSNotificationCenter.defaultCenter()
+		    let mainQueue = NSOperationQueue.mainQueue()
+		    var token: NSObjectProtocol?
+		    token = center.addObserverForName("OneTimeNotification", object: nil, queue: mainQueue) { (note) in
+		      print("Received the notification!")
+		      center.removeObserver(token!)
+		    }
+		    let center = NSNotificationCenter.defaultCenter()
+		    let mainQueue = NSOperationQueue.mainQueue()
+		    self.localeChangeObserver = center.addObserverForName(NSCurrentLocaleDidChangeNotification, object: nil, queue: mainQueue) { (note) in
+		      print("The user's locale changed to: \(NSLocale.currentLocale().localeIdentifier)")
+		    }
+		    let center = NSNotificationCenter.defaultCenter()
+		    center.removeObserver(self.localeChangeObserver)
+		    let center = NSNotificationCenter.defaultCenter()
+		    let mainQueue = NSOperationQueue.mainQueue()
+		    var token: NSObjectProtocol?
+		    token = center.addObserverForName("OneTimeNotification", object: nil, queue: mainQueue) { (note) in
+		      print("Received the notification!")
+		      center.removeObserver(token!)
+		    }
+		      * @see https://developer.apple.com/documentation/foundation/notificationcenter/1411723-addobserver
+		     */
+		    value: function addObserverForNameObjectUsing(name, obj, queue, block) {
+		      return null;
+		    }
+
+		    /**
+		     * Adds an entry to the receiver’s dispatch table with an observer, a notification selector and optional criteria: notification name and sender.
+		     * @access public
+		     * @param {Object} observer - Object registering as an observer. This value must not be nil.
+		     * @param {function} aSelector - Selector that specifies the message the receiver sends observer to notify it of the notification posting. The method specified by aSelector must have one and only one argument (an instance of NSNotification).
+		     * @param {?NSNotification.Name} aName - The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer.If you pass nil, the notification center doesn’t use a notification’s name to decide whether to deliver it to the observer.
+		     * @param {?Object} anObject - The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer.If you pass nil, the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
+		     * @returns {void}
+		     * @desc If your app targets iOS 9.0 and later or macOS 10.11 and later, you don't need to unregister an observer in its deallocation method. If your app targets earlier releases, be sure to invoke removeObserver(_:name:object:) before observer or any object specified in addObserver:selector:name:object: is deallocated.
+		     * @see https://developer.apple.com/documentation/foundation/notificationcenter/1415360-addobserver
+		     */
+
+		  }, {
+		    key: 'addObserverSelectorNameObject',
+		    value: function addObserverSelectorNameObject(observer, aSelector, aName, anObject) {
+		      var f = aSelector.bind(observer);
+		      if (aName === _NSNotification2.default.Name.GCControllerDidConnect) {
+		        window.addEventListener('gamepadconnected', function (e) {
+		          f(new _NSNotification2.default(aName, e.gamepad, anObject));
+		        });
+		      }
+		    }
+
+		    /**
+		     * Removes all the entries specifying a given observer from the receiver’s dispatch table.
+		     * @access public
+		     * @param {Object} observer - The observer to remove. Must not be nil.
+		     * @returns {void}
+		     * @desc Be sure to invoke this method (or removeObserver(_:name:object:)) before observer or any object specified in addObserver(_:selector:name:object:) is deallocated.You should not use this method to remove all observers from an object that is going to be long-lived, because your code may not be the only code adding observers that involve the object. The following example illustrates how to unregister someObserver for all notifications for which it had previously registered. This is safe to do in the dealloc method, but should not otherwise be used—use removeObserver(_:name:object:) instead.[[NSNotificationCenter defaultCenter] removeObserver:someObserver];
+		    [[NSNotificationCenter defaultCenter] removeObserver:someObserver];
+		      * @see https://developer.apple.com/documentation/foundation/notificationcenter/1413994-removeobserver
+		     */
+
+		  }, {
+		    key: 'removeObserver',
+		    value: function removeObserver(observer) {}
+
+		    /**
+		     * Removes matching entries from the receiver’s dispatch table.
+		     * @access public
+		     * @param {Object} observer - Observer to remove from the dispatch table. Specify an observer to remove only entries for this observer. Must not be nil, or message will have no effect.
+		     * @param {?NSNotification.Name} aName - Name of the notification to remove from dispatch table. Specify a notification name to remove only entries that specify this notification name. When nil, the receiver does not use notification names as criteria for removal.
+		     * @param {?Object} anObject - Sender to remove from the dispatch table. Specify a notification sender to remove only entries that specify this sender. When nil, the receiver does not use notification senders as criteria for removal.
+		     * @returns {void}
+		     * @desc Be sure to invoke this method (or removeObserver(_:)) before the observer object or any object specified in addObserver(_:selector:name:object:) is deallocated.
+		     * @see https://developer.apple.com/documentation/foundation/notificationcenter/1407263-removeobserver
+		     */
+
+		  }, {
+		    key: 'removeObserverNameObject',
+		    value: function removeObserverNameObject(observer, aName, anObject) {}
+
+		    // Posting Notifications
+
+		    /**
+		     * Posts a given notification to the receiver.
+		     * @access public
+		     * @param {Notification} notification - The notification to post. This value must not be nil.
+		     * @returns {void}
+		     * @desc You can create a notification with the NSNotification class method init(name:object:) or notificationWithName:object:userInfo:. An exception is raised if notification is nil.
+		     * @see https://developer.apple.com/documentation/foundation/notificationcenter/1410472-post
+		     */
+
+		  }, {
+		    key: 'post',
+		    value: function post(notification) {}
+
+		    /**
+		     * Creates a notification with a given name and sender and posts it to the receiver.
+		     * @access public
+		     * @param {NSNotification.Name} aName - The name of the notification.
+		     * @param {?Object} anObject - The object posting the notification.
+		     * @returns {void}
+		     * @desc This method invokes post(name:object:userInfo:) with an aUserInfo argument of nil.
+		     * @see https://developer.apple.com/documentation/foundation/notificationcenter/1415812-post
+		     */
+
+		  }, {
+		    key: 'postNameObject',
+		    value: function postNameObject(aName, anObject) {}
+
+		    /**
+		     * Creates a notification with a given name, sender, and information and posts it to the receiver.
+		     * @access public
+		     * @param {NSNotification.Name} aName - The name of the notification.
+		     * @param {?Object} anObject - The object posting the notification.
+		     * @param {?Map<AnyHashable, Object>} [aUserInfo = null] - Information about the the notification. May be nil.
+		     * @returns {void}
+		     * @desc This method is the preferred method for posting notifications.
+		     * @see https://developer.apple.com/documentation/foundation/notificationcenter/1410608-post
+		     */
+
+		  }, {
+		    key: 'postNameObjectUserInfo',
+		    value: function postNameObjectUserInfo(aName, anObject) {
+		      var aUserInfo = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+		    }
+		  }], [{
+		    key: 'default',
+		    get: function get() {
+		      if (_default === null) {
+		        _default = new NotificationCenter();
+		      }
+		      return _default;
+		    }
+		  }]);
+
+		  return NotificationCenter;
+		}(_NSObject3.default);
+
+		exports.default = NotificationCenter;
+
+	/***/ },
+	/* 28 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		var _Name = {
+		  AVAudioEngineConfigurationChange: Symbol(),
+		  AVAudioSessionInterruption: Symbol(),
+		  AVAudioSessionMediaServicesWereLost: Symbol(),
+		  AVAudioSessionMediaServicesWereReset: Symbol(),
+		  AVAudioSessionRouteChange: Symbol(),
+		  AVAudioSessionSilenceSecondaryAudioHint: Symbol(),
+		  AVAudioUnitComponentTagsDidChange: Symbol(),
+		  CKAccountChanged: Symbol(),
+		  CLKComplicationServerActiveComplicationsDidChange: Symbol(),
+		  CNContactStoreDidChange: Symbol(),
+		  EKEventStoreChanged: Symbol(),
+		  HKUserPreferencesDidChange: Symbol(),
+		  HMCharacteristicPropertySupportsEvent: Symbol(),
+		  NSBundleResourceRequestLowDiskSpace: Symbol(),
+		  NSCalendarDayChanged: Symbol(),
+		  NSDidBecomeSingleThreaded: Symbol(),
+		  NSExtensionHostDidBecomeActive: Symbol(),
+		  NSExtensionHostDidEnterBackground: Symbol(),
+		  NSExtensionHostWillEnterForeground: Symbol(),
+		  NSExtensionHostWillResignActive: Symbol(),
+		  NSFileHandleConnectionAccepted: Symbol(),
+		  NSFileHandleDataAvailable: Symbol(),
+		  NSFileHandleReadToEndOfFileCompletion: Symbol(),
+		  NSHTTPCookieManagerAcceptPolicyChanged: Symbol(),
+		  NSHTTPCookieManagerCookiesChanged: Symbol(),
+		  NSManagedObjectContextDidSave: Symbol(),
+		  NSManagedObjectContextObjectsDidChange: Symbol(),
+		  NSManagedObjectContextWillSave: Symbol(),
+		  NSMetadataQueryDidFinishGathering: Symbol(),
+		  NSMetadataQueryDidStartGathering: Symbol(),
+		  NSMetadataQueryDidUpdate: Symbol(),
+		  NSMetadataQueryGatheringProgress: Symbol(),
+		  NSPersistentStoreCoordinatorStoresDidChange: Symbol(),
+		  NSPersistentStoreCoordinatorStoresWillChange: Symbol(),
+		  NSPersistentStoreCoordinatorWillRemoveStore: Symbol(),
+		  NSProcessInfoPowerStateDidChange: Symbol(),
+		  NSSystemClockDidChange: Symbol(),
+		  NSSystemTimeZoneDidChange: Symbol(),
+		  NSThreadWillExit: Symbol(),
+		  NSURLCredentialStorageChanged: Symbol(),
+		  NSUbiquityIdentityDidChange: Symbol(),
+		  NSUndoManagerCheckpoint: Symbol(),
+		  NSUndoManagerDidCloseUndoGroup: Symbol(),
+		  NSUndoManagerDidOpenUndoGroup: Symbol(),
+		  NSUndoManagerDidRedoChange: Symbol(),
+		  NSUndoManagerDidUndoChange: Symbol(),
+		  NSUndoManagerWillCloseUndoGroup: Symbol(),
+		  NSUndoManagerWillRedoChange: Symbol(),
+		  NSUndoManagerWillUndoChange: Symbol(),
+		  NSWillBecomeMultiThreaded: Symbol(),
+		  PKPassLibraryDidChange: Symbol(),
+		  PKPassLibraryRemotePaymentPassesDidChange: Symbol(),
+		  UIAccessibilityAnnouncementDidFinish: Symbol(),
+		  UIAccessibilityElementFocused: Symbol(),
+		  WKAudioFilePlayerItemDidPlayToEndTime: Symbol(),
+		  WKAudioFilePlayerItemFailedToPlayToEndTime: Symbol(),
+		  WKAudioFilePlayerItemTimeJumped: Symbol(),
+		  ABPeoplePickerDisplayedPropertyDidChange: Symbol(),
+		  ABPeoplePickerGroupSelectionDidChange: Symbol(),
+		  ABPeoplePickerNameSelectionDidChange: Symbol(),
+		  ABPeoplePickerValueSelectionDidChange: Symbol(),
+		  ACAccountStoreDidChange: Symbol(),
+		  AVAssetChapterMetadataGroupsDidChange: Symbol(),
+		  AVAssetContainsFragmentsDidChange: Symbol(),
+		  AVAssetDurationDidChange: Symbol(),
+		  AVAssetMediaSelectionGroupsDidChange: Symbol(),
+		  AVAssetTrackSegmentsDidChange: Symbol(),
+		  AVAssetTrackTimeRangeDidChange: Symbol(),
+		  AVAssetTrackTrackAssociationsDidChange: Symbol(),
+		  AVAssetWasDefragmented: Symbol(),
+		  AVCaptureDeviceWasConnected: Symbol(),
+		  AVCaptureDeviceWasDisconnected: Symbol(),
+		  AVCaptureInputPortFormatDescriptionDidChange: Symbol(),
+		  AVCaptureSessionDidStartRunning: Symbol(),
+		  AVCaptureSessionDidStopRunning: Symbol(),
+		  AVCaptureSessionRuntimeError: Symbol(),
+		  AVFragmentedMovieContainsMovieFragmentsDidChange: Symbol(),
+		  AVFragmentedMovieDurationDidChange: Symbol(),
+		  AVFragmentedMovieTrackSegmentsDidChange: Symbol(),
+		  AVFragmentedMovieTrackTimeRangeDidChange: Symbol(),
+		  AVFragmentedMovieTrackTotalSampleDataLengthDidChange: Symbol(),
+		  AVFragmentedMovieWasDefragmented: Symbol(),
+		  AVPlayerItemDidPlayToEndTime: Symbol(),
+		  AVPlayerItemFailedToPlayToEndTime: Symbol(),
+		  AVPlayerItemNewAccessLogEntry: Symbol(),
+		  AVPlayerItemNewErrorLogEntry: Symbol(),
+		  AVPlayerItemPlaybackStalled: Symbol(),
+		  AVPlayerItemTimeJumped: Symbol(),
+		  AVSampleBufferDisplayLayerFailedToDecode: Symbol(),
+		  CWBSSIDDidChange: Symbol(),
+		  CWCountryCodeDidChange: Symbol(),
+		  CWLinkDidChange: Symbol(),
+		  CWLinkQualityDidChange: Symbol(),
+		  CWModeDidChange: Symbol(),
+		  CWPowerDidChange: Symbol(),
+		  CWSSIDDidChange: Symbol(),
+		  CWScanCacheDidUpdate: Symbol(),
+		  GCControllerDidConnect: Symbol(),
+		  GCControllerDidDisconnect: Symbol(),
+		  IKFilterBrowserFilterDoubleClick: Symbol(),
+		  IKFilterBrowserFilterSelected: Symbol(),
+		  IKFilterBrowserWillPreviewFilter: Symbol(),
+		  IOBluetoothHostControllerPoweredOff: Symbol(),
+		  IOBluetoothHostControllerPoweredOn: Symbol(),
+		  IOBluetoothL2CAPChannelPublished: Symbol(),
+		  IOBluetoothL2CAPChannelTerminated: Symbol(),
+		  MKAnnotationCalloutInfoDidChange: Symbol(),
+		  NEFilterConfigurationDidChange: Symbol(),
+		  NEVPNConfigurationChange: Symbol(),
+		  NEVPNStatusDidChange: Symbol(),
+		  announcementRequested: Symbol(),
+		  applicationActivated: Symbol(),
+		  applicationDeactivated: Symbol(),
+		  applicationHidden: Symbol(),
+		  applicationShown: Symbol(),
+		  created: Symbol(),
+		  drawerCreated: Symbol(),
+		  focusedUIElementChanged: Symbol(),
+		  focusedWindowChanged: Symbol(),
+		  helpTagCreated: Symbol(),
+		  layoutChanged: Symbol(),
+		  mainWindowChanged: Symbol(),
+		  moved: Symbol(),
+		  resized: Symbol(),
+		  rowCollapsed: Symbol(),
+		  rowCountChanged: Symbol(),
+		  rowExpanded: Symbol(),
+		  selectedCellsChanged: Symbol(),
+		  selectedChildrenChanged: Symbol(),
+		  selectedChildrenMoved: Symbol(),
+		  selectedColumnsChanged: Symbol(),
+		  selectedRowsChanged: Symbol(),
+		  selectedTextChanged: Symbol(),
+		  sheetCreated: Symbol(),
+		  titleChanged: Symbol(),
+		  uiElementDestroyed: Symbol(),
+		  unitsChanged: Symbol(),
+		  valueChanged: Symbol(),
+		  windowCreated: Symbol(),
+		  windowDeminiaturized: Symbol(),
+		  windowMiniaturized: Symbol(),
+		  windowMoved: Symbol(),
+		  windowResized: Symbol(),
+		  progressMarkNotification: Symbol(),
+		  antialiasThresholdChangedNotification: Symbol(),
+		  NSAppleEventManagerWillProcessFirstEvent: Symbol(),
+		  didBecomeActiveNotification: Symbol(),
+		  didChangeOcclusionStateNotification: Symbol(),
+		  didChangeScreenParametersNotification: Symbol(),
+		  didFinishLaunchingNotification: Symbol(),
+		  didFinishRestoringWindowsNotification: Symbol(),
+		  didHideNotification: Symbol(),
+		  didResignActiveNotification: Symbol(),
+		  didUnhideNotification: Symbol(),
+		  didUpdateNotification: Symbol(),
+		  willBecomeActiveNotification: Symbol(),
+		  willFinishLaunchingNotification: Symbol(),
+		  willHideNotification: Symbol(),
+		  willResignActiveNotification: Symbol(),
+		  willTerminateNotification: Symbol(),
+		  willUnhideNotification: Symbol(),
+		  willUpdateNotification: Symbol(),
+		  columnConfigurationDidChangeNotification: Symbol(),
+		  NSClassDescriptionNeededForClass: Symbol(),
+		  didChangeNotification: Symbol(),
+		  colorDidChangeNotification: Symbol(),
+		  selectionDidChangeNotification: Symbol(),
+		  selectionIsChangingNotification: Symbol(),
+		  willDismissNotification: Symbol(),
+		  willPopUpNotification: Symbol(),
+		  contextHelpModeDidActivateNotification: Symbol(),
+		  contextHelpModeDidDeactivateNotification: Symbol(),
+		  textDidBeginEditingNotification: Symbol(),
+		  textDidChangeNotification: Symbol(),
+		  textDidEndEditingNotification: Symbol(),
+		  currentControlTintDidChangeNotification: Symbol(),
+		  didCloseNotification: Symbol(),
+		  didOpenNotification: Symbol(),
+		  willCloseNotification: Symbol(),
+		  willOpenNotification: Symbol(),
+		  fontSetChangedNotification: Symbol(),
+		  registryDidChangeNotification: Symbol(),
+		  didAddItemNotification: Symbol(),
+		  didBeginTrackingNotification: Symbol(),
+		  didChangeItemNotification: Symbol(),
+		  didEndTrackingNotification: Symbol(),
+		  didRemoveItemNotification: Symbol(),
+		  didSendActionNotification: Symbol(),
+		  willSendActionNotification: Symbol(),
+		  columnDidMoveNotification: Symbol(),
+		  columnDidResizeNotification: Symbol(),
+		  itemDidCollapseNotification: Symbol(),
+		  itemDidExpandNotification: Symbol(),
+		  itemWillCollapseNotification: Symbol(),
+		  itemWillExpandNotification: Symbol(),
+		  NSPersistentStoreDidImportUbiquitousContentChanges: Symbol(),
+		  didShowNotification: Symbol(),
+		  willShowNotification: Symbol(),
+		  preferredScrollerStyleDidChangeNotification: Symbol(),
+		  rowsDidChangeNotification: Symbol(),
+		  colorSpaceDidChangeNotification: Symbol(),
+		  didEndLiveMagnifyNotification: Symbol(),
+		  didEndLiveScrollNotification: Symbol(),
+		  didLiveScrollNotification: Symbol(),
+		  willStartLiveMagnifyNotification: Symbol(),
+		  willStartLiveScrollNotification: Symbol(),
+		  didChangeAutomaticCapitalizationNotification: Symbol(),
+		  didChangeAutomaticDashSubstitutionNotification: Symbol(),
+		  didChangeAutomaticPeriodSubstitutionNotification: Symbol(),
+		  didChangeAutomaticQuoteSubstitutionNotification: Symbol(),
+		  didChangeAutomaticSpellingCorrectionNotification: Symbol(),
+		  didChangeAutomaticTextReplacementNotification: Symbol(),
+		  didResizeSubviewsNotification: Symbol(),
+		  willResizeSubviewsNotification: Symbol(),
+		  systemColorsDidChangeNotification: Symbol(),
+		  selectedAlternativeStringNotification: Symbol(),
+		  didBeginEditingNotification: Symbol(),
+		  didEndEditingNotification: Symbol(),
+		  keyboardSelectionDidChangeNotification: Symbol(),
+		  NSTextStorageDidProcessEditing: Symbol(),
+		  NSTextStorageWillProcessEditing: Symbol(),
+		  didChangeSelectionNotification: Symbol(),
+		  didChangeTypingAttributesNotification: Symbol(),
+		  willChangeNotifyingTextViewNotification: Symbol(),
+		  willAddItemNotification: Symbol(),
+		  boundsDidChangeNotification: Symbol(),
+		  didUpdateTrackingAreasNotification: Symbol(),
+		  frameDidChangeNotification: Symbol(),
+		  globalFrameDidChangeNotification: Symbol(),
+		  didBecomeKeyNotification: Symbol(),
+		  didBecomeMainNotification: Symbol(),
+		  didChangeBackingPropertiesNotification: Symbol(),
+		  didChangeScreenNotification: Symbol(),
+		  didChangeScreenProfileNotification: Symbol(),
+		  didDeminiaturizeNotification: Symbol(),
+		  didEndLiveResizeNotification: Symbol(),
+		  didEndSheetNotification: Symbol(),
+		  didEnterFullScreenNotification: Symbol(),
+		  didEnterVersionBrowserNotification: Symbol(),
+		  didExitFullScreenNotification: Symbol(),
+		  didExitVersionBrowserNotification: Symbol(),
+		  didExposeNotification: Symbol(),
+		  didMiniaturizeNotification: Symbol(),
+		  didMoveNotification: Symbol(),
+		  didResignKeyNotification: Symbol(),
+		  didResignMainNotification: Symbol(),
+		  didResizeNotification: Symbol(),
+		  willBeginSheetNotification: Symbol(),
+		  willEnterFullScreenNotification: Symbol(),
+		  willEnterVersionBrowserNotification: Symbol(),
+		  willExitFullScreenNotification: Symbol(),
+		  willExitVersionBrowserNotification: Symbol(),
+		  willMiniaturizeNotification: Symbol(),
+		  willMoveNotification: Symbol(),
+		  willStartLiveResizeNotification: Symbol(),
+		  accessibilityDisplayOptionsDidChangeNotification: Symbol(),
+		  activeSpaceDidChangeNotification: Symbol(),
+		  didActivateApplicationNotification: Symbol(),
+		  didChangeFileLabelsNotification: Symbol(),
+		  didDeactivateApplicationNotification: Symbol(),
+		  didHideApplicationNotification: Symbol(),
+		  didLaunchApplicationNotification: Symbol(),
+		  didMountNotification: Symbol(),
+		  didPerformFileOperationNotification: Symbol(),
+		  didRenameVolumeNotification: Symbol(),
+		  didTerminateApplicationNotification: Symbol(),
+		  didUnhideApplicationNotification: Symbol(),
+		  didUnmountNotification: Symbol(),
+		  didWakeNotification: Symbol(),
+		  screensDidSleepNotification: Symbol(),
+		  screensDidWakeNotification: Symbol(),
+		  sessionDidBecomeActiveNotification: Symbol(),
+		  sessionDidResignActiveNotification: Symbol(),
+		  willLaunchApplicationNotification: Symbol(),
+		  willPowerOffNotification: Symbol(),
+		  willSleepNotification: Symbol(),
+		  willUnmountNotification: Symbol(),
+		  PDFDocumentDidBeginFind: Symbol(),
+		  PDFDocumentDidBeginPageFind: Symbol(),
+		  PDFDocumentDidBeginPageWrite: Symbol(),
+		  PDFDocumentDidBeginWrite: Symbol(),
+		  PDFDocumentDidEndFind: Symbol(),
+		  PDFDocumentDidEndPageFind: Symbol(),
+		  PDFDocumentDidEndPageWrite: Symbol(),
+		  PDFDocumentDidEndWrite: Symbol(),
+		  PDFDocumentDidFindMatch: Symbol(),
+		  PDFDocumentDidUnlock: Symbol(),
+		  PDFThumbnailViewDocumentEdited: Symbol(),
+		  PDFViewAnnotationHit: Symbol(),
+		  PDFViewAnnotationWillHit: Symbol(),
+		  PDFViewChangedHistory: Symbol(),
+		  PDFViewCopyPermission: Symbol(),
+		  PDFViewDisplayBoxChanged: Symbol(),
+		  PDFViewDisplayModeChanged: Symbol(),
+		  PDFViewDocumentChanged: Symbol(),
+		  PDFViewPageChanged: Symbol(),
+		  PDFViewPrintPermission: Symbol(),
+		  PDFViewScaleChanged: Symbol(),
+		  PDFViewSelectionChanged: Symbol(),
+		  PDFViewVisiblePagesChanged: Symbol(),
+		  QCCompositionPickerPanelDidSelectComposition: Symbol(),
+		  QCCompositionPickerViewDidSelectComposition: Symbol(),
+		  QCCompositionRepositoryDidUpdate: Symbol(),
+		  QCViewDidStartRendering: Symbol(),
+		  QCViewDidStopRendering: Symbol(),
+		  WebHistoryAllItemsRemoved: Symbol(),
+		  WebHistoryItemChanged: Symbol(),
+		  WebHistoryItemsAdded: Symbol(),
+		  WebHistoryItemsRemoved: Symbol(),
+		  WebHistoryLoaded: Symbol(),
+		  WebHistorySaved: Symbol(),
+		  WebPreferencesChanged: Symbol(),
+		  WebViewDidBeginEditing: Symbol(),
+		  WebViewDidChange: Symbol(),
+		  WebViewDidChangeSelection: Symbol(),
+		  WebViewDidChangeTypingStyle: Symbol(),
+		  WebViewDidEndEditing: Symbol(),
+		  WebViewProgressEstimateChanged: Symbol(),
+		  WebViewProgressFinished: Symbol(),
+		  WebViewProgressStarted: Symbol(),
+		  abDatabaseChanged: Symbol(),
+		  abDatabaseChangedExternally: Symbol(),
+		  quartzFilterManagerDidAddFilter: Symbol(),
+		  quartzFilterManagerDidModifyFilter: Symbol(),
+		  quartzFilterManagerDidRemoveFilter: Symbol(),
+		  quartzFilterManagerDidSelectFilter: Symbol(),
+		  EAAccessoryDidConnect: Symbol(),
+		  EAAccessoryDidDisconnect: Symbol(),
+		  MPMovieDurationAvailable: Symbol(),
+		  MPMovieMediaTypesAvailable: Symbol(),
+		  MPMovieNaturalSizeAvailable: Symbol(),
+		  MPMoviePlayerDidEnterFullscreen: Symbol(),
+		  MPMoviePlayerDidExitFullscreen: Symbol(),
+		  MPMoviePlayerIsAirPlayVideoActiveDidChange: Symbol(),
+		  MPMoviePlayerLoadStateDidChange: Symbol(),
+		  MPMoviePlayerNowPlayingMovieDidChange: Symbol(),
+		  MPMoviePlayerPlaybackDidFinish: Symbol(),
+		  MPMoviePlayerPlaybackStateDidChange: Symbol(),
+		  MPMoviePlayerReadyForDisplayDidChange: Symbol(),
+		  MPMoviePlayerScalingModeDidChange: Symbol(),
+		  MPMoviePlayerThumbnailImageRequestDidFinish: Symbol(),
+		  MPMoviePlayerTimedMetadataUpdated: Symbol(),
+		  MPMoviePlayerWillEnterFullscreen: Symbol(),
+		  MPMoviePlayerWillExitFullscreen: Symbol(),
+		  MPMovieSourceTypeAvailable: Symbol(),
+		  SKCloudServiceCapabilitiesDidChange: Symbol(),
+		  SKStorefrontIdentifierDidChange: Symbol(),
+		  TVTopShelfItemsDidChange: Symbol(),
+		  UIAccessibilityAssistiveTouchStatusDidChange: Symbol(),
+		  UIAccessibilityBoldTextStatusDidChange: Symbol(),
+		  UIAccessibilityClosedCaptioningStatusDidChange: Symbol(),
+		  UIAccessibilityDarkerSystemColorsStatusDidChange: Symbol(),
+		  UIAccessibilityGrayscaleStatusDidChange: Symbol(),
+		  UIAccessibilityGuidedAccessStatusDidChange: Symbol(),
+		  UIAccessibilityHearingDevicePairedEarDidChange: Symbol(),
+		  UIAccessibilityInvertColorsStatusDidChange: Symbol(),
+		  UIAccessibilityMonoAudioStatusDidChange: Symbol(),
+		  UIAccessibilityReduceMotionStatusDidChange: Symbol(),
+		  UIAccessibilityReduceTransparencyStatusDidChange: Symbol(),
+		  UIAccessibilityShakeToUndoDidChange: Symbol(),
+		  UIAccessibilitySpeakScreenStatusDidChange: Symbol(),
+		  UIAccessibilitySpeakSelectionStatusDidChange: Symbol(),
+		  UIAccessibilitySwitchControlStatusDidChange: Symbol(),
+		  UIApplicationDidBecomeActive: Symbol(),
+		  UIApplicationDidEnterBackground: Symbol(),
+		  UIApplicationDidFinishLaunching: Symbol(),
+		  UIApplicationDidReceiveMemoryWarning: Symbol(),
+		  UIApplicationSignificantTimeChange: Symbol(),
+		  UIApplicationUserDidTakeScreenshot: Symbol(),
+		  UIApplicationWillEnterForeground: Symbol(),
+		  UIApplicationWillResignActive: Symbol(),
+		  UIApplicationWillTerminate: Symbol(),
+		  UIContentSizeCategoryDidChange: Symbol(),
+		  UIDeviceProximityStateDidChange: Symbol(),
+		  UIScreenBrightnessDidChange: Symbol(),
+		  UIScreenDidConnect: Symbol(),
+		  UIScreenDidDisconnect: Symbol(),
+		  UIScreenModeDidChange: Symbol(),
+		  UITableViewSelectionDidChange: Symbol(),
+		  UITextFieldTextDidBeginEditing: Symbol(),
+		  UITextFieldTextDidChange: Symbol(),
+		  UITextFieldTextDidEndEditing: Symbol(),
+		  UITextInputCurrentInputModeDidChange: Symbol(),
+		  UITextViewTextDidBeginEditing: Symbol(),
+		  UITextViewTextDidChange: Symbol(),
+		  UITextViewTextDidEndEditing: Symbol(),
+		  UIViewControllerShowDetailTargetDidChange: Symbol(),
+		  UIWindowDidBecomeHidden: Symbol(),
+		  UIWindowDidBecomeKey: Symbol(),
+		  UIWindowDidBecomeVisible: Symbol(),
+		  UIWindowDidResignKey: Symbol(),
+		  ALAssetsLibraryChanged: Symbol(),
+		  AVCaptureDeviceSubjectAreaDidChange: Symbol(),
+		  AVCaptureSessionInterruptionEnded: Symbol(),
+		  AVCaptureSessionWasInterrupted: Symbol(),
+		  CTRadioAccessTechnologyDidChange: Symbol(),
+		  MFMessageComposeViewControllerTextMessageAvailabilityDidChange: Symbol(),
+		  MPMediaLibraryDidChange: Symbol(),
+		  MPMediaPlaybackIsPreparedToPlayDidChange: Symbol(),
+		  MPMusicPlayerControllerNowPlayingItemDidChange: Symbol(),
+		  MPMusicPlayerControllerPlaybackStateDidChange: Symbol(),
+		  MPMusicPlayerControllerVolumeDidChange: Symbol(),
+		  MPVolumeViewWirelessRouteActiveDidChange: Symbol(),
+		  MPVolumeViewWirelessRoutesAvailableDidChange: Symbol(),
+		  NKIssueDownloadCompleted: Symbol(),
+		  UIApplicationBackgroundRefreshStatusDidChange: Symbol(),
+		  UIApplicationDidChangeStatusBarFrame: Symbol(),
+		  UIApplicationDidChangeStatusBarOrientation: Symbol(),
+		  UIApplicationWillChangeStatusBarFrame: Symbol(),
+		  UIApplicationWillChangeStatusBarOrientation: Symbol(),
+		  UIDeviceBatteryLevelDidChange: Symbol(),
+		  UIDeviceBatteryStateDidChange: Symbol(),
+		  UIDeviceOrientationDidChange: Symbol(),
+		  UIDocumentStateChanged: Symbol(),
+		  UIKeyboardDidChangeFrame: Symbol(),
+		  UIKeyboardDidHide: Symbol(),
+		  UIKeyboardDidShow: Symbol(),
+		  UIKeyboardWillChangeFrame: Symbol(),
+		  UIKeyboardWillHide: Symbol(),
+		  UIKeyboardWillShow: Symbol(),
+		  UIMenuControllerDidHideMenu: Symbol(),
+		  UIMenuControllerDidShowMenu: Symbol(),
+		  UIMenuControllerMenuFrameDidChange: Symbol(),
+		  UIMenuControllerWillHideMenu: Symbol(),
+		  UIMenuControllerWillShowMenu: Symbol(),
+		  UIPasteboardChanged: Symbol(),
+		  UIPasteboardRemoved: Symbol(),
+		  UIApplicationProtectedDataDidBecomeAvailable: Symbol(),
+		  UIApplicationProtectedDataWillBecomeUnavailable: Symbol(),
+		  didChangeAutomaticTextCompletionNotification: Symbol(),
+		  MPMusicPlayerControllerQueueDidChange: Symbol(),
+		  GKPlayerAuthenticationDidChangeNotificationName: Symbol(),
+		  GKPlayerDidChangeNotificationName: Symbol(),
+		  NEDNSProxyConfigurationDidChange: Symbol(),
+		  SKStorefrontCountryCodeDidChange: Symbol(),
+		  UIAccessibilityVoiceOverStatusDidChange: Symbol(),
+		  UIFocusDidUpdate: Symbol(),
+		  UIFocusMovementDidFail: Symbol()
+
+		  /**
+		   * An object containing information broadcast to registered observers that bridges to Notification; use NSNotification when you need reference semantics or other Foundation-specific behavior. 
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/documentation/foundation/nsnotification
+		   */
+		};
+		var NSNotification = function (_NSObject) {
+		  _inherits(NSNotification, _NSObject);
+
+		  _createClass(NSNotification, [{
+		    key: 'initCoder',
+
+
+		    // Creating Notifications
+
+		    /**
+		     * Initializes a notification with the data from an unarchiver.
+		     * @access public
+		     * @param {NSCoder} aDecoder - 
+		     * @returns {void}
+		     * @see https://developer.apple.com/documentation/foundation/nsnotification/1412464-init
+		     */
+		    value: function initCoder(aDecoder) {}
+
+		    /**
+		     * Returns a new notification object with a specified name and object.
+		     * @access public
+		     * @param {NSNotification.Name} aName - The name for the new notification. May not be nil.
+		     * @param {?Object} anObject - The object for the new notification.
+		     * @returns {void}
+		     * @see https://developer.apple.com/documentation/foundation/nsnotification/1417440-init
+		     */
+
+		  }, {
+		    key: 'initNameObject',
+		    value: function initNameObject(aName, anObject) {}
+
+		    /**
+		     * Initializes a notification with a specified name, object, and user information.
+		     * @access public
+		     * @param {NSNotification.Name} name - 
+		     * @param {?Object} object - The object for the new notification.
+		     * @param {?Map<AnyHashable, Object>} [userInfo = null] - The user information dictionary for the new notification. May be nil.
+		     * @returns {void}
+		     * @see https://developer.apple.com/documentation/foundation/nsnotification/1415764-init
+		     */
+
+		  }]);
+
+		  function NSNotification(name, object) {
+		    var userInfo = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+		    _classCallCheck(this, NSNotification);
+
+		    // Getting Notification Information
+
+		    var _this = _possibleConstructorReturn(this, (NSNotification.__proto__ || Object.getPrototypeOf(NSNotification)).call(this));
+
+		    _this._name = name;
+		    _this._object = object;
+		    _this._userInfo = userInfo;
+		    return _this;
+		  }
+
+		  // Getting Notification Information
+
+		  /**
+		   * The name of the notification.
+		   * @type {NSNotification.Name}
+		   * @desc Typically you use this property to find out what kind of notification you are dealing with when you receive a notification.Special ConsiderationsNotification names can be any string. To avoid name collisions, you might want to use a prefix that’s specific to your application.
+		   * @see https://developer.apple.com/documentation/foundation/nsnotification/1416472-name
+		   */
+
+
+		  _createClass(NSNotification, [{
+		    key: 'name',
+		    get: function get() {
+		      return this._name;
+		    }
+
+		    /**
+		     * The object associated with the notification.
+		     * @type {?Object}
+		     * @desc This is often the object that posted this notification. It may be nil.Typically you use this method to find out what object a notification applies to when you receive a notification.
+		     * @see https://developer.apple.com/documentation/foundation/nsnotification/1414469-object
+		     */
+
+		  }, {
+		    key: 'object',
+		    get: function get() {
+		      return this._object;
+		    }
+		    /**
+		     * The user information dictionary associated with the receiver.
+		     * @type {?Map<AnyHashable, Object>}
+		     * @desc May be nil.The user information dictionary stores any additional objects that objects receiving the notification might use.For example, in the Application Kit, NSControl objects post the NSControlTextDidChangeNotification whenever the field editor (an NSText object) changes text inside the NSControl. This notification provides the NSControl object as the notification's associated object. In order to provide access to the field editor, the NSControl object posting the notification adds the field editor to the notification's user information dictionary. Objects receiving the notification can access the field editor and the NSControl object posting the notification as follows:- (void)controlTextDidBeginEditing:(NSNotification *)notification
+		    {
+		      NSText *fieldEditor = [notification.userInfo
+		          objectForKey:@"NSFieldEditor"];               // the field editor
+		      NSControl *postingObject = notification.object;   // the object that posted the notification
+		      ...
+		    }
+		    - (void)controlTextDidBeginEditing:(NSNotification *)notification
+		    {
+		      NSText *fieldEditor = [notification.userInfo
+		          objectForKey:@"NSFieldEditor"];               // the field editor
+		      NSControl *postingObject = notification.object;   // the object that posted the notification
+		      ...
+		    }
+		      * @see https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo
+		     */
+
+		  }, {
+		    key: 'userInfo',
+		    get: function get() {
+		      return this._userInfo;
+		    }
+
+		    // Structures
+		    /**
+		     * @type {Object} Name
+		     * @property {Symbol} AVAudioEngineConfigurationChange Posted when the audio engine configuration changes.
+		     * @property {Symbol} AVAudioSessionInterruption Posted when an audio interruption occurs.
+		     * @property {Symbol} AVAudioSessionMediaServicesWereLost Posted when the media server is terminated.
+		     * @property {Symbol} AVAudioSessionMediaServicesWereReset Posted when the media server restarts.
+		     * @property {Symbol} AVAudioSessionRouteChange Posted when the system’s audio route changes.
+		     * @property {Symbol} AVAudioSessionSilenceSecondaryAudioHint Posted when the primary audio from other applications starts and stops.
+		     * @property {Symbol} AVAudioUnitComponentTagsDidChange The component tags changed.
+		     * @property {Symbol} CKAccountChanged Notification posted when the status of the signed-in iCloud account may have changed.
+		     * @property {Symbol} CLKComplicationServerActiveComplicationsDidChange Posted went the set of active complications changes.
+		     * @property {Symbol} CNContactStoreDidChange Posted notifications when changes occur in another CNContactStore.
+		      * @property {Symbol} EKEventStoreChanged Posted whenever changes are made to the Calendar database, including adding, removing, and changing events or reminders. Individual changes are not described. When you receive this notification, you should refetch all EKEvent and EKReminder objects you have accessed, as they are considered stale. If you are actively editing an event and do not wish to refetch it unless it is absolutely necessary to do so, you can call the refresh method on it. If the method returns true, you do not need to refetch the event.
+		     * @property {Symbol} HKUserPreferencesDidChange Notifies observers whenever the user changes his or her preferred units.
+		     * @property {Symbol} HMCharacteristicPropertySupportsEvent The characteristic supports notifications using the event connection established by the controller. The event connection provides unidirectional communication from the accessory to the controller.
+		     * @property {Symbol} NSBundleResourceRequestLowDiskSpace Posted after the system detects that the amount of available disk space is getting low. The notification is posted to the default notification center.
+		     * @property {Symbol} NSCalendarDayChanged A notification that is posted whenever the calendar day of the system changes, as determined by the system calendar, locale, and time zone.
+		     * @property {Symbol} NSDidBecomeSingleThreaded Not implemented.
+		     * @property {Symbol} NSExtensionHostDidBecomeActive Posted when the extension’s host app moves from the inactive to the active state.
+		     * @property {Symbol} NSExtensionHostDidEnterBackground Posted when the extension’s host app begins running in the background.
+		     * @property {Symbol} NSExtensionHostWillEnterForeground Posted when the extension’s host app begins running in the foreground.
+		     * @property {Symbol} NSExtensionHostWillResignActive Posted when the extension’s host app moves from the active to the inactive state.
+		     * @property {Symbol} NSFileHandleConnectionAccepted This notification is posted when an NSFileHandle object establishes a socket connection between two processes, creates an NSFileHandle object for one end of the connection, and makes this object available to observers by putting it in the userInfo dictionary.
+		     * @property {Symbol} NSFileHandleDataAvailable This notification is posted when the file handle determines that data is currently available for reading in a file or at a communications channel.
+		     * @property {Symbol} NSFileHandleReadToEndOfFileCompletion This notification is posted when the file handle reads all data in the file or, if a communications channel, until the other process signals the end of data.
+		     * @property {Symbol} NSHTTPCookieManagerAcceptPolicyChanged This notification is posted when the acceptance policy of the NSHTTPCookieStorage instance has changed.
+		     * @property {Symbol} NSHTTPCookieManagerCookiesChanged This notification is posted when the cookies stored in the NSHTTPCookieStorage instance have changed.
+		     * @property {Symbol} NSManagedObjectContextDidSave A notification that the context completed a save.
+		     * @property {Symbol} NSManagedObjectContextObjectsDidChange A notification of changes made to managed objects associated with this context.
+		     * @property {Symbol} NSManagedObjectContextWillSave A notification that the context is about to save.
+		     * @property {Symbol} NSMetadataQueryDidFinishGathering Posted when the receiver has finished with the initial result-gathering phase of the query.
+		     * @property {Symbol} NSMetadataQueryDidStartGathering Posted when the receiver begins with the initial result-gathering phase of the query.
+		     * @property {Symbol} NSMetadataQueryDidUpdate Posted when the receiver’s results have changed during the live-update phase of the query.
+		     * @property {Symbol} NSMetadataQueryGatheringProgress Posted as the receiver is collecting results during the initial result-gathering phase of the query.
+		     * @property {Symbol} NSPersistentStoreCoordinatorStoresDidChange Posted whenever persistent stores are added to or removed from a persistent store coordinator, or when store UUIDs change.
+		     * @property {Symbol} NSPersistentStoreCoordinatorStoresWillChange Posted before the list of open persistent stores changes.
+		     * @property {Symbol} NSPersistentStoreCoordinatorWillRemoveStore Posted whenever a persistent store is removed from a persistent store coordinator.
+		     * @property {Symbol} NSProcessInfoPowerStateDidChange Posted when the power state (Low Power Mode is enabled or disabled) of an iOS device changes. 
+		     * @property {Symbol} NSSystemClockDidChange A notification posted whenever the system clock is changed. 
+		     * @property {Symbol} NSSystemTimeZoneDidChange A notification posted when the time zone changes.
+		     * @property {Symbol} NSThreadWillExit An NSThread object posts this notification when it receives the exit() message, before the thread exits. Observer methods invoked to receive this notification execute in the exiting thread, before it exits.
+		     * @property {Symbol} NSURLCredentialStorageChanged This notification is posted when the set of stored credentials changes.
+		     * @property {Symbol} NSUbiquityIdentityDidChange Sent after the iCloud (“ubiquity”) identity has changed.
+		     * @property {Symbol} NSUndoManagerCheckpoint Posted whenever an NSUndoManager object opens or closes an undo group (except when it opens a top-level group) and when checking the redo stack in canRedo. 
+		     * @property {Symbol} NSUndoManagerDidCloseUndoGroup Posted after an NSUndoManager object closes an undo group, which occurs in the implementation of the endUndoGrouping() method.
+		     * @property {Symbol} NSUndoManagerDidOpenUndoGroup Posted whenever an NSUndoManager object opens an undo group, which occurs in the implementation of the beginUndoGrouping() method. 
+		     * @property {Symbol} NSUndoManagerDidRedoChange Posted just after an NSUndoManager object performs a redo operation (redo()).
+		     * @property {Symbol} NSUndoManagerDidUndoChange Posted just after an NSUndoManager object performs an undo operation.
+		     * @property {Symbol} NSUndoManagerWillCloseUndoGroup Posted before an NSUndoManager object closes an undo group, which occurs in the implementation of the endUndoGrouping() method.
+		     * @property {Symbol} NSUndoManagerWillRedoChange Posted just before an NSUndoManager object performs a redo operation (redo()).
+		     * @property {Symbol} NSUndoManagerWillUndoChange Posted just before an NSUndoManager object performs an undo operation.
+		     * @property {Symbol} NSWillBecomeMultiThreaded Posted when the first thread is detached from the current thread. The NSThread class posts this notification at most once—the first time a thread is detached using detachNewThreadSelector(_:toTarget:with:) or the start() method. Subsequent invocations of those methods do not post this notification. Observers of this notification have their notification method invoked in the main thread, not the new thread. The observer notification methods always execute before the new thread begins executing.
+		     * @property {Symbol} PKPassLibraryDidChange Posted after the pass library has been changed.
+		     * @property {Symbol} PKPassLibraryRemotePaymentPassesDidChange Posted when an Apple Pay card is added to or removed from a device that is paired with the current iOS device (for example, Apple Watch). 
+		     * @property {Symbol} UIAccessibilityAnnouncementDidFinish Posted by UIKit when the system has finished reading an announcement.
+		     * @property {Symbol} UIAccessibilityElementFocused 
+		     * @property {Symbol} WKAudioFilePlayerItemDidPlayToEndTime Posted when the item has played successfully to its end time.
+		     * @property {Symbol} WKAudioFilePlayerItemFailedToPlayToEndTime Posted when the item failed to play to its end time.
+		     * @property {Symbol} WKAudioFilePlayerItemTimeJumped Posted when the item’s current time has changed discontinuously. 
+		     * @property {Symbol} ABPeoplePickerDisplayedPropertyDidChange Posted when the displayed property in the record list is changed.
+		     * @property {Symbol} ABPeoplePickerGroupSelectionDidChange Posted when the selection in the group list is changed.
+		     * @property {Symbol} ABPeoplePickerNameSelectionDidChange Posted when the selection in the name list is changed.
+		     * @property {Symbol} ABPeoplePickerValueSelectionDidChange Posted when the selection in a multivalue property is changed.
+		     * @property {Symbol} ACAccountStoreDidChange Posted when the accounts managed by this account store changed in the database. There is no userInfo dictionary associated with this notification.
+		     * @property {Symbol} AVAssetChapterMetadataGroupsDidChange 
+		     * @property {Symbol} AVAssetContainsFragmentsDidChange 
+		     * @property {Symbol} AVAssetDurationDidChange 
+		     * @property {Symbol} AVAssetMediaSelectionGroupsDidChange 
+		     * @property {Symbol} AVAssetTrackSegmentsDidChange 
+		     * @property {Symbol} AVAssetTrackTimeRangeDidChange 
+		     * @property {Symbol} AVAssetTrackTrackAssociationsDidChange 
+		     * @property {Symbol} AVAssetWasDefragmented 
+		     * @property {Symbol} AVCaptureDeviceWasConnected Posted when a new device becomes available.
+		     * @property {Symbol} AVCaptureDeviceWasDisconnected Posted when an existing device becomes unavailable.
+		     * @property {Symbol} AVCaptureInputPortFormatDescriptionDidChange Posted if the value of the capture input port’sformatDescription property changes.
+		     * @property {Symbol} AVCaptureSessionDidStartRunning Posted when a capture session starts.
+		     * @property {Symbol} AVCaptureSessionDidStopRunning Posted when a capture session stops.
+		     * @property {Symbol} AVCaptureSessionRuntimeError Posted if an error occurred during a capture session.
+		     * @property {Symbol} AVFragmentedMovieContainsMovieFragmentsDidChange 
+		     * @property {Symbol} AVFragmentedMovieDurationDidChange 
+		     * @property {Symbol} AVFragmentedMovieTrackSegmentsDidChange 
+		     * @property {Symbol} AVFragmentedMovieTrackTimeRangeDidChange 
+		     * @property {Symbol} AVFragmentedMovieTrackTotalSampleDataLengthDidChange 
+		     * @property {Symbol} AVFragmentedMovieWasDefragmented 
+		     * @property {Symbol} AVPlayerItemDidPlayToEndTime Posted when the item has played to its end time.
+		     * @property {Symbol} AVPlayerItemFailedToPlayToEndTime Posted when the item failed to play to its end time.
+		     * @property {Symbol} AVPlayerItemNewAccessLogEntry Posted when a new access log entry has been added.
+		     * @property {Symbol} AVPlayerItemNewErrorLogEntry Posted when a new error log entry has been added.
+		     * @property {Symbol} AVPlayerItemPlaybackStalled Posted when some media did not arrive in time to continue playback.
+		     * @property {Symbol} AVPlayerItemTimeJumped Posted when the item’s current time has changed discontinuously.
+		     * @property {Symbol} AVSampleBufferDisplayLayerFailedToDecode Posted when a buffer display layer failed to decode.
+		     * @property {Symbol} CWBSSIDDidChange 
+		     * @property {Symbol} CWCountryCodeDidChange 
+		     * @property {Symbol} CWLinkDidChange 
+		     * @property {Symbol} CWLinkQualityDidChange 
+		     * @property {Symbol} CWModeDidChange 
+		     * @property {Symbol} CWPowerDidChange 
+		     * @property {Symbol} CWSSIDDidChange 
+		     * @property {Symbol} CWScanCacheDidUpdate 
+		     * @property {Symbol} GCControllerDidConnect Posted immediately after a new controller is connected to the device.
+		     * @property {Symbol} GCControllerDidDisconnect Posted immediately after a controller is disconnected from the device.
+		     * @property {Symbol} IKFilterBrowserFilterDoubleClick Posted when the user double-clicks a filter in the filter browser. 
+		     * @property {Symbol} IKFilterBrowserFilterSelected Posted when the user clicks a filter name in the filter browser. 
+		     * @property {Symbol} IKFilterBrowserWillPreviewFilter Posted before showing a filter preview, allowing an application to set the parameters of a filter.
+		     * @property {Symbol} IOBluetoothHostControllerPoweredOff 
+		     * @property {Symbol} IOBluetoothHostControllerPoweredOn 
+		     * @property {Symbol} IOBluetoothL2CAPChannelPublished 
+		     * @property {Symbol} IOBluetoothL2CAPChannelTerminated 
+		     * @property {Symbol} MKAnnotationCalloutInfoDidChange Notifies observers that the title or subtitle information of an annotation object changed.
+		     * @property {Symbol} NEFilterConfigurationDidChange Posted after the filter configuration stored in the Network Extension preferences changes.
+		     * @property {Symbol} NEVPNConfigurationChange Posted after the VPN configuration stored in the Network Extension preferences changes.
+		     * @property {Symbol} NEVPNStatusDidChange Posted when the status of the VPN connection changes.
+		     * @property {Symbol} announcementRequested This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a userInfo dictionary with the key announcement and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate priority to the userInfo dictionary.
+		     * @property {Symbol} applicationActivated This notification is posted after the app has been activated. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} applicationDeactivated This notification is posted after the app has been deactivated.  Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} applicationHidden This notification is posted after the app is hidden. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} applicationShown This notification is posted after the app is shown. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} created This notification is posted after an accessibility element is created. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} drawerCreated This notification is posted after a drawer appears. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} focusedUIElementChanged This notification is posted after an accessibility element gains focus. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} focusedWindowChanged This notification is posted after the key window changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} helpTagCreated This notification is posted after a help tag appears. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} layoutChanged This notification is posted after the UI changes in a way that requires the attention of an accessibility client. This notification should be accompanied by a userInfo dictionary with the key uiElements and an array containing the UI elements that have been added or changed. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} mainWindowChanged This notification is posted after the main window changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} moved This notification is posted after an accessibility element moves. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} resized This notification is posted after an accessibility element’s size changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} rowCollapsed This notification is posted after a row collapses. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} rowCountChanged This notification is posted after a row is added or deleted. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} rowExpanded This notification is posted after a row expands. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedCellsChanged This notification is posted after one or more cells in a cell-based table are selected or deselected. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedChildrenChanged This notification is posted after one or more child elements are selected or deselected. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedChildrenMoved This notification is posted after the selected items in a layout area move. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedColumnsChanged This notification is posted after one or more columns are selected or deselected. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedRowsChanged This notification is posted after one or more rows are selected or deselected. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} selectedTextChanged This notification is posted after text is selected or deselected.  Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} sheetCreated This notification is posted after a sheet appears.  Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} titleChanged This notification is posted after an accessibility element’s title changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} uiElementDestroyed This notification is posted after an accessibility element is destroyed. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} unitsChanged This notification is posted after the units in a layout area change. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} valueChanged This notification is posted after an accessibility element’s value changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} windowCreated This notification is posted after a new window appears. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} windowDeminiaturized This notification is posted after a window is restored to full size from the Dock.  Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} windowMiniaturized This notification is posted after a window is put in the Dock. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} windowMoved This notification is posted after a window moves.  Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} windowResized This notification is posted after a window’s size changes. Post this notification using the NSAccessibilityPostNotification(_:_:) function instead of an NSNotificationCenter instance.
+		     * @property {Symbol} progressMarkNotification Posted when the current progress of a running animation reaches one of its progress marks.
+		     * @property {Symbol} antialiasThresholdChangedNotification Posted after the threshold for anti-aliasing changes.
+		     * @property {Symbol} NSAppleEventManagerWillProcessFirstEvent Posted by NSAppleEventManager before it first dispatches an Apple event. Your application can use this notification to avoid registering any Apple event handlers until the first time at which they may be needed.
+		     * @property {Symbol} didBecomeActiveNotification Posted immediately after the app becomes active.
+		     * @property {Symbol} didChangeOcclusionStateNotification Posted when the app’s occlusion state changes.
+		     * @property {Symbol} didChangeScreenParametersNotification Posted when the configuration of the displays attached to the computer is changed.
+		     * @property {Symbol} didFinishLaunchingNotification Posted at the end of the finishLaunching() method to indicate that the app has completed launching and is ready to run.
+		     * @property {Symbol} didFinishRestoringWindowsNotification Posted when the app is finished restoring windows.
+		     * @property {Symbol} didHideNotification Posted at the end of the hide(_:) method to indicate that the app is now hidden.
+		     * @property {Symbol} didResignActiveNotification Posted immediately after the app gives up its active status to another app.
+		     * @property {Symbol} didUnhideNotification Posted at the end of the unhideWithoutActivation() method to indicate that the app is now visible.
+		     * @property {Symbol} didUpdateNotification Posted at the end of the updateWindows() method to indicate that the app has finished updating its windows.
+		     * @property {Symbol} willBecomeActiveNotification Posted immediately before the app becomes active.
+		     * @property {Symbol} willFinishLaunchingNotification Posted at the start of the finishLaunching() method to indicate that the app has completed its initialization process and is about to finish launching.
+		     * @property {Symbol} willHideNotification Posted at the start of the hide(_:) method to indicate that the app is about to be hidden.
+		     * @property {Symbol} willResignActiveNotification Posted immediately before the app gives up its active status to another app.
+		     * @property {Symbol} willTerminateNotification Posted by the terminate(_:) method to indicate that the app will terminate.
+		     * @property {Symbol} willUnhideNotification Posted at the start of the unhideWithoutActivation() method to indicate that the app is about to become visible.
+		     * @property {Symbol} willUpdateNotification Posted at the start of the updateWindows() method to indicate that the app is about to update its windows.
+		     * @property {Symbol} columnConfigurationDidChangeNotification Notifies the delegate when the width of a browser column has changed.
+		     * @property {Symbol} NSClassDescriptionNeededForClass Posted by init(for:) when a class description cannot be found for a class.
+		     * @property {Symbol} didChangeNotification 
+		     * @property {Symbol} colorDidChangeNotification Posted when the color of the NSColorPanel is set, as when NSColorPanel is invoked.
+		     * @property {Symbol} selectionDidChangeNotification Posted after the pop-up list selection of the NSComboBox changes. 
+		     * @property {Symbol} selectionIsChangingNotification Posted whenever the pop-up list selection of the NSComboBox is changing. 
+		     * @property {Symbol} willDismissNotification Posted whenever the pop-up list of the NSComboBox is about to be dismissed.
+		     * @property {Symbol} willPopUpNotification Posted whenever the pop-up list of the NSComboBox is going to be displayed. 
+		     * @property {Symbol} contextHelpModeDidActivateNotification Posted when the application enters context-sensitive help mode. This typically happens when the user holds down the Help key.
+		     * @property {Symbol} contextHelpModeDidDeactivateNotification Posted when the application exits context-sensitive help mode. This happens when the user clicks the mouse button while the cursor is anywhere on the screen after displaying a context-sensitive help topic.
+		     * @property {Symbol} textDidBeginEditingNotification Sent when a control with editable cells begins an edit session. 
+		     * @property {Symbol} textDidChangeNotification Sent when the text in the receiving control changes. 
+		     * @property {Symbol} textDidEndEditingNotification Sent when a control with editable cells ends an editing session. 
+		     * @property {Symbol} currentControlTintDidChangeNotification Sent after the user changes control tint preference.
+		     * @property {Symbol} didCloseNotification Posted whenever the drawer is closed. 
+		     * @property {Symbol} didOpenNotification Posted whenever the drawer is opened. 
+		     * @property {Symbol} willCloseNotification Posted whenever the drawer is about to close. 
+		     * @property {Symbol} willOpenNotification Posted whenever the drawer is about to open.
+		     * @property {Symbol} didChangeNotification Posted whenever a font collection is changed.
+		     * @property {Symbol} fontSetChangedNotification Posted after the the currently-set font changes.
+		     * @property {Symbol} registryDidChangeNotification Posted whenever the NSImageRep class registry changes.
+		     * @property {Symbol} didAddItemNotification Posted after a menu item is added to the menu.
+		     * @property {Symbol} didBeginTrackingNotification Posted when menu tracking begins.
+		     * @property {Symbol} didChangeItemNotification Posted after a menu item in the menu changes appearance.
+		     * @property {Symbol} didEndTrackingNotification Posted when menu tracking ends, even if no action is sent.
+		     * @property {Symbol} didRemoveItemNotification Posted after a menu item is removed from the menu.
+		     * @property {Symbol} didSendActionNotification Posted just after the application dispatches a menu item’s action method to the menu item’s target.
+		     * @property {Symbol} willSendActionNotification Posted just before the application dispatches a menu item’s action method to the menu item’s target.
+		     * @property {Symbol} columnDidMoveNotification Posted whenever a column is moved by user action in an NSOutlineView object.
+		     * @property {Symbol} columnDidResizeNotification Posted whenever a column is resized in an NSOutlineView object.
+		     * @property {Symbol} itemDidCollapseNotification Posted whenever an item is collapsed in an NSOutlineView object.
+		     * @property {Symbol} itemDidExpandNotification Posted whenever an item is expanded in an NSOutlineView object.
+		     * @property {Symbol} itemWillCollapseNotification Posted before an item is collapsed (after the user clicks the arrow but before the item is collapsed).
+		     * @property {Symbol} itemWillExpandNotification Posted before an item is expanded (after the user clicks the arrow but before the item is collapsed).
+		     * @property {Symbol} selectionDidChangeNotification Posted after the outline view's selection changes.
+		     * @property {Symbol} selectionIsChangingNotification Posted as the outline view’s selection changes (while the mouse button is still down).
+		     * @property {Symbol} NSPersistentStoreDidImportUbiquitousContentChanges Posted after records are imported from the ubiquitous content store.
+		     * @property {Symbol} willPopUpNotification This notification is posted just before an pop-up menu is attached to its window frame.
+		     * @property {Symbol} willPopUpNotification Posted when an NSPopUpButton object receives a mouse-down event—that is, when the user is about to select an item from the menu.
+		     * @property {Symbol} didCloseNotification Sent after the popover has finished animating offscreen.
+		     * @property {Symbol} didShowNotification Sent after the popover has finished animating onscreen.
+		     * @property {Symbol} willCloseNotification Sent before the popover is closed.
+		     * @property {Symbol} willShowNotification Sent before the popover is shown.
+		     * @property {Symbol} preferredScrollerStyleDidChangeNotification Posted if the preferred scroller style changes.
+		     * @property {Symbol} rowsDidChangeNotification This notification is posted to the default notification center whenever the view's rows change.
+		     * @property {Symbol} colorSpaceDidChangeNotification Posted when the color space of the screen has changed.
+		     * @property {Symbol} didEndLiveMagnifyNotification Posted at the end of a magnify gesture.
+		     * @property {Symbol} didEndLiveScrollNotification Posted on the main thread at the end of live scroll tracking.
+		     * @property {Symbol} didLiveScrollNotification Posted on the main thread after changing the clipview bounds origin due to a user-initiated event.
+		     * @property {Symbol} willStartLiveMagnifyNotification Posted at the beginning of a magnify gesture.
+		     * @property {Symbol} willStartLiveScrollNotification Posted on the main thread at the beginning of user-initiated live scroll tracking (gesture scroll or scroller tracking, for example, thumb dragging).
+		     * @property {Symbol} didChangeAutomaticCapitalizationNotification 
+		     * @property {Symbol} didChangeAutomaticDashSubstitutionNotification 
+		     * @property {Symbol} didChangeAutomaticPeriodSubstitutionNotification 
+		     * @property {Symbol} didChangeAutomaticQuoteSubstitutionNotification 
+		     * @property {Symbol} didChangeAutomaticSpellingCorrectionNotification This notification is posted when the spell checker did change text using automatic spell checking correction. The are posted to the application’s default notification center.
+		     * @property {Symbol} didChangeAutomaticTextReplacementNotification Posted when the spell checker changed text using automatic text replacement.  This notification is posted to the app’s default notification center. 
+		     * @property {Symbol} didResizeSubviewsNotification Posted after an NSSplitView changes the sizes of some or all of its subviews. 
+		     * @property {Symbol} willResizeSubviewsNotification Posted before an NSSplitView changes the sizes of some or all of its subviews.
+		     * @property {Symbol} systemColorsDidChangeNotification Sent when the system colors have been changed (such as through a system control panel interface).
+		     * @property {Symbol} columnDidMoveNotification Posted whenever a column is moved by user action in an NSTableView object.
+		     * @property {Symbol} columnDidResizeNotification Posted whenever a column is resized in an NSTableView object.
+		     * @property {Symbol} selectionDidChangeNotification Posted after an NSTableView object's selection changes.
+		     * @property {Symbol} selectionIsChangingNotification Posted as an NSTableView object's selection changes (while the mouse button is still down).
+		     * @property {Symbol} selectedAlternativeStringNotification Posted when the user selects an alternate string.
+		     * @property {Symbol} didBeginEditingNotification Posted when an NSText object begins any operation that changes characters or formatting attributes.
+		     * @property {Symbol} didChangeNotification Posted after an NSText object performs any operation that changes characters or formatting attributes.
+		     * @property {Symbol} didEndEditingNotification Posted when focus leaves an NSText object, whether or not any operation has changed characters or formatting attributes.
+		     * @property {Symbol} keyboardSelectionDidChangeNotification Posted after the selected text input source changes.
+		     * @property {Symbol} NSTextStorageDidProcessEditing Posted after a text storage finishes processing edits in processEditing().
+		     * @property {Symbol} NSTextStorageWillProcessEditing Posted before a text storage finishes processing edits in processEditing().
+		     * @property {Symbol} didChangeSelectionNotification Posted when the selected range of characters changes.
+		     * @property {Symbol} didChangeTypingAttributesNotification Posted when there is a change in the typing attributes within a text view.
+		     * @property {Symbol} willChangeNotifyingTextViewNotification Posted when a new text view is established as the text view that sends notifications.
+		     * @property {Symbol} didRemoveItemNotification Posted after an item is removed from a toolbar.
+		     * @property {Symbol} willAddItemNotification Posted before a new item is added to the toolbar.
+		     * @property {Symbol} boundsDidChangeNotification Posted whenever the NSView’s bounds rectangle changes to a new value independently of the frame rectangle, but only when the view’s postsBoundsChangedNotifications property is true.  
+		     * @property {Symbol} didUpdateTrackingAreasNotification Posted whenever an NSView object recalculates its tracking areas.
+		     * @property {Symbol} frameDidChangeNotification Posted whenever the view’s frame rectangle changes to a new value, but only when the view’s postsFrameChangedNotifications property is true.
+		     * @property {Symbol} globalFrameDidChangeNotification Posted whenever an NSView object that has attached surfaces (that is, NSOpenGLContext objects) moves to a different screen, or other cases where the NSOpenGLContext object needs to be updated. 
+		     * @property {Symbol} didBecomeKeyNotification Posted whenever an NSWindow object becomes the key window.
+		     * @property {Symbol} didBecomeMainNotification Posted whenever an NSWindow object becomes the main window.
+		     * @property {Symbol} didChangeBackingPropertiesNotification Posted when the window backing properties change.
+		     * @property {Symbol} didChangeOcclusionStateNotification Posted when the window’s occlusion state changes.
+		     * @property {Symbol} didChangeScreenNotification Posted whenever a portion of an NSWindow object’s frame moves onto or off of a screen.
+		     * @property {Symbol} didChangeScreenProfileNotification Posted whenever the display profile for the screen containing the window changes.
+		     * @property {Symbol} didDeminiaturizeNotification Posted whenever an NSWindow object is deminimized.
+		     * @property {Symbol} didEndLiveResizeNotification Posted after the user resizes a window.
+		     * @property {Symbol} didEndSheetNotification Posted whenever an NSWindow object closes an attached sheet.
+		     * @property {Symbol} didEnterFullScreenNotification Posted when the window entered full screen mode.
+		     * @property {Symbol} didEnterVersionBrowserNotification Posted when the window will enter version browser mode.
+		     * @property {Symbol} didExitFullScreenNotification Posted when the window did exit full screen mode.
+		     * @property {Symbol} didExitVersionBrowserNotification Posted when the window did exit version browser mode.
+		     * @property {Symbol} didExposeNotification Posted whenever a portion of a nonretained NSWindow object is exposed, whether by being ordered in front of other windows or by other windows being removed from in front of it.
+		     * @property {Symbol} didMiniaturizeNotification Posted whenever an NSWindow object is minimized.
+		     * @property {Symbol} didMoveNotification Posted whenever an NSWindow object is moved.
+		     * @property {Symbol} didResignKeyNotification Posted whenever an NSWindow object resigns its status as key window.
+		     * @property {Symbol} didResignMainNotification Posted whenever an NSWindow object resigns its status as main window.
+		     * @property {Symbol} didResizeNotification Posted whenever an NSWindow object’s size changes.
+		     * @property {Symbol} didUpdateNotification Posted whenever an NSWindow object receives an update() message.
+		     * @property {Symbol} willBeginSheetNotification Posted whenever an NSWindow object is about to open a sheet.
+		     * @property {Symbol} willCloseNotification Posted whenever an NSWindow object is about to close.
+		     * @property {Symbol} willEnterFullScreenNotification Posted when the window will enter full screen mode.
+		     * @property {Symbol} willEnterVersionBrowserNotification Posted when the window will enter version browser mode.
+		     * @property {Symbol} willExitFullScreenNotification Posted when the window will exit full screen mode.
+		     * @property {Symbol} willExitVersionBrowserNotification Posted when the window will exit version browser mode.
+		     * @property {Symbol} willMiniaturizeNotification Posted whenever an NSWindow object is about to be minimized.
+		     * @property {Symbol} willMoveNotification Posted whenever an NSWindow object is about to move.
+		     * @property {Symbol} willStartLiveResizeNotification Posted before the user resizes a window.
+		     * @property {Symbol} accessibilityDisplayOptionsDidChangeNotification Posted when any of the accessibility display options change.
+		     * @property {Symbol} activeSpaceDidChangeNotification Posted when a Spaces change has occurred.
+		     * @property {Symbol} didActivateApplicationNotification Posted when the Finder is about to activate an app.
+		     * @property {Symbol} didChangeFileLabelsNotification Posted when the Finder file labels or colors change.
+		     * @property {Symbol} didDeactivateApplicationNotification Posted when the Finder deactivated an app.
+		     * @property {Symbol} didHideApplicationNotification Posted when the Finder hid an app.
+		     * @property {Symbol} didLaunchApplicationNotification Posted when a new app has started up.
+		     * @property {Symbol} didMountNotification Posted when a new device has been mounted.
+		     * @property {Symbol} didPerformFileOperationNotification Posted when a file operation has been performed in the receiving app.
+		     * @property {Symbol} didRenameVolumeNotification Posted when a volume changes its name and/or mount path.  These typically change simultaneously, in which case only one notification is posted.
+		     * @property {Symbol} didTerminateApplicationNotification Posted when an app finishes executing.
+		     * @property {Symbol} didUnhideApplicationNotification Posted when the Finder unhid an app.
+		     * @property {Symbol} didUnmountNotification Posted when the Finder did unmount a device.
+		     * @property {Symbol} didWakeNotification Posted when the machine wakes from sleep.
+		     * @property {Symbol} screensDidSleepNotification Posted when the machine’s screen goes to sleep.
+		     * @property {Symbol} screensDidWakeNotification Posted when the machine’s screens wake.
+		     * @property {Symbol} sessionDidBecomeActiveNotification Posted after a user session is switched in.
+		     * @property {Symbol} sessionDidResignActiveNotification Posted before a user session is switched out.
+		     * @property {Symbol} willLaunchApplicationNotification Posted when the Finder is about to launch an app.
+		     * @property {Symbol} willPowerOffNotification Posted when the user has requested a logout or that the machine be powered off.
+		     * @property {Symbol} willSleepNotification Posted before the machine goes to sleep.
+		     * @property {Symbol} willUnmountNotification Posted when the Finder is about to unmount a device.
+		     * @property {Symbol} PDFDocumentDidBeginFind Posted when the beginFindString(_:withOptions:) or findString(_:withOptions:) method begins finding.
+		     * @property {Symbol} PDFDocumentDidBeginPageFind Posted each time a find operation begins working on a new page of a document.
+		     * @property {Symbol} PDFDocumentDidBeginPageWrite Posted each time a write operation begins working on a page in a document.
+		     * @property {Symbol} PDFDocumentDidBeginWrite Posted each time a write operation begins working on a document.
+		     * @property {Symbol} PDFDocumentDidEndFind Posted when the beginFindString(_:withOptions:) or findString(_:withOptions:) method returns.
+		     * @property {Symbol} PDFDocumentDidEndPageFind Posted each time a find operation finishes working on a page in a document.
+		     * @property {Symbol} PDFDocumentDidEndPageWrite Posted each time a write operation finishes working on a page in a document.
+		     * @property {Symbol} PDFDocumentDidEndWrite Posted each time a write operation finishes working on a document.
+		     * @property {Symbol} PDFDocumentDidFindMatch Posted each time a string match is found in a document.
+		     * @property {Symbol} PDFDocumentDidUnlock Posted when a document unlocks after a unlock(withPassword:) message.
+		     * @property {Symbol} PDFThumbnailViewDocumentEdited 
+		     * @property {Symbol} PDFViewAnnotationHit Posted when the user clicks on an annotation. 
+		     * @property {Symbol} PDFViewAnnotationWillHit Posted before the user clicks an annotation.
+		     * @property {Symbol} PDFViewChangedHistory Posted when the page history changes.
+		     * @property {Symbol} PDFViewCopyPermission Posted when the user attempts to copy to the pasteboard without the appropriate permissions. 
+		     * @property {Symbol} PDFViewDisplayBoxChanged Posted when the display box has changed.
+		     * @property {Symbol} PDFViewDisplayModeChanged Posted when the display mode has changed.
+		     * @property {Symbol} PDFViewDocumentChanged Posted when a new document is associated with the view.
+		     * @property {Symbol} PDFViewPageChanged Posted when a new page becomes the current page.
+		     * @property {Symbol} PDFViewPrintPermission Posted when the user attempts to print without the appropriate permissions. 
+		     * @property {Symbol} PDFViewScaleChanged Posted when the scale factor changes. 
+		     * @property {Symbol} PDFViewSelectionChanged Posted when the current selection has changed.
+		     * @property {Symbol} PDFViewVisiblePagesChanged 
+		     * @property {Symbol} QCCompositionPickerPanelDidSelectComposition Posted when the user chooses a composition.
+		     * @property {Symbol} QCCompositionPickerViewDidSelectComposition Posted when the user selects a composition in the picker view.
+		     * @property {Symbol} QCCompositionRepositoryDidUpdate Posted whenever the list of compositions in the composition repository is updated.
+		     * @property {Symbol} QCViewDidStartRendering Posted when the view starts rendering.
+		     * @property {Symbol} QCViewDidStopRendering Posted when the view stops rendering.
+		     * @property {Symbol} WebHistoryAllItemsRemoved Posted when all history items have been removed from the web history.
+		     * @property {Symbol} WebHistoryItemChanged Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
+		     * @property {Symbol} WebHistoryItemsAdded Posted when history items have been added to a web history.
+		     * @property {Symbol} WebHistoryItemsRemoved Posted when items have been removed from the web history.
+		     * @property {Symbol} WebHistoryLoaded Posted when web history items have been loaded from a URL.
+		     * @property {Symbol} WebHistorySaved Posted when web history items have been saved to a URL.
+		     * @property {Symbol} WebPreferencesChanged Posted when the web preference settings are changed. 
+		     * @property {Symbol} WebViewDidBeginEditing Posted when a web view begins any operation that changes its contents in response to user editing.
+		     * @property {Symbol} WebViewDidChange Posted when a web view performs any operation that changes its contents in response to user editing.
+		     * @property {Symbol} WebViewDidChangeSelection Posted when a web view changes its typing selection.
+		     * @property {Symbol} WebViewDidChangeTypingStyle Posted when a web view changes its typing style.
+		     * @property {Symbol} WebViewDidEndEditing Posted when a web view ends any operation that changes its contents in response to user editing.
+		     * @property {Symbol} WebViewProgressEstimateChanged Posted by a WebView object when the estimated progress value of a load changes.
+		     * @property {Symbol} WebViewProgressFinished Posted by a WebView object when the load has finished.
+		     * @property {Symbol} WebViewProgressStarted Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
+		     * @property {Symbol} abDatabaseChanged Posted when this process has changed the Address Book database.
+		     * @property {Symbol} abDatabaseChangedExternally Posted when a process other than the current one has changed the Address Book database.
+		     * @property {Symbol} quartzFilterManagerDidAddFilter 
+		     * @property {Symbol} quartzFilterManagerDidModifyFilter 
+		     * @property {Symbol} quartzFilterManagerDidRemoveFilter 
+		     * @property {Symbol} quartzFilterManagerDidSelectFilter 
+		     * @property {Symbol} EAAccessoryDidConnect Posted when an accessory becomes connected and available for your application to use.
+		     * @property {Symbol} EAAccessoryDidDisconnect Posted when an accessory is disconnected and no longer available for your application to use.
+		     * @property {Symbol} MPMovieDurationAvailable Posted when the duration of a movie has been determined. There is no userInfo dictionary.
+		     * @property {Symbol} MPMovieMediaTypesAvailable Posted when the available media types in a movie are determined. There is no userInfo dictionary.
+		     * @property {Symbol} MPMovieNaturalSizeAvailable Posted when the natural frame size of a movie is first determined or subsequently changes. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerDidEnterFullscreen Posted when a movie player has entered full-screen mode. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerDidExitFullscreen Posted when a movie player has exited full-screen mode. There is no userInfo dictionary.  
+		     * @property {Symbol} MPMoviePlayerIsAirPlayVideoActiveDidChange Posted when a movie player has started or ended playing a movie via AirPlay. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerLoadStateDidChange Posted when a movie player’s network buffering state has changed. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerNowPlayingMovieDidChange Posted when the currently playing movie has changed. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerPlaybackDidFinish Posted when a movie has finished playing. The userInfo dictionary of this notification contains the MPMoviePlayerPlaybackDidFinishReasonUserInfoKey key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
+		     * @property {Symbol} MPMoviePlayerPlaybackStateDidChange Posted when a movie player’s playback state has changed. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerReadyForDisplayDidChange Posted when the ready for display state changes.
+		     * @property {Symbol} MPMoviePlayerScalingModeDidChange Posted when the scaling mode of a movie player has changed. There is no userInfo dictionary.
+		     * @property {Symbol} MPMoviePlayerThumbnailImageRequestDidFinish Posted when a request to capture a thumbnail from a movie has finished whether the request succeeded or failed. Upon successful capture of a thumbnail, the userInfo dictionary contains values for the following keys:
+		     * @property {Symbol} MPMoviePlayerTimedMetadataUpdated Posted when new timed metadata arrives.
+		     * @property {Symbol} MPMoviePlayerWillEnterFullscreen Posted when a movie player is about to enter full-screen mode. The userInfo dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See Fullscreen Notification Keys.
+		     * @property {Symbol} MPMoviePlayerWillExitFullscreen Posted when a movie player is about to exit full-screen mode. The userInfo dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See Fullscreen Notification Keys.
+		     * @property {Symbol} MPMovieSourceTypeAvailable Posted when the source type of a movie was previously unknown and is newly available. There is no userInfo dictionary.
+		     * @property {Symbol} SKCloudServiceCapabilitiesDidChange Called when the capabilities associated with the music library on the device change.
+		     * @property {Symbol} SKStorefrontIdentifierDidChange Called when the storefront identifier associated with the device changes.
+		     * @property {Symbol} TVTopShelfItemsDidChange A notification to post when your app’s Top Shelf content has changed.
+		     * @property {Symbol} UIAccessibilityAssistiveTouchStatusDidChange 
+		     * @property {Symbol} UIAccessibilityBoldTextStatusDidChange Posted by UIKit when the system’s Bold Text setting has changed. 
+		     * @property {Symbol} UIAccessibilityClosedCaptioningStatusDidChange Posted by UIKit when the setting for closed captioning has changed.
+		     * @property {Symbol} UIAccessibilityDarkerSystemColorsStatusDidChange Posted by UIKit when the system’s Darken Colors setting has changed.
+		     * @property {Symbol} UIAccessibilityGrayscaleStatusDidChange Posted by UIKit when the system’s Grayscale setting has changed.
+		     * @property {Symbol} UIAccessibilityGuidedAccessStatusDidChange Posted by UIKit when a Guided Access session starts or ends.  
+		     * @property {Symbol} UIAccessibilityHearingDevicePairedEarDidChange 
+		     * @property {Symbol} UIAccessibilityInvertColorsStatusDidChange Posted by UIKit when the setting for inverted colors has changed.  
+		     * @property {Symbol} UIAccessibilityMonoAudioStatusDidChange Posted by UIKit when system audio changes from stereo to mono.
+		     * @property {Symbol} UIAccessibilityReduceMotionStatusDidChange Posted by UIKit when the system’s Reduce Motion setting has changed.
+		     * @property {Symbol} UIAccessibilityReduceTransparencyStatusDidChange Posted by UIKit when the system’s Reduce Transparency system setting has changed.
+		     * @property {Symbol} UIAccessibilityShakeToUndoDidChange 
+		     * @property {Symbol} UIAccessibilitySpeakScreenStatusDidChange Posted by UIKit when the system’s Speak Screen setting has changed.
+		     * @property {Symbol} UIAccessibilitySpeakSelectionStatusDidChange Posted by UIKit when the system’s Speak Selection setting has changed.
+		     * @property {Symbol} UIAccessibilitySwitchControlStatusDidChange Posted by UIKit when the system’s Switch Control setting has changed.
+		     * @property {Symbol} UIApplicationDidBecomeActive Posted when the app becomes active. 
+		     * @property {Symbol} UIApplicationDidEnterBackground Posted when the app enters the background.
+		     * @property {Symbol} UIApplicationDidFinishLaunching Posted immediately after the app finishes launching.
+		     * @property {Symbol} UIApplicationDidReceiveMemoryWarning Posted when the app receives a warning from the operating system about low memory availability.
+		     * @property {Symbol} UIApplicationSignificantTimeChange Posted when there is a significant change in time, for example, change to a new day (midnight), carrier time update, and change to or from daylight savings time.
+		     * @property {Symbol} UIApplicationUserDidTakeScreenshot Posted when the user presses the Home and Lock buttons to take a screenshot. 
+		     * @property {Symbol} UIApplicationWillEnterForeground Posted shortly before an app leaves the background state on its way to becoming the active app.
+		     * @property {Symbol} UIApplicationWillResignActive Posted when the app is no longer active and loses focus.
+		     * @property {Symbol} UIApplicationWillTerminate Posted when the app is about to terminate.
+		     * @property {Symbol} UIContentSizeCategoryDidChange Posted when the user changes the preferred content size setting. 
+		     * @property {Symbol} UIDeviceProximityStateDidChange Posted when the state of the proximity sensor changes.
+		     * @property {Symbol} UIScreenBrightnessDidChange This notification is posted when the brightness of a screen changes. The object of the notification is the UIScreen object whose brightness property changed. There is no userInfo dictionary. 
+		     * @property {Symbol} UIScreenDidConnect This notification is posted when a new screen is connected to the device. The object of the notification is the UIScreen object representing the new screen. There is no userInfo dictionary. 
+		     * @property {Symbol} UIScreenDidDisconnect This notification is posted when a screen is disconnected from the device. The object of the notification is the UIScreen object that represented the now disconnected screen. There is no userInfo dictionary. 
+		     * @property {Symbol} UIScreenModeDidChange This notification is posted when the current mode of a screen changes. The object of the notification is the UIScreen object whose currentMode property changed. There is no userInfo dictionary. 
+		     * @property {Symbol} UITableViewSelectionDidChange Posted when the selected row in the posting table view changes.
+		     * @property {Symbol} UITextFieldTextDidBeginEditing Notifies observers that an editing session began in a text field. The affected text field is stored in the object parameter of the notification. The userInfo dictionary is not used.
+		     * @property {Symbol} UITextFieldTextDidChange Notifies observers that the text in a text field changed. The affected text field is stored in the object parameter of the notification. 
+		     * @property {Symbol} UITextFieldTextDidEndEditing Notifies observers that the editing session ended for a text field. The affected text field is stored in the object parameter of the notification. The userInfo dictionary is not used.
+		     * @property {Symbol} UITextInputCurrentInputModeDidChange Posted when the current input mode changes.
+		     * @property {Symbol} UITextViewTextDidBeginEditing Notifies observers that an editing session began in a text view. The affected view is stored in the object parameter of the notification. The userInfo dictionary is not used.
+		     * @property {Symbol} UITextViewTextDidChange Notifies observers that the text in a text view changed. The affected view is stored in the object parameter of the notification. The userInfo dictionary is not used.
+		     * @property {Symbol} UITextViewTextDidEndEditing Notifies observers that the editing session ended for a text view. The affected view is stored in the object parameter of the notification. The userInfo dictionary is not used.
+		     * @property {Symbol} UIViewControllerShowDetailTargetDidChange Posted when a split view controller is expanded or collapsed.
+		     * @property {Symbol} UIWindowDidBecomeHidden Posted when an UIWindow object becomes hidden.
+		     * @property {Symbol} UIWindowDidBecomeKey Posted whenever a UIWindow object becomes the key window.
+		     * @property {Symbol} UIWindowDidBecomeVisible Posted when an UIWindow object becomes visible.
+		     * @property {Symbol} UIWindowDidResignKey Posted whenever a UIWindow object resigns its status as main window.
+		     * @property {Symbol} ALAssetsLibraryChanged Sent when the contents of the assets library have changed from under the app that is using the data.
+		     * @property {Symbol} AVCaptureDeviceSubjectAreaDidChange Posted when the instance of AVCaptureDevice has detected a substantial change to the video subject area.
+		     * @property {Symbol} AVCaptureSessionInterruptionEnded Posted if an interruption to a capture session finishes.
+		     * @property {Symbol} AVCaptureSessionWasInterrupted Posted if a capture session is interrupted.
+		     * @property {Symbol} CTRadioAccessTechnologyDidChange 
+		     * @property {Symbol} MFMessageComposeViewControllerTextMessageAvailabilityDidChange Posted when the value returned by the canSendText() class method has changed.
+		     * @property {Symbol} MPMediaLibraryDidChange Indicates the media library has changed.
+		     * @property {Symbol} MPMediaPlaybackIsPreparedToPlayDidChange Indicates that the prepared to play status of the media player has changed.
+		     * @property {Symbol} MPMusicPlayerControllerNowPlayingItemDidChange Posted when the currently playing media item has changed.
+		     * @property {Symbol} MPMusicPlayerControllerPlaybackStateDidChange Posted when the playback state has been changed programmatically or by user action.
+		     * @property {Symbol} MPMusicPlayerControllerVolumeDidChange Posted when the audio playback volume for the music player has changed.
+		     * @property {Symbol} MPVolumeViewWirelessRouteActiveDidChange Indicates the active wireless route changed.
+		     * @property {Symbol} MPVolumeViewWirelessRoutesAvailableDidChange Indicates the available wireless routes changed.
+		     * @property {Symbol} NKIssueDownloadCompleted Posted when all assets of the issue have been downloaded.
+		     * @property {Symbol} UIApplicationBackgroundRefreshStatusDidChange Posted when the app’s status for downloading content in the background changes.
+		     * @property {Symbol} UIApplicationDidChangeStatusBarFrame Posted when the frame of the status bar changes.
+		     * @property {Symbol} UIApplicationDidChangeStatusBarOrientation Posted when the orientation of the app’s user interface changes.
+		     * @property {Symbol} UIApplicationWillChangeStatusBarFrame Posted when the app is about to change the frame of the status bar.
+		     * @property {Symbol} UIApplicationWillChangeStatusBarOrientation Posted when the app is about to change the orientation of its interface.
+		     * @property {Symbol} UIDeviceBatteryLevelDidChange Posted when the battery level changes.
+		     * @property {Symbol} UIDeviceBatteryStateDidChange Posted when battery state changes.
+		     * @property {Symbol} UIDeviceOrientationDidChange Posted when the orientation of the device changes.
+		     * @property {Symbol} UIDocumentStateChanged Posted by the document object when there is a change in the state of the document.
+		     * @property {Symbol} UIKeyboardDidChangeFrame Posted immediately after a change in the keyboard’s frame.
+		     * @property {Symbol} UIKeyboardDidHide Posted immediately after the dismissal of the keyboard.
+		     * @property {Symbol} UIKeyboardDidShow Posted immediately after the display of the keyboard.
+		     * @property {Symbol} UIKeyboardWillChangeFrame Posted immediately prior to a change in the keyboard’s frame.
+		     * @property {Symbol} UIKeyboardWillHide Posted immediately prior to the dismissal of the keyboard.
+		     * @property {Symbol} UIKeyboardWillShow Posted immediately prior to the display of the keyboard.
+		     * @property {Symbol} UIMenuControllerDidHideMenu Posted by the menu controller just after it hides the menu.
+		     * @property {Symbol} UIMenuControllerDidShowMenu Posted by the menu controller just after it shows the menu.
+		     * @property {Symbol} UIMenuControllerMenuFrameDidChange Posted when the frame of a visible menu changes.
+		     * @property {Symbol} UIMenuControllerWillHideMenu Posted by the menu controller just before it hides the menu.
+		     * @property {Symbol} UIMenuControllerWillShowMenu Posted by the menu controller just before it shows the menu.
+		     * @property {Symbol} UIPasteboardChanged Posted by a pasteboard object when its contents change.
+		     * @property {Symbol} UIPasteboardRemoved Posted by a pasteboard object just before an app removes it.
+		     * @property {Symbol} UIApplicationProtectedDataDidBecomeAvailable Posted when the protected files become available for your code to access.
+		     * @property {Symbol} UIApplicationProtectedDataWillBecomeUnavailable Posted shortly before protected files are locked down and become inaccessible.
+		     * @property {Symbol} didChangeAutomaticTextCompletionNotification 
+		     * @property {Symbol} MPMusicPlayerControllerQueueDidChange Indicates the music player's queue changed.
+		     * @property {Symbol} GKPlayerAuthenticationDidChangeNotificationName Posted after the isAuthenticated property of the shared local player object changes. The object property for this notification is a GKLocalPlayer object. Passing nil provides standard Notification Center behavior which is to receive the notification for any object.
+		     * @property {Symbol} GKPlayerDidChangeNotificationName Posted when a player object’s data changes.
+		     * @property {Symbol} NEDNSProxyConfigurationDidChange 
+		     * @property {Symbol} SKStorefrontCountryCodeDidChange 
+		     * @property {Symbol} UIAccessibilityVoiceOverStatusDidChange 
+		     * @property {Symbol} UIFocusDidUpdate 
+		     * @property {Symbol} UIFocusMovementDidFail 
+		     * @property {Symbol} init 
+		     * @property {Symbol} initrawValue 
+		     * @property {Symbol} initnameobjectuserInfo Initializes a new notification.
+		     * @property {Symbol} Notification.Name An alias for a type used to represent the name of a notification.
+		     * @see https://developer.apple.com/documentation/foundation/nsnotification.name
+		     */
+
+		  }], [{
+		    key: 'Name',
+		    get: function get() {
+		      return _Name;
+		    }
+		  }]);
+
+		  return NSNotification;
+		}(_NSObject3.default);
+
+		exports.default = NSNotification;
+
+	/***/ },
+	/* 29 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -11649,7 +13040,7 @@ var JSceneKitExample =
 		exports.default = NSArray;
 
 	/***/ },
-	/* 26 */
+	/* 30 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -11676,7 +13067,7 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _CGVector = __webpack_require__(20);
+		var _CGVector = __webpack_require__(22);
 
 		var _CGVector2 = _interopRequireDefault(_CGVector);
 
@@ -11691,15 +13082,14 @@ var JSceneKitExample =
 		var _DecodingFailurePolicy = {
 		  raiseException: Symbol('raiseException'),
 		  setErrorAndReturn: Symbol('setErrorAndReturn')
+
+		  /**
+		   * The NSCoder abstract class declares the interface used by concrete subclasses to transfer objects and other values between memory and some other format. This capability provides the basis for archiving (where objects and data items are stored on disk) and distribution (where objects and data items are copied between different processes or threads). The concrete subclasses provided by Foundation for these purposes are NSArchiver, NSUnarchiver, NSKeyedArchiver, NSKeyedUnarchiver, and NSPortCoder. Concrete subclasses of NSCoder are referred to in general as coder classes, and instances of these classes as coder objects (or simply coders). A coder object that can only encode values is referred to as an encoder object, and one that can only decode values as a decoder object.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/foundation/nscoder
+		   */
 		};
-
-		/**
-		 * The NSCoder abstract class declares the interface used by concrete subclasses to transfer objects and other values between memory and some other format. This capability provides the basis for archiving (where objects and data items are stored on disk) and distribution (where objects and data items are copied between different processes or threads). The concrete subclasses provided by Foundation for these purposes are NSArchiver, NSUnarchiver, NSKeyedArchiver, NSKeyedUnarchiver, and NSPortCoder. Concrete subclasses of NSCoder are referred to in general as coder classes, and instances of these classes as coder objects (or simply coders). A coder object that can only encode values is referred to as an encoder object, and one that can only decode values as a decoder object.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/foundation/nscoder
-		 */
-
 		var NSCoder = function (_NSObject) {
 		  _inherits(NSCoder, _NSObject);
 
@@ -12575,7 +13965,7 @@ var JSceneKitExample =
 		exports.default = NSCoder;
 
 	/***/ },
-	/* 27 */
+	/* 31 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -12634,7 +14024,7 @@ var JSceneKitExample =
 		exports.default = NSColorSpace;
 
 	/***/ },
-	/* 28 */
+	/* 32 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -12698,7 +14088,7 @@ var JSceneKitExample =
 		exports.default = NSData;
 
 	/***/ },
-	/* 29 */
+	/* 33 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -12792,7 +14182,7 @@ var JSceneKitExample =
 		exports.default = NSDictionary;
 
 	/***/ },
-	/* 30 */
+	/* 34 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -12803,7 +14193,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSCoder2 = __webpack_require__(26);
+		var _NSCoder2 = __webpack_require__(30);
 
 		var _NSCoder3 = _interopRequireDefault(_NSCoder2);
 
@@ -13032,7 +14422,7 @@ var JSceneKitExample =
 		exports.default = NSKeyedArchiver;
 
 	/***/ },
-	/* 31 */
+	/* 35 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -13043,23 +14433,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSCoder2 = __webpack_require__(26);
+		var _NSCoder2 = __webpack_require__(30);
 
 		var _NSCoder3 = _interopRequireDefault(_NSCoder2);
 
-		var _NSData = __webpack_require__(28);
+		var _NSData = __webpack_require__(32);
 
 		var _NSData2 = _interopRequireDefault(_NSData);
 
-		var _File2 = __webpack_require__(32);
+		var _File2 = __webpack_require__(36);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(33);
+		var _FileReader2 = __webpack_require__(37);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
-		var _BinaryReader2 = __webpack_require__(34);
+		var _BinaryReader2 = __webpack_require__(38);
 
 		var _BinaryReader3 = _interopRequireDefault(_BinaryReader2);
 
@@ -13275,7 +14665,7 @@ var JSceneKitExample =
 		      this._offsetSize = reader.readUnsignedByte();
 		      this._objCount = reader.readUnsignedLongLong();
 		      var topIndex = reader.readUnsignedLongLong();
-		      var tablePos = reader.readUnsignedLongLong();
+		      var tablePos = reader.readUnsignedLongLong
 
 		      //console.log(`dataLen: ${dataLen}`)
 		      //console.log(`intSize: ${intSize}`)
@@ -13284,7 +14674,7 @@ var JSceneKitExample =
 		      //console.log(`topIndex: ${topIndex}`)
 		      //console.log(`tablePos: ${tablePos}`)
 
-		      this._offsetArray = [];
+		      ();this._offsetArray = [];
 		      var pos = tablePos;
 		      reader.seek(pos);
 		      var objCount = this._objCount;
@@ -13330,9 +14720,9 @@ var JSceneKitExample =
 		        }
 		      } else if (type1 === 0x10) {
 		        // Int
-		        var len = Math.pow(2, type2);
+		        var len = Math.pow(2, type2
 		        //console.log('   type: integer ' + len)
-		        return reader.readInteger(len, signed);
+		        );return reader.readInteger(len, signed);
 		      } else if (type1 === 0x20) {
 		        // Float
 		        var _len = Math.pow(2, type2);
@@ -13349,37 +14739,38 @@ var JSceneKitExample =
 		        //console.log('   type: Date')
 		      } else if (type1 === 0x40) {
 		        // Data
-		        var count = this._getDataSize(type2);
+		        var count = this._getDataSize(type2
 		        //console.log(`   type: Data: length: ${count}`)
-		        return reader.readData(count);
+		        );return reader.readData(count);
 		      } else if (type1 === 0x50) {
 		        // ASCII
-		        var _count = this._getDataSize(type2);
+		        var _count = this._getDataSize(type2
 		        //console.log('   type: ascii ' + count)
-		        return reader.readString(_count, 'ascii');
+		        );return reader.readString(_count, 'ascii');
 		      } else if (type1 === 0x60) {
 		        // UTF-16
-		        var _count2 = this._getDataSize(type2);
+		        var _count2 = this._getDataSize(type2
 		        //console.log('   type: UTF-16 ' + count)
-		        return reader.readString(_count2, 'utf16be'); // Big Endian might not be supported...
+		        );return reader.readString(_count2, 'utf16be' // Big Endian might not be supported...
+		        );
 		      } else if (type1 === 0x80) {
 		        // UID
-		        var uid = reader.readInteger(type2 + 1, false);
+		        var uid = reader.readInteger(type2 + 1, false
 		        //console.log('   type: UID: ' + uid)
-		        return new _UID(this, uid);
+		        );return new _UID(this, uid);
 		      } else if (type1 === 0xA0) {
 		        // Array
-		        var _count3 = this._getDataSize(type2);
+		        var _count3 = this._getDataSize(type2
 		        //console.log('   type: array: ' + count)
-		        var arrIndex = [];
+		        );var arrIndex = [];
 		        for (var i = 0; i < _count3; i++) {
 		          arrIndex.push(reader.readInteger(this._offsetSize, false));
 		        }
 		        var arr = arrIndex.map(function (index) {
 		          return _this2._parseObjAtIndex(index);
-		        });
+		        }
 		        //console.log(`***arr.length: ${arr.length}`)
-		        return arr;
+		        );return arr;
 		      } else if (type1 === 0xC0) {
 		        // Set
 		        var _count4 = this._getDataSize(type2);
@@ -13405,11 +14796,11 @@ var JSceneKitExample =
 		        }
 		        var result = {};
 		        for (var _i4 = 0; _i4 < _count5; _i4++) {
-		          var key = this._parseObjAtIndex(keyIndex[_i4]);
+		          var key = this._parseObjAtIndex(keyIndex[_i4]
 		          //console.log('key: ' + key)
-		          var val = this._parseObjAtIndex(valueIndex[_i4]);
+		          );var val = this._parseObjAtIndex(valueIndex[_i4]
 		          //console.log('val: ' + val)
-		          result[key] = val;
+		          );result[key] = val;
 		        }
 		        return result;
 		      }
@@ -13683,9 +15074,9 @@ var JSceneKitExample =
 		      if (this._decodingFinished) {
 		        throw new Error('can\'t decode \'' + key + '\' after finishDecoding() is called');
 		      }
-		      var parsedObj = this.decodeObjectForKey(key);
+		      var parsedObj = this.decodeObjectForKey(key
 		      //console.log(`${key}: ${parsedObj.constructor.name}`)
-		      if (!(parsedObj instanceof Buffer)) {
+		      );if (!(parsedObj instanceof Buffer)) {
 		        throw new Error('propertylist of key ' + key + ' is not Buffer data');
 		      }
 		      //console.log(`***header: ${parsedObj.toString('ascii', 0, 8)}`)
@@ -13855,7 +15246,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 32 */
+	/* 36 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -13868,7 +15259,7 @@ var JSceneKitExample =
 		exports.default = File;
 
 	/***/ },
-	/* 33 */
+	/* 37 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -13881,7 +15272,7 @@ var JSceneKitExample =
 		exports.default = FileReader;
 
 	/***/ },
-	/* 34 */
+	/* 38 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -13894,7 +15285,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _ecl = __webpack_require__(35);
+		var _ecl = __webpack_require__(39);
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -14279,7 +15670,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 35 */
+	/* 39 */
 	/***/ function(module, exports) {
 
 		"use strict";
@@ -14567,7 +15958,7 @@ var JSceneKitExample =
 		exports.JCT8836 = JCT8836;
 
 	/***/ },
-	/* 36 */
+	/* 40 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14576,7 +15967,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSArray2 = __webpack_require__(25);
+		var _NSArray2 = __webpack_require__(29);
 
 		var _NSArray3 = _interopRequireDefault(_NSArray2);
 
@@ -14608,7 +15999,7 @@ var JSceneKitExample =
 		exports.default = NSMutableArray;
 
 	/***/ },
-	/* 37 */
+	/* 41 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14617,7 +16008,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSData2 = __webpack_require__(28);
+		var _NSData2 = __webpack_require__(32);
 
 		var _NSData3 = _interopRequireDefault(_NSData2);
 
@@ -14649,7 +16040,7 @@ var JSceneKitExample =
 		exports.default = NSMutableData;
 
 	/***/ },
-	/* 38 */
+	/* 42 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14658,7 +16049,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSDictionary2 = __webpack_require__(29);
+		var _NSDictionary2 = __webpack_require__(33);
 
 		var _NSDictionary3 = _interopRequireDefault(_NSDictionary2);
 
@@ -14690,7 +16081,7 @@ var JSceneKitExample =
 		exports.default = NSMutableDictionary;
 
 	/***/ },
-	/* 39 */
+	/* 43 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14755,7 +16146,7 @@ var JSceneKitExample =
 		exports.default = NSURL;
 
 	/***/ },
-	/* 40 */
+	/* 44 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14774,7 +16165,7 @@ var JSceneKitExample =
 
 		var _CGPoint2 = _interopRequireDefault(_CGPoint);
 
-		var _CGVector = __webpack_require__(20);
+		var _CGVector = __webpack_require__(22);
 
 		var _CGVector2 = _interopRequireDefault(_CGVector);
 
@@ -14786,19 +16177,19 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _CATransform3D = __webpack_require__(41);
+		var _CATransform3D = __webpack_require__(45);
 
 		var _CATransform3D2 = _interopRequireDefault(_CATransform3D);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -15503,7 +16894,7 @@ var JSceneKitExample =
 		exports.default = NSValue;
 
 	/***/ },
-	/* 41 */
+	/* 45 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -15560,7 +16951,7 @@ var JSceneKitExample =
 		exports.default = CATransform3D;
 
 	/***/ },
-	/* 42 */
+	/* 46 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -15571,7 +16962,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -15937,7 +17328,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3;
 
 	/***/ },
-	/* 43 */
+	/* 47 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -15948,11 +17339,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -16484,7 +17875,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4;
 
 	/***/ },
-	/* 44 */
+	/* 48 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16495,11 +17886,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -17288,7 +18679,7 @@ var JSceneKitExample =
 		  }, {
 		    key: 'getOrientation',
 		    value: function getOrientation() {
-		      return this.getRotation().rotationToQuat();
+		      return this.getRotation().rotationToQuat
 		      /*
 		      const e = []
 		      const scale = this.getScale().mul(this.m44)
@@ -17348,6 +18739,7 @@ var JSceneKitExample =
 		      v.z *= len
 		       return v
 		      */
+		      ();
 		    }
 
 		    /**
@@ -17509,7 +18901,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4;
 
 	/***/ },
-	/* 45 */
+	/* 49 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -17567,7 +18959,7 @@ var JSceneKitExample =
 		exports.default = CAAction;
 
 	/***/ },
-	/* 46 */
+	/* 50 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -17580,7 +18972,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _constants = __webpack_require__(47);
+		var _constants = __webpack_require__(51);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -17588,23 +18980,23 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAAction = __webpack_require__(45);
+		var _CAAction = __webpack_require__(49);
 
 		var _CAAction2 = _interopRequireDefault(_CAAction);
 
-		var _CAMediaTiming = __webpack_require__(48);
+		var _CAMediaTiming = __webpack_require__(52);
 
 		var _CAMediaTiming2 = _interopRequireDefault(_CAMediaTiming);
 
-		var _CAMediaTimingFunction = __webpack_require__(49);
+		var _CAMediaTimingFunction = __webpack_require__(53);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAAnimationDelegate = __webpack_require__(50);
+		var _CAAnimationDelegate = __webpack_require__(54);
 
 		var _CAAnimationDelegate2 = _interopRequireDefault(_CAAnimationDelegate);
 
-		var _SCNAnimationEvent = __webpack_require__(51);
+		var _SCNAnimationEvent = __webpack_require__(55);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
@@ -18012,7 +19404,7 @@ var JSceneKitExample =
 		exports.default = CAAnimation;
 
 	/***/ },
-	/* 47 */
+	/* 51 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -18044,7 +19436,7 @@ var JSceneKitExample =
 		exports.kCAAnimationRotateAutoReverse = 'autoReverse';
 
 	/***/ },
-	/* 48 */
+	/* 52 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -18139,7 +19531,7 @@ var JSceneKitExample =
 		exports.default = CAMediaTiming;
 
 	/***/ },
-	/* 49 */
+	/* 53 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18154,7 +19546,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _constants = __webpack_require__(47);
+		var _constants = __webpack_require__(51);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -18300,7 +19692,7 @@ var JSceneKitExample =
 		exports.default = CAMediaTimingFunction;
 
 	/***/ },
-	/* 50 */
+	/* 54 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18311,7 +19703,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimation = __webpack_require__(46);
+		var _CAAnimation = __webpack_require__(50);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -18375,7 +19767,7 @@ var JSceneKitExample =
 		exports.default = CAAnimationDelegate;
 
 	/***/ },
-	/* 51 */
+	/* 55 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18443,7 +19835,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimationEvent;
 
 	/***/ },
-	/* 52 */
+	/* 56 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18456,7 +19848,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAAnimation2 = __webpack_require__(46);
+		var _CAAnimation2 = __webpack_require__(50);
 
 		var _CAAnimation3 = _interopRequireDefault(_CAAnimation2);
 
@@ -18561,7 +19953,7 @@ var JSceneKitExample =
 		exports.default = CAAnimationGroup;
 
 	/***/ },
-	/* 53 */
+	/* 57 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18574,7 +19966,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAPropertyAnimation2 = __webpack_require__(54);
+		var _CAPropertyAnimation2 = __webpack_require__(58);
 
 		var _CAPropertyAnimation3 = _interopRequireDefault(_CAPropertyAnimation2);
 
@@ -18795,7 +20187,7 @@ var JSceneKitExample =
 		exports.default = CABasicAnimation;
 
 	/***/ },
-	/* 54 */
+	/* 58 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18808,7 +20200,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAAnimation2 = __webpack_require__(46);
+		var _CAAnimation2 = __webpack_require__(50);
 
 		var _CAAnimation3 = _interopRequireDefault(_CAAnimation2);
 
@@ -18824,19 +20216,19 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNQuaternion = __webpack_require__(55);
+		var _SCNQuaternion = __webpack_require__(59);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(42);
+		var _SCNVector3 = __webpack_require__(46);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -18968,9 +20360,9 @@ var JSceneKitExample =
 		      if (this.valueFunction !== null) {
 		        value = this.valueFunction._getValueAtTime(t);
 		      }
-		      value = this._calculateWithBaseValue(obj, value);
+		      value = this._calculateWithBaseValue(obj, value
 		      //console.log(`CAPropertyAnimation: obj: ${obj.name}, time: ${time}, keyPath: ${this.keyPath}, value: ${value}`)
-		      this._applyValue(obj, value);
+		      );this._applyValue(obj, value);
 		      this._handleEvents(obj, t);
 		    }
 		  }, {
@@ -19045,7 +20437,7 @@ var JSceneKitExample =
 		exports.default = CAPropertyAnimation;
 
 	/***/ },
-	/* 55 */
+	/* 59 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19054,7 +20446,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -19071,7 +20463,7 @@ var JSceneKitExample =
 		exports.default = SCNQuaternion;
 
 	/***/ },
-	/* 56 */
+	/* 60 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -19093,7 +20485,7 @@ var JSceneKitExample =
 		exports.default = CACurrentMediaTime;
 
 	/***/ },
-	/* 57 */
+	/* 61 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19106,19 +20498,19 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAPropertyAnimation2 = __webpack_require__(54);
+		var _CAPropertyAnimation2 = __webpack_require__(58);
 
 		var _CAPropertyAnimation3 = _interopRequireDefault(_CAPropertyAnimation2);
 
-		var _CGPath = __webpack_require__(17);
+		var _CGPath = __webpack_require__(19);
 
 		var _CGPath2 = _interopRequireDefault(_CGPath);
 
-		var _CAMediaTimingFunction = __webpack_require__(49);
+		var _CAMediaTimingFunction = __webpack_require__(53);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _constants = __webpack_require__(47);
+		var _constants = __webpack_require__(51);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -19365,7 +20757,7 @@ var JSceneKitExample =
 		exports.default = CAKeyframeAnimation;
 
 	/***/ },
-	/* 58 */
+	/* 62 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19394,15 +20786,15 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -19410,7 +20802,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _constants = __webpack_require__(47);
+		var _constants = __webpack_require__(51);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -19580,8 +20972,9 @@ var JSceneKitExample =
 		    value: function _applyAction(obj, time) {
 		      var needTimeConversion = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
 
-		      var t = this._getTime(time, needTimeConversion);
+		      var t = this._getTime(time, needTimeConversion
 		      //this._handleEvents(obj, t)
+		      );
 		    }
 		  }, {
 		    key: '_getTime',
@@ -20241,7 +21634,7 @@ var JSceneKitExample =
 		exports.default = SCNAction;
 
 	/***/ },
-	/* 59 */
+	/* 63 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -20269,7 +21662,7 @@ var JSceneKitExample =
 		exports.default = SCNActionTimingMode;
 
 	/***/ },
-	/* 60 */
+	/* 64 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20280,7 +21673,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction = __webpack_require__(58);
+		var _SCNAction = __webpack_require__(62);
 
 		var _SCNAction2 = _interopRequireDefault(_SCNAction);
 
@@ -20452,7 +21845,7 @@ var JSceneKitExample =
 		exports.default = SCNActionable;
 
 	/***/ },
-	/* 61 */
+	/* 65 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20463,11 +21856,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -20525,7 +21918,7 @@ var JSceneKitExample =
 		exports.default = SCNActionCustom;
 
 	/***/ },
-	/* 62 */
+	/* 66 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20538,15 +21931,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -20661,9 +22054,9 @@ var JSceneKitExample =
 		        throw new Error('both toValue and byValue are null');
 		      }
 
-		      var value = this._lerp(baseValue, toValue, t);
+		      var value = this._lerp(baseValue, toValue, t
 		      //console.warn(`opacity time: ${time}, t: ${t}, base: ${baseValue}, to: ${toValue}, val: ${value}`)
-		      obj.presentation.opacity = value;
+		      );obj.presentation.opacity = value;
 
 		      if (this._finished) {
 		        obj.opacity = toValue;
@@ -20749,7 +22142,7 @@ var JSceneKitExample =
 		_SCNAction3.default.fadeOpacityToDuration = SCNActionFade.fadeOpacityToDuration;
 
 	/***/ },
-	/* 63 */
+	/* 67 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20762,19 +22155,19 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimationGroup = __webpack_require__(52);
+		var _CAAnimationGroup = __webpack_require__(56);
 
 		var _CAAnimationGroup2 = _interopRequireDefault(_CAAnimationGroup);
 
-		var _CABasicAnimation = __webpack_require__(53);
+		var _CABasicAnimation = __webpack_require__(57);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _CAMediaTimingFunction = __webpack_require__(49);
+		var _CAMediaTimingFunction = __webpack_require__(53);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAKeyframeAnimation = __webpack_require__(57);
+		var _CAKeyframeAnimation = __webpack_require__(61);
 
 		var _CAKeyframeAnimation2 = _interopRequireDefault(_CAKeyframeAnimation);
 
@@ -20782,103 +22175,103 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNActionable = __webpack_require__(60);
+		var _SCNActionable = __webpack_require__(64);
 
 		var _SCNActionable2 = _interopRequireDefault(_SCNActionable);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNBoundingVolume = __webpack_require__(65);
+		var _SCNBoundingVolume = __webpack_require__(69);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNLight = __webpack_require__(82);
+		var _SCNLight = __webpack_require__(86);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNCamera = __webpack_require__(128);
+		var _SCNCamera = __webpack_require__(132);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNMorpher = __webpack_require__(135);
+		var _SCNMorpher = __webpack_require__(139);
 
 		var _SCNMorpher2 = _interopRequireDefault(_SCNMorpher);
 
-		var _SCNSkinner = __webpack_require__(137);
+		var _SCNSkinner = __webpack_require__(141);
 
 		var _SCNSkinner2 = _interopRequireDefault(_SCNSkinner);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(138);
+		var _SCNMatrix4MakeScale = __webpack_require__(142);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNQuaternion = __webpack_require__(55);
+		var _SCNQuaternion = __webpack_require__(59);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNConstraint = __webpack_require__(139);
+		var _SCNConstraint = __webpack_require__(143);
 
 		var _SCNConstraint2 = _interopRequireDefault(_SCNConstraint);
 
-		var _SCNMovabilityHint = __webpack_require__(140);
+		var _SCNMovabilityHint = __webpack_require__(144);
 
 		var _SCNMovabilityHint2 = _interopRequireDefault(_SCNMovabilityHint);
 
-		var _SCNNodeRendererDelegate = __webpack_require__(141);
+		var _SCNNodeRendererDelegate = __webpack_require__(145);
 
 		var _SCNNodeRendererDelegate2 = _interopRequireDefault(_SCNNodeRendererDelegate);
 
-		var _SCNOrderedDictionary = __webpack_require__(77);
+		var _SCNOrderedDictionary = __webpack_require__(81);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsField = __webpack_require__(142);
+		var _SCNPhysicsField = __webpack_require__(146);
 
 		var _SCNPhysicsField2 = _interopRequireDefault(_SCNPhysicsField);
 
-		var _SCNParticleSystem = __webpack_require__(105);
+		var _SCNParticleSystem = __webpack_require__(109);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNTransaction = __webpack_require__(78);
+		var _SCNTransaction = __webpack_require__(82);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNAudioPlayer = __webpack_require__(145);
+		var _SCNAudioPlayer = __webpack_require__(149);
 
 		var _SCNAudioPlayer2 = _interopRequireDefault(_SCNAudioPlayer);
 
-		var _SCNHitTestResult = __webpack_require__(104);
+		var _SCNHitTestResult = __webpack_require__(108);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -20886,7 +22279,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _constants = __webpack_require__(47);
+		var _constants = __webpack_require__(51);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -21583,7 +22976,8 @@ var JSceneKitExample =
 		    value: function enumerateChildNodes(block) {
 		      var _this3 = this;
 
-		      this._childNodes.some(function (child) {
+		      //this._childNodes.some((child) => {
+		      this.childNodes.some(function (child) {
 		        return _this3._enumerateChildNodesRecursive(child, block);
 		      });
 		    }
@@ -21963,12 +23357,13 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var act = action.copy();
+		      var act = action.copy
 		      // FIXME: use current frame time
-		      act._actionStartTime = Date.now() * 0.001;
+		      ();act._actionStartTime = Date.now() * 0.001;
 		      act._completionHandler = block;
-		      this._actions.set(key, act);
+		      this._actions.set(key, act
 		      //this._copyTransformToPresentationRecursive()
+		      );
 		    }
 
 		    // Inspecting a Node’s Running Actions
@@ -22051,9 +23446,9 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var anim = animation.copy();
+		      var anim = animation.copy
 		      // FIXME: use current frame time
-		      anim._animationStartTime = Date.now() * 0.001;
+		      ();anim._animationStartTime = Date.now() * 0.001;
 
 		      this._animations.set(key, anim);
 		      this._copyTransformToPresentationRecursive();
@@ -22526,9 +23921,9 @@ var JSceneKitExample =
 
 		      var paths = keyPath.split('.');
 		      var key = paths.shift();
-		      var restPath = paths.join('.');
+		      var restPath = paths.join('.'
 		      //console.log(`SCNNode setValueForKeyPath ${this.name} ${key} ${restPath}`)
-		      if (key === 'transform') {
+		      );if (key === 'transform') {
 		        switch (restPath) {
 		          case 'rotation.x':
 		            target._rotation.x = value;
@@ -22957,9 +24352,9 @@ var JSceneKitExample =
 		        throw new Error('orientation must be SCNVector4');
 		      }
 
-		      this._rotation = newValue.quatToRotation();
+		      this._rotation = newValue.quatToRotation
 		      //console.log(`SCNNode set orientation: ${this._rotation.float32Array()}`)
-		      this._transformUpToDate = false;
+		      ();this._transformUpToDate = false;
 		    }
 
 		    /**
@@ -23151,9 +24546,9 @@ var JSceneKitExample =
 		        return this._fixedBoundingBox;
 		      }
 		      //if(!this._boundingBox){
-		      this._updateBoundingBox();
+		      this._updateBoundingBox
 		      //}
-		      return this._boundingBox;
+		      ();return this._boundingBox;
 		    },
 		    set: function set(newValue) {
 		      this._fixedBoundingBox = newValue;
@@ -23213,8 +24608,8 @@ var JSceneKitExample =
 		        return null;
 		      }
 		      var vp = this.lightViewProjectionTransform;
-		      var scale = (0, _SCNMatrix4MakeTranslation2.default)(1.0, 1.0, 0.0).scale(0.5, 0.5, 1.0); // [-1, 1] => [0, 1]
-		      return vp.mult(scale);
+		      var scale = (0, _SCNMatrix4MakeTranslation2.default)(1.0, 1.0, 0.0).scale(0.5, 0.5, 1.0 // [-1, 1] => [0, 1]
+		      );return vp.mult(scale);
 		    }
 		  }], [{
 		    key: '_loadAnimationArray',
@@ -23293,14 +24688,14 @@ var JSceneKitExample =
 		      // data.additive
 		      // data.attributes
 		      data.channels.forEach(function (channel) {
-		        var keyPath = channel.targetPath.join('.');
+		        var keyPath = channel.targetPath.join('.'
 		        //console.error(`SCNNode animation group keyPath: ${keyPath}`)
-		        var chAnim = _this5._loadAnimationData(channel.animation, keyPath);
+		        );var chAnim = _this5._loadAnimationData(channel.animation, keyPath);
 		        group.animations.push(chAnim);
-		      });
+		      }
 		      //console.log('_loadAnimationGroup done')
 
-		      return group;
+		      );return group;
 		    }
 		  }, {
 		    key: '_loadKeyframeAnimation',
@@ -23328,9 +24723,9 @@ var JSceneKitExample =
 		      // data.attributes
 
 		      var keyframe = data.keyframeController;
-		      anim.values = this._loadData(keyframe, 'values');
+		      anim.values = this._loadData(keyframe, 'values'
 		      //anim.path
-		      anim.keyTimes = this._loadData(keyframe, 'keytimes');
+		      );anim.keyTimes = this._loadData(keyframe, 'keytimes');
 		      switch (keyframe.interpolationMode) {
 		        case 0:
 		        default:
@@ -23504,7 +24899,7 @@ var JSceneKitExample =
 		exports.default = SCNNode;
 
 	/***/ },
-	/* 64 */
+	/* 68 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -23515,7 +24910,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimation = __webpack_require__(46);
+		var _CAAnimation = __webpack_require__(50);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -23693,7 +25088,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimatable;
 
 	/***/ },
-	/* 65 */
+	/* 69 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -23704,7 +25099,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -23766,7 +25161,7 @@ var JSceneKitExample =
 		exports.default = SCNBoundingVolume;
 
 	/***/ },
-	/* 66 */
+	/* 70 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -23781,43 +25176,43 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNCullMode = __webpack_require__(67);
+		var _SCNCullMode = __webpack_require__(71);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNBoundingVolume = __webpack_require__(65);
+		var _SCNBoundingVolume = __webpack_require__(69);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNShadable = __webpack_require__(68);
+		var _SCNShadable = __webpack_require__(72);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNGeometryElement = __webpack_require__(70);
+		var _SCNGeometryElement = __webpack_require__(74);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNLevelOfDetail = __webpack_require__(72);
+		var _SCNLevelOfDetail = __webpack_require__(76);
 
 		var _SCNLevelOfDetail2 = _interopRequireDefault(_SCNLevelOfDetail);
 
-		var _SCNMaterial = __webpack_require__(73);
+		var _SCNMaterial = __webpack_require__(77);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNOrderedDictionary = __webpack_require__(77);
+		var _SCNOrderedDictionary = __webpack_require__(81);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -24300,9 +25695,9 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var anim = animation.copy();
+		      var anim = animation.copy
 		      // FIXME: use current frame time
-		      anim._animationStartTime = Date.now() * 0.001;
+		      ();anim._animationStartTime = Date.now() * 0.001;
 		      anim._prevTime = anim._animationStartTime - 0.0000001;
 
 		      this._animations.set(key, anim);
@@ -24347,8 +25742,9 @@ var JSceneKitExample =
 		  }, {
 		    key: 'removeAnimationForKey',
 		    value: function removeAnimationForKey(key) {
-		      this._animations.delete(key);
+		      this._animations.delete(key
 		      // TODO: reset values
+		      );
 		    }
 
 		    /**
@@ -24460,6 +25856,7 @@ var JSceneKitExample =
 		      var vertexSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var normalSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
 		      var tangentSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.tangent)[0];
+		      var colorSource = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.color)[0];
 		      var texcoordSource0 = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
 		      var texcoordSource1 = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[1];
 		      var indexSource = baseSkinner ? baseSkinner._boneIndices : null;
@@ -24469,6 +25866,7 @@ var JSceneKitExample =
 		      var pVertexSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var pNormalSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
 		      var pTangentSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.tangent)[0];
+		      var pColorSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.color)[0];
 		      var pTexcoordSource0 = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[0];
 		      var pTexcoordSource1 = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.texcoord)[1];
 		      //const pIndexSource = this.getGeometrySourcesForSemantic(SCNGeometrySource.Semantic.boneIndices)[0]
@@ -24484,6 +25882,9 @@ var JSceneKitExample =
 		      }
 		      if (typeof tangentSource !== 'undefined' && tangentSource.vectorCount !== vectorCount) {
 		        throw new Error('tangentSource.vectorCount !== vertexSource.vectorCount');
+		      }
+		      if (typeof colorSource !== 'undefined' && colorSource.vectorCount !== vectorCount) {
+		        throw new Error('colorSource.vectorCount !== vertexSource.vectorCount');
 		      }
 		      if (typeof texcoordSource0 !== 'undefined' && texcoordSource0.vectorCount !== vectorCount) {
 		        throw new Error('texcoordSource0.vectorCount !== vertexSource.vectorCount');
@@ -24507,9 +25908,10 @@ var JSceneKitExample =
 		      //const normalArray = normalSource ? normalSource.data : null
 		      var normalComponents = normalSource ? normalSource.componentsPerVector : 0;
 		      var tangentComponents = tangentSource ? tangentSource.componentsPerVector : 0;
+		      var colorComponents = colorSource ? colorSource.componentsPerVector : 0;
 		      //const texcoordArray = texcoordSource ? texcoordSource.data : null
-		      var texcoordComponents0 = texcoordSource0 ? texcoordSource0.componentsPerVector : 0;
-		      var texcoordComponents1 = texcoordSource1 ? texcoordSource1.componentsPerVector : 0;
+		      var texcoord0Components = texcoordSource0 ? texcoordSource0.componentsPerVector : 0;
+		      var texcoord1Components = texcoordSource1 ? texcoordSource1.componentsPerVector : 0;
 
 		      for (var i = 0; i < vectorCount; i++) {
 		        if (vertexSource) {
@@ -24520,6 +25922,9 @@ var JSceneKitExample =
 		        }
 		        if (tangentSource) {
 		          arr.push.apply(arr, _toConsumableArray(tangentSource._vectorAt(i)));
+		        }
+		        if (colorSource) {
+		          arr.push.apply(arr, _toConsumableArray(colorSource._vectorAt(i)));
 		        }
 		        if (texcoordSource0) {
 		          arr.push.apply(arr, _toConsumableArray(texcoordSource0._vectorAt(i)));
@@ -24537,7 +25942,8 @@ var JSceneKitExample =
 		      // FIXME: Don't change geometry sources. Use other variables
 		      var bytesPerComponent = 4;
 		      var offset = 0;
-		      var stride = (vertexComponents + normalComponents + tangentComponents + texcoordComponents0 + texcoordComponents1) * bytesPerComponent;
+		      var stride = (vertexComponents + normalComponents + tangentComponents + colorComponents + texcoord0Components + texcoord1Components) * bytesPerComponent;
+
 		      pVertexSource._bytesPerComponent = bytesPerComponent;
 		      pVertexSource._dataOffset = offset;
 		      pVertexSource._dataStride = stride;
@@ -24555,17 +25961,23 @@ var JSceneKitExample =
 		        pTangentSource._dataStride = stride;
 		        offset += tangentComponents * bytesPerComponent;
 		      }
+		      if (pColorSource) {
+		        pColorSource._bytesPerComponent = bytesPerComponent;
+		        pColorSource._dataOffset = offset;
+		        pColorSource._dataStride = stride;
+		        offset += colorComponents * bytesPerComponent;
+		      }
 		      if (pTexcoordSource0) {
 		        pTexcoordSource0._bytesPerComponent = bytesPerComponent;
 		        pTexcoordSource0._dataOffset = offset;
 		        pTexcoordSource0._dataStride = stride;
-		        offset += texcoordComponents0 * bytesPerComponent;
+		        offset += texcoord0Components * bytesPerComponent;
 		      }
 		      if (pTexcoordSource1) {
 		        pTexcoordSource1._bytesPerComponent = bytesPerComponent;
 		        pTexcoordSource1._dataOffset = offset;
 		        pTexcoordSource1._dataStride = stride;
-		        offset += texcoordComponents1 * bytesPerComponent;
+		        offset += texcoord1Components * bytesPerComponent;
 		      }
 
 		      //console.log(`offset: ${offset}, vectorCount: ${vectorCount}`)
@@ -24601,15 +26013,18 @@ var JSceneKitExample =
 
 		      var vertexData = new Float32Array(arr);
 		      //console.log(`vertexData length: ${arr.length}`)
-		      gl.bufferData(gl.ARRAY_BUFFER, vertexData, gl.DYNAMIC_DRAW);
+		      gl.bufferData(gl.ARRAY_BUFFER, vertexData, gl.DYNAMIC_DRAW
 
 		      // set new data
-		      pVertexSource._data = arr;
+		      );pVertexSource._data = arr;
 		      if (pNormalSource) {
 		        pNormalSource._data = arr;
 		      }
 		      if (pTangentSource) {
 		        pTangentSource._data = arr;
+		      }
+		      if (pColorSource) {
+		        pColorSource._data = arr;
 		      }
 		      if (pTexcoordSource0) {
 		        pTexcoordSource0._data = arr;
@@ -24694,16 +26109,6 @@ var JSceneKitExample =
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, null);
 
 		      var textureFlags = [];
-		      //const textures = [
-		      //  { name: 'emission', symbol: 'TEXTURE0' },
-		      //  { name: 'ambient', symbol: 'TEXTURE1' },
-		      //  { name: 'diffuse', symbol: 'TEXTURE2' },
-		      //  { name: 'specular', symbol: 'TEXTURE3' },
-		      //  { name: 'reflective', symbol: 'TEXTURE4' },
-		      //  { name: 'transparent', symbol: 'TEXTURE5' },
-		      //  { name: 'multiply', symbol: 'TEXTURE6' },
-		      //  { name: 'normal', symbol: 'TEXTURE7' }
-		      //]
 
 		      // emission
 		      var selfIllumination = 0;
@@ -24715,35 +26120,31 @@ var JSceneKitExample =
 		      } else {
 		        textureFlags.push(0);
 		      }
-		      gl.uniform1i(gl.getUniformLocation(program, 'selfIllumination'), selfIllumination);
+		      gl.uniform1i(gl.getUniformLocation(program, 'selfIllumination'), selfIllumination
 
 		      // ambient
-		      this._setTextureToName(gl, material._ambient, 'TEXTURE1', textureFlags);
+		      );this._setTextureToName(gl, material._ambient, 'TEXTURE1', textureFlags
 
 		      // diffuse
-		      this._setTextureToName(gl, material._diffuse, 'TEXTURE2', textureFlags);
+		      );this._setTextureToName(gl, material._diffuse, 'TEXTURE2', textureFlags
 
 		      // specular
-		      this._setTextureToName(gl, material._specular, 'TEXTURE3', textureFlags);
+		      );this._setTextureToName(gl, material._specular, 'TEXTURE3', textureFlags
 
 		      // reflective
-		      this._setCubeTextureToName(gl, material._reflective, 'TEXTURE4', textureFlags);
+		      );this._setCubeTextureToName(gl, material._reflective, 'TEXTURE4', textureFlags
 
 		      // transparent
-		      this._setTextureToName(gl, material._transparent, 'TEXTURE5', textureFlags);
+		      );this._setTextureToName(gl, material._transparent, 'TEXTURE5', textureFlags
 
 		      // multiply
-		      this._setTextureToName(gl, material._multiply, 'TEXTURE6', textureFlags);
+		      );this._setTextureToName(gl, material._multiply, 'TEXTURE6', textureFlags
 
 		      // normal
-		      this._setTextureToName(gl, material._normal, 'TEXTURE7', textureFlags);
-
-		      //for(const texture of textures){
-		      //  this._setTextureToName(gl, material[texture.name], texture.symbol, textureFlags)
-		      //}
+		      );this._setTextureToName(gl, material._normal, 'TEXTURE7', textureFlags
 
 		      // TODO: cache uniform location
-		      gl.uniform1iv(gl.getUniformLocation(program, 'textureFlags'), new Int32Array(textureFlags));
+		      );gl.uniform1iv(gl.getUniformLocation(program, 'textureFlags'), new Int32Array(textureFlags));
 
 		      if (material.isDoubleSided) {
 		        gl.disable(gl.CULL_FACE);
@@ -24904,6 +26305,7 @@ var JSceneKitExample =
 		      geometry._vertexBuffer = this._vertexBuffer;
 		      geometry._indexBuffer = this._indexBuffer;
 		      geometry._animations = this._animations.copy();
+		      geometry._shadableHelper = this._shadableHelper;
 
 		      return geometry;
 		    }
@@ -24920,10 +26322,10 @@ var JSceneKitExample =
 		    value: function _createCubeTexture(gl, image) {
 		      var texture = gl.createTexture();
 
-		      gl.bindTexture(gl.TEXTURE_CUBE_MAP, texture);
+		      gl.bindTexture(gl.TEXTURE_CUBE_MAP, texture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
-		      var targets = [gl.TEXTURE_CUBE_MAP_POSITIVE_Z, gl.TEXTURE_CUBE_MAP_POSITIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, gl.TEXTURE_CUBE_MAP_POSITIVE_Y];
+		      );var targets = [gl.TEXTURE_CUBE_MAP_POSITIVE_Z, gl.TEXTURE_CUBE_MAP_POSITIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, gl.TEXTURE_CUBE_MAP_POSITIVE_Y];
 		      //const tx = [0, 1.0/6.0, 2.0/6.0, 3.0/6.0, 4.0/6.0, 5.0/6.0, 1]
 		      //const itx = [4, 1, 5, 0, 2, 3]
 		      var margin = 0.001;
@@ -24963,13 +26365,13 @@ var JSceneKitExample =
 		      //console.warn(`image size: ${image.naturalWidth} ${image.naturalHeight}`)
 		      canvas.getContext('2d').drawImage(image, 0, 0);
 
-		      gl.bindTexture(gl.TEXTURE_2D, texture);
+		      gl.bindTexture(gl.TEXTURE_2D, texture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
-		      gl.generateMipmap(gl.TEXTURE_2D);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      gl.generateMipmap(gl.TEXTURE_2D
 		      //gl.bindTexture(gl.TEXTURE_2D, null)
-		      return texture;
+		      );return texture;
 		    }
 
 		    /**
@@ -25121,7 +26523,7 @@ var JSceneKitExample =
 		exports.default = SCNGeometry;
 
 	/***/ },
-	/* 67 */
+	/* 71 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -25145,7 +26547,7 @@ var JSceneKitExample =
 		exports.default = SCNCullMode;
 
 	/***/ },
-	/* 68 */
+	/* 72 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -25254,7 +26656,7 @@ var JSceneKitExample =
 		exports.default = SCNShadable;
 
 	/***/ },
-	/* 69 */
+	/* 73 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -25269,11 +26671,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -25301,15 +26703,14 @@ var JSceneKitExample =
 		  texcoord: 'kGeometrySourceSemanticTexcoord',
 		  vertex: 'kGeometrySourceSemanticVertex',
 		  vertexCrease: 'kGeometrySourceSemanticVertexCrease'
+
+		  /**
+		   * A container for vertex data forming part of the definition for a three-dimensional object, or geometry.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/scenekit/scngeometrysource
+		   */
 		};
-
-		/**
-		 * A container for vertex data forming part of the definition for a three-dimensional object, or geometry.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scngeometrysource
-		 */
-
 		var SCNGeometrySource = function (_NSObject) {
 		  _inherits(SCNGeometrySource, _NSObject);
 
@@ -25436,9 +26837,9 @@ var JSceneKitExample =
 		    value: function _createBuffer(context) {
 		      var gl = context;
 		      this._buffer = gl.createBuffer();
-		      gl.bindBuffer(gl.ARRAY_BUFFER, this._buffer);
+		      gl.bindBuffer(gl.ARRAY_BUFFER, this._buffer
 		      // FIXME: dynamic data
-		      gl.bufferData(gl.ARRAY_BUFFER, this._glData, gl.STATIC_DRAW);
+		      );gl.bufferData(gl.ARRAY_BUFFER, this._glData, gl.STATIC_DRAW);
 		      return this._buffer;
 		    }
 
@@ -25930,7 +27331,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 70 */
+	/* 74 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -25945,7 +27346,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(71);
+		var _SCNGeometryPrimitiveType = __webpack_require__(75);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
@@ -26184,7 +27585,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 71 */
+	/* 75 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -26214,7 +27615,7 @@ var JSceneKitExample =
 		exports.default = SCNGeometryPrimitiveType;
 
 	/***/ },
-	/* 72 */
+	/* 76 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -26229,7 +27630,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
@@ -26358,7 +27759,7 @@ var JSceneKitExample =
 		exports.default = SCNLevelOfDetail;
 
 	/***/ },
-	/* 73 */
+	/* 77 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -26373,31 +27774,31 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNShadable = __webpack_require__(68);
+		var _SCNShadable = __webpack_require__(72);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNMaterialProperty = __webpack_require__(74);
+		var _SCNMaterialProperty = __webpack_require__(78);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNTransparencyMode = __webpack_require__(80);
+		var _SCNTransparencyMode = __webpack_require__(84);
 
 		var _SCNTransparencyMode2 = _interopRequireDefault(_SCNTransparencyMode);
 
-		var _SCNCullMode = __webpack_require__(67);
+		var _SCNCullMode = __webpack_require__(71);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNBlendMode = __webpack_require__(81);
+		var _SCNBlendMode = __webpack_require__(85);
 
 		var _SCNBlendMode2 = _interopRequireDefault(_SCNBlendMode);
 
-		var _SCNOrderedDictionary = __webpack_require__(77);
+		var _SCNOrderedDictionary = __webpack_require__(81);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
@@ -26419,17 +27820,16 @@ var JSceneKitExample =
 		  lambert: 'SCNLightingModelLambert',
 		  phong: 'SCNLightingModelPhong',
 		  physicallyBased: 'SCNLightingModelPhysicallyBased'
+
+		  /**
+		   * A set of shading attributes that define the appearance of a geometry's surface when rendered.
+		   * @access public
+		   * @extends {NSObject}
+		   * @implements {SCNAnimatable}
+		   * @implements {SCNShadable}
+		   * @see https://developer.apple.com/reference/scenekit/scnmaterial
+		   */
 		};
-
-		/**
-		 * A set of shading attributes that define the appearance of a geometry's surface when rendered.
-		 * @access public
-		 * @extends {NSObject}
-		 * @implements {SCNAnimatable}
-		 * @implements {SCNShadable}
-		 * @see https://developer.apple.com/reference/scenekit/scnmaterial
-		 */
-
 		var SCNMaterial = function (_NSObject) {
 		  _inherits(SCNMaterial, _NSObject);
 
@@ -26503,7 +27903,7 @@ var JSceneKitExample =
 		        fillMode: ['integer', null],
 		        entityID: ['string', '_entityID'],
 		        indexOfRefraction: ['integer', null],
-		        shadableHelper: ['SCNShadableHelper', null],
+		        shadableHelper: ['SCNShadableHelper', '_shadableHelper'],
 		        selfIlluminationOcclusion: ['integer', null]
 		      };
 		    }
@@ -26672,7 +28072,13 @@ var JSceneKitExample =
 		     */
 		    _this._entityID = null;
 
-		    _this._createPresentationProperties();
+		    _this._createPresentationProperties
+
+		    /**
+		     * @access private
+		     * @type {?SCNShadableHelper}
+		     */
+		    ();_this._shadableHelper = null;
 		    return _this;
 		  }
 
@@ -26801,9 +28207,9 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var anim = animation.copy();
+		      var anim = animation.copy
 		      // FIXME: use current frame time
-		      anim._animationStartTime = Date.now() * 0.001;
+		      ();anim._animationStartTime = Date.now() * 0.001;
 		      anim._prevTime = anim._animationStartTime - 0.0000001;
 
 		      this._animations.set(key, anim);
@@ -26848,8 +28254,9 @@ var JSceneKitExample =
 		  }, {
 		    key: 'removeAnimationForKey',
 		    value: function removeAnimationForKey(key) {
-		      this._animations.delete(key);
+		      this._animations.delete(key
 		      // TODO: reset values
+		      );
 		    }
 
 		    /**
@@ -27122,7 +28529,7 @@ var JSceneKitExample =
 		exports.default = SCNMaterial;
 
 	/***/ },
-	/* 74 */
+	/* 78 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -27139,31 +28546,31 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNFilterMode = __webpack_require__(75);
+		var _SCNFilterMode = __webpack_require__(79);
 
 		var _SCNFilterMode2 = _interopRequireDefault(_SCNFilterMode);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNOrderedDictionary = __webpack_require__(77);
+		var _SCNOrderedDictionary = __webpack_require__(81);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNTransaction = __webpack_require__(78);
+		var _SCNTransaction = __webpack_require__(82);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNWrapMode = __webpack_require__(79);
+		var _SCNWrapMode = __webpack_require__(83);
 
 		var _SCNWrapMode2 = _interopRequireDefault(_SCNWrapMode);
 
@@ -27268,14 +28675,14 @@ var JSceneKitExample =
 		     * @type {SCNMatrix4}
 		     * @see https://developer.apple.com/reference/scenekit/scnmaterialproperty/1395388-contentstransform
 		     */
-		    _this.contentsTransform = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0);
+		    _this.contentsTransform = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0
 
 		    /**
 		     * The wrapping behavior for the S texture coordinate.
 		     * @type {SCNWrapMode}
 		     * @see https://developer.apple.com/reference/scenekit/scnmaterialproperty/1395384-wraps
 		     */
-		    _this.wrapS = _SCNWrapMode2.default.clamp;
+		    );_this.wrapS = _SCNWrapMode2.default.clamp;
 
 		    /**
 		     * The wrapping behavior for the T texture coordinate.
@@ -27443,9 +28850,9 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var anim = animation.copy();
+		      var anim = animation.copy
 		      // FIXME: use current frame time
-		      anim._animationStartTime = Date.now() * 0.001;
+		      ();anim._animationStartTime = Date.now() * 0.001;
 		      anim._prevTime = anim._animationStartTime - 0.0000001;
 
 		      this._animations.set(key, anim);
@@ -27490,8 +28897,9 @@ var JSceneKitExample =
 		  }, {
 		    key: 'removeAnimationForKey',
 		    value: function removeAnimationForKey(key) {
-		      this._animations.delete(key);
+		      this._animations.delete(key
 		      // TODO: reset values
+		      );
 		    }
 
 		    /**
@@ -27699,9 +29107,9 @@ var JSceneKitExample =
 		      if (path.indexOf('file:///') === 0) {
 		        var paths = path.slice(8).split('/');
 		        var pathCount = 1;
-		        var _path = dirPath + paths.slice(-pathCount).join('/');
+		        var _path = dirPath + paths.slice(-pathCount).join('/'
 		        //console.warn(`image loading: ${_path}`)
-		        image.onload = function () {
+		        );image.onload = function () {
 		          //console.info(`image ${image.src} onload`)
 		          _this2._contents = image;
 		        };
@@ -27803,7 +29211,7 @@ var JSceneKitExample =
 		exports.default = SCNMaterialProperty;
 
 	/***/ },
-	/* 75 */
+	/* 79 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -27829,7 +29237,7 @@ var JSceneKitExample =
 		exports.default = SCNFilterMode;
 
 	/***/ },
-	/* 76 */
+	/* 80 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -27838,7 +29246,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -27860,7 +29268,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4MakeTranslation;
 
 	/***/ },
-	/* 77 */
+	/* 81 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -28062,7 +29470,7 @@ var JSceneKitExample =
 		exports.default = SCNOrderedDictionary;
 
 	/***/ },
-	/* 78 */
+	/* 82 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -28077,15 +29485,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAMediaTimingFunction = __webpack_require__(49);
+		var _CAMediaTimingFunction = __webpack_require__(53);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CABasicAnimation = __webpack_require__(53);
+		var _CABasicAnimation = __webpack_require__(57);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _SCNAnimationEvent = __webpack_require__(51);
+		var _SCNAnimationEvent = __webpack_require__(55);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
@@ -28233,9 +29641,9 @@ var JSceneKitExample =
 		            animation.delegate = {
 		              animationDidStop: function animationDidStop(_anim, _finished) {
 		                if (_finished) {
-		                  console.log('animation completed: ' + anim.keyPath);
+		                  console.log('animation completed: ' + anim.keyPath
 		                  //anim.target.setValueForKeyPath(anim.newValue, anim.keyPath)
-		                  resolve(anim, animation);
+		                  );resolve(anim, animation);
 		                }
 		              }
 		            };
@@ -28496,7 +29904,7 @@ var JSceneKitExample =
 		exports.default = SCNTransaction;
 
 	/***/ },
-	/* 79 */
+	/* 83 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -28524,7 +29932,7 @@ var JSceneKitExample =
 		exports.default = SCNWrapMode;
 
 	/***/ },
-	/* 80 */
+	/* 84 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -28548,7 +29956,7 @@ var JSceneKitExample =
 		exports.default = SCNTransparencyMode;
 
 	/***/ },
-	/* 81 */
+	/* 85 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -28580,7 +29988,7 @@ var JSceneKitExample =
 		exports.default = SCNBlendMode;
 
 	/***/ },
-	/* 82 */
+	/* 86 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -28595,19 +30003,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNTechniqueSupport = __webpack_require__(83);
+		var _SCNTechniqueSupport = __webpack_require__(87);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNMaterialProperty = __webpack_require__(74);
+		var _SCNMaterialProperty = __webpack_require__(78);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -28619,7 +30027,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SCNShadowMode = __webpack_require__(134);
+		var _SCNShadowMode = __webpack_require__(138);
 
 		var _SCNShadowMode2 = _interopRequireDefault(_SCNShadowMode);
 
@@ -28638,17 +30046,16 @@ var JSceneKitExample =
 		  omni: 'omni',
 		  probe: 'probe',
 		  spot: 'spot'
+
+		  /**
+		   * A light source that can be attached to a node to illuminate the scene.
+		   * @access public
+		   * @extends {NSObject}
+		   * @implements {SCNAnimatable}
+		   * @implements {SCNTechniqueSupport}
+		   * @see https://developer.apple.com/reference/scenekit/scnlight
+		   */
 		};
-
-		/**
-		 * A light source that can be attached to a node to illuminate the scene.
-		 * @access public
-		 * @extends {NSObject}
-		 * @implements {SCNAnimatable}
-		 * @implements {SCNTechniqueSupport}
-		 * @see https://developer.apple.com/reference/scenekit/scnlight
-		 */
-
 		var SCNLight = function (_NSObject) {
 		  _inherits(SCNLight, _NSObject);
 
@@ -29114,7 +30521,7 @@ var JSceneKitExample =
 		exports.default = SCNLight;
 
 	/***/ },
-	/* 83 */
+	/* 87 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -29125,7 +30532,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNTechnique = __webpack_require__(84);
+		var _SCNTechnique = __webpack_require__(88);
 
 		var _SCNTechnique2 = _interopRequireDefault(_SCNTechnique);
 
@@ -29171,7 +30578,7 @@ var JSceneKitExample =
 		exports.default = SCNTechniqueSupport;
 
 	/***/ },
-	/* 84 */
+	/* 88 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -29186,11 +30593,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNBindingBlock = __webpack_require__(85);
+		var _SCNBindingBlock = __webpack_require__(89);
 
 		var _SCNBindingBlock2 = _interopRequireDefault(_SCNBindingBlock);
 
@@ -29312,7 +30719,7 @@ var JSceneKitExample =
 		exports.default = SCNTechnique;
 
 	/***/ },
-	/* 85 */
+	/* 89 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -29321,11 +30728,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNRenderer = __webpack_require__(86);
+		var _SCNRenderer = __webpack_require__(90);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -29347,7 +30754,7 @@ var JSceneKitExample =
 		exports.default = SCNBindingBlock;
 
 	/***/ },
-	/* 86 */
+	/* 90 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -29374,67 +30781,71 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNSceneRenderer = __webpack_require__(87);
+		var _SCNSceneRenderer = __webpack_require__(91);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNTechniqueSupport = __webpack_require__(83);
+		var _SCNTechniqueSupport = __webpack_require__(87);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNAntialiasingMode = __webpack_require__(122);
+		var _SCNAntialiasingMode = __webpack_require__(126);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+
+		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
+
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNProgram = __webpack_require__(123);
+		var _SCNProgram = __webpack_require__(127);
 
 		var _SCNProgram2 = _interopRequireDefault(_SCNProgram);
 
-		var _SCNPhysicsWorld = __webpack_require__(97);
+		var _SCNPhysicsWorld = __webpack_require__(101);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNCamera = __webpack_require__(128);
+		var _SCNCamera = __webpack_require__(132);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNLight = __webpack_require__(82);
+		var _SCNLight = __webpack_require__(86);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(71);
+		var _SCNGeometryPrimitiveType = __webpack_require__(75);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNHitTestOption = __webpack_require__(120);
+		var _SCNHitTestOption = __webpack_require__(124);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(104);
+		var _SCNHitTestResult = __webpack_require__(108);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -29442,11 +30853,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKSpriteNode = __webpack_require__(129);
+		var _SKSpriteNode = __webpack_require__(133);
 
 		var _SKSpriteNode2 = _interopRequireDefault(_SKSpriteNode);
 
-		var _SKTexture = __webpack_require__(132);
+		var _SKTexture = __webpack_require__(136);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
@@ -29464,7 +30875,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultVertexShader = '#version 300 es\n  precision mediump float;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform cameraUniform {\n    vec4 position;\n    mat4 viewTransform;\n    mat4 viewProjectionTransform;\n  } camera;\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct IESLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __VS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  //uniform mat3x4[255] skinningJoints;\n  uniform vec4[765] skinningJoints;\n  uniform int numSkinningJoints;\n\n  in vec3 position;\n  in vec3 normal;\n  in vec3 tangent;\n  in vec2 texcoord0;\n  in vec2 texcoord1;\n  in vec4 boneIndices;\n  in vec4 boneWeights;\n\n  out vec3 v_position;\n  out vec3 v_normal;\n  out vec3 v_tangent;\n  out vec3 v_bitangent;\n  out vec2 v_texcoord0;\n  out vec2 v_texcoord1;\n  out vec4 v_color;\n  out vec3 v_eye;\n  out float v_fogFactor;\n\n  void main() {\n    vec3 pos = vec3(0, 0, 0);\n    vec3 nom = vec3(0, 0, 0);\n    vec3 tng = vec3(0, 0, 0);\n\n    if(numSkinningJoints > 0){\n      for(int i=0; i<numSkinningJoints; i++){\n        float weight = boneWeights[i];\n        if(int(boneIndices[i]) < 0){\n          continue;\n        }\n        int idx = int(boneIndices[i]) * 3;\n        mat4 jointMatrix = transpose(mat4(skinningJoints[idx],\n                                          skinningJoints[idx+1],\n                                          skinningJoints[idx+2],\n                                          vec4(0, 0, 0, 1)));\n        pos += (jointMatrix * vec4(position, 1.0)).xyz * weight;\n        nom += (mat3(jointMatrix) * normal) * weight;\n        tng += (mat3(jointMatrix) * tangent) * weight;\n      }\n    }else{\n      mat4 jointMatrix = transpose(mat4(skinningJoints[0],\n                                        skinningJoints[1],\n                                        skinningJoints[2],\n                                        vec4(0, 0, 0, 1)));\n      pos = (jointMatrix * vec4(position, 1.0)).xyz;\n      nom = mat3(jointMatrix) * normal;\n      tng = mat3(jointMatrix) * tangent;\n    }\n    v_position = pos;\n    v_normal = normalize(nom);\n    v_tangent = normalize(tng);\n    v_bitangent = cross(v_tangent, v_normal);\n\n    vec3 viewVec = camera.position.xyz - pos;\n    v_eye = viewVec;\n\n    v_color = material.emission;\n    int numLights = 0;\n\n    __VS_LIGHTING__\n\n    float distance = length(viewVec);\n    v_fogFactor = clamp((distance - fog.startDistance) / (fog.endDistance - fog.startDistance), 0.0, 1.0);\n\n    v_texcoord0 = texcoord0;\n    v_texcoord1 = texcoord1;\n    gl_Position = camera.viewProjectionTransform * vec4(pos, 1.0);\n  }\n';
+		var _defaultVertexShader = '#version 300 es\n  precision mediump float;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_GEOMETRY __USE_SHADER_MODIFIER_GEOMETRY__\n\n  layout (std140) uniform cameraUniform {\n    vec4 position;\n    mat4 viewTransform;\n    mat4 viewProjectionTransform;\n  } camera;\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct IESLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __VS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  #define kSCNTexcoordCount 2\n  struct SCNShaderGeometry {\n    vec3 position;\n    vec3 normal;\n    vec4 tangent;\n    vec4 color;\n    vec2 texcoords[kSCNTexcoordCount];\n  };\n\n  uniform float u_time;\n  //uniform mat3x4[255] skinningJoints;\n  uniform vec4[765] skinningJoints;\n  uniform int numSkinningJoints;\n\n  in vec3 position;\n  in vec3 normal;\n  in vec3 tangent;\n  in vec4 color;\n  in vec2 texcoord0;\n  in vec2 texcoord1;\n  in vec4 boneIndices;\n  in vec4 boneWeights;\n\n  out vec3 v_position;\n  out vec3 v_normal;\n  out vec3 v_tangent;\n  out vec3 v_bitangent;\n  out vec2 v_texcoord0;\n  out vec2 v_texcoord1;\n  out vec4 v_color;\n  out vec3 v_eye;\n  out float v_fogFactor;\n\n  #if USE_SHADER_MODIFIER_GEOMETRY\n  void shaderModifierGeometry(inout SCNShaderGeometry _geometry) {\n    __SHADER_MODIFIER_GEOMETRY__\n  }\n  #endif\n\n  void main() {\n    SCNShaderGeometry _geometry;\n    _geometry.position = position;\n    _geometry.normal = normal;\n    _geometry.tangent = vec4(tangent, 1.0);\n    _geometry.color = color;\n    _geometry.texcoords[0] = texcoord0;\n    _geometry.texcoords[1] = texcoord1;\n    \n    #if USE_SHADER_MODIFIER_GEOMETRY\n      shaderModifierGeometry(_geometry);\n    #endif\n\n    vec3 pos = vec3(0, 0, 0);\n    vec3 nom = vec3(0, 0, 0);\n    vec3 tng = vec3(0, 0, 0);\n    vec4 col = _geometry.color;\n\n    if(numSkinningJoints > 0){\n      for(int i=0; i<numSkinningJoints; i++){\n        float weight = boneWeights[i];\n        if(int(boneIndices[i]) < 0){\n          continue;\n        }\n        int idx = int(boneIndices[i]) * 3;\n        mat4 jointMatrix = transpose(mat4(skinningJoints[idx],\n                                          skinningJoints[idx+1],\n                                          skinningJoints[idx+2],\n                                          vec4(0, 0, 0, 1)));\n        pos += (jointMatrix * vec4(_geometry.position, 1.0)).xyz * weight;\n        nom += (mat3(jointMatrix) * _geometry.normal) * weight;\n        tng += (mat3(jointMatrix) * _geometry.tangent.xyz) * weight;\n      }\n    }else{\n      mat4 jointMatrix = transpose(mat4(skinningJoints[0],\n                                        skinningJoints[1],\n                                        skinningJoints[2],\n                                        vec4(0, 0, 0, 1)));\n      pos = (jointMatrix * vec4(_geometry.position, 1.0)).xyz;\n      nom = mat3(jointMatrix) * _geometry.normal;\n      tng = mat3(jointMatrix) * _geometry.tangent.xyz;\n    }\n    v_position = pos;\n    v_normal = normalize(nom);\n    v_tangent = normalize(tng);\n    v_bitangent = cross(v_tangent, v_normal);\n\n    vec3 viewVec = camera.position.xyz - pos;\n    v_eye = viewVec;\n\n    v_color = material.emission;\n    int numLights = 0;\n\n    __VS_LIGHTING__\n\n    float distance = length(viewVec);\n    v_fogFactor = clamp((distance - fog.startDistance) / (fog.endDistance - fog.startDistance), 0.0, 1.0);\n\n    v_texcoord0 = _geometry.texcoords[0];\n    v_texcoord1 = _geometry.texcoords[1];\n    gl_Position = camera.viewProjectionTransform * vec4(pos, 1.0);\n  }\n';
 
 		var _vsAmbient = '\n  for(int i=0; i<NUM_AMBIENT_LIGHTS; i++){\n    v_color += light.ambient[i].color * material.ambient;\n  }\n';
 
@@ -29488,15 +30899,15 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  void main() {\n    outColor = v_color;\n\n    vec3 viewVec = normalize(v_eye);\n    vec3 nom = normalize(v_normal);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      nom = normalize(tsInv * color);\n    }\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        outColor += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        outColor = color * outColor;\n      }\n    }\n\n    int numLights = 0;\n      \n    outColor.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      outColor = color * outColor;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(viewVec, nom);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      outColor += texture(u_reflectiveTexture, r) * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    outColor = mix(outColor, fog.color, fogFactor);\n\n    // DEBUG\n    //if(textureFlags[TEXTURE_NORMAL_INDEX]){\n    //  mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n    //  vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n    //  outColor.rgb = (normalize(tsInv * color) + 1.0) * 0.5;\n    //}\n\n  }\n';
+		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_SURFACE __USE_SHADER_MODIFIER_SURFACE__\n  #define USE_SHADER_MODIFIER_FRAGMENT __USE_SHADER_MODIFIER_FRAGMENT__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  struct SCNShaderSurface {\n    vec3 view;\n    vec3 position;\n    vec3 normal;\n    vec3 tangent;\n    vec3 bitangent;\n    vec4 ambient;\n    vec2 ambientTexcoord;\n    vec4 diffuse;\n    vec2 diffuseTexcoord;\n    vec4 specular;\n    vec2 specularTexcoord;\n    vec4 emission;\n    vec2 emissionTexcoord;\n    vec4 multiply;\n    vec2 multiplyTexcoord;\n    vec4 transparent;\n    vec2 transparentTexcoord;\n    vec4 reflective;\n    float shininess;\n    float fresnel;\n  } _surface;\n\n  struct SCNShaderOutput {\n    vec4 color;\n  } _output;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  #if USE_SHADER_MODIFIER_SURFACE\n  void shaderModifierSurface() {\n    __SHADER_MODIFIER_SURFACE__\n  }\n  #endif\n\n  #if USE_SHADER_MODIFIER_FRAGMENT\n  void shaderModifierFragment() {\n    __SHADER_MODIFIER_FRAGMENT__\n  }\n  #endif\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  void main() {\n    _output.color = v_color;\n\n    //vec3 viewVec = normalize(v_eye);\n    //vec3 nom = normalize(v_normal);\n    _surface.view = normalize(v_eye);\n    _surface.position = v_position;\n    _surface.normal = normalize(v_normal);\n    _surface.tangent = normalize(v_tangent);\n    _surface.bitangent = normalize(v_bitangent);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(_surface.tangent, _surface.bitangent, _surface.normal);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      _surface.normal = normalize(tsInv * color);\n    }\n\n    #if USE_SHADER_MODIFIER_SURFACE\n      shaderModifierSurface();\n    #endif\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        _output.color += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        _output.color = color * _output.color;\n      }\n    }\n\n    int numLights = 0;\n\n    vec4 specularColor;\n    if(textureFlags[TEXTURE_SPECULAR_INDEX]){\n      vec4 color = texture(u_specularTexture, v_texcoord0);\n      specularColor = color;\n    }else{\n      specularColor = material.specular;\n    }\n      \n    _output.color.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      _output.color = color * _output.color;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(_surface.view, _surface.normal);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(_surface.view, _surface.normal), 0.0, 1.0), material.fresnelExponent);\n      _output.color += texture(u_reflectiveTexture, r) * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    _output.color = mix(_output.color, fog.color, fogFactor);\n\n    // DEBUG\n    //if(textureFlags[TEXTURE_NORMAL_INDEX]){\n    //  mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n    //  vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n    //  outColor.rgb = (normalize(tsInv * color) + 1.0) * 0.5;\n    //}\n\n    #if USE_SHADER_MODIFIER_FRAGMENT\n      shaderModifierFragment();\n    #endif\n\n    outColor = _output.color;\n  }\n';
 
 		var _fsAmbient = '\n';
 
-		var _fsDirectional = '\n  for(int i=0; i<NUM_DIRECTIONAL_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directional[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular;\n    }\n  }\n  numLights += NUM_DIRECTIONAL_LIGHTS;\n';
+		var _fsDirectional = '\n  for(int i=0; i<NUM_DIRECTIONAL_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.directional[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular;\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n  numLights += NUM_DIRECTIONAL_LIGHTS;\n';
 
-		var _fsDirectionalShadow = '\n  float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n    outColor.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  }else{\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular;\n    }\n  }\n\n  numLights += 1;\n';
+		var _fsDirectionalShadow = '\n  float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n    _output.color.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  }else{\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular;\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n\n  numLights += 1;\n';
 
-		var _fsOmni = '\n  for(int i=0; i<NUM_OMNI_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, nom), 0.0f, 1.0f);\n    outColor.rgb += light.omni[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + viewVec);\n      float specular = pow(dot(halfVec, nom), material.shininess);\n      outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n    }\n  }\n  numLights += NUM_OMNI_LIGHTS;\n';
+		var _fsOmni = '\n  for(int i=0; i<NUM_OMNI_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.omni[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n  numLights += NUM_OMNI_LIGHTS;\n';
 
 		var _fsSpot = '\n  // TODO: implement\n';
 
@@ -29509,7 +30920,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n  uniform float stretchFactor;\n\n  in vec3 position;\n  in vec3 velocity;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    vec3 d;\n\n    if(stretchFactor > 0.0){\n      vec4 v = viewTransform * vec4(velocity, 1.0) * stretchFactor;\n      if(corner.y > 0.0){\n        pos.xyz += v.xyz;\n      }\n      vec2 cy = normalize(v.xy);\n      vec2 cx = vec2(-cy.y, cy.x);\n      d = vec3(cx * corner.x + cy * corner.y, 0) * size * 0.5;\n    }else{\n      float sinAngle = sin(rotation.w);\n      float cosAngle = cos(rotation.w);\n      float tcos = 1.0 - cosAngle;\n      d = vec3(\n          corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n        + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n          corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n        + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n          corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n        + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size * 0.5;\n    }\n    pos.xyz += d;\n\n    v_color = color;\n    if(stretchFactor > 0.0){\n      v_color = vec4(1.0, 1.0, 1.0, 1.0); // DEBUG\n    }\n    v_texcoord = corner * vec2(0.5, -0.5) + 0.5;\n    gl_Position = projectionTransform * pos;\n  }\n';
+		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 modelTransform;\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n  uniform int orientationMode;\n  uniform float stretchFactor;\n\n  in vec3 position;\n  in vec3 velocity;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    vec3 d;\n\n    if(stretchFactor > 0.0){\n      vec4 v = viewTransform * vec4(velocity, 0.0) * stretchFactor;\n      if(corner.y > 0.0){\n        pos.xyz += v.xyz;\n      }\n      vec2 cy = normalize(v.xy);\n      vec2 cx = vec2(-cy.y, cy.x);\n      d = vec3(cx * corner.x + cy * corner.y, 0) * size;\n    }else{\n      float sinAngle = sin(rotation.w);\n      float cosAngle = cos(rotation.w);\n      float tcos = 1.0 - cosAngle;\n\n      d = vec3(\n          corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n        + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n          corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n        + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n          corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n        + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size;\n      if(orientationMode == 2){\n        // orientation: free\n        d = mat3(viewTransform) * mat3(modelTransform) * d;\n      }\n    }\n    pos.xyz += d;\n\n    v_color = color;\n    v_texcoord = corner * vec2(0.5, -0.5) + 0.5;\n    gl_Position = projectionTransform * pos;\n  }\n';
 
 		/**
 		 * @access private
@@ -29651,6 +31062,13 @@ var JSceneKitExample =
 		    _this.sceneTime = 0;
 
 		    /**
+		     * current time in seconds
+		     * @access private
+		     * @type {number}
+		     */
+		    _this._time = 0;
+
+		    /**
 		     * Required. A Boolean value that determines whether the scene is playing.
 		     * @type {boolean}
 		     * @see https://developer.apple.com/reference/scenekit/scnscenerenderer/1523401-isplaying
@@ -29759,13 +31177,13 @@ var JSceneKitExample =
 		    light.type = _SCNLight2.default.LightType.omni;
 		    light.position = new _SCNVector2.default(0, 10, 10);
 		    _this._defaultLightNode.light = light;
-		    _this._defaultLightNode._presentation = _this._defaultLightNode.copy();
+		    _this._defaultLightNode._presentation = _this._defaultLightNode.copy
 
 		    /**
 		     * @access private
 		     * @type {CGRect}
 		     */
-		    _this._viewRect = new _CGRect2.default(new _CGPoint2.default(0, 0), new _CGSize2.default(0, 0));
+		    ();_this._viewRect = new _CGRect2.default(new _CGPoint2.default(0, 0), new _CGSize2.default(0, 0));
 
 		    /**
 		     * The background color of the view.
@@ -29848,6 +31266,12 @@ var JSceneKitExample =
 		     * @type {WebGLTexture}
 		     */
 		    _this._hitNormalTexture = null;
+
+		    /**
+		     * @access private
+		     * @type {SCNProgram}
+		     */
+		    _this._currentProgram = null;
 		    return _this;
 		  }
 
@@ -29921,9 +31345,9 @@ var JSceneKitExample =
 		        return;
 		      }
 
-		      this._lightNodes = this._createLightNodeArray(); // createLightNodeArray must be called before getting program
+		      this._lightNodes = this._createLightNodeArray // createLightNodeArray must be called before getting program
 
-		      var gl = this.context;
+		      ();var gl = this.context;
 		      var program = this._defaultProgram._glProgram;
 
 		      gl.clearColor(this._backgroundColor.r, this._backgroundColor.g, this._backgroundColor.b, this._backgroundColor.a);
@@ -29936,12 +31360,12 @@ var JSceneKitExample =
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.depthMask(true);
 		      gl.enable(gl.BLEND);
-		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA
 
 		      //////////////////////////
 		      // Camera
 		      //////////////////////////
-		      if (this._cameraBuffer === null) {
+		      );if (this._cameraBuffer === null) {
 		        this._initializeCameraBuffer(program);
 		      }
 		      var cameraData = [];
@@ -29956,7 +31380,7 @@ var JSceneKitExample =
 		      cameraData.push.apply(cameraData, _toConsumableArray(cameraPNode.viewProjectionTransform.floatArray()));
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, this._cameraBuffer);
 		      gl.bufferData(gl.UNIFORM_BUFFER, new Float32Array(cameraData), gl.DYNAMIC_DRAW);
-		      gl.bindBuffer(gl.UNIFORM_BUFFER, null);
+		      gl.bindBuffer(gl.UNIFORM_BUFFER, null
 
 		      //console.log('cameraNode.worldPosition: ' + cameraPNode.worldTransform.getTranslation().float32Array())
 		      //console.log('viewTransform: ' + cameraPNode.viewTransform.float32Array())
@@ -29966,7 +31390,7 @@ var JSceneKitExample =
 		      //////////////////////////
 		      // Fog
 		      //////////////////////////
-		      if (this._fogBuffer === null) {
+		      );if (this._fogBuffer === null) {
 		        this._initializeFogBuffer(program);
 		      }
 		      var fogData = [];
@@ -29977,12 +31401,12 @@ var JSceneKitExample =
 		      }
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, this._fogBuffer);
 		      gl.bufferData(gl.UNIFORM_BUFFER, new Float32Array(fogData), gl.DYNAMIC_DRAW);
-		      gl.bindBuffer(gl.UNIFORM_BUFFER, null);
+		      gl.bindBuffer(gl.UNIFORM_BUFFER, null
 
 		      //////////////////////////
 		      // Lights
 		      //////////////////////////
-		      if (this._lightBuffer === null) {
+		      );if (this._lightBuffer === null) {
 		        this._initializeLightBuffer(program);
 		      }
 		      var lights = this._lightNodes;
@@ -30011,20 +31435,20 @@ var JSceneKitExample =
 
 		      gl.bindBuffer(gl.UNIFORM_BUFFER, this._lightBuffer);
 		      gl.bufferData(gl.UNIFORM_BUFFER, new Float32Array(lightData), gl.DYNAMIC_DRAW);
-		      gl.bindBuffer(gl.UNIFORM_BUFFER, null);
+		      gl.bindBuffer(gl.UNIFORM_BUFFER, null
 
 		      //////////////////////////
 		      // Background (SkyBox)
 		      //////////////////////////
-		      if (this.scene.background._contents !== null) {
+		      );if (this.scene.background._contents !== null) {
 		        var skyBox = this.scene._skyBox;
 		        skyBox.position = cameraPNode._worldTranslation;
 		        var scale = camera.zFar * 1.154;
 		        skyBox.scale = new _SCNVector2.default(scale, scale, scale);
-		        skyBox._updateWorldTransform();
+		        skyBox._updateWorldTransform
 
 		        // disable fog
-		        var disabledFogData = fogData.slice(0);
+		        ();var disabledFogData = fogData.slice(0);
 		        disabledFogData[4] = camera.zFar * 2.0; // startDistance
 		        disabledFogData[5] = camera.zFar * 2.1; // endDistance
 		        disabledFogData[6] = 1.0; // densityExponent
@@ -30032,10 +31456,10 @@ var JSceneKitExample =
 		        gl.bufferData(gl.UNIFORM_BUFFER, new Float32Array(disabledFogData), gl.DYNAMIC_DRAW);
 		        gl.bindBuffer(gl.UNIFORM_BUFFER, null);
 
-		        this._renderNode(skyBox);
+		        this._renderNode(skyBox
 
 		        // enable fog
-		        gl.bindBuffer(gl.UNIFORM_BUFFER, this._fogBuffer);
+		        );gl.bindBuffer(gl.UNIFORM_BUFFER, this._fogBuffer);
 		        gl.bufferData(gl.UNIFORM_BUFFER, new Float32Array(fogData), gl.DYNAMIC_DRAW);
 		        gl.bindBuffer(gl.UNIFORM_BUFFER, null);
 		      }
@@ -30051,10 +31475,6 @@ var JSceneKitExample =
 		      gl.clearColor(1.0, 1.0, 1.0, 1.0);
 		      gl.disable(gl.BLEND);
 		      var shadowRenderingArray = this._createShadowNodeArray();
-		      //const mountain = shadowRenderingArray[4]
-		      //const lastIndex = shadowRenderingArray.length - 1
-		      //shadowRenderingArray[4] = shadowRenderingArray[lastIndex]
-		      //shadowRenderingArray[lastIndex] = mountain
 
 		      var _iteratorNormalCompletion = true;
 		      var _didIteratorError = false;
@@ -30103,8 +31523,8 @@ var JSceneKitExample =
 		        }
 		      }
 
-		      this._setViewPort(); // reset viewport size
-		      gl.useProgram(program);
+		      this._setViewPort // reset viewport size
+		      ();gl.useProgram(program);
 		      for (var i = 0; i < lights.directionalShadow.length; i++) {
 		        var node = lights.directionalShadow[i];
 		        var symbol = 'TEXTURE' + (i + 8);
@@ -30126,12 +31546,12 @@ var JSceneKitExample =
 		      gl.enable(gl.BLEND);
 		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
 		      gl.uniformMatrix4fv(gl.getUniformLocation(particleProgram, 'viewTransform'), false, cameraPNode.viewTransform.float32Array());
-		      gl.uniformMatrix4fv(gl.getUniformLocation(particleProgram, 'projectionTransform'), false, cameraPNode.projectionTransform.float32Array());
+		      gl.uniformMatrix4fv(gl.getUniformLocation(particleProgram, 'projectionTransform'), false, cameraPNode.projectionTransform.float32Array()
 
 		      //////////////////////////
 		      // Particles
 		      //////////////////////////
-		      if (this.scene._particleSystems !== null) {
+		      );if (this.scene._particleSystems !== null) {
 		        var _iteratorNormalCompletion2 = true;
 		        var _didIteratorError2 = false;
 		        var _iteratorError2 = undefined;
@@ -30160,17 +31580,17 @@ var JSceneKitExample =
 		      var particleArray = this._createParticleNodeArray();
 		      particleArray.forEach(function (node) {
 		        _this2._renderParticle(node);
-		      });
+		      }
 
 		      //////////////////////////
 		      // 2D Overlay
 		      //////////////////////////
-		      this._renderOverlaySKScene();
+		      );this._renderOverlaySKScene
 
 		      // DEBUG: show shadow map
 		      //this._showShadowMapOfLight(lights.directionalShadow[0])
 
-		      gl.flush();
+		      ();gl.flush();
 		    }
 		  }, {
 		    key: '_renderOverlaySKScene',
@@ -30398,7 +31818,6 @@ var JSceneKitExample =
 		      var program = this._defaultShadowProgram._glProgram;
 		      gl.bindFramebuffer(gl.FRAMEBUFFER, light._getDepthBufferForContext(gl));
 		      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-		      //gl.clear(gl.DEPTH_BUFFER_BIT)
 
 		      gl.uniformMatrix4fv(gl.getUniformLocation(program, 'viewProjectionTransform'), false, lp.lightViewProjectionTransform.float32Array());
 
@@ -30435,10 +31854,10 @@ var JSceneKitExample =
 		            var vao = geometry._shadowVAO[i];
 		            var element = geometry.geometryElements[i];
 
-		            gl.bindVertexArray(vao);
+		            gl.bindVertexArray(vao
 		            // FIXME: use bufferData instead of bindBufferBase
 
-		            var shape = null;
+		            );var shape = null;
 		            switch (element.primitiveType) {
 		              case _SCNGeometryPrimitiveType2.default.triangles:
 		                shape = gl.TRIANGLES;
@@ -30510,16 +31929,26 @@ var JSceneKitExample =
 		      }
 		      var gl = this.context;
 		      var geometry = node.presentation.geometry;
-		      var program = this._getProgramForGeometry(geometry);
-		      gl.useProgram(program);
+		      var scnProgram = this._getProgramForGeometry(geometry);
+		      var program = scnProgram._glProgram;
+
+		      this._switchProgram(scnProgram);
 
 		      if (geometry._vertexArrayObjects === null) {
 		        this._initializeVAO(node, program);
-		        this._initializeUBO(node, program); // FIXME: program should have UBO, not node.
+		        this._initializeUBO(node, program // FIXME: program should have UBO, not node.
+		        );
 		      }
 
 		      if (node.morpher !== null) {
 		        this._updateVAO(node);
+		      }
+
+		      var uniformTime = gl.getUniformLocation(program, 'u_time');
+		      if (uniformTime) {
+		        // this._time might be too large.
+		        var time = this._time % 100000.0;
+		        gl.uniform1f(uniformTime, time);
 		      }
 
 		      if (node.presentation.skinner !== null) {
@@ -30535,14 +31964,40 @@ var JSceneKitExample =
 		        throw new Error('geometryCount: 0');
 		      }
 		      for (var i = 0; i < geometryCount; i++) {
+		        var materialCount = geometry.materials.length;
+		        var material = geometry.materials[i % materialCount];
+		        var p = program;
+		        if (material.program) {
+		          this._switchProgram(material.program
+		          // TODO: refactoring
+		          );p = material.program._glProgram;
+		          var _uniformTime = gl.getUniformLocation(p, 'u_time');
+		          if (uniformTime) {
+		            // this._time might be too large.
+		            var _time = this._time % 100000.0;
+		            gl.uniform1f(uniformTime, _time);
+		          }
+		          if (node.presentation.skinner !== null) {
+		            gl.uniform1i(gl.getUniformLocation(p, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		            gl.uniform4fv(gl.getUniformLocation(p, 'skinningJoints'), node.presentation.skinner.float32Array());
+		          } else {
+		            gl.uniform1i(gl.getUniformLocation(p, 'numSkinningJoints'), 0);
+		            gl.uniform4fv(gl.getUniformLocation(p, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
+		          }
+		          var materialIndex = gl.getUniformBlockIndex(p, 'materialUniform');
+		          gl.uniformBlockBinding(p, materialIndex, _materialLoc);
+		          gl.bindBufferBase(gl.UNIFORM_BUFFER, _materialLoc, geometry._materialBuffer);
+		        } else {
+		          this._switchProgram(scnProgram);
+		        }
 		        var vao = geometry._vertexArrayObjects[i];
 		        var element = geometry.geometryElements[i];
 
-		        gl.bindVertexArray(vao);
+		        gl.bindVertexArray(vao
 		        // FIXME: use bufferData instead of bindBufferBase
-		        gl.bindBufferBase(gl.UNIFORM_BUFFER, _materialLoc, geometry._materialBuffer);
+		        );gl.bindBufferBase(gl.UNIFORM_BUFFER, _materialLoc, geometry._materialBuffer);
 
-		        geometry._bufferMaterialData(gl, program, i, node.presentation.opacity);
+		        geometry._bufferMaterialData(gl, p, i, node.presentation.opacity);
 
 		        var shape = null;
 		        switch (element.primitiveType) {
@@ -30602,7 +32057,7 @@ var JSceneKitExample =
 
 		      var systems = node.presentation.particleSystems;
 		      systems.forEach(function (system) {
-		        _this3._renderParticleSystem(system);
+		        _this3._renderParticleSystem(system, node);
 		      });
 		    }
 
@@ -30616,13 +32071,17 @@ var JSceneKitExample =
 		  }, {
 		    key: '_renderParticleSystem',
 		    value: function _renderParticleSystem(system) {
+		      var node = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
 		      //this.currentTime
 		      var gl = this.context;
 		      var program = this._defaultParticleProgram._glProgram;
 		      if (system._program !== null) {
 		        program = system._program._glProgram;
 		      }
-		      gl.useProgram(program);
+		      gl.useProgram(program
+		      //this._switchProgram(program)
+		      );gl.disable(gl.CULL_FACE);
 
 		      if (system._vertexBuffer === null) {
 		        system._initializeVAO(gl, program);
@@ -30630,6 +32089,12 @@ var JSceneKitExample =
 		      gl.bindVertexArray(system._vertexArray);
 
 		      system._bufferMaterialData(gl, program);
+		      if (node) {
+		        gl.uniformMatrix4fv(gl.getUniformLocation(program, 'modelTransform'), false, node._worldTransform.float32Array());
+		      } else {
+		        var m = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0);
+		        gl.uniformMatrix4fv(gl.getUniformLocation(program, 'modelTransform'), false, m.float32Array());
+		      }
 
 		      gl.drawElements(gl.TRIANGLES, system._particles.length * 6, system._glIndexSize, 0);
 		    }
@@ -31012,28 +32477,28 @@ var JSceneKitExample =
 		      gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT16, width, height);
 
 		      this._hitObjectIDTexture = gl.createTexture();
-		      gl.bindTexture(gl.TEXTURE_2D, this._hitObjectIDTexture);
+		      gl.bindTexture(gl.TEXTURE_2D, this._hitObjectIDTexture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
 		      this._hitFaceIDTexture = gl.createTexture();
 		      gl.bindTexture(gl.TEXTURE_2D, this._hitFaceIDTexture);
 		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
 		      this._hitPositionTexture = gl.createTexture();
-		      gl.bindTexture(gl.TEXTURE_2D, this._hitPositionTexture);
+		      gl.bindTexture(gl.TEXTURE_2D, this._hitPositionTexture
 		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null)
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
 
 		      this._hitNormalTexture = gl.createTexture();
-		      gl.bindTexture(gl.TEXTURE_2D, this._hitNormalTexture);
+		      gl.bindTexture(gl.TEXTURE_2D, this._hitNormalTexture
 		      //gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, width, height, 0, gl.RGB, gl.UNSIGNED_BYTE, null)
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null
 
 		      //gl.framebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer)
-		      gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, this._hitDepthBuffer);
+		      );gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, this._hitDepthBuffer
 		      //gl.framebufferTexture2D(target, attachment, textarget, texture, level)
-		      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, this._hitObjectIDTexture, 0);
+		      );gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, this._hitObjectIDTexture, 0);
 		      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT1, gl.TEXTURE_2D, this._hitFaceIDTexture, 0);
 		      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT2, gl.TEXTURE_2D, this._hitPositionTexture, 0);
 		      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT3, gl.TEXTURE_2D, this._hitNormalTexture, 0);
@@ -31059,15 +32524,15 @@ var JSceneKitExample =
 
 		      var invVp = viewProjectionMatrix.invert();
 		      var rayFrom = from.transform(invVp);
-		      var rayTo = to.transform(invVp);
+		      var rayTo = to.transform(invVp
 		      //console.log(`rayFrom: ${rayFrom.float32Array()}`)
 		      //console.log(`rayTo  : ${rayTo.float32Array()}`)
 
-		      var rayVec = rayTo.sub(rayFrom);
-		      var renderingArray = this._createRenderingNodeArray();
+		      );var rayVec = rayTo.sub(rayFrom);
+		      var renderingArray = this._createRenderingNodeArray
 		      //console.log(`renderingArray.length: ${renderingArray.length}`)
 
-		      var categoryBitMask = options.get(_SCNHitTestOption2.default.categoryBitMask);
+		      ();var categoryBitMask = options.get(_SCNHitTestOption2.default.categoryBitMask);
 		      if (typeof categoryBitMask === 'undefined') {
 		        categoryBitMask = -1;
 		      }
@@ -31456,20 +32921,138 @@ var JSceneKitExample =
 
 		  }, {
 		    key: '_getProgramForGeometry',
+
+
+		    /**
+		     * @access private
+		     * @param {SCNGeometry} geometry -
+		     * @returns {SCNProgram} -
+		     */
 		    value: function _getProgramForGeometry(geometry) {
 		      if (geometry.program !== null) {
-		        return geometry.program._glProgram;
+		        return geometry.program;
 		      }
-		      if (geometry._shadableHelper === null) {
-		        return this._defaultProgram._glProgram;
-		      }
-		      return this._defaultProgram._glProgram;
-		      // TODO: implement
-		      //const gl = this.context
-		      //const program = new SCNProgram()
-		      //program._glProgram = gl.createProgram()
 
-		      //geometry.program = program
+		      if (geometry._shadableHelper !== null) {
+		        this._compileProgramForObject(geometry);
+		      }
+		      var _iteratorNormalCompletion7 = true;
+		      var _didIteratorError7 = false;
+		      var _iteratorError7 = undefined;
+
+		      try {
+		        for (var _iterator7 = geometry.materials[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
+		          var material = _step7.value;
+
+		          if (material._shadableHelper !== null && material.program === null) {
+		            this._compileProgramForObject(material);
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError7 = true;
+		        _iteratorError7 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion7 && _iterator7.return) {
+		            _iterator7.return();
+		          }
+		        } finally {
+		          if (_didIteratorError7) {
+		            throw _iteratorError7;
+		          }
+		        }
+		      }
+
+		      if (geometry.program) {
+		        return geometry.program;
+		      }
+		      return this._defaultProgram;
+		    }
+
+		    /**
+		     * @access private
+		     * @param {SCNShadable} obj -
+		     * @returns {void}
+		     */
+
+		  }, {
+		    key: '_compileProgramForObject',
+		    value: function _compileProgramForObject(obj) {
+		      var gl = this.context;
+		      var p = new _SCNProgram2.default();
+		      p._glProgram = gl.createProgram();
+
+		      var vsText = this._vertexShaderForObject(obj);
+		      var fsText = this._fragmentShaderForObject(obj
+
+		      // initialize vertex shader
+		      );var vertexShader = gl.createShader(gl.VERTEX_SHADER);
+		      gl.shaderSource(vertexShader, vsText);
+		      gl.compileShader(vertexShader);
+		      if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+		        var info = gl.getShaderInfoLog(vertexShader);
+		        throw new Error('vertex shader compile error: ' + info);
+		      }
+		      p.vertexShader = vertexShader;
+
+		      // initialize fragment shader
+		      var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+		      gl.shaderSource(fragmentShader, fsText);
+		      gl.compileShader(fragmentShader);
+		      if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
+		        var _info = gl.getShaderInfoLog(fragmentShader);
+		        throw new Error('fragment shader compile error: ' + _info);
+		      }
+		      p.fragmentShader = fragmentShader;
+
+		      gl.attachShader(p._glProgram, vertexShader);
+		      gl.attachShader(p._glProgram, fragmentShader
+
+		      // link program object
+		      );gl.linkProgram(p._glProgram);
+		      if (!gl.getProgramParameter(p._glProgram, gl.LINK_STATUS)) {
+		        var _info2 = gl.getProgramInfoLog(p._glProgram);
+		        throw new Error('program link error: ' + _info2);
+		      }
+
+		      obj.program = p;
+
+		      return p;
+		    }
+		  }, {
+		    key: '_switchProgram',
+		    value: function _switchProgram(program) {
+		      if (this._currentProgram === program) {
+		        return;
+		      }
+
+		      var gl = this.context;
+		      gl.useProgram(program._glProgram
+
+		      // set dummy textures
+		      );program._setDummyTextureForContext(gl
+
+		      // set shadow textures
+		      );var lights = this._lightNodes;
+		      for (var i = 0; i < lights.directionalShadow.length; i++) {
+		        var node = lights.directionalShadow[i];
+		        var symbol = 'TEXTURE' + (i + 8);
+		        gl.activeTexture(gl[symbol]);
+		        gl.bindTexture(gl.TEXTURE_2D, node.presentation.light._shadowDepthTexture);
+		      }
+
+		      // bind buffers
+		      var cameraIndex = gl.getUniformBlockIndex(program._glProgram, 'cameraUniform');
+		      gl.uniformBlockBinding(program._glProgram, cameraIndex, _cameraLoc);
+		      gl.bindBufferBase(gl.UNIFORM_BUFFER, _cameraLoc, this._cameraBuffer);
+		      var fogIndex = gl.getUniformBlockIndex(program._glProgram, 'fogUniform');
+		      gl.uniformBlockBinding(program._glProgram, fogIndex, _fogLoc);
+		      gl.bindBufferBase(gl.UNIFORM_BUFFER, _fogLoc, this._fogBuffer);
+		      var lightIndex = gl.getUniformBlockIndex(program._glProgram, 'lightUniform');
+		      gl.uniformBlockBinding(program._glProgram, lightIndex, _lightLoc);
+		      gl.bindBufferBase(gl.UNIFORM_BUFFER, _lightLoc, this._lightBuffer);
+
+		      this._currentProgram = program;
 		    }
 
 		    /**
@@ -31478,15 +33061,64 @@ var JSceneKitExample =
 		     */
 
 		  }, {
-		    key: '_replaceTexts',
+		    key: '_programForGeometry',
 
 
 		    /**
 		     * @access private
-		     * @param {string} text -
+		     * @param {SCNGeometry} geometry -
+		     * @returns {SCNProgram} -
+		     */
+		    value: function _programForGeometry(geometry) {}
+
+		    /**
+		     * @access private
 		     * @returns {string} -
 		     */
+
+		  }, {
+		    key: '_vertexShaderForObject',
+
+
+		    /**
+		     * @access private
+		     * @param {SCNShadable} obj -
+		     * @returns {string} -
+		     */
+		    value: function _vertexShaderForObject(obj) {
+		      return this._replaceTexts(_defaultVertexShader, obj._shadableHelper);
+		    }
+
+		    /**
+		     * @access private
+		     * @returns {string} -
+		     */
+
+		  }, {
+		    key: '_fragmentShaderForObject',
+
+
+		    /**
+		     * @access private
+		     * @param {SCNShadable} obj -
+		     * @returns {string} -
+		     */
+		    value: function _fragmentShaderForObject(obj) {
+		      return this._replaceTexts(_defaultFragmentShader, obj._shadableHelper);
+		    }
+
+		    /**
+		     * @access private
+		     * @param {string} text -
+		     * @param {?SCNShadableHelper} [shadableHelper = null] -
+		     * @returns {string} -
+		     */
+
+		  }, {
+		    key: '_replaceTexts',
 		    value: function _replaceTexts(text) {
+		      var shadableHelper = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
 		      var vars = new Map();
 		      var numAmbient = this._numLights[_SCNLight2.default.LightType.ambient];
 		      var numDirectional = this._numLights[_SCNLight2.default.LightType.directional];
@@ -31503,6 +33135,29 @@ var JSceneKitExample =
 		      vars.set('__NUM_SPOT_LIGHTS__', numSpot);
 		      vars.set('__NUM_IES_LIGHTS__', numIES);
 		      vars.set('__NUM_PROBE_LIGHTS__', numProbe);
+
+		      vars.set('__USE_SHADER_MODIFIER_GEOMETRY__', 0);
+		      vars.set('__SHADER_MODIFIER_GEOMETRY__', '');
+		      vars.set('__USE_SHADER_MODIFIER_SURFACE__', 0);
+		      vars.set('__SHADER_MODIFIER_SURFACE__', '');
+		      vars.set('__USE_SHADER_MODIFIER_FRAGMENT__', 0);
+		      vars.set('__SHADER_MODIFIER_FRAGMENT__', '');
+
+		      if (shadableHelper && shadableHelper._shaderModifiers) {
+		        var modifiers = shadableHelper._shaderModifiers;
+		        if (modifiers.SCNShaderModifierEntryPointGeometry) {
+		          vars.set('__USE_SHADER_MODIFIER_GEOMETRY__', 1);
+		          vars.set('__SHADER_MODIFIER_GEOMETRY__', modifiers.SCNShaderModifierEntryPointGeometry);
+		        }
+		        if (modifiers.SCNShaderModifierEntryPointSurface) {
+		          vars.set('__USE_SHADER_MODIFIER_SURFACE__', 1);
+		          vars.set('__SHADER_MODIFIER_SURFACE__', modifiers.SCNShaderModifierEntryPointSurface);
+		        }
+		        if (modifiers.SCNShaderModifierEntryPointFragment) {
+		          vars.set('__USE_SHADER_MODIFIER_FRAGMENT__', 1);
+		          vars.set('__SHADER_MODIFIER_FRAGMENT__', modifiers.SCNShaderModifierEntryPointFragment);
+		        }
+		      }
 
 		      var lightDefinition = '';
 		      var vsLighting = '';
@@ -31587,12 +33242,12 @@ var JSceneKitExample =
 		      var baseGeometry = node.geometry;
 
 		      // prepare vertex array data
-		      //const vertexBuffer = geometry._createVertexBuffer(gl, baseGeometry)
-		      var vertexBuffer = geometry._createVertexBuffer(gl, node);
+		      var vertexBuffer = geometry._createVertexBuffer(gl, node
 		      // TODO: retain attribute locations
-		      var positionLoc = gl.getAttribLocation(program, 'position');
+		      );var positionLoc = gl.getAttribLocation(program, 'position');
 		      var normalLoc = gl.getAttribLocation(program, 'normal');
 		      var tangentLoc = gl.getAttribLocation(program, 'tangent');
+		      var colorLoc = gl.getAttribLocation(program, 'color');
 		      var texcoord0Loc = gl.getAttribLocation(program, 'texcoord0');
 		      var texcoord1Loc = gl.getAttribLocation(program, 'texcoord1');
 		      var boneIndicesLoc = gl.getAttribLocation(program, 'boneIndices');
@@ -31604,23 +33259,24 @@ var JSceneKitExample =
 		        var element = node.presentation.geometry.geometryElements[i];
 		        var material = node.presentation.geometry.materials[i];
 		        var vao = gl.createVertexArray();
-		        gl.bindVertexArray(vao);
+		        gl.bindVertexArray(vao
 
 		        // initialize vertex buffer
-		        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+		        );gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 
 		        gl.bindAttribLocation(program, positionLoc, 'position');
 		        gl.bindAttribLocation(program, normalLoc, 'normal');
 		        gl.bindAttribLocation(program, tangentLoc, 'tangent');
+		        gl.bindAttribLocation(program, colorLoc, 'color');
 		        gl.bindAttribLocation(program, texcoord0Loc, 'texcoord0');
 		        gl.bindAttribLocation(program, texcoord1Loc, 'texcoord1');
 		        gl.bindAttribLocation(program, boneIndicesLoc, 'boneIndices');
-		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights');
+		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights'
 
 		        // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
 
 		        // position
-		        var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		        );var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		        if (posSrc) {
 		          gl.enableVertexAttribArray(positionLoc);
 		          gl.vertexAttribPointer(positionLoc, posSrc.componentsPerVector, gl.FLOAT, false, posSrc.dataStride, posSrc.dataOffset);
@@ -31644,6 +33300,15 @@ var JSceneKitExample =
 		          gl.vertexAttribPointer(tangentLoc, tanSrc.componentsPerVector, gl.FLOAT, false, tanSrc.dataStride, tanSrc.dataOffset);
 		        } else {
 		          gl.disableVertexAttribArray(tangentLoc);
+		        }
+
+		        // color
+		        var colorSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.color)[0];
+		        if (colorSrc) {
+		          gl.enableVertexAttribArray(colorLoc);
+		          gl.vertexAttribPointer(colorLoc, colorSrc.componentsPerVector, gl.FLOAT, false, colorSrc.dataStride, colorSrc.dataOffset);
+		        } else {
+		          gl.disableVertexAttribArray(colorLoc);
 		        }
 
 		        // texcoord0
@@ -31686,11 +33351,11 @@ var JSceneKitExample =
 		        }
 
 		        // FIXME: use setting
-		        gl.disable(gl.CULL_FACE);
+		        gl.disable(gl.CULL_FACE
 
 		        // initialize index buffer
 		        // FIXME: check geometrySource semantic
-		        var indexBuffer = element._createBuffer(gl);
+		        );var indexBuffer = element._createBuffer(gl);
 		        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
 		        geometry._vertexArrayObjects.push(vao);
@@ -31704,9 +33369,9 @@ var JSceneKitExample =
 		      var baseGeometry = node.geometry;
 
 		      // prepare vertex array data
-		      var vertexBuffer = geometry._createVertexBuffer(gl, node);
+		      var vertexBuffer = geometry._createVertexBuffer(gl, node
 		      // TODO: retain attribute locations
-		      var positionLoc = gl.getAttribLocation(program, 'position');
+		      );var positionLoc = gl.getAttribLocation(program, 'position');
 		      var boneIndicesLoc = gl.getAttribLocation(program, 'boneIndices');
 		      var boneWeightsLoc = gl.getAttribLocation(program, 'boneWeights');
 
@@ -31716,19 +33381,19 @@ var JSceneKitExample =
 		        var element = node.presentation.geometry.geometryElements[i];
 		        var material = node.presentation.geometry.materials[i];
 		        var shadowVAO = gl.createVertexArray();
-		        gl.bindVertexArray(shadowVAO);
+		        gl.bindVertexArray(shadowVAO
 
 		        // initialize vertex buffer
-		        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+		        );gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 
 		        gl.bindAttribLocation(program, positionLoc, 'position');
 		        gl.bindAttribLocation(program, boneIndicesLoc, 'boneIndices');
-		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights');
+		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights'
 
 		        // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
 
 		        // position
-		        var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		        );var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		        if (posSrc) {
 		          gl.enableVertexAttribArray(positionLoc);
 		          gl.vertexAttribPointer(positionLoc, posSrc.componentsPerVector, gl.FLOAT, false, posSrc.dataStride, posSrc.dataOffset);
@@ -31755,11 +33420,11 @@ var JSceneKitExample =
 		        }
 
 		        // FIXME: use setting
-		        gl.disable(gl.CULL_FACE);
+		        gl.disable(gl.CULL_FACE
 
 		        // initialize index buffer
 		        // FIXME: check geometrySource semantic
-		        var indexBuffer = element._createBuffer(gl);
+		        );var indexBuffer = element._createBuffer(gl);
 		        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
 		        geometry._shadowVAO.push(shadowVAO);
@@ -31792,12 +33457,12 @@ var JSceneKitExample =
 		        gl.bindAttribLocation(program, positionLoc, 'position');
 		        gl.bindAttribLocation(program, normalLoc, 'normal');
 		        gl.bindAttribLocation(program, boneIndicesLoc, 'boneIndices');
-		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights');
+		        gl.bindAttribLocation(program, boneWeightsLoc, 'boneWeights'
 
 		        // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
 
 		        // position
-		        var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		        );var posSrc = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		        if (posSrc) {
 		          gl.enableVertexAttribArray(positionLoc);
 		          gl.vertexAttribPointer(positionLoc, posSrc.componentsPerVector, gl.FLOAT, false, posSrc.dataStride, posSrc.dataOffset);
@@ -31917,28 +33582,51 @@ var JSceneKitExample =
 
 		      this.__dummyTexture = gl.createTexture();
 
-		      gl.bindTexture(gl.TEXTURE_2D, this.__dummyTexture);
+		      gl.bindTexture(gl.TEXTURE_2D, this.__dummyTexture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
 		      gl.bindTexture(gl.TEXTURE_2D, null);
 		    }
-		  }, {
-		    key: '_setDummyTextureAsDefault',
-		    value: function _setDummyTextureAsDefault() {
-		      var gl = this.context;
-		      var p = this.__defaultProgram;
 
-		      var texNames = [gl.TEXTURE0, gl.TEXTURE1, gl.TEXTURE2, gl.TEXTURE3, gl.TEXTURE4, gl.TEXTURE5, gl.TEXTURE6, gl.TEXTURE7];
-		      var texSymbols = ['u_emissionTexture', 'u_ambientTexture', 'u_diffuseTexture', 'u_specularTexture', 'u_reflectiveTexture', 'u_transparentTexture', 'u_multiplyTexture', 'u_normalTexture'];
-		      for (var i = 0; i < texNames.length; i++) {
-		        var texName = texNames[i];
-		        var symbol = texSymbols[i];
-		        gl.uniform1i(gl.getUniformLocation(p._glProgram, symbol), i);
-		        gl.activeTexture(texName);
-		        gl.bindTexture(gl.TEXTURE_2D, this.__dummyTexture);
-		      }
-		    }
+		    /**
+		     * @access private
+		     * @param {SCNProgram} program -
+		     * @returns {void}
+		     */
+		    //_setDummyTextureAsDefault(program) {
+		    //  const gl = this.context
+		    //  const p = program
+
+		    //  const texNames = [
+		    //    gl.TEXTURE0,
+		    //    gl.TEXTURE1,
+		    //    gl.TEXTURE2,
+		    //    gl.TEXTURE3,
+		    //    gl.TEXTURE4,
+		    //    gl.TEXTURE5,
+		    //    gl.TEXTURE6,
+		    //    gl.TEXTURE7
+		    //  ]
+		    //  const texSymbols = [
+		    //    'u_emissionTexture',
+		    //    'u_ambientTexture',
+		    //    'u_diffuseTexture',
+		    //    'u_specularTexture',
+		    //    'u_reflectiveTexture',
+		    //    'u_transparentTexture',
+		    //    'u_multiplyTexture',
+		    //    'u_normalTexture'
+		    //  ]
+		    //  for(let i=0; i<texNames.length; i++){
+		    //    const texName = texNames[i]
+		    //    const symbol = texSymbols[i]
+		    //    gl.uniform1i(gl.getUniformLocation(p._glProgram, symbol), i)
+		    //    gl.activeTexture(texName)
+		    //    gl.bindTexture(gl.TEXTURE_2D, this.__dummyTexture)
+		    //  }
+		    //}
+
 		  }, {
 		    key: '_switchToDefaultCamera',
 		    value: function _switchToDefaultCamera() {
@@ -32038,13 +33726,13 @@ var JSceneKitExample =
 		    value: function _numLightsChanged() {
 		      var changed = false;
 		      var types = [].concat(_toConsumableArray(Object.values(_SCNLight2.default.LightType)), ['directionalShadow']);
-		      var _iteratorNormalCompletion7 = true;
-		      var _didIteratorError7 = false;
-		      var _iteratorError7 = undefined;
+		      var _iteratorNormalCompletion8 = true;
+		      var _didIteratorError8 = false;
+		      var _iteratorError8 = undefined;
 
 		      try {
-		        for (var _iterator7 = types[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
-		          var type = _step7.value;
+		        for (var _iterator8 = types[Symbol.iterator](), _step8; !(_iteratorNormalCompletion8 = (_step8 = _iterator8.next()).done); _iteratorNormalCompletion8 = true) {
+		          var type = _step8.value;
 
 		          var num = this._lightNodes[type].length;
 		          if (num !== this._numLights[type]) {
@@ -32053,16 +33741,16 @@ var JSceneKitExample =
 		          }
 		        }
 		      } catch (err) {
-		        _didIteratorError7 = true;
-		        _iteratorError7 = err;
+		        _didIteratorError8 = true;
+		        _iteratorError8 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion7 && _iterator7.return) {
-		            _iterator7.return();
+		          if (!_iteratorNormalCompletion8 && _iterator8.return) {
+		            _iterator8.return();
 		          }
 		        } finally {
-		          if (_didIteratorError7) {
-		            throw _iteratorError7;
+		          if (_didIteratorError8) {
+		            throw _iteratorError8;
 		          }
 		        }
 		      }
@@ -32086,7 +33774,7 @@ var JSceneKitExample =
 		      var invRay = rayVec.mul(-1);
 
 		      console.log('rayPoint: ' + rayPoint.float32Array());
-		      console.log('rayVec: ' + rayVec.float32Array());
+		      console.log('rayVec: ' + rayVec.float32Array()
 
 		      //if(node.morpher !== null){
 		      //  this._updateVAO(node)
@@ -32094,7 +33782,7 @@ var JSceneKitExample =
 
 		      // TODO: test the bounding box/sphere first for performance
 
-		      var source = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		      );var source = geometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var sourceLen = source.vectorCount;
 		      var sourceData = [];
 		      var modelTransform = node.presentation._worldTransform;
@@ -32137,9 +33825,9 @@ var JSceneKitExample =
 
 		        var elementData = element._glData;
 		        var len = element.primitiveCount;
-		        console.log('primitiveCount: ' + len);
+		        console.log('primitiveCount: ' + len
 		        // TODO: check cull settings
-		        for (var pi = 0; pi < len; pi++) {
+		        );for (var pi = 0; pi < len; pi++) {
 		          var _indices = element._indexAt(pi);
 
 		          var v0 = sourceData[_indices[0]];
@@ -32460,55 +34148,41 @@ var JSceneKitExample =
 		      gl.shaderSource(fragmentShader, fsText);
 		      gl.compileShader(fragmentShader);
 		      if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-		        var _info = gl.getShaderInfoLog(fragmentShader);
-		        throw new Error('fragment shader compile error: ' + _info);
+		        var _info3 = gl.getShaderInfoLog(fragmentShader);
+		        throw new Error('fragment shader compile error: ' + _info3);
 		      }
 		      this.__defaultProgram.fragmentShader = fragmentShader;
 
 		      gl.attachShader(p._glProgram, vertexShader);
-		      gl.attachShader(p._glProgram, fragmentShader);
+		      gl.attachShader(p._glProgram, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(p._glProgram);
+		      );gl.linkProgram(p._glProgram);
 		      if (!gl.getProgramParameter(p._glProgram, gl.LINK_STATUS)) {
-		        var _info2 = gl.getProgramInfoLog(p._glProgram);
-		        throw new Error('program link error: ' + _info2);
+		        var _info4 = gl.getProgramInfoLog(p._glProgram);
+		        throw new Error('program link error: ' + _info4);
 		      }
 
-		      gl.useProgram(p._glProgram);
-		      //gl.clearColor(1, 1, 1, 1)
-		      //gl.clearDepth(1.0)
-		      //gl.clearStencil(0)
+		      //gl.useProgram(p._glProgram)
+		      this._switchProgram(p);
 
 		      gl.enable(gl.DEPTH_TEST);
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.enable(gl.BLEND);
 		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 		      gl.enable(gl.CULL_FACE);
-		      gl.cullFace(gl.BACK);
+		      gl.cullFace(gl.BACK
 
 		      // set default textures to prevent warnings
-		      this._setDummyTextureAsDefault();
+		      //this._setDummyTextureAsDefault(p)
 
-		      return this.__defaultProgram;
+		      );return this.__defaultProgram;
 		    }
-
-		    /**
-		     * @access private
-		     * @returns {string} -
-		     */
-
 		  }, {
 		    key: '_defaultVertexShader',
 		    get: function get() {
 		      return this._replaceTexts(_defaultVertexShader);
 		    }
-
-		    /**
-		     * @access private
-		     * @returns {string} -
-		     */
-
 		  }, {
 		    key: '_defaultFragmentShader',
 		    get: function get() {
@@ -32548,34 +34222,34 @@ var JSceneKitExample =
 		      gl.shaderSource(fragmentShader, fsText);
 		      gl.compileShader(fragmentShader);
 		      if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-		        var _info3 = gl.getShaderInfoLog(fragmentShader);
-		        throw new Error('particle fragment shader compile error: ' + _info3);
+		        var _info5 = gl.getShaderInfoLog(fragmentShader);
+		        throw new Error('particle fragment shader compile error: ' + _info5);
 		      }
 
 		      gl.attachShader(p._glProgram, vertexShader);
-		      gl.attachShader(p._glProgram, fragmentShader);
+		      gl.attachShader(p._glProgram, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(p._glProgram);
+		      );gl.linkProgram(p._glProgram);
 		      if (!gl.getProgramParameter(p._glProgram, gl.LINK_STATUS)) {
-		        var _info4 = gl.getProgramInfoLog(p._glProgram);
-		        throw new Error('program link error: ' + _info4);
+		        var _info6 = gl.getProgramInfoLog(p._glProgram);
+		        throw new Error('program link error: ' + _info6);
 		      }
 
-		      gl.useProgram(p._glProgram);
+		      gl.useProgram(p._glProgram
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
 
-		      gl.enable(gl.DEPTH_TEST);
+		      );gl.enable(gl.DEPTH_TEST);
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.enable(gl.BLEND);
 		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 		      gl.enable(gl.CULL_FACE);
-		      gl.cullFace(gl.BACK);
+		      gl.cullFace(gl.BACK
 
 		      // set default textures to prevent warnings
-		      this._setDummyParticleTextureAsDefault();
+		      );this._setDummyParticleTextureAsDefault();
 
 		      return this.__defaultParticleProgram;
 		    }
@@ -32614,31 +34288,31 @@ var JSceneKitExample =
 		      gl.shaderSource(fragmentShader, fsText);
 		      gl.compileShader(fragmentShader);
 		      if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-		        var _info5 = gl.getShaderInfoLog(fragmentShader);
-		        throw new Error('particle fragment shader compile error: ' + _info5);
+		        var _info7 = gl.getShaderInfoLog(fragmentShader);
+		        throw new Error('particle fragment shader compile error: ' + _info7);
 		      }
 
 		      gl.attachShader(p._glProgram, vertexShader);
-		      gl.attachShader(p._glProgram, fragmentShader);
+		      gl.attachShader(p._glProgram, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(p._glProgram);
+		      );gl.linkProgram(p._glProgram);
 		      if (!gl.getProgramParameter(p._glProgram, gl.LINK_STATUS)) {
-		        var _info6 = gl.getProgramInfoLog(p._glProgram);
-		        throw new Error('program link error: ' + _info6);
+		        var _info8 = gl.getProgramInfoLog(p._glProgram);
+		        throw new Error('program link error: ' + _info8);
 		      }
 
-		      gl.useProgram(p._glProgram);
+		      gl.useProgram(p._glProgram
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
 
-		      gl.enable(gl.DEPTH_TEST);
-		      gl.depthFunc(gl.LEQUAL);
+		      );gl.enable(gl.DEPTH_TEST);
+		      gl.depthFunc(gl.LEQUAL
 		      //gl.enable(gl.BLEND)
-		      gl.disable(gl.BLEND);
+		      );gl.disable(gl.BLEND
 		      //gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
-		      gl.enable(gl.CULL_FACE);
+		      );gl.enable(gl.CULL_FACE);
 		      gl.cullFace(gl.BACK);
 
 		      return this.__defaultShadowProgram;
@@ -32672,35 +34346,35 @@ var JSceneKitExample =
 		      gl.shaderSource(fragmentShader, fsText);
 		      gl.compileShader(fragmentShader);
 		      if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-		        var _info7 = gl.getShaderInfoLog(fragmentShader);
-		        throw new Error('hitTest fragment shader compile error: ' + _info7);
+		        var _info9 = gl.getShaderInfoLog(fragmentShader);
+		        throw new Error('hitTest fragment shader compile error: ' + _info9);
 		      }
 
 		      gl.attachShader(p._glProgram, vertexShader);
-		      gl.attachShader(p._glProgram, fragmentShader);
+		      gl.attachShader(p._glProgram, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(p._glProgram);
+		      );gl.linkProgram(p._glProgram);
 		      if (!gl.getProgramParameter(p._glProgram, gl.LINK_STATUS)) {
-		        var _info8 = gl.getProgramInfoLog(p._glProgram);
-		        throw new Error('program link error: ' + _info8);
+		        var _info10 = gl.getProgramInfoLog(p._glProgram);
+		        throw new Error('program link error: ' + _info10);
 		      }
 
-		      gl.useProgram(p._glProgram);
+		      gl.useProgram(p._glProgram
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
 
-		      gl.enable(gl.DEPTH_TEST);
+		      );gl.enable(gl.DEPTH_TEST);
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.enable(gl.BLEND);
 		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 		      gl.enable(gl.CULL_FACE);
-		      gl.cullFace(gl.BACK);
+		      gl.cullFace(gl.BACK
 
 		      //this._setDummyHitTestTextureAsDefault()
 
-		      return this.__defaultHitTestProgram;
+		      );return this.__defaultHitTestProgram;
 		    }
 		  }]);
 
@@ -32710,7 +34384,7 @@ var JSceneKitExample =
 		exports.default = SCNRenderer;
 
 	/***/ },
-	/* 87 */
+	/* 91 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -32721,23 +34395,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNDebugOptions = __webpack_require__(118);
+		var _SCNDebugOptions = __webpack_require__(122);
 
 		var _SCNDebugOptions2 = _interopRequireDefault(_SCNDebugOptions);
 
-		var _SCNRenderingAPI = __webpack_require__(119);
+		var _SCNRenderingAPI = __webpack_require__(123);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNHitTestResult = __webpack_require__(104);
+		var _SCNHitTestResult = __webpack_require__(108);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -32745,15 +34419,15 @@ var JSceneKitExample =
 
 		var _CGPoint2 = _interopRequireDefault(_CGPoint);
 
-		var _SCNHitTestOption = __webpack_require__(120);
+		var _SCNHitTestOption = __webpack_require__(124);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNSceneRendererDelegate = __webpack_require__(121);
+		var _SCNSceneRendererDelegate = __webpack_require__(125);
 
 		var _SCNSceneRendererDelegate2 = _interopRequireDefault(_SCNSceneRendererDelegate);
 
@@ -33179,7 +34853,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneRenderer;
 
 	/***/ },
-	/* 88 */
+	/* 92 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -33198,59 +34872,59 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNMaterial = __webpack_require__(73);
+		var _SCNMaterial = __webpack_require__(77);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNBox = __webpack_require__(89);
+		var _SCNBox = __webpack_require__(93);
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNMaterialProperty = __webpack_require__(74);
+		var _SCNMaterialProperty = __webpack_require__(78);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNSceneExportDelegate = __webpack_require__(90);
+		var _SCNSceneExportDelegate = __webpack_require__(94);
 
 		var _SCNSceneExportDelegate2 = _interopRequireDefault(_SCNSceneExportDelegate);
 
-		var _SCNSceneExportProgressHandler = __webpack_require__(91);
+		var _SCNSceneExportProgressHandler = __webpack_require__(95);
 
 		var _SCNSceneExportProgressHandler2 = _interopRequireDefault(_SCNSceneExportProgressHandler);
 
-		var _SCNSceneSource = __webpack_require__(92);
+		var _SCNSceneSource = __webpack_require__(96);
 
 		var _SCNSceneSource2 = _interopRequireDefault(_SCNSceneSource);
 
-		var _SCNPhysicsWorld = __webpack_require__(97);
+		var _SCNPhysicsWorld = __webpack_require__(101);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNParticleSystem = __webpack_require__(105);
+		var _SCNParticleSystem = __webpack_require__(109);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _BinaryRequest2 = __webpack_require__(95);
+		var _BinaryRequest2 = __webpack_require__(99);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _File2 = __webpack_require__(32);
+		var _File2 = __webpack_require__(36);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(33);
+		var _FileReader2 = __webpack_require__(37);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
@@ -33267,15 +34941,14 @@ var JSceneKitExample =
 		  frameRate: 'kSceneFrameRateAttributeKey',
 		  startTime: 'kSceneStartTimeAttributeKey',
 		  upAxis: 'kSceneUpAxisAttributeKey'
+
+		  /**
+		   * A scene graph—a hierarchy of nodes with attached geometries, lights, cameras and other attributes that together form a displayable 3D scene.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/scenekit/scnscene
+		   */
 		};
-
-		/**
-		 * A scene graph—a hierarchy of nodes with attached geometries, lights, cameras and other attributes that together form a displayable 3D scene.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnscene
-		 */
-
 		var SCNScene = function (_NSObject) {
 		  _inherits(SCNScene, _NSObject);
 
@@ -33752,7 +35425,7 @@ var JSceneKitExample =
 		exports.default = SCNScene;
 
 	/***/ },
-	/* 89 */
+	/* 93 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -33763,23 +35436,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNGeometryElement = __webpack_require__(70);
+		var _SCNGeometryElement = __webpack_require__(74);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(71);
+		var _SCNGeometryPrimitiveType = __webpack_require__(75);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -33989,171 +35662,171 @@ var JSceneKitExample =
 		      */
 
 		      // front
-		      sourceData.push(left, bottom, front); // position
-		      sourceData.push(0, 0, 1); // normal
-		      sourceData.push(0, 1); // texcoord
+		      sourceData.push(left, bottom, front // position
+		      );sourceData.push(0, 0, 1 // normal
+		      );sourceData.push(0, 1 // texcoord
 		      //sourceData.push(0, -1, -1, -1) // boneIndices
 		      //sourceData.push(1, 0, 0, 0) // boneWeights
 
-		      sourceData.push(left, top, front);
+		      );sourceData.push(left, top, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, bottom, front);
+		      );sourceData.push(right, bottom, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, front);
+		      );sourceData.push(right, top, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(0, 3, 1);
-		      indexData.push(0, 2, 3);
+		      );indexData.push(0, 3, 1);
+		      indexData.push(0, 2, 3
 
 		      // right
-		      sourceData.push(right, bottom, front);
+		      );sourceData.push(right, bottom, front);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(0, 1);
+		      sourceData.push(0, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, front);
+		      );sourceData.push(right, top, front);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, bottom, back);
+		      );sourceData.push(right, bottom, back);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, back);
+		      );sourceData.push(right, top, back);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(4, 7, 5);
-		      indexData.push(4, 6, 7);
+		      );indexData.push(4, 7, 5);
+		      indexData.push(4, 6, 7
 
 		      // back
-		      sourceData.push(right, bottom, back);
+		      );sourceData.push(right, bottom, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(0, 1);
+		      sourceData.push(0, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, back);
+		      );sourceData.push(right, top, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, bottom, back);
+		      );sourceData.push(left, bottom, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, top, back);
+		      );sourceData.push(left, top, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(8, 11, 9);
-		      indexData.push(8, 10, 11);
+		      );indexData.push(8, 11, 9);
+		      indexData.push(8, 10, 11
 
 		      // left
-		      sourceData.push(left, bottom, back);
+		      );sourceData.push(left, bottom, back);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(0, 1);
+		      sourceData.push(0, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, top, back);
+		      );sourceData.push(left, top, back);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, bottom, front);
+		      );sourceData.push(left, bottom, front);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, top, front);
+		      );sourceData.push(left, top, front);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(12, 15, 13);
-		      indexData.push(12, 14, 15);
+		      );indexData.push(12, 15, 13);
+		      indexData.push(12, 14, 15
 
 		      // top
-		      sourceData.push(left, top, front);
+		      );sourceData.push(left, top, front);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(0, 1);
+		      sourceData.push(0, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, top, back);
+		      );sourceData.push(left, top, back);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, front);
+		      );sourceData.push(right, top, front);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, top, back);
+		      );sourceData.push(right, top, back);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(16, 19, 17);
-		      indexData.push(16, 18, 19);
+		      );indexData.push(16, 19, 17);
+		      indexData.push(16, 18, 19
 
 		      // bottom
-		      sourceData.push(left, bottom, back);
+		      );sourceData.push(left, bottom, back);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(0, 1);
+		      sourceData.push(0, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(left, bottom, front);
+		      );sourceData.push(left, bottom, front);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(0, 0);
+		      sourceData.push(0, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, bottom, back);
+		      );sourceData.push(right, bottom, back);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(1, 1);
+		      sourceData.push(1, 1
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      sourceData.push(right, bottom, front);
+		      );sourceData.push(right, bottom, front);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(1, 0);
+		      sourceData.push(1, 0
 		      //sourceData.push(0, -1, -1, -1)
 		      //sourceData.push(1, 0, 0, 0)
 
-		      indexData.push(20, 23, 21);
+		      );indexData.push(20, 23, 21);
 		      indexData.push(20, 22, 23);
 
 		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
@@ -34235,7 +35908,7 @@ var JSceneKitExample =
 		exports.default = SCNBox;
 
 	/***/ },
-	/* 90 */
+	/* 94 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -34296,7 +35969,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneExportDelegate;
 
 	/***/ },
-	/* 91 */
+	/* 95 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -34320,7 +35993,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneExportProgressHandler;
 
 	/***/ },
-	/* 92 */
+	/* 96 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34331,7 +36004,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSKeyedUnarchiver = __webpack_require__(31);
+		var _NSKeyedUnarchiver = __webpack_require__(35);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
@@ -34339,19 +36012,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNSceneSourceStatusHandler = __webpack_require__(93);
+		var _SCNSceneSourceStatusHandler = __webpack_require__(97);
 
 		var _SCNSceneSourceStatusHandler2 = _interopRequireDefault(_SCNSceneSourceStatusHandler);
 
-		var _BinaryRequest2 = __webpack_require__(95);
+		var _BinaryRequest2 = __webpack_require__(99);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _File2 = __webpack_require__(32);
+		var _File2 = __webpack_require__(36);
 
 		var _File3 = _interopRequireDefault(_File2);
 
@@ -34382,15 +36055,14 @@ var JSceneKitExample =
 		  preserveOriginalTopology: 'kSceneSourcePreserveOriginalTopology',
 		  strictConformance: 'kSceneSourceStrictConformanceKey',
 		  useSafeMode: 'kSceneSourceUseSafeMode'
+
+		  /**
+		   * Manages the data-reading tasks associated with loading scene contents from a file or data.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/scenekit/scnscenesource
+		   */
 		};
-
-		/**
-		 * Manages the data-reading tasks associated with loading scene contents from a file or data.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnscenesource
-		 */
-
 		var SCNSceneSource = function (_NSObject) {
 		  _inherits(SCNSceneSource, _NSObject);
 
@@ -34656,7 +36328,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSource;
 
 	/***/ },
-	/* 93 */
+	/* 97 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34665,7 +36337,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNSceneSourceStatus = __webpack_require__(94);
+		var _SCNSceneSourceStatus = __webpack_require__(98);
 
 		var _SCNSceneSourceStatus2 = _interopRequireDefault(_SCNSceneSourceStatus);
 
@@ -34686,7 +36358,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSourceStatusHandler;
 
 	/***/ },
-	/* 94 */
+	/* 98 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -34716,7 +36388,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSourceStatus;
 
 	/***/ },
-	/* 95 */
+	/* 99 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34726,7 +36398,7 @@ var JSceneKitExample =
 		});
 		exports.BinaryRequest = undefined;
 
-		var _AjaxRequest2 = __webpack_require__(96);
+		var _AjaxRequest2 = __webpack_require__(100);
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -34761,7 +36433,7 @@ var JSceneKitExample =
 		exports.default = new BinaryRequest();
 
 	/***/ },
-	/* 96 */
+	/* 100 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -34963,7 +36635,7 @@ var JSceneKitExample =
 		exports.default = new AjaxRequest();
 
 	/***/ },
-	/* 97 */
+	/* 101 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34978,35 +36650,35 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNPhysicsBehavior = __webpack_require__(98);
+		var _SCNPhysicsBehavior = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
 
-		var _SCNPhysicsContactDelegate = __webpack_require__(99);
+		var _SCNPhysicsContactDelegate = __webpack_require__(103);
 
 		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
 
-		var _SCNPhysicsContact = __webpack_require__(100);
+		var _SCNPhysicsContact = __webpack_require__(104);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNHitTestResult = __webpack_require__(104);
+		var _SCNHitTestResult = __webpack_require__(108);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
-		var _SCNPhysicsShape = __webpack_require__(103);
+		var _SCNPhysicsShape = __webpack_require__(107);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -35033,15 +36705,14 @@ var JSceneKitExample =
 		  all: 'all',
 		  any: 'any',
 		  closest: 'closest'
+
+		  /**
+		   * The global simulation of collisions, gravity, joints, and other physics effects in a scene.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/scenekit/scnphysicsworld
+		   */
 		};
-
-		/**
-		 * The global simulation of collisions, gravity, joints, and other physics effects in a scene.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnphysicsworld
-		 */
-
 		var SCNPhysicsWorld = function (_NSObject) {
 		  _inherits(SCNPhysicsWorld, _NSObject);
 
@@ -35367,14 +37038,14 @@ var JSceneKitExample =
 		      //return results
 		      var viewProjectionTransform = this._createViewProjectionTransform(origin, dest);
 		      var from = origin.transform(viewProjectionTransform);
-		      var to = dest.transform(viewProjectionTransform);
+		      var to = dest.transform(viewProjectionTransform
 		      //console.log('**** rayTestWithSegmentFromTo ****')
 		      //console.log(`origin: ${origin.floatArray()}`)
 		      //console.log(`dest: ${dest.floatArray()}`)
 		      //console.log(`from: ${from.floatArray()}`)
 		      //console.log(`to: ${to.floatArray()}`)
 
-		      return this._renderer._physicsHitTestByGPU(viewProjectionTransform, from, to, opt);
+		      );return this._renderer._physicsHitTestByGPU(viewProjectionTransform, from, to, opt);
 		    }
 
 		    /**
@@ -35567,7 +37238,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsWorld;
 
 	/***/ },
-	/* 98 */
+	/* 102 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -35623,7 +37294,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBehavior;
 
 	/***/ },
-	/* 99 */
+	/* 103 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -35634,11 +37305,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsWorld = __webpack_require__(97);
+		var _SCNPhysicsWorld = __webpack_require__(101);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNPhysicsContact = __webpack_require__(100);
+		var _SCNPhysicsContact = __webpack_require__(104);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
@@ -35716,7 +37387,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsContactDelegate;
 
 	/***/ },
-	/* 100 */
+	/* 104 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -35731,11 +37402,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -35865,7 +37536,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsContact;
 
 	/***/ },
-	/* 101 */
+	/* 105 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -35880,19 +37551,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNPhysicsBodyType = __webpack_require__(102);
+		var _SCNPhysicsBodyType = __webpack_require__(106);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
-		var _SCNPhysicsShape = __webpack_require__(103);
+		var _SCNPhysicsShape = __webpack_require__(107);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -36339,7 +38010,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBody;
 
 	/***/ },
-	/* 102 */
+	/* 106 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -36365,7 +38036,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBodyType;
 
 	/***/ },
-	/* 103 */
+	/* 107 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36380,11 +38051,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -36407,15 +38078,14 @@ var JSceneKitExample =
 		  boundingBox: 'boundingBox',
 		  concavePolyhedron: 'concaveMesh',
 		  convexHull: 'convexHull'
+
+		  /**
+		   * An abstraction of a physics body’s solid volume for use in tuning or optimizing collision detection.
+		   * @access public
+		   * @extends {NSObject}
+		   * @see https://developer.apple.com/reference/scenekit/scnphysicsshape
+		   */
 		};
-
-		/**
-		 * An abstraction of a physics body’s solid volume for use in tuning or optimizing collision detection.
-		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnphysicsshape
-		 */
-
 		var SCNPhysicsShape = function (_NSObject) {
 		  _inherits(SCNPhysicsShape, _NSObject);
 
@@ -36572,7 +38242,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsShape;
 
 	/***/ },
-	/* 104 */
+	/* 108 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36587,15 +38257,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -36791,7 +38461,7 @@ var JSceneKitExample =
 		exports.default = SCNHitTestResult;
 
 	/***/ },
-	/* 105 */
+	/* 109 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36802,11 +38472,13 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _BinaryRequest2 = __webpack_require__(95);
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+		var _BinaryRequest2 = __webpack_require__(99);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _NSKeyedUnarchiver = __webpack_require__(31);
+		var _NSKeyedUnarchiver = __webpack_require__(35);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
@@ -36814,63 +38486,63 @@ var JSceneKitExample =
 
 		var _NSObject4 = _interopRequireDefault(_NSObject3);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNParticleBirthLocation = __webpack_require__(106);
+		var _SCNParticleBirthLocation = __webpack_require__(110);
 
 		var _SCNParticleBirthLocation2 = _interopRequireDefault(_SCNParticleBirthLocation);
 
-		var _SCNParticleBirthDirection = __webpack_require__(107);
+		var _SCNParticleBirthDirection = __webpack_require__(111);
 
 		var _SCNParticleBirthDirection2 = _interopRequireDefault(_SCNParticleBirthDirection);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(108);
+		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(112);
 
 		var _SCNParticleImageSequenceAnimationMode2 = _interopRequireDefault(_SCNParticleImageSequenceAnimationMode);
 
-		var _SCNParticleBlendMode = __webpack_require__(109);
+		var _SCNParticleBlendMode = __webpack_require__(113);
 
 		var _SCNParticleBlendMode2 = _interopRequireDefault(_SCNParticleBlendMode);
 
-		var _SCNParticleOrientationMode = __webpack_require__(110);
+		var _SCNParticleOrientationMode = __webpack_require__(114);
 
 		var _SCNParticleOrientationMode2 = _interopRequireDefault(_SCNParticleOrientationMode);
 
-		var _SCNParticleSortingMode = __webpack_require__(111);
+		var _SCNParticleSortingMode = __webpack_require__(115);
 
 		var _SCNParticleSortingMode2 = _interopRequireDefault(_SCNParticleSortingMode);
 
-		var _SCNParticleEvent = __webpack_require__(112);
+		var _SCNParticleEvent = __webpack_require__(116);
 
 		var _SCNParticleEvent2 = _interopRequireDefault(_SCNParticleEvent);
 
-		var _SCNParticleEventBlock = __webpack_require__(113);
+		var _SCNParticleEventBlock = __webpack_require__(117);
 
 		var _SCNParticleEventBlock2 = _interopRequireDefault(_SCNParticleEventBlock);
 
-		var _SCNParticlePropertyController = __webpack_require__(114);
+		var _SCNParticlePropertyController = __webpack_require__(118);
 
 		var _SCNParticlePropertyController2 = _interopRequireDefault(_SCNParticlePropertyController);
 
-		var _SCNParticleModifierStage = __webpack_require__(116);
+		var _SCNParticleModifierStage = __webpack_require__(120);
 
 		var _SCNParticleModifierStage2 = _interopRequireDefault(_SCNParticleModifierStage);
 
-		var _SCNParticleModifierBlock = __webpack_require__(117);
+		var _SCNParticleModifierBlock = __webpack_require__(121);
 
 		var _SCNParticleModifierBlock2 = _interopRequireDefault(_SCNParticleModifierBlock);
 
@@ -36942,6 +38614,8 @@ var JSceneKitExample =
 		     * @type {number}
 		     */
 		    _this.size = 1;
+
+		    _this.baseSize = 1;
 
 		    /**
 		     * @type {SKColor}
@@ -37018,6 +38692,14 @@ var JSceneKitExample =
 		    value: function floatArray() {
 		      var baseArray = [].concat(_toConsumableArray(this.position.floatArray()), _toConsumableArray(this.velocity.floatArray()), _toConsumableArray(this.axis.floatArray()), [this.angle], _toConsumableArray(this.color.floatArray()), [this.size]);
 		      return [].concat(_toConsumableArray(baseArray), [this.texLeft, this.texTop], _toConsumableArray(baseArray), [this.texRight, this.texTop], _toConsumableArray(baseArray), [this.texLeft, this.texBottom], _toConsumableArray(baseArray), [this.texRight, this.texBottom]);
+		    }
+		  }, {
+		    key: 'valueForKeyPath',
+		    value: function valueForKeyPath(keyPath) {
+		      if (keyPath === 'size') {
+		        return this.baseSize;
+		      }
+		      return _get(_Particle.prototype.__proto__ || Object.getPrototypeOf(_Particle.prototype), 'valueForKeyPath', this).call(this, keyPath);
 		    }
 
 		    /**
@@ -37124,9 +38806,9 @@ var JSceneKitExample =
 		            if (typeof d !== 'undefined') {
 		              d.animation.keyPath = key;
 		              //console.error(`SCNParticleSystem key: ${key}, ${d.animation.className}`)
-		              //if(key === 'size'){
-		              //  d.animation._isMultiplicative = true
-		              //}
+		              if (key === 'size') {
+		                d.animation._isMultiplicative = true;
+		              }
 		            }
 		          });
 		          obj.propertyControllers = dict;
@@ -37798,9 +39480,9 @@ var JSceneKitExample =
 		            //console.info(`image ${path} load error. pathCount > paths.length`)
 		          } else {
 		            //console.info(`image ${_path} load error.`)
-		            _path = directoryPath + paths.slice(-pathCount).join('/');
+		            _path = directoryPath + paths.slice(-pathCount).join('/'
 		            //console.info(`try ${_path}`)
-		            image.src = _path;
+		            );image.src = _path;
 		          }
 		        };
 		        image.src = _path;
@@ -37833,20 +39515,20 @@ var JSceneKitExample =
 		      gl.bindVertexArray(this._vertexArray);
 
 		      this._vertexBuffer = gl.createBuffer();
-		      gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer);
+		      gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer
 
 		      // prepare vertex array data
 		      // TODO: retain attribute locations
-		      var positionLoc = gl.getAttribLocation(program, 'position');
+		      );var positionLoc = gl.getAttribLocation(program, 'position');
 		      var velocityLoc = gl.getAttribLocation(program, 'velocity');
 		      var rotationLoc = gl.getAttribLocation(program, 'rotation');
 		      var colorLoc = gl.getAttribLocation(program, 'color');
-		      var sizeLoc = gl.getAttribLocation(program, 'size');
+		      var sizeLoc = gl.getAttribLocation(program, 'size'
 		      //const lifeLoc = gl.getAttribLocation(program, 'life')
-		      var cornerLoc = gl.getAttribLocation(program, 'corner');
+		      );var cornerLoc = gl.getAttribLocation(program, 'corner'
 
 		      // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
-		      gl.enableVertexAttribArray(positionLoc);
+		      );gl.enableVertexAttribArray(positionLoc);
 		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 68, 0);
 		      gl.enableVertexAttribArray(velocityLoc);
 		      gl.vertexAttribPointer(velocityLoc, 3, gl.FLOAT, false, 68, 12);
@@ -37857,7 +39539,7 @@ var JSceneKitExample =
 		      gl.enableVertexAttribArray(sizeLoc);
 		      gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 68, 56);
 		      gl.enableVertexAttribArray(cornerLoc);
-		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, 68, 60);
+		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, 68, 60
 
 		      /*
 		      const arr = []
@@ -37868,11 +39550,11 @@ var JSceneKitExample =
 		      gl.bufferData(gl.ARRAY_BUFFER, particleData, gl.DYNAMIC_DRAW)
 		      */
 
-		      var len = this._maxParticles + 5;
-		      this._updateIndexBuffer(gl, len);
+		      );var len = this._maxParticles + 5;
+		      this._updateIndexBuffer(gl, len
 
 		      // initialize parameters
-		      this._numImages = this.imageSequenceRowCount * this.imageSequenceColumnCount;
+		      );this._numImages = this.imageSequenceRowCount * this.imageSequenceColumnCount;
 		      this._imageWidth = 2.0 / this.imageSequenceColumnCount;
 		      this._imageHeight = 2.0 / this.imageSequenceRowCount;
 		    }
@@ -37931,10 +39613,10 @@ var JSceneKitExample =
 		      var spreadingAngle = this.spreadingAngle / 180.0 * Math.PI * Math.random();
 		      var spreadingAngleRot = 2.0 * Math.PI * Math.random();
 		      var angleMat = _SCNMatrix2.default.matrixWithRotation(this._normal.x, this._normal.y, this._normal.z, spreadingAngle);
-		      var rotMat = _SCNMatrix2.default.matrixWithRotation(this._direction.x, this._direction.y, this._direction.z, spreadingAngleRot);
+		      var rotMat = _SCNMatrix2.default.matrixWithRotation(this._direction.x, this._direction.y, this._direction.z, spreadingAngleRot
 
 		      // emitterShape, birthLocation, emittingDirection, spreadingAngle, particleAngle/Variation, particleVelocity
-		      if (this.emitterShape === null) {
+		      );if (this.emitterShape === null) {
 		        p.position = position;
 		      } else if (this.birthLocation === _SCNParticleBirthLocation2.default.surface) {
 		        var pVec = null;
@@ -38038,6 +39720,7 @@ var JSceneKitExample =
 		      }
 		      p.angle = (this.particleAngle + this.particleAngleVariation * (Math.random() - 0.5)) / 180.0 * Math.PI;
 		      p.size = this.particleSize + this.particleSizeVariation * (Math.random() - 0.5);
+		      p.baseSize = p.size;
 		      p.color = this._createColor();
 
 		      switch (this.birthDirection) {
@@ -38122,14 +39805,14 @@ var JSceneKitExample =
 		        }
 		      }
 
-		      var dt = currentTime - this._prevTime;
+		      var dt = (currentTime - this._prevTime) * this.speedFactor;
 		      var damping = 1;
 		      if (this.dampingFactor > 0) {
 		        damping = Math.pow((100 - this.dampingFactor) * 0.01, dt * 60.0);
 		      }
 
 		      this._particles.forEach(function (p) {
-		        var pdt = currentTime - p.birthTime;
+		        var pdt = (currentTime - p.birthTime) * _this4.speedFactor;
 		        var t = pdt / p.lifeSpan;
 		        p.life = t;
 		        if (t > 1) {
@@ -38154,7 +39837,8 @@ var JSceneKitExample =
 		        p.position.z += p.velocity.z * dt;
 		        if (_this4.propertyControllers !== null) {
 		          Object.keys(_this4.propertyControllers).forEach(function (key) {
-		            _this4.propertyControllers[key].animation._applyAnimation(p, t, false); // should I use p.life instead of t?
+		            _this4.propertyControllers[key].animation._applyAnimation(p, t, false // should I use p.life instead of t?
+		            );
 		          });
 		        }
 
@@ -38239,15 +39923,32 @@ var JSceneKitExample =
 		        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 		      }
 
-		      gl.uniform1f(gl.getUniformLocation(program, 'stretchFactor'), this.stretchFactor);
+		      gl.uniform1i(gl.getUniformLocation(program, 'orientationMode'), this.orientationMode);
+		      gl.uniform1f(gl.getUniformLocation(program, 'stretchFactor'), this.stretchFactor
 
 		      // buffer particle data
-		      gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer);
+		      );gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer);
 		      gl.bufferData(gl.ARRAY_BUFFER, this._particleData, gl.DYNAMIC_DRAW);
 
 		      if (this._particles.length > this._maxParticleIndex) {
 		        this._updateIndexBuffer(gl, this._particles.length + 10);
 		      }
+
+		      var blendFuncSrc = [gl.ONE, // additive
+		      gl.ZERO, // subtract
+		      gl.ZERO, // multiply
+		      gl.SRC_ALPHA, // screen
+		      gl.SRC_ALPHA, // alpha
+		      gl.ONE // replace
+		      ];
+		      var blendFuncDst = [gl.ONE, // additive
+		      gl.ONE_MINUS_SRC_COLOR, // subtract
+		      gl.SRC_COLOR, // multiply
+		      gl.ONE, // screen
+		      gl.ONE_MINUS_SRC_ALPHA, // alpha
+		      gl.ZERO // replace
+		      ];
+		      gl.blendFunc(blendFuncSrc[this.blendMode], blendFuncDst[this.blendMode]);
 		    }
 		  }, {
 		    key: '_createTexture',
@@ -38260,10 +39961,10 @@ var JSceneKitExample =
 		      //console.warn(`image size: ${image.naturalWidth} ${image.naturalHeight}`)
 		      canvas.getContext('2d').drawImage(image, 0, 0);
 
-		      gl.bindTexture(gl.TEXTURE_2D, texture);
+		      gl.bindTexture(gl.TEXTURE_2D, texture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, image.width, image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
 		      gl.generateMipmap(gl.TEXTURE_2D);
 		      gl.bindTexture(gl.TEXTURE_2D, null);
 
@@ -38278,23 +39979,23 @@ var JSceneKitExample =
 		  }, {
 		    key: '_createColor',
 		    value: function _createColor() {
-		      var hsb = this._rgb2hsb(this.particleColor);
+		      var hsb = this._rgb2hsb(this.particleColor
 
 		      // Hue
 		      //hsb.x = (hsb.x + this.particleColorVariation.x * (Math.random() - 0.5)) % 360.0
-		      hsb.x = (hsb.x + this.particleColorVariation.x * (Math.random() * 2.0 - 1.0)) % 360.0;
+		      );hsb.x = (hsb.x + this.particleColorVariation.x * (Math.random() * 2.0 - 1.0)) % 360.0;
 		      if (hsb.x < 0) {
 		        hsb.x += 360.0;
 		      }
 
 		      // Saturation
-		      hsb.y = Math.max(0, Math.min(1.0, hsb.y + this.particleColorVariation.y * (Math.random() - 0.5)));
+		      hsb.y = Math.max(0, Math.min(1.0, hsb.y + this.particleColorVariation.y * (Math.random() - 0.5))
 
 		      // Brightness
-		      hsb.z = Math.max(0, Math.min(1.0, hsb.z + this.particleColorVariation.z * (Math.random() - 0.5)));
+		      );hsb.z = Math.max(0, Math.min(1.0, hsb.z + this.particleColorVariation.z * (Math.random() - 0.5))
 
 		      // Alpha
-		      hsb.w = Math.max(0, Math.min(1.0, hsb.w + this.particleColorVariation.w * (Math.random() - 0.5)));
+		      );hsb.w = Math.max(0, Math.min(1.0, hsb.w + this.particleColorVariation.w * (Math.random() - 0.5)));
 
 		      return this._hsb2rgb(hsb);
 		    }
@@ -38356,7 +40057,7 @@ var JSceneKitExample =
 		        return new _SKColor2.default(hsb.z, hsb.z, hsb.z, hsb.w);
 		      }
 
-		      var region = Math.floor(hsb.x / 60.0);
+		      var region = Math.floor(hsb.x / 60.0
 		      /*
 		      const c = hsb.z * hsb.y
 		      const x = c * (region % 2)
@@ -38396,7 +40097,7 @@ var JSceneKitExample =
 		      
 		      return rgb
 		      */
-		      var v = hsb.z;
+		      );var v = hsb.z;
 		      var f = hsb.x / 60.0 - region;
 		      var m = v * (1.0 - hsb.y);
 		      var n = v * (1.0 - hsb.y * f);
@@ -38468,7 +40169,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleSystem;
 
 	/***/ },
-	/* 106 */
+	/* 110 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38494,7 +40195,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBirthLocation;
 
 	/***/ },
-	/* 107 */
+	/* 111 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38520,7 +40221,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBirthDirection;
 
 	/***/ },
-	/* 108 */
+	/* 112 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38546,7 +40247,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleImageSequenceAnimationMode;
 
 	/***/ },
-	/* 109 */
+	/* 113 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38578,7 +40279,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBlendMode;
 
 	/***/ },
-	/* 110 */
+	/* 114 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38606,7 +40307,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleOrientationMode;
 
 	/***/ },
-	/* 111 */
+	/* 115 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38636,7 +40337,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleSortingMode;
 
 	/***/ },
-	/* 112 */
+	/* 116 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38662,7 +40363,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleEvent;
 
 	/***/ },
-	/* 113 */
+	/* 117 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38710,7 +40411,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleEventBlock;
 
 	/***/ },
-	/* 114 */
+	/* 118 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -38725,15 +40426,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAAnimation = __webpack_require__(46);
+		var _CAAnimation = __webpack_require__(50);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
-		var _SCNParticleInputMode = __webpack_require__(115);
+		var _SCNParticleInputMode = __webpack_require__(119);
 
 		var _SCNParticleInputMode2 = _interopRequireDefault(_SCNParticleInputMode);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -38854,7 +40555,7 @@ var JSceneKitExample =
 		exports.default = SCNParticlePropertyController;
 
 	/***/ },
-	/* 115 */
+	/* 119 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38880,7 +40581,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleInputMode;
 
 	/***/ },
-	/* 116 */
+	/* 120 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38908,7 +40609,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleModifierStage;
 
 	/***/ },
-	/* 117 */
+	/* 121 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38952,7 +40653,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleModifierBlock;
 
 	/***/ },
-	/* 118 */
+	/* 122 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39082,7 +40783,7 @@ var JSceneKitExample =
 		exports.default = SCNDebugOptions;
 
 	/***/ },
-	/* 119 */
+	/* 123 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39114,7 +40815,7 @@ var JSceneKitExample =
 		exports.default = SCNRenderingAPI;
 
 	/***/ },
-	/* 120 */
+	/* 124 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39152,7 +40853,7 @@ var JSceneKitExample =
 		exports.default = SCNHitTestOption;
 
 	/***/ },
-	/* 121 */
+	/* 125 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39163,11 +40864,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNSceneRenderer = __webpack_require__(87);
+		var _SCNSceneRenderer = __webpack_require__(91);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -39280,7 +40981,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneRendererDelegate;
 
 	/***/ },
-	/* 122 */
+	/* 126 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39310,7 +41011,7 @@ var JSceneKitExample =
 		exports.default = SCNAntialiasingMode;
 
 	/***/ },
-	/* 123 */
+	/* 127 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39325,15 +41026,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNProgramDelegate = __webpack_require__(124);
+		var _SCNProgramDelegate = __webpack_require__(128);
 
 		var _SCNProgramDelegate2 = _interopRequireDefault(_SCNProgramDelegate);
 
-		var _SCNBufferFrequency = __webpack_require__(125);
+		var _SCNBufferFrequency = __webpack_require__(129);
 
 		var _SCNBufferFrequency2 = _interopRequireDefault(_SCNBufferFrequency);
 
-		var _SCNBufferBindingBlock = __webpack_require__(126);
+		var _SCNBufferBindingBlock = __webpack_require__(130);
 
 		var _SCNBufferBindingBlock2 = _interopRequireDefault(_SCNBufferBindingBlock);
 
@@ -39447,6 +41148,12 @@ var JSceneKitExample =
 		     * @type {WebGLProgram}
 		     */
 		    _this._glProgram = null;
+
+		    /**
+		     * @access private
+		     * @type {WebGLTexture}
+		     */
+		    _this._dummyTexture = null;
 		    return _this;
 		  }
 
@@ -39500,6 +41207,47 @@ var JSceneKitExample =
 		  }, {
 		    key: 'handleBindingOfBufferNamedHandler',
 		    value: function handleBindingOfBufferNamedHandler(name, frequency, block) {}
+		  }, {
+		    key: '_setDummyTextureForContext',
+		    value: function _setDummyTextureForContext(context) {
+		      var gl = context;
+		      this._createDummyTextureForContext(gl);
+
+		      var texNames = [gl.TEXTURE0, gl.TEXTURE1, gl.TEXTURE2, gl.TEXTURE3, gl.TEXTURE4, gl.TEXTURE5, gl.TEXTURE6, gl.TEXTURE7];
+		      var texSymbols = ['u_emissionTexture', 'u_ambientTexture', 'u_diffuseTexture', 'u_specularTexture', 'u_reflectiveTexture', 'u_transparentTexture', 'u_multiplyTexture', 'u_normalTexture'];
+		      for (var i = 0; i < texNames.length; i++) {
+		        var texName = texNames[i];
+		        var symbol = texSymbols[i];
+		        var loc = gl.getUniformLocation(this._glProgram, symbol);
+		        if (loc !== null) {
+		          gl.uniform1i(loc, i);
+		          gl.activeTexture(texName);
+		          gl.bindTexture(gl.TEXTURE_2D, this._dummyTexture);
+		        }
+		      }
+		    }
+		  }, {
+		    key: '_createDummyTextureForContext',
+		    value: function _createDummyTextureForContext(context) {
+		      if (this._dummyTexture !== null) {
+		        return;
+		      }
+		      var gl = context;
+		      var canvas = document.createElement('canvas');
+		      canvas.width = 1;
+		      canvas.height = 1;
+		      var c = canvas.getContext('2d');
+		      c.fillStyle = 'rgba(255, 255, 255, 1.0)';
+		      c.fillRect(0, 0, 1, 1);
+
+		      this._dummyTexture = gl.createTexture();
+
+		      gl.bindTexture(gl.TEXTURE_2D, this._dummyTexture
+		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
+		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      gl.bindTexture(gl.TEXTURE_2D, null);
+		    }
 		  }]);
 
 		  return SCNProgram;
@@ -39508,7 +41256,7 @@ var JSceneKitExample =
 		exports.default = SCNProgram;
 
 	/***/ },
-	/* 124 */
+	/* 128 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39627,7 +41375,7 @@ var JSceneKitExample =
 		exports.default = SCNProgramDelegate;
 
 	/***/ },
-	/* 125 */
+	/* 129 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39653,7 +41401,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferFrequency;
 
 	/***/ },
-	/* 126 */
+	/* 130 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39662,19 +41410,19 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNBufferStream = __webpack_require__(127);
+		var _SCNBufferStream = __webpack_require__(131);
 
 		var _SCNBufferStream2 = _interopRequireDefault(_SCNBufferStream);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNShadable = __webpack_require__(68);
+		var _SCNShadable = __webpack_require__(72);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNRenderer = __webpack_require__(86);
+		var _SCNRenderer = __webpack_require__(90);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -39695,7 +41443,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferBindingBlock;
 
 	/***/ },
-	/* 127 */
+	/* 131 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -39752,7 +41500,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferStream;
 
 	/***/ },
-	/* 128 */
+	/* 132 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39767,19 +41515,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNTechniqueSupport = __webpack_require__(83);
+		var _SCNTechniqueSupport = __webpack_require__(87);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNMaterialProperty = __webpack_require__(74);
+		var _SCNMaterialProperty = __webpack_require__(78);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -40237,7 +41985,7 @@ var JSceneKitExample =
 		exports.default = SCNCamera;
 
 	/***/ },
-	/* 129 */
+	/* 133 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -40262,7 +42010,7 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SKBlendMode = __webpack_require__(130);
+		var _SKBlendMode = __webpack_require__(134);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -40270,11 +42018,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(131);
+		var _SKNode2 = __webpack_require__(135);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKTexture = __webpack_require__(132);
+		var _SKTexture = __webpack_require__(136);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
@@ -40454,10 +42202,11 @@ var JSceneKitExample =
 		    _this._loadingImagePromise = null;
 
 		    if (name !== null) {
-		      _this.texture = _SKTexture2.default.textureWithImageNamed(name);
+		      _this.texture = _SKTexture2.default.textureWithImageNamed(name
 		      //if(generateNormalMap){
 		      //  this.normalTexture = this.texture.generatingNormalMap()
 		      //}
+		      );
 		    }
 		    return _this;
 		  }
@@ -40622,10 +42371,10 @@ var JSceneKitExample =
 		      }
 
 		      gl.attachShader(program, vertexShader);
-		      gl.attachShader(program, fragmentShader);
+		      gl.attachShader(program, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(program);
+		      );gl.linkProgram(program);
 		      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
 		        var _info2 = gl.getProgramInfoLog(program);
 		        throw new Error('program link error: ' + _info2);
@@ -40654,15 +42403,15 @@ var JSceneKitExample =
 
 		      var positionLoc = gl.getAttribLocation(program, 'position');
 		      gl.bindAttribLocation(program, positionLoc, 'position');
-		      gl.enableVertexAttribArray(positionLoc);
+		      gl.enableVertexAttribArray(positionLoc
 		      // idx, size, type, norm, stride, offset
-		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 20, 0);
+		      );gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 20, 0);
 
 		      var texcoordLoc = gl.getAttribLocation(program, 'texcoord');
 		      gl.bindAttribLocation(program, texcoordLoc, 'texcoord');
-		      gl.enableVertexAttribArray(texcoordLoc);
+		      gl.enableVertexAttribArray(texcoordLoc
 		      // idx, size, type, norm, stride, offset
-		      gl.vertexAttribPointer(texcoordLoc, 2, gl.FLOAT, false, 20, 12);
+		      );gl.vertexAttribPointer(texcoordLoc, 2, gl.FLOAT, false, 20, 12);
 
 		      this._indexBuffer = gl.createBuffer();
 		      var indexData = new Uint8Array([0, 3, 2, 0, 1, 3]);
@@ -40789,7 +42538,7 @@ var JSceneKitExample =
 		exports.default = SKSpriteNode;
 
 	/***/ },
-	/* 130 */
+	/* 134 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40823,7 +42572,7 @@ var JSceneKitExample =
 		exports.default = SKBlendMode;
 
 	/***/ },
-	/* 131 */
+	/* 135 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41662,9 +43411,9 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var act = action.copy();
+		      var act = action.copy
 		      // FIXME: use current frame time
-		      act._actionStartTime = Date.now() * 0.001;
+		      ();act._actionStartTime = Date.now() * 0.001;
 		      act._completionHandler = block;
 		      this._actions.set(key, act);
 		    }
@@ -42111,7 +43860,7 @@ var JSceneKitExample =
 		exports.default = SKNode;
 
 	/***/ },
-	/* 132 */
+	/* 136 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -42134,7 +43883,7 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SKTextureFilteringMode = __webpack_require__(133);
+		var _SKTextureFilteringMode = __webpack_require__(137);
 
 		var _SKTextureFilteringMode2 = _interopRequireDefault(_SKTextureFilteringMode);
 
@@ -42470,10 +44219,10 @@ var JSceneKitExample =
 		      canvas.height = this._image.naturalHeight;
 		      canvas.getContext('2d').drawImage(this._image, 0, 0);
 
-		      gl.bindTexture(gl.TEXTURE_2D, texture);
+		      gl.bindTexture(gl.TEXTURE_2D, texture
 		      // texImage2D(target, level, internalformat, width, height, border, format, type, source)
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
-		      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, this._image.width, this._image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, this._image.width, this._image.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
 		      gl.generateMipmap(gl.TEXTURE_2D);
 		      gl.bindTexture(gl.TEXTURE_2D, null);
 
@@ -42634,7 +44383,7 @@ var JSceneKitExample =
 		exports.default = SKTexture;
 
 	/***/ },
-	/* 133 */
+	/* 137 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -42658,7 +44407,7 @@ var JSceneKitExample =
 		exports.default = SKTextureFilteringMode;
 
 	/***/ },
-	/* 134 */
+	/* 138 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -42684,7 +44433,7 @@ var JSceneKitExample =
 		exports.default = SCNShadowMode;
 
 	/***/ },
-	/* 135 */
+	/* 139 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -42701,15 +44450,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNMorpherCalculationMode = __webpack_require__(136);
+		var _SCNMorpherCalculationMode = __webpack_require__(140);
 
 		var _SCNMorpherCalculationMode2 = _interopRequireDefault(_SCNMorpherCalculationMode);
 
@@ -42869,16 +44618,16 @@ var JSceneKitExample =
 		      node.geometry.geometrySources.forEach(function (source) {
 		        // FIXME: copy more than 1 source.
 		        var pSource = pg.getGeometrySourcesForSemantic(source.semantic)[0];
-		        pSource.fill(0);
+		        pSource.fill(0
 		        //newData.set(source.semantic, Array(source._data.length).fill(0))
-		        totalWeightForSemantic.set(source.semantic, 0.0);
-		      });
+		        );totalWeightForSemantic.set(source.semantic, 0.0);
+		      }
 
 		      // should I morph elements?
 		      //node.geometry.geometryElements().forEach((element) => {
 		      //})
 
-		      var targetCount = this.targets.length;
+		      );var targetCount = this.targets.length;
 		      //console.log(`targetCount: ${targetCount}`)
 
 		      var _loop = function _loop(i) {
@@ -42893,10 +44642,10 @@ var JSceneKitExample =
 		          if (typeof pSource === 'undefined') {
 		            return;
 		          }
-		          totalWeightForSemantic.set(source.semantic, totalWeightForSemantic.get(source.semantic) + weight);
+		          totalWeightForSemantic.set(source.semantic, totalWeightForSemantic.get(source.semantic) + weight
 
 		          // FIXME: don't access private properties
-		          var srcIndex = source._dataOffset / source._bytesPerComponent;
+		          );var srcIndex = source._dataOffset / source._bytesPerComponent;
 		          var srcStride = source._dataStride / source._bytesPerComponent;
 		          var dstIndex = pSource._dataOffset / pSource._bytesPerComponent;
 		          var dstStride = pSource._dataStride / pSource._bytesPerComponent;
@@ -42931,9 +44680,9 @@ var JSceneKitExample =
 		        var vectorCount = source._vectorCount;
 
 		        if (_this2.calculationMode === _SCNMorpherCalculationMode2.default.normalized) {
-		          var _weight = 1.0 - totalWeightForSemantic.get(source.semantic);
+		          var _weight = 1.0 - totalWeightForSemantic.get(source.semantic
 		          // FIXME: don't access private properties
-		          for (var i = 0; i < vectorCount; i++) {
+		          );for (var i = 0; i < vectorCount; i++) {
 		            for (var j = 0; j < componentCount; j++) {
 		              pSource._data[dstIndex + j] += source._data[srcIndex + j] * _weight;
 		            }
@@ -42952,11 +44701,12 @@ var JSceneKitExample =
 		            dstIndex += dstStride;
 		          }
 		        }
-		      });
+		      }
 
 		      // TODO: needs to update normal vector?
 
 		      //console.log(`_morph done`)
+		      );
 		    }
 		  }]);
 
@@ -42966,7 +44716,7 @@ var JSceneKitExample =
 		exports.default = SCNMorpher;
 
 	/***/ },
-	/* 136 */
+	/* 140 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -42990,7 +44740,7 @@ var JSceneKitExample =
 		exports.default = SCNMorpherCalculationMode;
 
 	/***/ },
-	/* 137 */
+	/* 141 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43005,23 +44755,23 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(66);
+		var _SCNGeometry = __webpack_require__(70);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNGeometrySource = __webpack_require__(69);
+		var _SCNGeometrySource = __webpack_require__(73);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
@@ -43135,7 +44885,7 @@ var JSceneKitExample =
 		     * @type {SCNMatrix4}
 		     * @see https://developer.apple.com/reference/scenekit/scnskinner/1523160-basegeometrybindtransform
 		     */
-		    _this.baseGeometryBindTransform = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0);
+		    _this.baseGeometryBindTransform = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0
 
 		    // Working with an Animation Skeleton
 
@@ -43144,7 +44894,7 @@ var JSceneKitExample =
 		     * @type {?SCNNode}
 		     * @see https://developer.apple.com/reference/scenekit/scnskinner/1523048-skeleton
 		     */
-		    _this.skeleton = null;
+		    );_this.skeleton = null;
 
 		    /**
 		     * @access private
@@ -43203,7 +44953,7 @@ var JSceneKitExample =
 		        // TODO: implement appropriate matrix multiplication.
 		        //       it doesn't consider the rotation of initial pose so far.
 		        //const mat = this._boneInverseBindTransforms[i].mult(bone._presentation._worldTransform)
-		        var mat = this.baseGeometryBindTransform.mult(this._boneInverseBindTransforms[i]).mult(bone._presentation._worldTransform);
+		        var mat = this.baseGeometryBindTransform.mult(this._boneInverseBindTransforms[i]).mult(bone._presentation._worldTransform
 		        //const mat = bone._presentation._worldTransform.mult(this._boneInverseBindTransforms[i])
 		        //mat = bone.presentation.transform.mult(mat)
 		        //if(bone._parent !== null){
@@ -43212,7 +44962,7 @@ var JSceneKitExample =
 		        //}
 		        //mat = bone.presentation.transform.mult(mat)
 		        //mat = mat.mult(bone.presentation.transform)
-		        arr.push.apply(arr, _toConsumableArray(mat.floatArray3x4f()));
+		        );arr.push.apply(arr, _toConsumableArray(mat.floatArray3x4f()));
 
 		        /*
 		        if(!mat.isIdentity()){
@@ -43309,7 +45059,7 @@ var JSceneKitExample =
 		exports.default = SCNSkinner;
 
 	/***/ },
-	/* 138 */
+	/* 142 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43318,7 +45068,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -43340,7 +45090,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4MakeScale;
 
 	/***/ },
-	/* 139 */
+	/* 143 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43355,7 +45105,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(64);
+		var _SCNAnimatable = __webpack_require__(68);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
@@ -43411,7 +45161,7 @@ var JSceneKitExample =
 		exports.default = SCNConstraint;
 
 	/***/ },
-	/* 140 */
+	/* 144 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -43435,7 +45185,7 @@ var JSceneKitExample =
 		exports.default = SCNMovabilityHint;
 
 	/***/ },
-	/* 141 */
+	/* 145 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43446,11 +45196,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNRenderer = __webpack_require__(86);
+		var _SCNRenderer = __webpack_require__(90);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -43503,7 +45253,7 @@ var JSceneKitExample =
 		exports.default = SCNNodeRendererDelegate;
 
 	/***/ },
-	/* 142 */
+	/* 146 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43518,15 +45268,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNFieldForceEvaluator = __webpack_require__(143);
+		var _SCNFieldForceEvaluator = __webpack_require__(147);
 
 		var _SCNFieldForceEvaluator2 = _interopRequireDefault(_SCNFieldForceEvaluator);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNPhysicsFieldScope = __webpack_require__(144);
+		var _SCNPhysicsFieldScope = __webpack_require__(148);
 
 		var _SCNPhysicsFieldScope2 = _interopRequireDefault(_SCNPhysicsFieldScope);
 
@@ -43804,7 +45554,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsField;
 
 	/***/ },
-	/* 143 */
+	/* 147 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43813,7 +45563,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -43836,7 +45586,7 @@ var JSceneKitExample =
 		exports.default = SCNFieldForceEvaluator;
 
 	/***/ },
-	/* 144 */
+	/* 148 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -43860,7 +45610,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsFieldScope;
 
 	/***/ },
-	/* 145 */
+	/* 149 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43875,9 +45625,13 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAudioSource = __webpack_require__(146);
+		var _SCNAudioSource = __webpack_require__(150);
 
 		var _SCNAudioSource2 = _interopRequireDefault(_SCNAudioSource);
+
+		var _AVAudioMixerNode = __webpack_require__(13);
+
+		var _AVAudioMixerNode2 = _interopRequireDefault(_AVAudioMixerNode);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43914,7 +45668,8 @@ var JSceneKitExample =
 		    var _this = _possibleConstructorReturn(this, (SCNAudioPlayer.__proto__ || Object.getPrototypeOf(SCNAudioPlayer)).call(this));
 
 		    _this._audioSource = source;
-		    _this._audioNode = null;
+		    _this._audioNode = new _AVAudioMixerNode2.default();
+		    _this._audioNode._gainNode = source._gainNode;
 
 		    // Responding to Playback
 
@@ -44015,7 +45770,7 @@ var JSceneKitExample =
 		exports.default = SCNAudioPlayer;
 
 	/***/ },
-	/* 146 */
+	/* 150 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44026,7 +45781,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _AjaxRequest2 = __webpack_require__(96);
+		var _AjaxRequest2 = __webpack_require__(100);
 
 		var _AjaxRequest3 = _interopRequireDefault(_AjaxRequest2);
 
@@ -44232,7 +45987,7 @@ var JSceneKitExample =
 		  }, {
 		    key: 'volume',
 		    get: function get() {
-		      return this._gainNode.gain.volume;
+		      return this._gainNode.gain.value;
 		    },
 		    set: function set(newValue) {
 		      this._gainNode.gain.value = newValue;
@@ -44271,7 +46026,7 @@ var JSceneKitExample =
 		exports.default = SCNAudioSource;
 
 	/***/ },
-	/* 147 */
+	/* 151 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44284,11 +46039,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44435,7 +46190,7 @@ var JSceneKitExample =
 		_SCNAction3.default.group = SCNActionGroup.group;
 
 	/***/ },
-	/* 148 */
+	/* 152 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44446,11 +46201,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44510,7 +46265,7 @@ var JSceneKitExample =
 		exports.default = SCNActionHide;
 
 	/***/ },
-	/* 149 */
+	/* 153 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44521,11 +46276,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44583,7 +46338,7 @@ var JSceneKitExample =
 		exports.default = SCNActionJavaScript;
 
 	/***/ },
-	/* 150 */
+	/* 154 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44594,11 +46349,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44656,7 +46411,7 @@ var JSceneKitExample =
 		exports.default = SCNActionMove;
 
 	/***/ },
-	/* 151 */
+	/* 155 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44667,11 +46422,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44729,7 +46484,7 @@ var JSceneKitExample =
 		exports.default = SCNActionPerformSelector;
 
 	/***/ },
-	/* 152 */
+	/* 156 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44742,11 +46497,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44881,7 +46636,7 @@ var JSceneKitExample =
 		_SCNAction3.default.playAudioWaitForCompletion = SCNActionPlaySound.playAudioWaitForCompletion;
 
 	/***/ },
-	/* 153 */
+	/* 157 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44892,11 +46647,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -44954,7 +46709,7 @@ var JSceneKitExample =
 		exports.default = SCNActionReference;
 
 	/***/ },
-	/* 154 */
+	/* 158 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44967,15 +46722,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -45086,7 +46841,7 @@ var JSceneKitExample =
 		_SCNAction3.default.removeFromParentNode = SCNActionRemove.removeFromParentNode;
 
 	/***/ },
-	/* 155 */
+	/* 159 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45099,11 +46854,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -45290,7 +47045,7 @@ var JSceneKitExample =
 		_SCNAction3.default.repeatForever = SCNActionRepeat.repeatForever;
 
 	/***/ },
-	/* 156 */
+	/* 160 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45303,23 +47058,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(43);
+		var _SCNVector3 = __webpack_require__(47);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -45455,10 +47210,10 @@ var JSceneKitExample =
 		      if (!(obj instanceof _SCNNode2.default)) {
 		        throw new Error('unsupported class for SCNActionRotate: ' + obj.constructor.name);
 		      }
-		      var t = this._getTime(time, needTimeConversion);
+		      var t = this._getTime(time, needTimeConversion
 		      //console.warn(`SCNActionRotate._applyAction t: ${t}`)
 
-		      if (this._isAxisAngle) {
+		      );if (this._isAxisAngle) {
 		        // rotation
 		        var baseValue = obj.rotation;
 		        var toValue = this._axisRot;
@@ -45627,7 +47382,7 @@ var JSceneKitExample =
 		_SCNAction3.default.rotateToAxisAngle = SCNActionRotate.rotateToAxisAngle;
 
 	/***/ },
-	/* 157 */
+	/* 161 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45638,11 +47393,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -45700,7 +47455,7 @@ var JSceneKitExample =
 		exports.default = SCNActionRunAction;
 
 	/***/ },
-	/* 158 */
+	/* 162 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45713,11 +47468,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -45832,7 +47587,7 @@ var JSceneKitExample =
 		_SCNAction3.default.run = SCNActionRunBlock.run;
 
 	/***/ },
-	/* 159 */
+	/* 163 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45843,11 +47598,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -45905,7 +47660,7 @@ var JSceneKitExample =
 		exports.default = SCNActionScale;
 
 	/***/ },
-	/* 160 */
+	/* 164 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45918,11 +47673,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46103,7 +47858,7 @@ var JSceneKitExample =
 		_SCNAction3.default.sequence = SCNActionSequence.sequence;
 
 	/***/ },
-	/* 161 */
+	/* 165 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -46125,7 +47880,7 @@ var JSceneKitExample =
 		exports.default = SCNActionTimingFunction;
 
 	/***/ },
-	/* 162 */
+	/* 166 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46136,11 +47891,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(58);
+		var _SCNAction2 = __webpack_require__(62);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(59);
+		var _SCNActionTimingMode = __webpack_require__(63);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46242,7 +47997,7 @@ var JSceneKitExample =
 		_SCNAction3.default.waitDurationWithRange = SCNActionWait.waitDurationWithRange;
 
 	/***/ },
-	/* 163 */
+	/* 167 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46251,7 +48006,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _CAAnimation = __webpack_require__(46);
+		var _CAAnimation = __webpack_require__(50);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -46271,7 +48026,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimationEventBlock;
 
 	/***/ },
-	/* 164 */
+	/* 168 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -46375,7 +48130,7 @@ var JSceneKitExample =
 		exports.default = SCNBillboardAxis;
 
 	/***/ },
-	/* 165 */
+	/* 169 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46386,11 +48141,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(139);
+		var _SCNConstraint2 = __webpack_require__(143);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNBillboardAxis = __webpack_require__(164);
+		var _SCNBillboardAxis = __webpack_require__(168);
 
 		var _SCNBillboardAxis2 = _interopRequireDefault(_SCNBillboardAxis);
 
@@ -46445,7 +48200,7 @@ var JSceneKitExample =
 		exports.default = SCNBillboardConstraint;
 
 	/***/ },
-	/* 166 */
+	/* 170 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46456,11 +48211,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -46581,7 +48336,7 @@ var JSceneKitExample =
 		exports.default = SCNCapsule;
 
 	/***/ },
-	/* 167 */
+	/* 171 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -46607,7 +48362,7 @@ var JSceneKitExample =
 		exports.default = SCNChamferMode;
 
 	/***/ },
-	/* 168 */
+	/* 172 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46618,7 +48373,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -46720,7 +48475,7 @@ var JSceneKitExample =
 		exports.default = SCNCone;
 
 	/***/ },
-	/* 169 */
+	/* 173 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46729,7 +48484,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -46806,7 +48561,7 @@ var JSceneKitExample =
 		exports.default = SCNCylinder;
 
 	/***/ },
-	/* 170 */
+	/* 174 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46817,7 +48572,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -46916,7 +48671,7 @@ var JSceneKitExample =
 		exports.default = SCNFloor;
 
 	/***/ },
-	/* 171 */
+	/* 175 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46927,15 +48682,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(139);
+		var _SCNConstraint2 = __webpack_require__(143);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -47057,7 +48812,7 @@ var JSceneKitExample =
 		exports.default = SCNIKConstraint;
 
 	/***/ },
-	/* 172 */
+	/* 176 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47068,7 +48823,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -47114,7 +48869,7 @@ var JSceneKitExample =
 		exports.default = SCNLayer;
 
 	/***/ },
-	/* 173 */
+	/* 177 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47123,11 +48878,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNConstraint2 = __webpack_require__(139);
+		var _SCNConstraint2 = __webpack_require__(143);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -47187,7 +48942,7 @@ var JSceneKitExample =
 		exports.default = SCNLookAtConstraint;
 
 	/***/ },
-	/* 174 */
+	/* 178 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47196,7 +48951,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47221,7 +48976,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4EqualToMatrix4;
 
 	/***/ },
-	/* 175 */
+	/* 179 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47230,7 +48985,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47252,7 +49007,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4FromGLKMatrix4;
 
 	/***/ },
-	/* 176 */
+	/* 180 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47261,7 +49016,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47281,7 +49036,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4FromMat4;
 
 	/***/ },
-	/* 177 */
+	/* 181 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47290,7 +49045,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47310,7 +49065,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Invert;
 
 	/***/ },
-	/* 178 */
+	/* 182 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47319,7 +49074,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47343,7 +49098,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4IsIdentity;
 
 	/***/ },
-	/* 179 */
+	/* 183 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47352,11 +49107,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -47405,7 +49160,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4MakeRotation;
 
 	/***/ },
-	/* 180 */
+	/* 184 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47414,7 +49169,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47436,7 +49191,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Mult;
 
 	/***/ },
-	/* 181 */
+	/* 185 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47445,7 +49200,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47470,7 +49225,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Rotate;
 
 	/***/ },
-	/* 182 */
+	/* 186 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47479,11 +49234,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(138);
+		var _SCNMatrix4MakeScale = __webpack_require__(142);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
@@ -47507,7 +49262,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Scale;
 
 	/***/ },
-	/* 183 */
+	/* 187 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47518,7 +49273,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47536,7 +49291,7 @@ var JSceneKitExample =
 		};exports.default = SCNMatrix4ToGLKMatrix4;
 
 	/***/ },
-	/* 184 */
+	/* 188 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47545,7 +49300,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -47565,7 +49320,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4ToMat4;
 
 	/***/ },
-	/* 185 */
+	/* 189 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47574,11 +49329,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
@@ -47602,7 +49357,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Translate;
 
 	/***/ },
-	/* 186 */
+	/* 190 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47613,15 +49368,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(98);
+		var _SCNPhysicsBehavior2 = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -47717,7 +49472,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBallSocketJoint;
 
 	/***/ },
-	/* 187 */
+	/* 191 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -47808,7 +49563,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsCollisionCategory;
 
 	/***/ },
-	/* 188 */
+	/* 192 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47819,15 +49574,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(98);
+		var _SCNPhysicsBehavior2 = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -47939,7 +49694,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsHingeJoint;
 
 	/***/ },
-	/* 189 */
+	/* 193 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47950,15 +49705,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(98);
+		var _SCNPhysicsBehavior2 = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -48131,7 +49886,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsSliderJoint;
 
 	/***/ },
-	/* 190 */
+	/* 194 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48142,15 +49897,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(98);
+		var _SCNPhysicsBehavior2 = __webpack_require__(102);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(101);
+		var _SCNPhysicsBody = __webpack_require__(105);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsVehicleWheel = __webpack_require__(191);
+		var _SCNPhysicsVehicleWheel = __webpack_require__(195);
 
 		var _SCNPhysicsVehicleWheel2 = _interopRequireDefault(_SCNPhysicsVehicleWheel);
 
@@ -48294,7 +50049,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsVehicle;
 
 	/***/ },
-	/* 191 */
+	/* 195 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48309,11 +50064,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -48463,7 +50218,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsVehicleWheel;
 
 	/***/ },
-	/* 192 */
+	/* 196 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48474,7 +50229,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -48590,7 +50345,7 @@ var JSceneKitExample =
 		exports.default = SCNPlane;
 
 	/***/ },
-	/* 193 */
+	/* 197 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48599,7 +50354,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -48692,7 +50447,7 @@ var JSceneKitExample =
 		exports.default = SCNPyramid;
 
 	/***/ },
-	/* 194 */
+	/* 198 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -48716,7 +50471,7 @@ var JSceneKitExample =
 		exports.default = SCNReferenceLoadingPolicy;
 
 	/***/ },
-	/* 195 */
+	/* 199 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48729,15 +50484,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNNode2 = __webpack_require__(63);
+		var _SCNNode2 = __webpack_require__(67);
 
 		var _SCNNode3 = _interopRequireDefault(_SCNNode2);
 
-		var _SCNReferenceLoadingPolicy = __webpack_require__(194);
+		var _SCNReferenceLoadingPolicy = __webpack_require__(198);
 
 		var _SCNReferenceLoadingPolicy2 = _interopRequireDefault(_SCNReferenceLoadingPolicy);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -48956,7 +50711,7 @@ var JSceneKitExample =
 		exports.default = SCNReferenceNode;
 
 	/***/ },
-	/* 196 */
+	/* 200 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49008,7 +50763,7 @@ var JSceneKitExample =
 		exports.default = SCNShadableHelper;
 
 	/***/ },
-	/* 197 */
+	/* 201 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -49036,7 +50791,7 @@ var JSceneKitExample =
 		exports.default = SCNShaderModifierEntryPoint;
 
 	/***/ },
-	/* 198 */
+	/* 202 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49045,11 +50800,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
-		var _SCNChamferMode = __webpack_require__(167);
+		var _SCNChamferMode = __webpack_require__(171);
 
 		var _SCNChamferMode2 = _interopRequireDefault(_SCNChamferMode);
 
@@ -49133,7 +50888,7 @@ var JSceneKitExample =
 		exports.default = SCNShape;
 
 	/***/ },
-	/* 199 */
+	/* 203 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49144,7 +50899,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -49238,7 +50993,7 @@ var JSceneKitExample =
 		exports.default = SCNSphere;
 
 	/***/ },
-	/* 200 */
+	/* 204 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49249,7 +51004,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -49397,7 +51152,7 @@ var JSceneKitExample =
 		exports.default = SCNText;
 
 	/***/ },
-	/* 201 */
+	/* 205 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49406,7 +51161,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -49483,7 +51238,7 @@ var JSceneKitExample =
 		exports.default = SCNTorus;
 
 	/***/ },
-	/* 202 */
+	/* 206 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49494,15 +51249,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(139);
+		var _SCNConstraint2 = __webpack_require__(143);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49563,7 +51318,7 @@ var JSceneKitExample =
 		exports.default = SCNTransformConstraint;
 
 	/***/ },
-	/* 203 */
+	/* 207 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49572,7 +51327,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(66);
+		var _SCNGeometry2 = __webpack_require__(70);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -49658,7 +51413,7 @@ var JSceneKitExample =
 		exports.default = SCNTube;
 
 	/***/ },
-	/* 204 */
+	/* 208 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49667,7 +51422,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49691,7 +51446,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3EqualToVector3;
 
 	/***/ },
-	/* 205 */
+	/* 209 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49700,7 +51455,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49720,7 +51475,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3FromFloat3;
 
 	/***/ },
-	/* 206 */
+	/* 210 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49729,7 +51484,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49751,7 +51506,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3FromGLKVector3;
 
 	/***/ },
-	/* 207 */
+	/* 211 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49760,7 +51515,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49782,7 +51537,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3Make;
 
 	/***/ },
-	/* 208 */
+	/* 212 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49791,7 +51546,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49811,7 +51566,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3ToFloat3;
 
 	/***/ },
-	/* 209 */
+	/* 213 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49822,7 +51577,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49840,7 +51595,7 @@ var JSceneKitExample =
 		};exports.default = SCNVector3ToGLKVector3;
 
 	/***/ },
-	/* 210 */
+	/* 214 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49849,7 +51604,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(42);
+		var _SCNVector = __webpack_require__(46);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49860,7 +51615,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3Zero;
 
 	/***/ },
-	/* 211 */
+	/* 215 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49869,7 +51624,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49893,7 +51648,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4EqualToVector4;
 
 	/***/ },
-	/* 212 */
+	/* 216 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49902,7 +51657,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49922,7 +51677,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4FromFloat4;
 
 	/***/ },
-	/* 213 */
+	/* 217 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49931,7 +51686,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49953,7 +51708,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4FromGLKVector4;
 
 	/***/ },
-	/* 214 */
+	/* 218 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49962,7 +51717,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49985,7 +51740,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4Make;
 
 	/***/ },
-	/* 215 */
+	/* 219 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49994,7 +51749,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -50014,7 +51769,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4ToFloat4;
 
 	/***/ },
-	/* 216 */
+	/* 220 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50025,7 +51780,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -50043,7 +51798,7 @@ var JSceneKitExample =
 		};exports.default = SCNVector4ToGLKVector4;
 
 	/***/ },
-	/* 217 */
+	/* 221 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50068,43 +51823,43 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SCNRenderer = __webpack_require__(86);
+		var _SCNRenderer = __webpack_require__(90);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
-		var _SCNTechniqueSupport = __webpack_require__(83);
+		var _SCNTechniqueSupport = __webpack_require__(87);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNScene = __webpack_require__(88);
+		var _SCNScene = __webpack_require__(92);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNRenderingAPI = __webpack_require__(119);
+		var _SCNRenderingAPI = __webpack_require__(123);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNAntialiasingMode = __webpack_require__(122);
+		var _SCNAntialiasingMode = __webpack_require__(126);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNNode = __webpack_require__(63);
+		var _SCNNode = __webpack_require__(67);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNCamera = __webpack_require__(128);
+		var _SCNCamera = __webpack_require__(132);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNMatrix = __webpack_require__(44);
+		var _SCNMatrix = __webpack_require__(48);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(76);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNVector = __webpack_require__(43);
+		var _SCNVector = __webpack_require__(47);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -50124,16 +51879,15 @@ var JSceneKitExample =
 		  preferLowPowerDevice: 'SCNPreferLowPowerDeviceKey',
 		  preferredDevice: 'SCNPreferredDeviceKey',
 		  preferredRenderingAPI: 'SCNPreferredRenderingAPIKey'
+
+		  /**
+		   * A view for displaying 3D SceneKit content.
+		   * @access public
+		   * @implements {SCNSceneRenderer}
+		   * @implements {SCNTechniqueSupport}
+		   * @see https://developer.apple.com/reference/scenekit/scnview
+		   */
 		};
-
-		/**
-		 * A view for displaying 3D SceneKit content.
-		 * @access public
-		 * @implements {SCNSceneRenderer}
-		 * @implements {SCNTechniqueSupport}
-		 * @see https://developer.apple.com/reference/scenekit/scnview
-		 */
-
 		var SCNView = function () {
 
 		  // Initializing a SceneKit View
@@ -50376,10 +52130,9 @@ var JSceneKitExample =
 		      preserveDrawingBuffer: false,
 		      preferLowPowerToHighPerformance: Boolean(preferLowPowerDevice),
 		      failIfMajorPerformanceCaveat: false
-		    };
 
-		    //const contextNames = ['webgl2', 'webgl', 'webkit-3d', 'moz-webgl', 'experimental-webgl']
-		    var contextNames = ['webgl2'];
+		      //const contextNames = ['webgl2', 'webgl', 'webkit-3d', 'moz-webgl', 'experimental-webgl']
+		    };var contextNames = ['webgl2'];
 		    var _iteratorNormalCompletion = true;
 		    var _didIteratorError = false;
 		    var _iteratorError = undefined;
@@ -50574,10 +52327,10 @@ var JSceneKitExample =
 		    value: function appendTo(element) {
 		      var _this2 = this;
 
-		      element.appendChild(this._canvas);
+		      element.appendChild(this._canvas
 
 		      // update canvas size
-		      if (typeof this._frame === 'undefined') {
+		      );if (typeof this._frame === 'undefined') {
 		        this._canvas.style.width = '100%';
 		        this._canvas.style.height = '100%';
 		        if (this._canvas.clientHeight <= 0) {
@@ -50857,6 +52610,8 @@ var JSceneKitExample =
 		  }, {
 		    key: '_drawAtTimeWithContext',
 		    value: function _drawAtTimeWithContext(time, context) {
+		      this._renderer._time = time;
+
 		      this._createPresentationNodes();
 		      this._createSKPresentationNodes();
 
@@ -50883,12 +52638,12 @@ var JSceneKitExample =
 		        this._delegate.rendererDidApplyAnimationsAtTime(this._renderer, time);
 		      }
 
-		      this._updateTransform();
+		      this._updateTransform
 
 		      ///////////////////////
 		      // simulates physics //
 		      ///////////////////////
-		      if (this._scene._physicsWorld !== null) {
+		      ();if (this._scene._physicsWorld !== null) {
 		        this._scene._physicsWorld._simulate(time);
 		      }
 
@@ -51135,11 +52890,11 @@ var JSceneKitExample =
 		      node.childNodes.forEach(function (child) {
 		        return _this9._runAnimationForNode(child);
 		      });
-		      this._runAnimationForObject(node);
+		      this._runAnimationForObject(node
 		      // TODO: implement animations for all animatable objects:
 		      //         SCNCamera, SCNConstraint, SCNGeometry, SCNLight, SCNMaterial, 
 		      //         SCNMaterialProperty, SCNMorpher, SCNParticleSystem, SCNTechnique
-		      if (node.geometry) {
+		      );if (node.geometry) {
 		        this._runAnimationForObject(node.geometry);
 		        node.geometry.materials.forEach(function (material) {
 		          _this9._runAnimationForObject(material);
@@ -51879,7 +53634,7 @@ var JSceneKitExample =
 		exports.default = SCNView;
 
 	/***/ },
-	/* 218 */
+	/* 222 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51896,7 +53651,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
@@ -52049,8 +53804,9 @@ var JSceneKitExample =
 		    value: function _applyAction(obj, time) {
 		      var needTimeConversion = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
 
-		      var t = this._getTime(time, needTimeConversion);
+		      var t = this._getTime(time, needTimeConversion
 		      //this._handleEvents(obj, t)
+		      );
 		    }
 		  }, {
 		    key: '_getTime',
@@ -53588,7 +55344,7 @@ var JSceneKitExample =
 		exports.default = SKAction;
 
 	/***/ },
-	/* 219 */
+	/* 223 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -53616,7 +55372,7 @@ var JSceneKitExample =
 		exports.default = SKActionTimingMode;
 
 	/***/ },
-	/* 220 */
+	/* 224 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -53625,11 +55381,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SKNode2 = __webpack_require__(131);
+		var _SKNode2 = __webpack_require__(135);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKBlendMode = __webpack_require__(130);
+		var _SKBlendMode = __webpack_require__(134);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -53760,7 +55516,7 @@ var JSceneKitExample =
 		exports.default = SKEffectNode;
 
 	/***/ },
-	/* 221 */
+	/* 225 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -53773,15 +55529,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(218);
+		var _SKAction2 = __webpack_require__(222);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -53964,7 +55720,7 @@ var JSceneKitExample =
 		_SKAction3.default.fadeAlphaToDuration = SKFade.fadeAlphaToDuration;
 
 	/***/ },
-	/* 222 */
+	/* 226 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -53977,15 +55733,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(218);
+		var _SKAction2 = __webpack_require__(222);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -54107,7 +55863,7 @@ var JSceneKitExample =
 		_SKAction3.default.group = SKGroup.group;
 
 	/***/ },
-	/* 223 */
+	/* 227 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -54133,7 +55889,7 @@ var JSceneKitExample =
 		exports.default = SKLabelHorizontalAlignmentMode;
 
 	/***/ },
-	/* 224 */
+	/* 228 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -54150,19 +55906,19 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(131);
+		var _SKNode2 = __webpack_require__(135);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKLabelVerticalAlignmentMode = __webpack_require__(225);
+		var _SKLabelVerticalAlignmentMode = __webpack_require__(229);
 
 		var _SKLabelVerticalAlignmentMode2 = _interopRequireDefault(_SKLabelVerticalAlignmentMode);
 
-		var _SKLabelHorizontalAlignmentMode = __webpack_require__(223);
+		var _SKLabelHorizontalAlignmentMode = __webpack_require__(227);
 
 		var _SKLabelHorizontalAlignmentMode2 = _interopRequireDefault(_SKLabelHorizontalAlignmentMode);
 
-		var _SKBlendMode = __webpack_require__(130);
+		var _SKBlendMode = __webpack_require__(134);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -54382,9 +56138,9 @@ var JSceneKitExample =
 		        this._textureUpToDate = false;
 		      }
 		      if (!this._textureUpToDate) {
-		        gl.bindTexture(gl.TEXTURE_2D, this._texture);
+		        gl.bindTexture(gl.TEXTURE_2D, this._texture
 		        // texImage2D(target, level, internalformat, width, height, border, format, type, source)
-		        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, this._canvas.width, this._canvas.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, this._canvas);
+		        );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, this._canvas.width, this._canvas.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, this._canvas);
 		        gl.generateMipmap(gl.TEXTURE_2D);
 		        gl.bindTexture(gl.TEXTURE_2D, null);
 
@@ -54444,10 +56200,10 @@ var JSceneKitExample =
 		      }
 
 		      gl.attachShader(program, vertexShader);
-		      gl.attachShader(program, fragmentShader);
+		      gl.attachShader(program, fragmentShader
 
 		      // link program object
-		      gl.linkProgram(program);
+		      );gl.linkProgram(program);
 		      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
 		        var _info2 = gl.getProgramInfoLog(program);
 		        throw new Error('program link error: ' + _info2);
@@ -54476,15 +56232,15 @@ var JSceneKitExample =
 
 		      var positionLoc = gl.getAttribLocation(program, 'position');
 		      gl.bindAttribLocation(program, positionLoc, 'position');
-		      gl.enableVertexAttribArray(positionLoc);
+		      gl.enableVertexAttribArray(positionLoc
 		      // idx, size, type, norm, stride, offset
-		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 20, 0);
+		      );gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 20, 0);
 
 		      var texcoordLoc = gl.getAttribLocation(program, 'texcoord');
 		      gl.bindAttribLocation(program, texcoordLoc, 'texcoord');
-		      gl.enableVertexAttribArray(texcoordLoc);
+		      gl.enableVertexAttribArray(texcoordLoc
 		      // idx, size, type, norm, stride, offset
-		      gl.vertexAttribPointer(texcoordLoc, 2, gl.FLOAT, false, 20, 12);
+		      );gl.vertexAttribPointer(texcoordLoc, 2, gl.FLOAT, false, 20, 12);
 
 		      this._indexBuffer = gl.createBuffer();
 		      var indexData = new Uint8Array([0, 3, 2, 0, 1, 3]);
@@ -54630,7 +56386,7 @@ var JSceneKitExample =
 		exports.default = SKLabelNode;
 
 	/***/ },
-	/* 225 */
+	/* 229 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -54658,7 +56414,7 @@ var JSceneKitExample =
 		exports.default = SKLabelVerticalAlignmentMode;
 
 	/***/ },
-	/* 226 */
+	/* 230 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -54671,15 +56427,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(218);
+		var _SKAction2 = __webpack_require__(222);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -54952,7 +56708,7 @@ var JSceneKitExample =
 		_SKAction3.default.scaleYToDuration = SKScale.scaleYToDuration;
 
 	/***/ },
-	/* 227 */
+	/* 231 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -54975,11 +56731,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKEffectNode2 = __webpack_require__(220);
+		var _SKEffectNode2 = __webpack_require__(224);
 
 		var _SKEffectNode3 = _interopRequireDefault(_SKEffectNode2);
 
-		var _SKSceneScaleMode = __webpack_require__(228);
+		var _SKSceneScaleMode = __webpack_require__(232);
 
 		var _SKSceneScaleMode2 = _interopRequireDefault(_SKSceneScaleMode);
 
@@ -55293,7 +57049,7 @@ var JSceneKitExample =
 		exports.default = SKScene;
 
 	/***/ },
-	/* 228 */
+	/* 232 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -55321,7 +57077,7 @@ var JSceneKitExample =
 		exports.default = SKSceneScaleMode;
 
 	/***/ },
-	/* 229 */
+	/* 233 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55334,15 +57090,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(218);
+		var _SKAction2 = __webpack_require__(222);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -55482,7 +57238,7 @@ var JSceneKitExample =
 		_SKAction3.default.sequence = SKSequence.sequence;
 
 	/***/ },
-	/* 230 */
+	/* 234 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55493,15 +57249,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CGLineCap = __webpack_require__(14);
+		var _CGLineCap = __webpack_require__(16);
 
 		var _CGLineCap2 = _interopRequireDefault(_CGLineCap);
 
-		var _CGLineJoin = __webpack_require__(15);
+		var _CGLineJoin = __webpack_require__(17);
 
 		var _CGLineJoin2 = _interopRequireDefault(_CGLineJoin);
 
-		var _SKBlendMode = __webpack_require__(130);
+		var _SKBlendMode = __webpack_require__(134);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -55509,7 +57265,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(131);
+		var _SKNode2 = __webpack_require__(135);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
@@ -55838,7 +57594,7 @@ var JSceneKitExample =
 		exports.default = SKShapeNode;
 
 	/***/ },
-	/* 231 */
+	/* 235 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55849,15 +57605,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SKAction2 = __webpack_require__(218);
+		var _SKAction2 = __webpack_require__(222);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(219);
+		var _SKActionTimingMode = __webpack_require__(223);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(131);
+		var _SKNode = __webpack_require__(135);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -55940,7 +57696,7 @@ var JSceneKitExample =
 		_SKAction3.default.waitForDurationWithRange = SKWait.waitForDurationWithRange;
 
 	/***/ },
-	/* 232 */
+	/* 236 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -55951,11 +57707,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _BinaryParser = __webpack_require__(233);
+		var _BinaryParser = __webpack_require__(237);
 
 		var _BinaryParser2 = _interopRequireDefault(_BinaryParser);
 
-		var _ecl = __webpack_require__(35);
+		var _ecl = __webpack_require__(39);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56236,7 +57992,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 233 */
+	/* 237 */
 	/***/ function(module, exports) {
 
 		"use strict";
@@ -56404,7 +58160,7 @@ var JSceneKitExample =
 		};
 
 	/***/ },
-	/* 234 */
+	/* 238 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -56477,10 +58233,9 @@ var JSceneKitExample =
 	  water: 2,
 	  inTheAir: 3,
 	  count: 4
-	};
 
-	// Collision bit masks
-	var BitmaskCollision = 1 << 2;
+	  // Collision bit masks
+	};var BitmaskCollision = 1 << 2;
 	var BitmaskCollectable = 1 << 3;
 	var BitmaskEnemy = 1 << 4;
 	var BitmaskSuperCollectable = 1 << 5;
@@ -56631,20 +58386,20 @@ var JSceneKitExample =
 
 	        // Various setup
 	        _this.setupCamera();
-	        _this.setupSounds();
+	        _this.setupSounds
 
 	        // Configure particle systems
-	        _jscenekit.SCNParticleSystem.systemNamedInDirectory('ParticleSystems/collect.scnp', null).then(function (system) {
+	        ();_jscenekit.SCNParticleSystem.systemNamedInDirectory('ParticleSystems/collect.scnp', null).then(function (system) {
 	          _this.collectFlowerParticleSystem = system;
 	          _this.collectFlowerParticleSystem.loops = false;
 	        });
 
 	        _jscenekit.SCNParticleSystem.systemNamedInDirectory('ParticleSystems/confetti.scnp', null).then(function (system) {
 	          _this.confettiParticleSystem = system;
-	        });
+	        }
 
 	        // Add the character to the scene.
-	        scene.rootNode.addChildNode(_this.character.node);
+	        );scene.rootNode.addChildNode(_this.character.node);
 
 	        var startPosition = scene.rootNode.childNodeWithNameRecursively('startingPoint', true);
 	        _this.character.node.transform = startPosition.transform;
@@ -56652,6 +58407,7 @@ var JSceneKitExample =
 	        // Retrieve various game elements in one traversal
 	        var collisionNodes = [];
 	        scene.rootNode.enumerateChildNodes(function (node) {
+	          console.warn('node.name: ' + node.name);
 	          switch (node.name) {
 	            case 'flame':
 	              {
@@ -56738,10 +58494,10 @@ var JSceneKitExample =
 	        if (_this2.cameraXHandle.rotation.x < 0) {
 	          _this2.cameraXHandle.rotation = new _jscenekit.SCNVector4(1, 0, 0, -_this2.cameraXHandle.rotation.w);
 	        }
-	      });
+	      }
 
 	      // Update the camera position with some inertia.
-	      _jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(0.5, _jscenekit.CAMediaTimingFunction.functionWithName(_jscenekit.kCAMediaTimingFunctionEaseOut), null, function () {
+	      );_jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(0.5, _jscenekit.CAMediaTimingFunction.functionWithName(_jscenekit.kCAMediaTimingFunctionEaseOut), null, function () {
 	        _this2.cameraYHandle.rotation = new _jscenekit.SCNVector4(0, 1, 0, _this2.cameraYHandle.rotation.y * (_this2.cameraYHandle.rotation.w - directionToPan.x * F));
 	        _this2.cameraXHandle.rotation = new _jscenekit.SCNVector4(1, 0, 0, Math.max(-Math.PI * 0.5, Math.min(0.13, _this2.cameraXHandle.rotation.w + directionToPan.y * F)));
 	      });
@@ -56969,10 +58725,10 @@ var JSceneKitExample =
 	      this.cameraYHandle.rotation = new _jscenekit.SCNVector4(0.0, 1.0, 0.0, Math.PI * 1.25);
 	      this.cameraYHandle.addChildNode(this.cameraXHandle);
 
-	      this.gameView.scene.rootNode.addChildNode(this.cameraYHandle);
+	      this.gameView.scene.rootNode.addChildNode(this.cameraYHandle
 
 	      // Animate camera on launch and prevent the user from manipulating the camera until the end of the animation
-	      _jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(0.25, null, function () {
+	      );_jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(0.25, null, function () {
 	        _this5.lockCamera = false;
 	      }, function () {
 	        _this5.lockCamera = true;
@@ -57120,10 +58876,10 @@ var JSceneKitExample =
 	        // Emit particles.
 	        var particleSystemPosition = flowerNode.worldTransform._copy();
 	        particleSystemPosition.m42 += 0.1;
-	        this.gameView.scene.addParticleSystem(this.collectFlowerParticleSystem, particleSystemPosition);
+	        this.gameView.scene.addParticleSystem(this.collectFlowerParticleSystem, particleSystemPosition
 
 	        // Remove the flower from the scene.
-	        this.removeNodeSoundToPlay(flowerNode, this.collectFlowerSound);
+	        );this.removeNodeSoundToPlay(flowerNode, this.collectFlowerSound);
 	        this.collectedFlowersCount += 1;
 	      }
 	    }
@@ -57139,23 +58895,23 @@ var JSceneKitExample =
 
 	      // Add confettis
 	      var particleSystemPosition = (0, _jscenekit.SCNMatrix4MakeTranslation)(0.0, 8.0, 0.0);
-	      this.gameView.scene.addParticleSystem(this.confettiParticleSystem, particleSystemPosition);
+	      this.gameView.scene.addParticleSystem(this.confettiParticleSystem, particleSystemPosition
 
 	      // Stop the music.
-	      this.gameView.scene.rootNode.removeAllAudioPlayers();
+	      );this.gameView.scene.rootNode.removeAllAudioPlayers
 
 	      // Play the congrat sound.
-	      this.gameView.scene.rootNode.addAudioPlayer(new _jscenekit.SCNAudioPlayer(this.victoryMusic));
+	      ();this.gameView.scene.rootNode.addAudioPlayer(new _jscenekit.SCNAudioPlayer(this.victoryMusic)
 
 	      // Animate the camera forever
-	      _jscenekit.DispatchQueue.main.asyncAfter(new Date() + 1000, function () {
-	        _this6.cameraYHandle.runAction(_jscenekit.SCNAction.repeatForever(_jscenekit.SCNAction.rotateByXYZ(0, -1, 0, 3)));
+	      );_jscenekit.DispatchQueue.main.asyncAfter(new Date() + 1000, function () {
+	        _this6.cameraYHandle.runAction(_jscenekit.SCNAction.repeatForever(_jscenekit.SCNAction.rotateByXYZ(0, -1, 0, 3))
 	        //const act = SCNAction.repeatForever(SCNAction.rotateByXYZ(0, -1, 0, 3))
 	        //window.cameraYHandleAction = act
 	        //window.cameraYHandle = this.cameraYHandle
 	        //this.cameraYHandle.runAction(act)
 
-	        _this6.cameraXHandle.runAction(_jscenekit.SCNAction.rotateToXYZ(-Math.PI / 4, 0, 0, 5.0));
+	        );_this6.cameraXHandle.runAction(_jscenekit.SCNAction.rotateToXYZ(-Math.PI / 4, 0, 0, 5.0));
 	      });
 
 	      this.gameView.showEndScreen();
@@ -57167,16 +58923,14 @@ var JSceneKitExample =
 	    key: 'controllerDirection',
 	    value: function controllerDirection() {
 	      // Poll when using a game controller
-	      /*
-	      const dpad = this.controllerDPad
-	      if(dpad){
-	        if(dpad.xAxis.value === 0.0 && dpad.yAxis.value === 0.0){
-	          this.controllerStoredDirection = [0.0, 0.0]
-	        }else{
-	          this.controllerStoredDirection = 
+	      var dpad = this.controllerDPad;
+	      if (dpad) {
+	        if (dpad.xAxis.value === 0.0 && dpad.yAxis.value === 0.0) {
+	          this.controllerStoredDirection = [0.0, 0.0];
+	        } else {
+	          //this.controllerStoredDirection = clamp(this.controllerStoredDirection + float2(dpad.xAxis.value, -dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit, GameViewController.controllerDirectionLimit)
 	        }
 	      }
-	      */
 
 	      return this.controllerStoredDirection;
 	    }
@@ -57188,14 +58942,14 @@ var JSceneKitExample =
 	    value: function setupGameControllers() {
 	      this.gameView.eventsDelegate = this;
 
-	      // TODO: implement
-	      //NotificationCenter.default.addObserver(this, GameViewController.handleControllerDidConnectNotification, .GCControllerDidConnect, null)
+	      _jscenekit.NotificationCenter.default.addObserverSelectorNameObject(this, this.handleControllerDidConnectNotification, _jscenekit.NSNotification.Name.GCControllerDidConnect, null);
 	    }
 	  }, {
 	    key: 'handleControllerDidConnectNotification',
 	    value: function handleControllerDidConnectNotification(notification) {
 	      var gameController = notification.object;
 	      this.registerCharacterMovementEvents(gameController);
+	      console.error('handleControllerDidConnectNotification: ' + gameController);
 	    }
 	  }, {
 	    key: 'registerCharacterMovementEvents',
@@ -57342,10 +59096,9 @@ var JSceneKitExample =
 	  water: 2,
 	  inTheAir: 3,
 	  count: 4
-	};
 
-	// Collision bit masks
-	var BitmaskCollision = 1 << 2;
+	  // Collision bit masks
+	};var BitmaskCollision = 1 << 2;
 	var BitmaskCollectable = 1 << 3;
 	var BitmaskEnemy = 1 << 4;
 	var BitmaskSuperCollectable = 1 << 5;
@@ -57407,14 +59160,14 @@ var JSceneKitExample =
 	      var characterTopLevelNode = characterScene.rootNode.childNodes[0];
 	      _this.node.addChildNode(characterTopLevelNode);
 
-	      _this.node._updateWorldTransform();
+	      _this.node._updateWorldTransform
 
 	      // MARK: Configure collision capsule
 
 	      // Collisions are handled by the physics engine. The character is approximated by
 	      // a capsule that is configured to collide with collectables, enemies and walls
 
-	      var _node$boundingBox = _this.node.boundingBox,
+	      ();var _node$boundingBox = _this.node.boundingBox,
 	          min = _node$boundingBox.min,
 	          max = _node$boundingBox.max;
 
@@ -57426,14 +59179,14 @@ var JSceneKitExample =
 	      characterCollisionNode.position = new _jscenekit.SCNVector3(0.0, collisionCapsuleHeight * 0.51, 0.0); // a bit too high so that the capsule does not hit the floor
 	      characterCollisionNode.physicsBody = new _jscenekit.SCNPhysicsBody(_jscenekit.SCNPhysicsBodyType.kinematic, new _jscenekit.SCNPhysicsShape(new _jscenekit.SCNCapsule(collisionCapsuleRadius, collisionCapsuleHeight), null));
 	      characterCollisionNode.physicsBody.contactTestBitMask = BitmaskSuperCollectable | BitmaskCollectable | BitmaskCollision | BitmaskEnemy;
-	      _this.node.addChildNode(characterCollisionNode);
+	      _this.node.addChildNode(characterCollisionNode
 
 	      // MARK: Load particle systems
 
 	      // Particle systems were configured in the SceneKit Scene Editor
 	      // They are retrieved from the scene and their birth rate are stored for later use
 
-	      var particleEmitterWithName = function particleEmitterWithName(name) {
+	      );var particleEmitterWithName = function particleEmitterWithName(name) {
 	        var emitter = {};
 	        emitter.node = characterTopLevelNode.childNodeWithNameRecursively(name, true);
 	        emitter.particleSystem = emitter.node.particleSystems[0];
@@ -57445,11 +59198,11 @@ var JSceneKitExample =
 
 	      _this.fireEmitter = particleEmitterWithName('fire');
 	      _this.smokeEmitter = particleEmitterWithName('smoke');
-	      _this.whiteSmokeEmitter = particleEmitterWithName('whiteSmoke');
+	      _this.whiteSmokeEmitter = particleEmitterWithName('whiteSmoke'
 
 	      // MARK: Load sound effects
 
-	      _this.reliefSound = new _jscenekit.SCNAudioSource('aah_extinction.mp3', 2.0);
+	      );_this.reliefSound = new _jscenekit.SCNAudioSource('aah_extinction.mp3', 2.0);
 	      _this.haltFireSound = new _jscenekit.SCNAudioSource('fire_extinction.mp3', 2.0);
 	      _this.catchFireSound = new _jscenekit.SCNAudioSource('ouch_firehit.mp3', 2.0);
 
@@ -57490,10 +59243,11 @@ var JSceneKitExample =
 	          for (var _iterator = child.animationKeys[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 	            var key = _step.value;
 	            // for every animation key
-	            var animation = child.animationForKey(key); // get the animation
-	            animation.usesSceneTimeBase = false; // make it system time based
+	            var animation = child.animationForKey(key // get the animation
+	            );animation.usesSceneTimeBase = false; // make it system time based
 	            animation.repeatCount = Infinity; // make it repeat forever
-	            child.addAnimationForKey(animation, key); // animations are copied upon addition, so we have to replace the previous animation
+	            child.addAnimationForKey(animation, key // animations are copied upon addition, so we have to replace the previous animation
+	            );
 	          }
 	        } catch (err) {
 	          _didIteratorError = true;
@@ -57509,10 +59263,10 @@ var JSceneKitExample =
 	            }
 	          }
 	        }
-	      });
+	      }
 
 	      //this.walkAnimation = CAAnimation.animationWithSceneNamed('game.scnassets/walk.scn')
-	      _jscenekit.CAAnimation.animationWithSceneNamed('game.scnassets/walk.scn').then(function (animation) {
+	      );_jscenekit.CAAnimation.animationWithSceneNamed('game.scnassets/walk.scn').then(function (animation) {
 	        _this.walkAnimation = animation;
 	        _this.walkAnimation.usesSceneTimeBase = false;
 	        _this.walkAnimation.fadeInDuration = 0.3;
@@ -57542,16 +59296,16 @@ var JSceneKitExample =
 	      var characterSpeed = deltaTime * Character.speedFactor * 0.84;
 	      this.previousUpdateTime = time;
 
-	      var initialPosition = this.node.position._copy();
+	      var initialPosition = this.node.position._copy
 
 	      // move
-	      if (direction.x !== 0.0 && direction.z !== 0.0) {
+	      ();if (direction.x !== 0.0 && direction.z !== 0.0) {
 	        // move character
 	        var _position = this.node.position;
-	        this.node.position = _position.add(direction.mul(characterSpeed));
+	        this.node.position = _position.add(direction.mul(characterSpeed)
 
 	        // update orientation
-	        this.directionAngle = Math.atan2(direction.x, direction.z);
+	        );this.directionAngle = Math.atan2(direction.x, direction.z);
 
 	        this.isWalking = true;
 	      } else {
@@ -57658,24 +59412,24 @@ var JSceneKitExample =
 	      if (this.isBurning) {
 	        this.isBurning = false;
 
-	        this.node.runAction(_jscenekit.SCNAction.sequence([_jscenekit.SCNAction.playAudioWaitForCompletion(this.haltFireSound, true), _jscenekit.SCNAction.playAudioWaitForCompletion(this.reliefSound, false)]));
+	        this.node.runAction(_jscenekit.SCNAction.sequence([_jscenekit.SCNAction.playAudioWaitForCompletion(this.haltFireSound, true), _jscenekit.SCNAction.playAudioWaitForCompletion(this.reliefSound, false)])
 
 	        // stop fire and smoke
-	        this.fireEmitter.particleSystem.birthRate = 0;
+	        );this.fireEmitter.particleSystem.birthRate = 0;
 	        _jscenekit.SCNTransaction.animationWithDuration(1.0, function () {
 	          _this3.smokeEmitter.particleSystem.birthRate = 0;
-	        });
+	        }
 
 	        // start white smoke
-	        this.whiteSmokeEmitter.particleSystem.birthRate = this.whiteSmokeEmitter.birthRate;
+	        );this.whiteSmokeEmitter.particleSystem.birthRate = this.whiteSmokeEmitter.birthRate;
 
 	        // progressively stop white smoke
 	        _jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(5.0, null, null, function () {
 	          _this3.whiteSmokeEmitter.particleSystem.birthRate = 0;
-	        });
+	        }
 
 	        // walk normally
-	        this.walkSpeed = 1.0;
+	        );this.walkSpeed = 1.0;
 	      }
 	    }
 
@@ -57858,10 +59612,10 @@ var JSceneKitExample =
 	      this.overlayNode.position = new _jscenekit.CGPoint(0.0, h);
 
 	      // The Max icon.
-	      this.overlayNode.addChild(_jscenekit.SKSpriteNode.nodeWithImageNamedPositionScale('Overlays/MaxIcon.png', new _jscenekit.CGPoint(50, -50), 0.5));
+	      this.overlayNode.addChild(_jscenekit.SKSpriteNode.nodeWithImageNamedPositionScale('Overlays/MaxIcon.png', new _jscenekit.CGPoint(50, -50), 0.5)
 
 	      // The flowers.
-	      for (var i = 0; i < 3; i++) {
+	      );for (var i = 0; i < 3; i++) {
 	        this.collectedFlowerSprites.push(_jscenekit.SKSpriteNode.nodeWithImageNamedPositionScale('Overlays/FlowerEmpty.png', new _jscenekit.CGPoint(110 + i * 40, -50), 0.25));
 	        this.overlayNode.addChild(this.collectedFlowerSprites[i]);
 	      }
@@ -57870,7 +59624,7 @@ var JSceneKitExample =
 	      this.overlayNode.addChild(_jscenekit.SKSpriteNode.nodeWithImageNamedPositionScale('Overlays/ItemsPearl.png', new _jscenekit.CGPoint(110, -100), 0.5));
 	      this.collectedPearlCountLabel.text = 'x0';
 	      this.collectedPearlCountLabel.position = new _jscenekit.CGPoint(152, -113);
-	      this.overlayNode.addChild(this.collectedPearlCountLabel);
+	      this.overlayNode.addChild(this.collectedPearlCountLabel
 
 	      // The virtual D-pad
 	      /*
@@ -57882,7 +59636,7 @@ var JSceneKitExample =
 	      */
 
 	      // Assign the SpriteKit overlay to the SceneKit view.
-	      this.overlaySKScene = skScene;
+	      );this.overlaySKScene = skScene;
 	      skScene.isUserInteractionEnabled = false;
 	    }
 	  }, {
@@ -57898,10 +59652,10 @@ var JSceneKitExample =
 	      var congratulationsNode = null;
 	      var congratulationsNodePromise = _jscenekit.SKSpriteNode.nodeWithImageNamed('Overlays/congratulations.png').then(function (node) {
 	        congratulationsNode = node;
-	      });
+	      }
 
 	      // Max image
-	      var characterNode = null;
+	      );var characterNode = null;
 	      var characterNodePromise = _jscenekit.SKSpriteNode.nodeWithImageNamed('Overlays/congratulations_pandaMax.png').then(function (node) {
 	        characterNode = node;
 	        characterNode.position = new _jscenekit.CGPoint(0.0, -220.0);
@@ -57913,13 +59667,13 @@ var JSceneKitExample =
 	        _this2.congratulationsGroupNode.addChild(congratulationsNode);
 
 	        var overlayScene = _this2.overlaySKScene;
-	        overlayScene.addChild(_this2.congratulationsGroupNode);
+	        overlayScene.addChild(_this2.congratulationsGroupNode
 
 	        // Layout the overlay
-	        _this2.layout2DOverlay();
+	        );_this2.layout2DOverlay
 
 	        // Animate
-	        congratulationsNode.alpha = 0.0;
+	        ();congratulationsNode.alpha = 0.0;
 	        congratulationsNode.xScale = 0.0;
 	        congratulationsNode.yScale = 0.0;
 	        congratulationsNode.run(_jscenekit.SKAction.group([_jscenekit.SKAction.fadeInWithDuration(0.25), _jscenekit.SKAction.sequence([_jscenekit.SKAction.scaleToDuration(1.22, 0.25), _jscenekit.SKAction.scaleToDuration(1.0, 0.1)])]));

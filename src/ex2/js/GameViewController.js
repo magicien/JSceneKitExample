@@ -6,6 +6,8 @@ import {
   CAMediaTimingFunction,
   CGPoint,
   DispatchQueue,
+  NotificationCenter,
+  NSNotification,
   SCNAction,
   SCNActionTimingMode,
   SCNAudioPlayer,
@@ -190,6 +192,7 @@ export default class GameViewController {
       // Retrieve various game elements in one traversal
       let collisionNodes = []
       scene.rootNode.enumerateChildNodes((node) => {
+        console.warn(`node.name: ${node.name}`)
         switch(node.name){
           case 'flame': {
             node.physicsBody.categoryBitMask = BitmaskEnemy
@@ -628,16 +631,14 @@ export default class GameViewController {
 
   controllerDirection() {
     // Poll when using a game controller
-    /*
     const dpad = this.controllerDPad
     if(dpad){
       if(dpad.xAxis.value === 0.0 && dpad.yAxis.value === 0.0){
         this.controllerStoredDirection = [0.0, 0.0]
       }else{
-        this.controllerStoredDirection = 
+        //this.controllerStoredDirection = clamp(this.controllerStoredDirection + float2(dpad.xAxis.value, -dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit, GameViewController.controllerDirectionLimit)
       }
     }
-    */
 
     return this.controllerStoredDirection
   }
@@ -647,13 +648,13 @@ export default class GameViewController {
   setupGameControllers() {
     this.gameView.eventsDelegate = this
 
-    // TODO: implement
-    //NotificationCenter.default.addObserver(this, GameViewController.handleControllerDidConnectNotification, .GCControllerDidConnect, null)
+    NotificationCenter.default.addObserverSelectorNameObject(this, this.handleControllerDidConnectNotification, NSNotification.Name.GCControllerDidConnect, null)
   }
 
   handleControllerDidConnectNotification(notification) {
     const gameController = notification.object
     this.registerCharacterMovementEvents(gameController)
+    console.error('handleControllerDidConnectNotification: ' + gameController)
   }
 
   registerCharacterMovementEvents(gameController) {
