@@ -79,8 +79,8 @@ export default class Character {
     // node that will be used as a handle to manipulate the whole group at once
 
     //const characterScene = SCNScene.sceneNamed('game.scnassets/panda.scn')
-    new SCNScene('game.scnassets/panda.scn', null, (scene) => {
-      const characterScene = scene
+    const characterScene = new SCNScene('game.scnassets/panda.scn')
+    characterScene._getLoadedPromise().then(() => {
       const characterTopLevelNode = characterScene.rootNode.childNodes[0]
       this.node.addChildNode(characterTopLevelNode)
 
@@ -125,9 +125,9 @@ export default class Character {
 
       // MARK: Load sound effects
 
-      this.reliefSound = new SCNAudioSource('aah_extinction.mp3', 2.0)
-      this.haltFireSound = new SCNAudioSource('fire_extinction.mp3', 2.0)
-      this.catchFireSound = new SCNAudioSource('ouch_firehit.mp3', 2.0)
+      this.reliefSound = new SCNAudioSource('game.scnassets/sounds/aah_extinction.mp3', 2.0)
+      this.haltFireSound = new SCNAudioSource('game.scnassets/sounds/fire_extinction.mp3', 2.0)
+      this.catchFireSound = new SCNAudioSource('game.scnassets/sounds/ouch_firehit.mp3', 2.0)
 
       for(let i=0; i<10; i++){
         const grassSound = new SCNAudioSource(`game.scnassets/sounds/Step_grass_0${i}.mp3`)
@@ -371,7 +371,7 @@ export default class Character {
 
       // stop fire and smoke
       this.fireEmitter.particleSystem.birthRate = 0
-      SCNTransaction.animationWithDuration(1.0, () => {
+      SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(1.0, null, null, () => {
         this.smokeEmitter.particleSystem.birthRate = 0
       })
 

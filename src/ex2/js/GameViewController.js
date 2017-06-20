@@ -127,7 +127,7 @@ export default class GameViewController {
     // Sounds
     this.collectPearlSound = null
     this.collectFlowerSound = null
-    this.frameThrowerSound = null
+    this.flameThrowerSound = null
     this.victoryMusic = null
 
     // Particles
@@ -161,7 +161,8 @@ export default class GameViewController {
 
     // Create a new scene.
     //const scene = new SCNScene('game.scnassets/level.scn')
-    new SCNScene('game.scnassets/level.scn', null, (scene) => {
+    const scene = new SCNScene('game.scnassets/level.scn')
+    scene._getLoadedPromise().then(() => {
       // Set the scene to the view and loop for the animation of the bamboos.
       this.gameView.scene = scene
       this.gameView.isPlaying = true
@@ -192,7 +193,6 @@ export default class GameViewController {
       // Retrieve various game elements in one traversal
       let collisionNodes = []
       scene.rootNode.enumerateChildNodes((node) => {
-        console.warn(`node.name: ${node.name}`)
         switch(node.name){
           case 'flame': {
             node.physicsBody.categoryBitMask = BitmaskEnemy
@@ -222,7 +222,7 @@ export default class GameViewController {
 
       this.setupAutomaticCameraPositions()
       this.setupGameControllers()
-    }, null)
+    })
   }
 
   // MARK: Managing the Camera
@@ -342,7 +342,7 @@ export default class GameViewController {
     }
 
     // Flames are static physics bodies, but they are moved by an action - So we need to tell the physics engine that the transforms did change.
-    for(const flame in this.flames){
+    for(const flame of this.flames){
       flame.physicsBody.resetTransform()
     }
 
@@ -608,11 +608,6 @@ export default class GameViewController {
     // Animate the camera forever
     DispatchQueue.main.asyncAfter(new Date() + 1000, () => {
       this.cameraYHandle.runAction(SCNAction.repeatForever(SCNAction.rotateByXYZ(0, -1, 0, 3)))
-      //const act = SCNAction.repeatForever(SCNAction.rotateByXYZ(0, -1, 0, 3))
-      //window.cameraYHandleAction = act
-      //window.cameraYHandle = this.cameraYHandle
-      //this.cameraYHandle.runAction(act)
-
       this.cameraXHandle.runAction(SCNAction.rotateToXYZ(-Math.PI / 4, 0, 0, 5.0))
     })
 
@@ -626,7 +621,7 @@ export default class GameViewController {
   }
 
   static get controllerDirectionLimit() {
-    return new CGSize(1.0, 1.0)
+    return new CGPoint(1.0, 1.0)
   }
 
   controllerDirection() {
@@ -634,9 +629,20 @@ export default class GameViewController {
     const dpad = this.controllerDPad
     if(dpad){
       if(dpad.xAxis.value === 0.0 && dpad.yAxis.value === 0.0){
-        this.controllerStoredDirection = [0.0, 0.0]
+        this.controllerStoredDirection.x = 0
+        this.controllerStoredDirection.y = 0
       }else{
         //this.controllerStoredDirection = clamp(this.controllerStoredDirection + float2(dpad.xAxis.value, -dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit, GameViewController.controllerDirectionLimit)
+        this.controllerStoredDirection.x = Math.min(Math.max(
+          (this.controllerStoredDirection.x + dpad.xAxis.value) * GameViewController.controllerAcceleration,
+          -GameViewController.controllerDirectionLimit.x),
+          GameViewController.controllerDirectionLimit.x
+        )
+        this.controllerStoredDirection.y = Math.min(Math.max(
+          (this.controllerStoredDirection.y + dpad.yAxis.value) * GameViewController.controllerAcceleration,
+          -GameViewController.controllerDirectionLimit.y),
+          GameViewController.controllerDirectionLimit.y
+        )
       }
     }
 
@@ -654,7 +660,6 @@ export default class GameViewController {
   handleControllerDidConnectNotification(notification) {
     const gameController = notification.object
     this.registerCharacterMovementEvents(gameController)
-    console.error('handleControllerDidConnectNotification: ' + gameController)
   }
 
   registerCharacterMovementEvents(gameController) {

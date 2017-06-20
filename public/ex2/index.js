@@ -289,43 +289,43 @@ var JSceneKitExample =
 
 		var _NotificationCenter2 = _interopRequireDefault(_NotificationCenter);
 
-		var _NSArray = __webpack_require__(29);
+		var _NSArray = __webpack_require__(37);
 
 		var _NSArray2 = _interopRequireDefault(_NSArray);
 
-		var _NSCoder = __webpack_require__(30);
+		var _NSCoder = __webpack_require__(38);
 
 		var _NSCoder2 = _interopRequireDefault(_NSCoder);
 
-		var _NSColorSpace = __webpack_require__(31);
+		var _NSColorSpace = __webpack_require__(39);
 
 		var _NSColorSpace2 = _interopRequireDefault(_NSColorSpace);
 
-		var _NSData = __webpack_require__(32);
+		var _NSData = __webpack_require__(40);
 
 		var _NSData2 = _interopRequireDefault(_NSData);
 
-		var _NSDictionary = __webpack_require__(33);
+		var _NSDictionary = __webpack_require__(41);
 
 		var _NSDictionary2 = _interopRequireDefault(_NSDictionary);
 
-		var _NSKeyedArchiver = __webpack_require__(34);
+		var _NSKeyedArchiver = __webpack_require__(42);
 
 		var _NSKeyedArchiver2 = _interopRequireDefault(_NSKeyedArchiver);
 
-		var _NSKeyedUnarchiver = __webpack_require__(35);
+		var _NSKeyedUnarchiver = __webpack_require__(43);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
-		var _NSMutableArray = __webpack_require__(40);
+		var _NSMutableArray = __webpack_require__(48);
 
 		var _NSMutableArray2 = _interopRequireDefault(_NSMutableArray);
 
-		var _NSMutableData = __webpack_require__(41);
+		var _NSMutableData = __webpack_require__(49);
 
 		var _NSMutableData2 = _interopRequireDefault(_NSMutableData);
 
-		var _NSMutableDictionary = __webpack_require__(42);
+		var _NSMutableDictionary = __webpack_require__(50);
 
 		var _NSMutableDictionary2 = _interopRequireDefault(_NSMutableDictionary);
 
@@ -333,703 +333,735 @@ var JSceneKitExample =
 
 		var _NSNotification2 = _interopRequireDefault(_NSNotification);
 
-		var _NSURL = __webpack_require__(43);
+		var _NSURL = __webpack_require__(51);
 
 		var _NSURL2 = _interopRequireDefault(_NSURL);
 
-		var _NSValue = __webpack_require__(44);
+		var _NSValue = __webpack_require__(52);
 
 		var _NSValue2 = _interopRequireDefault(_NSValue);
+
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
+		var _GCControllerAxisInput = __webpack_require__(34);
+
+		var _GCControllerAxisInput2 = _interopRequireDefault(_GCControllerAxisInput);
+
+		var _GCControllerButtonInput = __webpack_require__(31);
+
+		var _GCControllerButtonInput2 = _interopRequireDefault(_GCControllerButtonInput);
+
+		var _GCControllerDirectionPad = __webpack_require__(33);
+
+		var _GCControllerDirectionPad2 = _interopRequireDefault(_GCControllerDirectionPad);
+
+		var _GCControllerElement = __webpack_require__(32);
+
+		var _GCControllerElement2 = _interopRequireDefault(_GCControllerElement);
+
+		var _GCExtendedGamepad = __webpack_require__(35);
+
+		var _GCExtendedGamepad2 = _interopRequireDefault(_GCExtendedGamepad);
+
+		var _GCGamepad = __webpack_require__(30);
+
+		var _GCGamepad2 = _interopRequireDefault(_GCGamepad);
+
+		var _GCMicroGamepad = __webpack_require__(36);
+
+		var _GCMicroGamepad2 = _interopRequireDefault(_GCMicroGamepad);
 
 		var _NSObject = __webpack_require__(2);
 
 		var _NSObject2 = _interopRequireDefault(_NSObject);
 
-		var _CAAction = __webpack_require__(49);
+		var _CAAction = __webpack_require__(57);
 
 		var _CAAction2 = _interopRequireDefault(_CAAction);
 
-		var _CAAnimation = __webpack_require__(50);
+		var _CAAnimation = __webpack_require__(58);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
-		var _CAAnimationDelegate = __webpack_require__(54);
+		var _CAAnimationDelegate = __webpack_require__(62);
 
 		var _CAAnimationDelegate2 = _interopRequireDefault(_CAAnimationDelegate);
 
-		var _CAAnimationGroup = __webpack_require__(56);
+		var _CAAnimationGroup = __webpack_require__(64);
 
 		var _CAAnimationGroup2 = _interopRequireDefault(_CAAnimationGroup);
 
-		var _CABasicAnimation = __webpack_require__(57);
+		var _CABasicAnimation = __webpack_require__(65);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _CACurrentMediaTime = __webpack_require__(60);
+		var _CACurrentMediaTime = __webpack_require__(68);
 
 		var _CACurrentMediaTime2 = _interopRequireDefault(_CACurrentMediaTime);
 
-		var _CAKeyframeAnimation = __webpack_require__(61);
+		var _CAKeyframeAnimation = __webpack_require__(69);
 
 		var _CAKeyframeAnimation2 = _interopRequireDefault(_CAKeyframeAnimation);
 
-		var _CAMediaTiming = __webpack_require__(52);
+		var _CAMediaTiming = __webpack_require__(60);
 
 		var _CAMediaTiming2 = _interopRequireDefault(_CAMediaTiming);
 
-		var _CAMediaTimingFunction = __webpack_require__(53);
+		var _CAMediaTimingFunction = __webpack_require__(61);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAPropertyAnimation = __webpack_require__(58);
+		var _CAPropertyAnimation = __webpack_require__(66);
 
 		var _CAPropertyAnimation2 = _interopRequireDefault(_CAPropertyAnimation);
 
-		var _CATransform3D = __webpack_require__(45);
+		var _CATransform3D = __webpack_require__(53);
 
 		var _CATransform3D2 = _interopRequireDefault(_CATransform3D);
 
-		var _SCNAction = __webpack_require__(62);
+		var _SCNAction = __webpack_require__(70);
 
 		var _SCNAction2 = _interopRequireDefault(_SCNAction);
 
-		var _SCNActionable = __webpack_require__(64);
+		var _SCNActionable = __webpack_require__(72);
 
 		var _SCNActionable2 = _interopRequireDefault(_SCNActionable);
 
-		var _SCNActionCustom = __webpack_require__(65);
+		var _SCNActionCustom = __webpack_require__(73);
 
 		var _SCNActionCustom2 = _interopRequireDefault(_SCNActionCustom);
 
-		var _SCNActionFade = __webpack_require__(66);
+		var _SCNActionFade = __webpack_require__(74);
 
 		var _SCNActionFade2 = _interopRequireDefault(_SCNActionFade);
 
-		var _SCNActionGroup = __webpack_require__(151);
+		var _SCNActionGroup = __webpack_require__(161);
 
 		var _SCNActionGroup2 = _interopRequireDefault(_SCNActionGroup);
 
-		var _SCNActionHide = __webpack_require__(152);
+		var _SCNActionHide = __webpack_require__(162);
 
 		var _SCNActionHide2 = _interopRequireDefault(_SCNActionHide);
 
-		var _SCNActionJavaScript = __webpack_require__(153);
+		var _SCNActionJavaScript = __webpack_require__(163);
 
 		var _SCNActionJavaScript2 = _interopRequireDefault(_SCNActionJavaScript);
 
-		var _SCNActionMove = __webpack_require__(154);
+		var _SCNActionMove = __webpack_require__(164);
 
 		var _SCNActionMove2 = _interopRequireDefault(_SCNActionMove);
 
-		var _SCNActionPerformSelector = __webpack_require__(155);
+		var _SCNActionPerformSelector = __webpack_require__(165);
 
 		var _SCNActionPerformSelector2 = _interopRequireDefault(_SCNActionPerformSelector);
 
-		var _SCNActionPlaySound = __webpack_require__(156);
+		var _SCNActionPlaySound = __webpack_require__(166);
 
 		var _SCNActionPlaySound2 = _interopRequireDefault(_SCNActionPlaySound);
 
-		var _SCNActionReference = __webpack_require__(157);
+		var _SCNActionReference = __webpack_require__(167);
 
 		var _SCNActionReference2 = _interopRequireDefault(_SCNActionReference);
 
-		var _SCNActionRemove = __webpack_require__(158);
+		var _SCNActionRemove = __webpack_require__(168);
 
 		var _SCNActionRemove2 = _interopRequireDefault(_SCNActionRemove);
 
-		var _SCNActionRepeat = __webpack_require__(159);
+		var _SCNActionRepeat = __webpack_require__(169);
 
 		var _SCNActionRepeat2 = _interopRequireDefault(_SCNActionRepeat);
 
-		var _SCNActionRotate = __webpack_require__(160);
+		var _SCNActionRotate = __webpack_require__(170);
 
 		var _SCNActionRotate2 = _interopRequireDefault(_SCNActionRotate);
 
-		var _SCNActionRunAction = __webpack_require__(161);
+		var _SCNActionRunAction = __webpack_require__(171);
 
 		var _SCNActionRunAction2 = _interopRequireDefault(_SCNActionRunAction);
 
-		var _SCNActionRunBlock = __webpack_require__(162);
+		var _SCNActionRunBlock = __webpack_require__(172);
 
 		var _SCNActionRunBlock2 = _interopRequireDefault(_SCNActionRunBlock);
 
-		var _SCNActionScale = __webpack_require__(163);
+		var _SCNActionScale = __webpack_require__(173);
 
 		var _SCNActionScale2 = _interopRequireDefault(_SCNActionScale);
 
-		var _SCNActionSequence = __webpack_require__(164);
+		var _SCNActionSequence = __webpack_require__(174);
 
 		var _SCNActionSequence2 = _interopRequireDefault(_SCNActionSequence);
 
-		var _SCNActionTimingFunction = __webpack_require__(165);
+		var _SCNActionTimingFunction = __webpack_require__(175);
 
 		var _SCNActionTimingFunction2 = _interopRequireDefault(_SCNActionTimingFunction);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNActionWait = __webpack_require__(166);
+		var _SCNActionWait = __webpack_require__(176);
 
 		var _SCNActionWait2 = _interopRequireDefault(_SCNActionWait);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNAnimationEvent = __webpack_require__(55);
+		var _SCNAnimationEvent = __webpack_require__(63);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
-		var _SCNAnimationEventBlock = __webpack_require__(167);
+		var _SCNAnimationEventBlock = __webpack_require__(177);
 
 		var _SCNAnimationEventBlock2 = _interopRequireDefault(_SCNAnimationEventBlock);
 
-		var _SCNAntialiasingMode = __webpack_require__(126);
+		var _SCNAntialiasingMode = __webpack_require__(136);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNAudioPlayer = __webpack_require__(149);
+		var _SCNAudioPlayer = __webpack_require__(159);
 
 		var _SCNAudioPlayer2 = _interopRequireDefault(_SCNAudioPlayer);
 
-		var _SCNAudioSource = __webpack_require__(150);
+		var _SCNAudioSource = __webpack_require__(160);
 
 		var _SCNAudioSource2 = _interopRequireDefault(_SCNAudioSource);
 
-		var _SCNBillboardAxis = __webpack_require__(168);
+		var _SCNBillboardAxis = __webpack_require__(178);
 
 		var _SCNBillboardAxis2 = _interopRequireDefault(_SCNBillboardAxis);
 
-		var _SCNBillboardConstraint = __webpack_require__(169);
+		var _SCNBillboardConstraint = __webpack_require__(179);
 
 		var _SCNBillboardConstraint2 = _interopRequireDefault(_SCNBillboardConstraint);
 
-		var _SCNBindingBlock = __webpack_require__(89);
+		var _SCNBindingBlock = __webpack_require__(97);
 
 		var _SCNBindingBlock2 = _interopRequireDefault(_SCNBindingBlock);
 
-		var _SCNBlendMode = __webpack_require__(85);
+		var _SCNBlendMode = __webpack_require__(93);
 
 		var _SCNBlendMode2 = _interopRequireDefault(_SCNBlendMode);
 
-		var _SCNBoundingVolume = __webpack_require__(69);
+		var _SCNBoundingVolume = __webpack_require__(77);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNBox = __webpack_require__(93);
+		var _SCNBox = __webpack_require__(101);
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNBufferBindingBlock = __webpack_require__(130);
+		var _SCNBufferBindingBlock = __webpack_require__(140);
 
 		var _SCNBufferBindingBlock2 = _interopRequireDefault(_SCNBufferBindingBlock);
 
-		var _SCNBufferFrequency = __webpack_require__(129);
+		var _SCNBufferFrequency = __webpack_require__(139);
 
 		var _SCNBufferFrequency2 = _interopRequireDefault(_SCNBufferFrequency);
 
-		var _SCNBufferStream = __webpack_require__(131);
+		var _SCNBufferStream = __webpack_require__(141);
 
 		var _SCNBufferStream2 = _interopRequireDefault(_SCNBufferStream);
 
-		var _SCNCamera = __webpack_require__(132);
+		var _SCNCamera = __webpack_require__(142);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNCapsule = __webpack_require__(170);
+		var _SCNCapsule = __webpack_require__(116);
 
 		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
 
-		var _SCNChamferMode = __webpack_require__(171);
+		var _SCNChamferMode = __webpack_require__(180);
 
 		var _SCNChamferMode2 = _interopRequireDefault(_SCNChamferMode);
 
-		var _SCNCone = __webpack_require__(172);
+		var _SCNCone = __webpack_require__(181);
 
 		var _SCNCone2 = _interopRequireDefault(_SCNCone);
 
-		var _SCNConstraint = __webpack_require__(143);
+		var _SCNConstraint = __webpack_require__(153);
 
 		var _SCNConstraint2 = _interopRequireDefault(_SCNConstraint);
 
-		var _SCNCullMode = __webpack_require__(71);
+		var _SCNCullMode = __webpack_require__(79);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNCylinder = __webpack_require__(173);
+		var _SCNCylinder = __webpack_require__(182);
 
 		var _SCNCylinder2 = _interopRequireDefault(_SCNCylinder);
 
-		var _SCNDebugOptions = __webpack_require__(122);
+		var _SCNDebugOptions = __webpack_require__(132);
 
 		var _SCNDebugOptions2 = _interopRequireDefault(_SCNDebugOptions);
 
-		var _SCNFieldForceEvaluator = __webpack_require__(147);
+		var _SCNFieldForceEvaluator = __webpack_require__(157);
 
 		var _SCNFieldForceEvaluator2 = _interopRequireDefault(_SCNFieldForceEvaluator);
 
-		var _SCNFilterMode = __webpack_require__(79);
+		var _SCNFilterMode = __webpack_require__(88);
 
 		var _SCNFilterMode2 = _interopRequireDefault(_SCNFilterMode);
 
-		var _SCNFloor = __webpack_require__(174);
+		var _SCNFloor = __webpack_require__(183);
 
 		var _SCNFloor2 = _interopRequireDefault(_SCNFloor);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNGeometryElement = __webpack_require__(74);
+		var _SCNGeometryElement = __webpack_require__(83);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(75);
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNHitTestOption = __webpack_require__(124);
+		var _SCNHitTestOption = __webpack_require__(134);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(108);
+		var _SCNHitTestResult = __webpack_require__(118);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
-		var _SCNIKConstraint = __webpack_require__(175);
+		var _SCNIKConstraint = __webpack_require__(184);
 
 		var _SCNIKConstraint2 = _interopRequireDefault(_SCNIKConstraint);
 
-		var _SCNLayer = __webpack_require__(176);
+		var _SCNLayer = __webpack_require__(185);
 
 		var _SCNLayer2 = _interopRequireDefault(_SCNLayer);
 
-		var _SCNLevelOfDetail = __webpack_require__(76);
+		var _SCNLevelOfDetail = __webpack_require__(85);
 
 		var _SCNLevelOfDetail2 = _interopRequireDefault(_SCNLevelOfDetail);
 
-		var _SCNLight = __webpack_require__(86);
+		var _SCNLight = __webpack_require__(94);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNLookAtConstraint = __webpack_require__(177);
+		var _SCNLookAtConstraint = __webpack_require__(186);
 
 		var _SCNLookAtConstraint2 = _interopRequireDefault(_SCNLookAtConstraint);
 
-		var _SCNMaterial = __webpack_require__(77);
+		var _SCNMaterial = __webpack_require__(86);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNMaterialProperty = __webpack_require__(78);
+		var _SCNMaterialProperty = __webpack_require__(87);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4EqualToMatrix = __webpack_require__(178);
+		var _SCNMatrix4EqualToMatrix = __webpack_require__(187);
 
 		var _SCNMatrix4EqualToMatrix2 = _interopRequireDefault(_SCNMatrix4EqualToMatrix);
 
-		var _SCNMatrix4FromGLKMatrix = __webpack_require__(179);
+		var _SCNMatrix4FromGLKMatrix = __webpack_require__(188);
 
 		var _SCNMatrix4FromGLKMatrix2 = _interopRequireDefault(_SCNMatrix4FromGLKMatrix);
 
-		var _SCNMatrix4FromMat = __webpack_require__(180);
+		var _SCNMatrix4FromMat = __webpack_require__(189);
 
 		var _SCNMatrix4FromMat2 = _interopRequireDefault(_SCNMatrix4FromMat);
 
-		var _SCNMatrix4Invert = __webpack_require__(181);
+		var _SCNMatrix4Invert = __webpack_require__(190);
 
 		var _SCNMatrix4Invert2 = _interopRequireDefault(_SCNMatrix4Invert);
 
-		var _SCNMatrix4IsIdentity = __webpack_require__(182);
+		var _SCNMatrix4IsIdentity = __webpack_require__(191);
 
 		var _SCNMatrix4IsIdentity2 = _interopRequireDefault(_SCNMatrix4IsIdentity);
 
-		var _SCNMatrix4MakeRotation = __webpack_require__(183);
+		var _SCNMatrix4MakeRotation = __webpack_require__(192);
 
 		var _SCNMatrix4MakeRotation2 = _interopRequireDefault(_SCNMatrix4MakeRotation);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(142);
+		var _SCNMatrix4MakeScale = __webpack_require__(152);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNMatrix4Mult = __webpack_require__(184);
+		var _SCNMatrix4Mult = __webpack_require__(193);
 
 		var _SCNMatrix4Mult2 = _interopRequireDefault(_SCNMatrix4Mult);
 
-		var _SCNMatrix4Rotate = __webpack_require__(185);
+		var _SCNMatrix4Rotate = __webpack_require__(194);
 
 		var _SCNMatrix4Rotate2 = _interopRequireDefault(_SCNMatrix4Rotate);
 
-		var _SCNMatrix4Scale = __webpack_require__(186);
+		var _SCNMatrix4Scale = __webpack_require__(195);
 
 		var _SCNMatrix4Scale2 = _interopRequireDefault(_SCNMatrix4Scale);
 
-		var _SCNMatrix4ToGLKMatrix = __webpack_require__(187);
+		var _SCNMatrix4ToGLKMatrix = __webpack_require__(196);
 
 		var _SCNMatrix4ToGLKMatrix2 = _interopRequireDefault(_SCNMatrix4ToGLKMatrix);
 
-		var _SCNMatrix4ToMat = __webpack_require__(188);
+		var _SCNMatrix4ToMat = __webpack_require__(197);
 
 		var _SCNMatrix4ToMat2 = _interopRequireDefault(_SCNMatrix4ToMat);
 
-		var _SCNMatrix4Translate = __webpack_require__(189);
+		var _SCNMatrix4Translate = __webpack_require__(198);
 
 		var _SCNMatrix4Translate2 = _interopRequireDefault(_SCNMatrix4Translate);
 
-		var _SCNMorpher = __webpack_require__(139);
+		var _SCNMorpher = __webpack_require__(149);
 
 		var _SCNMorpher2 = _interopRequireDefault(_SCNMorpher);
 
-		var _SCNMorpherCalculationMode = __webpack_require__(140);
+		var _SCNMorpherCalculationMode = __webpack_require__(150);
 
 		var _SCNMorpherCalculationMode2 = _interopRequireDefault(_SCNMorpherCalculationMode);
 
-		var _SCNMovabilityHint = __webpack_require__(144);
+		var _SCNMovabilityHint = __webpack_require__(154);
 
 		var _SCNMovabilityHint2 = _interopRequireDefault(_SCNMovabilityHint);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNNodeRendererDelegate = __webpack_require__(145);
+		var _SCNNodeRendererDelegate = __webpack_require__(155);
 
 		var _SCNNodeRendererDelegate2 = _interopRequireDefault(_SCNNodeRendererDelegate);
 
-		var _SCNOrderedDictionary = __webpack_require__(81);
+		var _SCNOrderedDictionary = __webpack_require__(89);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNParticleBirthDirection = __webpack_require__(111);
+		var _SCNParticleBirthDirection = __webpack_require__(121);
 
 		var _SCNParticleBirthDirection2 = _interopRequireDefault(_SCNParticleBirthDirection);
 
-		var _SCNParticleBirthLocation = __webpack_require__(110);
+		var _SCNParticleBirthLocation = __webpack_require__(120);
 
 		var _SCNParticleBirthLocation2 = _interopRequireDefault(_SCNParticleBirthLocation);
 
-		var _SCNParticleBlendMode = __webpack_require__(113);
+		var _SCNParticleBlendMode = __webpack_require__(123);
 
 		var _SCNParticleBlendMode2 = _interopRequireDefault(_SCNParticleBlendMode);
 
-		var _SCNParticleEvent = __webpack_require__(116);
+		var _SCNParticleEvent = __webpack_require__(126);
 
 		var _SCNParticleEvent2 = _interopRequireDefault(_SCNParticleEvent);
 
-		var _SCNParticleEventBlock = __webpack_require__(117);
+		var _SCNParticleEventBlock = __webpack_require__(127);
 
 		var _SCNParticleEventBlock2 = _interopRequireDefault(_SCNParticleEventBlock);
 
-		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(112);
+		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(122);
 
 		var _SCNParticleImageSequenceAnimationMode2 = _interopRequireDefault(_SCNParticleImageSequenceAnimationMode);
 
-		var _SCNParticleInputMode = __webpack_require__(119);
+		var _SCNParticleInputMode = __webpack_require__(129);
 
 		var _SCNParticleInputMode2 = _interopRequireDefault(_SCNParticleInputMode);
 
-		var _SCNParticleModifierBlock = __webpack_require__(121);
+		var _SCNParticleModifierBlock = __webpack_require__(131);
 
 		var _SCNParticleModifierBlock2 = _interopRequireDefault(_SCNParticleModifierBlock);
 
-		var _SCNParticleModifierStage = __webpack_require__(120);
+		var _SCNParticleModifierStage = __webpack_require__(130);
 
 		var _SCNParticleModifierStage2 = _interopRequireDefault(_SCNParticleModifierStage);
 
-		var _SCNParticleOrientationMode = __webpack_require__(114);
+		var _SCNParticleOrientationMode = __webpack_require__(124);
 
 		var _SCNParticleOrientationMode2 = _interopRequireDefault(_SCNParticleOrientationMode);
 
-		var _SCNParticlePropertyController = __webpack_require__(118);
+		var _SCNParticlePropertyController = __webpack_require__(128);
 
 		var _SCNParticlePropertyController2 = _interopRequireDefault(_SCNParticlePropertyController);
 
-		var _SCNParticleSortingMode = __webpack_require__(115);
+		var _SCNParticleSortingMode = __webpack_require__(125);
 
 		var _SCNParticleSortingMode2 = _interopRequireDefault(_SCNParticleSortingMode);
 
-		var _SCNParticleSystem = __webpack_require__(109);
+		var _SCNParticleSystem = __webpack_require__(119);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNPhysicsBallSocketJoint = __webpack_require__(190);
+		var _SCNPhysicsBallSocketJoint = __webpack_require__(199);
 
 		var _SCNPhysicsBallSocketJoint2 = _interopRequireDefault(_SCNPhysicsBallSocketJoint);
 
-		var _SCNPhysicsBehavior = __webpack_require__(102);
+		var _SCNPhysicsBehavior = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsBodyType = __webpack_require__(106);
+		var _SCNPhysicsBodyType = __webpack_require__(114);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
-		var _SCNPhysicsCollisionCategory = __webpack_require__(191);
+		var _SCNPhysicsCollisionCategory = __webpack_require__(200);
 
 		var _SCNPhysicsCollisionCategory2 = _interopRequireDefault(_SCNPhysicsCollisionCategory);
 
-		var _SCNPhysicsContact = __webpack_require__(104);
+		var _SCNPhysicsContact = __webpack_require__(112);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
-		var _SCNPhysicsContactDelegate = __webpack_require__(103);
+		var _SCNPhysicsContactDelegate = __webpack_require__(111);
 
 		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
 
-		var _SCNPhysicsField = __webpack_require__(146);
+		var _SCNPhysicsField = __webpack_require__(156);
 
 		var _SCNPhysicsField2 = _interopRequireDefault(_SCNPhysicsField);
 
-		var _SCNPhysicsFieldScope = __webpack_require__(148);
+		var _SCNPhysicsFieldScope = __webpack_require__(158);
 
 		var _SCNPhysicsFieldScope2 = _interopRequireDefault(_SCNPhysicsFieldScope);
 
-		var _SCNPhysicsHingeJoint = __webpack_require__(192);
+		var _SCNPhysicsHingeJoint = __webpack_require__(201);
 
 		var _SCNPhysicsHingeJoint2 = _interopRequireDefault(_SCNPhysicsHingeJoint);
 
-		var _SCNPhysicsShape = __webpack_require__(107);
+		var _SCNPhysicsShape = __webpack_require__(115);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNPhysicsSliderJoint = __webpack_require__(193);
+		var _SCNPhysicsSliderJoint = __webpack_require__(202);
 
 		var _SCNPhysicsSliderJoint2 = _interopRequireDefault(_SCNPhysicsSliderJoint);
 
-		var _SCNPhysicsVehicle = __webpack_require__(194);
+		var _SCNPhysicsVehicle = __webpack_require__(203);
 
 		var _SCNPhysicsVehicle2 = _interopRequireDefault(_SCNPhysicsVehicle);
 
-		var _SCNPhysicsVehicleWheel = __webpack_require__(195);
+		var _SCNPhysicsVehicleWheel = __webpack_require__(204);
 
 		var _SCNPhysicsVehicleWheel2 = _interopRequireDefault(_SCNPhysicsVehicleWheel);
 
-		var _SCNPhysicsWorld = __webpack_require__(101);
+		var _SCNPhysicsWorld = __webpack_require__(109);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNPlane = __webpack_require__(196);
+		var _SCNPlane = __webpack_require__(205);
 
 		var _SCNPlane2 = _interopRequireDefault(_SCNPlane);
 
-		var _SCNProgram = __webpack_require__(127);
+		var _SCNProgram = __webpack_require__(137);
 
 		var _SCNProgram2 = _interopRequireDefault(_SCNProgram);
 
-		var _SCNProgramDelegate = __webpack_require__(128);
+		var _SCNProgramDelegate = __webpack_require__(138);
 
 		var _SCNProgramDelegate2 = _interopRequireDefault(_SCNProgramDelegate);
 
-		var _SCNPyramid = __webpack_require__(197);
+		var _SCNPyramid = __webpack_require__(206);
 
 		var _SCNPyramid2 = _interopRequireDefault(_SCNPyramid);
 
-		var _SCNQuaternion = __webpack_require__(59);
+		var _SCNQuaternion = __webpack_require__(67);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNReferenceLoadingPolicy = __webpack_require__(198);
+		var _SCNReferenceLoadingPolicy = __webpack_require__(207);
 
 		var _SCNReferenceLoadingPolicy2 = _interopRequireDefault(_SCNReferenceLoadingPolicy);
 
-		var _SCNReferenceNode = __webpack_require__(199);
+		var _SCNReferenceNode = __webpack_require__(208);
 
 		var _SCNReferenceNode2 = _interopRequireDefault(_SCNReferenceNode);
 
-		var _SCNRenderer = __webpack_require__(90);
+		var _SCNRenderer = __webpack_require__(98);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
-		var _SCNRenderingAPI = __webpack_require__(123);
+		var _SCNRenderingAPI = __webpack_require__(133);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNSceneExportDelegate = __webpack_require__(94);
+		var _SCNSceneExportDelegate = __webpack_require__(102);
 
 		var _SCNSceneExportDelegate2 = _interopRequireDefault(_SCNSceneExportDelegate);
 
-		var _SCNSceneExportProgressHandler = __webpack_require__(95);
+		var _SCNSceneExportProgressHandler = __webpack_require__(103);
 
 		var _SCNSceneExportProgressHandler2 = _interopRequireDefault(_SCNSceneExportProgressHandler);
 
-		var _SCNSceneRenderer = __webpack_require__(91);
+		var _SCNSceneRenderer = __webpack_require__(99);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNSceneRendererDelegate = __webpack_require__(125);
+		var _SCNSceneRendererDelegate = __webpack_require__(135);
 
 		var _SCNSceneRendererDelegate2 = _interopRequireDefault(_SCNSceneRendererDelegate);
 
-		var _SCNSceneSource = __webpack_require__(96);
+		var _SCNSceneSource = __webpack_require__(104);
 
 		var _SCNSceneSource2 = _interopRequireDefault(_SCNSceneSource);
 
-		var _SCNSceneSourceStatus = __webpack_require__(98);
+		var _SCNSceneSourceStatus = __webpack_require__(106);
 
 		var _SCNSceneSourceStatus2 = _interopRequireDefault(_SCNSceneSourceStatus);
 
-		var _SCNSceneSourceStatusHandler = __webpack_require__(97);
+		var _SCNSceneSourceStatusHandler = __webpack_require__(105);
 
 		var _SCNSceneSourceStatusHandler2 = _interopRequireDefault(_SCNSceneSourceStatusHandler);
 
-		var _SCNShadable = __webpack_require__(72);
+		var _SCNShadable = __webpack_require__(80);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNShadableHelper = __webpack_require__(200);
+		var _SCNShadableHelper = __webpack_require__(209);
 
 		var _SCNShadableHelper2 = _interopRequireDefault(_SCNShadableHelper);
 
-		var _SCNShaderModifierEntryPoint = __webpack_require__(201);
+		var _SCNShaderModifierEntryPoint = __webpack_require__(210);
 
 		var _SCNShaderModifierEntryPoint2 = _interopRequireDefault(_SCNShaderModifierEntryPoint);
 
-		var _SCNShadowMode = __webpack_require__(138);
+		var _SCNShadowMode = __webpack_require__(148);
 
 		var _SCNShadowMode2 = _interopRequireDefault(_SCNShadowMode);
 
-		var _SCNShape = __webpack_require__(202);
+		var _SCNShape = __webpack_require__(211);
 
 		var _SCNShape2 = _interopRequireDefault(_SCNShape);
 
-		var _SCNSkinner = __webpack_require__(141);
+		var _SCNSkinner = __webpack_require__(151);
 
 		var _SCNSkinner2 = _interopRequireDefault(_SCNSkinner);
 
-		var _SCNSphere = __webpack_require__(203);
+		var _SCNSphere = __webpack_require__(117);
 
 		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
 
-		var _SCNTechnique = __webpack_require__(88);
+		var _SCNTechnique = __webpack_require__(96);
 
 		var _SCNTechnique2 = _interopRequireDefault(_SCNTechnique);
 
-		var _SCNTechniqueSupport = __webpack_require__(87);
+		var _SCNTechniqueSupport = __webpack_require__(95);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNText = __webpack_require__(204);
+		var _SCNText = __webpack_require__(212);
 
 		var _SCNText2 = _interopRequireDefault(_SCNText);
 
-		var _SCNTorus = __webpack_require__(205);
+		var _SCNTorus = __webpack_require__(213);
 
 		var _SCNTorus2 = _interopRequireDefault(_SCNTorus);
 
-		var _SCNTransaction = __webpack_require__(82);
+		var _SCNTransaction = __webpack_require__(90);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNTransformConstraint = __webpack_require__(206);
+		var _SCNTransformConstraint = __webpack_require__(214);
 
 		var _SCNTransformConstraint2 = _interopRequireDefault(_SCNTransformConstraint);
 
-		var _SCNTransparencyMode = __webpack_require__(84);
+		var _SCNTransparencyMode = __webpack_require__(92);
 
 		var _SCNTransparencyMode2 = _interopRequireDefault(_SCNTransparencyMode);
 
-		var _SCNTube = __webpack_require__(207);
+		var _SCNTube = __webpack_require__(215);
 
 		var _SCNTube2 = _interopRequireDefault(_SCNTube);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3EqualToVector = __webpack_require__(208);
+		var _SCNVector3EqualToVector = __webpack_require__(216);
 
 		var _SCNVector3EqualToVector2 = _interopRequireDefault(_SCNVector3EqualToVector);
 
-		var _SCNVector3FromFloat = __webpack_require__(209);
+		var _SCNVector3FromFloat = __webpack_require__(217);
 
 		var _SCNVector3FromFloat2 = _interopRequireDefault(_SCNVector3FromFloat);
 
-		var _SCNVector3FromGLKVector = __webpack_require__(210);
+		var _SCNVector3FromGLKVector = __webpack_require__(218);
 
 		var _SCNVector3FromGLKVector2 = _interopRequireDefault(_SCNVector3FromGLKVector);
 
-		var _SCNVector3Make = __webpack_require__(211);
+		var _SCNVector3Make = __webpack_require__(219);
 
 		var _SCNVector3Make2 = _interopRequireDefault(_SCNVector3Make);
 
-		var _SCNVector3ToFloat = __webpack_require__(212);
+		var _SCNVector3ToFloat = __webpack_require__(220);
 
 		var _SCNVector3ToFloat2 = _interopRequireDefault(_SCNVector3ToFloat);
 
-		var _SCNVector3ToGLKVector = __webpack_require__(213);
+		var _SCNVector3ToGLKVector = __webpack_require__(221);
 
 		var _SCNVector3ToGLKVector2 = _interopRequireDefault(_SCNVector3ToGLKVector);
 
-		var _SCNVector3Zero = __webpack_require__(214);
+		var _SCNVector3Zero = __webpack_require__(222);
 
 		var _SCNVector3Zero2 = _interopRequireDefault(_SCNVector3Zero);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNVector4EqualToVector = __webpack_require__(215);
+		var _SCNVector4EqualToVector = __webpack_require__(223);
 
 		var _SCNVector4EqualToVector2 = _interopRequireDefault(_SCNVector4EqualToVector);
 
-		var _SCNVector4FromFloat = __webpack_require__(216);
+		var _SCNVector4FromFloat = __webpack_require__(224);
 
 		var _SCNVector4FromFloat2 = _interopRequireDefault(_SCNVector4FromFloat);
 
-		var _SCNVector4FromGLKVector = __webpack_require__(217);
+		var _SCNVector4FromGLKVector = __webpack_require__(225);
 
 		var _SCNVector4FromGLKVector2 = _interopRequireDefault(_SCNVector4FromGLKVector);
 
-		var _SCNVector4Make = __webpack_require__(218);
+		var _SCNVector4Make = __webpack_require__(226);
 
 		var _SCNVector4Make2 = _interopRequireDefault(_SCNVector4Make);
 
-		var _SCNVector4ToFloat = __webpack_require__(219);
+		var _SCNVector4ToFloat = __webpack_require__(227);
 
 		var _SCNVector4ToFloat2 = _interopRequireDefault(_SCNVector4ToFloat);
 
-		var _SCNVector4ToGLKVector = __webpack_require__(220);
+		var _SCNVector4ToGLKVector = __webpack_require__(228);
 
 		var _SCNVector4ToGLKVector2 = _interopRequireDefault(_SCNVector4ToGLKVector);
 
-		var _SCNView = __webpack_require__(221);
+		var _SCNView = __webpack_require__(229);
 
 		var _SCNView2 = _interopRequireDefault(_SCNView);
 
-		var _SCNWrapMode = __webpack_require__(83);
+		var _SCNWrapMode = __webpack_require__(91);
 
 		var _SCNWrapMode2 = _interopRequireDefault(_SCNWrapMode);
 
-		var _SKAction = __webpack_require__(222);
+		var _SKAction = __webpack_require__(230);
 
 		var _SKAction2 = _interopRequireDefault(_SKAction);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKBlendMode = __webpack_require__(134);
+		var _SKBlendMode = __webpack_require__(144);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -1037,83 +1069,83 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKEffectNode = __webpack_require__(224);
+		var _SKEffectNode = __webpack_require__(232);
 
 		var _SKEffectNode2 = _interopRequireDefault(_SKEffectNode);
 
-		var _SKFade = __webpack_require__(225);
+		var _SKFade = __webpack_require__(233);
 
 		var _SKFade2 = _interopRequireDefault(_SKFade);
 
-		var _SKGroup = __webpack_require__(226);
+		var _SKGroup = __webpack_require__(234);
 
 		var _SKGroup2 = _interopRequireDefault(_SKGroup);
 
-		var _SKLabelHorizontalAlignmentMode = __webpack_require__(227);
+		var _SKLabelHorizontalAlignmentMode = __webpack_require__(235);
 
 		var _SKLabelHorizontalAlignmentMode2 = _interopRequireDefault(_SKLabelHorizontalAlignmentMode);
 
-		var _SKLabelNode = __webpack_require__(228);
+		var _SKLabelNode = __webpack_require__(236);
 
 		var _SKLabelNode2 = _interopRequireDefault(_SKLabelNode);
 
-		var _SKLabelVerticalAlignmentMode = __webpack_require__(229);
+		var _SKLabelVerticalAlignmentMode = __webpack_require__(237);
 
 		var _SKLabelVerticalAlignmentMode2 = _interopRequireDefault(_SKLabelVerticalAlignmentMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
-		var _SKScale = __webpack_require__(230);
+		var _SKScale = __webpack_require__(238);
 
 		var _SKScale2 = _interopRequireDefault(_SKScale);
 
-		var _SKScene = __webpack_require__(231);
+		var _SKScene = __webpack_require__(239);
 
 		var _SKScene2 = _interopRequireDefault(_SKScene);
 
-		var _SKSceneScaleMode = __webpack_require__(232);
+		var _SKSceneScaleMode = __webpack_require__(240);
 
 		var _SKSceneScaleMode2 = _interopRequireDefault(_SKSceneScaleMode);
 
-		var _SKSequence = __webpack_require__(233);
+		var _SKSequence = __webpack_require__(241);
 
 		var _SKSequence2 = _interopRequireDefault(_SKSequence);
 
-		var _SKShapeNode = __webpack_require__(234);
+		var _SKShapeNode = __webpack_require__(242);
 
 		var _SKShapeNode2 = _interopRequireDefault(_SKShapeNode);
 
-		var _SKSpriteNode = __webpack_require__(133);
+		var _SKSpriteNode = __webpack_require__(143);
 
 		var _SKSpriteNode2 = _interopRequireDefault(_SKSpriteNode);
 
-		var _SKTexture = __webpack_require__(136);
+		var _SKTexture = __webpack_require__(146);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
-		var _SKTextureFilteringMode = __webpack_require__(137);
+		var _SKTextureFilteringMode = __webpack_require__(147);
 
 		var _SKTextureFilteringMode2 = _interopRequireDefault(_SKTextureFilteringMode);
 
-		var _SKWait = __webpack_require__(235);
+		var _SKWait = __webpack_require__(243);
 
 		var _SKWait2 = _interopRequireDefault(_SKWait);
 
-		var _AjaxRequest2 = __webpack_require__(100);
+		var _AjaxRequest2 = __webpack_require__(108);
 
 		var _AjaxRequest3 = _interopRequireDefault(_AjaxRequest2);
 
-		var _BinaryReader2 = __webpack_require__(38);
+		var _BinaryReader2 = __webpack_require__(46);
 
 		var _BinaryReader3 = _interopRequireDefault(_BinaryReader2);
 
-		var _BinaryRequest2 = __webpack_require__(99);
+		var _BinaryRequest2 = __webpack_require__(107);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _Buffer2 = __webpack_require__(236);
+		var _Buffer2 = __webpack_require__(244);
 
 		var _Buffer3 = _interopRequireDefault(_Buffer2);
 
@@ -1121,15 +1153,15 @@ var JSceneKitExample =
 
 		var _ClassList3 = _interopRequireDefault(_ClassList2);
 
-		var _File2 = __webpack_require__(36);
+		var _File2 = __webpack_require__(44);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(37);
+		var _FileReader2 = __webpack_require__(45);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
-		var _HTMLCanvasElement2 = __webpack_require__(238);
+		var _HTMLCanvasElement2 = __webpack_require__(246);
 
 		var _HTMLCanvasElement3 = _interopRequireDefault(_HTMLCanvasElement2);
 
@@ -1168,6 +1200,14 @@ var JSceneKitExample =
 		_ClassList3.default.registerClass(_NSNotification2.default);
 		_ClassList3.default.registerClass(_NSURL2.default);
 		_ClassList3.default.registerClass(_NSValue2.default);
+		_ClassList3.default.registerClass(_GCController2.default);
+		_ClassList3.default.registerClass(_GCControllerAxisInput2.default);
+		_ClassList3.default.registerClass(_GCControllerButtonInput2.default);
+		_ClassList3.default.registerClass(_GCControllerDirectionPad2.default);
+		_ClassList3.default.registerClass(_GCControllerElement2.default);
+		_ClassList3.default.registerClass(_GCExtendedGamepad2.default);
+		_ClassList3.default.registerClass(_GCGamepad2.default);
+		_ClassList3.default.registerClass(_GCMicroGamepad2.default);
 		_ClassList3.default.registerClass(_NSObject2.default);
 		_ClassList3.default.registerClass(_CAAction2.default);
 		_ClassList3.default.registerClass(_CAAnimation2.default);
@@ -1393,6 +1433,14 @@ var JSceneKitExample =
 		exports.NSNotification = _NSNotification2.default;
 		exports.NSURL = _NSURL2.default;
 		exports.NSValue = _NSValue2.default;
+		exports.GCController = _GCController2.default;
+		exports.GCControllerAxisInput = _GCControllerAxisInput2.default;
+		exports.GCControllerButtonInput = _GCControllerButtonInput2.default;
+		exports.GCControllerDirectionPad = _GCControllerDirectionPad2.default;
+		exports.GCControllerElement = _GCControllerElement2.default;
+		exports.GCExtendedGamepad = _GCExtendedGamepad2.default;
+		exports.GCGamepad = _GCGamepad2.default;
+		exports.GCMicroGamepad = _GCMicroGamepad2.default;
 		exports.NSObject = _NSObject2.default;
 		exports.CAAction = _CAAction2.default;
 		exports.CAAnimation = _CAAnimation2.default;
@@ -9489,13 +9537,13 @@ var JSceneKitExample =
 		      var instance = new SKColor();
 		      if (bigEndian) {
 		        instance.red = data.readFloatBE(offset + 0);
-		        instance.blue = data.readFloatBE(offset + 4);
-		        instance.green = data.readFloatBE(offset + 8);
+		        instance.green = data.readFloatBE(offset + 4);
+		        instance.blue = data.readFloatBE(offset + 8);
 		        instance.alpha = data.readFloatBE(offset + 12);
 		      } else {
 		        instance.red = data.readFloatLE(offset + 0);
-		        instance.blue = data.readFloatLE(offset + 4);
-		        instance.green = data.readFloatLE(offset + 8);
+		        instance.green = data.readFloatLE(offset + 4);
+		        instance.blue = data.readFloatLE(offset + 8);
 		        instance.alpha = data.readFloatLE(offset + 12);
 		      }
 		      return instance;
@@ -9563,6 +9611,9 @@ var JSceneKitExample =
 		              var b = parseFloat(values[2]);
 		              var a = 1.0;
 		              //console.log(`NSColor -> SKColor NSRGB: r:${r} g:${g} b:${b} a:${a}`)
+		              //if(propValues.NSColorSpace === 1){
+		              //  return new SKColor(1, 1, 1, 1)
+		              //}
 		              return new SKColor(r, g, b, a);
 		            } else if (typeof propValues.NSWhite !== 'undefined') {
 		              var _ascii = propValues.NSWhite.toString('ascii');
@@ -10073,7 +10124,7 @@ var JSceneKitExample =
 		  }, {
 		    key: 'white',
 		    get: function get() {
-		      return new SKColor(1.0, 0.0, 0.0, 1.0);
+		      return new SKColor(1.0, 1.0, 1.0, 1.0);
 		    }
 
 		    /**
@@ -11698,6 +11749,10 @@ var JSceneKitExample =
 
 		var _NSNotification2 = _interopRequireDefault(_NSNotification);
 
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11805,7 +11860,16 @@ var JSceneKitExample =
 		      var f = aSelector.bind(observer);
 		      if (aName === _NSNotification2.default.Name.GCControllerDidConnect) {
 		        window.addEventListener('gamepadconnected', function (e) {
-		          f(new _NSNotification2.default(aName, e.gamepad, anObject));
+		          var controller = _GCController2.default.getController(e.gamepad);
+		          if (controller) {
+		            f(new _NSNotification2.default(aName, controller, anObject));
+		          }
+		        });
+		        window.addEventListener('gamepaddisconnected', function (e) {
+		          var controller = _GCController2.default.getController(e.gamepad);
+		          if (controller) {
+		            f(new _NSNotification2.default(aName, controller, anObject));
+		          }
 		        });
 		      }
 		    }
@@ -12974,6 +13038,1642 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
+		var _GCGamepad = __webpack_require__(30);
+
+		var _GCGamepad2 = _interopRequireDefault(_GCGamepad);
+
+		var _GCExtendedGamepad = __webpack_require__(35);
+
+		var _GCExtendedGamepad2 = _interopRequireDefault(_GCExtendedGamepad);
+
+		var _GCMicroGamepad = __webpack_require__(36);
+
+		var _GCMicroGamepad2 = _interopRequireDefault(_GCMicroGamepad);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		//import GCMotion from './GCMotion'
+		//import GCControllerPlayerIndex from './GCControllerPlayerIndex'
+
+		var navigator = {
+		  getGamepads: function getGamepads() {
+		    return [];
+		  }
+		};
+		if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+		  navigator = window.navigator;
+		}
+
+		/**
+		 * @access private
+		 * @type {Map<number, GCController>}
+		 */
+		var _controllers = new Map();
+
+		/**
+		 * A representation of a physical game controller, connected to the device either physically or through a wireless connection.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gccontroller
+		 */
+
+		var GCController = function (_NSObject) {
+		  _inherits(GCController, _NSObject);
+
+		  _createClass(GCController, null, [{
+		    key: 'getController',
+		    value: function getController(gamepad) {
+		      var pad = gamepad;
+		      if (gamepad.id === '') {
+		        // needs to refresh gamepad info
+		        pad = GCController._gamepadObjByIndex(gamepad.index);
+		        if (pad === null) {
+		          return null;
+		        }
+		      }
+
+		      var controller = _controllers.get(pad.id);
+		      if (controller) {
+		        return controller;
+		      }
+
+		      controller = new GCController();
+		      if (!pad) {
+		        return controller;
+		      }
+		      _controllers.set(pad.id, controller);
+
+		      controller._gamepadIndex = pad.index;
+		      controller._gamepadId = pad.id;
+		      controller._gamepad = new _GCGamepad2.default();
+		      controller._gamepad._controller = controller;
+		      if (gamepad.mapping === 'standard') {
+		        controller._extendedGamepad = new _GCExtendedGamepad2.default();
+		        controller._extendedGamepad._controller = controller;
+		      }
+
+		      return controller;
+		    }
+
+		    /**
+		     * constructor
+		     * @access public
+		     */
+
+		  }]);
+
+		  function GCController() {
+		    _classCallCheck(this, GCController);
+
+		    // Determining Which Profiles Are Supported by a Controller
+
+		    /**
+		     * @type {?GCGamepad}
+		     */
+		    var _this = _possibleConstructorReturn(this, (GCController.__proto__ || Object.getPrototypeOf(GCController)).call(this));
+
+		    _this._gamepad = null;
+
+		    /**
+		     * @type {?GCExtendedGamepad}
+		     */
+		    _this._extendedGamepad = null;
+
+		    /**
+		     * @type {?GCMicroGamepad}
+		     */
+		    _this._microGamepad = null;
+
+		    /**
+		     * @type {?GCMotion}
+		     */
+		    _this._motion = null;
+
+		    // Responding When a Controller Is Paused
+
+		    /**
+		     * A block called when the controller’s pause button is pressed.
+		     * @type {?function(arg1: GCController): void}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458852-controllerpausedhandler
+		     */
+		    _this.controllerPausedHandler = null;
+
+		    // Inspecting a Controller
+
+		    _this._isAttachedToDevice = false;
+		    _this._vendorName = null;
+
+		    // Assigning a Player Index
+
+		    /**
+		     * The player index assigned to the controller.
+		     * @type {GCControllerPlayerIndex}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458885-playerindex
+		     */
+		    _this.playerIndex = null;
+
+		    // Determining Which Dispatch Queue Notifications are Dispatched On
+
+		    /**
+		     * The dispatch queue to be used when the values of a game controller’s input values change.
+		     * @type {DispatchQueue}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458869-handlerqueue
+		     */
+		    _this.handlerQueue = null;
+
+		    _this._gamepadIndex = -1;
+		    _this._gamepadId = -1;
+
+		    _this._state = {
+		      buttons: [],
+		      pressed: [],
+		      axes: []
+		    };
+		    _this._updated = {
+		      buttons: [],
+		      pressed: [],
+		      axes: []
+		    };
+		    return _this;
+		  }
+
+		  _createClass(GCController, [{
+		    key: 'gamepad',
+
+
+		    // Determining Which Profiles Are Supported by a Controller
+
+		    /**
+		     * The gamepad profile.
+		     * @type {?GCGamepad}
+		     * @desc If the controller supports the gamepad profile, then this property holds a GCGamepad object. You use this object to access the input elements of the controller. If the controller does not support the gamepad profile, this property holds nil.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458860-gamepad
+		     */
+		    get: function get() {
+		      return this._gamepad;
+		    }
+
+		    /**
+		     * The extended gamepad profile.
+		     * @type {?GCExtendedGamepad}
+		     * @desc If the controller supports the extended gamepad profile, then this property holds a GCExtendedGamepad object. You use this object to access the input elements of the controller. If the controller does not support the extended gamepad profile, this property holds nil.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458883-extendedgamepad
+		     */
+
+		  }, {
+		    key: 'extendedGamepad',
+		    get: function get() {
+		      return this._extendedGamepad;
+		    }
+
+		    /**
+		     * The micro gamepad profile.
+		     * @type {?GCMicroGamepad}
+		     * @desc If the controller supports the micro gamepad profile, then this property holds a GCMicroGamepad object. You use this object to access the input elements of the controller. If the controller does not support the micro gamepad profile, this property holds nil.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1627772-microgamepad
+		     */
+
+		  }, {
+		    key: 'microGamepad',
+		    get: function get() {
+		      return this._microGamepad;
+		    }
+
+		    /**
+		     * The motion input profile.
+		     * @type {?GCMotion}
+		     * @desc If the controller supports the motion profile, then this property holds a GCMotion object. This profile is typically available when the controller is attached to a device that supports motion. You use this object to access the motion data of the controller. If the controller does not support the motion input profile, this property holds nil.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458884-motion
+		     */
+
+		  }, {
+		    key: 'motion',
+		    get: function get() {
+		      return this._motion;
+		    }
+
+		    // Inspecting a Controller
+
+		    /**
+		     * A Boolean property that indicates whether the controller is closely integrated with the device.
+		     * @type {boolean}
+		     * @desc If true, then the controller is attached to the device or is close enough to it for the player to interact simultaneously with the controller and the device. If false, then the controller is not guaranteed to be near the device.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458868-isattachedtodevice
+		     */
+
+		  }, {
+		    key: 'isAttachedToDevice',
+		    get: function get() {
+		      return this._isAttachedToDevice;
+		    }
+
+		    /**
+		     * The name of the vendor that manufactured the controller.
+		     * @type {?string}
+		     * @desc The value of this property may be nil and is not guaranteed to be unique.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458877-vendorname
+		     */
+
+		  }, {
+		    key: 'vendorName',
+		    get: function get() {
+		      return this._vendorName;
+		    }
+		  }, {
+		    key: 'gamepadObj',
+		    get: function get() {
+		      return GCController._gamepadObjById(this._gamepadId);
+		    }
+		  }], [{
+		    key: '_update',
+		    value: function _update() {
+		      _controllers.forEach(function (c, gamepadId) {
+		        var gamepad = GCController._gamepadObjById(gamepadId);
+		        if (!gamepad) {
+		          _controllers.delete(gamepadId);
+		          return;
+		        }
+		        var bLen = gamepad.buttons.length;
+		        for (var i = 0; i < bLen; i++) {
+		          var b = gamepad.buttons[i];
+		          c._updated.buttons[i] = false;
+		          if (c._state.buttons[i] !== b.value) {
+		            c._state.buttons[i] = b.value;
+		            c._updated.buttons[i] = true;
+		          }
+
+		          c._updated.pressed[i] = false;
+		          if (c._state.pressed[i] !== b.pressed) {
+		            c._state.pressed[i] = b.pressed;
+		            c._updated.pressed[i] = true;
+		          }
+		        }
+
+		        var aLen = gamepad.axes.length;
+		        for (var _i = 0; _i < aLen; _i++) {
+		          var value = gamepad.axes[_i];
+		          c._updated.axes[_i] = false;
+		          if (c._state.axes[_i] !== value) {
+		            c._state.axes[_i] = value;
+		            c._updated.axes[_i] = true;
+		          }
+		        }
+		      });
+
+		      _controllers.forEach(function (c, gamepadId) {
+		        if (c._gamepad) {
+		          c._gamepad._update();
+		        }
+		        if (c._extendedGamepad) {
+		          c._extendedGamepad._update();
+		        }
+		        if (c._microGamepad) {
+		          c._microGamepad._update();
+		        }
+		      });
+		    }
+
+		    // Discovering Controllers
+
+		    /**
+		     * Starts browsing for nearby controllers.
+		     * @access public
+		     * @param {?function(): void} [completionHandler = null] - A block to be called when browsing ends.
+		     * @returns {void}
+		     * @desc You should include a user interface in your game to allow the player to determine when controllers are discovered. When the user chooses to search for controllers, call this method. The device searches asynchronously for discoverable wireless controllers as well as controllers that are connected to iOS devices that have been placed in controller-forwarding mode. Whenever a new controller is connected, a GCControllerDidConnect notification is posted. When no more devices can be found or the discovery process times out, the completion handler is called.If this method is called multiple times, only the block associated with the last invocation is called when discovery times out.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458879-startwirelesscontrollerdiscovery
+		     */
+
+		  }, {
+		    key: 'startWirelessControllerDiscovery',
+		    value: function startWirelessControllerDiscovery() {
+		      var completionHandler = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+		    }
+
+		    /**
+		     * Stops browsing for nearby controllers.
+		     * @access public
+		     * @returns {void}
+		     * @desc This method may be called at any time. If a search for new wireless controllers in progress, that search ends and its completion handler is called. 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458854-stopwirelesscontrollerdiscovery
+		     */
+
+		  }, {
+		    key: 'stopWirelessControllerDiscovery',
+		    value: function stopWirelessControllerDiscovery() {}
+
+		    /**
+		     * The controllers connected to the device.
+		     * @access public
+		     * @returns {GCController[]} - 
+		     * @desc Whenever a controller is connected to or disconnected from the device, the array of controllers is updated and a notification is posted.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontroller/1458871-controllers
+		     */
+
+		  }, {
+		    key: 'controllers',
+		    value: function controllers() {
+		      return null;
+		    }
+		  }, {
+		    key: '_gamepadObjByIndexId',
+		    value: function _gamepadObjByIndexId(index, id) {
+		      var pad = GCController._gamepadObjByIndex(index);
+		      if (pad && pad.id === id) {
+		        return pad;
+		      }
+		      return null;
+		    }
+		  }, {
+		    key: '_gamepadObjByIndex',
+		    value: function _gamepadObjByIndex(index) {
+		      return navigator.getGamepads()[index];
+		    }
+		  }, {
+		    key: '_gamepadObjById',
+		    value: function _gamepadObjById(id) {
+		      var pads = navigator.getGamepads();
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
+
+		      try {
+		        for (var _iterator = pads[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var pad = _step.value;
+
+		          if (pad && pad.id === id) {
+		            return pad;
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+
+		      return null;
+		    }
+		  }]);
+
+		  return GCController;
+		}(_NSObject3.default);
+
+		exports.default = GCController;
+
+	/***/ },
+	/* 30 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
+		var _GCControllerButtonInput = __webpack_require__(31);
+
+		var _GCControllerButtonInput2 = _interopRequireDefault(_GCControllerButtonInput);
+
+		var _GCControllerDirectionPad = __webpack_require__(33);
+
+		var _GCControllerDirectionPad2 = _interopRequireDefault(_GCControllerDirectionPad);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+		//import GCGamepadValueChangedHandler from './GCGamepadValueChangedHandler'
+
+
+		//import GCGamepadSnapshot from './GCGamepadSnapshot'
+
+		var _defaultMapping = {
+		  A: 0,
+		  B: 1,
+		  X: 2,
+		  Y: 3,
+		  L1: 4,
+		  R1: 5,
+		  UP: 12,
+		  DOWN: 13,
+		  LEFT: 14,
+		  RIGHT: 15
+		};
+
+		if (typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Firefox') !== -1) {
+		  // Is this a bug or something?
+		  _defaultMapping.A = 1;
+		  _defaultMapping.B = 2;
+		  _defaultMapping.X = 0;
+		  _defaultMapping.Y = 3;
+		  _defaultMapping.UP = 14;
+		  _defaultMapping.DOWN = 15;
+		  _defaultMapping.LEFT = 16;
+		  _defaultMapping.RIGHT = 17;
+		}
+
+		/**
+		 * The standard set of gamepad controls. 
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad
+		 */
+
+		var GCGamepad = function (_NSObject) {
+		  _inherits(GCGamepad, _NSObject);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCGamepad() {
+		    _classCallCheck(this, GCGamepad);
+
+		    // Determining the Controller That Owns This Profile
+
+		    var _this = _possibleConstructorReturn(this, (GCGamepad.__proto__ || Object.getPrototypeOf(GCGamepad)).call(this));
+
+		    _this._controller = null;
+
+		    // Determining When Any Element in the Profile Changes
+
+		    /**
+		     * A block called when any element in the profile changes.
+		     * @type {?GCGamepadValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497421-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+
+		    // Reading Shoulder Button Inputs
+
+		    _this._leftShoulder = new _GCControllerButtonInput2.default();
+		    _this._rightShoulder = new _GCControllerButtonInput2.default();
+
+		    // Reading Directional Pad Inputs
+
+		    /**
+		     * @type {GCControllerDirectionPad}
+		     */
+		    _this._dpad = new _GCControllerDirectionPad2.default();
+
+		    // Reading Face Button Inputs
+
+		    _this._buttonA = new _GCControllerButtonInput2.default();
+		    _this._buttonB = new _GCControllerButtonInput2.default();
+		    _this._buttonX = new _GCControllerButtonInput2.default();
+		    _this._buttonY = new _GCControllerButtonInput2.default();
+
+		    _this._buttonMapping = new Map([[_this._leftShoulder, _defaultMapping.L1], [_this._rightShoulder, _defaultMapping.R1], [_this._buttonA, _defaultMapping.A], [_this._buttonB, _defaultMapping.B], [_this._buttonX, _defaultMapping.X], [_this._buttonY, _defaultMapping.Y]]);
+		    _this._dpadMapping = new Map([[_this._dpad._up, _defaultMapping.UP], [_this._dpad._down, _defaultMapping.DOWN], [_this._dpad._left, _defaultMapping.LEFT], [_this._dpad._right, _defaultMapping.RIGHT]]);
+		    return _this;
+		  }
+
+		  _createClass(GCGamepad, [{
+		    key: '_update',
+		    value: function _update() {
+		      var _this2 = this;
+
+		      this._buttonMapping.forEach(function (index, c) {
+		        c._value = _this2._controller._state.buttons[index];
+		        c._isPressed = _this2._controller._state.pressed[index];
+		      });
+		      this._dpadMapping.forEach(function (index, c) {
+		        c._value = _this2._controller._state.buttons[index];
+		        c._isPressed = _this2._controller._state.pressed[index];
+		      });
+		      this._dpad._xAxis._value = this._dpad._right._value - this._dpad._left._value;
+		      this._dpad._yAxis._value = this._dpad._down._value - this._dpad._up._value;
+
+		      this._buttonMapping.forEach(function (index, c) {
+		        if (c.pressedChangedHandler && _this2._controller._updated.pressed[index]) {
+		          c.pressedChangedHandler(c, c._value, c._isPressed);
+		        }
+		        if (_this2._controller._updated.buttons[index]) {
+		          if (c.valueChangedHandler) {
+		            c.valueChangedHandler(c, c._value, c._isPressed);
+		          }
+		          if (_this2.valueChangedHandler) {
+		            _this2.valueChangedHandler(_this2, c);
+		          }
+		        }
+		      });
+		      var dpadChanged = false;
+		      this._dpadMapping.forEach(function (index, c) {
+		        if (_this2._controller._updated.pressed[index]) {
+		          dpadChanged = true;
+		          if (c.pressedChangedHandler) {
+		            c.pressedChangedHandler(c, c._value, c._isPressed);
+		          }
+		        }
+		        if (_this2._controller._updated.buttons[index]) {
+		          dpadChanged = true;
+		          if (c.valueChangedHandler) {
+		            c.valueChangedHandler(c, c._value, c._isPressed);
+		          }
+		          if (_this2.valueChangedHandler) {
+		            _this2.valueChangedHandler(_this2, c);
+		          }
+		        }
+		      });
+		      if (dpadChanged) {
+		        if (this._dpad.valueChangedHandler) {
+		          this._dpad.valueChangedHandler(this._dpad, this._dpad._xAxis.value, this._dpad._yAxis.value);
+		        }
+		        if (this.valueChangedHandler) {
+		          this.valueChangedHandler(this, this._dpad);
+		        }
+		      }
+		    }
+		  }, {
+		    key: '_getValue',
+		    value: function _getValue(button) {
+		      var index = this._buttonMapping.get(button);
+		      if (typeof index === 'undefined') {
+		        index = this._dpadMapping.get(button);
+		      }
+		      if (typeof index === 'undefined') {
+		        return null;
+		      }
+
+		      return this._controller._state.buttons[index];
+		    }
+
+		    // Determining the Controller That Owns This Profile
+
+		    /**
+		     * The controller this profile is associated with.
+		     * @type {?GCController}
+		     * @desc 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497428-controller
+		     */
+
+		  }, {
+		    key: 'saveSnapshot',
+
+
+		    // Saving a Snapshot
+
+		    /**
+		     * Saves a snapshot of all of the profile’s elements.
+		     * @access public
+		     * @returns {GCGamepadSnapshot} - 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497415-savesnapshot
+		     */
+		    value: function saveSnapshot() {
+		      return null;
+		    }
+		  }, {
+		    key: 'controller',
+		    get: function get() {
+		      return this._controller;
+		    }
+
+		    // Reading Shoulder Button Inputs
+
+		    /**
+		     * The left shoulder button element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The shoulder buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497423-leftshoulder
+		     */
+
+		  }, {
+		    key: 'leftShoulder',
+		    get: function get() {
+		      return this._leftShoulder;
+		    }
+
+		    /**
+		     * The right shoulder button element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The shoulder buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497429-rightshoulder
+		     */
+
+		  }, {
+		    key: 'rightShoulder',
+		    get: function get() {
+		      return this._rightShoulder;
+		    }
+
+		    // Reading Directional Pad Inputs
+
+		    /**
+		     * The D-pad element.
+		     * @type {GCControllerDirectionPad}
+		     * @desc The directional pad in the gamepad profile is an analog control.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497425-dpad
+		     */
+
+		  }, {
+		    key: 'dpad',
+		    get: function get() {
+		      return this._dpad;
+		    }
+
+		    // Reading Face Button Inputs
+
+		    /**
+		     * The bottom face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497427-buttona
+		     */
+
+		  }, {
+		    key: 'buttonA',
+		    get: function get() {
+		      return this._buttonA;
+		    }
+
+		    /**
+		     * The right face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497418-buttonb
+		     */
+
+		  }, {
+		    key: 'buttonB',
+		    get: function get() {
+		      return this._buttonB;
+		    }
+
+		    /**
+		     * The left face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497417-buttonx
+		     */
+
+		  }, {
+		    key: 'buttonX',
+		    get: function get() {
+		      return this._buttonX;
+		    }
+
+		    /**
+		     * The top face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcgamepad/1497431-buttony
+		     */
+
+		  }, {
+		    key: 'buttonY',
+		    get: function get() {
+		      return this._buttonY;
+		    }
+		  }]);
+
+		  return GCGamepad;
+		}(_NSObject3.default);
+
+		exports.default = GCGamepad;
+
+	/***/ },
+	/* 31 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _GCControllerElement2 = __webpack_require__(32);
+
+		var _GCControllerElement3 = _interopRequireDefault(_GCControllerElement2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		//import GCControllerButtonValueChangedHandler from '../undefined/GCControllerButtonValueChangedHandler'
+
+		/**
+		 * A control element measuring a button press. 
+		 * @access public
+		 * @extends {GCControllerElement}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput
+		 */
+		var GCControllerButtonInput = function (_GCControllerElement) {
+		  _inherits(GCControllerButtonInput, _GCControllerElement);
+
+		  /**
+		   * constructor
+		   * @access public
+		   * @returns {void}
+		   */
+		  function GCControllerButtonInput() {
+		    _classCallCheck(this, GCControllerButtonInput);
+
+		    // Reading the Button’s Value
+
+		    var _this = _possibleConstructorReturn(this, (GCControllerButtonInput.__proto__ || Object.getPrototypeOf(GCControllerButtonInput)).call(this));
+
+		    _this._isPressed = false;
+		    _this._value = 0;
+
+		    // Receiving Notifications When the Button’s Value Changes
+
+		    /**
+		     * A handler to be called when the button is pressed or released.
+		     * @type {?GCControllerButtonValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/1522556-pressedchangedhandler
+		     */
+		    _this.pressedChangedHandler = null;
+
+		    /**
+		     * A handler to be called when the pressure on a button changes.
+		     * @type {?GCControllerButtonValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/1522491-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+
+		    return _this;
+		  }
+
+		  // Reading the Button’s Value
+
+		  /**
+		   * A Boolean value that indicates whether the button is pressed.
+		   * @type {boolean}
+		   * @desc 
+		   * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/1522539-ispressed
+		   */
+
+
+		  _createClass(GCControllerButtonInput, [{
+		    key: 'isPressed',
+		    get: function get() {
+		      return this._isPressed;
+		    }
+
+		    /**
+		     * The level of pressure being applied to the button.
+		     * @type {number}
+		     * @desc If pressure is being applied to the button, then the isPressed property is true and this property indicates the amount of pressure being applied to the button. The pressure value is normalized to a number between 0.0 (minimum pressure) and 1.0 (maximum pressure).If no pressure is being applied to the button, then the isPressed property is false and this property holds a value of 0.0.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/1522580-value
+		     */
+
+		  }, {
+		    key: 'value',
+		    get: function get() {
+		      return this._value;
+		    }
+		  }]);
+
+		  return GCControllerButtonInput;
+		}(_GCControllerElement3.default);
+
+		exports.default = GCControllerButtonInput;
+
+	/***/ },
+	/* 32 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		/**
+		 * An input associated with a physical control, such as a button or thumbstick.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerelement
+		 */
+		var GCControllerElement = function (_NSObject) {
+		  _inherits(GCControllerElement, _NSObject);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCControllerElement() {
+		    _classCallCheck(this, GCControllerElement);
+
+		    // Inspecting Element Properties
+
+		    var _this = _possibleConstructorReturn(this, (GCControllerElement.__proto__ || Object.getPrototypeOf(GCControllerElement)).call(this));
+
+		    _this._isAnalog = false;
+		    _this._collection = null;
+		    return _this;
+		  }
+
+		  // Inspecting Element Properties
+
+		  /**
+		   * Returns a Boolean value that indicates whether the element provides analog data.
+		   * @type {boolean}
+		   * @desc If the value is true, then the value properties defined by the element subclass can return a range (from minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumb stick that allows for a range of physical movement. If the value is false, then the element’s value properties only provides discrete values, typically 0 if the element is off, and 1 if the element is on. 
+		   * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerelement/1522581-isanalog
+		   */
+
+
+		  _createClass(GCControllerElement, [{
+		    key: 'isAnalog',
+		    get: function get() {
+		      return this._isAnalog;
+		    }
+
+		    /**
+		     * Returns the element that this element is part of.
+		     * @type {?GCControllerElement}
+		     * @desc If the element is part of another element, this property holds the parent element. Otherwise, it holds nil.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerelement/1522575-collection
+		     */
+
+		  }, {
+		    key: 'collection',
+		    get: function get() {
+		      return this._collection;
+		    }
+		  }]);
+
+		  return GCControllerElement;
+		}(_NSObject3.default);
+
+		exports.default = GCControllerElement;
+
+	/***/ },
+	/* 33 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _GCControllerElement2 = __webpack_require__(32);
+
+		var _GCControllerElement3 = _interopRequireDefault(_GCControllerElement2);
+
+		var _GCControllerAxisInput = __webpack_require__(34);
+
+		var _GCControllerAxisInput2 = _interopRequireDefault(_GCControllerAxisInput);
+
+		var _GCControllerButtonInput = __webpack_require__(31);
+
+		var _GCControllerButtonInput2 = _interopRequireDefault(_GCControllerButtonInput);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		//import GCControllerDirectionPadValueChangedHandler from './GCControllerDirectionPadValueChangedHandler'
+
+
+		/**
+		 * A control element associated with a directional pad or a thumbstick.
+		 * @access public
+		 * @extends {GCControllerElement}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad
+		 */
+		var GCControllerDirectionPad = function (_GCControllerElement) {
+		  _inherits(GCControllerDirectionPad, _GCControllerElement);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCControllerDirectionPad() {
+		    _classCallCheck(this, GCControllerDirectionPad);
+
+		    // Reading the Directional Pad as a Pair of Axes
+
+		    var _this = _possibleConstructorReturn(this, (GCControllerDirectionPad.__proto__ || Object.getPrototypeOf(GCControllerDirectionPad)).call(this));
+
+		    _this._xAxis = new _GCControllerAxisInput2.default();
+		    _this._yAxis = new _GCControllerAxisInput2.default();
+
+		    // Reading the Directional Pad as a Four Directional Buttons
+
+		    _this._up = new _GCControllerButtonInput2.default();
+		    _this._down = new _GCControllerButtonInput2.default();
+		    _this._left = new _GCControllerButtonInput2.default();
+		    _this._right = new _GCControllerButtonInput2.default();
+
+		    // Receiving Notifications When the Directional Pad’s Values Change
+
+		    /**
+		     * A handler to be called when the directional pad element changes values.
+		     * @type {?GCControllerDirectionPadValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462914-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+		    return _this;
+		  }
+
+		  // Reading the Directional Pad as a Pair of Axes
+
+		  /**
+		   * The value of the directional pad along the horizontal axis (left and right).
+		   * @type {GCControllerAxisInput}
+		   * @desc 
+		   * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462930-xaxis
+		   */
+
+
+		  _createClass(GCControllerDirectionPad, [{
+		    key: 'xAxis',
+		    get: function get() {
+		      return this._xAxis;
+		    }
+
+		    /**
+		     * The value of the directional pad along the vertical axis (up and down).
+		     * @type {GCControllerAxisInput}
+		     * @desc 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462926-yaxis
+		     */
+
+		  }, {
+		    key: 'yAxis',
+		    get: function get() {
+		      return this._yAxis;
+		    }
+
+		    // Reading the Directional Pad as a Four Directional Buttons
+
+		    /**
+		     * A measurement of how far up the directional pad has been moved.
+		     * @type {GCControllerButtonInput}
+		     * @desc The value of the up property is mutually exclusive with the value of the down property. This means that whenever the value of the up property is non-zero, the value of the down property is 0.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462918-up
+		     */
+
+		  }, {
+		    key: 'up',
+		    get: function get() {
+		      return this._up;
+		    }
+
+		    /**
+		     * A measurement of how far down the directional pad has been moved.
+		     * @type {GCControllerButtonInput}
+		     * @desc The value of the down property is mutually exclusive with the value of the up property. This means that whenever the value of the down property is non-zero, the value of the up property is 0.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462920-down
+		     */
+
+		  }, {
+		    key: 'down',
+		    get: function get() {
+		      return this._down;
+		    }
+
+		    /**
+		     * A measurement of how far left the directional pad has been moved.
+		     * @type {GCControllerButtonInput}
+		     * @desc The value of the left property is mutually exclusive with the value of the right property. This means that whenever the value of the left property is non-zero, the value of the right property is 0.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462924-left
+		     */
+
+		  }, {
+		    key: 'left',
+		    get: function get() {
+		      return this._left;
+		    }
+
+		    /**
+		     * A measurement of how far right the directional pad has been moved.
+		     * @type {GCControllerButtonInput}
+		     * @desc The value of the right property is mutually exclusive with the value of the left property. This means that whenever the value of the right property is non-zero, the value of the left property is 0.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/1462922-right
+		     */
+
+		  }, {
+		    key: 'right',
+		    get: function get() {
+		      return this._right;
+		    }
+		  }]);
+
+		  return GCControllerDirectionPad;
+		}(_GCControllerElement3.default);
+
+		exports.default = GCControllerDirectionPad;
+
+	/***/ },
+	/* 34 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _GCControllerElement2 = __webpack_require__(32);
+
+		var _GCControllerElement3 = _interopRequireDefault(_GCControllerElement2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		//import GCControllerAxisValueChangedHandler from '../undefined/GCControllerAxisValueChangedHandler'
+
+		/**
+		 * A control element measuring movement along a particular axis.
+		 * @access public
+		 * @extends {GCControllerElement}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput
+		 */
+		var GCControllerAxisInput = function (_GCControllerElement) {
+		  _inherits(GCControllerAxisInput, _GCControllerElement);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCControllerAxisInput() {
+		    _classCallCheck(this, GCControllerAxisInput);
+
+		    // Polling the Axis’ Value
+
+		    var _this = _possibleConstructorReturn(this, (GCControllerAxisInput.__proto__ || Object.getPrototypeOf(GCControllerAxisInput)).call(this));
+
+		    _this._value = 0;
+
+		    // Receiving Notifications When the Axis’ Value Changes
+
+		    /**
+		     * A handler to be called when the axis changes value.
+		     * @type {?GCControllerAxisValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput/1500221-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+		    return _this;
+		  }
+
+		  // Polling the Axis’ Value
+
+		  /**
+		   * The current value of the axis.
+		   * @type {number}
+		   * @desc On a physical controller, it is common for a portion of the physical control’s moment to be ignored near its neutral position. This part of the control is known as its deadzone. The GCControllerAxisInput element handles the deadzone and other physical constraints of the hardware control and computes a normalized value. The value is in a range from -1 to 1.   If the value is 0, then the movement is in the deadzone. A non-zero value indicates the moment is outside of the deadzone. The value is normalized so that no values are lost because of the deadzone.
+		   * @see https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput/1500224-value
+		   */
+
+
+		  _createClass(GCControllerAxisInput, [{
+		    key: 'value',
+		    get: function get() {
+		      return this._value;
+		    }
+		  }]);
+
+		  return GCControllerAxisInput;
+		}(_GCControllerElement3.default);
+
+		exports.default = GCControllerAxisInput;
+
+	/***/ },
+	/* 35 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
+		var _GCControllerButtonInput = __webpack_require__(31);
+
+		var _GCControllerButtonInput2 = _interopRequireDefault(_GCControllerButtonInput);
+
+		var _GCControllerDirectionPad = __webpack_require__(33);
+
+		var _GCControllerDirectionPad2 = _interopRequireDefault(_GCControllerDirectionPad);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+		//import GCExtendedGamepadValueChangedHandler from './GCExtendedGamepadValueChangedHandler'
+
+
+		//import GCExtendedGamepadSnapshot from './GCExtendedGamepadSnapshot'
+
+		/**
+		 * The extended set of gamepad controls.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad
+		 */
+		var GCExtendedGamepad = function (_NSObject) {
+		  _inherits(GCExtendedGamepad, _NSObject);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCExtendedGamepad() {
+		    _classCallCheck(this, GCExtendedGamepad);
+
+		    // Determining the Controller That Owns This Profile
+
+		    var _this = _possibleConstructorReturn(this, (GCExtendedGamepad.__proto__ || Object.getPrototypeOf(GCExtendedGamepad)).call(this));
+
+		    _this._controller = null;
+
+		    // Determining When Any Element in the Profile Changes
+
+		    /**
+		     * A block called when any element in the profile changes values.
+		     * @type {?GCExtendedGamepadValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522464-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+
+		    // Reading Shoulder Button Inputs
+
+		    _this._leftShoulder = new _GCControllerButtonInput2.default();
+		    _this._rightShoulder = new _GCControllerButtonInput2.default();
+
+		    // Reading Directional Pad Inputs
+
+		    _this._dpad = new _GCControllerDirectionPad2.default();
+
+		    // Reading Face Button Inputs
+
+		    _this._buttonA = new _GCControllerButtonInput2.default();
+		    _this._buttonB = new _GCControllerButtonInput2.default();
+		    _this._buttonX = new _GCControllerButtonInput2.default();
+		    _this._buttonY = new _GCControllerButtonInput2.default();
+
+		    // Reading Thumbstick Inputs
+
+		    _this._leftThumbstick = new _GCControllerDirectionPad2.default();
+		    _this._rightThumbstick = new _GCControllerDirectionPad2.default();
+
+		    // Reading Trigger Inputs
+
+		    _this._leftTrigger = new _GCControllerButtonInput2.default();
+		    _this._rightTrigger = new _GCControllerButtonInput2.default();
+		    return _this;
+		  }
+
+		  _createClass(GCExtendedGamepad, [{
+		    key: '_update',
+		    value: function _update() {}
+
+		    // Determining the Controller That Owns This Profile
+
+		    /**
+		     * The controller this profile is associated with.
+		     * @type {?GCController}
+		     * @desc 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522427-controller
+		     */
+
+		  }, {
+		    key: 'saveSnapshot',
+
+
+		    // Saving a Snapshot
+
+		    /**
+		     * Saves a snapshot of all of the profile’s elements.
+		     * @access public
+		     * @returns {GCExtendedGamepadSnapshot} - 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522447-savesnapshot
+		     */
+		    value: function saveSnapshot() {
+		      return null;
+		    }
+		  }, {
+		    key: 'controller',
+		    get: function get() {
+		      return this._controller;
+		    }
+
+		    // Reading Shoulder Button Inputs
+
+		    /**
+		     * The left shoulder button element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The shoulder buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522418-leftshoulder
+		     */
+
+		  }, {
+		    key: 'leftShoulder',
+		    get: function get() {
+		      return this._leftShoulder;
+		    }
+
+		    /**
+		     * The right shoulder button element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The shoulder buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522484-rightshoulder
+		     */
+
+		  }, {
+		    key: 'rightShoulder',
+		    get: function get() {
+		      return this._rightShoulder;
+		    }
+
+		    // Reading Directional Pad Inputs
+
+		    /**
+		     * The d-pad element.
+		     * @type {GCControllerDirectionPad}
+		     * @desc The directional pad in the extended gamepad profile is an analog control.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522422-dpad
+		     */
+
+		  }, {
+		    key: 'dpad',
+		    get: function get() {
+		      return this._dpad;
+		    }
+
+		    // Reading Face Button Inputs
+
+		    /**
+		     * The bottom face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522558-buttona
+		     */
+
+		  }, {
+		    key: 'buttonA',
+		    get: function get() {
+		      return this._buttonA;
+		    }
+
+		    /**
+		     * The right face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522396-buttonb
+		     */
+
+		  }, {
+		    key: 'buttonB',
+		    get: function get() {
+		      return this._buttonB;
+		    }
+
+		    /**
+		     * The left face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522567-buttonx
+		     */
+
+		  }, {
+		    key: 'buttonX',
+		    get: function get() {
+		      return this._buttonX;
+		    }
+
+		    /**
+		     * The top face button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The face buttons in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522473-buttony
+		     */
+
+		  }, {
+		    key: 'buttonY',
+		    get: function get() {
+		      return this._buttonY;
+		    }
+
+		    // Reading Thumbstick Inputs
+
+		    /**
+		     * The left thumbstick element.
+		     * @type {GCControllerDirectionPad}
+		     * @desc The thumbsticks in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522564-leftthumbstick
+		     */
+
+		  }, {
+		    key: 'leftThumbstick',
+		    get: function get() {
+		      return this._leftThumbstick;
+		    }
+
+		    /**
+		     * The right thumbstick element.
+		     * @type {GCControllerDirectionPad}
+		     * @desc The thumbsticks in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522437-rightthumbstick
+		     */
+
+		  }, {
+		    key: 'rightThumbstick',
+		    get: function get() {
+		      return this._rightThumbstick;
+		    }
+
+		    // Reading Trigger Inputs
+
+		    /**
+		     * The left trigger element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The triggers in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522569-lefttrigger
+		     */
+
+		  }, {
+		    key: 'leftTrigger',
+		    get: function get() {
+		      return this._leftTrigger;
+		    }
+
+		    /**
+		     * The right trigger element.
+		     * @type {GCControllerButtonInput}
+		     * @desc The triggers in the extended gamepad profile are analog buttons.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/1522563-righttrigger
+		     */
+
+		  }, {
+		    key: 'rightTrigger',
+		    get: function get() {
+		      return this._rightTrigger;
+		    }
+		  }]);
+
+		  return GCExtendedGamepad;
+		}(_NSObject3.default);
+
+		exports.default = GCExtendedGamepad;
+
+	/***/ },
+	/* 36 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
+		var _GCControllerDirectionPad = __webpack_require__(33);
+
+		var _GCControllerDirectionPad2 = _interopRequireDefault(_GCControllerDirectionPad);
+
+		var _GCControllerButtonInput = __webpack_require__(31);
+
+		var _GCControllerButtonInput2 = _interopRequireDefault(_GCControllerButtonInput);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+		//import GCMicroGamepadValueChangedHandler from './GCMicroGamepadValueChangedHandler'
+
+
+		//import GCMicroGamepadSnapshot from './GCMicroGamepadSnapshot'
+
+
+		/**
+		 * The controls provided by the Siri Remote.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad
+		 */
+		var GCMicroGamepad = function (_NSObject) {
+		  _inherits(GCMicroGamepad, _NSObject);
+
+		  /**
+		   * constructor
+		   * @access public
+		   */
+		  function GCMicroGamepad() {
+		    _classCallCheck(this, GCMicroGamepad);
+
+		    // Determining the Controller That Owns This Profile
+
+		    var _this = _possibleConstructorReturn(this, (GCMicroGamepad.__proto__ || Object.getPrototypeOf(GCMicroGamepad)).call(this));
+
+		    _this._controller = null;
+
+		    // Determining When Any Element in the Profile Changes
+
+		    /**
+		     * A block called when any element in the profile changes.
+		     * @type {?GCMicroGamepadValueChangedHandler}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627758-valuechangedhandler
+		     */
+		    _this.valueChangedHandler = null;
+
+		    // Reading Directional Pad Inputs
+
+		    /**
+		     * A Boolean value that indicates whether the D-pad reports absolute or relative values.
+		     * @type {boolean}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627757-reportsabsolutedpadvalues
+		     */
+		    _this.reportsAbsoluteDpadValues = false;
+
+		    /**
+		     * A Boolean value that indicates whether the D-pad’s values are calculated relative to its current orientation.
+		     * @type {boolean}
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627755-allowsrotation
+		     */
+		    _this.allowsRotation = false;
+
+		    _this._dpad = null;
+
+		    // Reading Face Button Inputs
+
+		    _this._buttonA = null;
+		    _this._buttonX = null;
+		    return _this;
+		  }
+
+		  // Determining the Controller That Owns This Profile
+		  /**
+		   * The controller this profile is associated with.
+		   * @type {?GCController}
+		   * @desc 
+		   * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627756-controller
+		   */
+
+
+		  _createClass(GCMicroGamepad, [{
+		    key: 'saveSnapshot',
+
+
+		    // Saving a Snapshot
+
+		    /**
+		     * Saves a snapshot of all of the profile’s elements.
+		     * @access public
+		     * @returns {GCMicroGamepadSnapshot} - 
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627754-savesnapshot
+		     */
+		    value: function saveSnapshot() {
+		      return null;
+		    }
+		  }, {
+		    key: 'controller',
+		    get: function get() {
+		      return this._controller;
+		    }
+
+		    // Reading Directional Pad Inputs
+		    /**
+		     * The D-pad element.
+		     * @type {GCControllerDirectionPad}
+		     * @desc The directional pad in the micro gamepad profile reports analog directional information.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627763-dpad
+		     */
+
+		  }, {
+		    key: 'dpad',
+		    get: function get() {
+		      return this._dpad;
+		    }
+
+		    // Reading Face Button Inputs
+		    /**
+		     * The first button.
+		     * @type {GCControllerButtonInput}
+		     * @desc Button A is usually activated by a harder press on the touchpad. The button is always digital.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627762-buttona
+		     */
+
+		  }, {
+		    key: 'buttonA',
+		    get: function get() {
+		      return this._buttonA;
+		    }
+		    /**
+		     * The secondary button.
+		     * @type {GCControllerButtonInput}
+		     * @desc The secondary button is always digital.
+		     * @see https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/1627759-buttonx
+		     */
+
+		  }, {
+		    key: 'buttonX',
+		    get: function get() {
+		      return this._buttonX;
+		    }
+		  }]);
+
+		  return GCMicroGamepad;
+		}(_NSObject3.default);
+
+		exports.default = GCMicroGamepad;
+
+	/***/ },
+	/* 37 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13040,7 +14740,7 @@ var JSceneKitExample =
 		exports.default = NSArray;
 
 	/***/ },
-	/* 30 */
+	/* 38 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -13965,7 +15665,7 @@ var JSceneKitExample =
 		exports.default = NSCoder;
 
 	/***/ },
-	/* 31 */
+	/* 39 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14024,7 +15724,7 @@ var JSceneKitExample =
 		exports.default = NSColorSpace;
 
 	/***/ },
-	/* 32 */
+	/* 40 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14088,7 +15788,7 @@ var JSceneKitExample =
 		exports.default = NSData;
 
 	/***/ },
-	/* 33 */
+	/* 41 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14182,7 +15882,7 @@ var JSceneKitExample =
 		exports.default = NSDictionary;
 
 	/***/ },
-	/* 34 */
+	/* 42 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -14193,7 +15893,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSCoder2 = __webpack_require__(30);
+		var _NSCoder2 = __webpack_require__(38);
 
 		var _NSCoder3 = _interopRequireDefault(_NSCoder2);
 
@@ -14422,7 +16122,7 @@ var JSceneKitExample =
 		exports.default = NSKeyedArchiver;
 
 	/***/ },
-	/* 35 */
+	/* 43 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -14433,23 +16133,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSCoder2 = __webpack_require__(30);
+		var _NSCoder2 = __webpack_require__(38);
 
 		var _NSCoder3 = _interopRequireDefault(_NSCoder2);
 
-		var _NSData = __webpack_require__(32);
+		var _NSData = __webpack_require__(40);
 
 		var _NSData2 = _interopRequireDefault(_NSData);
 
-		var _File2 = __webpack_require__(36);
+		var _File2 = __webpack_require__(44);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(37);
+		var _FileReader2 = __webpack_require__(45);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
-		var _BinaryReader2 = __webpack_require__(38);
+		var _BinaryReader2 = __webpack_require__(46);
 
 		var _BinaryReader3 = _interopRequireDefault(_BinaryReader2);
 
@@ -14603,6 +16303,8 @@ var JSceneKitExample =
 		     * @type {boolean}
 		     */
 		    _this._decodingFinished = false;
+
+		    _this._promises = [];
 
 		    if (data !== null) {
 		      _this._reader = new _BinaryReader3.default(data, true, 'utf8');
@@ -15246,7 +16948,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 36 */
+	/* 44 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -15259,7 +16961,7 @@ var JSceneKitExample =
 		exports.default = File;
 
 	/***/ },
-	/* 37 */
+	/* 45 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -15272,7 +16974,7 @@ var JSceneKitExample =
 		exports.default = FileReader;
 
 	/***/ },
-	/* 38 */
+	/* 46 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -15285,7 +16987,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _ecl = __webpack_require__(39);
+		var _ecl = __webpack_require__(47);
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -15670,7 +17372,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 39 */
+	/* 47 */
 	/***/ function(module, exports) {
 
 		"use strict";
@@ -15958,7 +17660,7 @@ var JSceneKitExample =
 		exports.JCT8836 = JCT8836;
 
 	/***/ },
-	/* 40 */
+	/* 48 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -15967,7 +17669,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSArray2 = __webpack_require__(29);
+		var _NSArray2 = __webpack_require__(37);
 
 		var _NSArray3 = _interopRequireDefault(_NSArray2);
 
@@ -15999,7 +17701,7 @@ var JSceneKitExample =
 		exports.default = NSMutableArray;
 
 	/***/ },
-	/* 41 */
+	/* 49 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16008,7 +17710,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSData2 = __webpack_require__(32);
+		var _NSData2 = __webpack_require__(40);
 
 		var _NSData3 = _interopRequireDefault(_NSData2);
 
@@ -16040,7 +17742,7 @@ var JSceneKitExample =
 		exports.default = NSMutableData;
 
 	/***/ },
-	/* 42 */
+	/* 50 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16049,7 +17751,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _NSDictionary2 = __webpack_require__(33);
+		var _NSDictionary2 = __webpack_require__(41);
 
 		var _NSDictionary3 = _interopRequireDefault(_NSDictionary2);
 
@@ -16081,7 +17783,7 @@ var JSceneKitExample =
 		exports.default = NSMutableDictionary;
 
 	/***/ },
-	/* 43 */
+	/* 51 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16134,7 +17836,7 @@ var JSceneKitExample =
 		      if (url.indexOf(':') < 0) {
 		        url = coder._directoryPath + url;
 		      }
-		      console.error('NSURL: ' + url);
+		      //console.error(`NSURL: ${url}`)
 
 		      return url;
 		    }
@@ -16146,7 +17848,7 @@ var JSceneKitExample =
 		exports.default = NSURL;
 
 	/***/ },
-	/* 44 */
+	/* 52 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16177,19 +17879,19 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _CATransform3D = __webpack_require__(45);
+		var _CATransform3D = __webpack_require__(53);
 
 		var _CATransform3D2 = _interopRequireDefault(_CATransform3D);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -16295,7 +17997,6 @@ var JSceneKitExample =
 		          throw new Error('unknown NSValue size format: ' + size);
 		        }
 		        var values = size.slice(1, -1).split(',').map(parseFloat);
-		        console.error('size width: ' + values[0] + ', height: ' + values[1]);
 		        return new _CGSize2.default(values[0], values[1]);
 		      }
 		      throw new Error('unknown NSValue type');
@@ -16894,7 +18595,7 @@ var JSceneKitExample =
 		exports.default = NSValue;
 
 	/***/ },
-	/* 45 */
+	/* 53 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -16951,7 +18652,7 @@ var JSceneKitExample =
 		exports.default = CATransform3D;
 
 	/***/ },
-	/* 46 */
+	/* 54 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -16962,7 +18663,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -17328,7 +19029,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3;
 
 	/***/ },
-	/* 47 */
+	/* 55 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -17339,11 +19040,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -17488,7 +19189,7 @@ var JSceneKitExample =
 		  }, {
 		    key: 'dot',
 		    value: function dot(v) {
-		      return this.x * v.x + this.y * v.y + this.z * v.z + this.z * v.z;
+		      return this.x * v.x + this.y * v.y + this.z * v.z + this.w * v.w;
 		    }
 
 		    /**
@@ -17875,7 +19576,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4;
 
 	/***/ },
-	/* 48 */
+	/* 56 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -17886,11 +19587,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -18901,7 +20602,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4;
 
 	/***/ },
-	/* 49 */
+	/* 57 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -18959,7 +20660,7 @@ var JSceneKitExample =
 		exports.default = CAAction;
 
 	/***/ },
-	/* 50 */
+	/* 58 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -18972,7 +20673,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _constants = __webpack_require__(51);
+		var _constants = __webpack_require__(59);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -18980,23 +20681,23 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAAction = __webpack_require__(49);
+		var _CAAction = __webpack_require__(57);
 
 		var _CAAction2 = _interopRequireDefault(_CAAction);
 
-		var _CAMediaTiming = __webpack_require__(52);
+		var _CAMediaTiming = __webpack_require__(60);
 
 		var _CAMediaTiming2 = _interopRequireDefault(_CAMediaTiming);
 
-		var _CAMediaTimingFunction = __webpack_require__(53);
+		var _CAMediaTimingFunction = __webpack_require__(61);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAAnimationDelegate = __webpack_require__(54);
+		var _CAAnimationDelegate = __webpack_require__(62);
 
 		var _CAAnimationDelegate2 = _interopRequireDefault(_CAAnimationDelegate);
 
-		var _SCNAnimationEvent = __webpack_require__(55);
+		var _SCNAnimationEvent = __webpack_require__(63);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
@@ -19404,7 +21105,7 @@ var JSceneKitExample =
 		exports.default = CAAnimation;
 
 	/***/ },
-	/* 51 */
+	/* 59 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -19436,7 +21137,7 @@ var JSceneKitExample =
 		exports.kCAAnimationRotateAutoReverse = 'autoReverse';
 
 	/***/ },
-	/* 52 */
+	/* 60 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -19531,7 +21232,7 @@ var JSceneKitExample =
 		exports.default = CAMediaTiming;
 
 	/***/ },
-	/* 53 */
+	/* 61 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19546,7 +21247,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _constants = __webpack_require__(51);
+		var _constants = __webpack_require__(59);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -19692,7 +21393,7 @@ var JSceneKitExample =
 		exports.default = CAMediaTimingFunction;
 
 	/***/ },
-	/* 54 */
+	/* 62 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19703,7 +21404,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimation = __webpack_require__(50);
+		var _CAAnimation = __webpack_require__(58);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -19767,7 +21468,7 @@ var JSceneKitExample =
 		exports.default = CAAnimationDelegate;
 
 	/***/ },
-	/* 55 */
+	/* 63 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19835,7 +21536,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimationEvent;
 
 	/***/ },
-	/* 56 */
+	/* 64 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19848,7 +21549,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAAnimation2 = __webpack_require__(50);
+		var _CAAnimation2 = __webpack_require__(58);
 
 		var _CAAnimation3 = _interopRequireDefault(_CAAnimation2);
 
@@ -19953,7 +21654,7 @@ var JSceneKitExample =
 		exports.default = CAAnimationGroup;
 
 	/***/ },
-	/* 57 */
+	/* 65 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -19966,7 +21667,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAPropertyAnimation2 = __webpack_require__(58);
+		var _CAPropertyAnimation2 = __webpack_require__(66);
 
 		var _CAPropertyAnimation3 = _interopRequireDefault(_CAPropertyAnimation2);
 
@@ -20082,9 +21783,9 @@ var JSceneKitExample =
 		        if (t > 1) {
 		          t = 1;
 		        }
-		        if (this.keyPath === 'rotation.w') {
-		          console.log('time: ' + time + ', activeTime: ' + (time - this._animationStartTime) + ', baseTime: ' + baseTime + ', t: ' + t);
-		        }
+		        //if(this.keyPath === 'rotation.w'){
+		        //  console.log(`time: ${time}, activeTime: ${time - this._animationStartTime}, baseTime: ${baseTime}, t: ${t}`)
+		        //}
 		      }
 
 		      var isObject = false;
@@ -20156,13 +21857,13 @@ var JSceneKitExample =
 		        // TODO: retain prevValue
 		        //value = this._lerp(prevValue, currentValue, t)
 		      }
-		      var value = this._lerp(fromValue, toValue, t);
+		      var value = this._lerp(fromValue, toValue, t
 
-		      if (this.keyPath === 'rotation.w') {
-		        console.log('from: ' + fromValue + ', to: ' + toValue + ', t: ' + t + ', value: ' + value);
-		      }
+		      //if(this.keyPath === 'rotation.w'){
+		      //  console.log(`from: ${fromValue}, to: ${toValue}, t: ${t}, value: ${value}`)
+		      //}
 
-		      if (this.isAdditive) {
+		      );if (this.isAdditive) {
 		        if (isObject) {
 		          //value = value.add(obj.valueForKeyPath(this.keyPath))
 		          value = value.add(this._baseValue);
@@ -20171,9 +21872,9 @@ var JSceneKitExample =
 		        }
 		      }
 
-		      if (this.keyPath === 'rotation.w') {
-		        console.log('value after: ' + value);
-		      }
+		      //if(this.keyPath === 'rotation.w'){
+		      //  console.log(`value after: ${value}`)
+		      //}
 
 		      //console.log(`CABasicAnimation._applyAnimation: keyPath: ${this.keyPath}, time: ${time}, baseTime: ${baseTime}, t: ${t}, value: ${value}`)
 		      this._applyValue(obj, value);
@@ -20187,7 +21888,7 @@ var JSceneKitExample =
 		exports.default = CABasicAnimation;
 
 	/***/ },
-	/* 58 */
+	/* 66 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20200,7 +21901,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAAnimation2 = __webpack_require__(50);
+		var _CAAnimation2 = __webpack_require__(58);
 
 		var _CAAnimation3 = _interopRequireDefault(_CAAnimation2);
 
@@ -20216,19 +21917,19 @@ var JSceneKitExample =
 
 		var _CGRect2 = _interopRequireDefault(_CGRect);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNQuaternion = __webpack_require__(59);
+		var _SCNQuaternion = __webpack_require__(67);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(46);
+		var _SCNVector3 = __webpack_require__(54);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -20437,7 +22138,7 @@ var JSceneKitExample =
 		exports.default = CAPropertyAnimation;
 
 	/***/ },
-	/* 59 */
+	/* 67 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20446,7 +22147,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -20463,7 +22164,7 @@ var JSceneKitExample =
 		exports.default = SCNQuaternion;
 
 	/***/ },
-	/* 60 */
+	/* 68 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -20485,7 +22186,7 @@ var JSceneKitExample =
 		exports.default = CACurrentMediaTime;
 
 	/***/ },
-	/* 61 */
+	/* 69 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20498,7 +22199,7 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _CAPropertyAnimation2 = __webpack_require__(58);
+		var _CAPropertyAnimation2 = __webpack_require__(66);
 
 		var _CAPropertyAnimation3 = _interopRequireDefault(_CAPropertyAnimation2);
 
@@ -20506,11 +22207,11 @@ var JSceneKitExample =
 
 		var _CGPath2 = _interopRequireDefault(_CGPath);
 
-		var _CAMediaTimingFunction = __webpack_require__(53);
+		var _CAMediaTimingFunction = __webpack_require__(61);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _constants = __webpack_require__(51);
+		var _constants = __webpack_require__(59);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -20757,7 +22458,7 @@ var JSceneKitExample =
 		exports.default = CAKeyframeAnimation;
 
 	/***/ },
-	/* 62 */
+	/* 70 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -20774,6 +22475,10 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
+		var _CAMediaTimingFunction = __webpack_require__(61);
+
+		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
+
 		var _CGPoint = __webpack_require__(7);
 
 		var _CGPoint2 = _interopRequireDefault(_CGPoint);
@@ -20786,15 +22491,15 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -20802,7 +22507,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _constants = __webpack_require__(51);
+		var _constants = __webpack_require__(59);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -20979,6 +22684,19 @@ var JSceneKitExample =
 		  }, {
 		    key: '_getTime',
 		    value: function _getTime(time, needTimeConversion) {
+		      var t = this.__getTime(time, needTimeConversion);
+		      if (this._timingMode === _SCNActionTimingMode2.default.easeIn) {
+		        return _CAMediaTimingFunction2.default.functionWithName(Constants.kCAMediaTimingFunctionEaseIn)._getValueAtTime(t);
+		      } else if (this._timingMode === _SCNActionTimingMode2.default.easeOut) {
+		        return _CAMediaTimingFunction2.default.functionWithName(Constants.kCAMediaTimingFunctionEaseOut)._getValueAtTime(t);
+		      } else if (this._timingMode === _SCNActionTimingMode2.default.easeInEaseOut) {
+		        return _CAMediaTimingFunction2.default.functionWithName(Constants.kCAMediaTimingFunctionEaseInEaseOut)._getValueAtTime(t);
+		      }
+		      return t;
+		    }
+		  }, {
+		    key: '__getTime',
+		    value: function __getTime(time, needTimeConversion) {
 		      if (!needTimeConversion) {
 		        if (time >= 1.0 && !this._finished) {
 		          this._finished = true;
@@ -21634,7 +23352,7 @@ var JSceneKitExample =
 		exports.default = SCNAction;
 
 	/***/ },
-	/* 63 */
+	/* 71 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -21662,7 +23380,7 @@ var JSceneKitExample =
 		exports.default = SCNActionTimingMode;
 
 	/***/ },
-	/* 64 */
+	/* 72 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -21673,7 +23391,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction = __webpack_require__(62);
+		var _SCNAction = __webpack_require__(70);
 
 		var _SCNAction2 = _interopRequireDefault(_SCNAction);
 
@@ -21845,7 +23563,7 @@ var JSceneKitExample =
 		exports.default = SCNActionable;
 
 	/***/ },
-	/* 65 */
+	/* 73 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -21856,11 +23574,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -21918,7 +23636,7 @@ var JSceneKitExample =
 		exports.default = SCNActionCustom;
 
 	/***/ },
-	/* 66 */
+	/* 74 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -21931,15 +23649,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -22044,7 +23762,7 @@ var JSceneKitExample =
 		        throw new Error('unsupported class for SCNActionFade: ' + obj.constructor.name);
 		      }
 
-		      var baseValue = obj.opacity;
+		      var baseValue = obj._opacity;
 		      var toValue = 0;
 		      if (this._toValue !== null) {
 		        toValue = this._toValue;
@@ -22056,10 +23774,10 @@ var JSceneKitExample =
 
 		      var value = this._lerp(baseValue, toValue, t
 		      //console.warn(`opacity time: ${time}, t: ${t}, base: ${baseValue}, to: ${toValue}, val: ${value}`)
-		      );obj.presentation.opacity = value;
+		      );obj.presentation._opacity = value;
 
 		      if (this._finished) {
-		        obj.opacity = toValue;
+		        obj._opacity = toValue;
 		      }
 		    }
 		  }], [{
@@ -22142,7 +23860,7 @@ var JSceneKitExample =
 		_SCNAction3.default.fadeOpacityToDuration = SCNActionFade.fadeOpacityToDuration;
 
 	/***/ },
-	/* 67 */
+	/* 75 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -22155,19 +23873,19 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimationGroup = __webpack_require__(56);
+		var _CAAnimationGroup = __webpack_require__(64);
 
 		var _CAAnimationGroup2 = _interopRequireDefault(_CAAnimationGroup);
 
-		var _CABasicAnimation = __webpack_require__(57);
+		var _CABasicAnimation = __webpack_require__(65);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _CAMediaTimingFunction = __webpack_require__(53);
+		var _CAMediaTimingFunction = __webpack_require__(61);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CAKeyframeAnimation = __webpack_require__(61);
+		var _CAKeyframeAnimation = __webpack_require__(69);
 
 		var _CAKeyframeAnimation2 = _interopRequireDefault(_CAKeyframeAnimation);
 
@@ -22175,103 +23893,103 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNActionable = __webpack_require__(64);
+		var _SCNActionable = __webpack_require__(72);
 
 		var _SCNActionable2 = _interopRequireDefault(_SCNActionable);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNBoundingVolume = __webpack_require__(69);
+		var _SCNBoundingVolume = __webpack_require__(77);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNLight = __webpack_require__(86);
+		var _SCNLight = __webpack_require__(94);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNCamera = __webpack_require__(132);
+		var _SCNCamera = __webpack_require__(142);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNMorpher = __webpack_require__(139);
+		var _SCNMorpher = __webpack_require__(149);
 
 		var _SCNMorpher2 = _interopRequireDefault(_SCNMorpher);
 
-		var _SCNSkinner = __webpack_require__(141);
+		var _SCNSkinner = __webpack_require__(151);
 
 		var _SCNSkinner2 = _interopRequireDefault(_SCNSkinner);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(142);
+		var _SCNMatrix4MakeScale = __webpack_require__(152);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNQuaternion = __webpack_require__(59);
+		var _SCNQuaternion = __webpack_require__(67);
 
 		var _SCNQuaternion2 = _interopRequireDefault(_SCNQuaternion);
 
-		var _SCNConstraint = __webpack_require__(143);
+		var _SCNConstraint = __webpack_require__(153);
 
 		var _SCNConstraint2 = _interopRequireDefault(_SCNConstraint);
 
-		var _SCNMovabilityHint = __webpack_require__(144);
+		var _SCNMovabilityHint = __webpack_require__(154);
 
 		var _SCNMovabilityHint2 = _interopRequireDefault(_SCNMovabilityHint);
 
-		var _SCNNodeRendererDelegate = __webpack_require__(145);
+		var _SCNNodeRendererDelegate = __webpack_require__(155);
 
 		var _SCNNodeRendererDelegate2 = _interopRequireDefault(_SCNNodeRendererDelegate);
 
-		var _SCNOrderedDictionary = __webpack_require__(81);
+		var _SCNOrderedDictionary = __webpack_require__(89);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsField = __webpack_require__(146);
+		var _SCNPhysicsField = __webpack_require__(156);
 
 		var _SCNPhysicsField2 = _interopRequireDefault(_SCNPhysicsField);
 
-		var _SCNParticleSystem = __webpack_require__(109);
+		var _SCNParticleSystem = __webpack_require__(119);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNTransaction = __webpack_require__(82);
+		var _SCNTransaction = __webpack_require__(90);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNAudioPlayer = __webpack_require__(149);
+		var _SCNAudioPlayer = __webpack_require__(159);
 
 		var _SCNAudioPlayer2 = _interopRequireDefault(_SCNAudioPlayer);
 
-		var _SCNHitTestResult = __webpack_require__(108);
+		var _SCNHitTestResult = __webpack_require__(118);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -22279,7 +23997,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _constants = __webpack_require__(51);
+		var _constants = __webpack_require__(59);
 
 		var Constants = _interopRequireWildcard(_constants);
 
@@ -22330,7 +24048,7 @@ var JSceneKitExample =
 		        rotation: ['SCNVector4', '_rotation'],
 		        scale: ['SCNVector3', '_scale'],
 		        hidden: ['boolean', 'isHidden'],
-		        opacity: 'float',
+		        opacity: ['float', '_opacity'],
 		        renderingOrder: 'integer',
 		        castsShadow: 'boolean',
 		        childNodes: ['NSArray', function (obj, childNodes) {
@@ -22540,7 +24258,8 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnnode/1408010-opacity
 		     */
-		    _this.opacity = 1;
+		    _this._opacity = 1;
+		    _this._worldOpacity = 1;
 
 		    /**
 		     * The order the node’s content is drawn in relative to that of other nodes.
@@ -22673,7 +24392,13 @@ var JSceneKitExample =
 		     */
 		    _this._nodeID = null;
 
-		    _this._updateBoundingBox();
+		    _this._updateBoundingBox
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    ();_this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -22690,15 +24415,19 @@ var JSceneKitExample =
 
 		      if (this._presentation) {
 		        var pp = null;
+		        var ppOpacity = 1.0;
 		        if (this._parent === null) {
 		          pp = (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0);
 		        } else if (this._parent._presentation === null) {
 		          pp = this._parent._worldTransform;
+		          ppOpacity = this._parent._worldOpacity;
 		        } else {
 		          pp = this._parent._presentation._worldTransform;
+		          ppOpacity = this._parent._presentation._worldOpacity;
 		        }
 		        this._presentation._updateTransform();
 		        this._presentation._worldTransform = this._presentation.transform.mult(pp);
+		        this._presentation._worldOpacity = this._presentation._opacity * ppOpacity;
 		      }
 
 		      this._childNodes.forEach(function (child) {
@@ -23014,8 +24743,36 @@ var JSceneKitExample =
 		    // Adding Physics to a Node
 
 		  }, {
-		    key: 'addParticleSystem',
+		    key: '_resetPhysicsTransformRecursively',
+		    value: function _resetPhysicsTransformRecursively() {
+		      if (this._physicsBody) {
+		        this._physicsBody._resetTransform();
+		      }
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
 
+		      try {
+		        for (var _iterator = this._childNodes[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var child = _step.value;
+
+		          child._resetPhysicsTransformRecursively();
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+		    }
 
 		    // Working With Particle Systems
 
@@ -23027,6 +24784,9 @@ var JSceneKitExample =
 		     * @desc When attached to a node, a particle system’s emitter location follows that node as it moves through the scene. To instead attach a particle system to a location in the scene’s world coordinate space, use the corresponding method on SCNScene.For details on particle systems, see SCNParticleSystem.
 		     * @see https://developer.apple.com/reference/scenekit/scnnode/1523123-addparticlesystem
 		     */
+
+		  }, {
+		    key: 'addParticleSystem',
 		    value: function addParticleSystem(system) {
 		      if (this._particleSystems === null) {
 		        this._particleSystems = [];
@@ -23619,7 +25379,23 @@ var JSceneKitExample =
 		          max: new _SCNVector2.default(-Infinity, -Infinity, -Infinity)
 		        };
 		      }
-		      return this._geometry.boundingBox;
+		      var boundingBox = this._geometry.boundingBox;
+		      // FIXME: rotate and scale
+		      if (this.skinner && this.skinner.baseGeometryBindTransform) {
+		        var tx = this.skinner.baseGeometryBindTransform.m41;
+		        var ty = this.skinner.baseGeometryBindTransform.m42;
+		        var tz = this.skinner.baseGeometryBindTransform.m43;
+		        boundingBox.min.x += tx;
+		        boundingBox.min.y += ty;
+		        boundingBox.min.z += tz;
+		        boundingBox.max.x += tx;
+		        boundingBox.max.y += ty;
+		        boundingBox.max.z += tz;
+		      }
+
+		      //return this._geometry.boundingBox
+		      //return this._geometry._updateBoundingBoxForSkinner(this.skinner)
+		      return boundingBox;
 		    }
 		  }, {
 		    key: '_updateBoundingBox',
@@ -23659,28 +25435,28 @@ var JSceneKitExample =
 		        box.max.z *= scale.z;
 		      }
 
-		      var _iteratorNormalCompletion = true;
-		      var _didIteratorError = false;
-		      var _iteratorError = undefined;
+		      var _iteratorNormalCompletion2 = true;
+		      var _didIteratorError2 = false;
+		      var _iteratorError2 = undefined;
 
 		      try {
-		        for (var _iterator = this._childNodes[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-		          var child = _step.value;
+		        for (var _iterator2 = this._childNodes[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		          var child = _step2.value;
 
 		          var cbox = child._updateBoundingBox();
 		          box = this._unionChildBoundingBox(box, cbox);
 		        }
 		      } catch (err) {
-		        _didIteratorError = true;
-		        _iteratorError = err;
+		        _didIteratorError2 = true;
+		        _iteratorError2 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion && _iterator.return) {
-		            _iterator.return();
+		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		            _iterator2.return();
 		          }
 		        } finally {
-		          if (_didIteratorError) {
-		            throw _iteratorError;
+		          if (_didIteratorError2) {
+		            throw _iteratorError2;
 		          }
 		        }
 		      }
@@ -23749,7 +25525,7 @@ var JSceneKitExample =
 		      node._isPresentationInstance = this._isPresentationInstance;
 		      node.constraints = this.constraints ? this.constraints.slice(0) : null;
 		      node.isHidden = this.isHidden;
-		      node.opacity = this.opacity;
+		      node._opacity = this._opacity;
 		      node.renderingOrder = this.renderingOrder;
 		      node.castsShadow = this.castsShadow;
 		      node.movabilityHint = this.movabilityHint;
@@ -23796,32 +25572,34 @@ var JSceneKitExample =
 		  }, {
 		    key: '_copyMaterialPropertiesToPresentation',
 		    value: function _copyMaterialPropertiesToPresentation() {
+		      var p = this._presentation;
 		      if (this._geometry) {
-		        var _iteratorNormalCompletion2 = true;
-		        var _didIteratorError2 = false;
-		        var _iteratorError2 = undefined;
+		        var _iteratorNormalCompletion3 = true;
+		        var _didIteratorError3 = false;
+		        var _iteratorError3 = undefined;
 
 		        try {
-		          for (var _iterator2 = this._geometry.materials[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-		            var material = _step2.value;
+		          for (var _iterator3 = this._geometry.materials[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+		            var material = _step3.value;
 
 		            material._copyPresentationProperties();
 		          }
 		        } catch (err) {
-		          _didIteratorError2 = true;
-		          _iteratorError2 = err;
+		          _didIteratorError3 = true;
+		          _iteratorError3 = err;
 		        } finally {
 		          try {
-		            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-		              _iterator2.return();
+		            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+		              _iterator3.return();
 		            }
 		          } finally {
-		            if (_didIteratorError2) {
-		              throw _iteratorError2;
+		            if (_didIteratorError3) {
+		              throw _iteratorError3;
 		            }
 		          }
 		        }
 		      }
+		      p.opacity = this.opacity;
 		    }
 		  }, {
 		    key: 'valueForUndefinedKey',
@@ -23853,7 +25631,6 @@ var JSceneKitExample =
 		    value: function valueForKeyPath(keyPath) {
 		      var usePresentation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
-		      // FIXME: check flags to decide to use a presentation node
 		      var target = usePresentation && this._presentation ? this._presentation : this;
 		      var paths = keyPath.split('.');
 		      var key = paths[0];
@@ -23890,7 +25667,7 @@ var JSceneKitExample =
 		        }
 		        return target.transform;
 		      }
-		      return _get(SCNNode.prototype.__proto__ || Object.getPrototypeOf(SCNNode.prototype), 'valueForKeyPath', this).call(this, keyPath);
+		      return _get(SCNNode.prototype.__proto__ || Object.getPrototypeOf(SCNNode.prototype), 'valueForKeyPath', this).call(this, keyPath, usePresentation);
 		    }
 		  }, {
 		    key: 'setValueForKey',
@@ -24065,15 +25842,111 @@ var JSceneKitExample =
 		    }
 		  }, {
 		    key: 'destory',
-		    value: function destory() {
-		      //if(this.physicsBody !== null){
-		      //  this.physicsBody.destory()
-		      //  this.physicsBody = null
-		      //}
-		      //if(this._geometry !== null){
-		      //  // the geometry might be shared with other nodes...
-		      //  //this.geometry.destroy()
-		      //}
+		    value: function destory() {}
+		    //if(this.physicsBody !== null){
+		    //  this.physicsBody.destory()
+		    //  this.physicsBody = null
+		    //}
+		    //if(this._geometry !== null){
+		    //  // the geometry might be shared with other nodes...
+		    //  //this.geometry.destroy()
+		    //}
+
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+
+		  }, {
+		    key: '_getLoadedPromise',
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      var promises = [];
+		      var _iteratorNormalCompletion4 = true;
+		      var _didIteratorError4 = false;
+		      var _iteratorError4 = undefined;
+
+		      try {
+		        for (var _iterator4 = this._childNodes[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+		          var child = _step4.value;
+
+		          promises.push(child._getLoadedPromise());
+		        }
+		      } catch (err) {
+		        _didIteratorError4 = true;
+		        _iteratorError4 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion4 && _iterator4.return) {
+		            _iterator4.return();
+		          }
+		        } finally {
+		          if (_didIteratorError4) {
+		            throw _iteratorError4;
+		          }
+		        }
+		      }
+
+		      if (this._particleSystems) {
+		        var _iteratorNormalCompletion5 = true;
+		        var _didIteratorError5 = false;
+		        var _iteratorError5 = undefined;
+
+		        try {
+		          for (var _iterator5 = this._particleSystems[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+		            var system = _step5.value;
+
+		            promises.push(system._getLoadedPromise());
+		          }
+		        } catch (err) {
+		          _didIteratorError5 = true;
+		          _iteratorError5 = err;
+		        } finally {
+		          try {
+		            if (!_iteratorNormalCompletion5 && _iterator5.return) {
+		              _iterator5.return();
+		            }
+		          } finally {
+		            if (_didIteratorError5) {
+		              throw _iteratorError5;
+		            }
+		          }
+		        }
+		      }
+		      if (this._geometry) {
+		        promises.push(this._geometry._getLoadedPromise());
+		      }
+		      var _iteratorNormalCompletion6 = true;
+		      var _didIteratorError6 = false;
+		      var _iteratorError6 = undefined;
+
+		      try {
+		        for (var _iterator6 = this._audioPlayers[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+		          var player = _step6.value;
+
+		          promises.push(player._getLoadedPromise());
+		        }
+		      } catch (err) {
+		        _didIteratorError6 = true;
+		        _iteratorError6 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion6 && _iterator6.return) {
+		            _iterator6.return();
+		          }
+		        } finally {
+		          if (_didIteratorError6) {
+		            throw _iteratorError6;
+		          }
+		        }
+		      }
+
+		      this._loadedPromise = Promise.all(promises);
+		      return this._loadedPromise;
 		    }
 		  }, {
 		    key: 'geometry',
@@ -24191,21 +26064,6 @@ var JSceneKitExample =
 		      this._updateWorldTransform();
 		      _SCNTransaction2.default._addChange(this, 'rotation', oldValue, newValue);
 		    }
-		    //_setRotation(newValue){
-		    //  if(typeof newValue.x !== 'number'
-		    //    || typeof newValue.y !== 'number'
-		    //    || typeof newValue.z !== 'number'
-		    //    || typeof newValue.w !== 'number'){
-		    //    throw new Error('error: SCNNode.rotation must have x, y, z, w values')
-		    //  }
-		    //  this._rotation.x = newValue.x
-		    //  this._rotation.y = newValue.y
-		    //  this._rotation.z = newValue.z
-		    //  this._rotation.w = newValue.w
-		    //  this._transformUpToDate = false
-		    //  this._updateWorldTransform()
-		    //}
-
 		  }, {
 		    key: 'scale',
 		    get: function get() {
@@ -24265,26 +26123,6 @@ var JSceneKitExample =
 		      return this._rotation.rotationToEulerAngles();
 		    },
 		    set: function set(newValue) {
-		      /*
-		      const halfX = newValue.x * 0.5
-		      const halfY = newValue.y * 0.5
-		      const halfZ = newValue.z * 0.5
-		      const cosX = Math.cos(halfX)
-		      const sinX = Math.sin(halfX)
-		      const cosY = Math.cos(halfY)
-		      const sinY = Math.sin(halfY)
-		      const cosZ = Math.cos(halfZ)
-		      const sinZ = Math.sin(halfZ)
-		       const q = new SCNVector4()
-		      const x = sinX * cosY * cosZ - cosX * sinY * sinZ
-		      const y = cosX * sinY * cosZ + sinX * cosY * sinZ
-		      const z = cosX * cosY * sinZ - sinX * sinY * cosZ
-		      const r = 1.0 / Math.sqrt(x * x + y * y + z * z)
-		      q.x = x * r
-		      q.y = y * r
-		      q.z = z * r
-		      q.w = 2 * Math.acos(cosX * cosY * cosZ + sinX * sinY * sinZ)
-		      */
 		      this._rotation = newValue.eulerAnglesToRotation();
 		      this._transformUpToDate = false;
 		    }
@@ -24298,63 +26136,15 @@ var JSceneKitExample =
 		  }, {
 		    key: 'orientation',
 		    get: function get() {
-		      /*
-		      const quat = new SCNVector4()
-		      const rot = this._rotation
-		       if(rot.x === 0 && rot.y === 0 && rot.z === 0){
-		        quat.x = 0
-		        quat.y = 0
-		        quat.z = 0
-		        quat.w = 1.0
-		      }else{
-		        const r = 1.0 / Math.sqrt(rot.x * rot.x + rot.y * rot.y + rot.z * rot.z)
-		        const cosW = Math.cos(rot.w)
-		        const sinW = Math.sin(rot.w)
-		        quat.x = rot.x * sinW
-		        quat.y = rot.y * sinW
-		        quat.z = rot.z * sinW
-		        quat.w = cosW
-		      }
-		      return quat
-		      */
-		      //console.log(`SCNNode get orientation: ${this._rotation.rotationToQuat()}`)
 		      return this._rotation.rotationToQuat();
 		    },
 		    set: function set(newValue) {
-		      /*
-		      const rot = new SCNVector4()
-		       if(newValue.x === 0 && newValue.y === 0 && newValue.z === 0){
-		        rot.x = 0
-		        rot.y = 0
-		        rot.z = 0
-		        rot.w = 0
-		      }else{
-		        rot.x = newValue.x
-		        rot.y = newValue.y
-		        rot.z = newValue.z
-		        let quatW = newValue.w
-		        if(quatW > 1){
-		          quatW = 1.0
-		        }else if(quatW < -1){
-		          quatW = -1.0
-		        }
-		        const w = Math.acos(quatW)
-		         if(isNaN(w)){
-		          rot.w = 0
-		        }else{
-		          rot.w = w
-		        }
-		      }
-		          
-		      this._rotation = rot
-		      */
 		      if (!(newValue instanceof _SCNVector4.default)) {
 		        throw new Error('orientation must be SCNVector4');
 		      }
 
-		      this._rotation = newValue.quatToRotation
-		      //console.log(`SCNNode set orientation: ${this._rotation.float32Array()}`)
-		      ();this._transformUpToDate = false;
+		      this._rotation = newValue.quatToRotation();
+		      this._transformUpToDate = false;
 		    }
 
 		    /**
@@ -24426,6 +26216,23 @@ var JSceneKitExample =
 		  }, {
 		    key: '_worldScale',
 		    get: function get() {}
+
+		    /**
+		     * The opacity value of the node. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnnode/1408010-opacity
+		     */
+
+		  }, {
+		    key: 'opacity',
+		    get: function get() {
+		      return this._opacity;
+		    },
+		    set: function set(newValue) {
+		      var oldValue = this._opacity;
+		      this._opacity = newValue;
+		      _SCNTransaction2.default._addChange(this, '_opacity', oldValue, newValue);
+		    }
 		  }, {
 		    key: 'parent',
 		    get: function get() {
@@ -24453,6 +26260,7 @@ var JSceneKitExample =
 		      }
 		      this._physicsBody = newValue;
 		      this._physicsBody._node = this;
+		      this._physicsBody.resetTransform();
 		    }
 		  }, {
 		    key: 'particleSystems',
@@ -24481,27 +26289,27 @@ var JSceneKitExample =
 		    key: 'actionKeys',
 		    get: function get() {
 		      var keys = [];
-		      var _iteratorNormalCompletion3 = true;
-		      var _didIteratorError3 = false;
-		      var _iteratorError3 = undefined;
+		      var _iteratorNormalCompletion7 = true;
+		      var _didIteratorError7 = false;
+		      var _iteratorError7 = undefined;
 
 		      try {
-		        for (var _iterator3 = this._actions.keys()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-		          var key = _step3.value;
+		        for (var _iterator7 = this._actions.keys()[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
+		          var key = _step7.value;
 
 		          keys.push(key);
 		        }
 		      } catch (err) {
-		        _didIteratorError3 = true;
-		        _iteratorError3 = err;
+		        _didIteratorError7 = true;
+		        _iteratorError7 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
-		            _iterator3.return();
+		          if (!_iteratorNormalCompletion7 && _iterator7.return) {
+		            _iterator7.return();
 		          }
 		        } finally {
-		          if (_didIteratorError3) {
-		            throw _iteratorError3;
+		          if (_didIteratorError7) {
+		            throw _iteratorError7;
 		          }
 		        }
 		      }
@@ -24512,27 +26320,27 @@ var JSceneKitExample =
 		    key: 'animationKeys',
 		    get: function get() {
 		      var keys = [];
-		      var _iteratorNormalCompletion4 = true;
-		      var _didIteratorError4 = false;
-		      var _iteratorError4 = undefined;
+		      var _iteratorNormalCompletion8 = true;
+		      var _didIteratorError8 = false;
+		      var _iteratorError8 = undefined;
 
 		      try {
-		        for (var _iterator4 = this._animations.keys()[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-		          var key = _step4.value;
+		        for (var _iterator8 = this._animations.keys()[Symbol.iterator](), _step8; !(_iteratorNormalCompletion8 = (_step8 = _iterator8.next()).done); _iteratorNormalCompletion8 = true) {
+		          var key = _step8.value;
 
 		          keys.push(key);
 		        }
 		      } catch (err) {
-		        _didIteratorError4 = true;
-		        _iteratorError4 = err;
+		        _didIteratorError8 = true;
+		        _iteratorError8 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion4 && _iterator4.return) {
-		            _iterator4.return();
+		          if (!_iteratorNormalCompletion8 && _iterator8.return) {
+		            _iterator8.return();
 		          }
 		        } finally {
-		          if (_didIteratorError4) {
-		            throw _iteratorError4;
+		          if (_didIteratorError8) {
+		            throw _iteratorError8;
 		          }
 		        }
 		      }
@@ -24615,13 +26423,13 @@ var JSceneKitExample =
 		    key: '_loadAnimationArray',
 		    value: function _loadAnimationArray(node, animations) {
 		      //console.log('_loadAnimationArray start')
-		      var _iteratorNormalCompletion5 = true;
-		      var _didIteratorError5 = false;
-		      var _iteratorError5 = undefined;
+		      var _iteratorNormalCompletion9 = true;
+		      var _didIteratorError9 = false;
+		      var _iteratorError9 = undefined;
 
 		      try {
-		        for (var _iterator5 = Object.keys(animations)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
-		          var animName = _step5.value;
+		        for (var _iterator9 = Object.keys(animations)[Symbol.iterator](), _step9; !(_iteratorNormalCompletion9 = (_step9 = _iterator9.next()).done); _iteratorNormalCompletion9 = true) {
+		          var animName = _step9.value;
 
 		          var data = animations[animName];
 		          var animation = this._loadAnimationData(data, animName);
@@ -24629,16 +26437,16 @@ var JSceneKitExample =
 		        }
 		        //console.log('_loadAnimationArray done')
 		      } catch (err) {
-		        _didIteratorError5 = true;
-		        _iteratorError5 = err;
+		        _didIteratorError9 = true;
+		        _iteratorError9 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion5 && _iterator5.return) {
-		            _iterator5.return();
+		          if (!_iteratorNormalCompletion9 && _iterator9.return) {
+		            _iterator9.return();
 		          }
 		        } finally {
-		          if (_didIteratorError5) {
-		            throw _iteratorError5;
+		          if (_didIteratorError9) {
+		            throw _iteratorError9;
 		          }
 		        }
 		      }
@@ -24781,13 +26589,13 @@ var JSceneKitExample =
 		    key: '_loadActionArray',
 		    value: function _loadActionArray(node, actions) {
 		      //console.log('_loadActionArray start')
-		      var _iteratorNormalCompletion6 = true;
-		      var _didIteratorError6 = false;
-		      var _iteratorError6 = undefined;
+		      var _iteratorNormalCompletion10 = true;
+		      var _didIteratorError10 = false;
+		      var _iteratorError10 = undefined;
 
 		      try {
-		        for (var _iterator6 = Object.keys(actions)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
-		          var actName = _step6.value;
+		        for (var _iterator10 = Object.keys(actions)[Symbol.iterator](), _step10; !(_iteratorNormalCompletion10 = (_step10 = _iterator10.next()).done); _iteratorNormalCompletion10 = true) {
+		          var actName = _step10.value;
 
 		          var data = actions[actName];
 		          //const action = this._loadActionData(data, actName)
@@ -24796,16 +26604,16 @@ var JSceneKitExample =
 		        }
 		        //console.log('_loadAnimationArray done')
 		      } catch (err) {
-		        _didIteratorError6 = true;
-		        _iteratorError6 = err;
+		        _didIteratorError10 = true;
+		        _iteratorError10 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion6 && _iterator6.return) {
-		            _iterator6.return();
+		          if (!_iteratorNormalCompletion10 && _iterator10.return) {
+		            _iterator10.return();
 		          }
 		        } finally {
-		          if (_didIteratorError6) {
-		            throw _iteratorError6;
+		          if (_didIteratorError10) {
+		            throw _iteratorError10;
 		          }
 		        }
 		      }
@@ -24899,7 +26707,7 @@ var JSceneKitExample =
 		exports.default = SCNNode;
 
 	/***/ },
-	/* 68 */
+	/* 76 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -24910,7 +26718,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _CAAnimation = __webpack_require__(50);
+		var _CAAnimation = __webpack_require__(58);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -25088,7 +26896,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimatable;
 
 	/***/ },
-	/* 69 */
+	/* 77 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -25099,7 +26907,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -25161,7 +26969,7 @@ var JSceneKitExample =
 		exports.default = SCNBoundingVolume;
 
 	/***/ },
-	/* 70 */
+	/* 78 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -25176,43 +26984,47 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNCullMode = __webpack_require__(71);
+		var _SCNCullMode = __webpack_require__(79);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNBoundingVolume = __webpack_require__(69);
+		var _SCNBoundingVolume = __webpack_require__(77);
 
 		var _SCNBoundingVolume2 = _interopRequireDefault(_SCNBoundingVolume);
 
-		var _SCNShadable = __webpack_require__(72);
+		var _SCNShadable = __webpack_require__(80);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNGeometryElement = __webpack_require__(74);
+		var _SCNGeometryElement = __webpack_require__(83);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNLevelOfDetail = __webpack_require__(76);
+		var _SCNLevelOfDetail = __webpack_require__(85);
 
 		var _SCNLevelOfDetail2 = _interopRequireDefault(_SCNLevelOfDetail);
 
-		var _SCNMaterial = __webpack_require__(77);
+		var _SCNMaterial = __webpack_require__(86);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNOrderedDictionary = __webpack_require__(81);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
+
+		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
+
+		var _SCNOrderedDictionary = __webpack_require__(89);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -25268,52 +27080,7 @@ var JSceneKitExample =
 		        kGeometrySourceSemanticTexcoord: ['NSArray', addSources],
 		        kGeometrySourceSemanticVertex: ['NSArray', function (obj, sources) {
 		          addSources(obj, sources);
-		          var min = new _SCNVector2.default(Infinity, Infinity, Infinity);
-		          var max = new _SCNVector2.default(-Infinity, -Infinity, -Infinity);
-		          var _iteratorNormalCompletion = true;
-		          var _didIteratorError = false;
-		          var _iteratorError = undefined;
-
-		          try {
-		            for (var _iterator = sources[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-		              var src = _step.value;
-
-		              var result = src._createBoundingBox();
-		              if (result.min.x < min.x) {
-		                min.x = result.min.x;
-		              }
-		              if (result.max.x > max.x) {
-		                max.x = result.max.x;
-		              }
-		              if (result.min.y < min.y) {
-		                min.y = result.min.y;
-		              }
-		              if (result.max.y > max.y) {
-		                max.y = result.max.y;
-		              }
-		              if (result.min.z < min.z) {
-		                min.z = result.min.z;
-		              }
-		              if (result.max.z > max.z) {
-		                max.z = result.max.z;
-		              }
-		            }
-		          } catch (err) {
-		            _didIteratorError = true;
-		            _iteratorError = err;
-		          } finally {
-		            try {
-		              if (!_iteratorNormalCompletion && _iterator.return) {
-		                _iterator.return();
-		              }
-		            } finally {
-		              if (_didIteratorError) {
-		                throw _iteratorError;
-		              }
-		            }
-		          }
-
-		          obj.boundingBox = { min: min, max: max };
+		          obj._updateBoundingBox();
 		        }],
 		        kGeometrySourceSemanticVertexCrease: ['NSArray', addSources],
 
@@ -25485,6 +27252,12 @@ var JSceneKitExample =
 		    _this._btVertices = null;
 		    _this._btMesh = null;
 		    _this._btShape = null;
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -26093,6 +27866,10 @@ var JSceneKitExample =
 		      // TODO: move this function to SCNProgram
 		      var materialCount = this.materials.length;
 		      var material = this.materials[index % materialCount];
+		      if (!material) {
+		        // FIXME: What should I do if there's no material? 
+		        material = new _SCNMaterial2.default();
+		      }
 		      var diffuse = material.diffuse.float32Array();
 		      diffuse[3] *= opacity;
 		      var ambient = null;
@@ -26156,6 +27933,22 @@ var JSceneKitExample =
 		          gl.cullFace(gl.FRONT);
 		        }
 		      }
+
+		      var blendFuncSrc = [gl.SRC_ALPHA, // alpha
+		      gl.ONE, // add
+		      gl.ZERO, // subtract
+		      gl.ZERO, // multiply
+		      gl.SRC_ALPHA, // screen
+		      gl.ONE // replace
+		      ];
+		      var blendFuncDst = [gl.ONE_MINUS_SRC_ALPHA, // alpha
+		      gl.ONE, // add
+		      gl.ONE_MINUS_SRC_COLOR, // subtract
+		      gl.SRC_COLOR, // multiply
+		      gl.ONE, // screen
+		      gl.ZERO // replace
+		      ];
+		      gl.blendFunc(blendFuncSrc[material.blendMode], blendFuncDst[material.blendMode]);
 		    }
 
 		    /**
@@ -26234,13 +28027,13 @@ var JSceneKitExample =
 		        tangent.push(new _SCNVector2.default(0, 0, 0));
 		      }
 
-		      var _iteratorNormalCompletion2 = true;
-		      var _didIteratorError2 = false;
-		      var _iteratorError2 = undefined;
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
 
 		      try {
-		        for (var _iterator2 = elements[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-		          var element = _step2.value;
+		        for (var _iterator = elements[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var element = _step.value;
 
 		          var len = element.primitiveCount;
 		          for (var _i3 = 0; _i3 < len; _i3++) {
@@ -26264,16 +28057,16 @@ var JSceneKitExample =
 		          }
 		        }
 		      } catch (err) {
-		        _didIteratorError2 = true;
-		        _iteratorError2 = err;
+		        _didIteratorError = true;
+		        _iteratorError = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
-		            _iterator2.return();
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
 		          }
 		        } finally {
-		          if (_didIteratorError2) {
-		            throw _iteratorError2;
+		          if (_didIteratorError) {
+		            throw _iteratorError;
 		          }
 		        }
 		      }
@@ -26441,6 +28234,115 @@ var JSceneKitExample =
 		      this._destroyShape();
 		    }
 		  }, {
+		    key: '_updateBoundingBox',
+		    value: function _updateBoundingBox() {
+		      return this._updateBoundingBoxForSkinner();
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      var transform = null;
+		      if (skinner) {
+		        transform = skinner.baseGeometryBindTransform;
+		      }
+
+		      var sources = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex);
+		      var min = new _SCNVector2.default(Infinity, Infinity, Infinity);
+		      var max = new _SCNVector2.default(-Infinity, -Infinity, -Infinity);
+		      console.error('===== updateBoundingBoxForSkinner =====');
+		      var _iteratorNormalCompletion2 = true;
+		      var _didIteratorError2 = false;
+		      var _iteratorError2 = undefined;
+
+		      try {
+		        for (var _iterator2 = sources[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		          var src = _step2.value;
+
+		          var result = src._createBoundingBox(transform);
+		          console.error('min: ' + result.min.floatArray() + ', max: ' + result.max.floatArray());
+		          if (result.min.x < min.x) {
+		            min.x = result.min.x;
+		          }
+		          if (result.max.x > max.x) {
+		            max.x = result.max.x;
+		          }
+		          if (result.min.y < min.y) {
+		            min.y = result.min.y;
+		          }
+		          if (result.max.y > max.y) {
+		            max.y = result.max.y;
+		          }
+		          if (result.min.z < min.z) {
+		            min.z = result.min.z;
+		          }
+		          if (result.max.z > max.z) {
+		            max.z = result.max.z;
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError2 = true;
+		        _iteratorError2 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		            _iterator2.return();
+		          }
+		        } finally {
+		          if (_didIteratorError2) {
+		            throw _iteratorError2;
+		          }
+		        }
+		      }
+
+		      console.error('boundingBox: min: ' + min.floatArray() + ', max: ' + max.floatArray());
+		      this.boundingBox = { min: min, max: max };
+		      return this.boundingBox;
+		    }
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+
+		  }, {
+		    key: '_getLoadedPromise',
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      var promises = [];
+		      var _iteratorNormalCompletion3 = true;
+		      var _didIteratorError3 = false;
+		      var _iteratorError3 = undefined;
+
+		      try {
+		        for (var _iterator3 = this.materials[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+		          var m = _step3.value;
+
+		          promises.push(m._getLoadedPromise());
+		        }
+		      } catch (err) {
+		        _didIteratorError3 = true;
+		        _iteratorError3 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+		            _iterator3.return();
+		          }
+		        } finally {
+		          if (_didIteratorError3) {
+		            throw _iteratorError3;
+		          }
+		        }
+		      }
+
+		      this._loadedPromise = Promise.all(promises);
+		      return this._loadedPromise;
+		    }
+		  }, {
 		    key: 'firstMaterial',
 		    get: function get() {
 		      return this.materials[0];
@@ -26488,27 +28390,27 @@ var JSceneKitExample =
 		    key: 'animationKeys',
 		    get: function get() {
 		      var keys = [];
-		      var _iteratorNormalCompletion3 = true;
-		      var _didIteratorError3 = false;
-		      var _iteratorError3 = undefined;
+		      var _iteratorNormalCompletion4 = true;
+		      var _didIteratorError4 = false;
+		      var _iteratorError4 = undefined;
 
 		      try {
-		        for (var _iterator3 = this._animations.keys()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-		          var key = _step3.value;
+		        for (var _iterator4 = this._animations.keys()[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+		          var key = _step4.value;
 
 		          keys.push(key);
 		        }
 		      } catch (err) {
-		        _didIteratorError3 = true;
-		        _iteratorError3 = err;
+		        _didIteratorError4 = true;
+		        _iteratorError4 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
-		            _iterator3.return();
+		          if (!_iteratorNormalCompletion4 && _iterator4.return) {
+		            _iterator4.return();
 		          }
 		        } finally {
-		          if (_didIteratorError3) {
-		            throw _iteratorError3;
+		          if (_didIteratorError4) {
+		            throw _iteratorError4;
 		          }
 		        }
 		      }
@@ -26523,7 +28425,7 @@ var JSceneKitExample =
 		exports.default = SCNGeometry;
 
 	/***/ },
-	/* 71 */
+	/* 79 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -26547,7 +28449,7 @@ var JSceneKitExample =
 		exports.default = SCNCullMode;
 
 	/***/ },
-	/* 72 */
+	/* 80 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -26656,7 +28558,7 @@ var JSceneKitExample =
 		exports.default = SCNShadable;
 
 	/***/ },
-	/* 73 */
+	/* 81 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -26671,13 +28573,17 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
+
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
+
+		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
 		var _CGPoint = __webpack_require__(7);
 
@@ -26962,12 +28868,16 @@ var JSceneKitExample =
 		    /**
 		     * 
 		     * @access private
+		     * @param {SCNMatrix4} transform -
 		     * @returns {Object}
 		     */
 
 		  }, {
 		    key: '_createBoundingBox',
 		    value: function _createBoundingBox() {
+		      var transform = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      var t = transform ? transform : (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0);
 		      var min = new _SCNVector2.default(Infinity, Infinity, Infinity);
 		      var max = new _SCNVector2.default(-Infinity, -Infinity, -Infinity);
 		      if (this._componentsPerVector !== 3) {
@@ -26979,31 +28889,31 @@ var JSceneKitExample =
 		      var len = this._vectorCount;
 		      var arr = [];
 		      for (var i = 0; i < len; i++) {
-		        var x = this._data[ind + 0];
-		        var y = this._data[ind + 1];
-		        var z = this._data[ind + 2];
-		        if (x < min.x) {
-		          min.x = x;
+		        var p = new _SCNVector2.default(this._data[ind + 0], this._data[ind + 1], this._data[ind + 2]).transform(t
+		        //const x = this._data[ind + 0]
+		        //const y = this._data[ind + 1]
+		        //const z = this._data[ind + 2]
+		        );if (p.x < min.x) {
+		          min.x = p.x;
 		        }
-		        if (x > max.x) {
-		          max.x = x;
+		        if (p.x > max.x) {
+		          max.x = p.x;
 		        }
-		        if (y < min.y) {
-		          min.y = y;
+		        if (p.y < min.y) {
+		          min.y = p.y;
 		        }
-		        if (y > max.y) {
-		          max.y = y;
+		        if (p.y > max.y) {
+		          max.y = p.y;
 		        }
-		        if (z < min.z) {
-		          min.z = z;
+		        if (p.z < min.z) {
+		          min.z = p.z;
 		        }
-		        if (z > max.z) {
-		          max.z = z;
+		        if (p.z > max.z) {
+		          max.z = p.z;
 		        }
 		        ind += indexStride;
 		      }
 
-		      console.log('boundingBox: min: ' + min.floatArray() + ', max: ' + max.floatArray());
 		      return { min: min, max: max };
 		    }
 
@@ -27331,7 +29241,38 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 74 */
+	/* 82 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _SCNMatrix = __webpack_require__(56);
+
+		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		/**
+		 * Returns a matrix describing a translation transformation.
+		 * @access public
+		 * @param {number} tx - 
+		 * @param {number} ty - 
+		 * @param {number} tz - 
+		 * @returns {SCNMatrix4} - 
+		 * @see https://developer.apple.com/reference/scenekit/1409679-scnmatrix4maketranslation
+		 */
+		var SCNMatrix4MakeTranslation = function SCNMatrix4MakeTranslation(tx, ty, tz) {
+		  return new _SCNMatrix2.default(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, tx, ty, tz, 1);
+		};
+
+		exports.default = SCNMatrix4MakeTranslation;
+
+	/***/ },
+	/* 83 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -27346,7 +29287,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(75);
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
@@ -27585,7 +29526,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 75 */
+	/* 84 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -27615,7 +29556,7 @@ var JSceneKitExample =
 		exports.default = SCNGeometryPrimitiveType;
 
 	/***/ },
-	/* 76 */
+	/* 85 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -27630,7 +29571,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
@@ -27759,7 +29700,7 @@ var JSceneKitExample =
 		exports.default = SCNLevelOfDetail;
 
 	/***/ },
-	/* 77 */
+	/* 86 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -27774,31 +29715,31 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNShadable = __webpack_require__(72);
+		var _SCNShadable = __webpack_require__(80);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNMaterialProperty = __webpack_require__(78);
+		var _SCNMaterialProperty = __webpack_require__(87);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNTransparencyMode = __webpack_require__(84);
+		var _SCNTransparencyMode = __webpack_require__(92);
 
 		var _SCNTransparencyMode2 = _interopRequireDefault(_SCNTransparencyMode);
 
-		var _SCNCullMode = __webpack_require__(71);
+		var _SCNCullMode = __webpack_require__(79);
 
 		var _SCNCullMode2 = _interopRequireDefault(_SCNCullMode);
 
-		var _SCNBlendMode = __webpack_require__(85);
+		var _SCNBlendMode = __webpack_require__(93);
 
 		var _SCNBlendMode2 = _interopRequireDefault(_SCNBlendMode);
 
-		var _SCNOrderedDictionary = __webpack_require__(81);
+		var _SCNOrderedDictionary = __webpack_require__(89);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
@@ -28079,6 +30020,12 @@ var JSceneKitExample =
 		     * @type {?SCNShadableHelper}
 		     */
 		    ();_this._shadableHelper = null;
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -28337,6 +30284,51 @@ var JSceneKitExample =
 		  }, {
 		    key: 'setAnimationSpeedForKey',
 		    value: function setAnimationSpeedForKey(speed, key) {}
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+
+		  }, {
+		    key: '_getLoadedPromise',
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      var properties = [this._ambient, this._specular, this._normal, this._reflective, this._emission, this._transparent, this._multiply, this._ambientOcclusion, this._metalness, this._roughness];
+		      var promises = [];
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
+
+		      try {
+		        for (var _iterator = properties[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var p = _step.value;
+
+		          if (p) {
+		            promises.push(p._getLoadedPromise());
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+
+		      this._loadedPromise = Promise.all(promises);
+		      return this._loadedPromise;
+		    }
 		  }, {
 		    key: 'diffuse',
 		    get: function get() {
@@ -28489,27 +30481,27 @@ var JSceneKitExample =
 		    key: 'animationKeys',
 		    get: function get() {
 		      var keys = [];
-		      var _iteratorNormalCompletion = true;
-		      var _didIteratorError = false;
-		      var _iteratorError = undefined;
+		      var _iteratorNormalCompletion2 = true;
+		      var _didIteratorError2 = false;
+		      var _iteratorError2 = undefined;
 
 		      try {
-		        for (var _iterator = this._animations.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-		          var key = _step.value;
+		        for (var _iterator2 = this._animations.keys()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		          var key = _step2.value;
 
 		          keys.push(key);
 		        }
 		      } catch (err) {
-		        _didIteratorError = true;
-		        _iteratorError = err;
+		        _didIteratorError2 = true;
+		        _iteratorError2 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion && _iterator.return) {
-		            _iterator.return();
+		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		            _iterator2.return();
 		          }
 		        } finally {
-		          if (_didIteratorError) {
-		            throw _iteratorError;
+		          if (_didIteratorError2) {
+		            throw _iteratorError2;
 		          }
 		        }
 		      }
@@ -28529,7 +30521,7 @@ var JSceneKitExample =
 		exports.default = SCNMaterial;
 
 	/***/ },
-	/* 78 */
+	/* 87 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -28546,31 +30538,31 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNFilterMode = __webpack_require__(79);
+		var _SCNFilterMode = __webpack_require__(88);
 
 		var _SCNFilterMode2 = _interopRequireDefault(_SCNFilterMode);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNOrderedDictionary = __webpack_require__(81);
+		var _SCNOrderedDictionary = __webpack_require__(89);
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNTransaction = __webpack_require__(82);
+		var _SCNTransaction = __webpack_require__(90);
 
 		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
-		var _SCNWrapMode = __webpack_require__(83);
+		var _SCNWrapMode = __webpack_require__(91);
 
 		var _SCNWrapMode2 = _interopRequireDefault(_SCNWrapMode);
 
@@ -28751,6 +30743,12 @@ var JSceneKitExample =
 		    _this._animations = new _SCNOrderedDictionary2.default();
 
 		    _this.__presentation = null;
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -28846,7 +30844,7 @@ var JSceneKitExample =
 		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523386-addanimation
 		     */
 		    value: function addAnimationForKey(animation, key) {
-		      console.log('SCNMaterialProperty addAnimationForKey');
+		      //console.log('SCNMaterialProperty addAnimationForKey')
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
@@ -29102,41 +31100,47 @@ var JSceneKitExample =
 		    value: function _loadContentsImage(path, dirPath) {
 		      var _this2 = this;
 
-		      console.log('image.path: ' + path);
+		      //console.log(`image.path: ${path}`)
 		      var image = new Image();
-		      if (path.indexOf('file:///') === 0) {
-		        var paths = path.slice(8).split('/');
-		        var pathCount = 1;
-		        var _path = dirPath + paths.slice(-pathCount).join('/'
-		        //console.warn(`image loading: ${_path}`)
-		        );image.onload = function () {
-		          //console.info(`image ${image.src} onload`)
-		          _this2._contents = image;
-		        };
-		        image.onerror = function () {
-		          //console.warn('image.onerror')
-		          pathCount += 1;
-		          if (pathCount > paths.length) {
-		            //console.error(`image ${path} load error.`)
-		            throw new Error('image ' + path + ' load error.');
-		          } else {
-		            // retry
-		            _path = dirPath + paths.slice(-pathCount).join('/');
-		            image.src = _path;
-		          }
-		        };
-		        image.src = _path;
-		      } else {
-		        console.info('image loading: ' + path);
-		        image.onload = function () {
-		          console.warn('http image ' + image.src + ' onload');
-		          _this2._contents = image;
-		        };
-		        image.onerror = function () {
-		          console.warn('http image ' + path + ' load error.');
-		        };
-		        image.src = dirPath + path;
-		      }
+		      this._loadedPromise = new Promise(function (resolve, reject) {
+		        if (path.indexOf('file:///') === 0) {
+		          var paths = path.slice(8).split('/');
+		          var pathCount = 1;
+		          var _path = dirPath + paths.slice(-pathCount).join('/'
+		          //console.warn(`image loading: ${_path}`)
+		          );image.onload = function () {
+		            //console.info(`image ${image.src} onload`)
+		            _this2._contents = image;
+		            resolve();
+		          };
+		          image.onerror = function () {
+		            //console.warn('image.onerror')
+		            pathCount += 1;
+		            if (pathCount > paths.length) {
+		              reject();
+		              throw new Error('image ' + path + ' load error.');
+		            } else {
+		              // retry
+		              _path = dirPath + paths.slice(-pathCount).join('/');
+		              image.src = _path;
+		            }
+		          };
+		          image.src = _path;
+		        } else {
+		          //console.info(`image loading: ${path}`)
+		          image.onload = function () {
+		            //console.warn(`http image ${image.src} onload`)
+		            _this2._contents = image;
+		            resolve();
+		          };
+		          image.onerror = function () {
+		            // TODO: try different path
+		            console.warn('http image ' + path + ' load error.');
+		            reject();
+		          };
+		          image.src = dirPath + path;
+		        }
+		      });
 		      return image;
 		    }
 
@@ -29153,6 +31157,21 @@ var JSceneKitExample =
 		        return target._contents.float32Array();
 		      }
 		      return new Float32Array([1, 1, 1, 1]);
+		    }
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+
+		  }, {
+		    key: '_getLoadedPromise',
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      return Promise.resolve();
 		    }
 		  }, {
 		    key: '_presentation',
@@ -29211,7 +31230,7 @@ var JSceneKitExample =
 		exports.default = SCNMaterialProperty;
 
 	/***/ },
-	/* 79 */
+	/* 88 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -29237,38 +31256,7 @@ var JSceneKitExample =
 		exports.default = SCNFilterMode;
 
 	/***/ },
-	/* 80 */
-	/***/ function(module, exports, __webpack_require__) {
-
-		'use strict';
-
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-
-		var _SCNMatrix = __webpack_require__(48);
-
-		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
-
-		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-		/**
-		 * Returns a matrix describing a translation transformation.
-		 * @access public
-		 * @param {number} tx - 
-		 * @param {number} ty - 
-		 * @param {number} tz - 
-		 * @returns {SCNMatrix4} - 
-		 * @see https://developer.apple.com/reference/scenekit/1409679-scnmatrix4maketranslation
-		 */
-		var SCNMatrix4MakeTranslation = function SCNMatrix4MakeTranslation(tx, ty, tz) {
-		  return new _SCNMatrix2.default(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, tx, ty, tz, 1);
-		};
-
-		exports.default = SCNMatrix4MakeTranslation;
-
-	/***/ },
-	/* 81 */
+	/* 89 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -29470,7 +31458,7 @@ var JSceneKitExample =
 		exports.default = SCNOrderedDictionary;
 
 	/***/ },
-	/* 82 */
+	/* 90 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -29485,15 +31473,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAMediaTimingFunction = __webpack_require__(53);
+		var _CAMediaTimingFunction = __webpack_require__(61);
 
 		var _CAMediaTimingFunction2 = _interopRequireDefault(_CAMediaTimingFunction);
 
-		var _CABasicAnimation = __webpack_require__(57);
+		var _CABasicAnimation = __webpack_require__(65);
 
 		var _CABasicAnimation2 = _interopRequireDefault(_CABasicAnimation);
 
-		var _SCNAnimationEvent = __webpack_require__(55);
+		var _SCNAnimationEvent = __webpack_require__(63);
 
 		var _SCNAnimationEvent2 = _interopRequireDefault(_SCNAnimationEvent);
 
@@ -29622,9 +31610,9 @@ var JSceneKitExample =
 		    key: '_apply',
 		    value: function _apply(transaction) {
 		      if (transaction._disableActions || transaction._animationDuration === 0) {
-		        //transaction._animations.forEach((anim) => {
-		        //  anim.target.setValueForKeyPath(anim.newValue, anim.keyPath)
-		        //})
+		        transaction._animations.forEach(function (anim) {
+		          anim.target.setValueForKeyPath(anim.newValue, anim.keyPath);
+		        });
 		        if (transaction._completionBlock) {
 		          transaction._completionBlock();
 		        }
@@ -29641,9 +31629,8 @@ var JSceneKitExample =
 		            animation.delegate = {
 		              animationDidStop: function animationDidStop(_anim, _finished) {
 		                if (_finished) {
-		                  console.log('animation completed: ' + anim.keyPath
-		                  //anim.target.setValueForKeyPath(anim.newValue, anim.keyPath)
-		                  );resolve(anim, animation);
+		                  anim.target.setValueForKeyPath(anim.newValue, anim.keyPath);
+		                  resolve(anim, animation);
 		                }
 		              }
 		            };
@@ -29753,8 +31740,8 @@ var JSceneKitExample =
 		  }, {
 		    key: '_addChange',
 		    value: function _addChange(target, keyPath, oldValue, newValue) {
-		      if (this._immediateMode) {
-		        //target.setValueForKeyPath(newValue, keyPath)
+		      if (this.immediateMode) {
+		        target.setValueForKeyPath(newValue, keyPath);
 		      } else {
 		        var diff = null;
 		        if (typeof newValue === 'number') {
@@ -29904,7 +31891,7 @@ var JSceneKitExample =
 		exports.default = SCNTransaction;
 
 	/***/ },
-	/* 83 */
+	/* 91 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -29932,7 +31919,7 @@ var JSceneKitExample =
 		exports.default = SCNWrapMode;
 
 	/***/ },
-	/* 84 */
+	/* 92 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -29956,7 +31943,7 @@ var JSceneKitExample =
 		exports.default = SCNTransparencyMode;
 
 	/***/ },
-	/* 85 */
+	/* 93 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -29988,7 +31975,7 @@ var JSceneKitExample =
 		exports.default = SCNBlendMode;
 
 	/***/ },
-	/* 86 */
+	/* 94 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -30003,19 +31990,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNTechniqueSupport = __webpack_require__(87);
+		var _SCNTechniqueSupport = __webpack_require__(95);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNMaterialProperty = __webpack_require__(78);
+		var _SCNMaterialProperty = __webpack_require__(87);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -30027,7 +32014,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SCNShadowMode = __webpack_require__(138);
+		var _SCNShadowMode = __webpack_require__(148);
 
 		var _SCNShadowMode2 = _interopRequireDefault(_SCNShadowMode);
 
@@ -30521,7 +32508,7 @@ var JSceneKitExample =
 		exports.default = SCNLight;
 
 	/***/ },
-	/* 87 */
+	/* 95 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -30532,7 +32519,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNTechnique = __webpack_require__(88);
+		var _SCNTechnique = __webpack_require__(96);
 
 		var _SCNTechnique2 = _interopRequireDefault(_SCNTechnique);
 
@@ -30578,7 +32565,7 @@ var JSceneKitExample =
 		exports.default = SCNTechniqueSupport;
 
 	/***/ },
-	/* 88 */
+	/* 96 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -30593,11 +32580,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNBindingBlock = __webpack_require__(89);
+		var _SCNBindingBlock = __webpack_require__(97);
 
 		var _SCNBindingBlock2 = _interopRequireDefault(_SCNBindingBlock);
 
@@ -30719,7 +32706,7 @@ var JSceneKitExample =
 		exports.default = SCNTechnique;
 
 	/***/ },
-	/* 89 */
+	/* 97 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -30728,11 +32715,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNRenderer = __webpack_require__(90);
+		var _SCNRenderer = __webpack_require__(98);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -30754,7 +32741,7 @@ var JSceneKitExample =
 		exports.default = SCNBindingBlock;
 
 	/***/ },
-	/* 90 */
+	/* 98 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -30781,71 +32768,71 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNSceneRenderer = __webpack_require__(91);
+		var _SCNSceneRenderer = __webpack_require__(99);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNTechniqueSupport = __webpack_require__(87);
+		var _SCNTechniqueSupport = __webpack_require__(95);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNAntialiasingMode = __webpack_require__(126);
+		var _SCNAntialiasingMode = __webpack_require__(136);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNProgram = __webpack_require__(127);
+		var _SCNProgram = __webpack_require__(137);
 
 		var _SCNProgram2 = _interopRequireDefault(_SCNProgram);
 
-		var _SCNPhysicsWorld = __webpack_require__(101);
+		var _SCNPhysicsWorld = __webpack_require__(109);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNCamera = __webpack_require__(132);
+		var _SCNCamera = __webpack_require__(142);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNLight = __webpack_require__(86);
+		var _SCNLight = __webpack_require__(94);
 
 		var _SCNLight2 = _interopRequireDefault(_SCNLight);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(75);
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNHitTestOption = __webpack_require__(124);
+		var _SCNHitTestOption = __webpack_require__(134);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(108);
+		var _SCNHitTestResult = __webpack_require__(118);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -30853,11 +32840,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKSpriteNode = __webpack_require__(133);
+		var _SKSpriteNode = __webpack_require__(143);
 
 		var _SKSpriteNode2 = _interopRequireDefault(_SKSpriteNode);
 
-		var _SKTexture = __webpack_require__(136);
+		var _SKTexture = __webpack_require__(146);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
@@ -30899,13 +32886,13 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_SURFACE __USE_SHADER_MODIFIER_SURFACE__\n  #define USE_SHADER_MODIFIER_FRAGMENT __USE_SHADER_MODIFIER_FRAGMENT__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  struct SCNShaderSurface {\n    vec3 view;\n    vec3 position;\n    vec3 normal;\n    vec3 tangent;\n    vec3 bitangent;\n    vec4 ambient;\n    vec2 ambientTexcoord;\n    vec4 diffuse;\n    vec2 diffuseTexcoord;\n    vec4 specular;\n    vec2 specularTexcoord;\n    vec4 emission;\n    vec2 emissionTexcoord;\n    vec4 multiply;\n    vec2 multiplyTexcoord;\n    vec4 transparent;\n    vec2 transparentTexcoord;\n    vec4 reflective;\n    float shininess;\n    float fresnel;\n  } _surface;\n\n  struct SCNShaderOutput {\n    vec4 color;\n  } _output;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  #if USE_SHADER_MODIFIER_SURFACE\n  void shaderModifierSurface() {\n    __SHADER_MODIFIER_SURFACE__\n  }\n  #endif\n\n  #if USE_SHADER_MODIFIER_FRAGMENT\n  void shaderModifierFragment() {\n    __SHADER_MODIFIER_FRAGMENT__\n  }\n  #endif\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  void main() {\n    _output.color = v_color;\n\n    //vec3 viewVec = normalize(v_eye);\n    //vec3 nom = normalize(v_normal);\n    _surface.view = normalize(v_eye);\n    _surface.position = v_position;\n    _surface.normal = normalize(v_normal);\n    _surface.tangent = normalize(v_tangent);\n    _surface.bitangent = normalize(v_bitangent);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(_surface.tangent, _surface.bitangent, _surface.normal);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      _surface.normal = normalize(tsInv * color);\n    }\n\n    #if USE_SHADER_MODIFIER_SURFACE\n      shaderModifierSurface();\n    #endif\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        _output.color += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        _output.color = color * _output.color;\n      }\n    }\n\n    int numLights = 0;\n\n    vec4 specularColor;\n    if(textureFlags[TEXTURE_SPECULAR_INDEX]){\n      vec4 color = texture(u_specularTexture, v_texcoord0);\n      specularColor = color;\n    }else{\n      specularColor = material.specular;\n    }\n      \n    _output.color.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      _output.color = color * _output.color;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(_surface.view, _surface.normal);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(_surface.view, _surface.normal), 0.0, 1.0), material.fresnelExponent);\n      _output.color += texture(u_reflectiveTexture, r) * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    _output.color = mix(_output.color, fog.color, fogFactor);\n\n    // DEBUG\n    //if(textureFlags[TEXTURE_NORMAL_INDEX]){\n    //  mat3 tsInv = mat3(normalize(v_tangent), normalize(v_bitangent), nom);\n    //  vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n    //  outColor.rgb = (normalize(tsInv * color) + 1.0) * 0.5;\n    //}\n\n    #if USE_SHADER_MODIFIER_FRAGMENT\n      shaderModifierFragment();\n    #endif\n\n    outColor = _output.color;\n  }\n';
+		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_SURFACE __USE_SHADER_MODIFIER_SURFACE__\n  #define USE_SHADER_MODIFIER_FRAGMENT __USE_SHADER_MODIFIER_FRAGMENT__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  struct SCNShaderSurface {\n    vec3 view;\n    vec3 position;\n    vec3 normal;\n    vec3 tangent;\n    vec3 bitangent;\n    vec4 ambient;\n    vec2 ambientTexcoord;\n    vec4 diffuse;\n    vec2 diffuseTexcoord;\n    vec4 specular;\n    vec2 specularTexcoord;\n    vec4 emission;\n    vec2 emissionTexcoord;\n    vec4 multiply;\n    vec2 multiplyTexcoord;\n    vec4 transparent;\n    vec2 transparentTexcoord;\n    vec4 reflective;\n    float shininess;\n    float fresnel;\n  } _surface;\n\n  struct SCNShaderOutput {\n    vec4 color;\n  } _output;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  #if USE_SHADER_MODIFIER_SURFACE\n  void shaderModifierSurface() {\n    __SHADER_MODIFIER_SURFACE__\n  }\n  #endif\n\n  #if USE_SHADER_MODIFIER_FRAGMENT\n  void shaderModifierFragment() {\n    __SHADER_MODIFIER_FRAGMENT__\n  }\n  #endif\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  vec2 poissonDisk[4] = vec2[](\n    vec2( -0.94201624, -0.39906216 ),\n    vec2( 0.94558609, -0.76890725 ),\n    vec2( -0.094184101, -0.92938870 ),\n    vec2( 0.34495938, 0.29387760 )\n  );\n\n  void main() {\n    _output.color = v_color;\n\n    //vec3 viewVec = normalize(v_eye);\n    //vec3 nom = normalize(v_normal);\n    _surface.view = normalize(v_eye);\n    _surface.position = v_position;\n    _surface.normal = normalize(v_normal);\n    _surface.tangent = normalize(v_tangent);\n    _surface.bitangent = normalize(v_bitangent);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(_surface.tangent, _surface.bitangent, _surface.normal);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      _surface.normal = normalize(tsInv * color);\n    }\n\n    #if USE_SHADER_MODIFIER_SURFACE\n      shaderModifierSurface();\n    #endif\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        _output.color += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        _output.color = color * _output.color;\n      }\n    }\n\n    int numLights = 0;\n\n    vec4 specularColor;\n    if(textureFlags[TEXTURE_SPECULAR_INDEX]){\n      vec4 color = texture(u_specularTexture, v_texcoord0);\n      specularColor = color;\n    }else{\n      specularColor = material.specular;\n    }\n      \n    _output.color.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      _output.color = color * _output.color;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(_surface.view, _surface.normal);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(_surface.view, _surface.normal), 0.0, 1.0), material.fresnelExponent);\n      _output.color.rgb += texture(u_reflectiveTexture, r).rgb * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    _output.color = mix(_output.color, fog.color, fogFactor);\n\n    #if USE_SHADER_MODIFIER_FRAGMENT\n      shaderModifierFragment();\n    #endif\n\n    // DEBUG\n    //_output.color.a = material.diffuse.a;\n\n    outColor = _output.color;\n  }\n';
 
 		var _fsAmbient = '\n';
 
 		var _fsDirectional = '\n  for(int i=0; i<NUM_DIRECTIONAL_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.directional[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular;\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n  numLights += NUM_DIRECTIONAL_LIGHTS;\n';
 
-		var _fsDirectionalShadow = '\n  float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n    _output.color.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  }else{\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular;\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n\n  numLights += 1;\n';
+		var _fsDirectionalShadow = '\n  //float shadow = convDepth(texture(u_shadowMapTexture__I__, v_directionalShadowTexcoord[__I__].xy / v_directionalShadowTexcoord[__I__].w));\n  //if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > shadow){\n  //  _output.color.rgb += material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n  //}else{\n  //  // diffuse\n  //  vec3 lightVec = normalize(v_light[numLights]);\n  //  float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n  //  _output.color.rgb += light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n  //  // specular\n  //  if(diffuse > 0.0f){\n  //    vec3 halfVec = normalize(lightVec + _surface.view);\n  //    float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n  //    _output.color.rgb += specularColor.rgb * specular;\n  //  }\n  //}\n\n  {\n    float shadow = 0.0;\n    for(int i=0; i<4; i++){\n      float d = convDepth(texture(u_shadowMapTexture__I__, (v_directionalShadowTexcoord[__I__].xy + poissonDisk[i]/700.0) / v_directionalShadowTexcoord[__I__].w));\n      if(v_directionalShadowDepth[__I__].z / v_directionalShadowDepth[__I__].w - 0.0001 > d){\n        shadow += 0.25;\n      }\n    }\n    vec3 shadowColor = material.diffuse.rgb * light.directionalShadow[__I__].shadowColor.rgb;\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    vec3 lightColor = light.directionalShadow[__I__].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      lightColor += specularColor.rgb * specular;\n    }\n    _output.color.rgb += shadowColor * shadow + lightColor * (1.0 - shadow);\n  }\n\n  numLights += 1;\n';
 
 		var _fsOmni = '\n  for(int i=0; i<NUM_OMNI_LIGHTS; i++){\n    // diffuse\n    vec3 lightVec = normalize(v_light[numLights + i]);\n    float diffuse = clamp(dot(lightVec, _surface.normal), 0.0f, 1.0f);\n    _output.color.rgb += light.omni[i].color.rgb * material.diffuse.rgb * diffuse;\n\n    // specular\n    if(diffuse > 0.0f){\n      vec3 halfVec = normalize(lightVec + _surface.view);\n      float specular = pow(dot(halfVec, _surface.normal), material.shininess);\n      //outColor.rgb += material.specular.rgb * specular; // TODO: get the light color of specular\n      _output.color.rgb += specularColor.rgb * specular;\n    }\n  }\n  numLights += NUM_OMNI_LIGHTS;\n';
 
@@ -30920,7 +32907,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 modelTransform;\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n  uniform int orientationMode;\n  uniform float stretchFactor;\n\n  in vec3 position;\n  in vec3 velocity;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    vec3 d;\n\n    if(stretchFactor > 0.0){\n      vec4 v = viewTransform * vec4(velocity, 0.0) * stretchFactor;\n      if(corner.y > 0.0){\n        pos.xyz += v.xyz;\n      }\n      vec2 cy = normalize(v.xy);\n      vec2 cx = vec2(-cy.y, cy.x);\n      d = vec3(cx * corner.x + cy * corner.y, 0) * size;\n    }else{\n      float sinAngle = sin(rotation.w);\n      float cosAngle = cos(rotation.w);\n      float tcos = 1.0 - cosAngle;\n\n      d = vec3(\n          corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n        + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n          corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n        + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n          corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n        + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size;\n      if(orientationMode == 2){\n        // orientation: free\n        d = mat3(viewTransform) * mat3(modelTransform) * d;\n      }\n    }\n    pos.xyz += d;\n\n    v_color = color;\n    v_texcoord = corner * vec2(0.5, -0.5) + 0.5;\n    gl_Position = projectionTransform * pos;\n  }\n';
+		var _defaultParticleVertexShader = '#version 300 es\n  precision mediump float;\n\n  uniform mat4 modelTransform;\n  uniform mat4 viewTransform;\n  uniform mat4 projectionTransform;\n  uniform int orientationMode;\n  uniform float stretchFactor;\n\n  in vec3 position;\n  in vec3 velocity;\n  in vec4 rotation;\n  in vec4 color;\n  in float size;\n  //in float life;\n  in vec2 corner;\n  in vec2 texcoord;\n\n  out vec2 v_texcoord;\n  out vec4 v_color;\n\n  void main() {\n    vec4 pos = viewTransform * vec4(position, 1.0);\n    vec3 d;\n\n    if(stretchFactor > 0.0){\n      vec4 v = viewTransform * vec4(velocity, 0.0) * stretchFactor;\n      if(corner.y > 0.0){\n        pos.xyz += v.xyz;\n      }\n      vec2 cy = normalize(v.xy);\n      vec2 cx = vec2(-cy.y, cy.x);\n      d = vec3(cx * corner.x + cy * corner.y, 0) * size;\n    }else{\n      float sinAngle = sin(rotation.w);\n      float cosAngle = cos(rotation.w);\n      float tcos = 1.0 - cosAngle;\n\n      d = vec3(\n          corner.x * (rotation.x * rotation.x * tcos + cosAngle)\n        + corner.y * (rotation.x * rotation.y * tcos - rotation.z * sinAngle),\n          corner.x * (rotation.y * rotation.x * tcos + rotation.z * sinAngle)\n        + corner.y * (rotation.y * rotation.y * tcos + cosAngle),\n          corner.x * (rotation.z * rotation.x * tcos - rotation.y * sinAngle)\n        + corner.y * (rotation.z * rotation.y * tcos + rotation.x * sinAngle)) * size;\n      if(orientationMode == 2){\n        // orientation: free\n        d = mat3(viewTransform) * mat3(modelTransform) * d;\n      }\n    }\n    pos.xyz += d;\n\n    v_color = color;\n    v_texcoord = texcoord;\n    gl_Position = projectionTransform * pos;\n  }\n';
 
 		/**
 		 * @access private
@@ -30938,7 +32925,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultHitTestFragmentShader = '#version 300 es\n  precision mediump float;\n\n  uniform int objectID;\n  uniform int geometryID;\n\n  in vec3 v_normal;\n  in vec3 v_position;\n\n  layout(location = 0) out vec4 out_objectID;\n  layout(location = 1) out vec4 out_faceID;\n  layout(location = 2) out vec4 out_position;\n  layout(location = 3) out vec4 out_normal;\n\n  void main() {\n    out_objectID = vec4(\n      float(objectID >> 8) / 255.0,\n      float(objectID & 0xFF) / 255.0,\n      float(geometryID >> 8) / 255.0,\n      float(geometryID & 0xFF) / 255.0\n    );\n    //out_faceID = vec4(\n    //  (gl_PrimitiveID >> 24) / 255.0,\n    //  ((gl_PrimitiveID >> 16) & 0xFF) / 255.0,\n    //  ((gl_PrimitiveID >> 8) & 0xFF) / 255.0,\n    //  (gl_PrimitiveID & 0xFF) / 255.0\n    //);\n    out_faceID = vec4(0, 0, 0, 0); // TODO: implement\n    vec3 n = normalize(v_normal);\n    out_normal = vec4((n.x + 1.0) * 0.5, (n.y + 1.0) * 0.5, (n.z + 1.0) * 0.5, 0);\n    out_position = vec4((v_position.x + 1.0) * 0.5, (v_position.y + 1.0) * 0.5, (v_position.z + 1.0) * 0.5, 0);\n  }\n';
+		var _defaultHitTestFragmentShader = '#version 300 es\n  precision mediump float;\n\n  uniform int objectID;\n  uniform int geometryID;\n\n  in vec3 v_normal;\n  in vec3 v_position;\n\n  layout(location = 0) out vec4 out_objectID;\n  layout(location = 1) out vec4 out_faceID;\n  layout(location = 2) out vec4 out_position;\n  layout(location = 3) out vec4 out_normal;\n\n  void main() {\n    out_objectID = vec4(\n      float(objectID >> 8) / 255.0,\n      float(objectID & 0xFF) / 255.0,\n      float(geometryID >> 8) / 255.0,\n      float(geometryID & 0xFF) / 255.0\n    );\n    //out_faceID = vec4(\n    //  (gl_PrimitiveID >> 24) / 255.0,\n    //  ((gl_PrimitiveID >> 16) & 0xFF) / 255.0,\n    //  ((gl_PrimitiveID >> 8) & 0xFF) / 255.0,\n    //  (gl_PrimitiveID & 0xFF) / 255.0\n    //);\n    out_faceID = vec4(0, 0, 0, 0); // TODO: implement\n    vec3 n = normalize(v_normal);\n    out_normal = vec4((n.x + 1.0) * 0.5, (n.y + 1.0) * 0.5, (n.z + 1.0) * 0.5, 0);\n    //out_position = vec4((v_position.x + 1.0) * 0.5, (v_position.y + 1.0) * 0.5, (v_position.z + 1.0) * 0.5, 0);\n    float r = (v_position.z + 1.0) * 0.5;\n    float g = fract(r * 255.0);\n    float b = fract(g * 255.0);\n    float a = fract(b * 255.0);\n    float coef = 1.0 / 255.0;\n\n    r -= g * coef;\n    g -= b * coef;\n    b -= a * coef;\n    out_position = vec4(r, g, b, a);\n  }\n';
 
 		/**
 		 * @access private
@@ -31531,11 +33518,12 @@ var JSceneKitExample =
 		        gl.activeTexture(gl[symbol]);
 		        gl.bindTexture(gl.TEXTURE_2D, node.presentation.light._shadowDepthTexture);
 		      }
+		      gl.enable(gl.BLEND
 
 		      //////////////////////////
 		      // Nodes
 		      //////////////////////////
-		      var renderingArray = this._createRenderingNodeArray();
+		      );var renderingArray = this._createRenderingNodeArray();
 		      renderingArray.forEach(function (node) {
 		        _this2._renderNode(node);
 		      });
@@ -31670,7 +33658,7 @@ var JSceneKitExample =
 		      var targetNodes = [];
 		      while (arr.length > 0) {
 		        var node = arr.shift();
-		        if (node.presentation !== null && node.presentation.geometry !== null && node.presentation.castsShadow && node.presentation.opacity > 0 && !node.presentation.isHidden) {
+		        if (node.presentation !== null && node.presentation.geometry !== null && node.presentation.castsShadow && node.presentation._worldOpacity > 0 && !node.presentation.isHidden) {
 		          targetNodes.push(node);
 		        }
 		        arr.push.apply(arr, _toConsumableArray(node.childNodes));
@@ -31698,7 +33686,7 @@ var JSceneKitExample =
 		        arr.push.apply(arr, _toConsumableArray(node.childNodes));
 		      }
 		      targetNodes.sort(function (a, b) {
-		        return a.renderingOrder - b.renderingOrder;
+		        return a.presentation.renderingOrder - b.presentation.renderingOrder + (b.presentation._worldOpacity - a.presentation._worldOpacity) * 0.5;
 		      });
 
 		      return targetNodes;
@@ -31723,7 +33711,7 @@ var JSceneKitExample =
 		        arr.push.apply(arr, _toConsumableArray(node.childNodes));
 		      }
 		      targetNodes.sort(function (a, b) {
-		        return a.renderingOrder - b.renderingOrder;
+		        return a.renderingOrder - b.renderingOrder + (b.opacity - a.opacity) * 0.5;
 		      });
 
 		      return targetNodes;
@@ -31924,7 +33912,7 @@ var JSceneKitExample =
 		  }, {
 		    key: '_renderNode',
 		    value: function _renderNode(node) {
-		      if (node.presentation.isHidden || node.presentation.opacity <= 0) {
+		      if (node.presentation.isHidden || node.presentation._worldOpacity <= 0) {
 		        return;
 		      }
 		      var gl = this.context;
@@ -31997,7 +33985,7 @@ var JSceneKitExample =
 		        // FIXME: use bufferData instead of bindBufferBase
 		        );gl.bindBufferBase(gl.UNIFORM_BUFFER, _materialLoc, geometry._materialBuffer);
 
-		        geometry._bufferMaterialData(gl, p, i, node.presentation.opacity);
+		        geometry._bufferMaterialData(gl, p, i, node.presentation._worldOpacity);
 
 		        var shape = null;
 		        switch (element.primitiveType) {
@@ -32055,7 +34043,8 @@ var JSceneKitExample =
 		        return;
 		      }
 
-		      var systems = node.presentation.particleSystems;
+		      //const systems = node.presentation.particleSystems
+		      var systems = node.particleSystems;
 		      systems.forEach(function (system) {
 		        _this3._renderParticleSystem(system, node);
 		      });
@@ -32660,9 +34649,11 @@ var JSceneKitExample =
 
 		      var positionBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT2);
-		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0);
-		      var screenPos = new _SCNVector2.default(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0);
-		      var position = screenPos.transform(viewProjectionTransform.invert());
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0
+		      //const screenPos = new SCNVector3(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0)
+		      //const position = screenPos.transform(viewProjectionTransform.invert())
+		      );var p = ((positionBuf[3] / 255.0 + positionBuf[2]) / 255.0 + positionBuf[1] / 255.0 + positionBuf[0]) / 255.0;
+		      var position = from.lerp(to, p);
 
 		      var normalBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT3);
@@ -32791,8 +34782,11 @@ var JSceneKitExample =
 
 		      var positionBuf = new Uint8Array(4);
 		      gl.readBuffer(gl.COLOR_ATTACHMENT2);
-		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0);
-		      var screenPos = new _SCNVector2.default(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0);
+		      gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, positionBuf, 0
+		      //const screenPos = new SCNVector3(positionBuf[0] / 127.5 - 1.0, positionBuf[1] / 127.5 - 1.0, positionBuf[2] / 127.5 - 1.0)
+		      //const position = screenPos.transform(viewProjectionTransform.invert())
+		      );var p = ((positionBuf[3] / 255.0 + positionBuf[2]) / 255.0 + positionBuf[1] / 255.0 + positionBuf[0]) / 255.0;
+		      var screenPos = from.lerp(to, p);
 		      var position = screenPos.transform(viewProjectionTransform.invert());
 
 		      var normalBuf = new Uint8Array(4);
@@ -34384,7 +36378,7 @@ var JSceneKitExample =
 		exports.default = SCNRenderer;
 
 	/***/ },
-	/* 91 */
+	/* 99 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34395,23 +36389,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNDebugOptions = __webpack_require__(122);
+		var _SCNDebugOptions = __webpack_require__(132);
 
 		var _SCNDebugOptions2 = _interopRequireDefault(_SCNDebugOptions);
 
-		var _SCNRenderingAPI = __webpack_require__(123);
+		var _SCNRenderingAPI = __webpack_require__(133);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNHitTestResult = __webpack_require__(108);
+		var _SCNHitTestResult = __webpack_require__(118);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -34419,15 +36413,15 @@ var JSceneKitExample =
 
 		var _CGPoint2 = _interopRequireDefault(_CGPoint);
 
-		var _SCNHitTestOption = __webpack_require__(124);
+		var _SCNHitTestOption = __webpack_require__(134);
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNSceneRendererDelegate = __webpack_require__(125);
+		var _SCNSceneRendererDelegate = __webpack_require__(135);
 
 		var _SCNSceneRendererDelegate2 = _interopRequireDefault(_SCNSceneRendererDelegate);
 
@@ -34853,7 +36847,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneRenderer;
 
 	/***/ },
-	/* 92 */
+	/* 100 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -34872,59 +36866,59 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNMaterial = __webpack_require__(77);
+		var _SCNMaterial = __webpack_require__(86);
 
 		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
 
-		var _SCNBox = __webpack_require__(93);
+		var _SCNBox = __webpack_require__(101);
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNMaterialProperty = __webpack_require__(78);
+		var _SCNMaterialProperty = __webpack_require__(87);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNSceneExportDelegate = __webpack_require__(94);
+		var _SCNSceneExportDelegate = __webpack_require__(102);
 
 		var _SCNSceneExportDelegate2 = _interopRequireDefault(_SCNSceneExportDelegate);
 
-		var _SCNSceneExportProgressHandler = __webpack_require__(95);
+		var _SCNSceneExportProgressHandler = __webpack_require__(103);
 
 		var _SCNSceneExportProgressHandler2 = _interopRequireDefault(_SCNSceneExportProgressHandler);
 
-		var _SCNSceneSource = __webpack_require__(96);
+		var _SCNSceneSource = __webpack_require__(104);
 
 		var _SCNSceneSource2 = _interopRequireDefault(_SCNSceneSource);
 
-		var _SCNPhysicsWorld = __webpack_require__(101);
+		var _SCNPhysicsWorld = __webpack_require__(109);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNParticleSystem = __webpack_require__(109);
+		var _SCNParticleSystem = __webpack_require__(119);
 
 		var _SCNParticleSystem2 = _interopRequireDefault(_SCNParticleSystem);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _BinaryRequest2 = __webpack_require__(99);
+		var _BinaryRequest2 = __webpack_require__(107);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _File2 = __webpack_require__(36);
+		var _File2 = __webpack_require__(44);
 
 		var _File3 = _interopRequireDefault(_File2);
 
-		var _FileReader2 = __webpack_require__(37);
+		var _FileReader2 = __webpack_require__(45);
 
 		var _FileReader3 = _interopRequireDefault(_FileReader2);
 
@@ -35059,8 +37053,14 @@ var JSceneKitExample =
 		    _this._particleSystems = null;
 		    _this._particleSystemsTransform = null;
 
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._dataLoadedPromise = null;
+
 		    if (typeof url !== 'undefined') {
-		      _this._loadSceneWithURL(url, options).then(function (scene) {
+		      var promise = _this._loadSceneWithURL(url, options).then(function (scene) {
 		        _this._copyValue(scene);
 		        if (onload) {
 		          onload(_this);
@@ -35070,6 +37070,7 @@ var JSceneKitExample =
 		          onerror(error);
 		        }
 		      });
+		      _this._dataLoadedPromise = promise;
 		    }
 
 		    var skyBoxGeometry = new _SCNBox2.default();
@@ -35100,6 +37101,12 @@ var JSceneKitExample =
 		    }
 		    _this._skyBox = new _SCNNode2.default(skyBoxGeometry);
 		    _this._skyBox._presentation = _this._skyBox;
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -35310,6 +37317,47 @@ var JSceneKitExample =
 		     */
 
 		  }, {
+		    key: '_getLoadedPromise',
+
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+		    value: function _getLoadedPromise() {
+		      var _this3 = this;
+
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+		      if (!this._dataLoadedPromise) {
+		        return Promise.resolve();
+		      }
+
+		      this._loadedPromise = this._dataLoadedPromise.then(function () {
+		        var promises = [];
+		        promises.push(_this3._rootNode._getLoadedPromise());
+		        promises.push(_this3._skyBox._getLoadedPromise());
+		        if (_this3._lightingEnvironment) {
+		          promises.push(_this3._lightingEnvironment._getLoadedPromise());
+		        }
+		        return Promise.all(promises);
+		      });
+		      return this._loadedPromise;
+		    }
+
+		    // Structures
+
+		    /**
+		     * @type {Object} Attribute
+		     * @property {string} endTime A floating-point value (in an NSNumber object) for the end time of the scene.
+		     * @property {string} frameRate A floating-point value (in an NSNumber object) for the frame rate of the scene.
+		     * @property {string} startTime A floating-point value (in an NSNumber object) for the start time of the scene.
+		     * @property {string} upAxis An SCNVector3 structure (in an NSValue object) specifying the orientation of the scene.
+		     * @see https://developer.apple.com/reference/scenekit/scnscene.attribute
+		     */
+
+		  }, {
 		    key: 'rootNode',
 
 
@@ -35359,18 +37407,6 @@ var JSceneKitExample =
 		    get: function get() {
 		      return this._particleSystems.slice(0);
 		    }
-
-		    // Structures
-
-		    /**
-		     * @type {Object} Attribute
-		     * @property {string} endTime A floating-point value (in an NSNumber object) for the end time of the scene.
-		     * @property {string} frameRate A floating-point value (in an NSNumber object) for the frame rate of the scene.
-		     * @property {string} startTime A floating-point value (in an NSNumber object) for the start time of the scene.
-		     * @property {string} upAxis An SCNVector3 structure (in an NSValue object) specifying the orientation of the scene.
-		     * @see https://developer.apple.com/reference/scenekit/scnscene.attribute
-		     */
-
 		  }], [{
 		    key: 'sceneNamed',
 		    value: function sceneNamed(name) {}
@@ -35425,7 +37461,7 @@ var JSceneKitExample =
 		exports.default = SCNScene;
 
 	/***/ },
-	/* 93 */
+	/* 101 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -35434,25 +37470,31 @@ var JSceneKitExample =
 		  value: true
 		});
 
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNGeometryElement = __webpack_require__(74);
+		var _SCNGeometryElement = __webpack_require__(83);
 
 		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
 
-		var _SCNGeometryPrimitiveType = __webpack_require__(75);
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
 
 		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -35485,13 +37527,14 @@ var JSceneKitExample =
 		          box.heightSegmentCount = propValues.boxheightSegmentCount;
 		          box.lengthSegmentCount = propValues.boxlengthSegmentCount;
 		          box.chamferSegmentCount = propValues.boxchamferSegmentCount;
+		          box.name = propValues.name;
 		          // propValues.boxPrimitiveType
 		          box.materials = propValues.materials;
 		          box.subdivisionLevel = propValues.subdivisionLevel;
 
 		          return box;
 		        },
-		        name: 'string',
+		        name: ['string', null],
 		        boxwidth: ['float', null],
 		        boxheight: ['float', null],
 		        boxlength: ['float', null],
@@ -35594,6 +37637,7 @@ var JSceneKitExample =
 		    _this.chamferSegmentCount = 10;
 
 		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
 
@@ -35868,6 +37912,16 @@ var JSceneKitExample =
 		        max: new _SCNVector2.default(right, top, front)
 		      };
 		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNBox.prototype.__proto__ || Object.getPrototypeOf(SCNBox.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
 
 		    /**
 		     * @access private
@@ -35908,7 +37962,7 @@ var JSceneKitExample =
 		exports.default = SCNBox;
 
 	/***/ },
-	/* 94 */
+	/* 102 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -35969,7 +38023,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneExportDelegate;
 
 	/***/ },
-	/* 95 */
+	/* 103 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -35993,7 +38047,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneExportProgressHandler;
 
 	/***/ },
-	/* 96 */
+	/* 104 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36004,7 +38058,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSKeyedUnarchiver = __webpack_require__(35);
+		var _NSKeyedUnarchiver = __webpack_require__(43);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
@@ -36012,19 +38066,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNSceneSourceStatusHandler = __webpack_require__(97);
+		var _SCNSceneSourceStatusHandler = __webpack_require__(105);
 
 		var _SCNSceneSourceStatusHandler2 = _interopRequireDefault(_SCNSceneSourceStatusHandler);
 
-		var _BinaryRequest2 = __webpack_require__(99);
+		var _BinaryRequest2 = __webpack_require__(107);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _File2 = __webpack_require__(36);
+		var _File2 = __webpack_require__(44);
 
 		var _File3 = _interopRequireDefault(_File2);
 
@@ -36328,7 +38382,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSource;
 
 	/***/ },
-	/* 97 */
+	/* 105 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36337,7 +38391,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNSceneSourceStatus = __webpack_require__(98);
+		var _SCNSceneSourceStatus = __webpack_require__(106);
 
 		var _SCNSceneSourceStatus2 = _interopRequireDefault(_SCNSceneSourceStatus);
 
@@ -36358,7 +38412,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSourceStatusHandler;
 
 	/***/ },
-	/* 98 */
+	/* 106 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -36388,7 +38442,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneSourceStatus;
 
 	/***/ },
-	/* 99 */
+	/* 107 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36398,7 +38452,7 @@ var JSceneKitExample =
 		});
 		exports.BinaryRequest = undefined;
 
-		var _AjaxRequest2 = __webpack_require__(100);
+		var _AjaxRequest2 = __webpack_require__(108);
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -36433,7 +38487,7 @@ var JSceneKitExample =
 		exports.default = new BinaryRequest();
 
 	/***/ },
-	/* 100 */
+	/* 108 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -36635,7 +38689,7 @@ var JSceneKitExample =
 		exports.default = new AjaxRequest();
 
 	/***/ },
-	/* 101 */
+	/* 109 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -36650,35 +38704,47 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNBox = __webpack_require__(101);
+
+		var _SCNBox2 = _interopRequireDefault(_SCNBox);
+
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNPhysicsBehavior = __webpack_require__(102);
+		var _SCNPhysicsBehavior = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
 
-		var _SCNPhysicsContactDelegate = __webpack_require__(103);
+		var _SCNPhysicsContactDelegate = __webpack_require__(111);
 
 		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
 
-		var _SCNPhysicsContact = __webpack_require__(104);
+		var _SCNPhysicsContact = __webpack_require__(112);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNHitTestResult = __webpack_require__(108);
+		var _SCNPhysicsBodyType = __webpack_require__(114);
+
+		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
+
+		var _SCNHitTestResult = __webpack_require__(118);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
-		var _SCNPhysicsShape = __webpack_require__(107);
+		var _SCNPhysicsShape = __webpack_require__(115);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNSphere = __webpack_require__(117);
+
+		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
+
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -36902,21 +38968,261 @@ var JSceneKitExample =
 		      if ((bodyA.categoryBitMask & bodyB.contactTestBitMask) === 0) {
 		        return [];
 		      }
-		      var posA = bodyA._position;
-		      var posB = bodyB._position;
-		      var radA = bodyA._radius;
-		      var radB = bodyB._radius;
+		      if (!bodyA.physicsShape || !bodyB.physicsShape) {
+		        return [];
+		      }
+		      if (bodyA.type === _SCNPhysicsBodyType2.default.static && bodyB.type === _SCNPhysicsBodyType2.default.static) {
+		        return [];
+		      }
+		      if (bodyA._position.sub(bodyB._position).length() > bodyA._radius + bodyB._radius) {
+		        return [];
+		      }
+		      var shapeA = bodyA.physicsShape._shape;
+		      var shapeB = bodyB.physicsShape._shape;
+
+		      if (shapeA instanceof _SCNBox2.default && shapeB instanceof _SCNBox2.default) {
+		        return this._contactTestBetweenBoxes(bodyA, bodyB, options);
+		      } else if (shapeA instanceof _SCNBox2.default && shapeB instanceof _SCNSphere2.default) {
+		        return this._contactTestBetweenBoxAndSphere(bodyA, bodyB, options);
+		      } else if (shapeB instanceof _SCNBox2.default && shapeA instanceof _SCNSphere2.default) {
+		        return this._contactTestBetweenBoxAndSphere(bodyB, bodyA, options, true);
+		      } else if (shapeA instanceof _SCNSphere2.default && shapeB instanceof _SCNSphere2.default) {
+		        return this._contactTestBetweenSpheres(bodyA, bodyB, options);
+		      }
+		      return [];
+		    }
+		  }, {
+		    key: '_contactTestBetweenBoxes',
+		    value: function _contactTestBetweenBoxes(boxA, boxB, options) {
+		      var shapeA = boxA.physicsShape._shape;
+		      var shapeB = boxB.physicsShape._shape;
+
+		      var tb = boxB._transform.mult(boxA._invTransform);
+		      var nb1 = new _SCNVector2.default(tb.m11, tb.m12, tb.m13).normalize();
+		      var nb2 = new _SCNVector2.default(tb.m21, tb.m22, tb.m23).normalize();
+		      var nb3 = new _SCNVector2.default(tb.m31, tb.m32, tb.m33).normalize();
+		      var b1 = nb1.mul(shapeB.width * 0.5);
+		      var b2 = nb2.mul(shapeB.height * 0.5);
+		      var b3 = nb3.mul(shapeB.length * 0.5);
+		      var d = tb.getTranslation();
+
+		      var lax = shapeA.width * 0.5;
+		      var lay = shapeA.height * 0.5;
+		      var laz = shapeA.length * 0.5;
+
+		      // Ae1
+		      var rA = lax;
+		      var rB = Math.abs(b1.x) + Math.abs(b2.x) + Math.abs(b3.x);
+		      var L = Math.abs(d.x);
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // Ae2
+		      rA = lay;
+		      rB = Math.abs(b1.y) + Math.abs(b2.y) + Math.abs(b3.y);
+		      L = Math.abs(d.y);
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // Ae3
+		      rA = laz;
+		      rB = Math.abs(b1.z) + Math.abs(b2.z) + Math.abs(b3.z);
+		      L = Math.abs(d.z);
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // Be1
+		      rA = Math.abs(nb1.x * lax) + Math.abs(nb1.y * lay) + Math.abs(nb1.z * laz);
+		      rB = b1.length();
+		      L = Math.abs(d.dot(nb1));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // Be2
+		      rA = Math.abs(nb2.x * lax) + Math.abs(nb2.y * lay) + Math.abs(nb2.z * laz);
+		      rB = b2.length();
+		      L = Math.abs(d.dot(nb2));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // Be3
+		      rA = Math.abs(nb3.x * lax) + Math.abs(nb3.y * lay) + Math.abs(nb3.z * laz);
+		      rB = b3.length();
+		      L = Math.abs(d.dot(nb3));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C11
+		      var axis = new _SCNVector2.default(0, -nb1.z, nb1.y);
+		      rA = Math.abs(axis.y * lay) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b2)) + Math.abs(axis.dot(b3));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C12
+		      axis = new _SCNVector2.default(0, -nb2.z, nb2.y);
+		      rA = Math.abs(axis.y * lay) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b3)) + Math.abs(axis.dot(b1));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C13
+		      axis = new _SCNVector2.default(0, -nb3.z, nb3.y);
+		      rA = Math.abs(axis.y * lay) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b1)) + Math.abs(axis.dot(b2));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C21
+		      axis = new _SCNVector2.default(nb1.z, 0, -nb1.x);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b2)) + Math.abs(axis.dot(b3));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C22
+		      axis = new _SCNVector2.default(nb2.z, 0, -nb2.x);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b3)) + Math.abs(axis.dot(b1));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C23
+		      axis = new _SCNVector2.default(nb3.z, 0, -nb3.x);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.z * laz);
+		      rB = Math.abs(axis.dot(b1)) + Math.abs(axis.dot(b2));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C31
+		      axis = new _SCNVector2.default(-nb1.y, nb1.x, 0);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.y * lay);
+		      rB = Math.abs(axis.dot(b2)) + Math.abs(axis.dot(b3));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C32
+		      axis = new _SCNVector2.default(-nb2.y, nb2.x, 0);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.y * lay);
+		      rB = Math.abs(axis.dot(b3)) + Math.abs(axis.dot(b1));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      // C33
+		      axis = new _SCNVector2.default(-nb3.y, nb3.x, 0);
+		      rA = Math.abs(axis.x * lax) + Math.abs(axis.y * lay);
+		      rB = Math.abs(axis.dot(b1)) + Math.abs(axis.dot(b2));
+		      L = Math.abs(d.dot(axis));
+		      if (L > rA + rB) {
+		        return [];
+		      }
+
+		      var contact = new _SCNPhysicsContact2.default();
+		      contact._nodeA = boxA._node;
+		      contact._nodeB = boxB._node;
+		      contact._contactPoint = boxA._position.add(d.mul(0.5) // TODO: implement
+		      );contact._contactNormal = d.normalize // TODO: implement
+		      ();contact._penetrationDistance = 0; // TODO: implement
+
+		      return [contact];
+		    }
+		  }, {
+		    key: '_contactTestBetweenSpheres',
+		    value: function _contactTestBetweenSpheres(sphereA, sphereB, options) {
+		      var shapeA = sphereA.physicsShape._shape;
+		      var shapeB = sphereB.physicsShape._shape;
+
+		      var posA = sphereA._position;
+		      var posB = sphereB._position;
+		      var radA = shapeA.radius;
+		      var radB = shapeB.radius;
 		      var vec = posA.sub(posB);
 		      var l = vec.length();
 		      if (l > radA + radB) {
 		        return [];
 		      }
 		      var contact = new _SCNPhysicsContact2.default();
-		      contact._nodeA = bodyA._node;
-		      contact._nodeB = bodyB._node;
+		      contact._nodeA = sphereA._node;
+		      contact._nodeB = sphereB._node;
 		      contact._contactPoint = posA.add(vec.mul((radA - radB + l) * 0.5));
 		      contact._contactNormal = vec.mul(-1).normalize();
-		      contact._penetrationDistance = 0.000000001; // FIXME: implement
+		      contact._penetrationDistance = radA + radB - l;
+		      return [contact];
+		    }
+		  }, {
+		    key: '_contactTestBetweenBoxAndSphere',
+		    value: function _contactTestBetweenBoxAndSphere(box, sphere) {
+		      var reverse = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+		      var boxShape = box.physicsShape._shape;
+		      var sphereShape = sphere.physicsShape._shape;
+
+		      var size = new _SCNVector2.default();
+		      var transform = null;
+		      var spherePos = sphere._position.transform(box._invTransform);
+		      var v = new _SCNVector2.default();
+
+		      var w = boxShape.width * 0.5;
+		      var h = boxShape.height * 0.5;
+		      var l = boxShape.length * 0.5;
+		      if (Math.abs(spherePos.x) - w <= 0) {
+		        v.x = 0;
+		      } else {
+		        v.x = spherePos.x - w;
+		      }
+		      if (Math.abs(spherePos.y) - h <= 0) {
+		        v.y = 0;
+		      } else {
+		        v.y = spherePos.y - h;
+		      }
+		      if (Math.abs(spherePos.z) - l <= 0) {
+		        v.z = 0;
+		      } else {
+		        v.z = spherePos.z - l;
+		      }
+
+		      var d = v.length();
+		      if (d > sphereShape.radius) {
+		        return [];
+		      }
+
+		      var contact = new _SCNPhysicsContact2.default();
+		      if (reverse) {
+		        contact._nodeA = sphere._node;
+		        contact._nodeB = box._node;
+		      } else {
+		        contact._nodeA = box._node;
+		        contact._nodeB = sphere._node;
+		      }
+
+		      contact._contactPoint = v.transform(box._transform);
+		      contact._contactNormal = v.rotate(box._transform).normalize();
+		      if (reverse) {
+		        contact._contactNormal = contact._contactNormal.mul(-1);
+		      }
+		      contact._penetrationDistance = d - sphereShape.radius;
 		      return [contact];
 		    }
 
@@ -37167,6 +39473,34 @@ var JSceneKitExample =
 		      //    contacts.push(...this.contactTestBetween(bodyA, bodyB))
 		      //  }
 		      //}
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
+
+		      try {
+		        for (var _iterator = objects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var obj = _step.value;
+
+		          var body = obj.physicsBody;
+		          if (body.type === _SCNPhysicsBodyType2.default.kinematic) {
+		            body._resetTransform();
+		          }
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+
 		      for (var i = 0; i < objects.length; i++) {
 		        var bodyA = objects[i].presentation.physicsBody;
 		        for (var j = 0; j < objects.length; j++) {
@@ -37179,29 +39513,29 @@ var JSceneKitExample =
 		      }
 
 		      if (this.contactDelegate) {
-		        var _iteratorNormalCompletion = true;
-		        var _didIteratorError = false;
-		        var _iteratorError = undefined;
+		        var _iteratorNormalCompletion2 = true;
+		        var _didIteratorError2 = false;
+		        var _iteratorError2 = undefined;
 
 		        try {
-		          for (var _iterator = contacts[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-		            var contact = _step.value;
+		          for (var _iterator2 = contacts[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		            var contact = _step2.value;
 
 		            this.contactDelegate.physicsWorldDidBegin(this, contact);
 		          }
 		          // this.contactDelegate.physicsWorldDidUpdate
 		          // this.contactDelegate.physicsWorldDidEnd
 		        } catch (err) {
-		          _didIteratorError = true;
-		          _iteratorError = err;
+		          _didIteratorError2 = true;
+		          _iteratorError2 = err;
 		        } finally {
 		          try {
-		            if (!_iteratorNormalCompletion && _iterator.return) {
-		              _iterator.return();
+		            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		              _iterator2.return();
 		            }
 		          } finally {
-		            if (_didIteratorError) {
-		              throw _iteratorError;
+		            if (_didIteratorError2) {
+		              throw _iteratorError2;
 		            }
 		          }
 		        }
@@ -37238,7 +39572,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsWorld;
 
 	/***/ },
-	/* 102 */
+	/* 110 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -37294,7 +39628,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBehavior;
 
 	/***/ },
-	/* 103 */
+	/* 111 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -37305,11 +39639,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsWorld = __webpack_require__(101);
+		var _SCNPhysicsWorld = __webpack_require__(109);
 
 		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
 
-		var _SCNPhysicsContact = __webpack_require__(104);
+		var _SCNPhysicsContact = __webpack_require__(112);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
@@ -37387,7 +39721,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsContactDelegate;
 
 	/***/ },
-	/* 104 */
+	/* 112 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -37402,11 +39736,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -37536,7 +39870,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsContact;
 
 	/***/ },
-	/* 105 */
+	/* 113 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -37551,19 +39885,23 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNPhysicsBodyType = __webpack_require__(106);
+		var _SCNBox = __webpack_require__(101);
+
+		var _SCNBox2 = _interopRequireDefault(_SCNBox);
+
+		var _SCNPhysicsBodyType = __webpack_require__(114);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
-		var _SCNPhysicsShape = __webpack_require__(107);
+		var _SCNPhysicsShape = __webpack_require__(115);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -37794,6 +40132,19 @@ var JSceneKitExample =
 		    _this._node = null;
 		    _this._btRigidBody = null;
 		    _this._updateRigidBody();
+
+		    _this._position = null;
+		    _this._radius = null;
+		    _this._transform = null;
+		    _this._invTransform = null;
+		    _this._shape = null;
+
+		    //this._isBox = false
+		    //this._width = 0
+		    //this._height = 0
+		    //this._length = 0
+		    //this._radius = 0
+		    //this._center = null
 		    return _this;
 		  }
 
@@ -37885,7 +40236,50 @@ var JSceneKitExample =
 		     * @desc If you change the position or orientation of a node with an attached static or dynamic physics body, call this method afterward to ensure that the physics simulation incorporates the change. You need not call this method for kinematic bodies.Note that dynamic and physics bodies are designed to be moved only by the physics simulation or not at all. You may use this method to move them regardless of this restriction, but at a cost to performance.
 		     * @see https://developer.apple.com/reference/scenekit/scnphysicsbody/1514782-resettransform
 		     */
-		    value: function resetTransform() {}
+		    value: function resetTransform() {
+		      this._resetTransform(true);
+		    }
+		  }, {
+		    key: '_resetTransform',
+		    value: function _resetTransform() {
+		      var updateWorldTransform = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+		      if (this._node !== null) {
+		        if (updateWorldTransform) {
+		          this._node._updateWorldTransform();
+		        }
+		        if (this._node._presentation) {
+		          this._transform = this._node._presentation._worldTransform;
+		        } else {
+		          this._transform = this._node._worldTransform;
+		        }
+		      }
+
+		      this._radius = 0;
+		      if (!this.physicsShape && this._node && this._node.geometry) {
+		        this.physicsShape = new _SCNPhysicsShape2.default(this._node.geometry);
+		      }
+		      if (this.physicsShape) {
+		        if (!this.physicsShape._sourceObject) {
+		          this.physicsShape._setSourceObject(this._node);
+		        }
+		        if (!this.physicsShape._sourceGeometry) {
+		          this.physicsShape._setSourceObject(this._sourceObject);
+		        }
+		        if (!this.physicsShape._shape) {
+		          this.physicsShape._createShape();
+		        }
+		        var center = this.physicsShape._center;
+		        this._transform = this._transform.translation(center.x, center.y, center.z);
+
+		        if (this.physicsShape._shape) {
+		          this._radius = this.physicsShape._shape.getBoundingSphere().radius;
+		        }
+		      }
+
+		      this._position = this._transform.getTranslation();
+		      this._invTransform = this._transform.invert();
+		    }
 
 		    /**
 		     * @access private
@@ -37944,13 +40338,8 @@ var JSceneKitExample =
 		    // FIXME: use physics library
 
 		  }, {
-		    key: 'isResting',
-		    get: function get() {
-		      return this._isResting;
-		    }
-		  }, {
-		    key: '_position',
-		    get: function get() {
+		    key: '_getPosition',
+		    value: function _getPosition() {
 		      var pos = new _SCNVector2.default(0, 0, 0);
 		      if (this._node !== null) {
 		        pos = this._node._worldTranslation;
@@ -37962,12 +40351,17 @@ var JSceneKitExample =
 		      return pos;
 		    }
 		  }, {
-		    key: '_radius',
-		    get: function get() {
+		    key: '_getRadius',
+		    value: function _getRadius() {
 		      if (this.physicsShape === null || this.physicsShape._sourceGeometry === null) {
 		        return 0;
 		      }
 		      return this.physicsShape._sourceGeometry.getBoundingSphere().radius;
+		    }
+		  }, {
+		    key: 'isResting',
+		    get: function get() {
+		      return this._isResting;
 		    }
 		  }], [{
 		    key: 'static',
@@ -38010,7 +40404,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBody;
 
 	/***/ },
-	/* 106 */
+	/* 114 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -38036,7 +40430,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBodyType;
 
 	/***/ },
-	/* 107 */
+	/* 115 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -38051,13 +40445,29 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNBox = __webpack_require__(101);
+
+		var _SCNBox2 = _interopRequireDefault(_SCNBox);
+
+		var _SCNCapsule = __webpack_require__(116);
+
+		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
+
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
+
+		var _SCNSphere = __webpack_require__(117);
+
+		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38123,41 +40533,130 @@ var JSceneKitExample =
 		    var _this = _possibleConstructorReturn(this, (SCNPhysicsShape.__proto__ || Object.getPrototypeOf(SCNPhysicsShape)).call(this));
 
 		    var _options = options;
-		    if (Array.isArray(_options)) {
-		      _options = new Map(_options);
-		    }
+		    //if(Array.isArray(_options)){
+		    //  _options = new Map(_options)
+		    //}
 
+		    /**
+		     * @type {SCNGeometry}
+		     */
 		    _this._sourceGeometry = null;
 
-		    // Getting Information About a Shape
-		    _this._sourceObject = geometry;
-		    if (_this._sourceObject instanceof _SCNGeometry2.default) {
-		      _this._sourceGeometry = _this._sourceObject;
-		    } else if (_this._sourceObject instanceof _SCNNode2.default) {
-		      _this._sourceGeometry = _this._sourceObject.geometry;
-		    } else {
-		      //throw new Error(`can't use it for source object: ${geometry.className}`)
-		    }
-		    if (!_this._sourceGeometry) {
-		      //throw new Error('source geometry is null')
-		    }
-
+		    /**
+		     * @type {Object}
+		     */
 		    _this._options = _options;
+
+		    /**
+		     * @type {SCNMatrix4}
+		     */
 		    _this._transforms = null;
+
+		    /**
+		     * @type {SCNGeometry}
+		     */
+		    _this._shape = null;
+
+		    /**
+		     * @type {SCNVector3}
+		     */
+		    _this._center = new _SCNVector2.default(0, 0, 0);
+
+		    // Getting Information About a Shape
+		    _this._sourceObject = null;
+
+		    _this._setSourceObject(geometry);
+		    _this._createShape();
 		    return _this;
 		  }
 
-		  // Getting Information About a Shape
-
-		  /**
-		   * The object that was used to create the shape.
-		   * @type {Object}
-		   * @desc This property, along with the transforms and options properties, provides the information that was used to create the shape. You can use this information, for example, to draw editing or debugging UI in your scene.If the shape was created with the init(geometry:options:) method, the source object is an SCNGeometry object, and the options property contains the options affecting the shape’s construction from that geometry.If the shape was created with the init(node:options:) method, the source object is an SCNNode object, and the options property contains the options affecting the shape’s construction from that node.If the shape was created with the init(shapes:transforms:) method, the source object is an array of SCNPhysicsShape objects and the transforms property describes how those shapes combine to form a compound shape.
-		   * @see https://developer.apple.com/reference/scenekit/scnphysicsshape/1508888-sourceobject
-		   */
-
-
 		  _createClass(SCNPhysicsShape, [{
+		    key: '_setSourceObject',
+		    value: function _setSourceObject(obj) {
+		      this._sourceObject = obj;
+		      if (this._sourceObject instanceof _SCNGeometry2.default) {
+		        this._sourceGeometry = this._sourceObject;
+		      } else if (this._sourceObject instanceof _SCNNode2.default && this._sourceObject.geometry) {
+		        // TODO: get geometries recursively
+		        this._sourceGeometry = this._sourceObject.geometry;
+		      } else {
+		        //throw new Error(`can't use it for source object: ${geometry.className}`)
+		      }
+		      if (!this._sourceGeometry) {
+		        //throw new Error('source geometry is null')
+		      }
+		    }
+		  }, {
+		    key: '_createShape',
+		    value: function _createShape() {
+		      if (!this._sourceGeometry) {
+		        //throw new Error('SCNPhysicsShape: must have a geometry')
+		        return;
+		      }
+
+		      //if(this._options && this._options.get(_Option.type) === _ShapeType.boundingBox){
+		      if (this._options && this._options[_Option.type] === _ShapeType.boundingBox) {
+		        this._createShapeAsBoundingBox();
+		      } else if (this._sourceGeometry instanceof _SCNCapsule2.default) {
+		        // FIXME: do not convert to SCNBox
+		        this._createShapeAsBoundingBox();
+		      } else if (this._sourceGeometry instanceof _SCNBox2.default) {
+		        this._createShapeAsBox();
+		      } else if (this._sourceGeometry instanceof _SCNSphere2.default) {
+		        this._createShapeAsSphere
+		        //}else if(this._options && this._options.get(_Option.type) === _ShapeType.convecHull){
+		        ();
+		      } else if (this._options && this._options[_Option.type] === _ShapeType.concavePolyhedron) {
+		        // give up making a simple shape
+		        this._shape = this._sourceGeometry;
+		      } else {
+		        this._createShapeAsSphere();
+		      }
+		    }
+		  }, {
+		    key: '_createShapeAsBoundingBox',
+		    value: function _createShapeAsBoundingBox() {
+		      var boundingBox = this._sourceGeometry._updateBoundingBox();
+		      var width = boundingBox.max.x - boundingBox.min.x;
+		      var height = boundingBox.max.y - boundingBox.min.y;
+		      var length = boundingBox.max.z - boundingBox.min.z;
+		      var chamferRadius = 0;
+		      var box = new _SCNBox2.default(width, height, length, chamferRadius);
+		      this._shape = box;
+		      this._center = new _SCNVector2.default(boundingBox.min.x + width * 0.5, boundingBox.min.y + height * 0.5, boundingBox.min.z + length * 0.5);
+		    }
+		  }, {
+		    key: '_createShapeAsBox',
+		    value: function _createShapeAsBox() {
+		      // TODO: copy the geometry
+		      this._shape = this._sourceGeometry;
+		      this._center = new _SCNVector2.default(0, 0, 0);
+		    }
+		  }, {
+		    key: '_createShapeAsSphere',
+		    value: function _createShapeAsSphere() {
+		      if (this._sourceGeometry instanceof _SCNSphere2.default) {
+		        // TODO: copy the geometry
+		        this._shape = this._sourceGeometry;
+		        this._center = new _SCNVector2.default(0, 0, 0);
+		        return;
+		      }
+		      var boundingSphere = this._sourceGeometry.getBoundingSphere();
+		      var sphere = new _SCNSphere2.default(boundingSphere.radius);
+		      this._shape = sphere;
+		      this._center = boundingSphere.center;
+		    }
+
+		    // Getting Information About a Shape
+
+		    /**
+		     * The object that was used to create the shape.
+		     * @type {Object}
+		     * @desc This property, along with the transforms and options properties, provides the information that was used to create the shape. You can use this information, for example, to draw editing or debugging UI in your scene.If the shape was created with the init(geometry:options:) method, the source object is an SCNGeometry object, and the options property contains the options affecting the shape’s construction from that geometry.If the shape was created with the init(node:options:) method, the source object is an SCNNode object, and the options property contains the options affecting the shape’s construction from that node.If the shape was created with the init(shapes:transforms:) method, the source object is an array of SCNPhysicsShape objects and the transforms property describes how those shapes combine to form a compound shape.
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicsshape/1508888-sourceobject
+		     */
+
+		  }, {
 		    key: '_createBtCollisionShape',
 
 
@@ -38242,7 +40741,417 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsShape;
 
 	/***/ },
-	/* 108 */
+	/* 116 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+		var _SCNGeometry2 = __webpack_require__(78);
+
+		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		/*global Ammo*/
+
+		/**
+		 * A right circular cylinder geometry whose ends are capped with hemispheres.
+		 * @access public
+		 * @extends {SCNGeometry}
+		 * @see https://developer.apple.com/reference/scenekit/scncapsule
+		 */
+		var SCNCapsule = function (_SCNGeometry) {
+		  _inherits(SCNCapsule, _SCNGeometry);
+
+		  // Creating a Capsule
+
+		  /**
+		   * Creates a capsule geometry with the specified radius and height.
+		   * @access public
+		   * @constructor
+		   * @param {number} capRadius - The radius both of the capsule’s cylindrical body and of its hemispherical ends.
+		   * @param {number} height - The height of the capsule along the y-axis of its local coordinate space.
+		   * @desc The capsule is centered in its local coordinate system. For example, if you create a capsule whose cap radius is 5.0 and height is 20.0, it extends from -10.0 to 10.0 in the y-axis, and the circular cross section at the center of its body extends from -5.0 to 5.0 along the x- and z-axes.
+		   * @see https://developer.apple.com/reference/scenekit/scncapsule/1523790-init
+		   */
+		  function SCNCapsule(capRadius, height) {
+		    _classCallCheck(this, SCNCapsule);
+
+		    // Adjusting a Capsule’s Dimensions
+
+		    /**
+		     * The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523926-capradius
+		     */
+		    var _this = _possibleConstructorReturn(this, (SCNCapsule.__proto__ || Object.getPrototypeOf(SCNCapsule)).call(this));
+
+		    _this.capRadius = capRadius;
+
+		    /**
+		     * The extent of the capsule along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522789-height
+		     */
+		    _this.height = height;
+
+		    // Adjusting Geometric Detail
+
+		    /**
+		     * The number of subdivisions around the lateral circumference of the capsule. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522735-radialsegmentcount
+		     */
+		    _this.radialSegmentCount = 24;
+
+		    /**
+		     * The number of subdivisions in the height of each hemispherical end of the capsule. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523561-capsegmentcount
+		     */
+		    _this.capSegmentCount = 48;
+
+		    /**
+		     * The number of subdivisions in the sides of the capsule along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523697-heightsegmentcount
+		     */
+		    _this.heightSegmentCount = 1;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
+		    return _this;
+		  }
+
+		  _createClass(SCNCapsule, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      // TODO: implement
+
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.capRadius, -this.height * 0.5, -this.capRadius),
+		        max: new _SCNVector2.default(this.capRadius, this.height * 0.5, this.capRadius)
+		      };
+		    }
+
+		    /**
+		     * @access private
+		     * @returns {Ammo.btCollisionShape}
+		     * @desc call Ammo.destroy(shape) after using it.
+		     */
+
+		  }, {
+		    key: '_createBtCollisionShape',
+		    value: function _createBtCollisionShape() {}
+		    //const height = (this.height - this.capRadius) * 0.5
+		    //const shape = new Ammo.btCapsuleShape(this.capRadius, height)
+		    //return shape
+
+
+		    /**
+		     * The center point and radius of the object’s bounding sphere.
+		     * @type {Object}
+		     * @parameter {SCNVector3} _boundingSphere.center -
+		     * @parameter {number} _boundingSphere.radius -
+		     * @returns {Object} -
+		     * @desc Scene Kit defines a bounding sphere in the local coordinate space using a center point and a radius. For example, if a node’s bounding sphere has the center point {3, 1, 4} and radius 2.0, all points in the vertex data of node’s geometry (and any geometry attached to its child nodes) lie within 2.0 units of the center point.The coordinates provided when reading this property are valid only if the object has a volume to be measured. For a geometry containing no vertex data or a node containing no geometry (and whose child nodes, if any, contain no geometry), the values center and radius are both zero.
+		     * @see https://developer.apple.com/reference/scenekit/scnboundingvolume/2034707-boundingsphere
+		     */
+
+		  }, {
+		    key: 'getBoundingSphere',
+		    value: function getBoundingSphere() {
+		      var c = new _SCNVector2.default(0, 0, 0);
+		      var r = this.height * 0.5;
+
+		      return { center: c, radius: r };
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNCapsule.prototype.__proto__ || Object.getPrototypeOf(SCNCapsule.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
+		  }]);
+
+		  return SCNCapsule;
+		}(_SCNGeometry3.default);
+
+		exports.default = SCNCapsule;
+
+	/***/ },
+	/* 117 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNGeometry2 = __webpack_require__(78);
+
+		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		/**
+		 * A sphere (or ball or globe) geometry.
+		 * @access public
+		 * @extends {SCNGeometry}
+		 * @see https://developer.apple.com/reference/scenekit/scnsphere
+		 */
+		var SCNSphere = function (_SCNGeometry) {
+		  _inherits(SCNSphere, _SCNGeometry);
+
+		  _createClass(SCNSphere, null, [{
+		    key: '_propTypes',
+		    get: function get() {
+		      return {
+		        $constructor: function $constructor(propNames, propValues) {
+		          var sphere = new SCNSphere(propValues.sphereradius);
+		          sphere.isGeodesic = propValues.spheregeodesic;
+		          sphere.segmentCount = propValues.spheresegmentCount;
+		          sphere.name = propValues.name;
+		          sphere._sphereRadialSpan = propValues.sphereRadialSpan;
+		          sphere._isHemispheric = propValues.spherehemispheric;
+		          sphere._spherePrimitiveType = propValues.sphereprimitiveType;
+		          sphere.materials = propValues.materials;
+		          sphere.subdivisionLevel = propValues.subdivisionLevel;
+		          sphere._createGeometry();
+
+		          return sphere;
+		        },
+		        sphereradius: ['float', null],
+		        spheregeodesic: ['boolean', null],
+		        spheresegmentCount: ['integer', null],
+		        materials: ['NSArray', null],
+
+		        name: ['string', null],
+		        sphereradialSpan: ['float', null],
+		        spherehemispheric: ['boolean', null],
+		        sphereprimitiveType: ['integer', null],
+		        subdivisionLevel: ['integer', null],
+		        subdivisionSettings: ['bytes', null]
+		      };
+		    }
+
+		    // Creating a Sphere
+
+		    /**
+		     * Creates a sphere geometry with the specified radius.
+		     * @access public
+		     * @constructor
+		     * @param {number} radius - The radius of the sphere in its local coordinate space.
+		     * @desc The sphere is centered in its local coordinate system. For example, if you create a sphere whose radius is 5.0, it extends from -5.0 to 5.0 along each of the the x, y, and z-axes.
+		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1522601-init
+		     */
+
+		  }]);
+
+		  function SCNSphere() {
+		    var radius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.5;
+
+		    _classCallCheck(this, SCNSphere);
+
+		    // Adjusting a Sphere’s Dimensions
+
+		    /**
+		     * The radius of the sphere. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523787-radius
+		     */
+		    var _this = _possibleConstructorReturn(this, (SCNSphere.__proto__ || Object.getPrototypeOf(SCNSphere)).call(this, [], []));
+
+		    _this.radius = radius;
+
+		    // Adjusting Geometric Detail
+
+		    /**
+		     * A Boolean value specifying whether SceneKit uses a geodesic polygon mesh to render the sphere.
+		     * @type {boolean}
+		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523268-isgeodesic
+		     */
+		    _this.isGeodesic = false;
+
+		    /**
+		     * A number determining the detail of the polygon mesh SceneKit uses to render the sphere. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523912-segmentcount
+		     */
+		    _this.segmentCount = 24;
+
+		    _this._sphereRadialSpan = 0;
+		    _this._spherePrimitiveType = 0;
+		    _this._isHemispheric = false;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
+		    return _this;
+		  }
+
+		  _createClass(SCNSphere, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+		      var indexData = [];
+		      var vectorCount = (this.segmentCount + 1) * (this.segmentCount + 1);
+		      var primitiveCount = (this.segmentCount - 1) * this.segmentCount * 2;
+
+		      var yNom = [];
+		      var ySin = [];
+		      for (var lat = 0; lat <= this.segmentCount; lat++) {
+		        yNom.push(-Math.cos(Math.PI * lat / this.segmentCount));
+		        ySin.push(Math.sin(Math.PI * lat / this.segmentCount));
+		      }
+
+		      for (var lng = 0; lng <= this.segmentCount; lng++) {
+		        var x = -Math.sin(2.0 * Math.PI * lng / this.segmentCount);
+		        var z = -Math.cos(2.0 * Math.PI * lng / this.segmentCount);
+		        for (var _lat = 0; _lat <= this.segmentCount; _lat++) {
+		          var xNom = x * ySin[_lat];
+		          var zNom = z * ySin[_lat];
+
+		          // vertex
+		          sourceData.push(xNom * this.radius, yNom[_lat] * this.radius, zNom * this.radius
+
+		          // normal
+		          );sourceData.push(xNom, yNom[_lat], zNom
+
+		          // texcoord
+		          );sourceData.push(lng / 24.0, 1.0 - _lat / 24.0);
+		        }
+		      }
+
+		      for (var i = 0; i < this.segmentCount; i++) {
+		        var index1 = i * (this.segmentCount + 1);
+		        var index2 = index1 + this.segmentCount + 2;
+
+		        indexData.push(index1, index2, index1 + 1);
+		        index1 += 1;
+		        for (var j = 0; j < this.segmentCount - 2; j++) {
+		          indexData.push(index1, index2 + 1, index1 + 1);
+		          indexData.push(index1, index2, index2 + 1);
+		          index1 += 1;
+		          index2 += 1;
+		        }
+		        indexData.push(index1, index2, index2 + 1);
+		      }
+
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var element = new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles);
+
+		      this._geometryElements = [element];
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.radius, -this.radius, -this.radius),
+		        max: new _SCNVector2.default(this.radius, this.radius, this.radius)
+		      };
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNSphere.prototype.__proto__ || Object.getPrototypeOf(SCNSphere.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
+		  }]);
+
+		  return SCNSphere;
+		}(_SCNGeometry3.default);
+
+		exports.default = SCNSphere;
+
+	/***/ },
+	/* 118 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -38257,15 +41166,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -38461,7 +41370,7 @@ var JSceneKitExample =
 		exports.default = SCNHitTestResult;
 
 	/***/ },
-	/* 109 */
+	/* 119 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -38474,11 +41383,11 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _BinaryRequest2 = __webpack_require__(99);
+		var _BinaryRequest2 = __webpack_require__(107);
 
 		var _BinaryRequest3 = _interopRequireDefault(_BinaryRequest2);
 
-		var _NSKeyedUnarchiver = __webpack_require__(35);
+		var _NSKeyedUnarchiver = __webpack_require__(43);
 
 		var _NSKeyedUnarchiver2 = _interopRequireDefault(_NSKeyedUnarchiver);
 
@@ -38486,65 +41395,73 @@ var JSceneKitExample =
 
 		var _NSObject4 = _interopRequireDefault(_NSObject3);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNParticleBirthLocation = __webpack_require__(110);
+		var _SCNParticleBirthLocation = __webpack_require__(120);
 
 		var _SCNParticleBirthLocation2 = _interopRequireDefault(_SCNParticleBirthLocation);
 
-		var _SCNParticleBirthDirection = __webpack_require__(111);
+		var _SCNParticleBirthDirection = __webpack_require__(121);
 
 		var _SCNParticleBirthDirection2 = _interopRequireDefault(_SCNParticleBirthDirection);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
-		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(112);
+		var _SCNOrderedDictionary = __webpack_require__(89);
+
+		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
+
+		var _SCNParticleImageSequenceAnimationMode = __webpack_require__(122);
 
 		var _SCNParticleImageSequenceAnimationMode2 = _interopRequireDefault(_SCNParticleImageSequenceAnimationMode);
 
-		var _SCNParticleBlendMode = __webpack_require__(113);
+		var _SCNParticleBlendMode = __webpack_require__(123);
 
 		var _SCNParticleBlendMode2 = _interopRequireDefault(_SCNParticleBlendMode);
 
-		var _SCNParticleOrientationMode = __webpack_require__(114);
+		var _SCNParticleOrientationMode = __webpack_require__(124);
 
 		var _SCNParticleOrientationMode2 = _interopRequireDefault(_SCNParticleOrientationMode);
 
-		var _SCNParticleSortingMode = __webpack_require__(115);
+		var _SCNParticleSortingMode = __webpack_require__(125);
 
 		var _SCNParticleSortingMode2 = _interopRequireDefault(_SCNParticleSortingMode);
 
-		var _SCNParticleEvent = __webpack_require__(116);
+		var _SCNParticleEvent = __webpack_require__(126);
 
 		var _SCNParticleEvent2 = _interopRequireDefault(_SCNParticleEvent);
 
-		var _SCNParticleEventBlock = __webpack_require__(117);
+		var _SCNParticleEventBlock = __webpack_require__(127);
 
 		var _SCNParticleEventBlock2 = _interopRequireDefault(_SCNParticleEventBlock);
 
-		var _SCNParticlePropertyController = __webpack_require__(118);
+		var _SCNParticlePropertyController = __webpack_require__(128);
 
 		var _SCNParticlePropertyController2 = _interopRequireDefault(_SCNParticlePropertyController);
 
-		var _SCNParticleModifierStage = __webpack_require__(120);
+		var _SCNParticleModifierStage = __webpack_require__(130);
 
 		var _SCNParticleModifierStage2 = _interopRequireDefault(_SCNParticleModifierStage);
 
-		var _SCNParticleModifierBlock = __webpack_require__(121);
+		var _SCNParticleModifierBlock = __webpack_require__(131);
 
 		var _SCNParticleModifierBlock2 = _interopRequireDefault(_SCNParticleModifierBlock);
+
+		var _SCNTransaction = __webpack_require__(90);
+
+		var _SCNTransaction2 = _interopRequireDefault(_SCNTransaction);
 
 		var _SKColor = __webpack_require__(11);
 
@@ -38691,7 +41608,7 @@ var JSceneKitExample =
 		    key: 'floatArray',
 		    value: function floatArray() {
 		      var baseArray = [].concat(_toConsumableArray(this.position.floatArray()), _toConsumableArray(this.velocity.floatArray()), _toConsumableArray(this.axis.floatArray()), [this.angle], _toConsumableArray(this.color.floatArray()), [this.size]);
-		      return [].concat(_toConsumableArray(baseArray), [this.texLeft, this.texTop], _toConsumableArray(baseArray), [this.texRight, this.texTop], _toConsumableArray(baseArray), [this.texLeft, this.texBottom], _toConsumableArray(baseArray), [this.texRight, this.texBottom]);
+		      return [].concat(_toConsumableArray(baseArray), [-1.0, -1.0, this.texLeft, this.texTop], _toConsumableArray(baseArray), [1.0, -1.0, this.texRight, this.texTop], _toConsumableArray(baseArray), [-1.0, 1.0, this.texLeft, this.texBottom], _toConsumableArray(baseArray), [1.0, 1.0, this.texRight, this.texBottom]);
 		    }
 		  }, {
 		    key: 'valueForKeyPath',
@@ -38739,7 +41656,7 @@ var JSceneKitExample =
 		        idleDurationVariation: 'float',
 		        loops: 'boolean',
 		        warmupDuration: 'float',
-		        birthRate: 'float',
+		        birthRate: ['float', '_birthRate'],
 		        birthRateVariation: 'float',
 		        emitterShape: 'SCNGeometry',
 		        birthLocation: 'integer',
@@ -38889,7 +41806,7 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnparticlesystem/1522857-birthrate
 		     */
-		    _this2.birthRate = 0.0;
+		    _this2._birthRate = 0.0;
 
 		    /**
 		     * The range of randomized particle birth rate values. Animatable.
@@ -39298,21 +42215,23 @@ var JSceneKitExample =
 		    _this2._imageWidth = null;
 		    _this2._imageHeight = null;
 
-		    _this2._loadingPromise = null;
-		    //if(name !== null){
-		    //  let path = name
-		    //  if(directory !== null){
-		    //    path = `${directory}/${name}`
-		    //  }
-		    //  this._loadingPromise = _BinaryRequest.get(path)
-		    //  .then((data) => {
-		    //    const system = NSKeyedUnarchiver.unarchiveObjectWithData(data, path)
-		    //    if(!(system instanceof SCNParticleSystem)){
-		    //      throw new Error(`file ${path} is not an instance of SCNParticleSystem`)
-		    //    }
-		    //    return system
-		    //  })
-		    //}
+		    _this2.__presentation = null;
+
+		    ///////////////////
+		    // SCNAnimatable //
+		    ///////////////////
+
+		    /**
+		     * @access private
+		     * @type {SCNOrderedDictionary}
+		     */
+		    _this2._animations = new _SCNOrderedDictionary2.default();
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this2._loadedPromise = null;
 		    return _this2;
 		  }
 
@@ -39466,43 +42385,49 @@ var JSceneKitExample =
 		      var _this3 = this;
 
 		      var image = new Image();
-		      if (path.indexOf('file:///') === 0) {
-		        var paths = path.slice(8).split('/');
-		        var pathCount = 1;
-		        var _path = directoryPath + paths.slice(-pathCount).join('/');
-		        image.onload = function () {
-		          //console.info(`image ${_path} onload`)
-		          _this3.particleImage = image;
-		        };
-		        image.onerror = function () {
-		          pathCount += 1;
-		          if (pathCount > paths.length) {
-		            //console.info(`image ${path} load error. pathCount > paths.length`)
-		          } else {
-		            //console.info(`image ${_path} load error.`)
-		            _path = directoryPath + paths.slice(-pathCount).join('/'
-		            //console.info(`try ${_path}`)
-		            );image.src = _path;
-		          }
-		        };
-		        image.src = _path;
-		      } else {
-		        var _paths = path.split('/');
-		        var _pathCount = 0;
-		        image.onload = function () {
-		          //console.info(`image ${path} onload`)
-		          _this3.particleImage = image;
-		        };
-		        image.onerror = function () {
-		          _pathCount += 1;
-		          if (_pathCount > _paths.length) {
-		            // load error
-		          } else {
-		            image.src = directoryPath + _paths.slice(-_pathCount).join('/');
-		          }
-		        };
-		        image.src = path;
-		      }
+		      this._loadedPromise = new Promise(function (resolve, reject) {
+		        if (path.indexOf('file:///') === 0) {
+		          var paths = path.slice(8).split('/');
+		          var pathCount = 1;
+		          var _path = directoryPath + paths.slice(-pathCount).join('/');
+		          image.onload = function () {
+		            //console.info(`image ${_path} onload`)
+		            _this3.particleImage = image;
+		            resolve();
+		          };
+		          image.onerror = function () {
+		            pathCount += 1;
+		            if (pathCount > paths.length) {
+		              //console.info(`image ${path} load error. pathCount > paths.length`)
+		              reject();
+		            } else {
+		              //console.info(`image ${_path} load error.`)
+		              _path = directoryPath + paths.slice(-pathCount).join('/'
+		              //console.info(`try ${_path}`)
+		              );image.src = _path;
+		            }
+		          };
+		          image.src = _path;
+		        } else {
+		          var _paths = path.split('/');
+		          var _pathCount = 0;
+		          image.onload = function () {
+		            //console.info(`image ${path} onload`)
+		            _this3.particleImage = image;
+		            resolve();
+		          };
+		          image.onerror = function () {
+		            _pathCount += 1;
+		            if (_pathCount > _paths.length) {
+		              // load error
+		              reject();
+		            } else {
+		              image.src = directoryPath + _paths.slice(-_pathCount).join('/');
+		            }
+		          };
+		          image.src = path;
+		        }
+		      });
 		      return image;
 		    }
 		  }, {
@@ -39525,21 +42450,25 @@ var JSceneKitExample =
 		      var colorLoc = gl.getAttribLocation(program, 'color');
 		      var sizeLoc = gl.getAttribLocation(program, 'size'
 		      //const lifeLoc = gl.getAttribLocation(program, 'life')
-		      );var cornerLoc = gl.getAttribLocation(program, 'corner'
+		      );var cornerLoc = gl.getAttribLocation(program, 'corner');
+		      var texcoordLoc = gl.getAttribLocation(program, 'texcoord'
 
 		      // vertexAttribPointer(ulong idx, long size, ulong type, bool norm, long stride, ulong offset)
-		      );gl.enableVertexAttribArray(positionLoc);
-		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 68, 0);
+		      );var stride = 76;
+		      gl.enableVertexAttribArray(positionLoc);
+		      gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, stride, 0);
 		      gl.enableVertexAttribArray(velocityLoc);
-		      gl.vertexAttribPointer(velocityLoc, 3, gl.FLOAT, false, 68, 12);
+		      gl.vertexAttribPointer(velocityLoc, 3, gl.FLOAT, false, stride, 12);
 		      gl.enableVertexAttribArray(rotationLoc);
-		      gl.vertexAttribPointer(rotationLoc, 4, gl.FLOAT, false, 68, 24);
+		      gl.vertexAttribPointer(rotationLoc, 4, gl.FLOAT, false, stride, 24);
 		      gl.enableVertexAttribArray(colorLoc);
-		      gl.vertexAttribPointer(colorLoc, 4, gl.FLOAT, false, 68, 40);
+		      gl.vertexAttribPointer(colorLoc, 4, gl.FLOAT, false, stride, 40);
 		      gl.enableVertexAttribArray(sizeLoc);
-		      gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 68, 56);
+		      gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, stride, 56);
 		      gl.enableVertexAttribArray(cornerLoc);
-		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, 68, 60
+		      gl.vertexAttribPointer(cornerLoc, 2, gl.FLOAT, false, stride, 60);
+		      gl.enableVertexAttribArray(texcoordLoc);
+		      gl.vertexAttribPointer(texcoordLoc, 2, gl.FLOAT, false, stride, 68
 
 		      /*
 		      const arr = []
@@ -39555,8 +42484,8 @@ var JSceneKitExample =
 
 		      // initialize parameters
 		      );this._numImages = this.imageSequenceRowCount * this.imageSequenceColumnCount;
-		      this._imageWidth = 2.0 / this.imageSequenceColumnCount;
-		      this._imageHeight = 2.0 / this.imageSequenceRowCount;
+		      this._imageWidth = 1.0 / this.imageSequenceColumnCount;
+		      this._imageHeight = 1.0 / this.imageSequenceRowCount;
 		    }
 		  }, {
 		    key: '_updateIndexBuffer',
@@ -39624,32 +42553,38 @@ var JSceneKitExample =
 		        switch (this.emitterShape.className) {
 		          case 'SCNBox':
 		            {
-		              // FIXME: calculate the area
-		              var rnd = Math.floor(Math.random() * 6);
+		              var rnd = Math.random();
 		              var rnd1 = Math.random() - 0.5;
 		              var rnd2 = Math.random() - 0.5;
 		              var w = this.emitterShape.width;
 		              var h = this.emitterShape.height;
 		              var l = this.emitterShape.length;
+		              var rx = h * l;
+		              var ry = l * w;
+		              var rz = w * h;
+		              var r = 1.0 / (rx + ry + rz);
+		              var tx = rx * r;
+		              var ty = ry * r;
+		              var tz = rz * r;
 
 		              // TODO: chamferRadius
-		              if (rnd === 0) {
+		              if (rnd < tx * 0.5) {
 		                // right
 		                pVec = new _SCNVector2.default(w * 0.5, h * rnd1, l * rnd2);
 		                vVec = new _SCNVector2.default(1, 0, 0);
-		              } else if (rnd === 1) {
+		              } else if (rnd < tx) {
 		                // left
 		                pVec = new _SCNVector2.default(-w * 0.5, h * rnd1, l * rnd2);
 		                vVec = new _SCNVector2.default(-1, 0, 0);
-		              } else if (rnd === 2) {
+		              } else if (rnd < tx + ty * 0.5) {
 		                // top
 		                pVec = new _SCNVector2.default(w * rnd1, h * 0.5, l * rnd2);
 		                vVec = new _SCNVector2.default(0, 1, 0);
-		              } else if (rnd === 3) {
+		              } else if (rnd < tx + ty) {
 		                // bottom
 		                pVec = new _SCNVector2.default(w * rnd1, -h * 0.5, l * rnd2);
 		                vVec = new _SCNVector2.default(0, -1, 0);
-		              } else if (rnd === 4) {
+		              } else if (rnd < tx + ty + tz * 0.5) {
 		                // front
 		                pVec = new _SCNVector2.default(w * rnd1, h * rnd2, l * 0.5);
 		                vVec = new _SCNVector2.default(0, 0, 1);
@@ -39689,13 +42624,13 @@ var JSceneKitExample =
 		            }
 		          case 'SCNSphere':
 		            {
-		              var r = Math.random() * this.emitterShape.radius;
+		              var _r = Math.random() * this.emitterShape.radius;
 		              var s = Math.random() * Math.PI;
 		              var t = Math.random() * Math.PI * 2.0;
-		              var rsins = r * Math.sin(s);
+		              var rsins = _r * Math.sin(s);
 		              var _x3 = rsins * Math.cos(t);
 		              var _y = rsins * Math.sin(t);
-		              var _z = r * Math.cos(s);
+		              var _z = _r * Math.cos(s);
 		              _pVec = new _SCNVector2.default(_x3, _y, _z);
 		              break;
 		            }
@@ -39755,7 +42690,11 @@ var JSceneKitExample =
 		        p.imageFrameRate = 0;
 		      }
 
-		      p.initialImageFrame = this.imageSequenceInitialFrame + this.imageSequenceInitialFrameVariation * (Math.random() - 0.5);
+		      var numImages = this.imageSequenceRowCount * this.imageSequenceColumnCount;
+		      p.initialImageFrame = (this.imageSequenceInitialFrame + this.imageSequenceInitialFrameVariation * (Math.random() - 0.5)) % numImages;
+		      if (p.initialImageFrame < 0) {
+		        p.initialImageFrame += numImages;
+		      }
 
 		      return p;
 		    }
@@ -39786,11 +42725,11 @@ var JSceneKitExample =
 		      }
 
 		      // generate particles
-		      if (this.birthRate + this.birthRateVariation > 0) {
+		      if (this._presentation._birthRate + this.birthRateVariation > 0) {
 		        while (this._nextBirthTime <= currentTime) {
 		          var p = this._createParticle(this._nextBirthTime, transform);
 		          this._particles.push(p);
-		          var rate = this.birthRate + this.birthRateVariation * (Math.random() - 0.5);
+		          var rate = this._presentation._birthRate + this.birthRateVariation * (Math.random() - 0.5);
 		          if (rate < 0.0000001) {
 		            rate = 0.0000001;
 		          }
@@ -39812,7 +42751,11 @@ var JSceneKitExample =
 		      }
 
 		      this._particles.forEach(function (p) {
+		        var _dt = dt;
 		        var pdt = (currentTime - p.birthTime) * _this4.speedFactor;
+		        if (p.birthTime > _this4._prevTime) {
+		          _dt = pdt;
+		        }
 		        var t = pdt / p.lifeSpan;
 		        p.life = t;
 		        if (t > 1) {
@@ -39828,13 +42771,13 @@ var JSceneKitExample =
 		        //p.velocity.x += acceleration.x * dt
 		        //p.velocity.y += acceleration.y * dt
 		        //p.velocity.z += acceleration.z * dt
-		        p.angle += p.angularVelocity * dt;
-		        p.velocity.x = (p.velocity.x + acceleration.x * dt) * damping;
-		        p.velocity.y = (p.velocity.y + acceleration.y * dt) * damping;
-		        p.velocity.z = (p.velocity.z + acceleration.z * dt) * damping;
-		        p.position.x += p.velocity.x * dt;
-		        p.position.y += p.velocity.y * dt;
-		        p.position.z += p.velocity.z * dt;
+		        p.angle += p.angularVelocity * _dt;
+		        p.velocity.x = (p.velocity.x + acceleration.x * _dt) * damping;
+		        p.velocity.y = (p.velocity.y + acceleration.y * _dt) * damping;
+		        p.velocity.z = (p.velocity.z + acceleration.z * _dt) * damping;
+		        p.position.x += p.velocity.x * _dt;
+		        p.position.y += p.velocity.y * _dt;
+		        p.position.z += p.velocity.z * _dt;
 		        if (_this4.propertyControllers !== null) {
 		          Object.keys(_this4.propertyControllers).forEach(function (key) {
 		            _this4.propertyControllers[key].animation._applyAnimation(p, t, false // should I use p.life instead of t?
@@ -39844,7 +42787,7 @@ var JSceneKitExample =
 
 		        var frame = p.initialImageFrame + p.imageFrameRate * pdt;
 		        var imageFrame = 0;
-		        switch (p.imageSequenceAnimationMode) {
+		        switch (_this4.imageSequenceAnimationMode) {
 		          case _SCNParticleImageSequenceAnimationMode2.default.repeat:
 		            {
 		              imageFrame = Math.floor(frame % _this4._numImages);
@@ -39873,10 +42816,10 @@ var JSceneKitExample =
 		        var imageY = Math.floor(imageFrame / _this4.imageSequenceRowCount);
 		        var imageX = imageFrame % _this4.imageSequenceColumnCount;
 
-		        p.texLeft = imageX * _this4._imageWidth - 1.0;
-		        p.texTop = imageY * _this4._imageHeight - 1.0;
-		        p.texRight = (imageX + 1) * _this4._imageWidth - 1.0;
-		        p.texBottom = (imageY + 1) * _this4._imageHeight - 1.0;
+		        p.texLeft = imageX * _this4._imageWidth;
+		        p.texTop = (imageY + 1) * _this4._imageHeight;
+		        p.texRight = (imageX + 1) * _this4._imageWidth;
+		        p.texBottom = imageY * _this4._imageHeight;
 		      });
 		      this._particles = this._particles.filter(function (p) {
 		        return p.life <= 1;
@@ -40118,6 +43061,259 @@ var JSceneKitExample =
 		      }
 		    }
 		  }, {
+		    key: '_copy',
+		    value: function _copy() {
+		      var s = new SCNParticleSystem();
+		      var params = ['_birthRate'
+		      // TODO: add other parameters... 
+		      ];
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
+
+		      try {
+		        for (var _iterator = params[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var param = _step.value;
+
+		          s[param] = this[param];
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+
+		      return s;
+		    }
+		  }, {
+		    key: '_createPresentation',
+		    value: function _createPresentation() {
+		      if (this.__presentation) {
+		        return this.__presentation;
+		      }
+		      var s = this._copy();
+		      this.__presentation = s;
+		      return s;
+		    }
+
+		    /// Animatable parameters
+
+		    /**
+		     * The number of particles spawned during each emission period. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnparticlesystem/1522857-birthrate
+		     */
+
+		  }, {
+		    key: 'addAnimationForKey',
+
+
+		    ///////////////////
+		    // SCNAnimatable //
+		    ///////////////////
+
+		    // Managing Animations
+
+		    /**
+		     * Required. Adds an animation object for the specified key.
+		     * @access public
+		     * @param {CAAnimation} animation - The animation object to be added.
+		     * @param {?string} key - An string identifying the animation for later retrieval. You may pass nil if you don’t need to reference the animation later.
+		     * @returns {void}
+		     * @desc Newly added animations begin executing after the current run loop cycle ends.SceneKit does not define any requirements for the contents of the key parameter—it need only be unique among the keys for other animations you add. If you add an animation with an existing key, this method overwrites the existing animation.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523386-addanimation
+		     */
+		    value: function addAnimationForKey(animation, key) {
+		      if (typeof key === 'undefined' || key === null) {
+		        key = Symbol();
+		      }
+		      var anim = animation.copy
+		      // FIXME: use current frame time
+		      ();anim._animationStartTime = Date.now() * 0.001;
+
+		      this._animations.set(key, anim);
+		    }
+
+		    /**
+		     * Required. Returns the animation with the specified key.
+		     * @access public
+		     * @param {string} key - A string identifying a previously added animation.
+		     * @returns {?CAAnimation} - 
+		     * @desc Attempting to modify any properties of the returned object results in undefined behavior.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1524020-animation
+		     */
+
+		  }, {
+		    key: 'animationForKey',
+		    value: function animationForKey(key) {
+		      return this._animations.get(key);
+		    }
+
+		    /**
+		     * Required. Removes all the animations currently attached to the object.
+		     * @access public
+		     * @returns {void}
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1522762-removeallanimations
+		     */
+
+		  }, {
+		    key: 'removeAllAnimations',
+		    value: function removeAllAnimations() {
+		      // TODO: stop animations
+		      this._animations.clear();
+		    }
+
+		    /**
+		     * Required. Removes the animation attached to the object with the specified key.
+		     * @access public
+		     * @param {string} key - A string identifying an attached animation to remove.
+		     * @returns {void}
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1522880-removeanimation
+		     */
+
+		  }, {
+		    key: 'removeAnimationForKey',
+		    value: function removeAnimationForKey(key) {
+		      this._animations.delete(key);
+		      this._copyTransformToPresentationRecursive();
+		    }
+
+		    /**
+		     * Required. Removes the animation attached to the object with the specified key, smoothly transitioning out of the animation’s effect.
+		     * @access public
+		     * @param {string} key - A string identifying an attached animation to remove.
+		     * @param {number} duration - The duration for transitioning out of the animation’s effect before it is removed.
+		     * @returns {void}
+		     * @desc Use this method to create smooth transitions between the effects of multiple animations. For example, the geometry loaded from a scene file for a game character may have associated animations for player actions such as walking and jumping. When the player lands from a jump, you remove the jump animation so the character continues walking. If you use the removeAnimation(forKey:) method to remove the jump animation, SceneKit abruptly switches from the current frame of the jump animation to the current frame of the walk animation. If you use the removeAnimation(forKey:fadeOutDuration:) method instead, SceneKit plays both animations at once during that duration and interpolates vertex positions from one animation to the other, creating a smooth transition.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1522841-removeanimation
+		     */
+
+		  }, {
+		    key: 'removeAnimationForKeyFadeOutDuration',
+		    value: function removeAnimationForKeyFadeOutDuration(key, duration) {
+		      // FIXME: use fadeout duration
+		      this.removeAnimationForKey(key);
+		    }
+
+		    /**
+		     * Required. An array containing the keys of all animations currently attached to the object.
+		     * @type {string[]}
+		     * @desc This array contains all keys for which animations are attached to the object, or is empty if there are no attached animations. The ordering of animation keys in the array is arbitrary.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523610-animationkeys
+		     */
+
+		  }, {
+		    key: 'pauseAnimationForKey',
+
+
+		    // Pausing and Resuming Animations
+
+		    /**
+		     * Required. Pauses the animation attached to the object with the specified key.
+		     * @access public
+		     * @param {string} key - A string identifying an attached animation.
+		     * @returns {void}
+		     * @desc This method has no effect if no animation is attached to the object with the specified key.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523592-pauseanimation
+		     */
+		    value: function pauseAnimationForKey(key) {}
+
+		    /**
+		     * Required. Resumes a previously paused animation attached to the object with the specified key.
+		     * @access public
+		     * @param {string} key - A string identifying an attached animation.
+		     * @returns {void}
+		     * @desc This method has no effect if no animation is attached to the object with the specified key or if the specified animation is not currently paused.
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523332-resumeanimation
+		     */
+
+		  }, {
+		    key: 'resumeAnimationForKey',
+		    value: function resumeAnimationForKey(key) {}
+
+		    /**
+		     * Required. Returns a Boolean value indicating whether the animation attached to the object with the specified key is paused.
+		     * @access public
+		     * @param {string} key - A string identifying an attached animation.
+		     * @returns {boolean} - 
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1523703-isanimationpaused
+		     */
+
+		  }, {
+		    key: 'isAnimationPausedForKey',
+		    value: function isAnimationPausedForKey(key) {
+		      return false;
+		    }
+
+		    // Instance Methods
+
+		    /**
+		     * Required. 
+		     * @access public
+		     * @param {number} speed - 
+		     * @param {string} key - 
+		     * @returns {void}
+		     * @see https://developer.apple.com/reference/scenekit/scnanimatable/1778343-setanimationspeed
+		     */
+
+		  }, {
+		    key: 'setAnimationSpeedForKey',
+		    value: function setAnimationSpeedForKey(speed, key) {}
+		  }, {
+		    key: 'valueForKeyPath',
+		    value: function valueForKeyPath(keyPath) {
+		      var usePresentation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
+		      var target = usePresentation && this._presentation ? this._presentation : this;
+		      var paths = keyPath.split('.');
+		      var key = paths[0];
+		      var key2 = paths[1];
+
+		      if (key === '_birthRate') {
+		        return target[key];
+		      }
+		      return _get(SCNParticleSystem.prototype.__proto__ || Object.getPrototypeOf(SCNParticleSystem.prototype), 'valueForKeyPath', this).call(this, keyPath, usePresentation);
+		    }
+		  }, {
+		    key: 'setValueForKeyPath',
+		    value: function setValueForKeyPath(value, keyPath) {
+		      var target = this._presentation ? this._presentation : this;
+
+		      var paths = keyPath.split('.');
+		      var key = paths.shift();
+		      var restPath = paths.join('.');
+
+		      if (key === '_birthRate') {
+		        target[key] = value;
+		        return;
+		      }
+		      _get(SCNParticleSystem.prototype.__proto__ || Object.getPrototypeOf(SCNParticleSystem.prototype), 'setValueForKeyPath', this).call(this, value, keyPath);
+		    }
+		  }, {
+		    key: '_getLoadedPromise',
+
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      return Promise.resolve();
+		    }
+		  }, {
 		    key: '_particleData',
 		    get: function get() {
 		      var arr = [];
@@ -40129,9 +43325,55 @@ var JSceneKitExample =
 		  }, {
 		    key: '_maxParticles',
 		    get: function get() {
-		      var maxRate = this.birthRate + this.birthRateVariation * 0.5;
+		      var maxRate = this._birthRate + this.birthRateVariation * 0.5;
 		      var maxLifeSpan = this.particleLifeSpan + this.particleLifeSpanVariation * 0.5;
 		      return Math.ceil(maxRate * maxLifeSpan);
+		    }
+		  }, {
+		    key: 'birthRate',
+		    get: function get() {
+		      return this._birthRate;
+		    },
+		    set: function set(newValue) {
+		      var oldValue = this._birthRate;
+		      this._birthRate = newValue;
+		      _SCNTransaction2.default._addChange(this, '_birthRate', oldValue, newValue);
+		    }
+		  }, {
+		    key: 'animationKeys',
+		    get: function get() {
+		      var keys = [];
+		      var _iteratorNormalCompletion2 = true;
+		      var _didIteratorError2 = false;
+		      var _iteratorError2 = undefined;
+
+		      try {
+		        for (var _iterator2 = this._animations.keys()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		          var key = _step2.value;
+
+		          keys.push(key);
+		        }
+		      } catch (err) {
+		        _didIteratorError2 = true;
+		        _iteratorError2 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		            _iterator2.return();
+		          }
+		        } finally {
+		          if (_didIteratorError2) {
+		            throw _iteratorError2;
+		          }
+		        }
+		      }
+
+		      return keys;
+		    }
+		  }, {
+		    key: '_presentation',
+		    get: function get() {
+		      return this.__presentation ? this.__presentation : this;
 		    }
 		  }], [{
 		    key: 'systemNamedInDirectory',
@@ -40150,7 +43392,7 @@ var JSceneKitExample =
 		            throw new Error('file ' + path + ' is not an instance of SCNParticleSystem');
 		          }
 		          // FIXME: wait for images
-		          system._loadingPromise = Promise.resolve(system);
+		          system._loadedPromise = Promise.resolve(system);
 		          return system;
 		        });
 		      }
@@ -40169,7 +43411,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleSystem;
 
 	/***/ },
-	/* 110 */
+	/* 120 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40195,7 +43437,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBirthLocation;
 
 	/***/ },
-	/* 111 */
+	/* 121 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40221,7 +43463,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBirthDirection;
 
 	/***/ },
-	/* 112 */
+	/* 122 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40247,7 +43489,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleImageSequenceAnimationMode;
 
 	/***/ },
-	/* 113 */
+	/* 123 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40279,7 +43521,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleBlendMode;
 
 	/***/ },
-	/* 114 */
+	/* 124 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40307,7 +43549,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleOrientationMode;
 
 	/***/ },
-	/* 115 */
+	/* 125 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40337,7 +43579,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleSortingMode;
 
 	/***/ },
-	/* 116 */
+	/* 126 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40363,7 +43605,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleEvent;
 
 	/***/ },
-	/* 117 */
+	/* 127 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40411,7 +43653,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleEventBlock;
 
 	/***/ },
-	/* 118 */
+	/* 128 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -40426,15 +43668,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _CAAnimation = __webpack_require__(50);
+		var _CAAnimation = __webpack_require__(58);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
-		var _SCNParticleInputMode = __webpack_require__(119);
+		var _SCNParticleInputMode = __webpack_require__(129);
 
 		var _SCNParticleInputMode2 = _interopRequireDefault(_SCNParticleInputMode);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -40555,7 +43797,7 @@ var JSceneKitExample =
 		exports.default = SCNParticlePropertyController;
 
 	/***/ },
-	/* 119 */
+	/* 129 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40581,7 +43823,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleInputMode;
 
 	/***/ },
-	/* 120 */
+	/* 130 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40609,7 +43851,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleModifierStage;
 
 	/***/ },
-	/* 121 */
+	/* 131 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40653,7 +43895,7 @@ var JSceneKitExample =
 		exports.default = SCNParticleModifierBlock;
 
 	/***/ },
-	/* 122 */
+	/* 132 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40783,7 +44025,7 @@ var JSceneKitExample =
 		exports.default = SCNDebugOptions;
 
 	/***/ },
-	/* 123 */
+	/* 133 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40815,7 +44057,7 @@ var JSceneKitExample =
 		exports.default = SCNRenderingAPI;
 
 	/***/ },
-	/* 124 */
+	/* 134 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40853,7 +44095,7 @@ var JSceneKitExample =
 		exports.default = SCNHitTestOption;
 
 	/***/ },
-	/* 125 */
+	/* 135 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -40864,11 +44106,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNSceneRenderer = __webpack_require__(91);
+		var _SCNSceneRenderer = __webpack_require__(99);
 
 		var _SCNSceneRenderer2 = _interopRequireDefault(_SCNSceneRenderer);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -40981,7 +44223,7 @@ var JSceneKitExample =
 		exports.default = SCNSceneRendererDelegate;
 
 	/***/ },
-	/* 126 */
+	/* 136 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -41011,7 +44253,7 @@ var JSceneKitExample =
 		exports.default = SCNAntialiasingMode;
 
 	/***/ },
-	/* 127 */
+	/* 137 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41026,15 +44268,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNProgramDelegate = __webpack_require__(128);
+		var _SCNProgramDelegate = __webpack_require__(138);
 
 		var _SCNProgramDelegate2 = _interopRequireDefault(_SCNProgramDelegate);
 
-		var _SCNBufferFrequency = __webpack_require__(129);
+		var _SCNBufferFrequency = __webpack_require__(139);
 
 		var _SCNBufferFrequency2 = _interopRequireDefault(_SCNBufferFrequency);
 
-		var _SCNBufferBindingBlock = __webpack_require__(130);
+		var _SCNBufferBindingBlock = __webpack_require__(140);
 
 		var _SCNBufferBindingBlock2 = _interopRequireDefault(_SCNBufferBindingBlock);
 
@@ -41154,6 +44396,12 @@ var JSceneKitExample =
 		     * @type {WebGLTexture}
 		     */
 		    _this._dummyTexture = null;
+
+		    /**
+		     * @access private
+		     * @type {WebGLTexture}
+		     */
+		    _this._dummyCubeMapTexture = null;
 		    return _this;
 		  }
 
@@ -41215,6 +44463,7 @@ var JSceneKitExample =
 
 		      var texNames = [gl.TEXTURE0, gl.TEXTURE1, gl.TEXTURE2, gl.TEXTURE3, gl.TEXTURE4, gl.TEXTURE5, gl.TEXTURE6, gl.TEXTURE7];
 		      var texSymbols = ['u_emissionTexture', 'u_ambientTexture', 'u_diffuseTexture', 'u_specularTexture', 'u_reflectiveTexture', 'u_transparentTexture', 'u_multiplyTexture', 'u_normalTexture'];
+		      var isCubeMap = [false, false, false, false, true, false, false, false];
 		      for (var i = 0; i < texNames.length; i++) {
 		        var texName = texNames[i];
 		        var symbol = texSymbols[i];
@@ -41222,7 +44471,11 @@ var JSceneKitExample =
 		        if (loc !== null) {
 		          gl.uniform1i(loc, i);
 		          gl.activeTexture(texName);
-		          gl.bindTexture(gl.TEXTURE_2D, this._dummyTexture);
+		          if (isCubeMap[i]) {
+		            gl.bindTexture(gl.TEXTURE_CUBE_MAP, this._dummyCubeMapTexture);
+		          } else {
+		            gl.bindTexture(gl.TEXTURE_2D, this._dummyTexture);
+		          }
 		        }
 		      }
 		    }
@@ -41247,6 +44500,16 @@ var JSceneKitExample =
 		      // Safari complains that 'source' is not ArrayBufferView type, but WebGL2 should accept HTMLCanvasElement.
 		      );gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
 		      gl.bindTexture(gl.TEXTURE_2D, null);
+
+		      this._dummyCubeMapTexture = gl.createTexture();
+
+		      var targets = [gl.TEXTURE_CUBE_MAP_POSITIVE_Z, gl.TEXTURE_CUBE_MAP_POSITIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, gl.TEXTURE_CUBE_MAP_POSITIVE_Y];
+
+		      gl.bindTexture(gl.TEXTURE_CUBE_MAP, this._dummyCubeMapTexture);
+		      for (var i = 0; i < 6; i++) {
+		        gl.texImage2D(targets[i], 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, canvas);
+		      }
+		      gl.bindTexture(gl.TEXTURE_CUBE_MAP, null);
 		    }
 		  }]);
 
@@ -41256,7 +44519,7 @@ var JSceneKitExample =
 		exports.default = SCNProgram;
 
 	/***/ },
-	/* 128 */
+	/* 138 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -41375,7 +44638,7 @@ var JSceneKitExample =
 		exports.default = SCNProgramDelegate;
 
 	/***/ },
-	/* 129 */
+	/* 139 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -41401,7 +44664,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferFrequency;
 
 	/***/ },
-	/* 130 */
+	/* 140 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41410,19 +44673,19 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNBufferStream = __webpack_require__(131);
+		var _SCNBufferStream = __webpack_require__(141);
 
 		var _SCNBufferStream2 = _interopRequireDefault(_SCNBufferStream);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNShadable = __webpack_require__(72);
+		var _SCNShadable = __webpack_require__(80);
 
 		var _SCNShadable2 = _interopRequireDefault(_SCNShadable);
 
-		var _SCNRenderer = __webpack_require__(90);
+		var _SCNRenderer = __webpack_require__(98);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -41443,7 +44706,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferBindingBlock;
 
 	/***/ },
-	/* 131 */
+	/* 141 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -41500,7 +44763,7 @@ var JSceneKitExample =
 		exports.default = SCNBufferStream;
 
 	/***/ },
-	/* 132 */
+	/* 142 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41515,19 +44778,19 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNTechniqueSupport = __webpack_require__(87);
+		var _SCNTechniqueSupport = __webpack_require__(95);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNMaterialProperty = __webpack_require__(78);
+		var _SCNMaterialProperty = __webpack_require__(87);
 
 		var _SCNMaterialProperty2 = _interopRequireDefault(_SCNMaterialProperty);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -41985,7 +45248,7 @@ var JSceneKitExample =
 		exports.default = SCNCamera;
 
 	/***/ },
-	/* 133 */
+	/* 143 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -42010,7 +45273,7 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SKBlendMode = __webpack_require__(134);
+		var _SKBlendMode = __webpack_require__(144);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -42018,11 +45281,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(135);
+		var _SKNode2 = __webpack_require__(145);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKTexture = __webpack_require__(136);
+		var _SKTexture = __webpack_require__(146);
 
 		var _SKTexture2 = _interopRequireDefault(_SKTexture);
 
@@ -42538,7 +45801,7 @@ var JSceneKitExample =
 		exports.default = SKSpriteNode;
 
 	/***/ },
-	/* 134 */
+	/* 144 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -42572,7 +45835,7 @@ var JSceneKitExample =
 		exports.default = SKBlendMode;
 
 	/***/ },
-	/* 135 */
+	/* 145 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43860,7 +47123,7 @@ var JSceneKitExample =
 		exports.default = SKNode;
 
 	/***/ },
-	/* 136 */
+	/* 146 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -43883,7 +47146,7 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SKTextureFilteringMode = __webpack_require__(137);
+		var _SKTextureFilteringMode = __webpack_require__(147);
 
 		var _SKTextureFilteringMode2 = _interopRequireDefault(_SKTextureFilteringMode);
 
@@ -44173,7 +47436,6 @@ var JSceneKitExample =
 		          var paths = path.slice(8).split('/');
 		          var pathCount = 1;
 		          var _path = paths.slice(-pathCount).join('/');
-		          console.info('image loading: ' + _path);
 		          image.onload = function () {
 		            console.info('image ' + _path + ' onload');
 		            _this2._image = image;
@@ -44193,7 +47455,6 @@ var JSceneKitExample =
 		            }
 		          };
 		        } else {
-		          console.info('image loading: ' + path);
 		          image.onload = function () {
 		            _this2._image = image;
 		            resolve(_this2);
@@ -44245,7 +47506,6 @@ var JSceneKitExample =
 		  }], [{
 		    key: 'textureWithImageNamed',
 		    value: function textureWithImageNamed(name) {
-		      console.log('SKTexture image name: ' + name);
 		      var texture = new SKTexture();
 		      texture._loadImage(name);
 		      return texture;
@@ -44383,7 +47643,7 @@ var JSceneKitExample =
 		exports.default = SKTexture;
 
 	/***/ },
-	/* 137 */
+	/* 147 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -44407,7 +47667,7 @@ var JSceneKitExample =
 		exports.default = SKTextureFilteringMode;
 
 	/***/ },
-	/* 138 */
+	/* 148 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -44433,7 +47693,7 @@ var JSceneKitExample =
 		exports.default = SCNShadowMode;
 
 	/***/ },
-	/* 139 */
+	/* 149 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44450,15 +47710,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNMorpherCalculationMode = __webpack_require__(140);
+		var _SCNMorpherCalculationMode = __webpack_require__(150);
 
 		var _SCNMorpherCalculationMode2 = _interopRequireDefault(_SCNMorpherCalculationMode);
 
@@ -44716,7 +47976,7 @@ var JSceneKitExample =
 		exports.default = SCNMorpher;
 
 	/***/ },
-	/* 140 */
+	/* 150 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -44740,7 +48000,7 @@ var JSceneKitExample =
 		exports.default = SCNMorpherCalculationMode;
 
 	/***/ },
-	/* 141 */
+	/* 151 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -44755,23 +48015,23 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNGeometry = __webpack_require__(70);
+		var _SCNGeometry = __webpack_require__(78);
 
 		var _SCNGeometry2 = _interopRequireDefault(_SCNGeometry);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNGeometrySource = __webpack_require__(73);
+		var _SCNGeometrySource = __webpack_require__(81);
 
 		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
@@ -45018,7 +48278,7 @@ var JSceneKitExample =
 		    /**
 		     * The geometry source that defines the influence of each bone on the positions the geometry’s vertices.
 		     * @type {SCNGeometrySource}
-		     l* @desc This geometry source’s semantic property must be boneWeights. Its data is an array of floating-point vectors, whose componentsPerVector count is the number of bones influencing each vertex. Each vector corresponds to a vertex in the geometry’s vertex geometry source, and each component in a vector specifies the influence of a bone on that vertex’s position. The boneIndices source determines which nodes in the bones array correspond to each component in the vector. A component value of 0.0 means that the bone has no influence on that vertex; positive or negative values scale the transformation of a bone node before SceneKit applies that transformation to the vertex.NoteSceneKit performs skeletal animation on the GPU only if the componentsPerVector count in this geometry source is 4 or less. Larger vectors result in CPU-based animation and drastically reduced rendering performance.
+		     * @desc This geometry source’s semantic property must be boneWeights. Its data is an array of floating-point vectors, whose componentsPerVector count is the number of bones influencing each vertex. Each vector corresponds to a vertex in the geometry’s vertex geometry source, and each component in a vector specifies the influence of a bone on that vertex’s position. The boneIndices source determines which nodes in the bones array correspond to each component in the vector. A component value of 0.0 means that the bone has no influence on that vertex; positive or negative values scale the transformation of a bone node before SceneKit applies that transformation to the vertex.NoteSceneKit performs skeletal animation on the GPU only if the componentsPerVector count in this geometry source is 4 or less. Larger vectors result in CPU-based animation and drastically reduced rendering performance.
 		     * @see https://developer.apple.com/reference/scenekit/scnskinner/1522986-boneweights
 		     */
 
@@ -45059,7 +48319,7 @@ var JSceneKitExample =
 		exports.default = SCNSkinner;
 
 	/***/ },
-	/* 142 */
+	/* 152 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45068,7 +48328,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -45090,7 +48350,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4MakeScale;
 
 	/***/ },
-	/* 143 */
+	/* 153 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45105,7 +48365,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAnimatable = __webpack_require__(68);
+		var _SCNAnimatable = __webpack_require__(76);
 
 		var _SCNAnimatable2 = _interopRequireDefault(_SCNAnimatable);
 
@@ -45161,7 +48421,7 @@ var JSceneKitExample =
 		exports.default = SCNConstraint;
 
 	/***/ },
-	/* 144 */
+	/* 154 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -45185,7 +48445,7 @@ var JSceneKitExample =
 		exports.default = SCNMovabilityHint;
 
 	/***/ },
-	/* 145 */
+	/* 155 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45196,11 +48456,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNRenderer = __webpack_require__(90);
+		var _SCNRenderer = __webpack_require__(98);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
@@ -45253,7 +48513,7 @@ var JSceneKitExample =
 		exports.default = SCNNodeRendererDelegate;
 
 	/***/ },
-	/* 146 */
+	/* 156 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45268,15 +48528,15 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNFieldForceEvaluator = __webpack_require__(147);
+		var _SCNFieldForceEvaluator = __webpack_require__(157);
 
 		var _SCNFieldForceEvaluator2 = _interopRequireDefault(_SCNFieldForceEvaluator);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNPhysicsFieldScope = __webpack_require__(148);
+		var _SCNPhysicsFieldScope = __webpack_require__(158);
 
 		var _SCNPhysicsFieldScope2 = _interopRequireDefault(_SCNPhysicsFieldScope);
 
@@ -45554,7 +48814,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsField;
 
 	/***/ },
-	/* 147 */
+	/* 157 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45563,7 +48823,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -45586,7 +48846,7 @@ var JSceneKitExample =
 		exports.default = SCNFieldForceEvaluator;
 
 	/***/ },
-	/* 148 */
+	/* 158 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -45610,7 +48870,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsFieldScope;
 
 	/***/ },
-	/* 149 */
+	/* 159 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45625,7 +48885,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNAudioSource = __webpack_require__(150);
+		var _SCNAudioSource = __webpack_require__(160);
 
 		var _SCNAudioSource2 = _interopRequireDefault(_SCNAudioSource);
 
@@ -45744,6 +49004,21 @@ var JSceneKitExample =
 		    value: function _stop() {
 		      this._audioSource._stop();
 		    }
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+
+		  }, {
+		    key: '_getLoadedPromise',
+		    value: function _getLoadedPromise() {
+		      if (this._audioSource) {
+		        return this._audioSource._getLoadedPromise();
+		      }
+
+		      return Promise.resolve();
+		    }
 		  }, {
 		    key: 'audioSource',
 		    get: function get() {
@@ -45770,7 +49045,7 @@ var JSceneKitExample =
 		exports.default = SCNAudioPlayer;
 
 	/***/ },
-	/* 150 */
+	/* 160 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -45781,7 +49056,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _AjaxRequest2 = __webpack_require__(100);
+		var _AjaxRequest2 = __webpack_require__(108);
 
 		var _AjaxRequest3 = _interopRequireDefault(_AjaxRequest2);
 
@@ -45907,7 +49182,7 @@ var JSceneKitExample =
 		    _this.shouldStream = false;
 
 		    _this._loading = false;
-		    _this._loadPromise = new Promise(function (resolve, reject) {
+		    _this._loadedPromise = new Promise(function (resolve, reject) {
 		      _this._resolve = resolve;
 		      _this._reject = reject;
 		    });
@@ -45965,7 +49240,7 @@ var JSceneKitExample =
 		      var when = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 		      this.load();
-		      this._loadPromise.then(function () {
+		      this._loadedPromise.then(function () {
 		        _this3._source = _context.createBufferSource();
 		        _this3._source.buffer = _this3._buffer;
 		        _this3._source.connect(_this3._gainNode);
@@ -45983,6 +49258,21 @@ var JSceneKitExample =
 		        this._source.stop(when);
 		        this._source = null;
 		      }
+		    }
+		  }, {
+		    key: '_getLoadedPromise',
+
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+
+		      return Promise.resolve();
 		    }
 		  }, {
 		    key: 'volume',
@@ -46026,7 +49316,7 @@ var JSceneKitExample =
 		exports.default = SCNAudioSource;
 
 	/***/ },
-	/* 151 */
+	/* 161 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46039,11 +49329,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46190,7 +49480,7 @@ var JSceneKitExample =
 		_SCNAction3.default.group = SCNActionGroup.group;
 
 	/***/ },
-	/* 152 */
+	/* 162 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46201,11 +49491,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46265,7 +49555,7 @@ var JSceneKitExample =
 		exports.default = SCNActionHide;
 
 	/***/ },
-	/* 153 */
+	/* 163 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46276,11 +49566,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46338,7 +49628,7 @@ var JSceneKitExample =
 		exports.default = SCNActionJavaScript;
 
 	/***/ },
-	/* 154 */
+	/* 164 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46349,11 +49639,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46411,7 +49701,7 @@ var JSceneKitExample =
 		exports.default = SCNActionMove;
 
 	/***/ },
-	/* 155 */
+	/* 165 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46422,11 +49712,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46484,7 +49774,7 @@ var JSceneKitExample =
 		exports.default = SCNActionPerformSelector;
 
 	/***/ },
-	/* 156 */
+	/* 166 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46497,11 +49787,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46636,7 +49926,7 @@ var JSceneKitExample =
 		_SCNAction3.default.playAudioWaitForCompletion = SCNActionPlaySound.playAudioWaitForCompletion;
 
 	/***/ },
-	/* 157 */
+	/* 167 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46647,11 +49937,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -46709,7 +49999,7 @@ var JSceneKitExample =
 		exports.default = SCNActionReference;
 
 	/***/ },
-	/* 158 */
+	/* 168 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46722,15 +50012,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -46841,7 +50131,7 @@ var JSceneKitExample =
 		_SCNAction3.default.removeFromParentNode = SCNActionRemove.removeFromParentNode;
 
 	/***/ },
-	/* 159 */
+	/* 169 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -46854,11 +50144,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47045,7 +50335,7 @@ var JSceneKitExample =
 		_SCNAction3.default.repeatForever = SCNActionRepeat.repeatForever;
 
 	/***/ },
-	/* 160 */
+	/* 170 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47058,23 +50348,23 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNVector3 = __webpack_require__(47);
+		var _SCNVector3 = __webpack_require__(55);
 
 		var _SCNVector4 = _interopRequireDefault(_SCNVector3);
 
@@ -47382,7 +50672,7 @@ var JSceneKitExample =
 		_SCNAction3.default.rotateToAxisAngle = SCNActionRotate.rotateToAxisAngle;
 
 	/***/ },
-	/* 161 */
+	/* 171 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47393,11 +50683,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47455,7 +50745,7 @@ var JSceneKitExample =
 		exports.default = SCNActionRunAction;
 
 	/***/ },
-	/* 162 */
+	/* 172 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47468,11 +50758,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47587,7 +50877,7 @@ var JSceneKitExample =
 		_SCNAction3.default.run = SCNActionRunBlock.run;
 
 	/***/ },
-	/* 163 */
+	/* 173 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47598,11 +50888,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47660,7 +50950,7 @@ var JSceneKitExample =
 		exports.default = SCNActionScale;
 
 	/***/ },
-	/* 164 */
+	/* 174 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47673,11 +50963,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47858,7 +51148,7 @@ var JSceneKitExample =
 		_SCNAction3.default.sequence = SCNActionSequence.sequence;
 
 	/***/ },
-	/* 165 */
+	/* 175 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -47880,7 +51170,7 @@ var JSceneKitExample =
 		exports.default = SCNActionTimingFunction;
 
 	/***/ },
-	/* 166 */
+	/* 176 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -47891,11 +51181,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNAction2 = __webpack_require__(62);
+		var _SCNAction2 = __webpack_require__(70);
 
 		var _SCNAction3 = _interopRequireDefault(_SCNAction2);
 
-		var _SCNActionTimingMode = __webpack_require__(63);
+		var _SCNActionTimingMode = __webpack_require__(71);
 
 		var _SCNActionTimingMode2 = _interopRequireDefault(_SCNActionTimingMode);
 
@@ -47997,7 +51287,7 @@ var JSceneKitExample =
 		_SCNAction3.default.waitDurationWithRange = SCNActionWait.waitDurationWithRange;
 
 	/***/ },
-	/* 167 */
+	/* 177 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48006,7 +51296,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _CAAnimation = __webpack_require__(50);
+		var _CAAnimation = __webpack_require__(58);
 
 		var _CAAnimation2 = _interopRequireDefault(_CAAnimation);
 
@@ -48026,7 +51316,7 @@ var JSceneKitExample =
 		exports.default = SCNAnimationEventBlock;
 
 	/***/ },
-	/* 168 */
+	/* 178 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -48130,7 +51420,7 @@ var JSceneKitExample =
 		exports.default = SCNBillboardAxis;
 
 	/***/ },
-	/* 169 */
+	/* 179 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48141,11 +51431,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(143);
+		var _SCNConstraint2 = __webpack_require__(153);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNBillboardAxis = __webpack_require__(168);
+		var _SCNBillboardAxis = __webpack_require__(178);
 
 		var _SCNBillboardAxis2 = _interopRequireDefault(_SCNBillboardAxis);
 
@@ -48200,143 +51490,7 @@ var JSceneKitExample =
 		exports.default = SCNBillboardConstraint;
 
 	/***/ },
-	/* 170 */
-	/***/ function(module, exports, __webpack_require__) {
-
-		'use strict';
-
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-
-		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-		var _SCNGeometry2 = __webpack_require__(70);
-
-		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
-
-		var _SCNVector = __webpack_require__(46);
-
-		var _SCNVector2 = _interopRequireDefault(_SCNVector);
-
-		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-		/*global Ammo*/
-
-		/**
-		 * A right circular cylinder geometry whose ends are capped with hemispheres.
-		 * @access public
-		 * @extends {SCNGeometry}
-		 * @see https://developer.apple.com/reference/scenekit/scncapsule
-		 */
-		var SCNCapsule = function (_SCNGeometry) {
-		  _inherits(SCNCapsule, _SCNGeometry);
-
-		  // Creating a Capsule
-
-		  /**
-		   * Creates a capsule geometry with the specified radius and height.
-		   * @access public
-		   * @constructor
-		   * @param {number} capRadius - The radius both of the capsule’s cylindrical body and of its hemispherical ends.
-		   * @param {number} height - The height of the capsule along the y-axis of its local coordinate space.
-		   * @desc The capsule is centered in its local coordinate system. For example, if you create a capsule whose cap radius is 5.0 and height is 20.0, it extends from -10.0 to 10.0 in the y-axis, and the circular cross section at the center of its body extends from -5.0 to 5.0 along the x- and z-axes.
-		   * @see https://developer.apple.com/reference/scenekit/scncapsule/1523790-init
-		   */
-		  function SCNCapsule(capRadius, height) {
-		    _classCallCheck(this, SCNCapsule);
-
-		    // Adjusting a Capsule’s Dimensions
-
-		    /**
-		     * The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523926-capradius
-		     */
-		    var _this = _possibleConstructorReturn(this, (SCNCapsule.__proto__ || Object.getPrototypeOf(SCNCapsule)).call(this));
-
-		    _this.capRadius = capRadius;
-
-		    /**
-		     * The extent of the capsule along its y-axis. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522789-height
-		     */
-		    _this.height = height;
-
-		    // Adjusting Geometric Detail
-
-		    /**
-		     * The number of subdivisions around the lateral circumference of the capsule. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522735-radialsegmentcount
-		     */
-		    _this.radialSegmentCount = 0;
-
-		    /**
-		     * The number of subdivisions in the height of each hemispherical end of the capsule. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523561-capsegmentcount
-		     */
-		    _this.capSegmentCount = 0;
-
-		    /**
-		     * The number of subdivisions in the sides of the capsule along its y-axis. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523697-heightsegmentcount
-		     */
-		    _this.heightSegmentCount = 0;
-		    return _this;
-		  }
-
-		  /**
-		   * @access private
-		   * @returns {Ammo.btCollisionShape}
-		   * @desc call Ammo.destroy(shape) after using it.
-		   */
-
-
-		  _createClass(SCNCapsule, [{
-		    key: '_createBtCollisionShape',
-		    value: function _createBtCollisionShape() {}
-		    //const height = (this.height - this.capRadius) * 0.5
-		    //const shape = new Ammo.btCapsuleShape(this.capRadius, height)
-		    //return shape
-
-
-		    /**
-		     * The center point and radius of the object’s bounding sphere.
-		     * @type {Object}
-		     * @parameter {SCNVector3} _boundingSphere.center -
-		     * @parameter {number} _boundingSphere.radius -
-		     * @returns {Object} -
-		     * @desc Scene Kit defines a bounding sphere in the local coordinate space using a center point and a radius. For example, if a node’s bounding sphere has the center point {3, 1, 4} and radius 2.0, all points in the vertex data of node’s geometry (and any geometry attached to its child nodes) lie within 2.0 units of the center point.The coordinates provided when reading this property are valid only if the object has a volume to be measured. For a geometry containing no vertex data or a node containing no geometry (and whose child nodes, if any, contain no geometry), the values center and radius are both zero.
-		     * @see https://developer.apple.com/reference/scenekit/scnboundingvolume/2034707-boundingsphere
-		     */
-
-		  }, {
-		    key: 'getBoundingSphere',
-		    value: function getBoundingSphere() {
-		      var c = new _SCNVector2.default(0, 0, 0);
-		      var r = this.height * 0.5;
-
-		      return { center: c, radius: r };
-		    }
-		  }]);
-
-		  return SCNCapsule;
-		}(_SCNGeometry3.default);
-
-		exports.default = SCNCapsule;
-
-	/***/ },
-	/* 171 */
+	/* 180 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -48362,7 +51516,7 @@ var JSceneKitExample =
 		exports.default = SCNChamferMode;
 
 	/***/ },
-	/* 172 */
+	/* 181 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48373,7 +51527,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -48475,7 +51629,7 @@ var JSceneKitExample =
 		exports.default = SCNCone;
 
 	/***/ },
-	/* 173 */
+	/* 182 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48484,7 +51638,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -48561,7 +51715,7 @@ var JSceneKitExample =
 		exports.default = SCNCylinder;
 
 	/***/ },
-	/* 174 */
+	/* 183 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48572,7 +51726,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -48671,7 +51825,7 @@ var JSceneKitExample =
 		exports.default = SCNFloor;
 
 	/***/ },
-	/* 175 */
+	/* 184 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48682,15 +51836,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(143);
+		var _SCNConstraint2 = __webpack_require__(153);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -48812,7 +51966,7 @@ var JSceneKitExample =
 		exports.default = SCNIKConstraint;
 
 	/***/ },
-	/* 176 */
+	/* 185 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48823,7 +51977,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -48869,7 +52023,7 @@ var JSceneKitExample =
 		exports.default = SCNLayer;
 
 	/***/ },
-	/* 177 */
+	/* 186 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48878,11 +52032,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNConstraint2 = __webpack_require__(143);
+		var _SCNConstraint2 = __webpack_require__(153);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
@@ -48942,7 +52096,7 @@ var JSceneKitExample =
 		exports.default = SCNLookAtConstraint;
 
 	/***/ },
-	/* 178 */
+	/* 187 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48951,7 +52105,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -48976,7 +52130,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4EqualToMatrix4;
 
 	/***/ },
-	/* 179 */
+	/* 188 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -48985,7 +52139,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49007,7 +52161,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4FromGLKMatrix4;
 
 	/***/ },
-	/* 180 */
+	/* 189 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49016,7 +52170,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49036,7 +52190,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4FromMat4;
 
 	/***/ },
-	/* 181 */
+	/* 190 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49045,7 +52199,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49065,7 +52219,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Invert;
 
 	/***/ },
-	/* 182 */
+	/* 191 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49074,7 +52228,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49098,7 +52252,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4IsIdentity;
 
 	/***/ },
-	/* 183 */
+	/* 192 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49107,11 +52261,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49160,7 +52314,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4MakeRotation;
 
 	/***/ },
-	/* 184 */
+	/* 193 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49169,7 +52323,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49191,7 +52345,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Mult;
 
 	/***/ },
-	/* 185 */
+	/* 194 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49200,7 +52354,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49225,7 +52379,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Rotate;
 
 	/***/ },
-	/* 186 */
+	/* 195 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49234,11 +52388,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeScale = __webpack_require__(142);
+		var _SCNMatrix4MakeScale = __webpack_require__(152);
 
 		var _SCNMatrix4MakeScale2 = _interopRequireDefault(_SCNMatrix4MakeScale);
 
@@ -49262,7 +52416,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Scale;
 
 	/***/ },
-	/* 187 */
+	/* 196 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49273,7 +52427,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49291,7 +52445,7 @@ var JSceneKitExample =
 		};exports.default = SCNMatrix4ToGLKMatrix4;
 
 	/***/ },
-	/* 188 */
+	/* 197 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49300,7 +52454,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -49320,7 +52474,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4ToMat4;
 
 	/***/ },
-	/* 189 */
+	/* 198 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49329,11 +52483,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
@@ -49357,7 +52511,7 @@ var JSceneKitExample =
 		exports.default = SCNMatrix4Translate;
 
 	/***/ },
-	/* 190 */
+	/* 199 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49368,15 +52522,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(102);
+		var _SCNPhysicsBehavior2 = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49472,7 +52626,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBallSocketJoint;
 
 	/***/ },
-	/* 191 */
+	/* 200 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -49563,7 +52717,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsCollisionCategory;
 
 	/***/ },
-	/* 192 */
+	/* 201 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49574,15 +52728,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(102);
+		var _SCNPhysicsBehavior2 = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49694,7 +52848,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsHingeJoint;
 
 	/***/ },
-	/* 193 */
+	/* 202 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49705,15 +52859,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(102);
+		var _SCNPhysicsBehavior2 = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -49886,7 +53040,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsSliderJoint;
 
 	/***/ },
-	/* 194 */
+	/* 203 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -49897,15 +53051,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(102);
+		var _SCNPhysicsBehavior2 = __webpack_require__(110);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(105);
+		var _SCNPhysicsBody = __webpack_require__(113);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsVehicleWheel = __webpack_require__(195);
+		var _SCNPhysicsVehicleWheel = __webpack_require__(204);
 
 		var _SCNPhysicsVehicleWheel2 = _interopRequireDefault(_SCNPhysicsVehicleWheel);
 
@@ -50049,7 +53203,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsVehicle;
 
 	/***/ },
-	/* 195 */
+	/* 204 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50064,11 +53218,11 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -50218,7 +53372,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsVehicleWheel;
 
 	/***/ },
-	/* 196 */
+	/* 205 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50229,7 +53383,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -50345,7 +53499,7 @@ var JSceneKitExample =
 		exports.default = SCNPlane;
 
 	/***/ },
-	/* 197 */
+	/* 206 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50354,7 +53508,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -50447,7 +53601,7 @@ var JSceneKitExample =
 		exports.default = SCNPyramid;
 
 	/***/ },
-	/* 198 */
+	/* 207 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -50471,7 +53625,7 @@ var JSceneKitExample =
 		exports.default = SCNReferenceLoadingPolicy;
 
 	/***/ },
-	/* 199 */
+	/* 208 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50484,15 +53638,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNNode2 = __webpack_require__(67);
+		var _SCNNode2 = __webpack_require__(75);
 
 		var _SCNNode3 = _interopRequireDefault(_SCNNode2);
 
-		var _SCNReferenceLoadingPolicy = __webpack_require__(198);
+		var _SCNReferenceLoadingPolicy = __webpack_require__(207);
 
 		var _SCNReferenceLoadingPolicy2 = _interopRequireDefault(_SCNReferenceLoadingPolicy);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
@@ -50526,7 +53680,7 @@ var JSceneKitExample =
 		          obj.referenceURL = value;
 		          obj.load();
 		        }],
-		        opacity: 'float',
+		        opacity: ['float', '_opacity'],
 		        castsShadow: 'boolean',
 		        categoryBitMask: 'integer',
 		        hidden: ['boolean', 'isHidden'],
@@ -50587,6 +53741,12 @@ var JSceneKitExample =
 		    if (referenceURL) {
 		      _this.load();
 		    }
+
+		    /**
+		     * @access private
+		     * @type {Promise}
+		     */
+		    _this._loadedPromise = null;
 		    return _this;
 		  }
 
@@ -50609,15 +53769,26 @@ var JSceneKitExample =
 		      if (this._isLoaded || this._isLoading) {
 		        return;
 		      }
+		      if (!this._referenceURL) {
+		        return;
+		      }
 		      this._isLoading = true;
 
-		      new _SCNScene2.default(this._referenceURL, null, function (scene) {
-		        scene.rootNode.name = 'referenceRoot';
-		        _get(SCNReferenceNode.prototype.__proto__ || Object.getPrototypeOf(SCNReferenceNode.prototype), 'addChildNode', _this2).call(_this2, scene.rootNode);
-		        _this2._scene = scene;
+		      var promise = new Promise(function (resolve, reject) {
+		        new _SCNScene2.default(_this2._referenceURL, null, function (scene) {
+		          scene.rootNode.name = 'referenceRoot';
+		          _get(SCNReferenceNode.prototype.__proto__ || Object.getPrototypeOf(SCNReferenceNode.prototype), 'addChildNode', _this2).call(_this2, scene.rootNode);
+		          _this2._scene = scene;
 
-		        _this2._isLoaded = true;
-		        _this2._isLoading = false;
+		          _this2._isLoaded = true;
+		          _this2._isLoading = false;
+		          resolve();
+		        }, function () {
+		          reject();
+		        });
+		      });
+		      this._loadedPromise = promise.then(function () {
+		        return _this2._scene._getLoadedPromise();
 		      });
 		    }
 
@@ -50639,6 +53810,7 @@ var JSceneKitExample =
 		        child.removeFromParentNode();
 		      });
 		      this._isLoaded = false;
+		      this._loadedPromise = null;
 		    }
 
 		    /**
@@ -50678,6 +53850,21 @@ var JSceneKitExample =
 		      throw new Error('cannot add a child node to SCNReferenceNode');
 		    }
 		  }, {
+		    key: '_getLoadedPromise',
+
+
+		    /**
+		     * @access private
+		     * @returns {Promise} -
+		     */
+		    value: function _getLoadedPromise() {
+		      if (this._loadedPromise) {
+		        return this._loadedPromise;
+		      }
+		      this.load();
+		      return this._loadedPromise;
+		    }
+		  }, {
 		    key: 'isLoaded',
 		    get: function get() {
 		      return this._isLoaded;
@@ -50711,7 +53898,7 @@ var JSceneKitExample =
 		exports.default = SCNReferenceNode;
 
 	/***/ },
-	/* 200 */
+	/* 209 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50763,7 +53950,7 @@ var JSceneKitExample =
 		exports.default = SCNShadableHelper;
 
 	/***/ },
-	/* 201 */
+	/* 210 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -50791,7 +53978,7 @@ var JSceneKitExample =
 		exports.default = SCNShaderModifierEntryPoint;
 
 	/***/ },
-	/* 202 */
+	/* 211 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50800,11 +53987,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
-		var _SCNChamferMode = __webpack_require__(171);
+		var _SCNChamferMode = __webpack_require__(180);
 
 		var _SCNChamferMode2 = _interopRequireDefault(_SCNChamferMode);
 
@@ -50888,7 +54075,7 @@ var JSceneKitExample =
 		exports.default = SCNShape;
 
 	/***/ },
-	/* 203 */
+	/* 212 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -50899,112 +54086,7 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNGeometry2 = __webpack_require__(70);
-
-		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
-
-		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-		/**
-		 * A sphere (or ball or globe) geometry.
-		 * @access public
-		 * @extends {SCNGeometry}
-		 * @see https://developer.apple.com/reference/scenekit/scnsphere
-		 */
-		var SCNSphere = function (_SCNGeometry) {
-		  _inherits(SCNSphere, _SCNGeometry);
-
-		  _createClass(SCNSphere, null, [{
-		    key: '_propTypes',
-		    get: function get() {
-		      return {
-		        sphereradius: ['float', 'radius'],
-		        spheregeodesic: ['boolean', 'isGeodesic'],
-		        spheresegmentCount: ['integer', 'segmentCount'],
-		        materials: 'NSArray',
-
-		        name: 'string',
-		        sphereradialSpan: ['float', '_sphereRadialSpan'],
-		        spherehemispheric: ['boolean', '_isHemispheric'],
-		        sphereprimitiveType: ['integer', '_spherePrimitiveType'],
-		        subdivisionLevel: 'integer',
-		        subdivisionSettings: ['bytes', null]
-		      };
-		    }
-
-		    // Creating a Sphere
-
-		    /**
-		     * Creates a sphere geometry with the specified radius.
-		     * @access public
-		     * @constructor
-		     * @param {number} radius - The radius of the sphere in its local coordinate space.
-		     * @desc The sphere is centered in its local coordinate system. For example, if you create a sphere whose radius is 5.0, it extends from -5.0 to 5.0 along each of the the x, y, and z-axes.
-		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1522601-init
-		     */
-
-		  }]);
-
-		  function SCNSphere(radius) {
-		    _classCallCheck(this, SCNSphere);
-
-		    // Adjusting a Sphere’s Dimensions
-
-		    /**
-		     * The radius of the sphere. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523787-radius
-		     */
-		    var _this = _possibleConstructorReturn(this, (SCNSphere.__proto__ || Object.getPrototypeOf(SCNSphere)).call(this));
-
-		    _this.radius = radius;
-
-		    // Adjusting Geometric Detail
-
-		    /**
-		     * A Boolean value specifying whether SceneKit uses a geodesic polygon mesh to render the sphere.
-		     * @type {boolean}
-		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523268-isgeodesic
-		     */
-		    _this.isGeodesic = false;
-
-		    /**
-		     * A number determining the detail of the polygon mesh SceneKit uses to render the sphere. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scnsphere/1523912-segmentcount
-		     */
-		    _this.segmentCount = 0;
-
-		    _this._sphereRadialSpan = 0;
-		    _this._spherePrimitiveType = 0;
-		    _this._isHemispheric = false;
-		    return _this;
-		  }
-
-		  return SCNSphere;
-		}(_SCNGeometry3.default);
-
-		exports.default = SCNSphere;
-
-	/***/ },
-	/* 204 */
-	/***/ function(module, exports, __webpack_require__) {
-
-		'use strict';
-
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-
-		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -51152,7 +54234,7 @@ var JSceneKitExample =
 		exports.default = SCNText;
 
 	/***/ },
-	/* 205 */
+	/* 213 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51161,7 +54243,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -51238,7 +54320,7 @@ var JSceneKitExample =
 		exports.default = SCNTorus;
 
 	/***/ },
-	/* 206 */
+	/* 214 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51249,15 +54331,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNConstraint2 = __webpack_require__(143);
+		var _SCNConstraint2 = __webpack_require__(153);
 
 		var _SCNConstraint3 = _interopRequireDefault(_SCNConstraint2);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
@@ -51318,7 +54400,7 @@ var JSceneKitExample =
 		exports.default = SCNTransformConstraint;
 
 	/***/ },
-	/* 207 */
+	/* 215 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51327,7 +54409,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNGeometry2 = __webpack_require__(70);
+		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
@@ -51413,7 +54495,7 @@ var JSceneKitExample =
 		exports.default = SCNTube;
 
 	/***/ },
-	/* 208 */
+	/* 216 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51422,7 +54504,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51446,7 +54528,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3EqualToVector3;
 
 	/***/ },
-	/* 209 */
+	/* 217 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51455,7 +54537,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51475,7 +54557,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3FromFloat3;
 
 	/***/ },
-	/* 210 */
+	/* 218 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51484,7 +54566,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51506,7 +54588,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3FromGLKVector3;
 
 	/***/ },
-	/* 211 */
+	/* 219 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51515,7 +54597,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51537,7 +54619,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3Make;
 
 	/***/ },
-	/* 212 */
+	/* 220 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51546,7 +54628,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51566,7 +54648,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3ToFloat3;
 
 	/***/ },
-	/* 213 */
+	/* 221 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51577,7 +54659,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51595,7 +54677,7 @@ var JSceneKitExample =
 		};exports.default = SCNVector3ToGLKVector3;
 
 	/***/ },
-	/* 214 */
+	/* 222 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51604,7 +54686,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(46);
+		var _SCNVector = __webpack_require__(54);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51615,7 +54697,7 @@ var JSceneKitExample =
 		exports.default = SCNVector3Zero;
 
 	/***/ },
-	/* 215 */
+	/* 223 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51624,7 +54706,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51648,7 +54730,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4EqualToVector4;
 
 	/***/ },
-	/* 216 */
+	/* 224 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51657,7 +54739,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51677,7 +54759,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4FromFloat4;
 
 	/***/ },
-	/* 217 */
+	/* 225 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51686,7 +54768,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51708,7 +54790,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4FromGLKVector4;
 
 	/***/ },
-	/* 218 */
+	/* 226 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51717,7 +54799,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51740,7 +54822,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4Make;
 
 	/***/ },
-	/* 219 */
+	/* 227 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51749,7 +54831,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51769,7 +54851,7 @@ var JSceneKitExample =
 		exports.default = SCNVector4ToFloat4;
 
 	/***/ },
-	/* 220 */
+	/* 228 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51780,7 +54862,7 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -51798,7 +54880,7 @@ var JSceneKitExample =
 		};exports.default = SCNVector4ToGLKVector4;
 
 	/***/ },
-	/* 221 */
+	/* 229 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -51823,43 +54905,47 @@ var JSceneKitExample =
 
 		var _CGSize2 = _interopRequireDefault(_CGSize);
 
-		var _SCNRenderer = __webpack_require__(90);
+		var _GCController = __webpack_require__(29);
+
+		var _GCController2 = _interopRequireDefault(_GCController);
+
+		var _SCNRenderer = __webpack_require__(98);
 
 		var _SCNRenderer2 = _interopRequireDefault(_SCNRenderer);
 
-		var _SCNTechniqueSupport = __webpack_require__(87);
+		var _SCNTechniqueSupport = __webpack_require__(95);
 
 		var _SCNTechniqueSupport2 = _interopRequireDefault(_SCNTechniqueSupport);
 
-		var _SCNScene = __webpack_require__(92);
+		var _SCNScene = __webpack_require__(100);
 
 		var _SCNScene2 = _interopRequireDefault(_SCNScene);
 
-		var _SCNRenderingAPI = __webpack_require__(123);
+		var _SCNRenderingAPI = __webpack_require__(133);
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNAntialiasingMode = __webpack_require__(126);
+		var _SCNAntialiasingMode = __webpack_require__(136);
 
 		var _SCNAntialiasingMode2 = _interopRequireDefault(_SCNAntialiasingMode);
 
-		var _SCNNode = __webpack_require__(67);
+		var _SCNNode = __webpack_require__(75);
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNCamera = __webpack_require__(132);
+		var _SCNCamera = __webpack_require__(142);
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNMatrix = __webpack_require__(48);
+		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
 
-		var _SCNMatrix4MakeTranslation = __webpack_require__(80);
+		var _SCNMatrix4MakeTranslation = __webpack_require__(82);
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
-		var _SCNVector = __webpack_require__(47);
+		var _SCNVector = __webpack_require__(55);
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
@@ -52696,6 +55782,34 @@ var JSceneKitExample =
 		            });
 		            node.geometry._presentation = p.geometry;
 		          }
+		          if (node._particleSystems) {
+		            p._particleSystems = [];
+		            var _iteratorNormalCompletion2 = true;
+		            var _didIteratorError2 = false;
+		            var _iteratorError2 = undefined;
+
+		            try {
+		              for (var _iterator2 = node._particleSystems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+		                var system = _step2.value;
+
+		                var pSystem = system._createPresentation();
+		                p._particleSystems.push(pSystem);
+		              }
+		            } catch (err) {
+		              _didIteratorError2 = true;
+		              _iteratorError2 = err;
+		            } finally {
+		              try {
+		                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+		                  _iterator2.return();
+		                }
+		              } finally {
+		                if (_didIteratorError2) {
+		                  throw _iteratorError2;
+		                }
+		              }
+		            }
+		          }
 		          node._presentation = p;
 		        }
 		        //node._copyTransformToPresentation()
@@ -52769,6 +55883,7 @@ var JSceneKitExample =
 		      this._requestAnimationFrame.call(window, function () {
 		        _this3._currentSystemTime = Date.now() * 0.001;
 		        _this3.currentTime = _this3._currentSystemTime;
+		        _GCController2.default._update();
 		        _this3._drawAtTimeWithContext(_this3.currentTime, _this3._context);
 
 		        if (_this3._isPlaying) {
@@ -52904,10 +56019,36 @@ var JSceneKitExample =
 		          });
 		        });
 		      }
+		      if (node._particleSystems) {
+		        var _iteratorNormalCompletion3 = true;
+		        var _didIteratorError3 = false;
+		        var _iteratorError3 = undefined;
+
+		        try {
+		          for (var _iterator3 = node._particleSystems[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+		            var system = _step3.value;
+
+		            this._runAnimationForObject(system);
+		          }
+		        } catch (err) {
+		          _didIteratorError3 = true;
+		          _iteratorError3 = err;
+		        } finally {
+		          try {
+		            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+		              _iterator3.return();
+		            }
+		          } finally {
+		            if (_didIteratorError3) {
+		              throw _iteratorError3;
+		            }
+		          }
+		        }
+		      }
 		    }
 		  }, {
 		    key: '_runAnimationForObject',
-		    value: function _runAnimationForObject(obj, time) {
+		    value: function _runAnimationForObject(obj) {
 		      var _this10 = this;
 
 		      var deleteKeys = [];
@@ -52940,29 +56081,29 @@ var JSceneKitExample =
 		        var transform = this._scene._particleSystemsTransform[i];
 		        system._updateParticles(transform, gravity, this.currentTime);
 		      }
-		      var _iteratorNormalCompletion2 = true;
-		      var _didIteratorError2 = false;
-		      var _iteratorError2 = undefined;
+		      var _iteratorNormalCompletion4 = true;
+		      var _didIteratorError4 = false;
+		      var _iteratorError4 = undefined;
 
 		      try {
-		        for (var _iterator2 = this._scene._particleSystems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-		          var _system = _step2.value;
+		        for (var _iterator4 = this._scene._particleSystems[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+		          var _system = _step4.value;
 
 		          if (_system._finished) {
 		            this._scene.removeParticleSystem(_system);
 		          }
 		        }
 		      } catch (err) {
-		        _didIteratorError2 = true;
-		        _iteratorError2 = err;
+		        _didIteratorError4 = true;
+		        _iteratorError4 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion2 && _iterator2.return) {
-		            _iterator2.return();
+		          if (!_iteratorNormalCompletion4 && _iterator4.return) {
+		            _iterator4.return();
 		          }
 		        } finally {
-		          if (_didIteratorError2) {
-		            throw _iteratorError2;
+		          if (_didIteratorError4) {
+		            throw _iteratorError4;
 		          }
 		        }
 		      }
@@ -52984,54 +56125,54 @@ var JSceneKitExample =
 		        return;
 		      }
 		      var gravity = this._scene.physicsWorld ? this._scene.physicsWorld.gravity : null;
-		      var _iteratorNormalCompletion3 = true;
-		      var _didIteratorError3 = false;
-		      var _iteratorError3 = undefined;
+		      var _iteratorNormalCompletion5 = true;
+		      var _didIteratorError5 = false;
+		      var _iteratorError5 = undefined;
 
 		      try {
-		        for (var _iterator3 = obj.particleSystems[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-		          var system = _step3.value;
+		        for (var _iterator5 = obj.particleSystems[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+		          var system = _step5.value;
 
 		          system._updateParticles(obj.presentation.worldTransform, gravity, this.currentTime);
 		        }
 		      } catch (err) {
-		        _didIteratorError3 = true;
-		        _iteratorError3 = err;
+		        _didIteratorError5 = true;
+		        _iteratorError5 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
-		            _iterator3.return();
+		          if (!_iteratorNormalCompletion5 && _iterator5.return) {
+		            _iterator5.return();
 		          }
 		        } finally {
-		          if (_didIteratorError3) {
-		            throw _iteratorError3;
+		          if (_didIteratorError5) {
+		            throw _iteratorError5;
 		          }
 		        }
 		      }
 
-		      var _iteratorNormalCompletion4 = true;
-		      var _didIteratorError4 = false;
-		      var _iteratorError4 = undefined;
+		      var _iteratorNormalCompletion6 = true;
+		      var _didIteratorError6 = false;
+		      var _iteratorError6 = undefined;
 
 		      try {
-		        for (var _iterator4 = obj.particleSystems[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-		          var _system2 = _step4.value;
+		        for (var _iterator6 = obj.particleSystems[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+		          var _system2 = _step6.value;
 
 		          if (_system2._finished) {
 		            obj.removeParticleSystem(_system2);
 		          }
 		        }
 		      } catch (err) {
-		        _didIteratorError4 = true;
-		        _iteratorError4 = err;
+		        _didIteratorError6 = true;
+		        _iteratorError6 = err;
 		      } finally {
 		        try {
-		          if (!_iteratorNormalCompletion4 && _iterator4.return) {
-		            _iterator4.return();
+		          if (!_iteratorNormalCompletion6 && _iterator6.return) {
+		            _iterator6.return();
 		          }
 		        } finally {
-		          if (_didIteratorError4) {
-		            throw _iteratorError4;
+		          if (_didIteratorError6) {
+		            throw _iteratorError6;
 		          }
 		        }
 		      }
@@ -53310,6 +56451,8 @@ var JSceneKitExample =
 		      if (this._scene !== null) {
 		        this._scene._physicsWorld._renderer = this._renderer;
 		      }
+		      this._updateTransform();
+		      this._scene.rootNode._resetPhysicsTransformRecursively();
 		    }
 		  }, {
 		    key: 'pointOfView',
@@ -53634,7 +56777,7 @@ var JSceneKitExample =
 		exports.default = SCNView;
 
 	/***/ },
-	/* 222 */
+	/* 230 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -53651,7 +56794,7 @@ var JSceneKitExample =
 
 		var _NSObject3 = _interopRequireDefault(_NSObject2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
@@ -55344,7 +58487,7 @@ var JSceneKitExample =
 		exports.default = SKAction;
 
 	/***/ },
-	/* 223 */
+	/* 231 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -55372,7 +58515,7 @@ var JSceneKitExample =
 		exports.default = SKActionTimingMode;
 
 	/***/ },
-	/* 224 */
+	/* 232 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55381,11 +58524,11 @@ var JSceneKitExample =
 		  value: true
 		});
 
-		var _SKNode2 = __webpack_require__(135);
+		var _SKNode2 = __webpack_require__(145);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKBlendMode = __webpack_require__(134);
+		var _SKBlendMode = __webpack_require__(144);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -55516,7 +58659,7 @@ var JSceneKitExample =
 		exports.default = SKEffectNode;
 
 	/***/ },
-	/* 225 */
+	/* 233 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55529,15 +58672,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(222);
+		var _SKAction2 = __webpack_require__(230);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -55720,7 +58863,7 @@ var JSceneKitExample =
 		_SKAction3.default.fadeAlphaToDuration = SKFade.fadeAlphaToDuration;
 
 	/***/ },
-	/* 226 */
+	/* 234 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55733,15 +58876,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(222);
+		var _SKAction2 = __webpack_require__(230);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -55863,7 +59006,7 @@ var JSceneKitExample =
 		_SKAction3.default.group = SKGroup.group;
 
 	/***/ },
-	/* 227 */
+	/* 235 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -55889,7 +59032,7 @@ var JSceneKitExample =
 		exports.default = SKLabelHorizontalAlignmentMode;
 
 	/***/ },
-	/* 228 */
+	/* 236 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -55906,19 +59049,19 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(135);
+		var _SKNode2 = __webpack_require__(145);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
-		var _SKLabelVerticalAlignmentMode = __webpack_require__(229);
+		var _SKLabelVerticalAlignmentMode = __webpack_require__(237);
 
 		var _SKLabelVerticalAlignmentMode2 = _interopRequireDefault(_SKLabelVerticalAlignmentMode);
 
-		var _SKLabelHorizontalAlignmentMode = __webpack_require__(227);
+		var _SKLabelHorizontalAlignmentMode = __webpack_require__(235);
 
 		var _SKLabelHorizontalAlignmentMode2 = _interopRequireDefault(_SKLabelHorizontalAlignmentMode);
 
-		var _SKBlendMode = __webpack_require__(134);
+		var _SKBlendMode = __webpack_require__(144);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -56386,7 +59529,7 @@ var JSceneKitExample =
 		exports.default = SKLabelNode;
 
 	/***/ },
-	/* 229 */
+	/* 237 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -56414,7 +59557,7 @@ var JSceneKitExample =
 		exports.default = SKLabelVerticalAlignmentMode;
 
 	/***/ },
-	/* 230 */
+	/* 238 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -56427,15 +59570,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(222);
+		var _SKAction2 = __webpack_require__(230);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -56708,7 +59851,7 @@ var JSceneKitExample =
 		_SKAction3.default.scaleYToDuration = SKScale.scaleYToDuration;
 
 	/***/ },
-	/* 231 */
+	/* 239 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -56731,11 +59874,11 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKEffectNode2 = __webpack_require__(224);
+		var _SKEffectNode2 = __webpack_require__(232);
 
 		var _SKEffectNode3 = _interopRequireDefault(_SKEffectNode2);
 
-		var _SKSceneScaleMode = __webpack_require__(232);
+		var _SKSceneScaleMode = __webpack_require__(240);
 
 		var _SKSceneScaleMode2 = _interopRequireDefault(_SKSceneScaleMode);
 
@@ -57049,7 +60192,7 @@ var JSceneKitExample =
 		exports.default = SKScene;
 
 	/***/ },
-	/* 232 */
+	/* 240 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -57077,7 +60220,7 @@ var JSceneKitExample =
 		exports.default = SKSceneScaleMode;
 
 	/***/ },
-	/* 233 */
+	/* 241 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -57090,15 +60233,15 @@ var JSceneKitExample =
 
 		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _SKAction2 = __webpack_require__(222);
+		var _SKAction2 = __webpack_require__(230);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -57238,7 +60381,7 @@ var JSceneKitExample =
 		_SKAction3.default.sequence = SKSequence.sequence;
 
 	/***/ },
-	/* 234 */
+	/* 242 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -57257,7 +60400,7 @@ var JSceneKitExample =
 
 		var _CGLineJoin2 = _interopRequireDefault(_CGLineJoin);
 
-		var _SKBlendMode = __webpack_require__(134);
+		var _SKBlendMode = __webpack_require__(144);
 
 		var _SKBlendMode2 = _interopRequireDefault(_SKBlendMode);
 
@@ -57265,7 +60408,7 @@ var JSceneKitExample =
 
 		var _SKColor2 = _interopRequireDefault(_SKColor);
 
-		var _SKNode2 = __webpack_require__(135);
+		var _SKNode2 = __webpack_require__(145);
 
 		var _SKNode3 = _interopRequireDefault(_SKNode2);
 
@@ -57594,7 +60737,7 @@ var JSceneKitExample =
 		exports.default = SKShapeNode;
 
 	/***/ },
-	/* 235 */
+	/* 243 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -57605,15 +60748,15 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SKAction2 = __webpack_require__(222);
+		var _SKAction2 = __webpack_require__(230);
 
 		var _SKAction3 = _interopRequireDefault(_SKAction2);
 
-		var _SKActionTimingMode = __webpack_require__(223);
+		var _SKActionTimingMode = __webpack_require__(231);
 
 		var _SKActionTimingMode2 = _interopRequireDefault(_SKActionTimingMode);
 
-		var _SKNode = __webpack_require__(135);
+		var _SKNode = __webpack_require__(145);
 
 		var _SKNode2 = _interopRequireDefault(_SKNode);
 
@@ -57696,7 +60839,7 @@ var JSceneKitExample =
 		_SKAction3.default.waitForDurationWithRange = SKWait.waitForDurationWithRange;
 
 	/***/ },
-	/* 236 */
+	/* 244 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
@@ -57707,11 +60850,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _BinaryParser = __webpack_require__(237);
+		var _BinaryParser = __webpack_require__(245);
 
 		var _BinaryParser2 = _interopRequireDefault(_BinaryParser);
 
-		var _ecl = __webpack_require__(39);
+		var _ecl = __webpack_require__(47);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -57992,7 +61135,7 @@ var JSceneKitExample =
 		/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 	/***/ },
-	/* 237 */
+	/* 245 */
 	/***/ function(module, exports) {
 
 		"use strict";
@@ -58160,7 +61303,7 @@ var JSceneKitExample =
 		};
 
 	/***/ },
-	/* 238 */
+	/* 246 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -58340,7 +61483,7 @@ var JSceneKitExample =
 	    // Sounds
 	    this.collectPearlSound = null;
 	    this.collectFlowerSound = null;
-	    this.frameThrowerSound = null;
+	    this.flameThrowerSound = null;
 	    this.victoryMusic = null;
 
 	    // Particles
@@ -58378,7 +61521,8 @@ var JSceneKitExample =
 
 	      // Create a new scene.
 	      //const scene = new SCNScene('game.scnassets/level.scn')
-	      new _jscenekit.SCNScene('game.scnassets/level.scn', null, function (scene) {
+	      var scene = new _jscenekit.SCNScene('game.scnassets/level.scn');
+	      scene._getLoadedPromise().then(function () {
 	        // Set the scene to the view and loop for the animation of the bamboos.
 	        _this.gameView.scene = scene;
 	        _this.gameView.isPlaying = true;
@@ -58407,7 +61551,6 @@ var JSceneKitExample =
 	        // Retrieve various game elements in one traversal
 	        var collisionNodes = [];
 	        scene.rootNode.enumerateChildNodes(function (node) {
-	          console.warn('node.name: ' + node.name);
 	          switch (node.name) {
 	            case 'flame':
 	              {
@@ -58462,7 +61605,7 @@ var JSceneKitExample =
 
 	        _this.setupAutomaticCameraPositions();
 	        _this.setupGameControllers();
-	      }, null);
+	      });
 	    }
 
 	    // MARK: Managing the Camera
@@ -58591,29 +61734,18 @@ var JSceneKitExample =
 	      }
 
 	      // Flames are static physics bodies, but they are moved by an action - So we need to tell the physics engine that the transforms did change.
-	      for (var flame in this.flames) {
-	        flame.physicsBody.resetTransform();
-	      }
-
-	      // Adjust the volume of the enemy based on the distance to the character.
-	      var distanceToClosestEnemy = Infinity;
-	      var characterPosition = this.character.node.position;
 	      var _iteratorNormalCompletion2 = true;
 	      var _didIteratorError2 = false;
 	      var _iteratorError2 = undefined;
 
 	      try {
-	        for (var _iterator2 = this.enemies[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-	          var enemy = _step2.value;
+	        for (var _iterator2 = this.flames[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	          var flame = _step2.value;
 
-	          // distance to enemy
-	          var enemyTransform = enemy.worldTransform;
-	          var enemyPosition = new _jscenekit.SCNVector3(enemyTransform.m41, enemyTransform.m42, enemyTransform.m43);
-	          var distance = characterPosition.sub(enemyPosition).length();
-	          distanceToClosestEnemy = Math.min(distanceToClosestEnemy, distance);
+	          flame.physicsBody.resetTransform();
 	        }
 
-	        // Adjust sounds volumes based on distance with the enmy.
+	        // Adjust the volume of the enemy based on the distance to the character.
 	      } catch (err) {
 	        _didIteratorError2 = true;
 	        _iteratorError2 = err;
@@ -58625,6 +61757,39 @@ var JSceneKitExample =
 	        } finally {
 	          if (_didIteratorError2) {
 	            throw _iteratorError2;
+	          }
+	        }
+	      }
+
+	      var distanceToClosestEnemy = Infinity;
+	      var characterPosition = this.character.node.position;
+	      var _iteratorNormalCompletion3 = true;
+	      var _didIteratorError3 = false;
+	      var _iteratorError3 = undefined;
+
+	      try {
+	        for (var _iterator3 = this.enemies[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+	          var enemy = _step3.value;
+
+	          // distance to enemy
+	          var enemyTransform = enemy.worldTransform;
+	          var enemyPosition = new _jscenekit.SCNVector3(enemyTransform.m41, enemyTransform.m42, enemyTransform.m43);
+	          var distance = characterPosition.sub(enemyPosition).length();
+	          distanceToClosestEnemy = Math.min(distanceToClosestEnemy, distance);
+	        }
+
+	        // Adjust sounds volumes based on distance with the enmy.
+	      } catch (err) {
+	        _didIteratorError3 = true;
+	        _iteratorError3 = err;
+	      } finally {
+	        try {
+	          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+	            _iterator3.return();
+	          }
+	        } finally {
+	          if (_didIteratorError3) {
+	            throw _iteratorError3;
 	          }
 	        }
 	      }
@@ -58802,29 +61967,29 @@ var JSceneKitExample =
 	        }
 	      }
 
-	      var _iteratorNormalCompletion3 = true;
-	      var _didIteratorError3 = false;
-	      var _iteratorError3 = undefined;
+	      var _iteratorNormalCompletion4 = true;
+	      var _didIteratorError4 = false;
+	      var _iteratorError4 = undefined;
 
 	      try {
-	        for (var _iterator3 = node.childNodes[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-	          var _childNode = _step3.value;
+	        for (var _iterator4 = node.childNodes[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+	          var _childNode = _step4.value;
 
 	          if (_childNode.isHidden === false) {
 	            this.setupCollisionNode(_childNode);
 	          }
 	        }
 	      } catch (err) {
-	        _didIteratorError3 = true;
-	        _iteratorError3 = err;
+	        _didIteratorError4 = true;
+	        _iteratorError4 = err;
 	      } finally {
 	        try {
-	          if (!_iteratorNormalCompletion3 && _iterator3.return) {
-	            _iterator3.return();
+	          if (!_iteratorNormalCompletion4 && _iterator4.return) {
+	            _iterator4.return();
 	          }
 	        } finally {
-	          if (_didIteratorError3) {
-	            throw _iteratorError3;
+	          if (_didIteratorError4) {
+	            throw _iteratorError4;
 	          }
 	        }
 	      }
@@ -58905,13 +62070,8 @@ var JSceneKitExample =
 
 	      // Animate the camera forever
 	      );_jscenekit.DispatchQueue.main.asyncAfter(new Date() + 1000, function () {
-	        _this6.cameraYHandle.runAction(_jscenekit.SCNAction.repeatForever(_jscenekit.SCNAction.rotateByXYZ(0, -1, 0, 3))
-	        //const act = SCNAction.repeatForever(SCNAction.rotateByXYZ(0, -1, 0, 3))
-	        //window.cameraYHandleAction = act
-	        //window.cameraYHandle = this.cameraYHandle
-	        //this.cameraYHandle.runAction(act)
-
-	        );_this6.cameraXHandle.runAction(_jscenekit.SCNAction.rotateToXYZ(-Math.PI / 4, 0, 0, 5.0));
+	        _this6.cameraYHandle.runAction(_jscenekit.SCNAction.repeatForever(_jscenekit.SCNAction.rotateByXYZ(0, -1, 0, 3)));
+	        _this6.cameraXHandle.runAction(_jscenekit.SCNAction.rotateToXYZ(-Math.PI / 4, 0, 0, 5.0));
 	      });
 
 	      this.gameView.showEndScreen();
@@ -58926,9 +62086,12 @@ var JSceneKitExample =
 	      var dpad = this.controllerDPad;
 	      if (dpad) {
 	        if (dpad.xAxis.value === 0.0 && dpad.yAxis.value === 0.0) {
-	          this.controllerStoredDirection = [0.0, 0.0];
+	          this.controllerStoredDirection.x = 0;
+	          this.controllerStoredDirection.y = 0;
 	        } else {
 	          //this.controllerStoredDirection = clamp(this.controllerStoredDirection + float2(dpad.xAxis.value, -dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit, GameViewController.controllerDirectionLimit)
+	          this.controllerStoredDirection.x = Math.min(Math.max((this.controllerStoredDirection.x + dpad.xAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit.x), GameViewController.controllerDirectionLimit.x);
+	          this.controllerStoredDirection.y = Math.min(Math.max((this.controllerStoredDirection.y + dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit.y), GameViewController.controllerDirectionLimit.y);
 	        }
 	      }
 
@@ -58949,7 +62112,6 @@ var JSceneKitExample =
 	    value: function handleControllerDidConnectNotification(notification) {
 	      var gameController = notification.object;
 	      this.registerCharacterMovementEvents(gameController);
-	      console.error('handleControllerDidConnectNotification: ' + gameController);
 	    }
 	  }, {
 	    key: 'registerCharacterMovementEvents',
@@ -59065,7 +62227,7 @@ var JSceneKitExample =
 	  }, {
 	    key: 'controllerDirectionLimit',
 	    get: function get() {
-	      return new CGSize(1.0, 1.0);
+	      return new _jscenekit.CGPoint(1.0, 1.0);
 	    }
 	  }]);
 
@@ -59155,8 +62317,8 @@ var JSceneKitExample =
 	    // node that will be used as a handle to manipulate the whole group at once
 
 	    //const characterScene = SCNScene.sceneNamed('game.scnassets/panda.scn')
-	    new _jscenekit.SCNScene('game.scnassets/panda.scn', null, function (scene) {
-	      var characterScene = scene;
+	    var characterScene = new _jscenekit.SCNScene('game.scnassets/panda.scn');
+	    characterScene._getLoadedPromise().then(function () {
 	      var characterTopLevelNode = characterScene.rootNode.childNodes[0];
 	      _this.node.addChildNode(characterTopLevelNode);
 
@@ -59202,9 +62364,9 @@ var JSceneKitExample =
 
 	      // MARK: Load sound effects
 
-	      );_this.reliefSound = new _jscenekit.SCNAudioSource('aah_extinction.mp3', 2.0);
-	      _this.haltFireSound = new _jscenekit.SCNAudioSource('fire_extinction.mp3', 2.0);
-	      _this.catchFireSound = new _jscenekit.SCNAudioSource('ouch_firehit.mp3', 2.0);
+	      );_this.reliefSound = new _jscenekit.SCNAudioSource('game.scnassets/sounds/aah_extinction.mp3', 2.0);
+	      _this.haltFireSound = new _jscenekit.SCNAudioSource('game.scnassets/sounds/fire_extinction.mp3', 2.0);
+	      _this.catchFireSound = new _jscenekit.SCNAudioSource('game.scnassets/sounds/ouch_firehit.mp3', 2.0);
 
 	      for (var _i = 0; _i < 10; _i++) {
 	        var grassSound = new _jscenekit.SCNAudioSource('game.scnassets/sounds/Step_grass_0' + _i + '.mp3');
@@ -59416,7 +62578,7 @@ var JSceneKitExample =
 
 	        // stop fire and smoke
 	        );this.fireEmitter.particleSystem.birthRate = 0;
-	        _jscenekit.SCNTransaction.animationWithDuration(1.0, function () {
+	        _jscenekit.SCNTransaction.animateWithDurationTimingFunctionCompletionBlockAnimations(1.0, null, null, function () {
 	          _this3.smokeEmitter.particleSystem.birthRate = 0;
 	        }
 
