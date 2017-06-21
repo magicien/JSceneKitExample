@@ -33335,14 +33335,16 @@ var JSceneKitExample =
 		      this._lightNodes = this._createLightNodeArray // createLightNodeArray must be called before getting program
 
 		      ();var gl = this.context;
-		      var program = this._defaultProgram._glProgram;
+		      var p = this._defaultProgram;
+		      var program = p._glProgram;
 
 		      gl.clearColor(this._backgroundColor.r, this._backgroundColor.g, this._backgroundColor.b, this._backgroundColor.a);
 		      gl.clearDepth(1.0);
 		      gl.clearStencil(0);
-		      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
+		      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT
 
-		      gl.useProgram(program);
+		      //gl.useProgram(program)
+		      );this._useProgram(p);
 
 		      gl.depthFunc(gl.LEQUAL);
 		      gl.depthMask(true);
@@ -33454,7 +33456,8 @@ var JSceneKitExample =
 		      //////////////////////////
 		      // Shadow
 		      //////////////////////////
-		      gl.useProgram(this._defaultShadowProgram._glProgram);
+		      //gl.useProgram(this._defaultShadowProgram._glProgram)
+		      this._useProgram(this._defaultShadowProgram);
 		      gl.enable(gl.DEPTH_TEST);
 		      gl.depthMask(true);
 		      gl.depthFunc(gl.LEQUAL);
@@ -33511,7 +33514,8 @@ var JSceneKitExample =
 		      }
 
 		      this._setViewPort // reset viewport size
-		      ();gl.useProgram(program);
+		      //gl.useProgram(program)
+		      ();this._useProgram(p);
 		      for (var i = 0; i < lights.directionalShadow.length; i++) {
 		        var node = lights.directionalShadow[i];
 		        var symbol = 'TEXTURE' + (i + 8);
@@ -33529,7 +33533,8 @@ var JSceneKitExample =
 		      });
 
 		      var particleProgram = this._defaultParticleProgram._glProgram;
-		      gl.useProgram(particleProgram);
+		      //gl.useProgram(particleProgram)
+		      this._useProgram(this._defaultParticleProgram);
 		      gl.depthMask(false);
 		      gl.enable(gl.BLEND);
 		      gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
@@ -34064,12 +34069,17 @@ var JSceneKitExample =
 
 		      //this.currentTime
 		      var gl = this.context;
-		      var program = this._defaultParticleProgram._glProgram;
+		      //let program = this._defaultParticleProgram._glProgram
+		      //if(system._program !== null){
+		      //  program = system._program._glProgram
+		      //}
+		      var p = this._defaultParticleProgram;
 		      if (system._program !== null) {
-		        program = system._program._glProgram;
+		        p = system._program;
 		      }
-		      gl.useProgram(program
-		      //this._switchProgram(program)
+		      var program = p._glProgram;
+		      this._useProgram(p
+		      //this._switchProgram(p)
 		      );gl.disable(gl.CULL_FACE);
 
 		      if (system._vertexBuffer === null) {
@@ -34574,9 +34584,12 @@ var JSceneKitExample =
 		      if (this._hitFrameBuffer === null) {
 		        this._initializeHitFrameBuffer();
 		      }
-		      var hitTestProgram = this._defaultHitTestProgram._glProgram;
-		      gl.useProgram(hitTestProgram);
-		      gl.bindFramebuffer(gl.FRAMEBUFFER, this._hitFrameBuffer);
+		      var prg = this._defaultHitTestProgram;
+		      var hitTestProgram = prg._glProgram;
+		      this._useProgram(prg
+		      //gl.useProgram(hitTestProgram)
+
+		      );gl.bindFramebuffer(gl.FRAMEBUFFER, this._hitFrameBuffer);
 
 		      gl.depthMask(true);
 		      gl.depthFunc(gl.LEQUAL);
@@ -34708,8 +34721,10 @@ var JSceneKitExample =
 		      if (this._hitFrameBuffer === null) {
 		        this._initializeHitFrameBuffer();
 		      }
-		      var hitTestProgram = this._defaultHitTestProgram._glProgram;
-		      gl.useProgram(hitTestProgram);
+		      var prg = this._defaultHitTestProgram;
+		      var hitTestProgram = prg._glProgram;
+		      //gl.useProgram(hitTestProgram)
+		      this._useProgram(prg);
 		      gl.bindFramebuffer(gl.FRAMEBUFFER, this._hitFrameBuffer);
 
 		      gl.depthMask(true);
@@ -35012,6 +35027,17 @@ var JSceneKitExample =
 		      obj.program = p;
 
 		      return p;
+		    }
+		  }, {
+		    key: '_useProgram',
+		    value: function _useProgram(program) {
+		      if (this._currentProgram === program) {
+		        return;
+		      }
+		      var gl = this.context;
+		      gl.useProgram(program._glProgram);
+		      program._setDummyTextureForContext(gl);
+		      this._currentProgram = program;
 		    }
 		  }, {
 		    key: '_switchProgram',
@@ -36157,7 +36183,6 @@ var JSceneKitExample =
 		        throw new Error('program link error: ' + _info4);
 		      }
 
-		      //gl.useProgram(p._glProgram)
 		      this._switchProgram(p);
 
 		      gl.enable(gl.DEPTH_TEST);
@@ -36230,7 +36255,8 @@ var JSceneKitExample =
 		        throw new Error('program link error: ' + _info6);
 		      }
 
-		      gl.useProgram(p._glProgram
+		      //gl.useProgram(p._glProgram)
+		      this._useProgram(p
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
@@ -36296,7 +36322,8 @@ var JSceneKitExample =
 		        throw new Error('program link error: ' + _info8);
 		      }
 
-		      gl.useProgram(p._glProgram
+		      //gl.useProgram(p._glProgram)
+		      this._useProgram(p
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
@@ -36354,7 +36381,8 @@ var JSceneKitExample =
 		        throw new Error('program link error: ' + _info10);
 		      }
 
-		      gl.useProgram(p._glProgram
+		      //gl.useProgram(p._glProgram)
+		      this._useProgram(p
 		      //gl.clearColor(1, 1, 1, 1)
 		      //gl.clearDepth(1.0)
 		      //gl.clearStencil(0)
