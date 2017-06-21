@@ -22,6 +22,9 @@ import {
   SCNVector3,
   SCNVector3Zero,
   SCNVector4,
+  SKAction,
+  SKColor,
+  SKLabelNode,
 
   kCAFillModeBoth,
   kCAMediaTimingFunctionEaseInEaseOut,
@@ -159,10 +162,14 @@ export default class GameViewController {
   viewDidLoad() {
     // super.viewDidLoad()
 
+    this.gameView.isPlaying = true
+    this.gameView.loops = true
+
     // Create a new scene.
-    //const scene = new SCNScene('game.scnassets/level.scn')
     const scene = new SCNScene('game.scnassets/level.scn')
     scene._getLoadedPromise().then(() => {
+      this.gameView.showGameSKScene()
+
       // Set the scene to the view and loop for the animation of the bamboos.
       this.gameView.scene = scene
       this.gameView.isPlaying = true

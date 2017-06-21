@@ -6,6 +6,7 @@ import {
   CGSize,
   SCNView,
   SKAction,
+  SKColor,
   SKLabelNode,
   SKNode,
   SKScene,
@@ -29,6 +30,11 @@ export default class GameView extends SCNView {
     this._collectedPearlsCount = 0
     this._collectedFlowersCount = 0
     this.eventsDelegate = null
+
+    this._loadingScene = new SKScene()
+    this._gameScene = new SKScene()
+
+    this.setLoadingScene()
   }
 
   viewDidMoveToWindow() {
@@ -39,6 +45,28 @@ export default class GameView extends SCNView {
   setFrameSize(newSize) {
     super.setFrameSize(newSize)
     this.layout2DOverlay()
+  }
+
+  setLoadingScene() {
+    this._loadingScene.scaleMode = SKSceneScaleMode.resizeFill
+    this._loadingScene.backgroundColor = SKColor.white
+
+    const loadingText = new SKLabelNode()
+    loadingText.text = 'Loading...'
+    loadingText.fontColor = SKColor.black
+    loadingText.position = new CGPoint(100, 100)
+
+    const fadeAction = SKAction.repeatForever(
+      SKAction.sequence([
+        SKAction.fadeOutWithDuration(0.5),
+        SKAction.fadeInWithDuration(0.5)
+      ])
+    )
+    loadingText.run(fadeAction)
+
+    this._loadingScene.addChild(loadingText)
+
+    this.overlaySKScene = this._loadingScene
   }
 
   layout2DOverlay() {
@@ -108,10 +136,15 @@ export default class GameView extends SCNView {
     dpadSprite.size = virtualDPadBounds.size
     skScene.addChild(dpadSprite)
     */
-
+    
     // Assign the SpriteKit overlay to the SceneKit view.
-    this.overlaySKScene = skScene
+    //this.overlaySKScene = skScene
+    this._gameScene = skScene
     skScene.isUserInteractionEnabled = false
+  }
+
+  showGameSKScene() {
+    this.overlaySKScene = this._gameScene
   }
 
   get collectedPearlsCount() {
