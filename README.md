@@ -1,5 +1,5 @@
 # JSceneKitExample
-Online examples of JSceneKit
+Online examples of [JSceneKit](https://github.com/magicien/JSceneKit)
 
 ## Example 1
 [https://magicien.github.io/JSceneKitExample/public/ex1/](https://magicien.github.io/JSceneKitExample/public/ex1/)
