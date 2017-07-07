@@ -4,6 +4,8 @@ import {
   CGPoint,
   CGSize,
   SCNView,
+  SKAction,
+  SKColor,
   SKLabelHorizontalAlignmentMode,
   SKLabelNode,
   SKNode,
@@ -22,6 +24,11 @@ export default class View extends SCNView {
     this._scaleNode = new SKNode()
     this._collectedItemsCount = 0
     this._collectedItemsCountLabel = SKLabelNode.labelWithFontNamed('Superclarendon')
+
+    this._loadingScene = new SKScene()
+    this._gameScene = new SKScene()
+
+    this.setLoadingScene()
   }
 
   // MARK: Mouse and Keyboard Events
@@ -45,6 +52,28 @@ export default class View extends SCNView {
   setFrameSize(newSize) {
     super.setFrameSize(newSize)
     this.update2DOverlays()
+  }
+
+  setLoadingScene() {
+    this._loadingScene.scaleMode = SKSceneScaleMode.resizeFill
+    this._loadingScene.backgroundColor = SKColor.white
+
+    const loadingText = new SKLabelNode()
+    loadingText.text = 'Loading...'
+    loadingText.fontColor = SKColor.black
+    loadingText.position = new CGPoint(100, 100)
+
+    const fadeAction = SKAction.repeatForever(
+      SKAction.sequence([
+        SKAction.fadeOutWithDuration(0.5),
+        SKAction.fadeInWithDuration(0.5)
+      ])
+    )
+    loadingText.run(fadeAction)
+
+    this._loadingScene.addChild(loadingText)
+
+    this.overlaySKScene = this._loadingScene
   }
 
   // MARK: Overlays

@@ -64019,6 +64019,11 @@ var JSceneKitExample =
 	    _this._scaleNode = new _jscenekit.SKNode();
 	    _this._collectedItemsCount = 0;
 	    _this._collectedItemsCountLabel = _jscenekit.SKLabelNode.labelWithFontNamed('Superclarendon');
+
+	    _this._loadingScene = new _jscenekit.SKScene();
+	    _this._gameScene = new _jscenekit.SKScene();
+
+	    _this.setLoadingScene();
 	    return _this;
 	  }
 
@@ -64048,6 +64053,24 @@ var JSceneKitExample =
 	    value: function setFrameSize(newSize) {
 	      _get(View.prototype.__proto__ || Object.getPrototypeOf(View.prototype), 'setFrameSize', this).call(this, newSize);
 	      this.update2DOverlays();
+	    }
+	  }, {
+	    key: 'setLoadingScene',
+	    value: function setLoadingScene() {
+	      this._loadingScene.scaleMode = _jscenekit.SKSceneScaleMode.resizeFill;
+	      this._loadingScene.backgroundColor = _jscenekit.SKColor.white;
+
+	      var loadingText = new _jscenekit.SKLabelNode();
+	      loadingText.text = 'Loading...';
+	      loadingText.fontColor = _jscenekit.SKColor.black;
+	      loadingText.position = new _jscenekit.CGPoint(100, 100);
+
+	      var fadeAction = _jscenekit.SKAction.repeatForever(_jscenekit.SKAction.sequence([_jscenekit.SKAction.fadeOutWithDuration(0.5), _jscenekit.SKAction.fadeInWithDuration(0.5)]));
+	      loadingText.run(fadeAction);
+
+	      this._loadingScene.addChild(loadingText);
+
+	      this.overlaySKScene = this._loadingScene;
 	    }
 
 	    // MARK: Overlays
