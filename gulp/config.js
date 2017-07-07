@@ -137,6 +137,59 @@ module.exports = {
     },
   },
 
+  ex3: {
+    copy: {
+      src: [
+        src + '/ex3/index.html',
+        src + '/ex3/badger.scnassets/**',
+        src + '/ex3/overlays/**',
+      ],
+      dest: dest,
+      opts: {
+        base: src
+      }
+    },
+
+    webpack: {
+      context: src,
+      entry: './ex3/js/main.js',
+      output: {
+        path: dest,
+        filename: 'ex3/index.js',
+        library: 'JSceneKitExample',
+        libraryTarget: 'var'
+      },
+      devServer: {
+        contentBase: dest,
+        port: 8080
+      },
+      resolve: {
+        extensions: ['.js']
+      },
+      plugins: [
+        //new UglifyJSPlugin()
+      ],
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
+          }
+        ]
+      },
+      node: {
+        Buffer: false
+      },
+      externals: {
+        //fs: 'fs'
+      }
+    },
+  },
+
   mocha: {
     src: ['test/**/*.js', 'src/**/*.js'],
     compilers: {
