@@ -569,7 +569,7 @@ var JSceneKitExample =
 
 		var _SCNCamera2 = _interopRequireDefault(_SCNCamera);
 
-		var _SCNCapsule = __webpack_require__(116);
+		var _SCNCapsule = __webpack_require__(110);
 
 		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
 
@@ -629,7 +629,7 @@ var JSceneKitExample =
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(118);
+		var _SCNHitTestResult = __webpack_require__(111);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -801,15 +801,15 @@ var JSceneKitExample =
 
 		var _SCNPhysicsBallSocketJoint2 = _interopRequireDefault(_SCNPhysicsBallSocketJoint);
 
-		var _SCNPhysicsBehavior = __webpack_require__(110);
+		var _SCNPhysicsBehavior = __webpack_require__(116);
 
 		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
-		var _SCNPhysicsBodyType = __webpack_require__(114);
+		var _SCNPhysicsBodyType = __webpack_require__(113);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
@@ -817,11 +817,11 @@ var JSceneKitExample =
 
 		var _SCNPhysicsCollisionCategory2 = _interopRequireDefault(_SCNPhysicsCollisionCategory);
 
-		var _SCNPhysicsContact = __webpack_require__(112);
+		var _SCNPhysicsContact = __webpack_require__(117);
 
 		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
 
-		var _SCNPhysicsContactDelegate = __webpack_require__(111);
+		var _SCNPhysicsContactDelegate = __webpack_require__(118);
 
 		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
 
@@ -837,7 +837,7 @@ var JSceneKitExample =
 
 		var _SCNPhysicsHingeJoint2 = _interopRequireDefault(_SCNPhysicsHingeJoint);
 
-		var _SCNPhysicsShape = __webpack_require__(115);
+		var _SCNPhysicsShape = __webpack_require__(114);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
@@ -949,7 +949,7 @@ var JSceneKitExample =
 
 		var _SCNSkinner2 = _interopRequireDefault(_SCNSkinner);
 
-		var _SCNSphere = __webpack_require__(117);
+		var _SCNSphere = __webpack_require__(115);
 
 		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
 
@@ -23975,7 +23975,7 @@ var JSceneKitExample =
 
 		var _SCNOrderedDictionary2 = _interopRequireDefault(_SCNOrderedDictionary);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
@@ -23995,7 +23995,7 @@ var JSceneKitExample =
 
 		var _SCNAudioPlayer2 = _interopRequireDefault(_SCNAudioPlayer);
 
-		var _SCNHitTestResult = __webpack_require__(118);
+		var _SCNHitTestResult = __webpack_require__(111);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -25086,6 +25086,8 @@ var JSceneKitExample =
 		    key: 'runActionCompletionHandler',
 		    value: function runActionCompletionHandler(action) {
 		      var block = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+		      this.runActionForKeyCompletionHandler(action, Symbol(), block);
 		    }
 
 		    /**
@@ -25212,9 +25214,11 @@ var JSceneKitExample =
 		      if (typeof key === 'undefined' || key === null) {
 		        key = Symbol();
 		      }
-		      var anim = animation.copy
+		      //const anim = animation.copy()
+		      var anim = animation;
+
 		      // FIXME: use current frame time
-		      ();anim._animationStartTime = Date.now() * 0.001;
+		      anim._animationStartTime = Date.now() * 0.001;
 
 		      this._animations.set(key, anim);
 		      this._copyTransformToPresentationRecursive();
@@ -27850,7 +27854,6 @@ var JSceneKitExample =
 		  }, {
 		    key: '_updateVertexBuffer',
 		    value: function _updateVertexBuffer(gl, baseGeometry) {
-		      //this._createVertexBuffer(gl, baseGeometry, true)
 		      var pVertexSource = this.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
 		      var vertexData = new Float32Array(pVertexSource._data);
 		      gl.bindBuffer(gl.ARRAY_BUFFER, this._vertexBuffer);
@@ -28864,7 +28867,7 @@ var JSceneKitExample =
 		      var indexStride = this._dataStride / this._bytesPerComponent;
 		      var ind = index * indexStride + this._dataOffset / this._bytesPerComponent;
 		      for (var i = 0; i < this._componentsPerVector; i++) {
-		        this._data[ind + i] = v[i];
+		        this._data[ind + i] = data[i];
 		      }
 		    }
 
@@ -30599,7 +30602,6 @@ var JSceneKitExample =
 		        image: ['NSMutableDictionary', function (obj, dict, key, coder) {
 		          var path = '';
 		          if (typeof dict.path !== 'undefined') {
-		            //path = coder._directoryPath + dict.path
 		            path = dict.path;
 		          } else if (typeof dict.URL !== 'undefined') {
 		            path = dict.URL;
@@ -31103,46 +31105,35 @@ var JSceneKitExample =
 		    value: function _loadContentsImage(path, dirPath) {
 		      var _this2 = this;
 
-		      //console.log(`image.path: ${path}`)
 		      var image = new Image();
+		      var __path = path;
+		      if (__path.indexOf('file:///') === 0) {
+		        __path = __path.slice(8);
+		      }
+		      // TODO: load OpenEXR File
+		      __path = __path.replace(/\.exr$/, '.png');
+
 		      this._loadedPromise = new Promise(function (resolve, reject) {
-		        if (path.indexOf('file:///') === 0) {
-		          var paths = path.slice(8).split('/');
-		          var pathCount = 1;
-		          var _path = dirPath + paths.slice(-pathCount).join('/'
-		          //console.warn(`image loading: ${_path}`)
-		          );image.onload = function () {
-		            //console.info(`image ${image.src} onload`)
-		            _this2._contents = image;
-		            resolve();
-		          };
-		          image.onerror = function () {
-		            //console.warn('image.onerror')
-		            pathCount += 1;
-		            if (pathCount > paths.length) {
-		              reject();
-		              throw new Error('image ' + path + ' load error.');
-		            } else {
-		              // retry
-		              _path = dirPath + paths.slice(-pathCount).join('/');
-		              image.src = _path;
-		            }
-		          };
-		          image.src = _path;
-		        } else {
-		          //console.info(`image loading: ${path}`)
-		          image.onload = function () {
-		            //console.warn(`http image ${image.src} onload`)
-		            _this2._contents = image;
-		            resolve();
-		          };
-		          image.onerror = function () {
-		            // TODO: try different path
-		            console.warn('http image ' + path + ' load error.');
+		        var paths = __path.split('/');
+
+		        var pathCount = 1;
+		        var _path = dirPath + paths.slice(-pathCount).join('/');
+		        image.onload = function () {
+		          _this2._contents = image;
+		          resolve();
+		        };
+		        image.onerror = function () {
+		          pathCount += 1;
+		          if (pathCount > paths.length) {
 		            reject();
-		          };
-		          image.src = dirPath + path;
-		        }
+		            throw new Error('image ' + path + ' load error.');
+		          } else {
+		            // retry
+		            _path = dirPath + paths.slice(-pathCount).join('/');
+		            image.src = _path;
+		          }
+		        };
+		        image.src = _path;
 		      });
 		      return image;
 		    }
@@ -32085,7 +32076,8 @@ var JSceneKitExample =
 		        shouldBakeDirectLighting: ['boolean', null],
 		        baked: ['boolean', null],
 		        goboProjectShadows: ['boolean', null],
-		        shadowSampleCount2: ['integer', null]
+		        shadowSampleCount2: ['integer', null],
+		        sphericalHarmonics: ['NSMutableData', null]
 		      };
 		    }
 
@@ -32835,7 +32827,7 @@ var JSceneKitExample =
 
 		var _SCNHitTestOption2 = _interopRequireDefault(_SCNHitTestOption);
 
-		var _SCNHitTestResult = __webpack_require__(118);
+		var _SCNHitTestResult = __webpack_require__(111);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -32889,7 +32881,7 @@ var JSceneKitExample =
 		 * @access private
 		 * @type {string}
 		 */
-		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_SURFACE __USE_SHADER_MODIFIER_SURFACE__\n  #define USE_SHADER_MODIFIER_FRAGMENT __USE_SHADER_MODIFIER_FRAGMENT__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  struct SCNShaderSurface {\n    vec3 view;\n    vec3 position;\n    vec3 normal;\n    vec3 tangent;\n    vec3 bitangent;\n    vec4 ambient;\n    vec2 ambientTexcoord;\n    vec4 diffuse;\n    vec2 diffuseTexcoord;\n    vec4 specular;\n    vec2 specularTexcoord;\n    vec4 emission;\n    vec2 emissionTexcoord;\n    vec4 multiply;\n    vec2 multiplyTexcoord;\n    vec4 transparent;\n    vec2 transparentTexcoord;\n    vec4 reflective;\n    float shininess;\n    float fresnel;\n  } _surface;\n\n  struct SCNShaderOutput {\n    vec4 color;\n  } _output;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  #if USE_SHADER_MODIFIER_SURFACE\n  void shaderModifierSurface() {\n    __SHADER_MODIFIER_SURFACE__\n  }\n  #endif\n\n  #if USE_SHADER_MODIFIER_FRAGMENT\n  void shaderModifierFragment() {\n    __SHADER_MODIFIER_FRAGMENT__\n  }\n  #endif\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  vec2 poissonDisk[4] = vec2[](\n    vec2( -0.94201624, -0.39906216 ),\n    vec2( 0.94558609, -0.76890725 ),\n    vec2( -0.094184101, -0.92938870 ),\n    vec2( 0.34495938, 0.29387760 )\n  );\n\n  void main() {\n    _output.color = v_color;\n\n    //vec3 viewVec = normalize(v_eye);\n    //vec3 nom = normalize(v_normal);\n    _surface.view = normalize(v_eye);\n    _surface.position = v_position;\n    _surface.normal = normalize(v_normal);\n    _surface.tangent = normalize(v_tangent);\n    _surface.bitangent = normalize(v_bitangent);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(_surface.tangent, _surface.bitangent, _surface.normal);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      _surface.normal = normalize(tsInv * color);\n    }\n\n    #if USE_SHADER_MODIFIER_SURFACE\n      shaderModifierSurface();\n    #endif\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        _output.color += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        _output.color = color * _output.color;\n      }\n    }\n\n    int numLights = 0;\n\n    vec4 specularColor;\n    if(textureFlags[TEXTURE_SPECULAR_INDEX]){\n      vec4 color = texture(u_specularTexture, v_texcoord0);\n      specularColor = color;\n    }else{\n      specularColor = material.specular;\n    }\n      \n    _output.color.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      _output.color = color * _output.color;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(_surface.view, _surface.normal);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(_surface.view, _surface.normal), 0.0, 1.0), material.fresnelExponent);\n      _output.color.rgb += texture(u_reflectiveTexture, r).rgb * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    _output.color = mix(_output.color, fog.color, fogFactor);\n\n    #if USE_SHADER_MODIFIER_FRAGMENT\n      shaderModifierFragment();\n    #endif\n\n    // DEBUG\n    //_output.color.a = material.diffuse.a;\n\n    outColor = _output.color;\n  }\n';
+		var _defaultFragmentShader = '#version 300 es\n  precision mediump float;\n  precision highp sampler2DShadow;\n\n  uniform bool[8] textureFlags;\n  #define TEXTURE_EMISSION_INDEX 0\n  #define TEXTURE_AMBIENT_INDEX 1\n  #define TEXTURE_DIFFUSE_INDEX 2\n  #define TEXTURE_SPECULAR_INDEX 3\n  #define TEXTURE_REFLECTIVE_INDEX 4\n  #define TEXTURE_TRANSPARENT_INDEX 5\n  #define TEXTURE_MULTIPLY_INDEX 6\n  #define TEXTURE_NORMAL_INDEX 7\n\n  uniform bool selfIllumination;\n\n  uniform sampler2D u_emissionTexture;\n  uniform sampler2D u_ambientTexture;\n  uniform sampler2D u_diffuseTexture;\n  uniform sampler2D u_specularTexture;\n  uniform samplerCube u_reflectiveTexture;\n  uniform sampler2D u_transparentTexture;\n  uniform sampler2D u_multiplyTexture;\n  uniform sampler2D u_normalTexture;\n\n  #define NUM_AMBIENT_LIGHTS __NUM_AMBIENT_LIGHTS__\n  #define NUM_DIRECTIONAL_LIGHTS __NUM_DIRECTIONAL_LIGHTS__\n  #define NUM_DIRECTIONAL_SHADOW_LIGHTS __NUM_DIRECTIONAL_SHADOW_LIGHTS__\n  #define NUM_OMNI_LIGHTS __NUM_OMNI_LIGHTS__\n  #define NUM_SPOT_LIGHTS __NUM_SPOT_LIGHTS__\n  #define NUM_IES_LIGHTS __NUM_IES_LIGHTS__\n  #define NUM_PROBE_LIGHTS __NUM_PROBE_LIGHTS__\n  #define USE_SHADER_MODIFIER_SURFACE __USE_SHADER_MODIFIER_SURFACE__\n  #define USE_SHADER_MODIFIER_FRAGMENT __USE_SHADER_MODIFIER_FRAGMENT__\n\n  layout (std140) uniform materialUniform {\n    vec4 ambient;\n    vec4 diffuse;\n    vec4 specular;\n    vec4 emission;\n    float shininess;\n    float fresnelExponent;\n  } material;\n\n  struct AmbientLight {\n    vec4 color;\n  };\n\n  struct DirectionalLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct DirectionalShadowLight {\n    vec4 color;\n    vec4 direction; // should use vec4; vec3 might cause problem for the layout\n    vec4 shadowColor;\n    mat4 viewProjectionTransform;\n    mat4 shadowProjectionTransform;\n  };\n\n  struct OmniLight {\n    vec4 color;\n    vec4 position; // should use vec4; vec3 might cause problem for the layout\n  };\n\n  struct ProbeLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  struct SpotLight {\n    // TODO: implement\n    vec4 color;\n  };\n\n  layout (std140) uniform lightUniform {\n    __LIGHT_DEFINITION__\n  } light;\n  __FS_LIGHT_VARS__\n\n  layout (std140) uniform fogUniform {\n    vec4 color;\n    float startDistance;\n    float endDistance;\n    float densityExponent;\n  } fog;\n\n  struct SCNShaderSurface {\n    vec3 view;\n    vec3 position;\n    vec3 normal;\n    vec2 normalTexcoord;\n    vec3 geometryNormal;\n    vec3 tangent;\n    vec3 bitangent;\n    vec4 ambient;\n    vec2 ambientTexcoord;\n    vec4 diffuse;\n    vec2 diffuseTexcoord;\n    vec4 specular;\n    vec2 specularTexcoord;\n    vec4 emission;\n    vec2 emissionTexcoord;\n    vec4 multiply;\n    vec2 multiplyTexcoord;\n    vec4 transparent;\n    vec2 transparentTexcoord;\n    vec4 reflective;\n    float shininess;\n    float fresnel;\n  } _surface;\n\n  struct SCNShaderOutput {\n    vec4 color;\n  } _output;\n\n  uniform float u_time;\n\n  in vec3 v_position;\n  in vec3 v_normal;\n  in vec2 v_texcoord0;\n  in vec2 v_texcoord1;\n  in vec4 v_color;\n  in vec3 v_eye;\n  in vec3 v_tangent;\n  in vec3 v_bitangent;\n  in float v_fogFactor;\n\n  out vec4 outColor;\n\n  #if USE_SHADER_MODIFIER_SURFACE\n  void shaderModifierSurface() {\n    __SHADER_MODIFIER_SURFACE__\n  }\n  #endif\n\n  #if USE_SHADER_MODIFIER_FRAGMENT\n  void shaderModifierFragment() {\n    __SHADER_MODIFIER_FRAGMENT__\n  }\n  #endif\n\n  float convDepth(vec4 color) {\n    const float rMask = 1.0;\n    const float gMask = 1.0 / 255.0;\n    const float bMask = 1.0 / (255.0 * 255.0);\n    const float aMask = 1.0 / (255.0 * 255.0 * 255.0);\n    float depth = dot(color, vec4(rMask, gMask, bMask, aMask));\n    return depth * 2.0 - 1.0;\n  }\n\n  vec2 poissonDisk[4] = vec2[](\n    vec2( -0.94201624, -0.39906216 ),\n    vec2( 0.94558609, -0.76890725 ),\n    vec2( -0.094184101, -0.92938870 ),\n    vec2( 0.34495938, 0.29387760 )\n  );\n\n  void main() {\n    _output.color = v_color;\n\n    //vec3 viewVec = normalize(v_eye);\n    //vec3 nom = normalize(v_normal);\n    _surface.view = normalize(v_eye);\n    _surface.position = v_position;\n    _surface.normal = normalize(v_normal);\n    _surface.tangent = normalize(v_tangent);\n    _surface.bitangent = normalize(v_bitangent);\n\n    // normal texture\n    if(textureFlags[TEXTURE_NORMAL_INDEX]){\n      mat3 tsInv = mat3(_surface.tangent, _surface.bitangent, _surface.normal);\n      vec3 color = normalize(texture(u_normalTexture, v_texcoord0).rgb * 2.0 - 1.0); // FIXME: check mappingChannel to decide which texture you use.\n      _surface.normal = normalize(tsInv * color);\n    }\n\n    #if USE_SHADER_MODIFIER_SURFACE\n      shaderModifierSurface();\n    #endif\n\n    // emission texture\n    if(textureFlags[TEXTURE_EMISSION_INDEX]){\n      if(selfIllumination){\n        vec4 color = texture(u_emissionTexture, v_texcoord1); // FIXME: check mappingChannel to decide which texture you use.\n        _output.color += color;\n      }else{\n        vec4 color = texture(u_emissionTexture, v_texcoord0);\n        _output.color = color * _output.color;\n      }\n    }\n\n    int numLights = 0;\n\n    vec4 specularColor;\n    if(textureFlags[TEXTURE_SPECULAR_INDEX]){\n      vec4 color = texture(u_specularTexture, v_texcoord0);\n      specularColor = color;\n    }else{\n      specularColor = material.specular;\n    }\n      \n    _output.color.a = material.diffuse.a;\n    __FS_LIGHTING__\n    \n    // diffuse texture\n    if(textureFlags[TEXTURE_DIFFUSE_INDEX]){\n      vec4 color = texture(u_diffuseTexture, v_texcoord0);\n      _output.color = color * _output.color;\n    }\n\n    // fresnel reflection\n    if(textureFlags[TEXTURE_REFLECTIVE_INDEX]){\n      vec3 r = reflect(_surface.view, _surface.normal);\n      //float f0 = 0.0; // TODO: calculate f0\n      //float fresnel = f0 + (1.0 - f0) * pow(1.0 - clamp(dot(viewVec, nom), 0.0, 1.0), material.fresnelExponent);\n      float fresnel = 0.4 * pow(1.0 - clamp(dot(_surface.view, _surface.normal), 0.0, 1.0), material.fresnelExponent);\n      _output.color.rgb += texture(u_reflectiveTexture, r).rgb * fresnel;\n    }\n\n    float fogFactor = pow(v_fogFactor, fog.densityExponent);\n    _output.color = mix(_output.color, fog.color, fogFactor);\n\n    #if USE_SHADER_MODIFIER_FRAGMENT\n      shaderModifierFragment();\n    #endif\n\n    // DEBUG\n    //_output.color.a = material.diffuse.a;\n\n    outColor = _output.color;\n  }\n';
 
 		var _fsAmbient = '\n';
 
@@ -33369,7 +33361,7 @@ var JSceneKitExample =
 		      var cameraData = [];
 		      var cameraNode = this._getCameraNode();
 		      cameraNode._updateWorldTransform();
-		      var cameraPNode = cameraNode.presentation;
+		      var cameraPNode = cameraNode.presentation || cameraNode;
 		      var camera = cameraPNode.camera;
 		      camera._updateProjectionTransform(this._viewRect);
 
@@ -33787,7 +33779,7 @@ var JSceneKitExample =
 		      var targetNodes = [];
 		      while (arr.length > 0) {
 		        var node = arr.shift();
-		        if (node.presentation !== null && node.presentation.physicsBody !== null) {
+		        if (node.presentation !== null && node.presentation.physicsBody !== null && node.presentation.physicsBody.physicsShape !== null) {
 		          targetNodes.push(node);
 		        }
 		        arr.push.apply(arr, _toConsumableArray(node.childNodes));
@@ -33832,6 +33824,12 @@ var JSceneKitExample =
 		          var node = _step5.value;
 
 		          var geometry = node.presentation.geometry;
+		          var geometryCount = geometry.geometryElements.length;
+		          if (geometryCount === 0) {
+		            // nothing to draw...
+		            continue;
+		          }
+
 		          if (geometry._shadowVAO === null) {
 		            this._initializeShadowVAO(node, program);
 		          }
@@ -33841,17 +33839,18 @@ var JSceneKitExample =
 		          }
 
 		          if (node.presentation.skinner !== null) {
-		            gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
-		            gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		            if (node.presentation.skinner._useGPU) {
+		              gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		              gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		            } else {
+		              gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
+		              gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0).float32Array3x4f());
+		            }
 		          } else {
 		            gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
 		            gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
 		          }
 
-		          var geometryCount = geometry.geometryElements.length;
-		          if (geometryCount === 0) {
-		            throw new Error('geometryCount: 0');
-		          }
 		          for (var i = 0; i < geometryCount; i++) {
 		            var vao = geometry._shadowVAO[i];
 		            var element = geometry.geometryElements[i];
@@ -33931,6 +33930,11 @@ var JSceneKitExample =
 		      }
 		      var gl = this.context;
 		      var geometry = node.presentation.geometry;
+		      var geometryCount = geometry.geometryElements.length;
+		      if (geometryCount === 0) {
+		        // nothing to draw...
+		        return;
+		      }
 		      var scnProgram = this._getProgramForGeometry(geometry);
 		      var program = scnProgram._glProgram;
 
@@ -33942,7 +33946,7 @@ var JSceneKitExample =
 		        );
 		      }
 
-		      if (node.morpher !== null) {
+		      if (node.morpher !== null || node.skinner && !node.skinner._useGPU) {
 		        this._updateVAO(node);
 		      }
 
@@ -33954,17 +33958,18 @@ var JSceneKitExample =
 		      }
 
 		      if (node.presentation.skinner !== null) {
-		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
-		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		        if (node.presentation.skinner._useGPU) {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		        } else {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0).float32Array3x4f());
+		        }
 		      } else {
 		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
 		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
 		      }
 
-		      var geometryCount = geometry.geometryElements.length;
-		      if (geometryCount === 0) {
-		        throw new Error('geometryCount: 0');
-		      }
 		      for (var i = 0; i < geometryCount; i++) {
 		        var materialCount = geometry.materials.length;
 		        var material = geometry.materials[i % materialCount];
@@ -33980,8 +33985,13 @@ var JSceneKitExample =
 		            gl.uniform1f(uniformTime, _time);
 		          }
 		          if (node.presentation.skinner !== null) {
-		            gl.uniform1i(gl.getUniformLocation(p, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
-		            gl.uniform4fv(gl.getUniformLocation(p, 'skinningJoints'), node.presentation.skinner.float32Array());
+		            if (node.presentation.skinner._useGPU) {
+		              gl.uniform1i(gl.getUniformLocation(p, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		              gl.uniform4fv(gl.getUniformLocation(p, 'skinningJoints'), node.presentation.skinner.float32Array());
+		            } else {
+		              gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
+		              gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0).float32Array3x4f());
+		            }
 		          } else {
 		            gl.uniform1i(gl.getUniformLocation(p, 'numSkinningJoints'), 0);
 		            gl.uniform4fv(gl.getUniformLocation(p, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
@@ -34123,6 +34133,11 @@ var JSceneKitExample =
 		      var geometry = node.presentation.geometry;
 		      var program = this._defaultHitTestProgram._glProgram;
 
+		      var geometryCount = geometry.geometryElements.length;
+		      if (geometryCount === 0) {
+		        // nothing to draw...
+		        return;
+		      }
 		      if (geometry._vertexArrayObjects === null) {
 		        // geometry is not ready
 		        return;
@@ -34133,18 +34148,19 @@ var JSceneKitExample =
 
 		      gl.uniform1i(gl.getUniformLocation(program, 'objectID'), objectID);
 
-		      if (node.presentation.skinner !== null) {
-		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
-		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		      if (node.presentation.skinner !== null && node.presentation.skinner._useGPU) {
+		        if (node.presentation.skinner._useGPU) {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		        } else {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0).float32Array3x4f());
+		        }
 		      } else {
 		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
 		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
 		      }
 
-		      var geometryCount = geometry.geometryElements.length;
-		      if (geometryCount === 0) {
-		        throw new Error('geometryCount: 0');
-		      }
 		      for (var i = 0; i < geometryCount; i++) {
 		        var vao = geometry._hitTestVAO[i];
 		        var element = geometry.geometryElements[i];
@@ -34209,6 +34225,11 @@ var JSceneKitExample =
 		      var p = node.presentation;
 		      var body = p.physicsBody;
 		      var geometry = body.physicsShape._sourceGeometry;
+		      var geometryCount = geometry.geometryElements.length;
+		      if (geometryCount === 0) {
+		        // nothing to draw...
+		        return;
+		      }
 		      var program = this._defaultHitTestProgram._glProgram;
 
 		      if (geometry._vertexBuffer === null) {
@@ -34221,18 +34242,19 @@ var JSceneKitExample =
 
 		      gl.uniform1i(gl.getUniformLocation(program, 'objectID'), objectID);
 
-		      if (node.presentation.skinner !== null) {
-		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
-		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		      if (node.presentation.skinner !== null && node.presentation.skinner._useGPU) {
+		        if (node.presentation.skinner._useGPU) {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), node.presentation.skinner.numSkinningJoints);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation.skinner.float32Array());
+		        } else {
+		          gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
+		          gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), (0, _SCNMatrix4MakeTranslation2.default)(0, 0, 0).float32Array3x4f());
+		        }
 		      } else {
 		        gl.uniform1i(gl.getUniformLocation(program, 'numSkinningJoints'), 0);
 		        gl.uniform4fv(gl.getUniformLocation(program, 'skinningJoints'), node.presentation._worldTransform.float32Array3x4f());
 		      }
 
-		      var geometryCount = geometry.geometryElements.length;
-		      if (geometryCount === 0) {
-		        throw new Error('geometryCount: 0');
-		      }
 		      for (var i = 0; i < geometryCount; i++) {
 		        var vao = geometry._hitTestVAO[i];
 		        var element = geometry.geometryElements[i];
@@ -34718,12 +34740,13 @@ var JSceneKitExample =
 		     * @param {SCNVector3} rayFrom -
 		     * @param {SCNVector3} rayTo -
 		     * @param {Map} options -
+		     * @param {Object} _options -
 		     * @returns {SCNHitTestResult[]} -
 		     */
 
 		  }, {
 		    key: '_physicsHitTestByGPU',
-		    value: function _physicsHitTestByGPU(viewProjectionTransform, from, to, options) {
+		    value: function _physicsHitTestByGPU(viewProjectionTransform, from, to, options, _options) {
 		      var result = [];
 		      var gl = this._context;
 
@@ -34742,24 +34765,27 @@ var JSceneKitExample =
 		      gl.disable(gl.BLEND);
 		      gl.clearColor(0, 0, 0, 0);
 		      gl.clearDepth(1.0);
-		      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+		      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT
 
-		      var x = (from.x + 1.0) * 0.5 * this._viewRect.size.width;
+		      // screen position
+		      );var x = (from.x + 1.0) * 0.5 * this._viewRect.size.width;
 		      var y = (from.y + 1.0) * 0.5 * this._viewRect.size.height;
+		      // left top of the scissor area
+		      var areaSize = 3;
 		      var sx = x - 1;
 		      var sy = y - 1;
 		      if (sx < 0) {
 		        sx = 0;
-		      } else if (sx + 3 > this._viewRect.size.width) {
-		        sx = this._viewRect.size.width - 3;
+		      } else if (sx + areaSize > this._viewRect.size.width) {
+		        sx = this._viewRect.size.width - areaSize;
 		      }
 		      if (sy < 0) {
 		        sy = 0;
-		      } else if (sy + 3 > this._viewRect.size.height) {
-		        sy = this._viewRect.size.width - 3;
+		      } else if (sy + areaSize > this._viewRect.size.height) {
+		        sy = this._viewRect.size.width - areaSize;
 		      }
 
-		      gl.scissor(sx, sy, 3, 3);
+		      gl.scissor(sx, sy, areaSize, areaSize);
 		      gl.uniformMatrix4fv(gl.getUniformLocation(hitTestProgram, 'viewProjectionTransform'), false, viewProjectionTransform.float32Array());
 		      var backFaceCulling = options.get(_SCNPhysicsWorld2.default.TestOption.backfaceCulling);
 		      if (typeof backFaceCulling === 'undefined') {
@@ -34782,7 +34808,14 @@ var JSceneKitExample =
 		        searchMode = _SCNPhysicsWorld2.default.TestSearchMode.closest;
 		      }
 
-		      var renderingArray = this._createRenderingPhysicsNodeArray();
+		      var renderingArray = null;
+		      if (_options && _options.targets) {
+		        renderingArray = _options.targets;
+		        collisionBitMask = -1;
+		      } else {
+		        renderingArray = this._createRenderingPhysicsNodeArray();
+		      }
+
 		      var len = renderingArray.length;
 		      for (var i = 0; i < len; i++) {
 		        var node = renderingArray[i];
@@ -35175,16 +35208,19 @@ var JSceneKitExample =
 		      if (shadableHelper && shadableHelper._shaderModifiers) {
 		        var modifiers = shadableHelper._shaderModifiers;
 		        if (modifiers.SCNShaderModifierEntryPointGeometry) {
+		          var _text = this._processShaderText(modifiers.SCNShaderModifierEntryPointGeometry);
 		          vars.set('__USE_SHADER_MODIFIER_GEOMETRY__', 1);
-		          vars.set('__SHADER_MODIFIER_GEOMETRY__', modifiers.SCNShaderModifierEntryPointGeometry);
+		          vars.set('__SHADER_MODIFIER_GEOMETRY__', _text);
 		        }
 		        if (modifiers.SCNShaderModifierEntryPointSurface) {
+		          var _text2 = this._processShaderText(modifiers.SCNShaderModifierEntryPointSurface);
 		          vars.set('__USE_SHADER_MODIFIER_SURFACE__', 1);
-		          vars.set('__SHADER_MODIFIER_SURFACE__', modifiers.SCNShaderModifierEntryPointSurface);
+		          vars.set('__SHADER_MODIFIER_SURFACE__', _text2);
 		        }
 		        if (modifiers.SCNShaderModifierEntryPointFragment) {
+		          var _text3 = this._processShaderText(modifiers.SCNShaderModifierEntryPointFragment);
 		          vars.set('__USE_SHADER_MODIFIER_FRAGMENT__', 1);
-		          vars.set('__SHADER_MODIFIER_FRAGMENT__', modifiers.SCNShaderModifierEntryPointFragment);
+		          vars.set('__SHADER_MODIFIER_FRAGMENT__', _text3);
 		        }
 		      }
 
@@ -35265,6 +35301,18 @@ var JSceneKitExample =
 		      });
 
 		      return result;
+		    }
+		  }, {
+		    key: '_processShaderText',
+		    value: function _processShaderText(text) {
+		      var _text = text.replace(/texture2D/g, 'texture'
+
+		      // workaround for Badger...
+		      );_text = _text.replace(/uvs.x \*= 2/, 'uvs.x *= 2.0');
+		      _text = _text.replace(/tn \* 2 - 1/, 'tn * 2.0 - vec3(1)');
+		      _text = _text.replace(/tn2 \* 2 - 1/, 'tn2 * 2.0 - vec3(1)');
+
+		      return _text;
 		    }
 		  }, {
 		    key: '_initializeVAO',
@@ -35363,7 +35411,7 @@ var JSceneKitExample =
 		        }
 
 		        // boneIndices
-		        var indSrc = node.skinner ? node.skinner._boneIndices : null;
+		        var indSrc = node.skinner && node.skinner._useGPU ? node.skinner._boneIndices : null;
 		        if (indSrc) {
 		          //console.log(`indSrc: ${boneIndicesLoc}, ${indSrc.componentsPerVector}, ${indSrc.dataStride}, ${indSrc.dataOffset}`)
 		          gl.enableVertexAttribArray(boneIndicesLoc);
@@ -35373,7 +35421,7 @@ var JSceneKitExample =
 		        }
 
 		        // boneWeights
-		        var wgtSrc = node.skinner ? node.skinner._boneWeights : null;
+		        var wgtSrc = node.skinner && node.skinner._useGPU ? node.skinner._boneWeights : null;
 		        if (wgtSrc) {
 		          //console.log(`wgtSrc: ${boneWeightsLoc}, ${wgtSrc.componentsPerVector}, ${wgtSrc.dataStride}, ${wgtSrc.dataOffset}`)
 		          gl.enableVertexAttribArray(boneWeightsLoc);
@@ -35434,7 +35482,7 @@ var JSceneKitExample =
 		        }
 
 		        // boneIndices
-		        var indSrc = node.skinner ? node.skinner._boneIndices : null;
+		        var indSrc = node.skinner && node.skinner._useGPU ? node.skinner._boneIndices : null;
 		        if (indSrc) {
 		          gl.enableVertexAttribArray(boneIndicesLoc);
 		          gl.vertexAttribPointer(boneIndicesLoc, indSrc.componentsPerVector, gl.FLOAT, false, indSrc.dataStride, indSrc.dataOffset);
@@ -35443,7 +35491,7 @@ var JSceneKitExample =
 		        }
 
 		        // boneWeights
-		        var wgtSrc = node.skinner ? node.skinner._boneWeights : null;
+		        var wgtSrc = node.skinner && node.skinner._useGPU ? node.skinner._boneWeights : null;
 		        if (wgtSrc) {
 		          gl.enableVertexAttribArray(boneWeightsLoc);
 		          gl.vertexAttribPointer(boneWeightsLoc, wgtSrc.componentsPerVector, gl.FLOAT, false, wgtSrc.dataStride, wgtSrc.dataOffset);
@@ -35674,8 +35722,8 @@ var JSceneKitExample =
 		        this._defaultCameraPosNode.position = new _SCNVector2.default(0, 0, -_defaultCameraDistance).rotate(rotMat).add(pos);
 		        this._defaultCameraRotNode.rotation = rot;
 		        this._defaultCameraNode.position = new _SCNVector2.default(0, 0, _defaultCameraDistance);
-		        console.log('pov defined: pov.pos: ' + this._pointOfView._worldTranslation.float32Array());
-		        console.log('pov defined: node.pos: ' + this._defaultCameraNode._worldTranslation.float32Array());
+		        //console.log(`pov defined: pov.pos: ${this._pointOfView._worldTranslation.float32Array()}`)
+		        //console.log(`pov defined: node.pos: ${this._defaultCameraNode._worldTranslation.float32Array()}`)
 		      }
 		      this._pointOfView = this._defaultCameraNode;
 		    }
@@ -35803,10 +35851,15 @@ var JSceneKitExample =
 		    value: function _nodeHitTestByCPU(node, rayPoint, rayVec) {
 		      var result = [];
 		      var geometry = node.presentation.geometry;
-		      var invRay = rayVec.mul(-1);
+		      var geometryCount = geometry.geometryElements.length;
+		      if (geometryCount === 0) {
+		        // nothing to draw...
+		        return result;
+		      }
+		      var invRay = rayVec.mul(-1
 
-		      console.log('rayPoint: ' + rayPoint.float32Array());
-		      console.log('rayVec: ' + rayVec.float32Array()
+		      //console.log(`rayPoint: ${rayPoint.float32Array()}`)
+		      //console.log(`rayVec: ${rayVec.float32Array()}`)
 
 		      //if(node.morpher !== null){
 		      //  this._updateVAO(node)
@@ -35842,9 +35895,8 @@ var JSceneKitExample =
 		        }
 		      }
 
-		      var geometryCount = geometry.geometryElements.length;
 		      for (var _i4 = 0; _i4 < geometryCount; _i4++) {
-		        console.log('geometry element ' + _i4);
+		        //console.log(`geometry element ${i}`)
 		        var element = geometry.geometryElements[_i4];
 		        switch (element.primitiveType) {
 		          case _SCNGeometryPrimitiveType2.default.line:
@@ -35857,9 +35909,9 @@ var JSceneKitExample =
 
 		        var elementData = element._glData;
 		        var len = element.primitiveCount;
-		        console.log('primitiveCount: ' + len
+		        //console.log(`primitiveCount: ${len}`)
 		        // TODO: check cull settings
-		        );for (var pi = 0; pi < len; pi++) {
+		        for (var pi = 0; pi < len; pi++) {
 		          var _indices = element._indexAt(pi);
 
 		          var v0 = sourceData[_indices[0]];
@@ -35892,7 +35944,7 @@ var JSceneKitExample =
 		          }
 
 		          // Hit!
-		          console.log('Hit! ' + _i4 + ': ' + pi);
+		          //console.log(`Hit! ${i}: ${pi}`)
 		          var hitPoint = rayPoint.add(rayVec.mul(t));
 		          var invModel = modelTransform.invert();
 
@@ -36445,7 +36497,7 @@ var JSceneKitExample =
 
 		var _SCNRenderingAPI2 = _interopRequireDefault(_SCNRenderingAPI);
 
-		var _SCNHitTestResult = __webpack_require__(118);
+		var _SCNHitTestResult = __webpack_require__(111);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
 
@@ -37449,7 +37501,9 @@ var JSceneKitExample =
 		    }
 		  }], [{
 		    key: 'sceneNamed',
-		    value: function sceneNamed(name) {}
+		    value: function sceneNamed(name) {
+		      return this.sceneNamedInDirectory(name);
+		    }
 
 		    /**
 		     * Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
@@ -37466,6 +37520,12 @@ var JSceneKitExample =
 		    key: 'sceneNamedInDirectory',
 		    value: function sceneNamedInDirectory(name, directory) {
 		      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+		      var path = name;
+		      if (directory) {
+		        path = directory + '/' + name;
+		      }
+		      return new SCNScene(path, options);
 		    }
 
 		    /**
@@ -37695,222 +37755,123 @@ var JSceneKitExample =
 		      var back = -this.length * 0.5;
 
 		      // front
-		      /*
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(left, bottom, front),
-		        new SCNVector3(left, top, front),
-		        new SCNVector3(right, bottom, front),
-		        new SCNVector3(right, top, front),
-		        this.heightSegmentCount,
-		        this.widthSegmentCount)
-		       // right
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(right, bottom, front),
-		        new SCNVector3(right, top, front),
-		        new SCNVector3(right, bottom, back),
-		        new SCNVector3(right, top, back),
-		        this.heightSegmentCount,
-		        this.lengthSegmentCount)
-		       // back
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(right, bottom, back),
-		        new SCNVector3(right, top, back),
-		        new SCNVector3(left, bottom, back),
-		        new SCNVector3(left, top, back),
-		        this.heightSegmentCount,
-		        this.widthSegmentCount)
-		       // left
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(left, bottom, back),
-		        new SCNVector3(left, top, back),
-		        new SCNVector3(left, bottom, front),
-		        new SCNVector3(left, top, front),
-		        this.heightSegmentCount,
-		        this.lengthSegmentCount)
-		       // top
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(left, top, front),
-		        new SCNVector3(left, top, back),
-		        new SCNVector3(right, top, front),
-		        new SCNVector3(right, top, back),
-		        this.lengthSegmentCount,
-		        this.widthSegmentCount)
-		       // bottom
-		      this._createFace(sourceData, indexData,
-		        new SCNVector3(left, bottom, back),
-		        new SCNVector3(left, bottom, front),
-		        new SCNVector3(right, bottom, back),
-		        new SCNVector3(right, bottom, front),
-		        this.lengthSegmentCount,
-		        this.widthSegmentCount)
-		      */
-
-		      // front
 		      sourceData.push(left, bottom, front // position
 		      );sourceData.push(0, 0, 1 // normal
 		      );sourceData.push(0, 1 // texcoord
-		      //sourceData.push(0, -1, -1, -1) // boneIndices
-		      //sourceData.push(1, 0, 0, 0) // boneWeights
 
 		      );sourceData.push(left, top, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(right, bottom, front);
+		      sourceData.push(right, bottom, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(right, top, front);
+		      sourceData.push(right, top, front);
 		      sourceData.push(0, 0, 1);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(0, 3, 1);
+		      indexData.push(0, 3, 1);
 		      indexData.push(0, 2, 3
 
 		      // right
 		      );sourceData.push(right, bottom, front);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(0, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 1);
 
-		      );sourceData.push(right, top, front);
+		      sourceData.push(right, top, front);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(right, bottom, back);
+		      sourceData.push(right, bottom, back);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(right, top, back);
+		      sourceData.push(right, top, back);
 		      sourceData.push(1, 0, 0);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(4, 7, 5);
+		      indexData.push(4, 7, 5);
 		      indexData.push(4, 6, 7
 
 		      // back
 		      );sourceData.push(right, bottom, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(0, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 1);
 
-		      );sourceData.push(right, top, back);
+		      sourceData.push(right, top, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(left, bottom, back);
+		      sourceData.push(left, bottom, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(left, top, back);
+		      sourceData.push(left, top, back);
 		      sourceData.push(0, 0, -1);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(8, 11, 9);
+		      indexData.push(8, 11, 9);
 		      indexData.push(8, 10, 11
 
 		      // left
 		      );sourceData.push(left, bottom, back);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(0, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 1);
 
-		      );sourceData.push(left, top, back);
+		      sourceData.push(left, top, back);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(left, bottom, front);
+		      sourceData.push(left, bottom, front);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(left, top, front);
+		      sourceData.push(left, top, front);
 		      sourceData.push(-1, 0, 0);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(12, 15, 13);
+		      indexData.push(12, 15, 13);
 		      indexData.push(12, 14, 15
 
 		      // top
 		      );sourceData.push(left, top, front);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(0, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 1);
 
-		      );sourceData.push(left, top, back);
+		      sourceData.push(left, top, back);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(right, top, front);
+		      sourceData.push(right, top, front);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(right, top, back);
+		      sourceData.push(right, top, back);
 		      sourceData.push(0, 1, 0);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(16, 19, 17);
+		      indexData.push(16, 19, 17);
 		      indexData.push(16, 18, 19
 
 		      // bottom
 		      );sourceData.push(left, bottom, back);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(0, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 1);
 
-		      );sourceData.push(left, bottom, front);
+		      sourceData.push(left, bottom, front);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(0, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(0, 0);
 
-		      );sourceData.push(right, bottom, back);
+		      sourceData.push(right, bottom, back);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(1, 1
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 1);
 
-		      );sourceData.push(right, bottom, front);
+		      sourceData.push(right, bottom, front);
 		      sourceData.push(0, -1, 0);
-		      sourceData.push(1, 0
-		      //sourceData.push(0, -1, -1, -1)
-		      //sourceData.push(1, 0, 0, 0)
+		      sourceData.push(1, 0);
 
-		      );indexData.push(20, 23, 21);
+		      indexData.push(20, 23, 21);
 		      indexData.push(20, 22, 23);
 
 		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
@@ -38748,45 +38709,49 @@ var JSceneKitExample =
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNVector = __webpack_require__(54);
+		var _SCNCapsule = __webpack_require__(110);
 
-		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
 
-		var _SCNPhysicsBehavior = __webpack_require__(110);
-
-		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
-
-		var _SCNPhysicsContactDelegate = __webpack_require__(111);
-
-		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
-
-		var _SCNPhysicsContact = __webpack_require__(112);
-
-		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
-
-		var _SCNPhysicsBody = __webpack_require__(113);
-
-		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
-
-		var _SCNPhysicsBodyType = __webpack_require__(114);
-
-		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
-
-		var _SCNHitTestResult = __webpack_require__(118);
+		var _SCNHitTestResult = __webpack_require__(111);
 
 		var _SCNHitTestResult2 = _interopRequireDefault(_SCNHitTestResult);
-
-		var _SCNPhysicsShape = __webpack_require__(115);
-
-		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
-
-		var _SCNSphere = __webpack_require__(117);
-
-		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
 
 		var _SCNMatrix = __webpack_require__(56);
 
 		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
+
+		var _SCNPhysicsBody = __webpack_require__(112);
+
+		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
+
+		var _SCNPhysicsBodyType = __webpack_require__(113);
+
+		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
+
+		var _SCNPhysicsBehavior = __webpack_require__(116);
+
+		var _SCNPhysicsBehavior2 = _interopRequireDefault(_SCNPhysicsBehavior);
+
+		var _SCNPhysicsContact = __webpack_require__(117);
+
+		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
+
+		var _SCNPhysicsContactDelegate = __webpack_require__(118);
+
+		var _SCNPhysicsContactDelegate2 = _interopRequireDefault(_SCNPhysicsContactDelegate);
+
+		var _SCNPhysicsShape = __webpack_require__(114);
+
+		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
+
+		var _SCNSphere = __webpack_require__(115);
+
+		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39328,6 +39293,8 @@ var JSceneKitExample =
 		      var opt = options;
 		      if (Array.isArray(options)) {
 		        opt = new Map(options);
+		      } else if (options === null) {
+		        opt = new Map();
 		      }
 		      var results = [];
 
@@ -39414,7 +39381,10 @@ var JSceneKitExample =
 		      proj.m33 = -(zFar + zNear) / len;
 		      proj.m34 = -1;
 		      proj.m43 = -2 * zFar * zNear / len;
-		      //proj.m44 = 0
+		      // TODO: use an orthographic projection
+		      //proj.m33 = -2 / len
+		      //proj.m43 = -(zFar + zNear) / len
+		      //proj.m44 = 1
 
 		      var view = new _SCNMatrix2.default();
 		      var up = new _SCNVector2.default(0, 1, 0);
@@ -39488,6 +39458,7 @@ var JSceneKitExample =
 		    }
 
 		    // Structures
+
 		    /**
 		     * @type {Object} TestOption
 		     * @property {string} backfaceCulling The key for choosing whether to ignore back-facing polygons in physics shapes when searching for contacts.
@@ -39505,14 +39476,6 @@ var JSceneKitExample =
 		      var objects = this._renderer._createRenderingPhysicsNodeArray();
 		      var contacts = [];
 
-		      //for(let i=0; i<objects.length-1; i++){
-		      //  const bodyA = objects[i].presentation.physicsBody
-		      //  for(let j=i+1; j<objects.length; j++){
-		      //    const bodyB = objects[j].presentation.physicsBody
-
-		      //    contacts.push(...this.contactTestBetween(bodyA, bodyB))
-		      //  }
-		      //}
 		      var _iteratorNormalCompletion = true;
 		      var _didIteratorError = false;
 		      var _iteratorError = undefined;
@@ -39541,13 +39504,26 @@ var JSceneKitExample =
 		        }
 		      }
 
+		      var staticType = _SCNPhysicsBodyType2.default.static;
 		      for (var i = 0; i < objects.length; i++) {
 		        var bodyA = objects[i].presentation.physicsBody;
+		        //if(bodyA.type === staticType){
+		        //  continue
+		        //}
+		        if (bodyA.physicsShape._sourceGeometry instanceof _SCNCapsule2.default) {
+		          contacts.push.apply(contacts, _toConsumableArray(this._capsuleTestWithObjects(bodyA, objects)));
+		        }
 		        for (var j = 0; j < objects.length; j++) {
 		          if (i === j) {
 		            continue;
 		          }
 		          var bodyB = objects[j].presentation.physicsBody;
+		          //if(bodyB.physicsShape._sourceGeometry instanceof SCNCapsule){
+		          //  continue
+		          //}
+		          //if(i > j && bodyB.type !== staticType){
+		          //  continue
+		          //}
 		          contacts.push.apply(contacts, _toConsumableArray(this.contactTestBetween(bodyA, bodyB)));
 		        }
 		      }
@@ -39580,6 +39556,80 @@ var JSceneKitExample =
 		          }
 		        }
 		      }
+		    }
+		  }, {
+		    key: '_capsuleTestWithObjects',
+		    value: function _capsuleTestWithObjects(body, objects) {
+		      var result = [];
+
+		      var objs = objects.filter(function (obj) {
+		        var bodyB = obj.presentation.physicsBody;
+		        if (bodyB === body) {
+		          return false;
+		        }
+		        if (bodyB.physicsShape._type !== _SCNPhysicsShape2.default.ShapeType.concavePolyhedron) {
+		          return false;
+		        }
+		        if ((body.categoryBitMask & bodyB.contactTestBitMask) !== 0) {
+		          return true;
+		        }
+		        if ((bodyB.categoryBitMask & body.contactTestBitMask) !== 0) {
+		          return true;
+		        }
+		        return false;
+		      });
+		      if (objs.length === 0) {
+		        return result;
+		      }
+
+		      var bodyTransform = body._node._worldTransform;
+		      var capsule = body.physicsShape._sourceGeometry;
+		      var origin = new _SCNVector2.default(0, capsule.height * 0.5, 0).transform(bodyTransform);
+		      var dest = new _SCNVector2.default(0, -capsule.height * 0.5, 0).transform(bodyTransform);
+
+		      var viewProjectionTransform = this._createViewProjectionTransform(origin, dest);
+		      var from = origin.transform(viewProjectionTransform);
+		      var to = dest.transform(viewProjectionTransform);
+
+		      var opt = new Map();
+		      var opt2 = {
+		        targets: objs,
+		        rayRadius: capsule.capRadius
+
+		        // TODO: calculate contacts
+		      };var hitResult = this._renderer._physicsHitTestByGPU(viewProjectionTransform, from, to, opt, opt2);
+		      var _iteratorNormalCompletion3 = true;
+		      var _didIteratorError3 = false;
+		      var _iteratorError3 = undefined;
+
+		      try {
+		        for (var _iterator3 = hitResult[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+		          var hit = _step3.value;
+
+		          var contact = new _SCNPhysicsContact2.default();
+		          contact._nodeA = body._node;
+		          contact._nodeB = hit._node;
+		          contact._contactPoint = hit._worldCoordinates;
+		          contact._contactNormal = hit._worldNormal;
+		          contact._penetrationDistance = 1.0;
+		          result.push(contact);
+		        }
+		      } catch (err) {
+		        _didIteratorError3 = true;
+		        _iteratorError3 = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion3 && _iterator3.return) {
+		            _iterator3.return();
+		          }
+		        } finally {
+		          if (_didIteratorError3) {
+		            throw _iteratorError3;
+		          }
+		        }
+		      }
+
+		      return result;
 		    }
 		  }, {
 		    key: 'allBehaviors',
@@ -39623,9 +39673,31 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _NSObject2 = __webpack_require__(2);
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-		var _NSObject3 = _interopRequireDefault(_NSObject2);
+		var _SCNGeometry2 = __webpack_require__(78);
+
+		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39635,133 +39707,259 @@ var JSceneKitExample =
 
 		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+		/*global Ammo*/
+
 		/**
-		 * The abstract superclass for joints, vehicle simulations, and other high-level behaviors that incorporate multiple physics bodies.
+		 * A right circular cylinder geometry whose ends are capped with hemispheres.
 		 * @access public
-		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnphysicsbehavior
+		 * @extends {SCNGeometry}
+		 * @see https://developer.apple.com/reference/scenekit/scncapsule
 		 */
-		var SCNPhysicsBehavior = function (_NSObject) {
-		  _inherits(SCNPhysicsBehavior, _NSObject);
+		var SCNCapsule = function (_SCNGeometry) {
+		  _inherits(SCNCapsule, _SCNGeometry);
 
-		  function SCNPhysicsBehavior() {
-		    _classCallCheck(this, SCNPhysicsBehavior);
+		  // Creating a Capsule
 
-		    return _possibleConstructorReturn(this, (SCNPhysicsBehavior.__proto__ || Object.getPrototypeOf(SCNPhysicsBehavior)).apply(this, arguments));
+		  /**
+		   * Creates a capsule geometry with the specified radius and height.
+		   * @access public
+		   * @constructor
+		   * @param {number} capRadius - The radius both of the capsule’s cylindrical body and of its hemispherical ends.
+		   * @param {number} height - The height of the capsule along the y-axis of its local coordinate space.
+		   * @desc The capsule is centered in its local coordinate system. For example, if you create a capsule whose cap radius is 5.0 and height is 20.0, it extends from -10.0 to 10.0 in the y-axis, and the circular cross section at the center of its body extends from -5.0 to 5.0 along the x- and z-axes.
+		   * @see https://developer.apple.com/reference/scenekit/scncapsule/1523790-init
+		   */
+		  function SCNCapsule() {
+		    var capRadius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.5;
+		    var height = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2.0;
+
+		    _classCallCheck(this, SCNCapsule);
+
+		    // Adjusting a Capsule’s Dimensions
+
+		    /**
+		     * The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523926-capradius
+		     */
+		    var _this = _possibleConstructorReturn(this, (SCNCapsule.__proto__ || Object.getPrototypeOf(SCNCapsule)).call(this, [], []));
+
+		    _this.capRadius = capRadius;
+
+		    /**
+		     * The extent of the capsule along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522789-height
+		     */
+		    _this.height = height;
+
+		    // Adjusting Geometric Detail
+
+		    /**
+		     * The number of subdivisions around the lateral circumference of the capsule. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522735-radialsegmentcount
+		     */
+		    _this.radialSegmentCount = 24;
+
+		    /**
+		     * The number of subdivisions in the height of each hemispherical end of the capsule. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523561-capsegmentcount
+		     */
+		    _this.capSegmentCount = 48;
+
+		    /**
+		     * The number of subdivisions in the sides of the capsule along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523697-heightsegmentcount
+		     */
+		    _this.heightSegmentCount = 1;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
+		    return _this;
 		  }
 
-		  _createClass(SCNPhysicsBehavior, [{
-		    key: 'init',
+		  _createClass(SCNCapsule, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+		      var indexData = [];
+		      var vectorCount = (this.radialSegmentCount + 1) * (this.capSegmentCount + 4);
+		      var primitiveCount = this.radialSegmentCount * this.capSegmentCount * 2;
+
+		      var yNom = [];
+		      var ySin = [];
+		      for (var lat = 0; lat <= this.capSegmentCount; lat++) {
+		        yNom.push(-Math.cos(Math.PI * lat / this.capSegmentCount));
+		        ySin.push(Math.sin(Math.PI * lat / this.capSegmentCount));
+		      }
+
+		      var cylinderHeight = this.height - this.capRadius * 2;
+		      var hemiLen = this.capSegmentCount / 2;
+		      var rad2 = this.radialSegmentCount * 2;
+		      for (var lng = 0; lng <= rad2; lng++) {
+		        var x = -Math.sin(2.0 * Math.PI * lng / rad2);
+		        var z = -Math.cos(2.0 * Math.PI * lng / rad2);
+		        var tx = lng / rad2;
+		        var y = -cylinderHeight * 0.5;
+		        for (var _lat = 0; _lat <= hemiLen; _lat++) {
+		          var xNom = x * ySin[_lat];
+		          var zNom = z * ySin[_lat];
+
+		          // vertex
+		          sourceData.push(xNom * this.capRadius, y + yNom[_lat] * this.capRadius, zNom * this.capRadius
+
+		          // normal
+		          );sourceData.push(xNom, yNom[_lat], zNom
+
+		          // texcoord
+		          );sourceData.push(tx, 1.0 - 0.25 * _lat / hemiLen);
+
+		          if (_lat === hemiLen) {
+		            // put the same data again
+		            sourceData.push(xNom * this.capRadius, y + yNom[_lat] * this.capRadius, zNom * this.capRadius);
+		            sourceData.push(xNom, yNom[_lat], zNom);
+		            sourceData.push(tx, 1.0 - 0.25 * _lat / hemiLen);
+		          }
+		        }
+
+		        y = cylinderHeight * 0.5;
+		        for (var _lat2 = hemiLen; _lat2 <= this.capSegmentCount; _lat2++) {
+		          var _xNom = x * ySin[_lat2];
+		          var _zNom = z * ySin[_lat2];
+
+		          // vertex
+		          sourceData.push(_xNom * this.capRadius, y + yNom[_lat2] * this.capRadius, _zNom * this.capRadius
+
+		          // normal
+		          );sourceData.push(_xNom, yNom[_lat2], _zNom
+
+		          // texcoord
+		          );sourceData.push(tx, 0.50 - 0.25 * _lat2 / hemiLen);
+
+		          if (_lat2 === hemiLen) {
+		            // put the same data again
+		            sourceData.push(_xNom * this.capRadius, y + yNom[_lat2] * this.capRadius, _zNom * this.capRadius);
+		            sourceData.push(_xNom, yNom[_lat2], _zNom);
+		            sourceData.push(tx, 0.50 - 0.25 * _lat2 / hemiLen);
+		          }
+		        }
+		      }
+
+		      // index
+		      var capLen = this.capSegmentCount;
+		      var radLen = this.radialSegmentCount * 2 + 1;
+		      for (var i = 0; i < capLen; i++) {
+		        var index1 = i * (this.capSegmentCount + 4);
+		        var index2 = index1 + this.capSegmentCount + 5;
+
+		        indexData.push(index1, index2, index1 + 1);
+		        index1 += 1;
+		        for (var j = 0; j < radLen; j++) {
+		          if (Math.abs(j - this.radialSegmentCount) !== 1) {
+		            indexData.push(index1, index2 + 1, index1 + 1);
+		            indexData.push(index1, index2, index2 + 1);
+		          }
+		          index1 += 1;
+		          index2 += 1;
+		        }
+		        indexData.push(index1, index2, index2 + 1);
+		      }
+
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var element = new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles);
+
+		      this._geometryElements = [element];
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.capRadius, -this.height * 0.5, -this.capRadius),
+		        max: new _SCNVector2.default(this.capRadius, this.height * 0.5, this.capRadius)
+		      };
+		    }
+
+		    /**
+		     * @access private
+		     * @returns {Ammo.btCollisionShape}
+		     * @desc call Ammo.destroy(shape) after using it.
+		     */
+
+		  }, {
+		    key: '_createBtCollisionShape',
+		    value: function _createBtCollisionShape() {}
+		    //const height = (this.height - this.capRadius) * 0.5
+		    //const shape = new Ammo.btCapsuleShape(this.capRadius, height)
+		    //return shape
 
 
 		    /**
-		     * constructor
-		     * @access public
-		     * @returns {void}
+		     * The center point and radius of the object’s bounding sphere.
+		     * @type {Object}
+		     * @parameter {SCNVector3} _boundingSphere.center -
+		     * @parameter {number} _boundingSphere.radius -
+		     * @returns {Object} -
+		     * @desc Scene Kit defines a bounding sphere in the local coordinate space using a center point and a radius. For example, if a node’s bounding sphere has the center point {3, 1, 4} and radius 2.0, all points in the vertex data of node’s geometry (and any geometry attached to its child nodes) lie within 2.0 units of the center point.The coordinates provided when reading this property are valid only if the object has a volume to be measured. For a geometry containing no vertex data or a node containing no geometry (and whose child nodes, if any, contain no geometry), the values center and radius are both zero.
+		     * @see https://developer.apple.com/reference/scenekit/scnboundingvolume/2034707-boundingsphere
 		     */
-		    value: function init() {}
+
+		  }, {
+		    key: 'getBoundingSphere',
+		    value: function getBoundingSphere() {
+		      var c = new _SCNVector2.default(0, 0, 0);
+		      var r = this.height * 0.5;
+
+		      return { center: c, radius: r };
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNCapsule.prototype.__proto__ || Object.getPrototypeOf(SCNCapsule.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
 		  }]);
 
-		  return SCNPhysicsBehavior;
-		}(_NSObject3.default);
+		  return SCNCapsule;
+		}(_SCNGeometry3.default);
 
-		exports.default = SCNPhysicsBehavior;
+		exports.default = SCNCapsule;
 
 	/***/ },
 	/* 111 */
-	/***/ function(module, exports, __webpack_require__) {
-
-		'use strict';
-
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-
-		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-		var _SCNPhysicsWorld = __webpack_require__(109);
-
-		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
-
-		var _SCNPhysicsContact = __webpack_require__(112);
-
-		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
-
-		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-		/**
-		 * Methods you can implement to respond when a contact or collision occurs between two physics bodies in a scene.
-		 * @interface
-		 * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate
-		 */
-		var SCNPhysicsContactDelegate = function () {
-		  function SCNPhysicsContactDelegate() {
-		    _classCallCheck(this, SCNPhysicsContactDelegate);
-		  }
-
-		  _createClass(SCNPhysicsContactDelegate, [{
-		    key: 'init',
-
-
-		    /**
-		     * constructor
-		     * @access public
-		     * @returns {void}
-		     */
-		    value: function init() {}
-
-		    // Responding to Contact Events
-
-		    /**
-		     * Tells the delegate that two bodies have come into contact.
-		     * @access public
-		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
-		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
-		     * @returns {void}
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512835-physicsworld
-		     */
-
-		  }, {
-		    key: 'physicsWorldDidBegin',
-		    value: function physicsWorldDidBegin(world, contact) {}
-
-		    /**
-		     * Tells the delegate that new information is available about an ongoing contact.
-		     * @access public
-		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
-		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
-		     * @returns {void}
-		     * @desc SceneKit calls this method on each step of the physics simulation (see the timeStep property) if information about the contact changes—for example, if two bodies are sliding against one another.
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512865-physicsworld
-		     */
-
-		  }, {
-		    key: 'physicsWorldDidUpdate',
-		    value: function physicsWorldDidUpdate(world, contact) {}
-
-		    /**
-		     * Tells the delegate that a contact has ended.
-		     * @access public
-		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
-		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
-		     * @returns {void}
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512883-physicsworld
-		     */
-
-		  }, {
-		    key: 'physicsWorldDidEnd',
-		    value: function physicsWorldDidEnd(world, contact) {}
-		  }]);
-
-		  return SCNPhysicsContactDelegate;
-		}();
-
-		exports.default = SCNPhysicsContactDelegate;
-
-	/***/ },
-	/* 112 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39784,6 +39982,14 @@ var JSceneKitExample =
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
+		var _SCNMatrix = __webpack_require__(56);
+
+		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
+
+		var _CGPoint = __webpack_require__(7);
+
+		var _CGPoint2 = _interopRequireDefault(_CGPoint);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39793,124 +39999,186 @@ var JSceneKitExample =
 		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 		/**
-		 * Detailed information about a contact between two physics bodies in a scene’s physics simulation. 
+		 * Detailed information about a result from searching for elements of a scene located at a specified point, or along a specified line segment (or ray).
 		 * @access public
 		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnphysicscontact
+		 * @see https://developer.apple.com/reference/scenekit/scnhittestresult
 		 */
-		var SCNPhysicsContact = function (_NSObject) {
-		  _inherits(SCNPhysicsContact, _NSObject);
+		var SCNHitTestResult = function (_NSObject) {
+		  _inherits(SCNHitTestResult, _NSObject);
 
 		  /**
 		   * constructor
 		   * @access public
 		   * @constructor
 		   */
-		  function SCNPhysicsContact() {
-		    _classCallCheck(this, SCNPhysicsContact);
+		  function SCNHitTestResult() {
+		    _classCallCheck(this, SCNHitTestResult);
 
-		    // Inspecting the Contact Properties
+		    // Retrieving Information About a Hit-Test Result
 
-		    var _this = _possibleConstructorReturn(this, (SCNPhysicsContact.__proto__ || Object.getPrototypeOf(SCNPhysicsContact)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNHitTestResult.__proto__ || Object.getPrototypeOf(SCNHitTestResult)).call(this));
 
-		    _this._nodeA = null;
-		    _this._nodeB = null;
-		    _this._contactPoint = null;
-		    _this._contactNormal = null;
-		    _this._collisionImpulse = 0;
-		    _this._penetrationDistance = 0;
+		    _this._node = null;
+		    _this._geometryIndex = 0;
+		    _this._faceIndex = 0;
+		    _this._localCoordinates = null;
+		    _this._worldCoordinates = null;
+		    _this._localNormal = null;
+		    _this._worldNormal = null;
+		    _this._modelTransform = null;
+
+		    // Instance Properties
+
+		    _this._boneNode = null;
 		    return _this;
 		  }
 
-		  // Inspecting the Contact Properties
+		  // Retrieving Information About a Hit-Test Result
 
 		  /**
-		   * The node containing the first body in the contact.
-		   * @type {SCNNode}
-		   * @desc Use the node’s physicsBody property to examine physics characteristics of the node.
-		   * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523445-nodea
+		   * Returns the texture coordinates at the point of intersection for the specified texture mapping channel.
+		   * @access public
+		   * @param {number} channel - The index of the mapping channel in which to look up texture coordinates.
+		   * @returns {CGPoint} - 
+		   * @desc An SCNGeometry object can contain multiple sources of texture coordinates, or texture mapping channels. (With multiple channels, you can map texture images for different material properties in different ways.) To use the texture coordinates of a hit-test result, specify which texture coordinate source to look up coordinates in. For example, to add “scorch marks” to a game character hit by a laser, you might modify a texture image mapped to the multiply property of the geometry’s material. Use the mappingChannel index from that material property as the channel parameter when calling textureCoordinates(withMappingChannel:) to ensure that you modify the correct location in the texture image.
+		   * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522771-texturecoordinates
 		   */
 
 
-		  _createClass(SCNPhysicsContact, [{
-		    key: 'nodeA',
-		    get: function get() {
-		      return this._nodeA;
+		  _createClass(SCNHitTestResult, [{
+		    key: 'textureCoordinatesWithMappingChannel',
+		    value: function textureCoordinatesWithMappingChannel(channel) {
+		      return null;
 		    }
 
 		    /**
-		     * The node containing the second body in the contact.
+		     * The node whose geometry intersects the search ray.
 		     * @type {SCNNode}
-		     * @desc Use the node’s physicsBody property to examine physics characteristics of the node.
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1524232-nodeb
-		     */
-
-		  }, {
-		    key: 'nodeB',
-		    get: function get() {
-		      return this._nodeB;
-		    }
-
-		    /**
-		     * The contact point between the two physics bodies, in scene coordinates.
-		     * @type {SCNVector3}
 		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523810-contactpoint
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523256-node
 		     */
 
 		  }, {
-		    key: 'contactPoint',
+		    key: 'node',
 		    get: function get() {
-		      return this._contactPoint;
+		      return this._node;
 		    }
 
 		    /**
-		     * The normal vector at the contact point between the two physics bodies, in scene coordinates.
-		     * @type {SCNVector3}
-		     * @desc This vector tells you which direction the bodies were moving relative to one another at the time of the collision. For example, in a game you can examine this vector to have enemy characters take damage when struck from above by the player character but damage the player character instead when they collide side-to-side.
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1522833-contactnormal
-		     */
-
-		  }, {
-		    key: 'contactNormal',
-		    get: function get() {
-		      return this._contactNormal;
-		    }
-
-		    /**
-		     * The force over time of the collision, in newton-seconds.
+		     * The index of the geometry element whose surface the search ray intersects.
 		     * @type {number}
-		     * @desc This property’s value tells you how hard the bodies struck each other in a collision. For example, in a game you might allow a character to proceed unhindered after a minor collision, but take damage when struck with sufficient force.
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523944-collisionimpulse
+		     * @desc Every SCNGeometry object contains one or more SCNGeometryElement objects that define how its vertices connect to form a surface. This property provides the index of the geometry element intersecting the search ray. For more information about that geometry element, use the geometry’s geometryElement(at:) method.
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522625-geometryindex
 		     */
 
 		  }, {
-		    key: 'collisionImpulse',
+		    key: 'geometryIndex',
 		    get: function get() {
-		      return this._collisionImpulse;
+		      return this._geometryIndex;
 		    }
 
 		    /**
-		     * The distance of overlap, in units of scene coordinate space, between the two physics bodies.
+		     * The index of the primitive in the geomety element intersected by the search ray.
 		     * @type {number}
 		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1522870-penetrationdistance
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522888-faceindex
 		     */
 
 		  }, {
-		    key: 'penetrationDistance',
+		    key: 'faceIndex',
 		    get: function get() {
-		      return this._penetrationDistance;
+		      return this._faceIndex;
+		    }
+
+		    /**
+		     * The point of intersection between the geometry and the search ray, in the local coordinate system of the node containing the geometry.
+		     * @type {SCNVector3}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523032-localcoordinates
+		     */
+
+		  }, {
+		    key: 'localCoordinates',
+		    get: function get() {
+		      return this._localCoordinates;
+		    }
+
+		    /**
+		     * The point of intersection between the geometry and the search ray, in the scene’s world coordinate system.
+		     * @type {SCNVector3}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523058-worldcoordinates
+		     */
+
+		  }, {
+		    key: 'worldCoordinates',
+		    get: function get() {
+		      return this._worldCoordinates;
+		    }
+
+		    /**
+		     * The surface normal vector at the point of intersection, in the local coordinate system of the node containing the geometry intersected by the search ray.
+		     * @type {SCNVector3}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523953-localnormal
+		     */
+
+		  }, {
+		    key: 'localNormal',
+		    get: function get() {
+		      return this._localNormal;
+		    }
+
+		    /**
+		     * The surface normal vector at the point of intersection, in the scene’s world coordinate system.
+		     * @type {SCNVector3}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1524066-worldnormal
+		     */
+
+		  }, {
+		    key: 'worldNormal',
+		    get: function get() {
+		      return this._worldNormal;
+		    }
+
+		    /**
+		     * The world transform matrix of the node containing the intersection.
+		     * @type {SCNMatrix4}
+		     * @desc Use this matrix to transform vectors from the local coordinate space of the node whose geometry is intersected by the search ray to the scene’s world coordinate system.
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523496-modeltransform
+		     */
+
+		  }, {
+		    key: 'modelTransform',
+		    get: function get() {
+		      return this._modelTransform;
+		    }
+
+		    // Instance Properties
+
+		    /**
+		     * 
+		     * @type {SCNNode}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1823463-bonenode
+		     */
+
+		  }, {
+		    key: 'boneNode',
+		    get: function get() {
+		      return this._boneNode;
 		    }
 		  }]);
 
-		  return SCNPhysicsContact;
+		  return SCNHitTestResult;
 		}(_NSObject3.default);
 
-		exports.default = SCNPhysicsContact;
+		exports.default = SCNHitTestResult;
 
 	/***/ },
-	/* 113 */
+	/* 112 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -39929,11 +40197,11 @@ var JSceneKitExample =
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNPhysicsBodyType = __webpack_require__(114);
+		var _SCNPhysicsBodyType = __webpack_require__(113);
 
 		var _SCNPhysicsBodyType2 = _interopRequireDefault(_SCNPhysicsBodyType);
 
-		var _SCNPhysicsShape = __webpack_require__(115);
+		var _SCNPhysicsShape = __webpack_require__(114);
 
 		var _SCNPhysicsShape2 = _interopRequireDefault(_SCNPhysicsShape);
 
@@ -40444,7 +40712,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBody;
 
 	/***/ },
-	/* 114 */
+	/* 113 */
 	/***/ function(module, exports) {
 
 		'use strict';
@@ -40470,7 +40738,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsBodyType;
 
 	/***/ },
-	/* 115 */
+	/* 114 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -40489,7 +40757,7 @@ var JSceneKitExample =
 
 		var _SCNBox2 = _interopRequireDefault(_SCNBox);
 
-		var _SCNCapsule = __webpack_require__(116);
+		var _SCNCapsule = __webpack_require__(110);
 
 		var _SCNCapsule2 = _interopRequireDefault(_SCNCapsule);
 
@@ -40501,7 +40769,7 @@ var JSceneKitExample =
 
 		var _SCNNode2 = _interopRequireDefault(_SCNNode);
 
-		var _SCNSphere = __webpack_require__(117);
+		var _SCNSphere = __webpack_require__(115);
 
 		var _SCNSphere2 = _interopRequireDefault(_SCNSphere);
 
@@ -40573,9 +40841,33 @@ var JSceneKitExample =
 		    var _this = _possibleConstructorReturn(this, (SCNPhysicsShape.__proto__ || Object.getPrototypeOf(SCNPhysicsShape)).call(this));
 
 		    var _options = options;
-		    //if(Array.isArray(_options)){
-		    //  _options = new Map(_options)
-		    //}
+		    if (Array.isArray(options)) {
+		      _options = {};
+		      var _iteratorNormalCompletion = true;
+		      var _didIteratorError = false;
+		      var _iteratorError = undefined;
+
+		      try {
+		        for (var _iterator = options[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+		          var arr = _step.value;
+
+		          _options[arr[0]] = arr[1];
+		        }
+		      } catch (err) {
+		        _didIteratorError = true;
+		        _iteratorError = err;
+		      } finally {
+		        try {
+		          if (!_iteratorNormalCompletion && _iterator.return) {
+		            _iterator.return();
+		          }
+		        } finally {
+		          if (_didIteratorError) {
+		            throw _iteratorError;
+		          }
+		        }
+		      }
+		    }
 
 		    /**
 		     * @type {SCNGeometry}
@@ -40729,6 +41021,14 @@ var JSceneKitExample =
 		    get: function get() {
 		      return this._options;
 		    }
+		  }, {
+		    key: '_type',
+		    get: function get() {
+		      if (!this._options) {
+		        return null;
+		      }
+		      return this._options[_Option.type];
+		    }
 
 		    /**
 		     * The array of transforms that was used to create a compound shape.
@@ -40781,172 +41081,7 @@ var JSceneKitExample =
 		exports.default = SCNPhysicsShape;
 
 	/***/ },
-	/* 116 */
-	/***/ function(module, exports, __webpack_require__) {
-
-		'use strict';
-
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-
-		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-		var _SCNGeometry2 = __webpack_require__(78);
-
-		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
-
-		var _SCNMaterial = __webpack_require__(86);
-
-		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
-
-		var _SCNVector = __webpack_require__(54);
-
-		var _SCNVector2 = _interopRequireDefault(_SCNVector);
-
-		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-		/*global Ammo*/
-
-		/**
-		 * A right circular cylinder geometry whose ends are capped with hemispheres.
-		 * @access public
-		 * @extends {SCNGeometry}
-		 * @see https://developer.apple.com/reference/scenekit/scncapsule
-		 */
-		var SCNCapsule = function (_SCNGeometry) {
-		  _inherits(SCNCapsule, _SCNGeometry);
-
-		  // Creating a Capsule
-
-		  /**
-		   * Creates a capsule geometry with the specified radius and height.
-		   * @access public
-		   * @constructor
-		   * @param {number} capRadius - The radius both of the capsule’s cylindrical body and of its hemispherical ends.
-		   * @param {number} height - The height of the capsule along the y-axis of its local coordinate space.
-		   * @desc The capsule is centered in its local coordinate system. For example, if you create a capsule whose cap radius is 5.0 and height is 20.0, it extends from -10.0 to 10.0 in the y-axis, and the circular cross section at the center of its body extends from -5.0 to 5.0 along the x- and z-axes.
-		   * @see https://developer.apple.com/reference/scenekit/scncapsule/1523790-init
-		   */
-		  function SCNCapsule(capRadius, height) {
-		    _classCallCheck(this, SCNCapsule);
-
-		    // Adjusting a Capsule’s Dimensions
-
-		    /**
-		     * The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523926-capradius
-		     */
-		    var _this = _possibleConstructorReturn(this, (SCNCapsule.__proto__ || Object.getPrototypeOf(SCNCapsule)).call(this));
-
-		    _this.capRadius = capRadius;
-
-		    /**
-		     * The extent of the capsule along its y-axis. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522789-height
-		     */
-		    _this.height = height;
-
-		    // Adjusting Geometric Detail
-
-		    /**
-		     * The number of subdivisions around the lateral circumference of the capsule. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1522735-radialsegmentcount
-		     */
-		    _this.radialSegmentCount = 24;
-
-		    /**
-		     * The number of subdivisions in the height of each hemispherical end of the capsule. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523561-capsegmentcount
-		     */
-		    _this.capSegmentCount = 48;
-
-		    /**
-		     * The number of subdivisions in the sides of the capsule along its y-axis. Animatable.
-		     * @type {number}
-		     * @see https://developer.apple.com/reference/scenekit/scncapsule/1523697-heightsegmentcount
-		     */
-		    _this.heightSegmentCount = 1;
-
-		    _this._createGeometry();
-		    _this.materials.push(new _SCNMaterial2.default());
-		    return _this;
-		  }
-
-		  _createClass(SCNCapsule, [{
-		    key: '_createGeometry',
-		    value: function _createGeometry() {
-		      // TODO: implement
-
-		      this.boundingBox = {
-		        min: new _SCNVector2.default(-this.capRadius, -this.height * 0.5, -this.capRadius),
-		        max: new _SCNVector2.default(this.capRadius, this.height * 0.5, this.capRadius)
-		      };
-		    }
-
-		    /**
-		     * @access private
-		     * @returns {Ammo.btCollisionShape}
-		     * @desc call Ammo.destroy(shape) after using it.
-		     */
-
-		  }, {
-		    key: '_createBtCollisionShape',
-		    value: function _createBtCollisionShape() {}
-		    //const height = (this.height - this.capRadius) * 0.5
-		    //const shape = new Ammo.btCapsuleShape(this.capRadius, height)
-		    //return shape
-
-
-		    /**
-		     * The center point and radius of the object’s bounding sphere.
-		     * @type {Object}
-		     * @parameter {SCNVector3} _boundingSphere.center -
-		     * @parameter {number} _boundingSphere.radius -
-		     * @returns {Object} -
-		     * @desc Scene Kit defines a bounding sphere in the local coordinate space using a center point and a radius. For example, if a node’s bounding sphere has the center point {3, 1, 4} and radius 2.0, all points in the vertex data of node’s geometry (and any geometry attached to its child nodes) lie within 2.0 units of the center point.The coordinates provided when reading this property are valid only if the object has a volume to be measured. For a geometry containing no vertex data or a node containing no geometry (and whose child nodes, if any, contain no geometry), the values center and radius are both zero.
-		     * @see https://developer.apple.com/reference/scenekit/scnboundingvolume/2034707-boundingsphere
-		     */
-
-		  }, {
-		    key: 'getBoundingSphere',
-		    value: function getBoundingSphere() {
-		      var c = new _SCNVector2.default(0, 0, 0);
-		      var r = this.height * 0.5;
-
-		      return { center: c, radius: r };
-		    }
-		  }, {
-		    key: '_updateBoundingBoxForSkinner',
-		    value: function _updateBoundingBoxForSkinner() {
-		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-
-		      if (skinner === null) {
-		        return this.boundingBox;
-		      }
-		      return _get(SCNCapsule.prototype.__proto__ || Object.getPrototypeOf(SCNCapsule.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
-		    }
-		  }]);
-
-		  return SCNCapsule;
-		}(_SCNGeometry3.default);
-
-		exports.default = SCNCapsule;
-
-	/***/ },
-	/* 117 */
+	/* 115 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41115,7 +41250,7 @@ var JSceneKitExample =
 		          );sourceData.push(xNom, yNom[_lat], zNom
 
 		          // texcoord
-		          );sourceData.push(lng / 24.0, 1.0 - _lat / 24.0);
+		          );sourceData.push(1.0 * lng / this.segmentCount, 1.0 - 1.0 * _lat / this.segmentCount);
 		        }
 		      }
 
@@ -41191,7 +41326,63 @@ var JSceneKitExample =
 		exports.default = SCNSphere;
 
 	/***/ },
-	/* 118 */
+	/* 116 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _NSObject2 = __webpack_require__(2);
+
+		var _NSObject3 = _interopRequireDefault(_NSObject2);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+		/**
+		 * The abstract superclass for joints, vehicle simulations, and other high-level behaviors that incorporate multiple physics bodies.
+		 * @access public
+		 * @extends {NSObject}
+		 * @see https://developer.apple.com/reference/scenekit/scnphysicsbehavior
+		 */
+		var SCNPhysicsBehavior = function (_NSObject) {
+		  _inherits(SCNPhysicsBehavior, _NSObject);
+
+		  function SCNPhysicsBehavior() {
+		    _classCallCheck(this, SCNPhysicsBehavior);
+
+		    return _possibleConstructorReturn(this, (SCNPhysicsBehavior.__proto__ || Object.getPrototypeOf(SCNPhysicsBehavior)).apply(this, arguments));
+		  }
+
+		  _createClass(SCNPhysicsBehavior, [{
+		    key: 'init',
+
+
+		    /**
+		     * constructor
+		     * @access public
+		     * @returns {void}
+		     */
+		    value: function init() {}
+		  }]);
+
+		  return SCNPhysicsBehavior;
+		}(_NSObject3.default);
+
+		exports.default = SCNPhysicsBehavior;
+
+	/***/ },
+	/* 117 */
 	/***/ function(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -41214,14 +41405,6 @@ var JSceneKitExample =
 
 		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
-		var _SCNMatrix = __webpack_require__(56);
-
-		var _SCNMatrix2 = _interopRequireDefault(_SCNMatrix);
-
-		var _CGPoint = __webpack_require__(7);
-
-		var _CGPoint2 = _interopRequireDefault(_CGPoint);
-
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41231,183 +41414,214 @@ var JSceneKitExample =
 		function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 		/**
-		 * Detailed information about a result from searching for elements of a scene located at a specified point, or along a specified line segment (or ray).
+		 * Detailed information about a contact between two physics bodies in a scene’s physics simulation. 
 		 * @access public
 		 * @extends {NSObject}
-		 * @see https://developer.apple.com/reference/scenekit/scnhittestresult
+		 * @see https://developer.apple.com/reference/scenekit/scnphysicscontact
 		 */
-		var SCNHitTestResult = function (_NSObject) {
-		  _inherits(SCNHitTestResult, _NSObject);
+		var SCNPhysicsContact = function (_NSObject) {
+		  _inherits(SCNPhysicsContact, _NSObject);
 
 		  /**
 		   * constructor
 		   * @access public
 		   * @constructor
 		   */
-		  function SCNHitTestResult() {
-		    _classCallCheck(this, SCNHitTestResult);
+		  function SCNPhysicsContact() {
+		    _classCallCheck(this, SCNPhysicsContact);
 
-		    // Retrieving Information About a Hit-Test Result
+		    // Inspecting the Contact Properties
 
-		    var _this = _possibleConstructorReturn(this, (SCNHitTestResult.__proto__ || Object.getPrototypeOf(SCNHitTestResult)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNPhysicsContact.__proto__ || Object.getPrototypeOf(SCNPhysicsContact)).call(this));
 
-		    _this._node = null;
-		    _this._geometryIndex = 0;
-		    _this._faceIndex = 0;
-		    _this._localCoordinates = null;
-		    _this._worldCoordinates = null;
-		    _this._localNormal = null;
-		    _this._worldNormal = null;
-		    _this._modelTransform = null;
-
-		    // Instance Properties
-
-		    _this._boneNode = null;
+		    _this._nodeA = null;
+		    _this._nodeB = null;
+		    _this._contactPoint = null;
+		    _this._contactNormal = null;
+		    _this._collisionImpulse = 0;
+		    _this._penetrationDistance = 0;
 		    return _this;
 		  }
 
-		  // Retrieving Information About a Hit-Test Result
+		  // Inspecting the Contact Properties
 
 		  /**
-		   * Returns the texture coordinates at the point of intersection for the specified texture mapping channel.
-		   * @access public
-		   * @param {number} channel - The index of the mapping channel in which to look up texture coordinates.
-		   * @returns {CGPoint} - 
-		   * @desc An SCNGeometry object can contain multiple sources of texture coordinates, or texture mapping channels. (With multiple channels, you can map texture images for different material properties in different ways.) To use the texture coordinates of a hit-test result, specify which texture coordinate source to look up coordinates in. For example, to add “scorch marks” to a game character hit by a laser, you might modify a texture image mapped to the multiply property of the geometry’s material. Use the mappingChannel index from that material property as the channel parameter when calling textureCoordinates(withMappingChannel:) to ensure that you modify the correct location in the texture image.
-		   * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522771-texturecoordinates
+		   * The node containing the first body in the contact.
+		   * @type {SCNNode}
+		   * @desc Use the node’s physicsBody property to examine physics characteristics of the node.
+		   * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523445-nodea
 		   */
 
 
-		  _createClass(SCNHitTestResult, [{
-		    key: 'textureCoordinatesWithMappingChannel',
-		    value: function textureCoordinatesWithMappingChannel(channel) {
-		      return null;
+		  _createClass(SCNPhysicsContact, [{
+		    key: 'nodeA',
+		    get: function get() {
+		      return this._nodeA;
 		    }
 
 		    /**
-		     * The node whose geometry intersects the search ray.
+		     * The node containing the second body in the contact.
 		     * @type {SCNNode}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523256-node
+		     * @desc Use the node’s physicsBody property to examine physics characteristics of the node.
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1524232-nodeb
 		     */
 
 		  }, {
-		    key: 'node',
+		    key: 'nodeB',
 		    get: function get() {
-		      return this._node;
+		      return this._nodeB;
 		    }
 
 		    /**
-		     * The index of the geometry element whose surface the search ray intersects.
+		     * The contact point between the two physics bodies, in scene coordinates.
+		     * @type {SCNVector3}
+		     * @desc 
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523810-contactpoint
+		     */
+
+		  }, {
+		    key: 'contactPoint',
+		    get: function get() {
+		      return this._contactPoint;
+		    }
+
+		    /**
+		     * The normal vector at the contact point between the two physics bodies, in scene coordinates.
+		     * @type {SCNVector3}
+		     * @desc This vector tells you which direction the bodies were moving relative to one another at the time of the collision. For example, in a game you can examine this vector to have enemy characters take damage when struck from above by the player character but damage the player character instead when they collide side-to-side.
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1522833-contactnormal
+		     */
+
+		  }, {
+		    key: 'contactNormal',
+		    get: function get() {
+		      return this._contactNormal;
+		    }
+
+		    /**
+		     * The force over time of the collision, in newton-seconds.
 		     * @type {number}
-		     * @desc Every SCNGeometry object contains one or more SCNGeometryElement objects that define how its vertices connect to form a surface. This property provides the index of the geometry element intersecting the search ray. For more information about that geometry element, use the geometry’s geometryElement(at:) method.
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522625-geometryindex
+		     * @desc This property’s value tells you how hard the bodies struck each other in a collision. For example, in a game you might allow a character to proceed unhindered after a minor collision, but take damage when struck with sufficient force.
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1523944-collisionimpulse
 		     */
 
 		  }, {
-		    key: 'geometryIndex',
+		    key: 'collisionImpulse',
 		    get: function get() {
-		      return this._geometryIndex;
+		      return this._collisionImpulse;
 		    }
 
 		    /**
-		     * The index of the primitive in the geomety element intersected by the search ray.
+		     * The distance of overlap, in units of scene coordinate space, between the two physics bodies.
 		     * @type {number}
 		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1522888-faceindex
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontact/1522870-penetrationdistance
 		     */
 
 		  }, {
-		    key: 'faceIndex',
+		    key: 'penetrationDistance',
 		    get: function get() {
-		      return this._faceIndex;
-		    }
-
-		    /**
-		     * The point of intersection between the geometry and the search ray, in the local coordinate system of the node containing the geometry.
-		     * @type {SCNVector3}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523032-localcoordinates
-		     */
-
-		  }, {
-		    key: 'localCoordinates',
-		    get: function get() {
-		      return this._localCoordinates;
-		    }
-
-		    /**
-		     * The point of intersection between the geometry and the search ray, in the scene’s world coordinate system.
-		     * @type {SCNVector3}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523058-worldcoordinates
-		     */
-
-		  }, {
-		    key: 'worldCoordinates',
-		    get: function get() {
-		      return this._worldCoordinates;
-		    }
-
-		    /**
-		     * The surface normal vector at the point of intersection, in the local coordinate system of the node containing the geometry intersected by the search ray.
-		     * @type {SCNVector3}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523953-localnormal
-		     */
-
-		  }, {
-		    key: 'localNormal',
-		    get: function get() {
-		      return this._localNormal;
-		    }
-
-		    /**
-		     * The surface normal vector at the point of intersection, in the scene’s world coordinate system.
-		     * @type {SCNVector3}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1524066-worldnormal
-		     */
-
-		  }, {
-		    key: 'worldNormal',
-		    get: function get() {
-		      return this._worldNormal;
-		    }
-
-		    /**
-		     * The world transform matrix of the node containing the intersection.
-		     * @type {SCNMatrix4}
-		     * @desc Use this matrix to transform vectors from the local coordinate space of the node whose geometry is intersected by the search ray to the scene’s world coordinate system.
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1523496-modeltransform
-		     */
-
-		  }, {
-		    key: 'modelTransform',
-		    get: function get() {
-		      return this._modelTransform;
-		    }
-
-		    // Instance Properties
-
-		    /**
-		     * 
-		     * @type {SCNNode}
-		     * @desc 
-		     * @see https://developer.apple.com/reference/scenekit/scnhittestresult/1823463-bonenode
-		     */
-
-		  }, {
-		    key: 'boneNode',
-		    get: function get() {
-		      return this._boneNode;
+		      return this._penetrationDistance;
 		    }
 		  }]);
 
-		  return SCNHitTestResult;
+		  return SCNPhysicsContact;
 		}(_NSObject3.default);
 
-		exports.default = SCNHitTestResult;
+		exports.default = SCNPhysicsContact;
+
+	/***/ },
+	/* 118 */
+	/***/ function(module, exports, __webpack_require__) {
+
+		'use strict';
+
+		Object.defineProperty(exports, "__esModule", {
+		  value: true
+		});
+
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _SCNPhysicsWorld = __webpack_require__(109);
+
+		var _SCNPhysicsWorld2 = _interopRequireDefault(_SCNPhysicsWorld);
+
+		var _SCNPhysicsContact = __webpack_require__(117);
+
+		var _SCNPhysicsContact2 = _interopRequireDefault(_SCNPhysicsContact);
+
+		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+		/**
+		 * Methods you can implement to respond when a contact or collision occurs between two physics bodies in a scene.
+		 * @interface
+		 * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate
+		 */
+		var SCNPhysicsContactDelegate = function () {
+		  function SCNPhysicsContactDelegate() {
+		    _classCallCheck(this, SCNPhysicsContactDelegate);
+		  }
+
+		  _createClass(SCNPhysicsContactDelegate, [{
+		    key: 'init',
+
+
+		    /**
+		     * constructor
+		     * @access public
+		     * @returns {void}
+		     */
+		    value: function init() {}
+
+		    // Responding to Contact Events
+
+		    /**
+		     * Tells the delegate that two bodies have come into contact.
+		     * @access public
+		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
+		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
+		     * @returns {void}
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512835-physicsworld
+		     */
+
+		  }, {
+		    key: 'physicsWorldDidBegin',
+		    value: function physicsWorldDidBegin(world, contact) {}
+
+		    /**
+		     * Tells the delegate that new information is available about an ongoing contact.
+		     * @access public
+		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
+		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
+		     * @returns {void}
+		     * @desc SceneKit calls this method on each step of the physics simulation (see the timeStep property) if information about the contact changes—for example, if two bodies are sliding against one another.
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512865-physicsworld
+		     */
+
+		  }, {
+		    key: 'physicsWorldDidUpdate',
+		    value: function physicsWorldDidUpdate(world, contact) {}
+
+		    /**
+		     * Tells the delegate that a contact has ended.
+		     * @access public
+		     * @param {SCNPhysicsWorld} world - The physics world that is processing the contact.
+		     * @param {SCNPhysicsContact} contact - An object that describes the contact.
+		     * @returns {void}
+		     * @see https://developer.apple.com/reference/scenekit/scnphysicscontactdelegate/1512883-physicsworld
+		     */
+
+		  }, {
+		    key: 'physicsWorldDidEnd',
+		    value: function physicsWorldDidEnd(world, contact) {}
+		  }]);
+
+		  return SCNPhysicsContactDelegate;
+		}();
+
+		exports.default = SCNPhysicsContactDelegate;
 
 	/***/ },
 	/* 119 */
@@ -42640,6 +42854,12 @@ var JSceneKitExample =
 		              var v = new _SCNVector2.default(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
 		              pVec = v.mul(this.emitterShape.radius);
 		              vVec = v;
+		              break;
+		            }
+		          case 'SCNPlane':
+		            {
+		              pVec = new _SCNVector2.default((Math.random() - 0.5) * this.width, (Math.random() - 0.5) * this.height, 0.0);
+		              vVec = new _SCNVector2.default(0, 0, 1);
 		              break;
 		            }
 		          default:
@@ -48075,6 +48295,10 @@ var JSceneKitExample =
 
 		var _SCNMatrix4MakeTranslation2 = _interopRequireDefault(_SCNMatrix4MakeTranslation);
 
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -48220,23 +48444,34 @@ var JSceneKitExample =
 		     */
 		    _this._boneIndices = boneIndices;
 
-		    // add geometrySources to baseGeometry
-		    //baseGeometry._geometrySources.push(boneWeights)
-		    //baseGeometry._geometrySources.push(boneIndices)
+		    _this._useGPU = true;
+
+		    _this._checkUseGPU();
 		    return _this;
 		  }
 
-		  // Working with an Animation Skeleton
-
-		  /**
-		   * The control nodes of the animation skeleton.
-		   * @type {SCNNode[]}
-		   * @desc An array of SCNNode objects, each of which represents a control point of the animation skeleton. Moving a node deforms the surface of the skinner’s geometry, based on the skeleton data from which the skinner object was created.
-		   * @see https://developer.apple.com/reference/scenekit/scnskinner/1522732-bones
-		   */
-
-
 		  _createClass(SCNSkinner, [{
+		    key: '_checkUseGPU',
+		    value: function _checkUseGPU() {
+		      this._useGPU = true;
+		      if (this._boneWeights && this._boneWeights.componentsPerVector > 4) {
+		        this._useGPU = false;
+		      }
+		      if (this._boneIndices && this._boneIndices.componentsPerVector > 4) {
+		        this._useGPU = false;
+		      }
+		    }
+
+		    // Working with an Animation Skeleton
+
+		    /**
+		     * The control nodes of the animation skeleton.
+		     * @type {SCNNode[]}
+		     * @desc An array of SCNNode objects, each of which represents a control point of the animation skeleton. Moving a node deforms the surface of the skinner’s geometry, based on the skeleton data from which the skinner object was created.
+		     * @see https://developer.apple.com/reference/scenekit/scnskinner/1522732-bones
+		     */
+
+		  }, {
 		    key: 'float32Array',
 
 
@@ -48296,6 +48531,72 @@ var JSceneKitExample =
 
 		      return new Float32Array(arr);
 		    }
+
+		    /**
+		     * @access private
+		     * @param {SCNNode} node -
+		     */
+
+		  }, {
+		    key: '_update',
+		    value: function _update(node) {
+		      if (this._useGPU) {
+		        return;
+		      }
+		      var p = node.presentation;
+		      if (node.geometry === null || p === null || p.geometry === null) {
+		        // data is not ready
+		        return;
+		      }
+		      // baseGeometryBindTransform
+		      this.baseGeometryBindTransform;
+		      this._boneInverseBindTransforms;
+		      var boneLen = this._bones.length;
+		      var transforms = [];
+		      for (var i = 0; i < boneLen; i++) {
+		        var bone = this._bones[i];
+		        //transforms.push(this.baseGeometryBindTransform.mult(this._boneInverseBindTransforms[i]).mult(bone._presentation._worldTransform))
+		        transforms.push(this.baseGeometryBindTransform.mult(this._boneInverseBindTransforms[i]).mult(bone._presentation._worldTransform));
+		      }
+
+		      var baseGeometry = this.baseGeometry;
+		      var baseVertex = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		      var baseNormal = baseGeometry.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
+		      // TODO: tangent
+		      //const pg = baseGeometry.presentation
+		      var pg = p.geometry;
+		      var vertex = pg.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.vertex)[0];
+		      var normal = pg.getGeometrySourcesForSemantic(_SCNGeometrySource2.default.Semantic.normal)[0];
+		      var weights = this._boneWeights;
+		      var indices = this._boneIndices;
+		      var len = weights.vectorCount;
+		      var vlen = weights.componentsPerVector;
+		      if (baseNormal) {
+		        for (var _i = 0; _i < len; _i++) {
+		          var bv = baseVertex._scnVectorAt(_i);
+		          var bn = baseNormal._scnVectorAt(_i);
+		          var w = weights._vectorAt(_i);
+		          var ind = indices._vectorAt(_i);
+		          var pos = new _SCNVector2.default(0, 0, 0);
+		          var nom = new _SCNVector2.default(0, 0, 0);
+		          for (var j = 0; j < vlen; j++) {
+		            if (ind[j] < 0) {
+		              continue;
+		            }
+		            if (w[j] === 0) {
+		              continue;
+		            }
+		            var jointMatrix = transforms[ind[j]];
+		            pos = pos.add(bv.transform(jointMatrix).mul(w[j]));
+		            nom = nom.add(bn.rotate(jointMatrix).mul(w[j]));
+		          }
+		          vertex._setVectorAt(pos, _i);
+		          normal._setVectorAt(nom, _i);
+		        }
+		      } else {
+		        // TODO: implement
+		      }
+		    }
 		  }, {
 		    key: 'bones',
 		    get: function get() {
@@ -48327,6 +48628,10 @@ var JSceneKitExample =
 		    get: function get() {
 		      return this._boneWeights;
 		    }
+		    //set boneWeights(newValue) {
+		    //  this._boneWeights = newValue
+		    //  this._checkUseGPU()
+		    //}
 
 		    /**
 		     * The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array.
@@ -48340,6 +48645,10 @@ var JSceneKitExample =
 		    get: function get() {
 		      return this._boneIndices;
 		    }
+		    //set boneIndices(newValue) {
+		    //  this._boneIndices = newValue
+		    //  this._checkUseGPU()
+		    //}
 
 		    /**
 		     * @access public
@@ -49934,12 +50243,12 @@ var JSceneKitExample =
 		        this._source._play();
 		        this._isRunning = true;
 		      }
-		      if (this._duration <= 0 && this._source._duration > 0) {
+		      if (this._duration <= 0 || this._source._duration > 0) {
 		        this._duration = this._source._duration;
 		      }
 		      var t = this._getTime(time, needTimeConversion);
 
-		      if (!this.wait) {
+		      if (!this._wait) {
 		        this._finished = true;
 		      } else if (!this._source.loops && t >= 1) {
 		        this._finished = true;
@@ -51571,6 +51880,26 @@ var JSceneKitExample =
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51588,79 +51917,174 @@ var JSceneKitExample =
 		var SCNCone = function (_SCNGeometry) {
 		  _inherits(SCNCone, _SCNGeometry);
 
+		  // Creating a Cone
+
+		  /**
+		   * Creates a cone geometry with the given top radius, bottom radius, and height.
+		   * @constructor
+		   * @access public
+		   * @param {number} topRadius - The radius of the cone’s top, forming a circle in the x- and z-axis dimensions of its local coordinate space.
+		   * @param {number} bottomRadius - The radius of the cone’s base, forming a circle in the x- and z-axis dimensions of its local coordinate space.
+		   * @param {number} height - The height of the cone along the y-axis of its local coordinate space.
+		   * @desc The cone is centered in its local coordinate system. For example, if you create a cone whose bottom radius is 5.0, top radius is 0.0, and height is 10.0, its apex is at the point {0, 5.0, 0}, and its base lies in the plane whose y-coordinate is -5.0, extending from -5.0 to 5.0 along both the x- and z-axes.Pass zero for topRadius or bottomRadius or parameter to create a cone whose sides taper to a single point, or a different value to create a frustum with a circular top.
+		   * @see https://developer.apple.com/reference/scenekit/scncone/1522863-init
+		   */
 		  function SCNCone() {
+		    var topRadius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.0;
+		    var bottomRadius = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0.5;
+		    var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1.0;
+
 		    _classCallCheck(this, SCNCone);
 
-		    return _possibleConstructorReturn(this, (SCNCone.__proto__ || Object.getPrototypeOf(SCNCone)).apply(this, arguments));
+		    // Adjusting a Cone’s Dimensions
+
+		    /**
+		     * The radius of the cone’s circular top. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncone/1524240-topradius
+		     */
+		    var _this = _possibleConstructorReturn(this, (SCNCone.__proto__ || Object.getPrototypeOf(SCNCone)).call(this, [], []));
+
+		    _this.topRadius = topRadius;
+
+		    /**
+		     * The radius of the cone’s circular base. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncone/1523198-bottomradius
+		     */
+		    _this.bottomRadius = bottomRadius;
+
+		    /**
+		     * The extent of the cylinder along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncone/1523219-height
+		     */
+		    _this.height = height;
+
+		    // Adjusting Geometric Detail
+
+		    /**
+		     * The number of subdivisions around the circumference of the cone. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncone/1523942-radialsegmentcount
+		     */
+		    _this.radialSegmentCount = 48;
+
+		    /**
+		     * The number of subdivisions in the sides of the cone along its y-axis. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scncone/1524113-heightsegmentcount
+		     */
+		    _this.heightSegmentCount = 1;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
+		    return _this;
 		  }
 
 		  _createClass(SCNCone, [{
-		    key: 'init',
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
 
+		      var top = this.height * 0.5;
+		      var bottom = -this.height * 0.5;
 
-		    /**
-		     * constructor
-		     * @access public
-		     * @returns {void}
-		     */
-		    value: function init() {
+		      var sideData = [];
+		      var topData = [];
+		      var bottomData = [];
 
-		      // Adjusting a Cone’s Dimensions
+		      var rStep = 2.0 * Math.PI / this.radialSegmentCount;
+		      var tStep = 1.0 / this.radialSegmentCount;
+		      for (var i = 0; i <= this.radialSegmentCount; i++) {
+		        var x = -Math.sin(rStep * i);
+		        var z = -Math.cos(rStep * i);
+		        var tvx = x * this.topRadius;
+		        var tvz = z * this.topRadius;
+		        var bvx = x * this.bottomRadius;
+		        var bvz = z * this.bottomRadius;
 
-		      /**
-		       * The radius of the cone’s circular top. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scncone/1524240-topradius
-		       */
-		      this.topRadius = 0;
+		        // vertex
+		        sideData.push(bvx, bottom, bvz);
+		        bottomData.push(-bvx, bottom, bvz
 
-		      /**
-		       * The radius of the cone’s circular base. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scncone/1523198-bottomradius
-		       */
-		      this.bottomRadius = 0;
+		        // normal
+		        );sideData.push(x, 0, z);
+		        bottomData.push(0, -1, 0
 
-		      /**
-		       * The extent of the cylinder along its y-axis. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scncone/1523219-height
-		       */
-		      this.height = 0;
+		        // texcoord
+		        );var tx = tStep * i;
+		        sideData.push(tx, 1.0);
 
-		      // Adjusting Geometric Detail
+		        var ttx = (1 + Math.cos(i * rStep)) * 0.5;
+		        var tty = (1 + Math.sin(i * rStep)) * 0.5;
+		        bottomData.push(ttx, tty
 
-		      /**
-		       * The number of subdivisions around the circumference of the cone. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scncone/1523942-radialsegmentcount
-		       */
-		      this.radialSegmentCount = 0;
+		        // vertex
+		        );sideData.push(tvx, top, tvz);
+		        bottomData.push(0, bottom, 0
 
-		      /**
-		       * The number of subdivisions in the sides of the cone along its y-axis. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scncone/1524113-heightsegmentcount
-		       */
-		      this.heightSegmentCount = 0;
+		        // normal
+		        );sideData.push(x, 0, z);
+		        bottomData.push(0, -1, 0
+
+		        // texcoord
+		        );sideData.push(tx, 0.0);
+		        bottomData.push(0.5, 0.5);
+		      }
+		      sourceData.push.apply(sourceData, sideData.concat(bottomData));
+
+		      var vectorCount = (this.radialSegmentCount + 1) * 4; // TODO: use heightSegmentCount
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var elements = [];
+		      var indexData0 = [];
+		      var indexData1 = [];
+		      var offset1 = (this.radialSegmentCount + 1) * 2;
+		      for (var _i = 0; _i < this.radialSegmentCount; _i++) {
+		        var base0 = _i * 2;
+		        indexData0.push(base0, base0 + 2, base0 + 3);
+		        var base1 = offset1 + base0;
+		        indexData1.push(base1, base1 + 2, base1 + 3);
+		      }
+		      elements.push(new _SCNGeometryElement2.default(indexData0, _SCNGeometryPrimitiveType2.default.triangles));
+		      elements.push(new _SCNGeometryElement2.default(indexData1, _SCNGeometryPrimitiveType2.default.triangles));
+
+		      this._geometryElements = elements;
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.radius, bottom, -this.radius),
+		        max: new _SCNVector2.default(this.radius, top, this.radius)
+		      };
 		    }
-
-		    // Creating a Cone
-
-		    /**
-		     * Creates a cone geometry with the given top radius, bottom radius, and height.
-		     * @access public
-		     * @param {number} topRadius - The radius of the cone’s top, forming a circle in the x- and z-axis dimensions of its local coordinate space.
-		     * @param {number} bottomRadius - The radius of the cone’s base, forming a circle in the x- and z-axis dimensions of its local coordinate space.
-		     * @param {number} height - The height of the cone along the y-axis of its local coordinate space.
-		     * @returns {void}
-		     * @desc The cone is centered in its local coordinate system. For example, if you create a cone whose bottom radius is 5.0, top radius is 0.0, and height is 10.0, its apex is at the point {0, 5.0, 0}, and its base lies in the plane whose y-coordinate is -5.0, extending from -5.0 to 5.0 along both the x- and z-axes.Pass zero for topRadius or bottomRadius or parameter to create a cone whose sides taper to a single point, or a different value to create a frustum with a circular top.
-		     * @see https://developer.apple.com/reference/scenekit/scncone/1522863-init
-		     */
-
-		  }, {
-		    key: 'init',
-		    value: function init(topRadius, bottomRadius, height) {}
 		  }]);
 
 		  return SCNCone;
@@ -51678,9 +52102,33 @@ var JSceneKitExample =
 		  value: true
 		});
 
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51710,7 +52158,10 @@ var JSceneKitExample =
 		   * @desc The cylinder is centered in its local coordinate system. For example, if you create a cylinder whose radius is 5.0 and height is 10.0, its circular cross section extends from -5.0 to 5.0 along the x- and z-axes, and the y-coordinates of its base and top are -5.0 and 5.0, respectively.
 		   * @see https://developer.apple.com/reference/scenekit/scncylinder/1523685-init
 		   */
-		  function SCNCylinder(radius, height) {
+		  function SCNCylinder() {
+		    var radius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.5;
+		    var height = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1.0;
+
 		    _classCallCheck(this, SCNCylinder);
 
 		    // Adjusting a Cylinder’s Dimensions
@@ -51720,7 +52171,7 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scncylinder/1522674-radius
 		     */
-		    var _this = _possibleConstructorReturn(this, (SCNCylinder.__proto__ || Object.getPrototypeOf(SCNCylinder)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNCylinder.__proto__ || Object.getPrototypeOf(SCNCylinder)).call(this, [], []));
 
 		    _this.radius = radius;
 
@@ -51738,16 +52189,146 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scncylinder/1524002-radialsegmentcount
 		     */
-		    _this.radialSegmentCount = 0;
+		    _this.radialSegmentCount = 48;
 
 		    /**
 		     * The number of subdivisions in the sides of the cylinder along its y-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scncylinder/1523330-heightsegmentcount
 		     */
-		    _this.heightSegmentCount = 0;
+		    _this.heightSegmentCount = 1;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
+
+		  _createClass(SCNCylinder, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+
+		      var top = this.height * 0.5;
+		      var bottom = -this.height * 0.5;
+
+		      var sideData = [];
+		      var topData = [];
+		      var bottomData = [];
+
+		      var rStep = 2.0 * Math.PI / this.radialSegmentCount;
+		      var tStep = 1.0 / this.radialSegmentCount;
+		      for (var i = 0; i <= this.radialSegmentCount; i++) {
+		        var x = -Math.sin(rStep * i);
+		        var z = -Math.cos(rStep * i);
+		        var vx = x * this.radius;
+		        var vz = z * this.radius;
+
+		        // vertex
+		        sideData.push(vx, bottom, vz);
+		        topData.push(vx, top, vz);
+		        bottomData.push(-vx, bottom, vz
+
+		        // normal
+		        );sideData.push(x, 0, z);
+		        topData.push(0, 1, 0);
+		        bottomData.push(0, -1, 0
+
+		        // texcoord
+		        );var tx = tStep * i;
+		        sideData.push(tx, 1.0);
+
+		        var ttx = (1 + Math.cos(i * rStep)) * 0.5;
+		        var tty = (1 + Math.sin(i * rStep)) * 0.5;
+		        topData.push(ttx, tty);
+		        bottomData.push(ttx, tty
+
+		        // vertex
+		        );sideData.push(vx, top, vz);
+		        topData.push(0, top, 0);
+		        bottomData.push(0, bottom, 0
+
+		        // normal
+		        );sideData.push(x, 0, z);
+		        topData.push(0, 1, 0);
+		        bottomData.push(0, -1, 0
+
+		        // texcoord
+		        );sideData.push(tx, 0.0);
+		        topData.push(0.5, 0.5);
+		        bottomData.push(0.5, 0.5);
+		      }
+		      sourceData.push.apply(sourceData, sideData.concat(topData, bottomData));
+
+		      var vectorCount = (this.radialSegmentCount + 1) * 6;
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var elements = [];
+		      var indexData0 = [];
+		      var indexData1 = [];
+		      var indexData2 = [];
+		      var offset1 = (this.radialSegmentCount + 1) * 2;
+		      var offset2 = (this.radialSegmentCount + 1) * 4;
+		      for (var _i = 0; _i < this.radialSegmentCount; _i++) {
+		        var base0 = _i * 2;
+		        indexData0.push(base0, base0 + 3, base0 + 1);
+		        indexData0.push(base0, base0 + 2, base0 + 3);
+
+		        var base1 = offset1 + base0;
+		        indexData1.push(base1, base1 + 2, base1 + 3);
+
+		        var base2 = offset2 + base0;
+		        indexData2.push(base2, base2 + 2, base2 + 3);
+		      }
+		      elements.push(new _SCNGeometryElement2.default(indexData0, _SCNGeometryPrimitiveType2.default.triangles));
+		      elements.push(new _SCNGeometryElement2.default(indexData1, _SCNGeometryPrimitiveType2.default.triangles));
+		      elements.push(new _SCNGeometryElement2.default(indexData2, _SCNGeometryPrimitiveType2.default.triangles));
+
+		      this._geometryElements = elements;
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.radius, bottom, -this.radius),
+		        max: new _SCNVector2.default(this.radius, top, this.radius)
+		      };
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNCylinder.prototype.__proto__ || Object.getPrototypeOf(SCNCylinder.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
+		  }]);
 
 		  return SCNCylinder;
 		}(_SCNGeometry3.default);
@@ -51770,6 +52351,26 @@ var JSceneKitExample =
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51787,75 +52388,157 @@ var JSceneKitExample =
 		var SCNFloor = function (_SCNGeometry) {
 		  _inherits(SCNFloor, _SCNGeometry);
 
+		  /**
+		   * constructor
+		   * @constructor
+		   * @access public
+		   */
 		  function SCNFloor() {
 		    _classCallCheck(this, SCNFloor);
 
-		    return _possibleConstructorReturn(this, (SCNFloor.__proto__ || Object.getPrototypeOf(SCNFloor)).apply(this, arguments));
+		    // Adding Reflections to a Floor
+
+		    /**
+		     * The intensity of the scene’s reflection on the floor. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1524175-reflectivity
+		     */
+		    var _this = _possibleConstructorReturn(this, (SCNFloor.__proto__ || Object.getPrototypeOf(SCNFloor)).call(this, [], []));
+
+		    _this.reflectivity = 0.25;
+
+		    /**
+		     * The distance from the floor at which scene contents are no longer reflected. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1522781-reflectionfalloffend
+		     */
+		    _this.reflectionFalloffEnd = 0.0;
+
+		    /**
+		     * The distance from the floor at which scene contents are reflected at full intensity. Animatable.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1524237-reflectionfalloffstart
+		     */
+		    _this.reflectionFalloffStart = 0.0;
+
+		    /**
+		     * The resolution scale factor of the offscreen buffer that SceneKit uses to render reflections.
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1522809-reflectionresolutionscalefactor
+		     */
+		    _this.reflectionResolutionScaleFactor = 1.0;
+
+		    // Instance Properties
+
+		    /**
+		     * 
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/2091890-length
+		     */
+		    _this.length = 2.0;
+
+		    /**
+		     * 
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1845281-reflectioncategorybitmask
+		     */
+		    _this.reflectionCategoryBitMask = -1;
+
+		    /**
+		     * 
+		     * @type {number}
+		     * @see https://developer.apple.com/reference/scenekit/scnfloor/1845280-width
+		     */
+		    _this.width = 2.0;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
+		    return _this;
 		  }
 
 		  _createClass(SCNFloor, [{
-		    key: 'init',
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+		      var indexData = [];
+		      var segmentCount = 10;
+		      var xStep = this.width / segmentCount;
+		      var yStep = -this.length / segmentCount;
+		      var txStep = 1.0 / segmentCount;
+		      var tyStep = -1.0 / segmentCount;
 
+		      var y = this.length * 0.5;
+		      var ty = 1.0;
+		      for (var h = 0; h <= segmentCount; h++) {
+		        var x = -this.width * 0.5;
+		        var tx = 0.0;
+		        for (var w = 0; w <= segmentCount; w++) {
+		          // vector
+		          sourceData.push(x, y, 0
 
-		    /**
-		     * constructor
-		     * @access public
-		     * @returns {void}
-		     */
-		    value: function init() {
+		          // normal
+		          );sourceData.push(0, 0, 1
 
-		      // Adding Reflections to a Floor
+		          // texcoord
+		          );sourceData.push(tx, ty);
 
-		      /**
-		       * The intensity of the scene’s reflection on the floor. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1524175-reflectivity
-		       */
-		      this.reflectivity = 0;
+		          x += xStep;
+		          tx += txStep;
+		        }
+		        y += yStep;
+		        ty += tyStep;
+		      }
 
-		      /**
-		       * The distance from the floor at which scene contents are no longer reflected. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1522781-reflectionfalloffend
-		       */
-		      this.reflectionFalloffEnd = 0;
+		      var offset = segmentCount + 1;
+		      for (var i = 0; i < segmentCount; i++) {
+		        var base0 = i * 11;
+		        for (var j = 0; j < segmentCount; j++) {
+		          var base = base0 + j;
+		          var i2 = base + offset;
+		          indexData.push(base, base + 1, i2 + 1);
+		          indexData.push(base, i2 + 1, i2);
+		        }
+		      }
 
-		      /**
-		       * The distance from the floor at which scene contents are reflected at full intensity. Animatable.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1524237-reflectionfalloffstart
-		       */
-		      this.reflectionFalloffStart = 0;
+		      var vectorCount = (segmentCount + 1) * (segmentCount + 1);
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
 
-		      /**
-		       * The resolution scale factor of the offscreen buffer that SceneKit uses to render reflections.
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1522809-reflectionresolutionscalefactor
-		       */
-		      this.reflectionResolutionScaleFactor = 0;
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
 
-		      // Instance Properties
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
 
-		      /**
-		       * 
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/2091890-length
-		       */
-		      this.length = 0;
+		      var element = new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles);
 
-		      /**
-		       * 
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1845281-reflectioncategorybitmask
-		       */
-		      this.reflectionCategoryBitMask = 0;
-
-		      /**
-		       * 
-		       * @type {number}
-		       * @see https://developer.apple.com/reference/scenekit/scnfloor/1845280-width
-		       */
-		      this.width = 0;
+		      this._geometryElements = [element];
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.width * 0.5, -this.length * 0.5, 0),
+		        max: new _SCNVector2.default(this.width * 0.5, this.length * 0.5, 0)
+		      };
 		    }
 		  }]);
 
@@ -52562,11 +53245,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(110);
+		var _SCNPhysicsBehavior2 = __webpack_require__(116);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
@@ -52768,11 +53451,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(110);
+		var _SCNPhysicsBehavior2 = __webpack_require__(116);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
@@ -52899,11 +53582,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(110);
+		var _SCNPhysicsBehavior2 = __webpack_require__(116);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
@@ -53091,11 +53774,11 @@ var JSceneKitExample =
 
 		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-		var _SCNPhysicsBehavior2 = __webpack_require__(110);
+		var _SCNPhysicsBehavior2 = __webpack_require__(116);
 
 		var _SCNPhysicsBehavior3 = _interopRequireDefault(_SCNPhysicsBehavior2);
 
-		var _SCNPhysicsBody = __webpack_require__(113);
+		var _SCNPhysicsBody = __webpack_require__(112);
 
 		var _SCNPhysicsBody2 = _interopRequireDefault(_SCNPhysicsBody);
 
@@ -53427,6 +54110,26 @@ var JSceneKitExample =
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53477,7 +54180,10 @@ var JSceneKitExample =
 
 		  }]);
 
-		  function SCNPlane(width, height) {
+		  function SCNPlane() {
+		    var width = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1.0;
+		    var height = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1.0;
+
 		    _classCallCheck(this, SCNPlane);
 
 		    // Adjusting a Plane’s Dimensions
@@ -53487,16 +54193,16 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnplane/1523782-width
 		     */
-		    var _this = _possibleConstructorReturn(this, (SCNPlane.__proto__ || Object.getPrototypeOf(SCNPlane)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNPlane.__proto__ || Object.getPrototypeOf(SCNPlane)).call(this, [], []));
 
-		    _this.width = 0;
+		    _this.width = width;
 
 		    /**
 		     * The extent of the plane along its vertical axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnplane/1522837-height
 		     */
-		    _this.height = 0;
+		    _this.height = height;
 
 		    // Adjusting Geometric Detail
 
@@ -53505,14 +54211,14 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnplane/1523991-widthsegmentcount
 		     */
-		    _this.widthSegmentCount = 0;
+		    _this.widthSegmentCount = 1;
 
 		    /**
 		     * The number of subdivisions in the plane’s surface along its vertical axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnplane/1522889-heightsegmentcount
 		     */
-		    _this.heightSegmentCount = 0;
+		    _this.heightSegmentCount = 1;
 
 		    // Adding Rounded Corners
 
@@ -53528,10 +54234,84 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnplane/1524234-cornersegmentcount
 		     */
-		    _this.cornerSegmentCount = 0;
+		    _this.cornerSegmentCount = 10;
 
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
+
+		  _createClass(SCNPlane, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+		      var indexData = [];
+
+		      // TODO: chamfer
+		      var wStep = 1.0 / this.widthSegmentCount;
+		      for (var i = 0; i <= this.heightSegmentCount; i++) {
+		        var ty = i / this.heightSegmentCount;
+		        var y = (-0.5 + ty) * this.height;
+		        for (var j = 0; j <= this.widthSegmentCount; j++) {
+		          var tx = j / this.widthSegmentCount;
+		          var x = (-0.5 + tx) * this.width;
+
+		          sourceData.push(x, y, 0.0 // position
+		          );sourceData.push(0.0, 0.0, 1.0 // normal
+		          );sourceData.push(tx, 1.0 - ty // texcoord
+		          );
+		        }
+		      }
+
+		      var numSegments = this.widthSegmentCount * this.heightSegmentCount;
+		      for (var _i = 0; _i < numSegments; _i++) {
+		        var index = _i * 4;
+		        indexData.push(index, index + 1, index + 3);
+		        indexData.push(index, index + 3, index + 2);
+		      }
+
+		      var vectorCount = (this.widthSegmentCount + 1) * (this.heightSegmentCount + 1);
+
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var element = new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles);
+
+		      this._geometryElements = [element];
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-0.5 * this.width, -0.5 * this.height, 0.0),
+		        max: new _SCNVector2.default(0.5 * this.width, 0.5 * this.height, 0.0)
+		      };
+		    }
+		  }]);
 
 		  return SCNPlane;
 		}(_SCNGeometry3.default);
@@ -53548,11 +54328,35 @@ var JSceneKitExample =
 		  value: true
 		});
 
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
 
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
+
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+		function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -53581,7 +54385,11 @@ var JSceneKitExample =
 		   * @desc The pyramid’s base is centered in its local coordinate system. For example, if you create a pyramid whose width, height and length are all 10.0, its apex is at the point {0, 10.0, 0}, and its base lies in the plane whose y-coordinate is 0.0, extending from -5.0 to 5.0 along both the x- and z-axes.
 		   * @see https://developer.apple.com/reference/scenekit/scnpyramid/1523254-init
 		   */
-		  function SCNPyramid(width, height, length) {
+		  function SCNPyramid() {
+		    var width = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1.0;
+		    var height = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1.0;
+		    var length = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1.0;
+
 		    _classCallCheck(this, SCNPyramid);
 
 		    // Adjusting a Pyramid’s Dimensions
@@ -53591,23 +54399,24 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1522613-width
 		     */
-		    var _this = _possibleConstructorReturn(this, (SCNPyramid.__proto__ || Object.getPrototypeOf(SCNPyramid)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNPyramid.__proto__ || Object.getPrototypeOf(SCNPyramid)).call(this, [], []));
 
-		    _this.width = 0;
+		    _this.width = 1.0;
 
 		    /**
 		     * The extent of the pyramid along its y-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1522805-height
 		     */
-		    _this.height = 0;
+		    _this.height = height;
 
 		    /**
 		     * The extent of the pyramid along its z-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1524203-length
 		     */
-		    _this.length = 0;
+		    _this.length = length; // For the original SceneKit, the default value is 0.0, but it should be 1.0.
+
 
 		    // Adjusting Geometric Detail
 
@@ -53616,24 +54425,176 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1523083-widthsegmentcount
 		     */
-		    _this.widthSegmentCount = 0;
+		    _this.widthSegmentCount = 1;
 
 		    /**
 		     * The number of subdivisions in each face of the pyramid along its y-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1524059-heightsegmentcount
 		     */
-		    _this.heightSegmentCount = 0;
+		    _this.heightSegmentCount = 1;
 
 		    /**
 		     * The number of subdivisions in each face of the pyramid along its z-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scnpyramid/1524227-lengthsegmentcount
 		     */
-		    _this.lengthSegmentCount = 0;
+		    _this.lengthSegmentCount = 1;
 
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
+
+		  _createClass(SCNPyramid, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+
+		      // TODO: use segment count
+
+		      var right = this.width * 0.5;
+		      var left = -right;
+		      var front = this.length * 0.5;
+		      var back = -front;
+		      var top = this.height;
+		      var bottom = 0;
+
+		      /*
+		      const nfront = (new SCNVector3(0, front, top)).normalize()
+		      const nleft = (new SCNVector3(top, left, 0)).normalize()
+		      const nright = (new SCNVector3(top, right, 0)).normalize()
+		      const nback = (new SCNVector3(0, back, top)).normalize()
+		      const tex = [[0.0, 1.0], [0.0, 0.0], [1.0, 1.0], [1.0, 0.0]]
+		      */
+
+		      // front
+		      sourceData.push.apply(sourceData, _toConsumableArray(this._createSideFace(left, front, right, front)));
+
+		      // right
+		      sourceData.push.apply(sourceData, _toConsumableArray(this._createSideFace(right, front, right, back)));
+
+		      // back
+		      sourceData.push.apply(sourceData, _toConsumableArray(this._createSideFace(right, back, left, back)));
+
+		      // left
+		      sourceData.push.apply(sourceData, _toConsumableArray(this._createSideFace(left, back, left, front)));
+
+		      // bottom
+		      sourceData.push(left, 0, back);
+		      sourceData.push(0, -1, 0);
+		      sourceData.push(0.0, 1.0);
+
+		      sourceData.push(right, 0, back);
+		      sourceData.push(0, -1, 0);
+		      sourceData.push(1.0, 1.0);
+
+		      sourceData.push(left, 0, front);
+		      sourceData.push(0, -1, 0);
+		      sourceData.push(0.0, 0.0);
+
+		      sourceData.push(right, 0, front);
+		      sourceData.push(0, -1, 0);
+		      sourceData.push(1.0, 0.0);
+
+		      var vectorCount = 20; // TODO: use segmentCount
+
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var elements = [];
+
+		      // TODO: use segmentCount
+		      var indexData = [[0, 2, 3], [4, 6, 7], [8, 10, 11], [12, 14, 15], [16, 17, 19, 16, 19, 18]];
+
+		      for (var i = 0; i < 5; i++) {
+		        elements.push(new _SCNGeometryElement2.default(indexData[i], _SCNGeometryPrimitiveType2.default.triangles));
+		      }
+
+		      this._geometryElements = elements;
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(left, bottom, back),
+		        max: new _SCNVector2.default(right, top, front)
+		      };
+		    }
+		  }, {
+		    key: '_createSideFace',
+		    value: function _createSideFace(x0, z0, x1, z1) {
+		      var top = this.height;
+
+		      var data = [];
+		      var normal = new _SCNVector2.default();
+
+		      if (x0 === x1) {
+		        normal.x = top;
+		        normal.y = x0;
+		        if (x0 < 0) {
+		          normal.x = -normal.x;
+		          normal.y = -normal.y;
+		        }
+		      } else if (z0 === z1) {
+		        normal.z = top;
+		        normal.y = z0;
+		        if (z0 < 0) {
+		          normal.z = -normal.z;
+		          normal.y = -normal.y;
+		        }
+		      } else {
+		        throw new Error('position inconsistent');
+		      }
+		      normal = normal.normalize
+
+		      // left bottom
+		      ();data.push(x0, 0, z0);
+		      data.push(normal.x, normal.y, normal.z);
+		      data.push(0.0, 1.0
+
+		      // top
+		      );data.push(0, this.height, 0);
+		      data.push(normal.x, normal.y, normal.z);
+		      data.push(0.0, 0.0
+
+		      // right bottom
+		      );data.push(x1, 0, z1);
+		      data.push(normal.x, normal.y, normal.z);
+		      data.push(1.0, 1.0
+
+		      // top again
+		      );data.push(0, this.height, 0);
+		      data.push(normal.x, normal.y, normal.z);
+		      data.push(1.0, 0.0);
+
+		      return data;
+		    }
+		  }]);
 
 		  return SCNPyramid;
 		}(_SCNGeometry3.default);
@@ -54283,9 +55244,31 @@ var JSceneKitExample =
 		  value: true
 		});
 
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54315,7 +55298,10 @@ var JSceneKitExample =
 		   * @desc The torus is centered in its local coordinate system. For example, if you create a torus whose ring radius is 5.0 and pipe radius is 1.0, it extends from -6.0 to 6.0 (with a hole through the center from -4.0 to 4.0) in the x- and z-axes and from -1.0 to 1.0 in the y-axis.
 		   * @see https://developer.apple.com/reference/scenekit/scntorus/1523833-init
 		   */
-		  function SCNTorus(ringRadius, pipeRadius) {
+		  function SCNTorus() {
+		    var ringRadius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.5;
+		    var pipeRadius = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0.25;
+
 		    _classCallCheck(this, SCNTorus);
 
 		    // Adjusting a Torus’ Dimensions
@@ -54325,16 +55311,16 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntorus/1522906-ringradius
 		     */
-		    var _this = _possibleConstructorReturn(this, (SCNTorus.__proto__ || Object.getPrototypeOf(SCNTorus)).call(this));
+		    var _this = _possibleConstructorReturn(this, (SCNTorus.__proto__ || Object.getPrototypeOf(SCNTorus)).call(this, [], []));
 
-		    _this.ringRadius = 0;
+		    _this.ringRadius = ringRadius;
 
 		    /**
 		     * The minor radius of the torus, defining the pipe that encircles the torus ring. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntorus/1522623-piperadius
 		     */
-		    _this.pipeRadius = 0;
+		    _this.pipeRadius = pipeRadius;
 
 		    // Configuring Torus Properties
 
@@ -54343,16 +55329,107 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntorus/1523598-ringsegmentcount
 		     */
-		    _this.ringSegmentCount = 0;
+		    _this.ringSegmentCount = 48;
 
 		    /**
 		     * The number of subdivisions around the torus pipe. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntorus/1522807-pipesegmentcount
 		     */
-		    _this.pipeSegmentCount = 0;
+		    _this.pipeSegmentCount = 24;
+
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
+
+		  _createClass(SCNTorus, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+		      var indexData = [];
+		      var vectorCount = (this.ringSegmentCount + 1) * (this.pipeSegmentCount + 1);
+
+		      for (var ri = 0; ri <= this.ringSegmentCount; ri++) {
+		        var r = 2.0 * ri * Math.PI / this.ringSegmentCount;
+		        var sinr = Math.sin(r);
+		        var cosr = Math.cos(r);
+		        var cx = -sinr * this.ringRadius;
+		        var cz = -cosr * this.ringRadius;
+		        var tx = ri / this.ringSegmentCount;
+
+		        for (var pi = 0; pi <= this.pipeSegmentCount; pi++) {
+		          var pr = 2.0 * pi * Math.PI / this.pipeSegmentCount;
+		          var sinp = Math.sin(pr);
+		          var cosp = Math.cos(pr);
+		          var x = cx + this.pipeRadius * sinr * cosp;
+		          var y = -this.pipeRadius * sinp;
+		          var z = cz + this.pipeRadius * cosr * cosp;
+
+		          // vertex
+		          sourceData.push(x, y, z
+
+		          // normal
+		          );sourceData.push(sinr * cosp, -sinp, cosr * cosp
+
+		          // texcoord
+		          );var tz = 1.0 - pi / this.pipeSegmentCount;
+		          sourceData.push(tx, tz);
+		        }
+		      }
+
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var indexLen = this.ringSegmentCount * this.pipeSegmentCount;
+		      var base = 0;
+		      for (var i = 0; i < indexLen; i++) {
+		        var i2 = base + this.pipeSegmentCount + 1;
+		        indexData.push(base, i2 + 1, base + 1);
+		        indexData.push(base, i2, i2 + 1);
+		        base += 1;
+		        if ((i + 1) % this.pipeSegmentCount === 0) {
+		          base += 1;
+		        }
+		      }
+
+		      var element = new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles);
+
+		      this._geometryElements = [element];
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.radius, -this.radius, -this.radius),
+		        max: new _SCNVector2.default(this.radius, this.radius, this.radius)
+		      };
+		    }
+		  }]);
 
 		  return SCNTorus;
 		}(_SCNGeometry3.default);
@@ -54449,9 +55526,33 @@ var JSceneKitExample =
 		  value: true
 		});
 
+		var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+		var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 		var _SCNGeometry2 = __webpack_require__(78);
 
 		var _SCNGeometry3 = _interopRequireDefault(_SCNGeometry2);
+
+		var _SCNGeometryElement = __webpack_require__(83);
+
+		var _SCNGeometryElement2 = _interopRequireDefault(_SCNGeometryElement);
+
+		var _SCNGeometryPrimitiveType = __webpack_require__(84);
+
+		var _SCNGeometryPrimitiveType2 = _interopRequireDefault(_SCNGeometryPrimitiveType);
+
+		var _SCNGeometrySource = __webpack_require__(81);
+
+		var _SCNGeometrySource2 = _interopRequireDefault(_SCNGeometrySource);
+
+		var _SCNMaterial = __webpack_require__(86);
+
+		var _SCNMaterial2 = _interopRequireDefault(_SCNMaterial);
+
+		var _SCNVector = __webpack_require__(54);
+
+		var _SCNVector2 = _interopRequireDefault(_SCNVector);
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54482,7 +55583,11 @@ var JSceneKitExample =
 		   * @desc The tube is centered in its local coordinate system. For example, if you create a tube whose outer radius is 5.0, inner radius is 1.0, and height is 10.0, its circular cross section extends from -5.0 to 5.0 along the x- and z-axes, the y-coordinates of its base and top are -5.0 and 5.0, and the hole through its center extends from -0.5 to 0.5 along the x- and z-axes.
 		   * @see https://developer.apple.com/reference/scenekit/scntube/1522843-init
 		   */
-		  function SCNTube(innerRadius, outerRadius, height) {
+		  function SCNTube() {
+		    var innerRadius = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0.25;
+		    var outerRadius = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0.5;
+		    var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1.0;
+
 		    _classCallCheck(this, SCNTube);
 
 		    // Adjusting a Tube’s Dimensions
@@ -54494,21 +55599,21 @@ var JSceneKitExample =
 		     */
 		    var _this = _possibleConstructorReturn(this, (SCNTube.__proto__ || Object.getPrototypeOf(SCNTube)).call(this));
 
-		    _this.outerRadius = 0;
+		    _this.outerRadius = outerRadius;
 
 		    /**
 		     * The radius of the circular hole through the tube. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntube/1524070-innerradius
 		     */
-		    _this.innerRadius = 0;
+		    _this.innerRadius = innerRadius;
 
 		    /**
 		     * The extent of the tube along its y-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntube/1522640-height
 		     */
-		    _this.height = 0;
+		    _this.height = height;
 
 		    // Adjusting Geometric Detail
 
@@ -54517,17 +55622,149 @@ var JSceneKitExample =
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntube/1523619-radialsegmentcount
 		     */
-		    _this.radialSegmentCount = 0;
+		    _this.radialSegmentCount = 48;
 
 		    /**
 		     * The number of subdivisions in the inner and outer surfaces of the tube along its y-axis. Animatable.
 		     * @type {number}
 		     * @see https://developer.apple.com/reference/scenekit/scntube/1523080-heightsegmentcount
 		     */
-		    _this.heightSegmentCount = 0;
+		    _this.heightSegmentCount = 1;
 
+		    _this._createGeometry();
+		    _this.materials.push(new _SCNMaterial2.default());
 		    return _this;
 		  }
+
+		  _createClass(SCNTube, [{
+		    key: '_createGeometry',
+		    value: function _createGeometry() {
+		      var sourceData = [];
+
+		      var top = this.height * 0.5;
+		      var bottom = -this.height * 0.5;
+
+		      var outerData = [];
+		      var innerData = [];
+		      var topData = [];
+		      var bottomData = [];
+
+		      var rStep = 2.0 * Math.PI / this.radialSegmentCount;
+		      var tStep = 1.0 / this.radialSegmentCount;
+		      for (var i = 0; i <= this.radialSegmentCount; i++) {
+		        var x = -Math.sin(rStep * i);
+		        var z = -Math.cos(rStep * i);
+		        var ovx = x * this.outerRadius;
+		        var ovz = z * this.outerRadius;
+		        var ivx = x * this.innerRadius;
+		        var ivz = z * this.innerRadius;
+
+		        // vertex
+		        outerData.push(ovx, bottom, ovz);
+		        innerData.push(ivx, top, ivz);
+		        topData.push(ovx, top, ovz);
+		        bottomData.push(-ovx, bottom, ovz
+
+		        // normal
+		        );outerData.push(x, 0, z);
+		        innerData.push(-x, 0, -z);
+		        topData.push(0, 1, 0);
+		        bottomData.push(0, -1, 0
+
+		        // texcoord
+		        );var tx = tStep * i;
+		        outerData.push(tx, 1.0);
+		        innerData.push(1.0 - tx, 0.0);
+
+		        var ttx = 0.5 + Math.cos(rStep * i) * 0.5;
+		        var tty = 0.5 + Math.sin(rStep * i) * 0.5;
+		        topData.push(ttx, tty);
+		        bottomData.push(ttx, tty
+
+		        // vertex
+		        );outerData.push(ovx, top, ovz);
+		        innerData.push(ivx, bottom, ivz);
+		        topData.push(ivx, top, ivz);
+		        bottomData.push(-ivx, bottom, ivz
+
+		        // normal
+		        );outerData.push(x, 0, z);
+		        innerData.push(-x, 0, -z);
+		        topData.push(0, 1, 0);
+		        bottomData.push(0, -1, 0
+
+		        // texcoord
+		        );outerData.push(tx, 0.0);
+		        innerData.push(1.0 - tx, 1.0);
+
+		        var ttx2 = 0.5 + Math.cos(rStep * i) * 0.25;
+		        var tty2 = 0.5 + Math.sin(rStep * i) * 0.25;
+		        topData.push(ttx2, tty2);
+		        bottomData.push(ttx2, tty2);
+		      }
+		      sourceData.push.apply(sourceData, outerData.concat(innerData, topData, bottomData));
+
+		      var vectorCount = (this.radialSegmentCount + 1) * 8;
+		      var vertexSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.vertex, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      0, // offset
+		      32 // sride
+		      );
+
+		      var normalSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.normal, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      3, // componentsPerVector
+		      4, // bytesPerComponent
+		      12, // offset
+		      32 // stride
+		      );
+
+		      var texcoordSource = new _SCNGeometrySource2.default(sourceData, // data
+		      _SCNGeometrySource2.default.Semantic.texcoord, // semantic
+		      vectorCount, // vectorCount
+		      true, // floatComponents
+		      2, // componentsPerVector
+		      4, // bytesPerComponent
+		      24, // offset
+		      32 // stride
+		      );
+
+		      var elements = [];
+		      for (var _i = 0; _i < 4; _i++) {
+		        var indexData = [];
+		        var offset = (this.radialSegmentCount + 1) * _i * 2;
+		        for (var j = 0; j < this.radialSegmentCount; j++) {
+		          var base = offset + j * 2;
+		          indexData.push(base, base + 3, base + 1);
+		          indexData.push(base, base + 2, base + 3);
+		        }
+		        elements.push(new _SCNGeometryElement2.default(indexData, _SCNGeometryPrimitiveType2.default.triangles));
+		      }
+
+		      this._geometryElements = elements;
+		      this._geometrySources = [vertexSource, normalSource, texcoordSource];
+		      this.boundingBox = {
+		        min: new _SCNVector2.default(-this.outerRadius, bottom, -this.outerRadius),
+		        max: new _SCNVector2.default(this.outerRadius, top, this.outerRadius)
+		      };
+		    }
+		  }, {
+		    key: '_updateBoundingBoxForSkinner',
+		    value: function _updateBoundingBoxForSkinner() {
+		      var skinner = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+		      if (skinner === null) {
+		        return this.boundingBox;
+		      }
+		      return _get(SCNTube.prototype.__proto__ || Object.getPrototypeOf(SCNTube.prototype), '_updateBoundingBoxForSkinner', this).call(this, skinner);
+		    }
+		  }]);
 
 		  return SCNTube;
 		}(_SCNGeometry3.default);
@@ -55788,6 +57025,7 @@ var JSceneKitExample =
 		      ///////////////////////
 		      // renders the scene //
 		      ///////////////////////
+		      this._updateSkinner();
 		      this._updateMorph();
 		      this._updateParticles();
 
@@ -55949,9 +57187,27 @@ var JSceneKitExample =
 		      this._scene.rootNode._updateBoundingBox();
 		    }
 		  }, {
+		    key: '_updateSkinner',
+		    value: function _updateSkinner(node) {
+		      var _this4 = this;
+
+		      if (typeof node === 'undefined') {
+		        if (this._scene) {
+		          this._updateSkinner(this._scene.rootNode);
+		        }
+		        return;
+		      }
+		      if (node.skinner !== null && !node.skinner._useGPU) {
+		        node.skinner._update(node);
+		      }
+		      node.childNodes.forEach(function (child) {
+		        _this4._updateSkinner(child);
+		      });
+		    }
+		  }, {
 		    key: '_updateMorph',
 		    value: function _updateMorph(node) {
-		      var _this4 = this;
+		      var _this5 = this;
 
 		      if (typeof node === 'undefined') {
 		        if (this._scene) {
@@ -55963,7 +57219,7 @@ var JSceneKitExample =
 		        node.morpher._morph(node);
 		      }
 		      node.childNodes.forEach(function (child) {
-		        _this4._updateMorph(child);
+		        _this5._updateMorph(child);
 		      });
 		    }
 		  }, {
@@ -55985,21 +57241,21 @@ var JSceneKitExample =
 		  }, {
 		    key: '_runActionForNode',
 		    value: function _runActionForNode(node) {
-		      var _this5 = this;
+		      var _this6 = this;
 
 		      this._runActionForObject(node);
 		      node.childNodes.forEach(function (child) {
-		        return _this5._runActionForNode(child);
+		        return _this6._runActionForNode(child);
 		      });
 		    }
 		  }, {
 		    key: '_runActionForObject',
 		    value: function _runActionForObject(obj) {
-		      var _this6 = this;
+		      var _this7 = this;
 
 		      var deleteKeys = [];
 		      obj._actions.forEach(function (action, key) {
-		        action._applyAction(obj, _this6.currentTime);
+		        action._applyAction(obj, _this7.currentTime);
 		        if (action._finished) {
 		          if (action._completionHandler) {
 		            action._completionHandler();
@@ -56022,21 +57278,21 @@ var JSceneKitExample =
 		  }, {
 		    key: '_runSKActionForNode',
 		    value: function _runSKActionForNode(node) {
-		      var _this7 = this;
+		      var _this8 = this;
 
 		      this._runSKActionForObject(node);
 		      node.children.forEach(function (child) {
-		        return _this7._runSKActionForNode(child);
+		        return _this8._runSKActionForNode(child);
 		      });
 		    }
 		  }, {
 		    key: '_runSKActionForObject',
 		    value: function _runSKActionForObject(obj) {
-		      var _this8 = this;
+		      var _this9 = this;
 
 		      var deleteKeys = [];
 		      obj._actions.forEach(function (action, key) {
-		        action._applyAction(obj, _this8.currentTime);
+		        action._applyAction(obj, _this9.currentTime);
 		        if (action._finished) {
 		          if (action._completionHandler) {
 		            action._completionHandler();
@@ -56059,10 +57315,10 @@ var JSceneKitExample =
 		  }, {
 		    key: '_runAnimationForNode',
 		    value: function _runAnimationForNode(node) {
-		      var _this9 = this;
+		      var _this10 = this;
 
 		      node.childNodes.forEach(function (child) {
-		        return _this9._runAnimationForNode(child);
+		        return _this10._runAnimationForNode(child);
 		      });
 		      this._runAnimationForObject(node
 		      // TODO: implement animations for all animatable objects:
@@ -56071,10 +57327,10 @@ var JSceneKitExample =
 		      );if (node.geometry) {
 		        this._runAnimationForObject(node.geometry);
 		        node.geometry.materials.forEach(function (material) {
-		          _this9._runAnimationForObject(material);
+		          _this10._runAnimationForObject(material);
 		          var properties = [material._diffuse, material._ambient, material._specular, material._normal, material._reflective, material._emission, material._transparent, material._multiply, material._ambientOcclusion, material._selfIllumination, material._metalness, material._roughness];
 		          properties.forEach(function (prop) {
-		            _this9._runAnimationForObject(prop);
+		            _this10._runAnimationForObject(prop);
 		          });
 		        });
 		      }
@@ -56108,11 +57364,11 @@ var JSceneKitExample =
 		  }, {
 		    key: '_runAnimationForObject',
 		    value: function _runAnimationForObject(obj) {
-		      var _this10 = this;
+		      var _this11 = this;
 
 		      var deleteKeys = [];
 		      obj._animations.forEach(function (animation, key) {
-		        animation._applyAnimation(obj, _this10.currentTime);
+		        animation._applyAnimation(obj, _this11.currentTime);
 		        if (animation._isFinished && animation.isRemovedOnCompletion) {
 		          deleteKeys.push(key);
 		        }
@@ -56173,11 +57429,11 @@ var JSceneKitExample =
 		  }, {
 		    key: '_updateParticlesForNode',
 		    value: function _updateParticlesForNode(node) {
-		      var _this11 = this;
+		      var _this12 = this;
 
 		      this._updateParticlesForObject(node);
 		      node.childNodes.forEach(function (child) {
-		        return _this11._updateParticlesForNode(child);
+		        return _this12._updateParticlesForNode(child);
 		      });
 		    }
 		  }, {

@@ -47,7 +47,14 @@ module.exports = {
       },
       devServer: {
         contentBase: dest,
-        port: 8080
+        port: 8080,
+        staticOptions: {
+          setHeaders: (res, path, stat) => {
+            if(/\.exr$/.test(path)){
+              res.setHeader('Content-Type', 'image/x-exr')
+            }
+          }
+        }
       },
       resolve: {
         extensions: ['.js']
