@@ -21,7 +21,7 @@ export default class GameViewController {
   viewDidLoad() {
     // create a new scene
     const scene = new SCNScene('art.scnassets/ship.scn')
-    scene._getLoadedPromise().then(() => {
+    scene.didLoad.then(() => {
       // create and add a camera to the scene
       const cameraNode = new SCNNode()
       cameraNode.camera = new SCNCamera()

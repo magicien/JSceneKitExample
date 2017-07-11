@@ -80,7 +80,7 @@ export default class Character {
 
     //const characterScene = SCNScene.sceneNamed('game.scnassets/panda.scn')
     const characterScene = new SCNScene('game.scnassets/panda.scn')
-    characterScene._getLoadedPromise().then(() => {
+    characterScene.didLoad.then(() => {
       const characterTopLevelNode = characterScene.rootNode.childNodes[0]
       this.node.addChildNode(characterTopLevelNode)
 

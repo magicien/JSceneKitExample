@@ -10,7 +10,7 @@ import {
 CAAnimation.animationWithSceneName = function(name) {
   const promise = new Promise((resolve, reject) => {
     const scene = new SCNScene(name)
-    scene._getLoadedPromise().then(() => {
+    scene.didLoad.then(() => {
       let animation = null
       scene.rootNode.enumerateChildNodes((child) => {
         const firstKey = child.animationKeys[0]

@@ -448,9 +448,9 @@ export default class ViewController {
     this.sparkleScene = this.Assets.sceneNamed('sparkles.scn')
     
     this.loaded = Promise.all([
-      this.scene._getLoadedPromise(),
-      this.idleScene._getLoadedPromise(),
-      this.sparkleScene._getLoadedPromise(),
+      this.scene.didLoad,
+      this.idleScene.didLoad,
+      this.sparkleScene.didLoad,
       SCNParticleSystem.systemNamedInDirectory('collect.scnp', 'badger.scnassets')
         .then((sys) => {this.collectParticleSystem = sys}),
       SCNParticleSystem.systemNamedInDirectory('collect-big.scnp', 'badger.scnassets')

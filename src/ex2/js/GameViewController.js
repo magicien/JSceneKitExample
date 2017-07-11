@@ -167,7 +167,7 @@ export default class GameViewController {
 
     // Create a new scene.
     const scene = new SCNScene('game.scnassets/level.scn')
-    scene._getLoadedPromise().then(() => {
+    scene.didLoad.then(() => {
       this.gameView.showGameSKScene()
 
       // Set the scene to the view and loop for the animation of the bamboos.
