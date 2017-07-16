@@ -223,6 +223,8 @@ export default class GameViewController {
         this.setupCollisionNode(node)
       }
 
+      scene.rootNode._resetPhysicsTransformRecursively(true) // FIXME: delete
+
       // Setup delegates
       scene.physicsWorld.contactDelegate = this
       this.gameView.delegate = this
@@ -373,7 +375,7 @@ export default class GameViewController {
     }
   }
 
-  rendererDidSimlatePhysicsAtTime(renderer, time) {
+  rendererDidSimulatePhysicsAtTime(renderer, time) {
     // If we hit a wall, position needs to be adjusted
     if(this.replacementPosition){
       this.character.node.position = this.replacementPosition._copy()
@@ -416,11 +418,13 @@ export default class GameViewController {
     }
 
     this.maxPenetrationDistance = contact.penetrationDistance
+    //console.error(`physics maxPenetrationDistance: ${this.maxPenetrationDistance}`)
 
     let characterPosition = this.character.node.position._copy()
     const positionOffset = contact.contactNormal.mul(contact.penetrationDistance)
     positionOffset.y = 0
     characterPosition = characterPosition.add(positionOffset)
+    //console.error(`positionOffset ${positionOffset.x}, ${positionOffset.y}, ${positionOffset.z}`)
 
     this.replacementPosition = characterPosition
   }
