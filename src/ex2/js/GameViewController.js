@@ -180,16 +180,17 @@ export default class GameViewController {
       this.setupSounds()
 
       // Configure particle systems
-      SCNParticleSystem.systemNamedInDirectory('ParticleSystems/collect.scnp', null)
+      const promises = []
+      promises.push(SCNParticleSystem.systemNamedInDirectory('ParticleSystems/collect.scnp', null)
       .then((system) => {
         this.collectFlowerParticleSystem = system
         this.collectFlowerParticleSystem.loops = false
-      })
+      }))
 
-      SCNParticleSystem.systemNamedInDirectory('ParticleSystems/confetti.scnp', null)
+      promises.push(SCNParticleSystem.systemNamedInDirectory('ParticleSystems/confetti.scnp', null)
       .then((system) => {
         this.confettiParticleSystem = system
-      })
+      }))
 
       // Add the character to the scene.
       scene.rootNode.addChildNode(this.character.node)
@@ -226,8 +227,10 @@ export default class GameViewController {
       scene.rootNode._resetPhysicsTransformRecursively(true) // FIXME: delete
 
       // Setup delegates
-      scene.physicsWorld.contactDelegate = this
-      this.gameView.delegate = this
+      Promise.all(promises).then(() => {
+        scene.physicsWorld.contactDelegate = this
+        this.gameView.delegate = this
+      })
 
       this.setupAutomaticCameraPositions()
       this.setupGameControllers()
@@ -715,15 +718,7 @@ export default class GameViewController {
   }
 
   mouseUpInViewWithEvent(view, event) {
-    const direction = KeyboardDirection[event.keyCode]
-    if(direction){
-      if(!event.isARepeat){
-        this.controllerStoredDirection = this.controllerStoredDirection.add(direction.vector)
-      }
-      return true
-    }
-
-    return false
+    return true
   }
 
   keyDownInViewWithEvent(view, event) {

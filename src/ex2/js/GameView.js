@@ -7,6 +7,7 @@ import {
   SCNView,
   SKAction,
   SKColor,
+  SKLabelHorizontalAlignmentMode,
   SKLabelNode,
   SKNode,
   SKScene,
@@ -54,7 +55,8 @@ export default class GameView extends SCNView {
     const loadingText = new SKLabelNode()
     loadingText.text = 'Loading...'
     loadingText.fontColor = SKColor.black
-    loadingText.position = new CGPoint(100, 100)
+    loadingText.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
+    loadingText.position = new CGPoint(50, 50)
 
     const fadeAction = SKAction.repeatForever(
       SKAction.sequence([
@@ -170,22 +172,26 @@ export default class GameView extends SCNView {
 
   showEndScreen() {
     // Congratulation title
-    let congratulationsNode = null
-    const congratulationsNodePromise = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations.png')
-    .then((node) => {
-      congratulationsNode = node
-    })
+    //let congratulationsNode = null
+    //const congratulationsNodePromise = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations.png')
+    //.then((node) => {
+    //  congratulationsNode = node
+    //})
+    const congratulationsNode = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations.png')
 
     // Max image
-    let characterNode = null
-    const characterNodePromise = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations_pandaMax.png')
-    .then((node) => {
-      characterNode = node
-      characterNode.position = new CGPoint(0.0, -220.0)
-      characterNode.anchorPoint = new CGPoint(0.5, 0.0)
-    })
+    //let characterNode = null
+    //const characterNodePromise = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations_pandaMax.png')
+    //.then((node) => {
+    //  characterNode = node
+    //  characterNode.position = new CGPoint(0.0, -220.0)
+    //  characterNode.anchorPoint = new CGPoint(0.5, 0.0)
+    //})
+    const characterNode = SKSpriteNode.nodeWithImageNamed('Overlays/congratulations_pandaMax.png')
+    characterNode.position = new CGPoint(0.0, -220.0)
+    characterNode.anchorPoint = new CGPoint(0.5, 0.0)
 
-    Promise.all([congratulationsNodePromise, characterNodePromise])
+    Promise.all([congratulationsNode.didLoad, characterNode.didLoad])
     .then(() => {
       this.congratulationsGroupNode.addChild(characterNode)
       this.congratulationsGroupNode.addChild(congratulationsNode)
