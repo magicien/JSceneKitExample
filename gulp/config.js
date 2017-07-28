@@ -190,6 +190,61 @@ module.exports = {
     },
   },
 
+  ex4: {
+    copy: {
+      src: [
+        src + '/ex4/index.html',
+        src + '/ex4/Art.scnassets/**',
+        src + '/ex4/audio/**',
+        src + '/ex4/Overlays/**'
+      ],
+      dest: dest,
+      opts: {
+        base: src
+      }
+    },
+
+    webpack: {
+      context: src,
+      entry: './ex4/js/main.js',
+      output: {
+        path: dest,
+        filename: 'ex4/index.js',
+        library: 'JSceneKitExample',
+        libraryTarget: 'var'
+      },
+      devServer: {
+        contentBase: dest,
+        port: 8080
+      },
+      resolve: {
+        extensions: ['.js']
+      },
+      plugins: [
+        //new UglifyJSPlugin()
+      ],
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
+          }
+        ]
+      },
+      node: {
+        Buffer: false
+      },
+      externals: {
+        //fs: 'fs'
+      }
+    },
+  },
+
+
   mocha: {
     src: ['test/**/*.js', 'src/**/*.js'],
     compilers: {
