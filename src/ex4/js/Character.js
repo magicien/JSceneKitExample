@@ -487,7 +487,7 @@ export default class Character extends NSObject {
     let wPosition = this.characterNode.worldPosition
     // gravity
     this.downwardAcceleration -= Character.gravity
-    wPosition.y += this.downWardAcceleration
+    wPosition.y += this.downwardAcceleration
     const HIT_RANGE = 0.2
     let p0 = wPosition._copy()
     let p1 = wPosition._copy()
