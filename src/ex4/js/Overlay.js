@@ -88,7 +88,7 @@ export default class Overlay extends SKScene {
       return
     }
 
-    this.congratulationsGroupNode.position = new CGPoint(size.width * 0.5, size.height * 0.5)
+    this.congratulationsGroupNode.position = new CGPoint(this.size.width * 0.5, this.size.height * 0.5)
     this.congratulationsGroupNode.xScale = 1.0
     this.congratulationsGroupNode.yScale = 1.0
     const currentBbox = this.congratulationsGroupNode.calculateAccumulatedFrame()
@@ -99,13 +99,13 @@ export default class Overlay extends SKScene {
 
     const top = currentBbox.maxY - this.congratulationsGroupNode.position.y
     const bottom = this.congratulationsGroupNode.position.y - currentBbox.minY
-    const maxTopAllowed = maximumAllowedBbox.maxY - congratulationsGroupNode.position.y
-    const maxBottomAllowed = this.congratulationsGroupNode.position.y - maximumAllowdBbox.minY
+    const maxTopAllowed = maximumAllowedBbox.maxY - this.congratulationsGroupNode.position.y
+    const maxBottomAllowed = this.congratulationsGroupNode.position.y - maximumAllowedBbox.minY
 
     const left = this.congratulationsGroupNode.position.x - currentBbox.minX
     const right = currentBbox.maxX - this.congratulationsGroupNode.position.x
     const maxLeftAllowed = this.congratulationsGroupNode.position.x - maximumAllowedBbox.minX
-    const maxRightAllowed = maximumAllowedBbox.maxX - congratulationsGroupNode.position.x
+    const maxRightAllowed = maximumAllowedBbox.maxX - this.congratulationsGroupNode.position.x
 
     const topScale = top > maxTopAllowed ? maxTopAllowed / top: 1
     const bottomScale = bottom > maxBottomAllowed ? maxBottomAllowed / bottom: 1

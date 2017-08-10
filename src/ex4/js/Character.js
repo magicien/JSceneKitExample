@@ -2,6 +2,7 @@
 
 import {
   NSObject,
+  //CFAbsoluteTimeGetCurrent,
   CGPoint,
   DispatchQueue,
   SCNAction,
@@ -428,7 +429,7 @@ export default class Character extends NSObject {
     this._directionAngle = newValue
 
     this.characterOrientation.runAction(
-      SCNAction.rotateToXYZDurationUsesShortestUnitArc(0.0, directionAngle, 0.0, 0.1, true))
+      SCNAction.rotateToXYZDurationUsesShortestUnitArc(0.0, this._directionAngle, 0.0, 0.1, true))
   }
 
   updateAtTimeWith(time, renderer) {
@@ -475,7 +476,7 @@ export default class Character extends NSObject {
       this.walkSpeed = runModifier * direction.length()
 
       // move character
-      directionAngle = Math.atan2(direction.x, diretion.z)
+      this.directionAngle = Math.atan2(direction.x, direction.z)
 
       this.isWalking = true
     }else{
@@ -546,7 +547,7 @@ export default class Character extends NSObject {
 
       if(this.downwardAcceleration > 0){
         for(let i=0; i<virtualFrameCount; i++){
-          this.downwardAcceleration *= jumpState == 1 ? 0.99: 0.2
+          this.downwardAcceleration *= this.jumpState == 1 ? 0.99: 0.2
         }
       }
 
@@ -679,8 +680,8 @@ export default class Character extends NSObject {
   }
 
   wasTouchedByEnemey() {
-    const time = CFAbsoluteTimeGetCurrent()
-    if(time > lastHitTime + 1){
+    const time = Date.now() * 0.001 //CFAbsoluteTimeGetCurrent()
+    if(time > this.lastHitTime + 1){
       this.lastHitTime = time
       this.model.runAction(SCNAction.sequence([
         SCNAction.playAudioWaitForCompletion(this.hitSound, false),
@@ -704,6 +705,7 @@ export default class Character extends NSObject {
           animationPlayer = child.animationPlayerForKey(child.animationKeys[0])
           return true
         }
+        return false
       })
       return animationPlayer
     })
@@ -731,7 +733,7 @@ export default class Character extends NSObject {
 
       const contacts = this.physicsWorld.convexSweepTestWith(this.characterCollisionShape, from, to, options)
       if(contacts.length !== 0){
-        const result = handleSlidingAtContact(contacts[0], _start, _velocity)
+        const result = this.handleSlidingAtContact(contacts[0], _start, _velocity)
         _velocity = result[0]
         _start = result[1]
         iteration += 1

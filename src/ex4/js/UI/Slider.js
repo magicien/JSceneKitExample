@@ -91,7 +91,7 @@ export default class Slider extends SKNode {
     const posInView = this.scene.convertFrom(this.position, this.parent)
 
     const x = event.locationInWindow.x - posInView.x - this.background.position.x
-    const pos = Math.max(Math.min(x, width), 0.0)
+    const pos = Math.max(Math.min(x, this.width), 0.0)
     this.slider.position = new CGPoint(this.background.position.x + pos, 0.0)
     this.value = pos / this.width
     if(this.targetClicked){

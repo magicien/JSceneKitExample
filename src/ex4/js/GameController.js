@@ -5,6 +5,8 @@ import {
   CAMediaTimingFunction,
   CGPoint,
   CGSize,
+  DispatchQueue,
+  DispatchTime,
   GCController,
   GKEntity,
   GKScene,
@@ -30,6 +32,8 @@ import {
   SCNTransaction,
   SCNTransformConstraint,
   SCNVector3,
+  SCNVector4,
+  SKColor,
 
   kCAMediaTimingFunctionEaseInEaseOut
 } from 'jscenekit'
@@ -457,7 +461,6 @@ export default class GameController extends NSObject {
       const particle = new SCNParticleSystem(fileName, directory)
       return particle.didLoad.then(() => particle)
     }else{
-      const particles = []
       const scene = SCNScene.sceneNamedInDirectory(fileName, directory, null)
       return scene.didLoad.then(() => {
         const particles = []
@@ -595,10 +598,10 @@ export default class GameController extends NSObject {
     // volcano
     const volcanoNode = this.scene.rootNode.childNodeWithNameRecursively('particles_volcanoSmoke_v2', true)
     if(volcanoNode){
-      const audioSource = new SCNAudioSource('audio/volcano.mp3')
-      audioSource.loops = true
-      audioSource.volume = 5.0
-      volcanoNode.addAudioPlayer(new SCNAudioPlayer(audioSource))
+      const _audioSource = new SCNAudioSource('audio/volcano.mp3')
+      _audioSource.loops = true
+      _audioSource.volume = 5.0
+      volcanoNode.addAudioPlayer(new SCNAudioPlayer(_audioSource))
     }
 
     // other sounds
@@ -772,8 +775,8 @@ export default class GameController extends NSObject {
 
           //replace texture
           const geometryIndex = Math.floor(Math.random() * 3)
-          const geometryNode = friend.childNodeWithNameRecursively('Max', true)
-          geometryNode.geometry = geometries[geometryIndex]
+          const _geometryNode = friend.childNodeWithNameRecursively('Max', true)
+          _geometryNode.geometry = geometries[geometryIndex]
 
           //place our friend
           friend.position = new SCNVector3(
@@ -1151,9 +1154,9 @@ export default class GameController extends NSObject {
       if(materials){
         for(const material of materials){
           if(material.shaderModifiers !== null){
-            const shaderModifiers = material.shaderModifiers
-            shaderModifiers[SCNShaderModifierEntryPoint.geometry] = null
-            material.shaderModifiers = shaderModifiers
+            const _shaderModifiers = material.shaderModifiers
+            _shaderModifiers[SCNShaderModifierEntryPoint.geometry] = null
+            material.shaderModifiers = _shaderModifiers
           }
         }
       }
@@ -1248,11 +1251,13 @@ export default class GameController extends NSObject {
       this.gamePadRight = gamepad.rightThumbstick
       buttonA = gamepad.buttonA
       buttonB = gamepad.buttonB
-    }else if(gamepad = gameController.gamepad){
+    }else if(gameController.gamepad){
+      gamepad = gameController.gamepad
       this.gamePadLeft = gamepad.dpad
       buttonA = gamepad.buttonA
       buttonB = gamepad.buttonB
-    }else if(gamepad = gameController.microGamepad){
+    }else if(gameController.microGamepad){
+      gamepad = gameController.microGamepad
       this.gamePadLeft = gamepad.dpad
       buttonA = gamepad.buttonA
       buttonB = gamepad.buttonB

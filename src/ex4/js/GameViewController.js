@@ -6,6 +6,42 @@ import {
 } from 'jscenekit'
 import GameController from './GameController'
 
+export class GameViewMacOS extends SCNView {
+  constructor() {
+    super()
+
+    this.viewController = null
+  }
+  
+  // MARK: - EventHandler
+
+  keyDownWith(theEvent) {
+    if(this.viewCtonroller && this.viewController.keyUpEvent(this, theEvent) === false){
+      super.keyUpWith(theEvent)
+    }
+  }
+
+  keyUpWith(theEvent) {
+    if(this.viewController && this.viewController.keyUpEvent(this, theEvent) === false){
+      super.keyUpWith(theEvent)
+    }
+  }
+
+  setFrameSize(newSize) {
+    super.setFrameSize(newSize)
+    if(this.overlaySKScene){
+      this.overlaySKScene.layout2DOverlay()
+    }
+  }
+
+  viewDidMoveToWindow() {
+    //disable retina
+    if(this.layer){
+      this.layer.contentsScale = 1.0
+    }
+  }
+}
+
 //export default class GameViewControllerMacOS extends NSViewController {
 export default class GameViewControllerMacOS {
   get gameView() {
@@ -222,39 +258,4 @@ export default class GameViewControllerMacOS {
   }
 }
 
-export class GameViewMacOS extends SCNView {
-  constructor() {
-    super()
-
-    this.viewController = null
-  }
-  
-  // MARK: - EventHandler
-
-  keyDownWith(theEvent) {
-    if(this.viewCtonroller && this.viewController.keyUpEvent(this, theEvent) === false){
-      super.keyUpWith(theEvent)
-    }
-  }
-
-  keyUpWith(theEvent) {
-    if(this.viewController && this.viewController.keyUpEvent(this, theEvent) === false){
-      super.keyUpWith(theEvent)
-    }
-  }
-
-  setFrameSize(newSize) {
-    super.setFrameSize(newSize)
-    if(this.overlaySKScene){
-      this.overlaySKScene.layout2DOverlay()
-    }
-  }
-
-  viewDidMoveToWindow() {
-    //disable retina
-    if(this.layer){
-      this.layer.contentsScale = 1.0
-    }
-  }
-}
 

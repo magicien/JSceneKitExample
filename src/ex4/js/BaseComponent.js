@@ -71,7 +71,7 @@ export default class BaseComponent extends GKComponent {
   }
 
   performEnemyDieWithExplosionDirection(enemy, direction) {
-    const explositionScene = SCNSccene.sceneNamed('Art.scnassets/enemy/enemy_explosion.scn')
+    const explositionScene = SCNScene.sceneNamed('Art.scnassets/enemy/enemy_explosion.scn')
     if(!explositionScene){
       console.log('Missing enemy_explosion.scn')
       return

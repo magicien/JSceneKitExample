@@ -116,17 +116,17 @@ export default class Chaseromponent extends BaseComponent {
 
     // Chase if below chaseDistance from enemy, wander otherwise.
     switch(this.state){
-      case ChaseState.wander:
+      case ChaserState.wander:
         if(distance < this.chaseDistance){
           this.startChasing()
         }
         break
-      case ChaseState.chase:
+      case ChaserState.chase:
         if(distance > this.chaseDistance){
           this.startWandering()
         }
         break
-      case ChaseState.dead:
+      case ChaserState.dead:
         break
     }
 

@@ -123,14 +123,14 @@ export default class Menu extends SKNode {
   cameraFStopChanged(sender) {
     const method = this.delegate ? this.delegate.fStopChanged : null
     if(method){
-      method(dofSliders[0].value + 0.2)
+      method(this.dofSliders[0].value + 0.2)
     }
   }
 
   cameraFocusDistanceChanged(sender) {
-    const mehtod = this.delegate ? this.delegate.focusDistanceChanged : null
+    const method = this.delegate ? this.delegate.focusDistanceChanged : null
     if(method){
-      method(dofSliders[1].value * 20.0 + 3.0)
+      method(this.dofSliders[1].value * 20.0 + 3.0)
     }
   }
 }

@@ -63,6 +63,7 @@ CAAnimation.animationWithSceneNamed = function(name) {
           animation = child.animationForKey(child.animationKeys[0])
           return true
         }
+        return false
       })
       if(animation){
         resolve(animation)

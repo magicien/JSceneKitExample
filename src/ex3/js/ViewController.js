@@ -575,7 +575,7 @@ export default class ViewController {
   }
 
   triggerCollision() {
-    if(squatCounter > 0){
+    if(this.squatCounter > 0){
       return
     }
 
@@ -644,7 +644,7 @@ export default class ViewController {
 
         collectable.scale = SCNVector3Zero
 
-        scene.addParticleSystem(this.collectParticleSystem, collectable.presentation.worldTransform)
+        this.scene.addParticleSystem(this.collectParticleSystem, collectable.presentation.worldTransform)
 
         if(collectable.name.startsWith('big')){
           this.headEmitter.addParticleSystem(this.collectBigParticleSystem)
@@ -910,10 +910,10 @@ export default class ViewController {
     const direction = KeyboardDirection[event.keyCode]
     if(direction){
       switch(direction.rawValue){
-        case KeyboardDirection.up: this.jump(); break;
-        case KeyboardDirection.down: this.squat(); break;
-        case KeyboardDirection.left: this.leanLeft(); break;
-        case KeyboardDirection.right: this.leanRight(); break;
+        case KeyboardDirection.up: this.jump(); break
+        case KeyboardDirection.down: this.squat(); break
+        case KeyboardDirection.left: this.leanLeft(); break
+        case KeyboardDirection.right: this.leanRight(); break
       }
       return true
     }
