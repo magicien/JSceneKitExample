@@ -2,7 +2,7 @@
 
 import {
   NSObject,
-  //CFAbsoluteTimeGetCurrent,
+  CFAbsoluteTimeGetCurrent,
   CGPoint,
   DispatchQueue,
   SCNAction,
@@ -680,7 +680,7 @@ export default class Character extends NSObject {
   }
 
   wasTouchedByEnemey() {
-    const time = Date.now() * 0.001 //CFAbsoluteTimeGetCurrent()
+    const time = CFAbsoluteTimeGetCurrent()
     if(time > this.lastHitTime + 1){
       this.lastHitTime = time
       this.model.runAction(SCNAction.sequence([
