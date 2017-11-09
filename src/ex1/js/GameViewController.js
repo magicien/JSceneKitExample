@@ -19,8 +19,16 @@ export default class GameViewController {
   }
 
   viewDidLoad() {
+    const defaultFileName = 'ship.scn'
+    const fileName = location.search ?
+      location.search.split('?')[1]
+        .split('&')
+        .map((str) => str.split('='))
+        .find((query) => query[0] === 'file')[1] || defaultFileName
+      : defaultFileName
+
     // create a new scene
-    const scene = new SCNScene('art.scnassets/ship.scn')
+    const scene = new SCNScene(`art.scnassets/${fileName}`)
     scene.didLoad.then(() => {
       // create and add a camera to the scene
       const cameraNode = new SCNNode()
@@ -44,15 +52,21 @@ export default class GameViewController {
       ambientLightNode.light.color = SKColor.darkGray
       scene.rootNode.addChildNode(ambientLightNode)
 
-      // retrieve the ship node
-      const ship = scene.rootNode.childNodeWithNameRecursively('ship', true)
+      let node
+      if(fileName === defaultFileName){
+        // retrieve the ship node
+        node = scene.rootNode.childNodeWithNameRecursively('ship', true)
+      }else{
+        node = scene.rootNode.childNodes[0]
+        node.rotation = new SCNVector4(0, 1, 0, 0)
+      }
 
       // animate the 3d object
       const animation = new CABasicAnimation('rotation')
       animation.toValue = new SCNVector4(0, 1, 0, Math.PI * 2)
       animation.duration = 3
       animation.repeatCount = Infinity //repeat forever
-      ship.addAnimationForKey(animation, null)
+      node.addAnimationForKey(animation, null)
 
       // set the scene to the view
       this.gameView.scene = scene

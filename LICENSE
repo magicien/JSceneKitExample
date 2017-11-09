@@ -21,6 +21,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ===============================
+The files in src/ex1/art.scnassets/Ferret and
+public/ex1/art.scnassets/Ferret are copied from Poly by Google.
+(https://poly.google.com/view/4I1SBFHWuSo)
+These files are distributed under a CC-BY license.
+
+===============================
 The files in src/ex2/Overlays,ParticleSystems,game.scnassets and 
 pubilc/ex2/Overlays,ParticleSystems,game.scnassets are copied from 
 Apple's sample code (https://developer.apple.com/library/content/samplecode/Fox/). 
