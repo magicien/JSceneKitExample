@@ -73,11 +73,21 @@ module.exports = {
                 presets: ['@babel/preset-env']
               }
             }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
           }
         ]
       },
       node: {
-        Buffer: false
+        fs: false,
+        Buffer: true
       },
       externals: {
         //fs: 'fs'
@@ -134,7 +144,8 @@ module.exports = {
         ]
       },
       node: {
-        Buffer: false
+        fs: false,
+        Buffer: true
       },
       externals: {
         //fs: 'fs'
@@ -190,7 +201,8 @@ module.exports = {
         ]
       },
       node: {
-        Buffer: false
+        fs: false,
+        Buffer: true
       },
       externals: {
         //fs: 'fs'
@@ -247,7 +259,8 @@ module.exports = {
         ]
       },
       node: {
-        Buffer: false
+        fs: false,
+        Buffer: true
       },
       externals: {
         //fs: 'fs'
