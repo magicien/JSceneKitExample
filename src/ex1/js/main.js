@@ -5,7 +5,6 @@ import {
 import GameViewController from './GameViewController'
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log(CanUseWebGL2);
   if(!CanUseWebGL2()){
     alert(
       'This browser does not support WebGL2/GLSL ES3.0.\n'

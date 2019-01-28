@@ -140,6 +140,15 @@ module.exports = {
                 presets: ['@babel/preset-env']
               }
             }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
           }
         ]
       },
@@ -191,6 +200,15 @@ module.exports = {
           {
             test: /\.js$/,
             exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
             use: {
               loader: 'babel-loader',
               options: {
@@ -252,6 +270,15 @@ module.exports = {
             use: {
               loader: 'babel-loader',
               query: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
                 presets: ['@babel/preset-env']
               }
             }
