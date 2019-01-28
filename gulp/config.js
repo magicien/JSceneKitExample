@@ -1,8 +1,8 @@
 const path = require('path');
-const babel = require('babel-core/register');
+const babel = require('@babel/register');
 
-const src = path.resolve(__dirname, '../src');
-const dest = path.resolve(__dirname, '../public');
+const src = path.resolve(__dirname, '../src/');
+const dest = path.resolve(__dirname, '../public/');
 
 module.exports = {
   dest: dest,
@@ -36,8 +36,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex1/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex1/index.js',
@@ -62,13 +63,15 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
@@ -97,8 +100,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex2/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex2/index.js',
@@ -116,13 +120,15 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
@@ -150,8 +156,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex3/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex3/index.js',
@@ -169,13 +176,15 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
@@ -204,8 +213,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex4/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex4/index.js',
@@ -223,13 +233,15 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              query: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
