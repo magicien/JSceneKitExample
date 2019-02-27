@@ -1,8 +1,8 @@
 const path = require('path');
-const babel = require('@babel/register');
+const babel = require('babel-core/register');
 
-const src = path.resolve(__dirname, '../src/');
-const dest = path.resolve(__dirname, '../public/');
+const src = path.resolve(__dirname, '../src');
+const dest = path.resolve(__dirname, '../public');
 
 module.exports = {
   dest: dest,
@@ -36,9 +36,8 @@ module.exports = {
     },
 
     webpack: {
-      context: src + '/',
+      context: src,
       entry: './ex1/js/main.js',
-      mode: 'development',
       output: {
         path: dest,
         filename: 'ex1/index.js',
@@ -63,31 +62,19 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        rules: [
+        loaders: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          },
-          {
-            test: /node_modules\/jscenekit\/.*\.js$/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
+            loader: 'babel-loader',
+            query: {
+              presets: ['env']
             }
           }
         ]
       },
       node: {
-        fs: false,
-        Buffer: true
+        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -110,9 +97,8 @@ module.exports = {
     },
 
     webpack: {
-      context: src + '/',
+      context: src,
       entry: './ex2/js/main.js',
-      mode: 'development',
       output: {
         path: dest,
         filename: 'ex2/index.js',
@@ -130,31 +116,19 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        rules: [
+        loaders: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          },
-          {
-            test: /node_modules\/jscenekit\/.*\.js$/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
+            loader: 'babel-loader',
+            query: {
+              presets: ['env']
             }
           }
         ]
       },
       node: {
-        fs: false,
-        Buffer: true
+        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -176,9 +150,8 @@ module.exports = {
     },
 
     webpack: {
-      context: src + '/',
+      context: src,
       entry: './ex3/js/main.js',
-      mode: 'development',
       output: {
         path: dest,
         filename: 'ex3/index.js',
@@ -196,31 +169,19 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        rules: [
+        loaders: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          },
-          {
-            test: /node_modules\/jscenekit\/.*\.js$/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
+            loader: 'babel-loader',
+            query: {
+              presets: ['env']
             }
           }
         ]
       },
       node: {
-        fs: false,
-        Buffer: true
+        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -243,9 +204,8 @@ module.exports = {
     },
 
     webpack: {
-      context: src + '/',
+      context: src,
       entry: './ex4/js/main.js',
-      mode: 'development',
       output: {
         path: dest,
         filename: 'ex4/index.js',
@@ -263,31 +223,19 @@ module.exports = {
         //new UglifyJSPlugin()
       ],
       module: {
-        rules: [
+        loaders: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-              query: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          },
-          {
-            test: /node_modules\/jscenekit\/.*\.js$/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
+            loader: 'babel-loader',
+            query: {
+              presets: ['env']
             }
           }
         ]
       },
       node: {
-        fs: false,
-        Buffer: true
+        Buffer: false
       },
       externals: {
         //fs: 'fs'
