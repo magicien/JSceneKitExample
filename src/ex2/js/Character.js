@@ -258,13 +258,9 @@ export default class Character {
           this.haltFire()
         }
 
-        // do a new ray test without the water to get the altitude of the ground (under the water).
-        const _results = scene.physicsWorld.rayTestWithSegmentFromTo(p1, p0, [
-          [SCNPhysicsWorld.TestOption.collisionBitMask, BitmaskCollision], 
-          [SCNPhysicsWorld.TestOption.searchMode, SCNPhysicsWorld.TestSearchMode.closest]])
-
-        const _result = _results[0]
-        groundAltitude = _result.worldCoordinates.y
+        // Apple's sample puts the character on the ground under the water here, but with
+        // JSceneKit's collision handling the edges of the water then push the character back,
+        // so it stays on the water surface.
       }
 
       const threshold = 1e-5
