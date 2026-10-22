@@ -609,7 +609,7 @@ export default class Character extends NSObject {
   attack() {
     this.attackCount += 1
     this.model.animationPlayerForKey('spin').play()
-    DispatchQueue.main.asyncAfterDeadline(Date.now() + 500, () => {
+    DispatchQueue.main.asyncAfter(Date.now() + 500, () => {
       this.attackCount -= 1
     })
     this.spinParticleAttach.addParticleSystem(this.spinCircleParticle)

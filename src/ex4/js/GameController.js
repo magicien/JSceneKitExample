@@ -639,12 +639,12 @@ export default class GameController extends NSObject {
 
   // MARK: - particles
 
-  particleSystems(kind) {
+  particleSystemsWithKind(kind) {
     return this.particleSystems[kind]
   }
 
   addParticles(kind, transform) {
-    const particles = this.particleSystems(kind)
+    const particles = this.particleSystemsWithKind(kind)
     for(const ps of particles){
       this.scene.addParticleSystem(ps, transform)
     }
@@ -660,7 +660,7 @@ export default class GameController extends NSObject {
       this.setActiveCamera(cameraName, duration)
     }
     //action
-    if(triggerNode.name.startsWit('trigAction_')){
+    if(triggerNode.name.startsWith('trigAction_')){
       const actionName = triggerNode.name.substring(11)
       if(actionName === 'unlockDoor'){
         this.unlockDoor()
@@ -875,7 +875,7 @@ export default class GameController extends NSObject {
         this.friendsAreFree = true
 
         // show end screen
-        DispatchQueue.main.asyncAfterDeadline(DispatchTime.now() + 1.0, () => {
+        DispatchQueue.main.asyncAfter(DispatchTime.now() + 1000, () => {
           this.showEndScreen()
         })
       }
@@ -903,7 +903,7 @@ export default class GameController extends NSObject {
     SCNTransaction.begin()
     SCNTransaction.animationDuration = 1.0
     SCNTransaction.completionBlock = () => {
-      DispatchQueue.main.asyncAfterDeadline(DispatchTime.now() + 2.5, () => {
+      DispatchQueue.main.asyncAfter(DispatchTime.now() + 2500, () => {
         this.keyDidAppear()
       })
     }
@@ -956,7 +956,7 @@ export default class GameController extends NSObject {
 
         if(this.collectedGems === 1){
           //we collect a gem, show the key after 1 second
-          DispatchQueue.main.asyncAfterDeadline(DispatchTime.now() + 0.5, () => {
+          DispatchQueue.main.asyncAfter(DispatchTime.now() + 500, () => {
             this.keyShouldAppear()
           })
         }
