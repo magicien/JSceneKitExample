@@ -1,8 +1,8 @@
 const path = require('path');
-const babel = require('babel-core/register');
+const babel = require('@babel/register');
 
-const src = path.resolve(__dirname, '../src');
-const dest = path.resolve(__dirname, '../public');
+const src = path.resolve(__dirname, '../src/');
+const dest = path.resolve(__dirname, '../public/');
 
 module.exports = {
   dest: dest,
@@ -36,8 +36,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex1/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex1/index.js',
@@ -45,36 +46,49 @@ module.exports = {
         libraryTarget: 'var'
       },
       devServer: {
-        contentBase: dest,
-        port: 8080,
-        staticOptions: {
-          setHeaders: (res, path, stat) => {
-            if(/\.exr$/.test(path)){
-              res.setHeader('Content-Type', 'image/x-exr')
+        static: {
+          directory: dest,
+          staticOptions: {
+            setHeaders: (res, path, stat) => {
+              if(/\.exr$/.test(path)){
+                res.setHeader('Content-Type', 'image/x-exr')
+              }
             }
           }
-        }
+        },
+        port: 8080
       },
       resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        fallback: {
+          fs: false
+        }
       },
       plugins: [
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
-      },
-      node: {
-        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -97,8 +111,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex2/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex2/index.js',
@@ -106,29 +121,40 @@ module.exports = {
         libraryTarget: 'var'
       },
       devServer: {
-        contentBase: dest,
+        static: dest,
         port: 8080
       },
       resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        fallback: {
+          fs: false
+        }
       },
       plugins: [
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
-      },
-      node: {
-        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -150,8 +176,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex3/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex3/index.js',
@@ -159,29 +186,40 @@ module.exports = {
         libraryTarget: 'var'
       },
       devServer: {
-        contentBase: dest,
+        static: dest,
         port: 8080
       },
       resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        fallback: {
+          fs: false
+        }
       },
       plugins: [
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
-      },
-      node: {
-        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -204,8 +242,9 @@ module.exports = {
     },
 
     webpack: {
-      context: src,
+      context: src + '/',
       entry: './ex4/js/main.js',
+      mode: 'development',
       output: {
         path: dest,
         filename: 'ex4/index.js',
@@ -213,29 +252,40 @@ module.exports = {
         libraryTarget: 'var'
       },
       devServer: {
-        contentBase: dest,
+        static: dest,
         port: 8080
       },
       resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        fallback: {
+          fs: false
+        }
       },
       plugins: [
         //new UglifyJSPlugin()
       ],
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['env']
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          },
+          {
+            test: /node_modules\/jscenekit\/.*\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
           }
         ]
-      },
-      node: {
-        Buffer: false
       },
       externals: {
         //fs: 'fs'
@@ -258,7 +308,7 @@ module.exports = {
   },
 
   watch: {
-    js: __dirname + '/../' + src + '/js/**'
+    js: src + '/ex*/js/**'
   }
 }
 

@@ -1,10 +1,7 @@
 var gulp = require('gulp');
-var watch = require('gulp-watch');
 var config = require('../config').watch;
+require('./webpack')
 
 gulp.task('watch', function() {
-  watch(config.js, function() {
-    gulp.start(['webpack']);
-  });
+  return gulp.watch(config.js, gulp.series('webpack'));
 });
-
