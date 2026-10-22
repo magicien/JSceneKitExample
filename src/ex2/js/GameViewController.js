@@ -647,13 +647,14 @@ export default class GameViewController {
         this.controllerStoredDirection.y = 0
       }else{
         //this.controllerStoredDirection = clamp(this.controllerStoredDirection + float2(dpad.xAxis.value, -dpad.yAxis.value) * GameViewController.controllerAcceleration, -GameViewController.controllerDirectionLimit, GameViewController.controllerDirectionLimit)
+        // yAxis is not negated: JSceneKit's yAxis is already negative for "up", unlike Apple's GameController.
         this.controllerStoredDirection.x = Math.min(Math.max(
-          (this.controllerStoredDirection.x + dpad.xAxis.value) * GameViewController.controllerAcceleration,
+          this.controllerStoredDirection.x + dpad.xAxis.value * GameViewController.controllerAcceleration,
           -GameViewController.controllerDirectionLimit.x),
           GameViewController.controllerDirectionLimit.x
         )
         this.controllerStoredDirection.y = Math.min(Math.max(
-          (this.controllerStoredDirection.y + dpad.yAxis.value) * GameViewController.controllerAcceleration,
+          this.controllerStoredDirection.y + dpad.yAxis.value * GameViewController.controllerAcceleration,
           -GameViewController.controllerDirectionLimit.y),
           GameViewController.controllerDirectionLimit.y
         )

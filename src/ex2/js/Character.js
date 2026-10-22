@@ -263,7 +263,7 @@ export default class Character {
           [SCNPhysicsWorld.TestOption.collisionBitMask, BitmaskCollision], 
           [SCNPhysicsWorld.TestOption.searchMode, SCNPhysicsWorld.TestSearchMode.closest]])
 
-        const _result = results[0]
+        const _result = _results[0]
         groundAltitude = _result.worldCoordinates.y
       }
 
