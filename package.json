@@ -4,7 +4,10 @@
   "description": "An online example of JSceneKit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "gulp webpack-dev-server",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -23,30 +26,22 @@
     "@babel/cli": "^7.29.7",
     "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.29.7",
-    "@babel/register": "^7.29.7",
-    "babel-eslint": "^10.0.1",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "babel-loader": "^10.1.1",
-    "chai": "^4.2.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-eslint": "^5.0.0",
     "gulp-exec": "^3.0.2",
     "gulp-if": "^2.0.2",
-    "gulp-mocha": "^6.0.0",
     "gulp-uglify": "^3.0.1",
-    "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
     "jscenekit": "^0.5.6",
-    "mocha": "^5.2.0",
-    "mocha-sinon": "^2.1.0",
-    "nyc": "^13.1.0",
     "path": "^0.12.7",
     "require-dir": "^1.2.0",
-    "sinon": "^7.2.3",
-    "sinon-chai": "^3.3.0",
     "webpack": "^5.112.0",
     "webpack-dev-server": "^5.2.7",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {}
+  }
 }

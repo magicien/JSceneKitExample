@@ -1,5 +1,4 @@
 const path = require('path');
-const babel = require('@babel/register');
 
 const src = path.resolve(__dirname, '../src/');
 const dest = path.resolve(__dirname, '../public/');
@@ -11,16 +10,6 @@ module.exports = {
     src: src + '/js/**',
     dest: dest,
     uglify: false
-  },
-
-  eslint: {
-    src: [
-      src + '/**/*.js',
-      './test/**/*.js',
-    ],
-    opts: {
-      useEslintrc: true
-    }
   },
 
   ex1: {
@@ -293,19 +282,6 @@ module.exports = {
     },
   },
 
-
-  mocha: {
-    src: ['test/**/*.js', 'src/**/*.js'],
-    compilers: {
-      js: babel
-    },
-    opts: {
-      ui: 'bdd',
-      reporter: 'spec', // or nyan
-      globals: [],
-      require: ['test/helper/testHelper', 'chai']
-    }
-  },
 
   watch: {
     js: src + '/ex*/js/**'
